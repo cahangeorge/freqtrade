@@ -1,0 +1,267 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 📊alexsmarketstructurepro_results
+==============================================================
+
+[10/27/2025 13:47] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1432364978110730350/1432365150731501668/image.png?ex=69f35d7f&is=69f20bff&hm=d53b1dc58a122ae0ce4d7c97c69b1714e3c09b5a49c292fc710203e21dc441dc&
+
+
+[10/27/2025 13:49] niutie8977
+👍
+
+
+[10/27/2025 15:34] viking046433
+🚀 Binanceusdm (dry): Exited TRUMP/USDT:USDT (#2)
+Sub Profit: 8.73% (profit: 6.932 USDT / 119.504 ZAR)
+Final Profit: 6.08% (12.06641633 USDT / 208.025 ZAR)
+Enter Tag: bull_break
+Exit Reason: tp3_trailing
+Direction: Long (5x)
+Amount: 62.67
+Open Rate: 6.334 USDT
+Exit Rate: 6.451 USDT
+Duration: 0:09:34 (9.6 min)
+
+
+[10/27/2025 15:35] viking046433
+So far the tp levels are ok
+
+
+[10/27/2025 15:36] serialkiller15
+ok thanks!
+
+
+[10/27/2025 16:32] ywk3926
+✳ Bybit (dry): Exited TRB/USDT:USDT (#2)
+Profit: 4.13% (profit: 0.825 USDT / 0.825 USD)
+Enter Tag: bull_break
+Exit Reason: profit_4pct
+Direction: Long (5x)
+Amount: 3.52
+Open Rate: 28.39 USDT
+Exit Rate: 28.63 USDT
+Duration: 0:01:12 (1.2 min)
+
+
+[10/27/2025 17:04] ywk3926
+⚠ Bybit (dry): Exited WLFI/USDT:USDT (#3)
+Profit: -9.40% (loss: -1.879 USDT / -1.879 USD)
+Enter Tag: bull_break
+Exit Reason: stop_loss
+Direction: Long (5x)
+Amount: 652
+Open Rate: 0.1533 USDT
+Exit Rate: 0.1506 USDT
+Duration: 0:02:44 (2.7 min)
+
+
+[10/28/2025 02:02] ywk3926
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1432364978110730350/1432550106623774801/image.png?ex=69f36100&is=69f20f80&hm=0180bd9f9797ba6ee659aa8c4f9b0afc97fd467c740419fab3f5ed34288e0ccd&
+
+
+[10/28/2025 04:27] viking046433
+ID L/S    Pair                      Since    Profit (ZAR)     # Entries
+--------  ------------------------  -------  ---------------  -----------
+9 S 5x    XRP/USDT:USDT             8 h ago  4.66% (159.37)   1/51
+12 S 5x   ZEN/USDT:USDT             2 h ago  6.34% (84.99)    1/51
+13 L 1x   币安人生/USDT:USDT        2 h ago  0.38% (12.65)    1/51
+14 S 5x   DIA/USDT:USDT             1 h ago  18.71% (441.11)  1/51
+15 S 5x   ADA/USDT:USDT             1 h ago  -1.18% (-39.68)  1/51
+--------  ------------------------  -------  ---------------  -----------
+Total                                        658.44 ZAR
+Total     (incl. realized Profits)           934.91 ZAR
+
+
+[10/28/2025 04:27] viking046433
+This things signals are awesome
+
+
+[10/28/2025 04:27] viking046433
+It just needs better profit taking you are right
+
+
+[10/28/2025 04:28] viking046433
+It gets huge wins but this TP levels are killing it
+
+
+[10/28/2025 04:47] ywk3926
+ROI: Closed trades
+∙ -1.82 USDT (-0.14%) (-0.18 Σ%)
+∙ -1.82 USD
+ROI: All trades
+∙ -7.689 USDT (-0.52%) (-0.78 Σ%)
+∙ -7.689 USD
+Total Trade Count: 76
+Bot started: 2025-10-27 16:21:01
+First Trade opened: 12 hours ago (2025-10-27 16:22:34)
+Latest Trade opened: 31 minutes ago (2025-10-28 04:15:07)
+Win / Loss: 44 / 22
+Winrate: 66.67%
+Expectancy (Ratio): -0.03 (-0.03)
+Avg. Duration: 0:42:04
+Best Performing: ZORA/USDT:USDT: 2.348 USDT (11.76%)
+Trading volume: 14130.145 USDT
+Profit factor: 0.91
+Max Drawdown: 0.79% (7.822 USDT)
+    from 2025-10-27 23:16:13 (5.683 USDT)
+    to 2025-10-28 02:22:27 (-2.139 USDT)
+Current Drawdown: 0.75% (7.503 USDT)
+    from 2025-10-27 23:16:13 (5.683 USDT)
+
+
+[10/28/2025 04:48] ywk3926
+I found a lot of false signals in my test, which caused the sl to trigger quickly.
+
+
+[10/28/2025 06:16] viking046433
+🚀 Binanceusdm (dry): Partially exited DIA/USDT:USDT (#14)
+Sub Profit: 41.78% (profit: 24.507 USDT / 422.017 ZAR)
+Cumulative Profit: 33.526 USDT / 577.311 ZAR
+Enter Tag: bear_break
+Exit Reason: partial_exit
+Direction: Short (5x)
+Amount: 454
+Open Rate: 0.6463 USDT
+Exit Rate: 0.5917 USDT
+Remaining: 78.332 USDT / 1348.869 ZAR
+
+
+[10/28/2025 06:17] viking046433
+ID L/S    Pair                      Since     Profit (ZAR)     # Entries
+--------  ------------------------  --------  ---------------  -----------
+9 S 5x    XRP/USDT:USDT             10 h ago  5.98% (204.53)   1/51
+12 S 5x   ZEN/USDT:USDT             4 h ago   12.11% (162.26)  1/51
+13 L 1x   币安人生/USDT:USDT        4 h ago   0.24% (8.17)     1/51
+14 S 5x   DIA/USDT:USDT             3 h ago   50.07% (675.02)  1/51
+15 S 5x   ADA/USDT:USDT             3 h ago   4.54% (107.21)   1/51
+--------  ------------------------  --------  ---------------  -----------
+Total                                         1157.18 ZAR
+Total     (incl. realized Profits)            1893.92 ZAR
+
+
+[10/28/2025 06:19] ywk3926
+Could you share your configuration? Thanks.
+
+
+[10/28/2025 11:25] ywk3926
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1432364978110730350/1432691856495476868/image.png?ex=69f33c44&is=69f1eac4&hm=9c75a061b5179f8c5d3043d5c788341c977b53f7437f3b888e12dcd8db72b9cb&
+
+
+[10/28/2025 11:32] 4v1234
+Is this after the new configuration you got ?
+
+
+[10/28/2025 11:33] ywk3926
+no, only old
+
+
+[10/28/2025 11:34] ywk3926
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1432364978110730350/1432693982130999306/config.json?ex=69f33e3f&is=69f1ecbf&hm=6a6cdfe1b38d6adc1aaf760575d29e56ed254c2e5243f27f03e19c2435221b7d&
+
+
+[10/28/2025 11:44] viking046433
+The tp levels ver is not good the signals produce huge runners but the taking profits needs to be trend reverse
+
+
+[10/28/2025 11:44] viking046433
+Or when it runs out
+
+
+[10/28/2025 12:17] xalt8851
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1432364978110730350/1432704875262775396/image.png?ex=69f34864&is=69f1f6e4&hm=18eae90219084b7193e93a854e0ecc9765c300ad6f0960ad6f978b94f83a01ea&
+
+{Reactions}
+🥸 🚀
+
+[10/28/2025 12:35] vasko123.
+StaticPairList.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1432364978110730350/1432709310600843324/image.png?ex=69f34c86&is=69f1fb06&hm=0c207005ead12c03ab824d96b26b91d94a9f19a91a5bab798fd46ace5e74b956&
+
+{Reactions}
+👍
+
+[10/29/2025 09:56] viking046433
+Daily Profit over the last 7 days:
+Day (count)      USDT          ZAR          Profit %
+---------------  ------------  -----------  ----------
+2025-10-29 (19)  109.843 USDT  1886.01 ZAR  11.72%
+2025-10-28 (31)  -37.994 USDT  -652.36 ZAR  -3.90%
+2025-10-27 (6)   -16.842 USDT  -289.17 ZAR  -1.70%
+2025-10-26 (0)   0 USDT        0.00 ZAR     0.00%
+2025-10-25 (0)   0 USDT        0.00 ZAR     0.00%
+2025-10-24 (0)   0 USDT        0.00 ZAR     0.00%
+2025-10-23 (0)   0 USDT        0.00 ZAR     0.00%
+
+
+[10/29/2025 09:56] viking046433
+Tp level results
+
+
+[10/29/2025 19:25] divarak
+AlexMarketStructure:
+Daily Profit over the last 7 days:
+Day (count)       USDT          USD         Profit %
+----------------  ------------  ----------  ----------
+2025-10-29 (191)  -23.87 USDT   -23.87 USD  -2.41%
+2025-10-28 (171)  -10.254 USDT  -10.25 USD  -1.03%
+2025-10-27 (0)    0 USDT        0.00 USD    0.00%
+2025-10-26 (0)    0 USDT        0.00 USD    0.00%
+2025-10-25 (0)    0 USDT        0.00 USD    0.00%
+2025-10-24 (0)    0 USDT        0.00 USD    0.00%
+2025-10-23 (0)    0 USDT        0.00 USD    0.00%
+
+ROI: Closed trades
+∙ -34.124 USDT (-0.95%) (-3.41 Σ%)
+∙ -34.124 USD
+ROI: All trades
+∙ -34.972 USDT (-0.95%) (-3.5 Σ%)
+∙ -34.972 USD
+Total Trade Count: 372
+Bot started: 2025-10-28 03:45:16
+First Trade opened: a day ago (2025-10-28 03:47:19)
+Latest Trade opened: 6 minutes ago (2025-10-29 19:17:57)
+Win / Loss: 199 / 163
+Winrate: 54.97%
+Expectancy (Ratio): -0.09 (-0.16)
+Avg. Duration: 1:00:03
+Best Performing: MAVIA/USDT:USDT: 5.052 USDT (25.30%)
+Trading volume: 31149.962 USDT
+Profit factor: 0.64
+Max Drawdown: 3.41% (34.124 USDT)
+    from 2025-10-28 03:51:31 (-0.653 USDT)
+    to 2025-10-29 19:17:10 (-34.124 USDT)
+Current Drawdown: 3.41% (34.124 USDT)
+    from 2025-10-28 03:51:31 (0 USDT)
+
+{Reactions}
+😱
+
+[10/29/2025 19:25] divarak
+2025-10-28 03:51:31 (-0.653 USDT)
+
+
+[01/25/2026 14:18] raul0909
+@Alex Crypto King
+
+
+==============================================================
+Exported 30 message(s)
+==============================================================

@@ -1,0 +1,5238 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / strategy-stuff
+==============================================================
+
+[05/14/2025 14:29] serialkiller15
+@everyone here are some strategys i did before for testing......
+
+
+[05/14/2025 14:30] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1372219437121536071/AlexSuperMultiV15.py?ex=69f36770&is=69f215f0&hm=5609c6863441194372459ead069d228af1f557301db4c1491bb302ade824c501&
+https://cdn.discordapp.com/attachments/1372215916380688426/1372219437503221780/AlexSuperMultiV16.py?ex=69f36770&is=69f215f0&hm=294f7fd0c43541167de0620e4119f146519ee9779b5d258462cf0b13d70aafbd&
+https://cdn.discordapp.com/attachments/1372215916380688426/1372219438111260712/AlexSuperMultiV17.py?ex=69f36770&is=69f215f0&hm=eb38f6b8323529cd7b33698f8c07c6549087d098f44852a117f75c9cf8c91e7e&
+
+
+[05/20/2025 07:57] serialkiller15
+
+
+{Forwarded Message}
+@Alex Crypto King 
+Here is a strategy that I am still testing
+I made some changes with the help of AI
+I believe it can help someone
+Sorry for the Portuguese language
+Still needs testing
+Originally sent: 05/19/2025 22:45
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1374295029903917108/SPOILER_config_old.json?ex=69f30b7c&is=69f1b9fc&hm=b7c4dd7dca8e75baeddac890cb7aa3a4cb7e47261340bc6d02886022e8e19d80&
+https://cdn.discordapp.com/attachments/1372215916380688426/1374295030231076874/freqtrade_1_2.py?ex=69f30b7c&is=69f1b9fc&hm=ad5f29b73c60fe8b0d46465cd0b4b41fa6efac7cf5e0f8071c4ccdac2db60342&
+https://cdn.discordapp.com/attachments/1372215916380688426/1374295030570942474/freqtrade_1_1.py?ex=69f30b7c&is=69f1b9fc&hm=ba60c0c15ffceea0fe6c4fb6062637121ab5f5aadb2100304c884c4d90a0c4c0&
+https://cdn.discordapp.com/attachments/1372215916380688426/1374295030902161459/enhanced-strategy.py?ex=69f30b7c&is=69f1b9fc&hm=6b7eff3545c0cf1c786a7c7fa944305547151961b8bc2fdffa3b7402f7debffe&
+https://cdn.discordapp.com/attachments/1372215916380688426/1374295031334178949/haFbmVVRPlev_Enhanced.py?ex=69f30b7c&is=69f1b9fc&hm=03d2da6a0fda18c3b654e8c4300b4482047e1ae73f5d154630d9a160977e3088&
+https://cdn.discordapp.com/attachments/1372215916380688426/1374295031644684319/backtested.txt?ex=69f30b7c&is=69f1b9fc&hm=92bc91b0550d0acb3cf81b03fe69b0790d9d1bfd11a7af4f05d73805f7ebec8a&
+
+
+
+[05/20/2025 10:53] ch1ck3n_t4c0s
+Did you see my dm on tg I sent you the rolling vvrp code 😉
+
+
+[05/20/2025 10:54] serialkiller15
+yes mate thanks need time to take a look on it!
+
+
+[05/20/2025 10:54] ch1ck3n_t4c0s
+I know time is the greatest currency of all isn't it.
+
+
+[05/20/2025 10:55] serialkiller15
+absolute yes and if you loosse some family members then time is everything and stay health! money doesnt meens nothing
+
+
+[05/20/2025 10:57] ch1ck3n_t4c0s
+Yes 110%. The new code should be fully backtestable over the length of the dataframe. If using shorter lengths look at where the bins expand and contract and develop flats.
+
+{Reactions}
+👍
+
+[05/20/2025 10:57] ch1ck3n_t4c0s
+Shorter lengths being 100-200 bar window ish.
+
+
+[05/20/2025 10:58] ch1ck3n_t4c0s
+Also have some indexing code for extrema that shows how it repaints
+
+
+[05/20/2025 10:59] ch1ck3n_t4c0s
+I'll see if I can't dig that up.
+
+
+[05/20/2025 10:59] ch1ck3n_t4c0s
+I was going to feed the kalman Filtered close into it... 😉
+
+{Reactions}
+👍
+
+[05/20/2025 11:11] ch1ck3n_t4c0s
+Ah I don't seem to have that version in my tg saved repo
+
+
+[05/20/2025 11:13] ch1ck3n_t4c0s
+```
+        dataframe['minh2'], dataframe['maxh2'] = calculate_minima_maxima(dataframe, self.h2)
+        dataframe['minh1'], dataframe['maxh1'] = calculate_minima_maxima(dataframe, self.h1)
+        dataframe['minh0'], dataframe['maxh0'] = calculate_minima_maxima(dataframe, self.h0)
+        dataframe['mincp'], dataframe['maxcp'] = calculate_minima_maxima(dataframe, self.cp)```
+
+
+[05/20/2025 11:14] ch1ck3n_t4c0s
+```
+def calculate_minima_maxima(df, window):
+    if df is None or df.empty:
+        return np.zeros(0), np.zeros(0)  # Return empty arrays instead of None
+
+    minima = np.zeros(len(df))
+    maxima = np.zeros(len(df))
+
+    for i in range(window, len(df)):  # Ensure index does not go out of bounds
+        window_data = df['ha_close'].iloc[i - window:i + 1]
+
+        if df['ha_close'].iloc[i] == window_data.min() and (window_data == df['ha_close'].iloc[i]).sum() == 1:
+            minima[i] = -window
+        if df['ha_close'].iloc[i] == window_data.max() and (window_data == df['ha_close'].iloc[i]).sum() == 1:
+            maxima[i] = window
+
+    return minima, maxima```
+
+{Reactions}
+👍
+
+[05/20/2025 11:59] serialkiller15
+will try it thanks!
+
+
+[05/20/2025 13:06] ch1ck3n_t4c0s
+That basically shows how extrema repaints 😉
+
+
+[05/20/2025 13:08] ch1ck3n_t4c0s
+It's a bit computational heavy the rolling vvrp and the indexing extrema.
+
+{Reactions}
+👍
+
+[05/29/2025 21:33] geze21
+guys
+
+
+[05/29/2025 21:33] geze21
+Is there anyone here who has used edge positioning?
+What do you think, is it useful?
+
+
+[05/30/2025 05:36] serialkiller15
+Hey didn't ever try it what's the idea behind that
+
+
+[06/06/2025 08:56] sera131
+its shit.
+
+
+[07/07/2025 19:18] viking046433
+ROI: Closed trades
+∙ 65.101 USDT (3.12%) (6.58 Σ%)
+∙ 1162.701 ZAR
+ROI: All trades
+∙ 65.59 USDT (2.41%) (6.63 Σ%)
+∙ 1171.441 ZAR
+Total Trade Count: 11
+Bot started: 2025-07-03 12:48:37
+First Trade opened: 4 days ago (2025-07-03 13:08:29)
+Latest Trade opened: 3 hours ago (2025-07-07 15:24:12)
+Win / Loss: 9 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 7.23 (100.00)
+Avg. Duration: 4:36:50
+Best Performing: ICNT/USDT:USDT: 16.099 USDT (3.94%)
+Trading volume: 4728.359 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from 2025-07-03 17:54:30 (6.407 USDT)
+    to 2025-07-03 17:54:30 (6.407 USDT)
+
+
+[07/07/2025 19:18] viking046433
+Personal strategy atm
+
+
+[08/24/2025 10:45] serialkiller15
+
+
+{Forwarded Message}
+Originally sent: 08/24/2025 10:34
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1409126460182233120/mmexport1756031637733.jpg?ex=69f332c8&is=69f1e148&hm=a7af28da52ce4ee278fdc716d518fa8c3a48c1e2be24cd2617118a5b5692dd87&
+https://cdn.discordapp.com/attachments/1372215916380688426/1409126460509130772/mmexport1756031633413.jpg?ex=69f332c8&is=69f1e148&hm=dc75d760aa48bc6a75bc1f50bf71efb4154f5208045907f2528c9e3956dd862c&
+
+
+
+[08/24/2025 10:52] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1409128320687411312/mk3_1.py?ex=69f33483&is=69f1e303&hm=707918698e3a20dd9b5f4e05ea17c424245f2116dfa4b9f21c59d47c387fea24&
+
+{Reactions}
+👍 (5)
+
+[08/24/2025 11:05] serialkiller15
+i think this would be a good aproach to add ml/rl into it?
+
+
+[08/24/2025 11:08] serialkiller15
+@neveerr did you hyperopt it? because when i do it its get better values at all
+
+
+[08/24/2025 11:17] neveerrk
+Yes, my strategy has many shortcomings. I hope you can optimize it because you are more professional.
+
+
+[08/24/2025 11:19] serialkiller15
+lets give it a try with ml/rl
+
+{Reactions}
+❤️ 👍🏻
+
+[08/24/2025 11:20] neveerrk
+Looking forward to your updates
+😙
+
+
+[08/24/2025 12:14] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1409148877923418172/image.png?ex=69f347a9&is=69f1f629&hm=46ef68fc2c0af35dd69ca4405c92ce393162b737917a30013037e8d8524b2e94&
+
+{Reactions}
+🚀 (3) 👍 (3)
+
+[08/24/2025 12:28] serialkiller15
+@neveerr the next beer comes from you
+
+
+[08/24/2025 12:29] neveerrk
+🎉 thx alex
+
+
+[08/24/2025 13:03] serialkiller15
+did your tests. integratet rl
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1409161143208906843/MK3AIV2.py?ex=69f35315&is=69f20195&hm=b75d0b370c2b13c65c69e5a284169e82ea0dc4bbc860ecd4ef1949b05919bea8&
+
+
+[08/24/2025 13:03] serialkiller15
+do your tests.....
+
+
+[08/24/2025 13:03] serialkiller15
+its untestetd, only backtest and hyperopt nothing more at this time
+
+{Reactions}
+👍
+
+[08/24/2025 13:05] mmnbm_79378
+Ok
+
+
+[08/24/2025 13:05] mmnbm_79378
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1409161818521337956/image.png?ex=69f353b6&is=69f20236&hm=8c610b633991fa02f12b959111493e790081d9e8edff634436dbbe7453f6c42b&
+
+
+[08/24/2025 13:06] serialkiller15
+its lookahead biased so the backtest results you can ........
+
+
+[08/24/2025 13:07] sang_tm
+A strategy with lookahead bias is useless...
+
+{Reactions}
+👍
+
+[08/24/2025 13:08] serialkiller15
+i will remove and fix it on time
+
+{Reactions}
+🚀
+
+[08/24/2025 13:16] darkreaper0756
+FFT+Wavelet Tranform+AI+Ml+RL New Trading Era
+
+{Reactions}
+👍 (3)
+
+[08/24/2025 13:19] darkreaper0756
+Test it, Kalman Filter
+
+
+[08/25/2025 05:23] yefx.
+MK3AIV2 Model training not run
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1409407730644422737/image.png?ex=69f38ffc&is=69f23e7c&hm=8b58ff5bec504034fc3f64e2b61466120d12356d8770e1caab6d6102e272a7fb&
+
+
+[08/25/2025 05:46] yefx.
+Runs normally after configuring  startup_candle_count = 2000
+
+
+[08/25/2025 05:47] yefx.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1409413963073978378/image.png?ex=69f395ca&is=69f2444a&hm=35b376b932ff7bb04bcd0c9fa2214ae5746fc41991f820f4b0bf73156400294a&
+
+
+[08/25/2025 05:50] yefx.
+add: startup_candle_count = 2000
+modfiy: initial_train_candles = 2000
+Running normally
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1409414656686030858/MK3AIV2.py?ex=69f3966f&is=69f244ef&hm=a38c8abe03d8bcefcade950104dfc55052f1e7b8297b9d3921ecdd81bf8c6543&
+
+{Reactions}
+🚀
+
+[08/25/2025 06:05] darkreaper0756
+After increasing the number of candles, perform a recursive analysis to see if any indicator is oscillating
+
+
+[08/25/2025 15:18] serialkiller15
+any results on mk3ai?
+
+
+[08/25/2025 15:18] serialkiller15
+i am fokused on alexnexusv8ai and the normal version so need mmy ressources for that
+
+
+[08/26/2025 01:25] yefx.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1409710198834073610/image.png?ex=69f3582e&is=69f206ae&hm=b71327db181bec799df4d066acb78e08c7680b36d20e8f02b82ead7c44168b48&
+
+{Reactions}
+🚀 (4)
+
+[08/26/2025 12:34] joaolool
+
+
+{Forwarded Message}
+Thanks for being a part of the FreqAI project! We are super excited to release GPTTraderV4 to the general discord 🙂
+
+# Why did we make a new version?
+We started GPTTrader, V2, and V3 with GPT-3.5/Orca, over 2 years ago. It was expensive, it only read news headlines from google, and it gpt-3.5 struggled with reasoning. Since then, LLMs have evolved quite a bit, with respect to how they should be prompted, their capabilities, and especially their costs have decreased! 
+
+### Enhancements
+
+1. **High Accuracy News/Twitter/Social Media Integration**
+   - Real-time Twitter/X post analysis from the X/twitter firehose.
+   - Real-time high coverage news ingestion.
+
+2. **Advanced Sentiment Weighting System**
+   - Distinguishes between REAL ACTIONS vs PREDICTIONS/OPINIONS
+   - External analyst sentiment treated as minority input (30% weight)
+   - Your own content analysis carries majority weight (70%)
+   - Content type multipliers (Real: 1.0x, Analytical: 0.5-0.7x, Speculative: 0.3x)
+
+3. **Markdown-Based Data Format**
+   - Clean, structured markdown formatting for all data
+   - Improved readability and parsing
+   - Better separation of news articles and social media posts
+
+4. **Sophisticated Content Analysis**
+   - Support for gpt-5
+   - Reporting voice weighting (Investigative > Analytical > Explanatory)
+   - Speculative phrase detection ("could", "might", "experts predict")
+   - ICO/presale promotion filtering
+   - Technical analysis opinion capping
+
+Maintaining the news/twitter index is not cheap - so if you decide to activate the AskNews API/Twitter firehose, you can [sponsor the project to gain access at a massive 84% discount!](https://github.com/sponsors/robcaulk)
+Originally sent: 08/26/2025 10:41
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1409878612684963901/GPTStrategyV4.py?ex=69f34c47&is=69f1fac7&hm=bcb6585dd4f3c9240370223cb36717b7574e05be94343f410b36635372bc98eb&
+https://cdn.discordapp.com/attachments/1372215916380688426/1409878613058388098/config_freqai_gpttrader_v4.json?ex=69f34c47&is=69f1fac7&hm=310b67e9cd86e2f6e28734b8dc0bb9991c2d74d781c5077c1d72effcd8ba4453&
+https://cdn.discordapp.com/attachments/1372215916380688426/1409878613381222470/GPTTRADER_V4_README.md?ex=69f34c47&is=69f1fac7&hm=58199184b2f3398ab865cec688ac289637757a4f140a6a48f549774abd9084c6&
+https://cdn.discordapp.com/attachments/1372215916380688426/1409878613704179807/GPTTraderV4.py?ex=69f34c47&is=69f1fac7&hm=ddee4f74957fd113710c06f5190b50c28432cb6a398d0f3254bfc1d397439457&
+
+
+
+[08/26/2025 16:53] viking046433
+@Alex Crypto King send me your iCloud email address want to send you invite to TestFlight
+
+
+[08/26/2025 16:53] viking046433
+The app is evolving
+
+
+[08/26/2025 16:53] serialkiller15
+Hi Sry mate I use android did not read the post that is for ios
+
+
+[08/26/2025 16:54] viking046433
+Oh frik ok cool man
+
+
+[08/26/2025 16:54] viking046433
+We will roll out to android also as some point
+
+
+[08/26/2025 16:57] serialkiller15
+Thanks Mate Sry looks amazing
+
+
+[08/26/2025 17:02] darkreaper0756
+Greetings to all, is anyone currently running gptTrader ?
+
+
+[08/26/2025 17:08] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1409947688182480966/Screenshot_20250827_010815_Telegram.jpg?ex=69f38c9c&is=69f23b1c&hm=b8513ca3f6c61e17cad6f47abd50fedfeeef4f4ba6f542be04ce41ce55fe3f3d&
+
+
+[08/26/2025 17:08] neveerrk
+I call it the "High-Frequency Swing Hunter
+
+
+[08/26/2025 17:08] neveerrk
+need more time to test
+
+
+[08/26/2025 17:09] serialkiller15
+Will start Tomorrow
+
+
+[08/26/2025 17:14] viking046433
+Looks interesting
+
+
+[08/26/2025 17:16] neveerrk
+The backtest results were a complete mess, but it's performing weirdly well in real trading. Let's see how it holds up in a few days. And I only used 100 lines of code
+
+
+[08/26/2025 17:16] neveerrk
+https://strat.ninja/overview.php?strategy=SCV7
+
+{Embed}
+https://strat.ninja/overview.php?strategy=SCV7
+SCV7 - Strategy - Freqtrade Strategy Ninja
+Backtesting Strategy: SCV7, Display average Performance! Download - Total Profit - Freqtrade Strategy Ninja
+
+
+[08/26/2025 17:34] divarak
+that strategy is private
+
+
+[08/26/2025 17:36] neveerrk
+Yes, I won't make it public for now. I need to do a few more days of testing. If the results stay good, I'll share it with everyone so we can all profit together.
+
+{Reactions}
+🚀 (2)
+
+[08/26/2025 17:37] divarak
+Understood, good luck on testing.
+
+
+[08/26/2025 17:37] neveerrk
+Thx
+
+
+[08/26/2025 17:55] serialkiller15
+@neveerr interesting You triggern me and my community to share but you dont do?You should Thing about it...and your mindset maybee you are wrong here..
+
+
+[08/26/2025 17:57] neveerrk
+Because it's not finished yet... so please wait
+
+
+[08/26/2025 18:16] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1409964683804282950/ScV7.py?ex=69f39c70&is=69f24af0&hm=69db87a25eef7da05943623db6ce60321b5e2bc1015abbfbd142586b4d886952&
+
+{Reactions}
+👍 (3)
+
+[08/26/2025 18:19] divarak
+Thank you, as soon I get back home will try it and send you feedback
+
+
+[08/26/2025 18:37] neveerrk
+I'm working on making it follow major market trends. The entry points are quite solid.
+
+
+[08/26/2025 18:39] serialkiller15
+What Happend wichtig mk3? I ask because it does Not make sense to Focus on different Strategies..
+
+
+[08/26/2025 21:25] shalossen
+I edited it a little using ai so instead of using asknews and twitter it only uses free apis like news api, gnews, reddit, and telegram. the last one is interesting since if you put the rights channels you get the important news 
+for the ai I use openai gpt 5 nano which is a cheap model. (plus you have 2.5 million tokens free daily if you accept to share this data)
+The only issue is the rate limit for free apis. 
+I don't think it will ever match the real version but isn't it almost a full ai agent
+
+{Reactions}
+👍
+
+[08/26/2025 21:26] darkreaper0756
+Nice
+
+
+[08/27/2025 00:42] sang_tm
+your strategy has bias (np.gradient), dont use it, you will end with lose a lot of money
+
+
+[08/27/2025 11:07] divarak
+About Mk3AIV2:
+
+
+[08/27/2025 11:07] divarak
+No trades made. Your starting balance was 1000 USDT, and your stake was unlimited.
+
+Backtested 2025-02-22 02:00:00 -> 2025-08-10 06:30:00 | Max open trades : 19
+                                                      STRATEGY SUMMARY                                                       
+┏━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Strategy ┃ Trades ┃ Avg Profit % ┃ Tot Profit USDT ┃ Tot Profit % ┃ Avg Duration ┃  Win  Draw  Loss  Win% ┃      Drawdown ┃
+┡━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│    MK3AI │      0 │         0.00 │           0.000 │          0.0 │         0:00 │    0     0     0     0 │ 0 USDT  0.00% │
+└──────────┴────────┴──────────────┴─────────────────┴──────────────┴──────────────┴────────────────────────┴───────────────┘
+
+
+[08/27/2025 13:53] joaolool
+Here is a strategy that I'm still testing
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410261020617998451/AlexBandSniperAI_gpt.py?ex=69f35eec&is=69f20d6c&hm=a7ca36fd4a83a07e47c2a1a9f5344b915bc90d9776409c49289f29a0b4916578&
+https://cdn.discordapp.com/attachments/1372215916380688426/1410261020898754570/AlexBandSniperAI6o.py?ex=69f35eec&is=69f20d6c&hm=84ae876154f05a73f28903ff85d3c0add55bff0684046fa3741aed6a69daf1f1&
+https://cdn.discordapp.com/attachments/1372215916380688426/1410261021150417068/AlexBandSniperAIEnhanced.py?ex=69f35eec&is=69f20d6c&hm=05e22910747bf03cfa58427ccbb7c1caf64c2ee652a7b5581f90c15db1128e6b&
+https://cdn.discordapp.com/attachments/1372215916380688426/1410261021515579464/TankAiRevivalFutures16.py?ex=69f35eec&is=69f20d6c&hm=a68c0be5277b83cb226856c050e5adacf855d4f9072d9405ae34e6ddafc3f5f2&
+
+
+[08/27/2025 13:55] divarak
+Mmmm.. This strategy requires some AI model?
+
+
+[08/27/2025 14:00] joaolool
+I believe that "trankai" yes 
+#🚀tankai-revival🚀 
+The others I believe not but they were improvements with AI
+
+
+[08/27/2025 14:00] divarak
+Will try it, thanks
+
+
+[08/27/2025 15:25] serialkiller15
+@joaolool Nixe which one should i take a deeper Look WhatsApp Arena the dogferences
+
+{Reactions}
+♥️
+
+[08/27/2025 17:36] serialkiller15
+Take
+
+
+[08/27/2025 17:37] serialkiller15
+sry got a new smarthpone i hate it, which of your strategies have potential to take a deeper look into it?
+
+
+[08/27/2025 17:38] serialkiller15
+or need optimazion?
+
+
+[08/27/2025 17:53] .7thdragon
+it screwed the logic 🙂
+
+{Reactions}
+👍
+
+[08/27/2025 17:59] serialkiller15
+?
+
+
+[08/27/2025 18:15] joaolool
+I have the impression that at times it loses important parts of the code or summarizes it too much.
+
+{Reactions}
+👍
+
+[08/27/2025 18:25] joaolool
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410329356407930900/improved_strategy.py?ex=69f2f5d1&is=69f1a451&hm=801c5c96e0cafa5ec58b0d6afaa3599e95e22133dc7a7a28a4c8bf6f29e73859&
+
+
+[08/27/2025 18:28] joaolool
+Other cool things I found was this channel that has a bot that automatically gets strategies from Git and has its own backtesting system, but I still don't fully understand it.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410330199391735908/Screenshot_20250827_152609_Discord.jpg?ex=69f2f69a&is=69f1a51a&hm=b7087e51cd30caa8b9541cf089deab3bc239c2c5f1c69004841153394e94f8c0&
+https://cdn.discordapp.com/attachments/1372215916380688426/1410330199819685949/Screenshot_20250827_152600_Discord.jpg?ex=69f2f69a&is=69f1a51a&hm=aacee243bed853c2a805dd9be760b397681e523eafa2ec21cf012181d27a77ce&
+
+
+[08/27/2025 18:48] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410335173773627464/ScV6.py?ex=69f2fb3c&is=69f1a9bc&hm=baec497e26bf823a5651dbb6ed6e5ba9ce676434717f6a367dd2bdcb3867bbcb&
+
+
+[08/27/2025 18:48] neveerrk
+More better
+
+
+[08/27/2025 18:49] viking046433
+Results?
+
+
+[08/27/2025 18:50] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410335600803975271/Screenshot_20250828_024955_Telegram.jpg?ex=69f2fba2&is=69f1aa22&hm=1adb0acee7b7a20abf56d31ffd67b59bef9dfe556553c2bb9f7466076a4d99d9&
+
+{Reactions}
+♥️ (2) 🔥 (2)
+
+[08/27/2025 18:50] viking046433
+Let it run
+
+
+[08/28/2025 05:45] .oliver6
+I didn't get any results when backtesting AlexBandSniperAIEnhanced
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410500478281715752/WechatIMG1704.jpg?ex=69f3952f&is=69f243af&hm=5bef031d20021a77c51eca4c2778e9794d9296dc705ad210cd42a121e9d4f587&
+https://cdn.discordapp.com/attachments/1372215916380688426/1410500478760124487/WechatIMG1705.jpg?ex=69f3952f&is=69f243af&hm=93bbcfa854b301d5ced09e2c1134433a2dc5b448551835e01ccff6e73441febe&
+
+
+[08/28/2025 05:45] .oliver6
+this one neither. weird🤷
+
+
+[08/28/2025 08:24] xf0x0f
+i find this strategy quite interesting and ive had it running in dryrun for a while with 3 different configs for spot and future trading, where it has actually performed quite positively. however, its very risky due to the lack of stoploss and similar features. even in live trading, it has shown positive results, but as mentioned, it still lacks stoploss, short for futures, etc. sometimes the strategy just sits and waits until strongly negative open trades (sometimes even -10%) return to break even or slightly positive territory. i also think i may have the strategy running overfitted by now as ive been hyper-optimizing it daily. i received the strategy privately, but ive asked and i can share it with you so we can all benefit from it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410540536007360512/Bildschirmfoto_2025-08-28_um_10.24.18.png?ex=69f311be&is=69f1c03e&hm=f6299bce41f89ad18cd89deddbb9eda8f1e42367caa1d240cace4ae08740e0c6&
+
+{Reactions}
+🚀 (5)
+
+[08/28/2025 08:35] boooooon
+Great results. We'll test it also. Can you share your `config.json`?
+
+
+[08/28/2025 08:35] neveerrk
+Good job 👍
+
+
+[08/28/2025 08:37] darkreaper0756
+Thank you for sharing your strategy with us🥃
+
+{Reactions}
+👍
+
+[08/28/2025 08:38] serialkiller15
+Thanks, lets take a look
+
+
+[08/28/2025 08:38] xf0x0f
+I will in some hours
+
+{Reactions}
+❤️
+
+[08/28/2025 08:42] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410544943897772072/mmexport1756370511098.jpg?ex=69f315d9&is=69f1c459&hm=666b9154613c016af71831d4d68e7026476ba1b2f8e2e9f9e989597e2ff966fa&
+
+
+[08/28/2025 08:42] viking046433
+Tnx for the share mate
+
+
+[08/28/2025 08:42] neveerrk
+Just ignore it?
+
+
+[08/28/2025 08:42] viking046433
+Works better on volume pairs?
+
+
+[08/28/2025 08:43] viking046433
+I see the average trading time is 4 hours not to bad at all I think a 12% stop loss would be nice
+
+
+[08/28/2025 09:39] viking046433
+Do you have a fixed version?
+
+
+[08/28/2025 09:40] xf0x0f
+where i fixed stoploss and short feature?
+
+
+[08/28/2025 09:42] viking046433
+It’s not running there was one ☝️ issue with version issue and then there is empty dataframes
+
+
+[08/28/2025 09:43] xf0x0f
+one moment please. i shared the one received from this mate, but perhaps i made a change on it. i will diff now
+
+
+[08/28/2025 09:44] viking046433
+Fanks
+
+
+[08/28/2025 09:48] xf0x0f
+youre right. i changed some of the code. one moment
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410561666411921520/Bildschirmfoto_2025-08-28_um_11.46.41.png?ex=69f3256c&is=69f1d3ec&hm=c6bdaf337631fe7afe7ca46f580427182c075a6e92c44a9a243825605638532c&
+
+
+[08/28/2025 09:49] xf0x0f
+sry, for that
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410561815993126932/falconTrader.py?ex=69f3258f&is=69f1d40f&hm=bed875169bb23e50377922c196b6228a8cb84a36000bcbac573f1400ca53de46&
+
+
+[08/28/2025 09:49] viking046433
+No issue Tnx mate
+
+
+[08/28/2025 09:50] xf0x0f
+i removed the strat above. please also change the informative pairs for your needs
+
+
+[08/28/2025 09:50] viking046433
+I see a lot of nostalgia singanals in the re
+
+
+[08/28/2025 10:26] viking046433
+still an issue i fixed it here you go
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410571229403938968/falconTrader.py?ex=69f32e54&is=69f1dcd4&hm=4540f9ec7e755c2c6c222387d0f1a8fcced1fdb0681771f5b94d19f14e228d50&
+
+
+[08/28/2025 10:26] xf0x0f
+really? copied it from my server 😕
+
+
+[08/28/2025 10:38] viking046433
+There was empty candle data
+
+
+[08/28/2025 10:38] xf0x0f
+ouch,... thanks for fixing
+
+
+[08/28/2025 10:38] viking046433
+Awesome
+
+
+[08/28/2025 10:39] xf0x0f
+what do you mean?
+
+
+[08/28/2025 10:39] viking046433
+I mean cool no worries
+
+
+[08/28/2025 10:39] xf0x0f
+ok 😉
+
+
+[08/28/2025 11:05] viking046433
+Do you have position adjustment on?
+
+
+[08/28/2025 11:09] xf0x0f
+no, theres no position adjustment set. one moment. i get the config now
+
+
+[08/28/2025 11:15] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410583443716440074/config_falcontrader.json?ex=69f339b4&is=69f1e834&hm=cb0ab1fe0b1bd79a7292647f8f3195fbd3e3a80eae32692f38bd8b0365b7e6ee&
+https://cdn.discordapp.com/attachments/1372215916380688426/1410583444181749780/Bildschirmfoto_2025-08-28_um_13.13.45.png?ex=69f339b4&is=69f1e834&hm=5f8efa92470cec72f4adef655beb3de53e196347738fd0e402ac6831c49b8987&
+
+{Reactions}
+👍 (2)
+
+[08/29/2025 06:04] yefx.
+Fix version, uses parallel training (to be verified), since it's a divergent strategy, the trading signals will be lower. Needs extensive testing.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410867760480653312/MK3AIV2.py?ex=69f399be&is=69f2483e&hm=bfc615729062e3810fc94f72bd75b4e3a1b22a881d0819ebf57b4adefbd10439&
+
+
+[08/29/2025 06:05] yefx.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410868006732562493/image.png?ex=69f399f9&is=69f24879&hm=f87f25c693961fc03010bb7de1c5f801f012e3fedb366af80d0d52049362cd0d&
+
+{Reactions}
+👍
+
+[08/29/2025 08:10] viking046433
+Share your config with us please dude man
+
+
+[08/29/2025 08:19] yefx.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410901691179733093/message.txt?ex=69f31098&is=69f1bf18&hm=251c5a28c4b9cf36826f054ed60ec3a58c3539214644e704f2ae79ae3414c0a8&
+
+{Reactions}
+🚀
+
+[08/29/2025 08:19] yefx.
+config
+
+
+[08/29/2025 09:20] yefx.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410916972778094633/image.png?ex=69f31ed3&is=69f1cd53&hm=e5cb17a45e852e3c230f481d1f749b440ebcf5806a29e9275d2e9f1f424842f4&
+
+{Reactions}
+🚀
+
+[08/29/2025 09:29] viking046433
+The start says AI does it use learning
+
+
+[08/29/2025 09:31] viking046433
+Because I don’t see any freqai settings in the config
+
+
+[08/29/2025 09:35] yefx.
+Hey friend, the strategy does not rely on freqai
+
+{Reactions}
+🚀 (2)
+
+[08/29/2025 10:53] serialkiller15
+thanks mate whats new in ther?
+
+
+[08/29/2025 11:11] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410944970667593798/image.png?ex=69f338e7&is=69f1e767&hm=d426f9add06ad619cb20959ce4f407fe46d71e7b72320b4668dfdb65edf069c8&
+
+{Reactions}
+👍 (2)
+
+[08/29/2025 11:14] neveerrk
+I mainly want to predict the future market in advance by looking at the dead cross of KDJ just before the MACD golden cross
+
+
+[08/29/2025 11:17] neveerrk
+I'll try it for a few days and post the results later.
+
+
+[08/29/2025 11:18] serialkiller15
+Good Works thanks mate!
+
+
+[08/29/2025 11:35] serialkiller15
+will also do some tests on it....
+
+{Reactions}
+👍
+
+[08/29/2025 11:36] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1410951269744508958/MkV4.py?ex=69f33ec4&is=69f1ed44&hm=5d26f70848ddefd10fc22b2d79aae2f569f6f069f9b741fee5896d82f3fde481&
+
+
+[08/29/2025 11:37] serialkiller15
+?
+
+
+[08/29/2025 11:38] neveerrk
+There are some parameter errors and some false signals are filtered out
+
+
+[08/29/2025 11:38] neveerrk
+👀
+
+
+[08/29/2025 11:38] serialkiller15
+so MkV4 is the final?
+
+
+[08/29/2025 11:38] neveerrk
+yes
+
+
+[08/29/2025 11:39] serialkiller15
+for testing, i saw on MKv5 some sry stupid signals hehe
+
+
+[08/29/2025 11:45] neveerrk
+You are right, but the exit signal will prevent a large drawdown caused by opening the wrong position. I am trying to optimize it.
+
+
+[08/29/2025 11:46] serialkiller15
+yes absoulte, but would maybee better to add additional entrys into it let me check
+
+
+[08/30/2025 02:48] neveerrk
+Can you teach me how to determine if the MACD is about to cross? MACD has a lag and I can't think of a way to determine it yet.
+
+
+[08/30/2025 02:49] neveerrk
+I want to filter out stupid signals
+
+
+[08/30/2025 02:50] neveerrk
+ROI: Closed trades
+∙ 1.557 USDT (0.03%) (0.16 Σ%)
+∙ 1.557 USD
+ROI: All trades
+∙ 8.704 USDT (0.08%) (0.88 Σ%)
+∙ 8.704 USD
+Total Trade Count: 131
+Bot started: 2025-08-29 17:17:38
+First Trade opened: 9 hours ago (2025-08-29 17:20:04)
+Latest Trade opened: 34 minutes ago (2025-08-30 02:15:10)
+Win / Loss: 41 / 87
+Winrate: 32.03%
+Expectancy (Ratio): 0.01 (0.01)
+Avg. Duration: 0:28:24
+Best Performing: LPT/USDT:USDT: 12.042 USDT (4.02%)
+Trading volume: 120830.324 USDT
+Profit factor: 1.01
+Max Drawdown: 6.04% (61.366 USDT)
+    from 2025-08-29 22:15:16 (26.135 USDT)
+    to 2025-08-30 01:42:47 (-35.231 USDT)
+Current Drawdown: 2.42% (24.579 USDT)
+    from 2025-08-29 22:15:16 (26.135 USDT)
+
+
+[08/30/2025 09:44] viking046433
+Does it matter you first want confirmation anyway.
+
+
+[08/30/2025 09:54] neveerrk
+Predicting MACD Crossovers
+
+
+[08/30/2025 10:44] neveerrk
+Is this an original version?
+
+
+[08/30/2025 12:13] darkreaper0756
+Hi, Has anyone tried GptTrader?
+
+
+[08/30/2025 12:13] neveerrk
+Nope
+
+
+[08/30/2025 12:14] xf0x0f
+Not yet. Im optimizing falconTrader since some days
+
+
+[08/30/2025 12:15] viking046433
+Definitely don’t use volume pairs also don’t use trade adjustment
+
+
+[08/30/2025 12:15] viking046433
+Spectacular fail so far
+
+
+[08/30/2025 12:15] neveerrk
+So is there a better version?
+
+
+[08/30/2025 12:17] xf0x0f
+Not yet,… backtesting looks good every time after optimizing but dryrun tells the (bad) truth
+
+{Reactions}
+👍
+
+[08/30/2025 12:27] viking046433
+What your dry run look like
+
+
+[08/30/2025 12:54] erbosnio_17282
+Backtesting is a waste of time
+
+
+[08/30/2025 12:54] erbosnio_17282
+It never shows the reality
+
+
+[08/30/2025 12:55] erbosnio_17282
+I want to, but not enough power on my old pc
+
+
+[08/30/2025 12:56] erbosnio_17282
+Please the ones who has tested it update here how it is going
+
+
+[08/30/2025 13:05] xf0x0f
+Will send later when im at pc
+
+
+[08/30/2025 13:07] xf0x0f
+Thats clear that its not reality, but you can find some indicators with it
+
+
+[08/31/2025 02:50] joaolool
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1411543639016079410/AlexBandSniperV81AIIntegrated.py?ex=69f36c34&is=69f21ab4&hm=2b8b4ce74017568d9f09b5d70be349b562e647e453cc41e0c19ee0ec7f253435&
+
+{Reactions}
+👍 (3)
+
+[08/31/2025 02:51] joaolool
+Strategy improved with Claude may help someone, still in testing
+
+{Reactions}
+🚀
+
+[08/31/2025 09:31] dennyhui8023
+It is strongly recommended to set process_only_new_candlesto ​​true​​. Otherwise, indicators/machine learning models will perform ​​full recalculation​​ (including Wavelet/FFT and rolling.apply) in every iteration, ​​blocking the main event loop​​. This will cause ​​significant delays​​ in market data updates and P&L refresh, potentially ​​impacting exit strategies​​
+
+{Reactions}
+🔥
+
+[08/31/2025 09:32] dennyhui8023
+Based on my local testing observations, I had to set process_only_new_candles = True to resolve performance issues.
+
+
+[08/31/2025 09:33] serialkiller15
+good input! thanks
+
+
+[08/31/2025 09:57] dennyhui8023
+You're welcome. And thanks @joaolool for sharing this strategy — it's excellent
+
+{Reactions}
+👍 💯
+
+[08/31/2025 12:16] serialkiller15
+@joaolool the entrys are relay nice, but have to look on the exits in there....
+
+{Reactions}
+♥️
+
+[08/31/2025 15:50] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1411739851233169519/image.png?ex=69f37a31&is=69f228b1&hm=ec39da782fdcbae9dbedbd63990bc2b5b698b97100ca84d7541bbced274522fa&
+
+
+[08/31/2025 15:58] neveerrk
+nice signal
+
+
+[08/31/2025 15:59] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1411742271820267571/image.png?ex=69f37c72&is=69f22af2&hm=345a75fb6f0fff21d95c7b3f8dec703a85607aaad35975b38a5587ab2b137c9c&
+
+
+[08/31/2025 16:01] viking046433
+Ya
+
+
+[08/31/2025 16:01] viking046433
+That is pretty sweet
+
+
+[08/31/2025 16:01] viking046433
+Now choose the correct pairs
+
+
+[08/31/2025 16:02] viking046433
+Share the populate entry signal
+
+
+[08/31/2025 16:02] viking046433
+Let’s test
+
+
+[08/31/2025 16:03] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1411743147251466240/RSV1.py?ex=69f37d43&is=69f22bc3&hm=65a345fdcc1adc77c1b4c3d40ff77e82489ae545e9b5648b621eeab88e0727e9&
+
+
+[08/31/2025 16:03] neveerrk
+Try 15m and 1h
+
+
+[08/31/2025 16:12] viking046433
+Tnx will do
+
+
+[08/31/2025 16:13] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1411745638734893056/image.png?ex=69f37f95&is=69f22e15&hm=d44562fe0b54c6f639cbece374e99a9d89530ddfef45d8d8acbf40cc8ab8cba5&
+
+
+[08/31/2025 16:13] neveerrk
+very nice buddy
+
+{Reactions}
+🚀
+
+[08/31/2025 16:15] viking046433
+Will post findings
+
+
+[09/01/2025 05:01] viking046433
+Morning how this going for ya ?
+
+
+[09/01/2025 05:46] neveerrk
+Need more time
+
+
+[09/01/2025 06:20] viking046433
+Sure
+
+
+[09/01/2025 08:00] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1411984120585654284/Screenshot_20250901_160018_Telegram.jpg?ex=69f30c2f&is=69f1baaf&hm=e0fb4095f4b5096e68dca22a104085bad77f60fa7644c6ccc7adaaed3db97de8&
+
+
+[09/01/2025 08:00] neveerrk
+Not bad
+
+
+[09/01/2025 08:01] neveerrk
+1h
+
+
+[09/01/2025 08:10] serialkiller15
+Rsv1?
+
+
+[09/01/2025 08:10] neveerrk
+Yep
+
+
+[09/01/2025 08:12] neveerrk
+There is a duplicate opening function in it. You can delete it manually.
+
+
+[09/01/2025 08:13] neveerrk
+Use 1h K line and static
+
+{Reactions}
+🚀
+
+[09/01/2025 08:38] viking046433
+1h timeframe?
+
+
+[09/01/2025 08:38] neveerrk
+Ye
+
+
+[09/01/2025 09:02] serialkiller15
+MK4...
+
+
+[09/01/2025 09:02] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1411999560489893898/image.png?ex=69f31a90&is=69f1c910&hm=71e920318a96f1ebce4fb52341a98bf2a10486bd69f06216b2d0ce958356969e&
+
+
+[09/01/2025 09:02] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1411999740589248562/Screenshot_20250901_170238_Telegram.jpg?ex=69f31abb&is=69f1c93b&hm=0ee3b28bcf0b31d0b7e171a21aa0674022541d364840c2d79f850a374c4d66c1&
+
+
+[09/01/2025 09:02] neveerrk
+Mk4 1h
+
+
+[09/01/2025 09:03] neveerrk
+Not good
+
+
+[09/01/2025 09:10] serialkiller15
+yep
+
+
+[09/02/2025 12:00] viking046433
+Yo what is your findings with this so far?
+
+
+[09/02/2025 12:01] neveerrk
+30 minutes  better
+
+
+[09/02/2025 12:01] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1412407072342933607/Screenshot_20250902_200106_Telegram.jpg?ex=69f34497&is=69f1f317&hm=1f294a0314dc31cfde3c3b5d585c2dcd0a6c8434264a1822b80ebd24b1904d4b&
+
+
+[09/02/2025 12:01] neveerrk
+Waiting most of the time
+
+
+[09/02/2025 12:03] neveerrk
+Very accurate, I can only say
+
+
+[09/02/2025 13:05] viking046433
+Where does the signal look the best? Volume pairs or static to see if we can get a good pairing
+
+
+[09/02/2025 13:06] viking046433
+I want to spin one up now
+
+
+[09/02/2025 13:12] neveerrk
+Mine is static
+
+
+[09/02/2025 13:29] viking046433
+Does it need volatility?
+
+
+[09/02/2025 13:30] neveerrk
+Yep
+
+
+[09/02/2025 13:41] viking046433
+1h best?
+
+
+[09/02/2025 13:41] neveerrk
+30m
+
+
+[09/02/2025 15:23] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1412458033841438914/Screenshot_20250902_232335_Telegram.jpg?ex=69f3740d&is=69f2228d&hm=2515369bb635f1bc5857748d4a66007123aaf4b274f2f71d8f5af4ce99659728&
+
+{Reactions}
+👍
+
+[09/03/2025 04:38] viking046433
+My bot when off when I put it back on 🚀 Binanceusdm (dry): Exiting AIOT/USDT:USDT (#1)
+Unrealized Profit: 82.68% (profit: 272.876 USDT / 4838.085 ZAR)
+Exit Reason: roi
+Direction: Long (5x)
+Amount: 1241
+Open Rate: 1.3291 USDT
+Current Rate: 1.5483 USDT
+Exit Rate: 1.5483 USDT
+Duration: 13:33:03 (813.0 min)
+
+
+[09/03/2025 04:39] viking046433
+It might be a good idea to look it wide roi settings lol 😂
+
+
+[09/03/2025 04:39] xf0x0f
+Which strat?
+
+
+[09/03/2025 04:40] viking046433
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1412658442874916935/image.png?ex=69f385f2&is=69f23472&hm=1b3ad62b921c5fe6484868074e014b9801536f05ab8ab3a6534e9959b45aae45&
+
+{Reactions}
+👍
+
+[09/03/2025 04:40] viking046433
+RSV1
+
+
+[09/03/2025 05:07] xf0x0f
+which coinlist are u using? which exchange?
+
+
+[09/03/2025 05:48] viking046433
+Volume pairs
+
+
+[09/03/2025 05:48] viking046433
+Binance
+
+
+[09/03/2025 05:51] viking046433
+Falcon Strat what pairs do you use
+
+
+[09/03/2025 10:40] xf0x0f
+Will share later
+
+
+[09/03/2025 11:32] neveerrk
+Enjoy it bro, my results are also very good
+
+{Reactions}
+👍 (2)
+
+[09/03/2025 14:28] serialkiller15
+@neveerr its a realy good strategy, thanks for sharing it here
+
+
+[09/03/2025 15:02] neveerrk
+🫂
+
+{Reactions}
+👍
+
+[09/03/2025 15:02] serialkiller15
+will take a deeper look tomorrow after finishing v5
+
+
+[09/04/2025 06:43] serialkiller15
+@neveerr
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1413051713493012570/image.png?ex=69f2f9f5&is=69f1a875&hm=c9199085bfb9fcfa7af63cd265d3ce519d7cfead6aa4f06e026c20b8140c9f5c&
+
+
+[09/04/2025 06:45] neveerrk
+Does not meet confirm trade entry requirements
+
+
+[09/04/2025 06:45] neveerrk
+normal phenomenon
+
+
+[09/04/2025 06:45] serialkiller15
+OK I SEE thanks
+
+
+[09/04/2025 06:47] serialkiller15
+lets take a deeper look, the exits.... i would do another way let me check it!
+
+{Reactions}
+👍
+
+[09/04/2025 07:41] viking046433
+Try running RSV1 on 5m lol 😂 disaster
+
+
+[09/04/2025 07:41] viking046433
+I’m now running it on 1h let’s see
+
+
+[09/04/2025 07:42] neveerrk
+5m and 15m are often accompanied by more false signals
+
+{Reactions}
+🚀
+
+[09/05/2025 10:51] neveerrk
+Does anyone use CPP for quantitative trading?
+
+
+[09/05/2025 10:53] boooooon
+Rust is better
+
+
+[09/05/2025 10:53] boooooon
+we are thinking about Rust/Go
+
+
+[09/05/2025 10:55] neveerrk
+So is there an open source platform for cryptocurrency quantification based on Rust? I don’t know much about this aspect.
+
+
+[09/05/2025 12:05] boooooon
+this project looks very interesting. 
+https://github.com/nautechsystems/nautilus_trader
+The core logic is written in Rust (for performance), but the API for creating strategies is written in Python. That is, you most likely won't even have to write anything in Rust.
+f.e.  https://github.com/nautechsystems/nautilus_trader/blob/develop/nautilus_trader/examples/strategies/ema_cross_bracket.py#L81
+
+{Reactions}
+👍 (2)
+
+[09/05/2025 12:52] darkreaper0756
+@everyone Hi, does anyone know of a source where I can see a strategy that uses RL? Or if anyone has any RL strategy?. I'm stuck on predictions and indicators. I was thinking of making a strategy without TA indicators. What do you think, is such a strategy viable?
+
+
+[09/05/2025 12:56] serialkiller15
+let me see on my files i think there i get one...
+
+
+[09/05/2025 14:39] erbosnio_17282
+I did one two years ago, but not using freqtrade
+
+
+[09/05/2025 14:40] erbosnio_17282
+I have to check it
+
+
+[09/05/2025 17:38] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1413579172265201715/ADAptive.py?ex=69f393b1&is=69f24231&hm=f9f8fe460b7e2a6670afb34c85e5ce6237017dc0eaf69af2a464e2a3d3296c3b&
+https://cdn.discordapp.com/attachments/1372215916380688426/1413579172537696286/config_14.json?ex=69f393b1&is=69f24231&hm=6dd6c67243abba6dded003682d2aaf4ab0be83e4f0368633ef9cbda72df044ae&
+
+{Reactions}
+👍
+
+[09/05/2025 18:11] serialkiller15
+What's that I am on mobile..
+
+
+[09/05/2025 18:11] serialkiller15
+@DarkReaper i was thinking you go sleeping?
+
+
+[09/05/2025 18:15] darkreaper0756
+After this 😂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1413588410815348736/IMG_4051.jpg?ex=69f39c4c&is=69f24acc&hm=90fa21cd70ab4e6a44a596e29ba71e5a81a49c7858c23d56350e61d69d7b7e3e&
+
+
+[09/05/2025 18:21] serialkiller15
+Enjoy mate
+
+{Reactions}
+👍
+
+[09/05/2025 18:21] darkreaper0756
+Thanks!
+
+
+[09/05/2025 18:33] serialkiller15
+Shut of the laptop and enjoy the beer and the weekend
+
+{Reactions}
+👍
+
+[09/06/2025 12:46] neveerrk
+what do yu think
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1413868078613135380/image.png?ex=69f34f42&is=69f1fdc2&hm=a8c944f9b94f6b3ada67274069011f52a1db24105a1f8094cc9867a6526188c6&
+
+{Reactions}
+👍🏻 (3)
+
+[09/06/2025 12:47] neveerrk
+band
+
+
+[09/06/2025 12:48] viking046433
+New?
+
+
+[09/06/2025 12:49] neveerrk
+yep used  optuna
+
+{Reactions}
+🚀 (2)
+
+[09/07/2025 10:06] .oliver6
+I'm wondering why it didn't triggered the stoploss..
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1414190089520676975/Screenshot_2025-09-07_at_6.04.03_PM.png?ex=69f329a7&is=69f1d827&hm=7023fe822dd6f7e5fbe9068abad481abfcb6980fbf33bb9be1f450f34f15e49f&
+
+
+[09/07/2025 10:15] kyrylodudnyk
+Maybe exit_profit_only is set to true?
+
+
+[09/07/2025 10:20] .oliver6
+I just checked and it's set to false
+
+
+[09/07/2025 10:20] serialkiller15
+Which Strategy?
+
+
+[09/07/2025 10:20] serialkiller15
+Might be helpful
+
+
+[09/07/2025 10:21] serialkiller15
+Why you have entrys on almost every candle
+
+{Reactions}
+😂 (3)
+
+[09/07/2025 10:34] .oliver6
+Oh I see what the problem is, the custom stoploss has override the stoploss
+
+{Reactions}
+🔥
+
+[09/07/2025 10:40] serialkiller15
+then its clear
+
+
+[09/07/2025 11:56] serialkiller15
+nice signals, would you like to share it, because my integration to band sniper is good but rsvv1...not finished the signals are not the best...
+
+
+[09/07/2025 17:31] neveerrk
+It will take a few days. I don't have enough data yet. I'm not sure if this is feasible. If it works well, I'll be happy to share it.
+
+
+[09/07/2025 17:41] viking046433
+RSV1 so far ROI: Closed trades
+∙ -35.901 USDT (-1.46%) (-3.63 Σ%)
+∙ -631.498 ZAR
+ROI: All trades
+∙ -39.751 USDT (-1.43%) (-4.02 Σ%)
+∙ -699.224 ZAR
+Total Trade Count: 8
+Bot started: 2025-09-04 06:46:26
+First Trade opened: 3 days ago (2025-09-04 07:02:20)
+Latest Trade opened: 2 hours ago (2025-09-07 15:02:18)
+Win / Loss: 5 / 2
+Winrate: 71.43%
+Expectancy (Ratio): -5.13 (-0.12)
+Avg. Duration: 3:35:32
+Best Performing: MEME/USDT:USDT: 13.307 USDT (3.98%)
+Trading volume: 24526.032 USDT
+Profit factor: 0.59
+Max Drawdown: 8.43% (86.721 USDT)
+    from 2025-09-04 11:11:34 (38.618 USDT)
+    to 2025-09-04 15:11:39 (-48.103 USDT)
+Current Drawdown: 7.24% (74.519 USDT)
+    from 2025-09-04 11:11:34 (38.618 USDT)
+
+
+[09/07/2025 19:22] neveerrk
+ROI: Closed trades
+∙ -1.686 USDT (0.04%) (-1.09 Σ%)
+∙ -1.686 USD
+ROI: All trades
+∙ -2.964 USDT (-0.03%) (-1.92 Σ%)
+∙ -2.964 USD
+Total Trade Count: 78
+Bot started: 2025-09-01 08:23:30
+First Trade opened: 5 days ago (2025-09-01 20:01:03)
+Latest Trade opened: 21 minutes ago (2025-09-07 19:01:06)
+Win / Loss: 50 / 22
+Winrate: 69.44%
+Expectancy (Ratio): -0.02 (-0.01)
+Avg. Duration: 4:34:46
+Best Performing: ETHFI/USDT:USDT: 4.63 USDT (5.72%)
+Trading volume: 19542.846 USDT
+Profit factor: 0.97
+Max Drawdown: 15.95% (27.148 USDT)
+    from 2025-09-04 05:15:12 (15.527 USDT)
+    to 2025-09-05 13:12:28 (-11.621 USDT)
+Current Drawdown: 10.11% (17.213 USDT)
+    from 2025-09-04 05:15:12 (15.527 USDT)
+
+
+[09/07/2025 19:22] neveerrk
+Live
+
+
+[09/07/2025 19:24] xf0x0f
+ROI: Closed trades
+∙ 400.024 USDC (0.89%) (3.8 Σ%)
+∙ 399.952 USD
+ROI: All trades
+∙ 400.024 USDC (0.89%) (3.8 Σ%)
+∙ 399.952 USD
+Total Trade Count: 19
+Bot started: 2025-08-31 09:24:46
+First Trade opened: 6 days ago (2025-09-01 00:05:03)
+Latest Trade opened: 9 hours ago (2025-09-07 09:40:15)
+Win / Loss: 19 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 21.05 (100.00)
+Avg. Duration: 1:56:38
+Best Performing: TRX/USDC: 115.395 USDC (3.69%)
+Trading volume: 102446.59 USDC
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDC)
+    from 2025-09-01 01:36:16 (0.339 USDC)
+    to 2025-09-01 01:36:16 (0.339 USDC)
+
+Live
+
+
+[09/07/2025 19:25] neveerrk
+Which strategy
+
+
+[09/07/2025 19:25] xf0x0f
+falconTrader
+
+
+[09/07/2025 19:25] xf0x0f
+ive already shared
+
+{Reactions}
+👍
+
+[09/07/2025 19:25] xf0x0f
+dont know if i shared conf too
+
+
+[09/07/2025 19:27] divarak
+Found Falcon strategy, not config.
+
+
+[09/07/2025 19:27] divarak
+testing...
+
+
+[09/07/2025 19:28] xf0x0f
+will share,... its only spot in my case,... followed it on futures every step and thought it was too risky
+
+{Reactions}
+👏
+
+[09/07/2025 19:29] xf0x0f
+on spot ive only met profit. can share a chat i sent recently, before i tried futures
+
+
+[09/07/2025 19:31] xf0x0f
+Daily Profit over the last 7 days:
+Day (count)     USDT         USD         Profit %
+--------------  -----------  ----------  ----------
+2025-08-25 (6)  79.372 USDT  79.37 USD   0.64%
+2025-08-24 (2)  65.343 USDT  65.34 USD   0.53%
+2025-08-23 (6)  255.27 USDT  255.25 USD  2.10%
+2025-08-22 (5)  14.113 USDT  14.11 USD   0.12%
+2025-08-21 (0)  0 USDT       0.00 USD    0.00%
+2025-08-20 (0)  0 USDT       0.00 USD    0.00%
+2025-08-19 (0)  0 USDT       0.00 USD    0.00%
+
+
+[09/07/2025 19:34] xf0x0f
+was 16 days in dry-run before went live
+
+
+[09/08/2025 04:43] viking046433
+This is my falcontrader
+
+
+[09/08/2025 04:43] viking046433
+ROI: Closed trades
+∙ 108.128 USDT (1.69%) (10.92 Σ%)
+∙ 1901.978 ZAR
+ROI: All trades
+∙ 77.25 USDT (1.12%) (7.8 Σ%)
+∙ 1358.821 ZAR
+Total Trade Count: 21
+Bot started: 2025-09-03 08:05:33
+First Trade opened: 4 days ago (2025-09-03 08:38:16)
+Latest Trade opened: 14 minutes ago (2025-09-08 04:28:24)
+Win / Loss: 17 / 2
+Winrate: 89.47%
+Expectancy (Ratio): 5.69 (0.13)
+Avg. Duration: 3:07:54
+Best Performing: SOMI/USDT:USDT: 76.634 USDT (5.50%)
+Trading volume: 14137.862 USDT
+Profit factor: 2.20
+Max Drawdown: 5.01% (54.619 USDT)
+    from 2025-09-06 16:53:31 (100.539 USDT)
+    to 2025-09-06 20:18:43 (45.919 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-09-08 00:44:00 (108.128 USDT)
+
+{Reactions}
+👍 (4)
+
+[09/08/2025 04:56] neveerrk
+Which
+
+
+[09/08/2025 04:57] viking046433
+Falcontrader
+
+{Reactions}
+👍
+
+[09/08/2025 05:05] xf0x0f
+have to say again: im hyperopting daily midnight
+
+
+[09/08/2025 05:23] mistifux
+Where is
+
+
+[09/08/2025 06:14] viking046433
+Check up on this chat
+
+
+[09/08/2025 06:15] xf0x0f
+https://discord.com/channels/1238181199206154373/1372215916380688426/1410582151870808154
+
+
+[09/08/2025 06:16] viking046433
+https://discord.com/channels/1238181199206154373/1372215916380688426/1410571229726904380
+
+
+[09/08/2025 06:25] neveerrk
+There are several undefined functions
+
+
+[09/08/2025 07:01] serialkiller15
+@xF0x0F would maybee make sense to integrate FULL OPTUNA into the Falcontrader Strategy, because then no need to do hyperopt always...
+
+
+[09/08/2025 07:01] xf0x0f
+im already working on it 😉
+
+{Reactions}
+👍
+
+[09/08/2025 07:02] serialkiller15
+nice mate, yesterday i switched alexbandsniper from simpleoptuna (yours thanks fro that) to full optuna, there is a big differenc between this versions.. if you need it can send you the code........
+
+{Reactions}
+👍
+
+[09/08/2025 07:03] xf0x0f
+id appreciate it! thank you
+
+{Reactions}
+👍
+
+[09/08/2025 07:07] mistifux
+Thanks
+
+
+[09/08/2025 07:12] neveerrk
+I need too
+
+
+[09/08/2025 07:12] neveerrk
+😁
+
+
+[09/08/2025 07:15] serialkiller15
+https://discord.com/channels/1238181199206154373/1280078852634185749/1414509306652397632
+
+
+[09/08/2025 15:09] boooooon
+which is your whitelist?
+
+
+[09/09/2025 06:14] viking046433
+ROI: Closed trades
+∙ 283.335 USDT (2.75%) (28.62 Σ%)
+∙ 4949.862 ZAR
+ROI: All trades
+∙ 160.907 USDT (1.52%) (16.25 Σ%)
+∙ 2811.037 ZAR
+Total Trade Count: 30
+Bot started: 2025-09-03 08:05:33
+First Trade opened: 5 days ago (2025-09-03 08:38:16)
+Latest Trade opened: 50 minutes ago (2025-09-09 05:23:19)
+Win / Loss: 26 / 2
+Winrate: 92.86%
+Expectancy (Ratio): 10.12 (0.22)
+Avg. Duration: 2:31:43
+Best Performing: SOMI/USDT:USDT: 85.624 USDT (4.87%)
+Trading volume: 21328.99 USDT
+Profit factor: 4.14
+Max Drawdown: 5.01% (54.619 USDT)
+    from 2025-09-06 16:53:31 (100.539 USDT)
+    to 2025-09-06 20:18:43 (45.919 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-09-09 04:43:36 (283.335 USDT)
+
+{Reactions}
+🚀 (2)
+
+[09/09/2025 06:14] viking046433
+FalconTrader
+
+
+[09/09/2025 06:15] xf0x0f
+will start falcontrader today evening when im back @home with integratet optuna
+
+{Reactions}
+🚀 (3)
+
+[09/09/2025 09:49] xalt8851
+The strategy shows itself very well, but for some reason FreqAI training is not included, models are not created in freqaimodels, there are no errors in the log
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1414910682796789770/image.png?ex=69f325c2&is=69f1d442&hm=34fdd878af27a351527c4fe9864f6a7643f66fc20f09f94dd2e1d2fc6a873f42&
+
+
+[09/09/2025 09:51] darkreaper0756
+Hi, model is in another folder
+
+
+[09/09/2025 09:53] xalt8851
+How do I check that everything is working correctly?
+
+
+[09/09/2025 09:54] xalt8851
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1414911904673173514/image.png?ex=69f326e5&is=69f1d565&hm=9a13175571e36ca5a0eb3889c1b67f1b489518e334b7aa142f3fd62f2f4cf88c&
+
+
+[09/09/2025 09:55] serialkiller15
+give me a hit which strategy is that?
+
+
+[09/09/2025 09:59] xalt8851
+https://discord.com/channels/1238181199206154373/1372215916380688426/1413579172860788786
+
+
+[09/09/2025 10:01] darkreaper0756
+aaaa
+
+
+[09/09/2025 10:02] darkreaper0756
+This does not create an AI model
+
+{Reactions}
+👍🏻
+
+[09/09/2025 10:02] serialkiller15
+NOPE...
+
+
+[09/09/2025 10:03] darkreaper0756
+Here we test how the independent parameters work for each currency
+
+{Reactions}
+👍
+
+[09/09/2025 10:05] darkreaper0756
+The strategy is working well
+
+
+[09/09/2025 10:06] dennyhui8023
+Is there no short-selling signal?
+
+
+[09/09/2025 10:06] serialkiller15
+yes in the strategy there is one
+
+
+[09/12/2025 14:19] boooooon
+@xF0x0F How are the results of the strategy in live? I launched it on dry-run and it looks very well
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1416065815152693278/image.png?ex=69f3650f&is=69f2138f&hm=cebc6ee07ba0959827eb4800a312be63e037682c8c32b9e5224aba57522aa419&
+https://cdn.discordapp.com/attachments/1372215916380688426/1416065815505272954/image.png?ex=69f3650f&is=69f2138f&hm=83d2d7176e8d3370fd0943def1710b28a55690a59192d05afe6aad08973b272c&
+
+
+[09/12/2025 14:20] xf0x0f
+won 1200 in a week, lost 1200 in 2-3 days 😉 restart
+
+{Reactions}
+😩
+
+[09/12/2025 14:21] serialkiller15
+damn
+
+
+[09/12/2025 14:21] xf0x0f
+im now back at +30 or so 😄
+
+
+[09/12/2025 14:21] serialkiller15
+nice
+
+
+[09/12/2025 14:24] xf0x0f
+ha cluc has a general good entry, but exits are poorly defined (non-existent) with steadily falling prices
+
+{Reactions}
+🚀 (2)
+
+[09/12/2025 14:25] xf0x0f
+$FORM broke my neck on spot
+
+
+[09/12/2025 14:26] xf0x0f
+thats why i started optimizing with optuna
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1416067557491871784/Bildschirmfoto_2025-09-12_um_16.26.29.png?ex=69f366ae&is=69f2152e&hm=41558096e20e97eb67858bf7faa1f8506e3a16fa8ec9817986c31c3b308c0b24&
+
+{Reactions}
+👍
+
+[09/12/2025 14:27] serialkiller15
+optuna is doing good stuff, only needs time to optimize the values/parameters......
+
+
+[09/12/2025 14:30] boooooon
+Yes, apparently, the losses kill a lot(
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1416068360457687212/image.png?ex=69f3676e&is=69f215ee&hm=5393f50cb817b79f41d88f466766c16cc4679a87fdae1484b082249600ca9bf8&
+
+
+[09/12/2025 14:30] serialkiller15
+i was not looking on it further, can you share the exits the losses?
+
+
+[09/12/2025 14:31] serialkiller15
+from backtest thanks
+
+
+[09/12/2025 14:31] boooooon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1416068835496300715/image.png?ex=69f367df&is=69f2165f&hm=c7d2874b5e108f36c99509bce87f68185b5f95ef0ff1bab76e33a4b3e3de68fb&
+
+
+[09/12/2025 14:33] serialkiller15
+hm thats not nice mate....
+
+
+[09/12/2025 14:34] serialkiller15
+i was running the version posted here but did not get any trades in here so i stopped it...
+maybee should take a deeper look @x with version are you using this one posted here...
+
+
+[09/12/2025 14:34] boooooon
+I changed pairlist and market to futures
+
+
+[09/12/2025 15:18] viking046433
+It needs volitility
+
+
+[09/12/2025 15:18] viking046433
+Volume pair 80
+
+
+[09/12/2025 15:20] viking046433
+ROI: Closed trades
+∙ 281.7 USDT (1.41%) (28.45 Σ%)
+∙ 4898.762 ZAR
+ROI: All trades
+∙ 272.252 USDT (1.35%) (27.5 Σ%)
+∙ 4734.469 ZAR
+Total Trade Count: 56
+Bot started: 2025-09-03 08:05:33
+First Trade opened: 9 days ago (2025-09-03 08:38:16)
+Latest Trade opened: 2 hours ago (2025-09-12 13:13:23)
+Win / Loss: 47 / 8
+Winrate: 85.45%
+Expectancy (Ratio): 5.12 (0.09)
+Avg. Duration: 4:23:37
+Best Performing: MYX/USDT:USDT: 187.004 USDT (5.81%)
+Trading volume: 43102.743 USDT
+Profit factor: 1.61
+Max Drawdown: 10.93% (147.677 USDT)
+    from 2025-09-10 22:13:19 (360.916 USDT)
+    to 2025-09-11 08:44:28 (213.239 USDT)
+Current Drawdown: 5.86% (79.216 USDT)
+    from 2025-09-10 22:13:19 (360.916 USDT)
+
+{Reactions}
+🚀 (2)
+
+[09/12/2025 15:20] viking046433
+FalconTrader
+
+
+[09/12/2025 15:20] darkreaper0756
+original?
+
+
+[09/12/2025 15:21] viking046433
+Entry Tag Performance:
+1.  NFINext37 150.934 USDT (3.93%) (10)
+2.  WVAP 58.346 USDT (3.83%) (4)
+3.  NFINext32 58.179 USDT (3.03%) (5)
+4.  Break signal 50.658 USDT (14.56%) (1)
+5.  vwap 36.765 USDT (0.63%) (15)
+6.  NFIX29 32.006 USDT (3.21%) (3)
+7.  sma_3 24.809 USDT (6.79%) (1)
+8.  local_uptrend 20.596 USDT (0.84%) (6)
+9.  NFIX39 16.958 USDT (2.16%) (2)
+10.  cluc_HA -69.656 USDT (-3.59%) (5)
+11.  NFINext7 -97.894 USDT (-8.11%) (3)
+
+
+[09/12/2025 15:21] viking046433
+One I fixed
+
+
+[09/12/2025 15:22] xf0x0f
+Wow!!!
+
+
+[09/12/2025 15:22] xf0x0f
+Cluc_ha?
+
+
+[09/12/2025 15:22] viking046433
+I see an clear issue with the last 2 signals
+
+
+[09/12/2025 15:23] xf0x0f
+My last fix was on cluc_ha
+
+
+[09/12/2025 15:23] viking046433
+OK and is it better
+
+
+[09/12/2025 15:35] serialkiller15
+Before optimize the wrong ones disable them and go there step by step so I did it in the past
+
+
+[09/13/2025 11:39] viking046433
+🚀 Binanceusdm (dry): Exited PUMPBTC/USDT:USDT (#59)
+Profit: 28.34% (profit: 121.002 USDT / 2100.591 ZAR)
+Enter Tag: NFINext32
+Exit Reason: sell signal1
+Direction: Long
+Amount: 5017
+Open Rate: 0.08508 USDT
+Exit Rate: 0.10927 USDT
+Duration: 0:33:25 (33.4 min)
+
+
+[09/13/2025 11:39] viking046433
+FalconTrader
+
+
+[09/13/2025 13:09] boooooon
+cool. did you change anything in the strategy?
+
+
+[09/13/2025 13:10] viking046433
+Nope I want to diaable CLUC-HA signal is bad
+
+
+[09/13/2025 13:10] xf0x0f
+Its the one i won the most 😅
+
+
+[09/13/2025 13:11] viking046433
+Then share the signal if you change it
+
+
+[09/13/2025 13:13] boooooon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1416411478524821514/image.png?ex=69f3557c&is=69f203fc&hm=7ec031f2bfbdf79c8317d008e7dc2aef9aee023a117d5cbbe1308058041480e6&
+
+
+[09/13/2025 13:23] viking046433
+My CLUC-HA ha is bad
+
+
+[09/13/2025 13:23] viking046433
+It's screwing up all profits
+
+
+[09/13/2025 13:24] viking046433
+❌ Binanceusdm (dry): Exiting NAORIS/USDT:USDT (#60)
+Unrealized Profit: -23.60% (loss: -100.783 USDT / -1753.617 ZAR)
+Enter Tag: cluc_HA
+Exit Reason: sell_stoploss_deadfish
+Direction: Long
+Amount: 4163
+Open Rate: 0.10252 USDT
+Current Rate: 0.07848 USDT
+Exit Rate: 0.07848 USDT
+Duration: 9:46:58 (587.0 min)
+
+
+[09/13/2025 13:25] boooooon
+is it, no?🥲
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1416414539750178997/image.png?ex=69f35855&is=69f206d5&hm=960848848f5235f5ecda4be5ecd660bcf229704b93005f9c82f30498d1ca0096&
+
+
+[09/13/2025 13:36] viking046433
+CLUC-HA ja it sucks that's a better signal
+
+
+[09/13/2025 15:05] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1416439734770864139/Bildschirmfoto_2025-09-13_um_17.05.40.png?ex=69f36fcc&is=69f21e4c&hm=14ac7cee08221bdd087764f74b277d6daff7cad971162d0122577a45b0367537&
+
+
+[09/13/2025 15:05] xf0x0f
+can only laugh on it 😄
+
+
+[09/13/2025 15:10] xf0x0f
+next one
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1416440812379705484/Bildschirmfoto_2025-09-13_um_17.10.00.png?ex=69f370cd&is=69f21f4d&hm=bd5affc44861bb0d70fadf31f2bd7f7293580ba2e960e9b5b9ad95d400203a10&
+
+
+[09/13/2025 18:25] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1416489895395852388/RSV2.py?ex=69f2f5c4&is=69f1a444&hm=9120b2a597886dd175ec65fc58daa796d8946d570ebe5cd0aed5f6552cbcb6ca&
+
+{Reactions}
+🚀
+
+[09/13/2025 18:25] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1416489980955725824/image.png?ex=69f2f5d8&is=69f1a458&hm=9a90b4712e5d93e91c10c1c129ae7c7e2f9f80e7fe2e018f1db33d53e2143a4d&
+
+
+[09/13/2025 18:27] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1416490418073501858/image.png?ex=69f2f640&is=69f1a4c0&hm=861c0eb38609ee4400510019cdf54a6723c346058e886d4f801b2715a5862729&
+
+
+[09/13/2025 18:28] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1416490689230799110/image.png?ex=69f2f681&is=69f1a501&hm=f6fe0f1307df5ee08d4e815266c09a8ea2431032437bb3d0e5365a60e59db0a7&
+
+
+[09/13/2025 18:28] neveerrk
+have fun
+
+
+[09/13/2025 18:29] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1416490937680400476/image.png?ex=69f2f6bc&is=69f1a53c&hm=fe196c170971e653bd6910f3a3c1e17d4448de9bfe60eaeeaa8a1ec476fd35b3&
+
+
+[09/13/2025 18:36] viking046433
+Timefrane
+
+{Reactions}
+💯
+
+[09/13/2025 18:36] neveerrk
+30m
+
+
+[09/13/2025 19:21] snokard.
+Nice job, amazing entries
+
+
+[09/13/2025 19:29] serialkiller15
+Good job mate
+
+
+[09/14/2025 17:46] xf0x0f
+amazing work,...
+
+
+[09/14/2025 20:49] snokard.
+Ive been thinking today and wanted to ask for opinion about this.
+What do you all think of adding a protection on strategies that consists in not allowing more than half of the max allowed trades to be in the same direction? For example for a strategy that allows 20 trades, only allowing 10 longs and 10 shorts.
+
+It should make it more stable against market shifts right? Meaning you could lost 10 longs but cover them with 10 shorts...
+Anyone thought/implemented this?
+
+{Reactions}
+👍 (3)
+
+[09/15/2025 05:15] serialkiller15
+It's an good idea yes let me try something out
+
+
+[09/15/2025 07:00] snokard.
+I will try implementing it today to the optuna bandsniper
+
+
+[09/15/2025 07:20] boooooon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1417047309744869469/Screenshot_20250915_101929_Telegram.jpg?ex=69f302a6&is=69f1b126&hm=aa1927e2be39e993b0479cb86713127d53915bb8e78602117d5c37d5ca33ffcb&
+https://cdn.discordapp.com/attachments/1372215916380688426/1417047310134808647/Screenshot_20250915_101934_Telegram.jpg?ex=69f302a6&is=69f1b126&hm=b03850a8c7bb7e68bcc77354b9f0d68f281085148f93a1010677136845552371&
+
+
+[09/15/2025 07:20] boooooon
+@xF0x0F @ViKiNG
+
+
+[09/15/2025 07:21] serialkiller15
+thanks for sharing, have you already fixed the worse entrys, today i have some time maybee can take a look on your work to fix them or kick them out
+
+{Reactions}
+👍
+
+[09/15/2025 07:21] serialkiller15
+the exits....
+
+
+[09/15/2025 07:22] boooooon
+I don't have enough free time to dive in this strategy, unfortunately
+
+
+[09/15/2025 07:22] serialkiller15
+no problem!
+
+
+[09/15/2025 07:23] boooooon
+Do you have any results from dry run?
+
+
+[09/15/2025 07:26] xf0x0f
+wasnt running full day yesterday,... had to optimize my proxy, but:
+
+Running Freqtrade 2025.9-dev-65b83c46f
+
+Running with 10xunlimited USDT on binance in futures markets, with Strategy RSV2.
+
+Stoploss on exchange is disabled.
+
+Currently running, force entry: false
+
+Dry-Run
+Avg Profit 3.783% (∑ 22.698%) in 6 Trades, with an average duration of 0:34:55. Best pair: MANTA/USDT:USDT.
+
+Bot start date: 2025-09-14 11:08:57 (UTC)
+First trade opened: 2025-09-14 14:51:46 (UTC)
+Last trade opened: 2025-09-15 06:31:00 (UTC)
+
+Profit factor: 3.18
+Trading volume: 119271,422 USDT
+
+Profits for
+
+All
+
+Long
+
+Short
+Trades
+Metric
+Value
+ROI closed trades    224,94 USDT (3.78%)
+ROI all trades    224,94 USDT (3.78%)
+Total Trade count    6
+Bot started    2025-09-14 11:08:57 (UTC)
+First Trade opened    2025-09-14 14:51:46 (UTC)
+Latest Trade opened    2025-09-15 06:31:00 (UTC)
+Win / Loss    4 / 2
+Winrate    66.667%
+Expectancy (ratio)    37.49 (0.73)
+Avg. Duration    0:34:55
+Best performing    MANTA/USDT:USDT: 12.34%
+Trading volume    119271,422 USDT
+Profit factor    3.18
+Max Drawdown    1.00% (100,154 USDT) from 2025-09-14 16:08:23 to 2025-09-15 03:22:33
+Current Drawdown    N/A (N/A) since 2025-09-14 16:08:23
+
+{Reactions}
+👍
+
+[09/15/2025 07:27] boooooon
+Looks good
+
+
+[09/15/2025 08:24] erbosnio_17282
+Market going down actually, good moment for testing!!
+
+
+[09/15/2025 08:24] serialkiller15
+YEP
+
+
+[09/15/2025 08:41] snokard.
+yes
+
+
+[09/15/2025 08:41] snokard.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1417067861482147942/image.png?ex=69f315ca&is=69f1c44a&hm=0dc76094eb0b2c9d7dee445bbfd94e1fcbc77f0036bd06098532c1ad81df39fd&
+https://cdn.discordapp.com/attachments/1372215916380688426/1417067862031335526/image.png?ex=69f315ca&is=69f1c44a&hm=22fc6632b446f4b44679488462ffc30f9958e3b312c7611196b60a6642df2a5c&
+
+
+[09/15/2025 08:42] erbosnio_17282
+The strategy that survey now is the correct one 🧐
+
+{Reactions}
+👍
+
+[09/15/2025 11:13] snokard.
+def confirm_trade_entry(
+        self,
+        pair: str,
+        order_type: str,
+        amount: float,
+        rate: float,
+        time_in_force: str,
+        current_time: datetime,
+        entry_tag: str,
+        side: str,
+        **kwargs,
+    ) -> bool:
+        """Limit simultaneous trades per side."""
+        if self.max_open_trades == float("inf"):
+            return True
+
+        max_per_side = self.max_open_trades // 2
+        open_trades = Trade.get_open_trades()
+
+        side = side.lower()
+        if side == "long":
+            count = sum(1 for t in open_trades if not t.is_short)
+        else:
+            count = sum(1 for t in open_trades if t.is_short)
+
+        if count >= max_per_side:
+            return False
+        return True
+
+
+[09/16/2025 11:49] erbosnio_17282
+Any strategies surviving after yesterday downtrend market? 🤣🤣 This is where the good strategies works, in the good moments every strategies seems to works good, but 99% fails in these moments!
+
+
+[09/16/2025 11:49] erbosnio_17282
+And the downtrend was not as bad as it can be...
+
+
+[09/16/2025 11:50] roderick3897
+lol, algorithms trading cannot beat human trading
+
+{Reactions}
+😂 (2)
+
+[09/16/2025 11:52] erbosnio_17282
+Human trading is based in sentiment most of the times, and sentiments goes wrong with the patient and the beers 😄😄 like in the Casino 🎰
+
+
+[09/16/2025 11:53] xf0x0f
+falcon still waiting for recovery
+
+
+[09/16/2025 11:54] serialkiller15
+NexusForge survived with small losses, 
+also the BandSniper (modded since Sunday) also did good, but have to wait when market goes up slowly or more fast what happens with the indicators
+
+
+That is AlexNexusForge
+
+
+[09/16/2025 11:54] serialkiller15
+since August (Beginning)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1417478671287193681/image.png?ex=69f342e2&is=69f1f162&hm=9963fe08be836490265bf5d005385f06979dfe729b76637a492f0141d0bdad69&
+
+
+[09/16/2025 11:54] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1417478798437384233/image.png?ex=69f34301&is=69f1f181&hm=8a3641b8d87d358fc657245c6c0c177b60ba55f13ca28d3f1897ac21b9e92646&
+
+
+[09/16/2025 11:55] roderick3897
+Any bot can buy at the dip?
+
+
+[09/16/2025 11:56] erbosnio_17282
+For me the most important capability for an strategy is that it needs to know when NOT to enter and when to EXIT.
+
+
+[09/16/2025 11:57] serialkiller15
+absolute...
+
+
+[09/16/2025 11:59] erbosnio_17282
+2 months, almost 2 percent, that's good, i would say it needs to be tested more time in downtrend, summer was not that bad.
+
+
+[09/16/2025 12:00] serialkiller15
+i know mate
+
+
+[09/16/2025 12:00] erbosnio_17282
+My V5 was a disaster since yesterday
+
+
+[09/16/2025 12:00] serialkiller15
+V5? of what
+
+
+[09/16/2025 12:00] erbosnio_17282
+I was waiting for this moment to check how it goes
+
+
+[09/16/2025 12:00] roderick3897
+Today is just white swan for altcoins
+
+
+[09/16/2025 12:01] roderick3897
+Not even to say a dark swan 😆 😆
+
+{Reactions}
+😂
+
+[09/16/2025 12:02] erbosnio_17282
+NexusforgeAI that i modify with a lot of corrections
+
+
+[09/16/2025 12:03] serialkiller15
+ah ok i see i use the normal version without AI
+
+
+[09/16/2025 12:04] erbosnio_17282
+I see, i will try now again to update it and integrate optuna, but we need more downtrends for testing!
+
+
+[09/16/2025 12:04] serialkiller15
+i have to say that non of the ML/RL Versions worked for me on this market situations......we will see
+
+
+[09/16/2025 12:05] erbosnio_17282
+Yes, this is what i'm also thinking, the thing is that backtest does not allow to see the reality, so we need more time to test in this kind of market
+
+
+[09/16/2025 12:08] roderick3897
+Backtest the day as of 2025-02-03 while ETH drop from 2922 to 2090 suddenly!
+
+{Reactions}
+👍
+
+[09/16/2025 12:16] roderick3897
+It is the trend that define indicator values
+
+
+[09/16/2025 12:29] erbosnio_17282
+Yes, there are a lot of bad period, but the thing is that the strategies are not simulated in a proper way, so it does not show the reality
+
+
+[09/16/2025 12:30] serialkiller15
+the trend aproach is good yes, but also will not handle some market situations thats it, i think a combination of different indicators and different entry can maybee handle that but maybee..
+
+
+[09/16/2025 12:41] erbosnio_17282
+Sure, it has to manage more scenarios, that's the key
+
+
+[09/16/2025 12:42] roderick3897
+I played forex before and so far only two EA works for certain Paris
+
+
+[09/16/2025 12:42] roderick3897
+I backtest 20 years data
+
+{Reactions}
+👍
+
+[09/16/2025 12:48] roderick3897
+Maybe BNB is ideal  as the most stable one😆 😆 (not to sell)
+
+{Reactions}
+👍
+
+[09/16/2025 13:16] boooooon
+AlexBandSniperAI had not bad results yesterday
+https://discord.com/channels/1238181199206154373/1412382448536387717/1417498998847045672
+
+
+[09/16/2025 13:16] erbosnio_17282
+Yes i see, that is so good
+
+
+[09/16/2025 13:17] erbosnio_17282
+From the 17 trades how many were long trades and how many shorts?
+
+
+[09/16/2025 13:18] boooooon
+```
+Entry Tag Performance:
+1.  Bear_E7_Med67 4.511 USDT (3.00%) (3)
+2.  Bear_E7_Med72 3.492 USDT (2.34%) (3)
+3.  Bear_E7_Med71 3.332 USDT (3.32%) (2)
+4.  Bear_E7_Med66 3.022 USDT (3.01%) (2)
+5.  Bull_E7_Med71 2.157 USDT (4.32%) (1)
+6.  Bear_E7_Med79 1.876 USDT (3.74%) (1)
+7.  Bear_E7_High80 1.595 USDT (3.18%) (1)
+8.  Bull_E7_Med67 1.553 USDT (3.10%) (1)
+9.  Bear_E7_Med73 1.539 USDT (3.07%) (1)
+10.  Bear_E7_High82 1.478 USDT (2.95%) (1)
+11.  Bull_E7_High82 -9.076 USDT (-18.13%) (1)
+```
+
+
+[09/16/2025 13:19] erbosnio_17282
+The important thing is that the strategy knows that now is not the moment to enter
+
+{Reactions}
+👍 (2)
+
+[09/16/2025 15:15] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1417529260406739135/IMG_4171.png?ex=69f37200&is=69f22080&hm=8d7e9ac4094fbed551dd4df3fe83681b22b4f7d033c5809e2a72c821a014fb00&
+
+{Reactions}
+🔥 😱
+
+[09/16/2025 15:35] damian_ox9
+Is that alexbandsniper ?
+
+
+[09/16/2025 16:16] roderick3897
+How to define pairlist to trade?
+
+
+[09/16/2025 16:17] roderick3897
+Say I only want to trade among top N gainers every 4 hours(real time) with market cap at least 1B
+
+
+[09/16/2025 17:23] serialkiller15
+lets try some RL stuff
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1417561567687610400/image.png?ex=69f39016&is=69f23e96&hm=c3b084d95b6785d3f64f51a30b63853002d7d7f690d267a6662a8c4c456b4834&
+
+{Reactions}
+👍
+
+[09/16/2025 17:24] darkreaper0756
+No
+
+
+[09/16/2025 17:25] darkreaper0756
+Das ist gut!
+
+
+[09/16/2025 17:25] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1417562010572292268/image.png?ex=69f39080&is=69f23f00&hm=0cbbe40d64b0cbafda5ff231602aeb93e93f425017921dc59fd096d67918df3e&
+
+{Reactions}
+🚀
+
+[09/16/2025 17:26] serialkiller15
+@DarkReaper DANKE
+
+
+[09/16/2025 17:26] darkreaper0756
+Nice dashboard😇✌️
+
+
+[09/16/2025 17:27] serialkiller15
+nevere tried this before.......
+
+
+[09/16/2025 17:35] darkreaper0756
+in the shell you have shuttering on refresh?
+
+
+[09/16/2025 17:36] serialkiller15
+its the backtest for rl i tried
+
+
+[09/16/2025 17:36] serialkiller15
+i used alexbandsniperai and integrated rl into it thats all
+
+
+[09/16/2025 17:36] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1417564881275850883/image.png?ex=69f3932c&is=69f241ac&hm=09ddf2aa1f14fe57bbc272d5994fa9e7807e885cfdb13e3e293a2826a5670947&
+
+
+[09/16/2025 17:37] serialkiller15
+and as i understood you need backtest that rl can do the rest...thats newbie for me
+
+
+[09/16/2025 17:37] serialkiller15
+or better NEW AREA.......
+
+
+[09/16/2025 17:40] darkreaper0756
+Try using  tkinter send all loging data to another window
+
+
+[09/16/2025 17:41] serialkiller15
+that will be the next step thanks mate will try this and see what it does,
+
+{Reactions}
+🚀
+
+[09/16/2025 17:42] darkreaper0756
+You can see logging parameters in real time
+
+
+[09/16/2025 17:42] serialkiller15
+aaaaaaaaaah thats it ok
+
+
+[09/17/2025 11:34] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1417836081906454568/Bildschirmfoto_2025-09-17_um_13.32.54.png?ex=69f33e40&is=69f1ecc0&hm=f3cce9356cb99dad4a70a36a9e4df18ca7f34f91c3ea4ace4795e7a546ce21f6&
+
+{Reactions}
+🚀
+
+[09/17/2025 11:37] erbosnio_17282
+Nice
+
+
+[09/17/2025 11:38] erbosnio_17282
+Does it buy during the downtrend or sell before the downtrend?
+
+
+[09/17/2025 11:39] erbosnio_17282
+Since yesterday night the market has recover a little bit, but here comes the weekend...
+
+
+[09/17/2025 12:59] serialkiller15
+@xF0x0F falcontrader?
+
+
+[09/17/2025 12:59] xf0x0f
+yes
+
+
+[09/17/2025 12:59] serialkiller15
+nice did not have time to take a deeper look into it....
+
+
+[09/17/2025 14:24] jsplaybox
+Hi, friend, what is your strategy
+
+
+[09/17/2025 14:33] xalt8851
+Can you share version with optuna?
+
+
+[09/17/2025 14:34] serialkiller15
+perfekt mate!
+i optimized alexbandsniper with ml/rl and its doing great but need to be tested more. the signals on the chart are realy nice will see
+
+
+[09/17/2025 14:34] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1417881524665192498/image.png?ex=69f36892&is=69f21712&hm=11df5837ffae69c6e66264ef278feb256f954b68038e5150746d4f3ea5d21b75&
+
+{Reactions}
+🚀 (2)
+
+[09/17/2025 14:35] serialkiller15
+Running 1 Version with ML only
+Running 1 Version with RL also
+
+
+[09/17/2025 14:35] serialkiller15
+will see in some days how it does and compare both!
+
+
+[09/17/2025 14:36] jsplaybox
+Dear alex, you are so awesome and I look forward to you improving it out later!
+
+
+[09/17/2025 14:36] serialkiller15
+Thanks but the Comunity is awesome not me!
+
+
+[09/17/2025 14:37] jsplaybox
+Thank you for meeting you guys in this community
+
+
+[09/17/2025 14:38] jsplaybox
+Here I am making rapid progress
+
+
+[09/17/2025 14:38] serialkiller15
+and this is Signal of RL
+
+
+[09/17/2025 14:38] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1417882462360436886/image.png?ex=69f36972&is=69f217f2&hm=01c2bd65ddfc25346511ff88dfcbc655ff77e1c684c1faeeae5405fcf73747d4&
+
+{Reactions}
+😮 (2)
+
+[09/17/2025 14:39] xalt8851
+What timeframe?
+
+
+[09/17/2025 14:39] serialkiller15
+15m
+
+
+[09/17/2025 14:39] jsplaybox
+This is still very good, it has the same excellent signal as ML
+
+
+[09/17/2025 14:40] serialkiller15
+the training takes some time but its doing good will post when its done...
+
+{Reactions}
+🔥
+
+[09/17/2025 14:40] serialkiller15
+yes but rl filters out and learns after each trades thats the option
+
+
+[09/17/2025 14:40] serialkiller15
+the strategy is all in one you can then enable rl or disable it so i run 2 versions of one strategie
+
+
+[09/17/2025 14:40] snokard.
+rl is similar to optuna then?
+
+
+[09/17/2025 14:41] serialkiller15
+yes similar, absolute the optuna (bandsniper) is also good needs some adjustments for the entrys, ml rl is even better have to run it for a few days and see the comparsion
+
+{Reactions}
+👍
+
+[09/17/2025 14:42] snokard.
+bandsniper on optuna is doing ok, staying at BE for me, improved results a little when added the limit of half positions long/half short
+
+
+[09/17/2025 14:42] snokard.
+Day (count)       USDT               Profit %
+----------------  -------------  --  ----------
+2025-09-17 (155)  50.206 USDT     0  0.50%
+2025-09-16 (156)  -25.298 USDT    0  -0.25%
+2025-09-15 (155)  -277.859 USDT   0  -2.70%
+2025-09-14 (109)  104.446 USDT    0  1.02%
+2025-09-13 (126)  201.221 USDT    0  2.01%
+2025-09-12 (0)    0 USDT          0  0.00%
+2025-09-11 (0)    0 USDT          0  0.00%
+
+
+
+i added that filter the day it lost 2.7%
+
+
+[09/17/2025 14:43] serialkiller15
+mostly the filter does filter out for example the e7 entrys, you can disable tthem and see what happens.....bull_div and bear_div are the best signals
+
+
+[09/17/2025 14:46] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1417884428293771336/image.png?ex=69f36b46&is=69f219c6&hm=0d1ac290543b925b6e1f3465b5b2230fb00118b50070da297b2b1ac8d06f0cd3&
+
+
+[09/17/2025 14:49] serialkiller15
+the only think will change the custom_exit on this versions because there are less trades in ther but better one, maybee trailing and roi as combination! the reversals ar mostly perfect...
+
+
+[09/17/2025 14:50] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1417885420426891364/image.png?ex=69f36c33&is=69f21ab3&hm=8db8acf6e4f34e7b4986fc61601b6ed86616bd57d9da8964f4db3008b5c82fc6&
+
+
+[09/17/2025 14:54] serialkiller15
+rl training started
+
+
+[09/17/2025 14:55] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1417886571624927303/image.png?ex=69f36d45&is=69f21bc5&hm=b69a9ee21de460088343cbdba99861ab67e69a0d7047781092a7de6616d901fe&
+
+
+[09/17/2025 14:55] snokard.
+most of the exits i get on the bandsniper are "any_profit_4hr_exit"
+
+{Reactions}
+👍
+
+[09/17/2025 14:56] snokard.
+meaning i need to modify it slighgtly since i guess those are the "emergency exits"
+
+
+[09/17/2025 14:56] snokard.
+didnt had the time to check on it yet, maybe on weekend...
+
+
+[09/17/2025 14:57] snokard.
+but overall its amazing work congrats
+
+{Reactions}
+👍
+
+[09/17/2025 14:57] serialkiller15
+thanks but without the community idea with ml i would not go that way thanks
+
+
+[09/17/2025 15:22] Deleted User
+alex could u share the script u currently running for the ML/RL, so that we can try to train and run test
+
+
+[09/17/2025 15:23] serialkiller15
+there are 2 in the community, mine is not finished will post when tests are finished!
+
+{Reactions}
+💯
+
+[09/17/2025 15:24] serialkiller15
+alexbandsniper_ai..... for example
+
+
+[09/17/2025 15:46] Deleted User
+looking forward to hearing from you soon!
+
+
+[09/17/2025 15:46] serialkiller15
+https://discord.com/channels/1238181199206154373/1412382448536387717/1416075541278232761
+
+
+[09/17/2025 15:47] serialkiller15
+use this for testing how it works and so on, deployment needs time and with testing and other stuff
+
+
+[09/18/2025 00:25] roderick3897
+It predicted wrongly
+
+
+[09/18/2025 19:47] xf0x0f
+GKD_FisherTransformV4 whos testing?
+
+
+[09/18/2025 20:22] boooooon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1418331249906421760/Screenshot_20250918_232134_Telegram.jpg?ex=69f31129&is=69f1bfa9&hm=7cb44ef306d524e908b1df4f363204cb9464afddb965346424e4f43591ec80b2&
+https://cdn.discordapp.com/attachments/1372215916380688426/1418331250262806649/Screenshot_20250918_232112_Telegram.jpg?ex=69f31129&is=69f1bfa9&hm=aaf65936658fcb914e25f77b05e4730483fb93d322623d41675946d4ee1b5b76&
+
+
+[09/18/2025 20:24] mistifux
+Where Is this strat ?
+
+
+[09/18/2025 20:24] boooooon
+https://t.me/pycryptobotconfigs/33041/55550
+
+{Embed}
+https://t.me/pycryptobotconfigs/33041/55550
+Bigbroseur 🌘🌑🌒 in 🚀🚀Freqtrade Strategies🚀🚀
+mods GKD_FisherTransformsV4.py
+https://images-ext-1.discordapp.net/external/GAWYdqJV2BrOJPPTsFFa_gFuqyshfOTbmMBmhfeQTjE/https/cdn1.telesco.pe/file/vE3GBQ_-T0KaeU278Yzs9ctCv0ndDnidciY_rDDLTRfhRUuHh2KsKPHVwqWJIC1TyY9gHhCUukrtvfW_7yMrG20V63Q1xg56OTodGIHABcFMnVpqzZFAZ2VT_D6m8zXfWI2iMi4_tnVMTTlTMsv8DnYo_IFlKAXiOjiIAFkFj08qzRmb-O71YjiGAHgBVYOMSxUAhFKwPp15DN6OwoS3YByUbbq10gmglqYn-1fLNSvWAj9oFZlO9zh0oZXO4OEIa_COTN_046vOFY_V4mMwPOsZGRLMeRUbv1hAqB3_LfvCUlDf3wz-84NKpcV1eSLKhA38U2IPR-bA1wydF7ujGg.jpg
+
+
+[09/18/2025 20:25] mistifux
+Thanks
+
+
+[09/18/2025 20:37] xf0x0f
+max open trades? timeframe? hyperopted? how much pairs? which market?
+
+
+[09/18/2025 20:39] boooooon
+5, 1h, 32 static market cap pairs, futures hyperliquid, without hyperopt
+
+{Reactions}
+👍
+
+[09/18/2025 20:39] serialkiller15
+I will start tat dryrun tomorrow will report
+
+
+[09/18/2025 22:00] bigbroseur
+It's MOT3 not 5
+
+
+[09/18/2025 22:02] bigbroseur
+I handle the dry and let you know...
+looks good but need to be confirmed
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1418356558299136040/image.png?ex=69f328bb&is=69f1d73b&hm=633ed6f84cf39282d28e58f6cc647b51bd684efce3717586828788b682d5ddf6&
+https://cdn.discordapp.com/attachments/1372215916380688426/1418356558634549258/image.png?ex=69f328bb&is=69f1d73b&hm=69291d6203fcac2044edecb7e9f73712072e62de3a1a4b1c4995ad9174ed80b6&
+
+{Reactions}
+👍 (2)
+
+[09/18/2025 22:11] bigbroseur
+Hyperopt params are  embedded in the strat, no need external json file.
+
+
+[09/18/2025 22:14] bigbroseur
+I'm currently revisiting ANFV8, reshap hyperopt to support fexible currency and timeframes. Will see
+
+
+[09/19/2025 21:24] .7thdragon
+for GKD_FisherTransformsV4
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1418709240373055670/message.txt?ex=69f31fb1&is=69f1ce31&hm=5ea77c30f6bdd4afb584e680068818c3c6fb74de97baa9229205b099c1b0e628&
+
+{Reactions}
+👍 (2)
+
+[09/22/2025 09:35] .oliver6
+Hi I have a question
+Does freqtrade allow to set a global stoploss, like setting a max drawdown limitation on total balance? When the total balance down a certain percentage(10%), closes all positions and stop any new tradings for a time period
+
+
+[09/22/2025 09:36] .oliver6
+The key issue here is need to calculate closed loss + open loss in a certain time of period... I'm still figuring it out
+
+
+[09/22/2025 10:19] serialkiller15
+GKD_Transform
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1419629141451345930/image.png?ex=69f32caa&is=69f1db2a&hm=1720b96b2c8c01412d9bac04b416c0ba3c8955166e1a1a87539fe5e5d3112d1a&
+
+
+[09/22/2025 10:19] serialkiller15
+good stuff!
+
+
+[09/22/2025 10:19] xf0x0f
+v4?
+
+
+[09/22/2025 10:19] serialkiller15
+yep
+
+
+[09/22/2025 10:19] xf0x0f
+mines not running good
+
+
+[09/22/2025 10:20] serialkiller15
+but too many signals in there.......they need adjustments maybee i have look
+
+
+[09/22/2025 10:20] xf0x0f
+running it with 2 differen configs
+
+
+[09/22/2025 12:23] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1419660254068609025/Bildschirmfoto_2025-09-22_um_14.22.39.png?ex=69f349a4&is=69f1f824&hm=701979e81ec60fd64f1f58ac88facbab785ad757e2acac813b9e6d0ad48f61ff&
+https://cdn.discordapp.com/attachments/1372215916380688426/1419660254559469652/Bildschirmfoto_2025-09-22_um_14.22.29.png?ex=69f349a4&is=69f1f824&hm=78361d18e7efc18035f07d1a63092f81075cf2038ee8b1c84c8990d7ab51a4eb&
+
+{Reactions}
+👍
+
+[09/22/2025 12:27] damian_ox9
+did you use 1h or 4h timeframe ?
+
+
+[09/22/2025 12:28] xf0x0f
+1h 15m
+
+{Reactions}
+👍
+
+[09/22/2025 14:02] serialkiller15
+mine is running on 1h, also have made a optuna version of it, but its to early to share, results are good but there are also some stuff like stop loss and others need to be fixed in the bbasic strategy i love the strategy but take a look that your sl will not get over .....
+
+
+[09/22/2025 14:03] damian_ox9
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1419685540902600855/image.png?ex=69f36131&is=69f20fb1&hm=8e11024ccd0221bcae4e44ec0851abead3977885ee94b844c641b8543ac8acd1&
+
+
+[09/22/2025 14:03] damian_ox9
+is this normal Alex
+
+
+[09/22/2025 14:03] damian_ox9
+I didn't get any entry
+
+
+[09/22/2025 14:04] serialkiller15
+yep how much stake amout you have? in there which strategy?
+
+
+[09/22/2025 14:04] serialkiller15
+2usdt?
+
+
+[09/22/2025 14:04] damian_ox9
+this strat GKD_Transform
+
+
+[09/22/2025 14:04] serialkiller15
+stake amount in config?
+
+
+[09/22/2025 14:06] damian_ox9
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1419686232262443090/image.png?ex=69f361d6&is=69f21056&hm=55dc99b9b641e2a8de81aaeec3859a2531be11054b0b7314dc78b8b5c3f7bfc9&
+
+
+[09/22/2025 14:06] damian_ox9
+here
+
+
+[09/22/2025 14:06] damian_ox9
+I make it 10
+
+
+[09/22/2025 14:07] serialkiller15
+make min 20 depends on your levverage and restart the bot...
+
+
+[09/22/2025 14:07] damian_ox9
+ok let me try
+
+
+[09/22/2025 14:14] damian_ox9
+thanks Alex
+
+{Reactions}
+👍
+
+[09/22/2025 14:14] damian_ox9
+it work
+
+
+[09/22/2025 14:19] serialkiller15
+you get first entrys?
+
+
+[09/22/2025 14:19] damian_ox9
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1419689658400379041/image.png?ex=69f36507&is=69f21387&hm=3c810629e82d2c13411fce5d1df66b638f60353d032d4e4c3a20973440d983d5&
+
+
+[09/22/2025 14:20] serialkiller15
+perfect!
+
+
+[09/22/2025 14:20] damian_ox9
+I got full off it
+
+
+[09/22/2025 14:20] damian_ox9
+I will test it on 4h timeframe
+
+
+[09/22/2025 14:20] serialkiller15
+yes as i said, i like the strategy its a good work, but to many signals from my point of view........
+
+
+[09/22/2025 14:21] damian_ox9
+maybe it will better with optuna
+
+
+[09/22/2025 14:28] serialkiller15
+maybee i had it running but this needs more tests, the signals are mostly good, needs optimization and other stuff, but first of all a cold beer then get next step
+
+{Reactions}
+🤩
+
+[09/22/2025 14:59] boooooon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1419699719063474246/image.png?ex=69f36e65&is=69f21ce5&hm=ffd62a7c82280d16fbba04500a291dfc0e05ef62a56c420f272dc3d59d79e576&
+https://cdn.discordapp.com/attachments/1372215916380688426/1419699719432704132/image.png?ex=69f36e65&is=69f21ce5&hm=a6b05fa56def4f253524e50b08bcb2ae5818b3b30be9231e23774d026c0c863c&
+
+
+[09/23/2025 10:41] boooooon
+Hey guys. Does anyone have any ideas on how to make `max_open_trades` dynamic? For example, I want it to be set to 3-5 when market volatility is low (based on Bitcoin?), but increase it to 20 when volatility is high.
+
+
+[09/23/2025 10:42] snokard.
+maye using confirm_entry. i used that to limit the max amount of trades in each direction
+
+{Reactions}
+👍
+
+[09/23/2025 18:11] bigbroseur
+max_open_trades is very sensitive params cause it define # of available trade slots regarding your available_capital. If you add DCA to your strat??
+I have telegram.py code revisited from default freqtade code that allow you to change all freqtrade params  manually including max_open_trades, you can change timeframe, stoploss etc...
+Are you interested?
+
+
+[09/23/2025 18:12] bigbroseur
+I've never tested it
+
+
+[09/23/2025 18:29] boooooon
+yes, can you share?
+
+
+[09/23/2025 18:34] serialkiller15
+Please share thanks mate
+
+
+[09/23/2025 18:35] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1420116259961569390/telegram.py?ex=69f2f814&is=69f1a694&hm=722d1f842307eec1b162bb4d50b77492517e722e1ccb436e235dc3be290ba24c&
+
+{Reactions}
+👍
+
+[09/23/2025 18:38] darkreaper0756
+Copy- paste
+
+
+[09/23/2025 18:42] erbosnio_17282
+Interesting, do you have something similar but for asking my wife bring me a cool beer now?
+
+
+[09/23/2025 18:42] erbosnio_17282
+The best botom in Telegram ever
+
+
+[09/23/2025 18:43] darkreaper0756
+🤣🤣🤣
+
+
+[09/23/2025 18:44] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1420118750476374067/IMG_4241.jpg?ex=69f2fa66&is=69f1a8e6&hm=80dad08fb78a6a991aa9c36bd851eaea6426cd60dcac3a605c5cbd6bd759a6d6&
+
+
+[09/23/2025 18:45] erbosnio_17282
+It looks quite nicee!! 😍😍
+
+
+[09/23/2025 18:46] erbosnio_17282
+Here preparing for the beer later...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1420119030311682199/rn_image_picker_lib_temp_2833e4d2-662c-4cee-9218-d141b62f45ba.jpg?ex=69f2faa9&is=69f1a929&hm=0f63ffe356c4e024e9a50b178523517d5146c641de942bb064db85aa6c77582c&
+
+{Reactions}
+👍
+
+[09/23/2025 18:49] erbosnio_17282
+Guys, i'm thinking about creating a 10 or 15 people closed group for renting a common powerful server for testing there all the most promising strategies... To have a real common space with access to all to the sqlite, .py, .logs etc... I guess we can improve the results basing the tests in all the data available. And in the future we can be the ones doing the wale 😁😁
+
+
+[09/23/2025 18:50] xf0x0f
+How much ips? 🥴
+
+
+[09/23/2025 18:51] erbosnio_17282
+🤔
+
+
+[09/23/2025 18:52] serialkiller15
+@erbosnio no need to have enough here on my side....
+
+
+[09/23/2025 18:53] serialkiller15
+We are still running a Plattform with many strategies let me know if Wer ned something
+
+
+[09/23/2025 18:53] xf0x0f
+Its most problem im facing on my side. Using proxy through vpn, gre tunnel,…
+
+
+[09/23/2025 18:53] serialkiller15
+No proxy needed
+
+
+[09/23/2025 18:54] xf0x0f
+How ure handling rate limits?
+
+
+[09/23/2025 18:55] serialkiller15
+We have the..... Fuck what's the name of
+
+
+[09/23/2025 18:55] serialkiller15
+Let me see
+
+
+[09/23/2025 18:56] serialkiller15
+Creekgeko or something like that Sry to much code in my head
+
+
+[09/23/2025 18:56] xf0x0f
+The tension rises 😝
+
+
+[09/23/2025 18:56] xf0x0f
+Uh,… and binace rate limit?
+
+
+[09/23/2025 18:57] xf0x0f
+and dont say: dont use binace 😝
+
+
+[09/23/2025 18:58] boooooon
+I ran on this EC2 instance 19 dry-run strategies, few other services and observability (grafana, prometheus, loki etc)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1420122050198114355/image.png?ex=69f2fd79&is=69f1abf9&hm=a75990456c19e55c712e1b70af1738721a6fca6aa2e0cea671d24708fc4e7f3c&
+https://cdn.discordapp.com/attachments/1372215916380688426/1420122050714144788/image.png?ex=69f2fd79&is=69f1abf9&hm=813ef3b2ee98eb3aef4b628a746b4bd1194227be1ce28d3e6c36af2681c80eed&
+https://cdn.discordapp.com/attachments/1372215916380688426/1420122051351543909/image.png?ex=69f2fd79&is=69f1abf9&hm=33f34927a85387d0a21b607f7360368fd2a9dc592cfb3cbc23d5f183ed61086c&
+
+
+[09/23/2025 18:58] xf0x0f
+Please tell me more
+
+
+[09/23/2025 18:58] serialkiller15
+Let me see in my config
+
+
+[09/23/2025 18:59] serialkiller15
+As I told I can handle to give access to a Plattform managed my be and make the tests in it it does 30-50 biots the same time so also auto deployment is in there...
+
+
+[09/23/2025 19:02] serialkiller15
+@xF0x0F we need your guide for that
+
+
+[09/23/2025 19:03] serialkiller15
+Autodeployment we already have in there with strategies timeframe and pair lists... Will show you tomorrow
+
+{Reactions}
+👍 (2)
+
+[09/23/2025 19:04] serialkiller15
+The idea would be to have one Plattform for all tests...
+
+
+[09/23/2025 19:17] serialkiller15
+It should be administrated by me and you have access to your bots? Or other ideas want to keep it clean
+
+
+[09/23/2025 19:27] serialkiller15
+"coingecko" we use for
+
+
+[09/23/2025 19:28] serialkiller15
+example of the gui to run the bots
+
+
+[09/23/2025 19:28] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1420129754945949867/image.png?ex=69f304a6&is=69f1b326&hm=81407dc6cb0be0d0ec02bd1abc6b9bf61795f384f7711f9f31a99610ca158ed9&
+
+{Reactions}
+🫡
+
+[09/23/2025 19:29] serialkiller15
+example of running bots...
+
+
+[09/23/2025 19:29] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1420129890623295640/image.png?ex=69f304c6&is=69f1b346&hm=b82917eb7365b7b7b619825b7eba123283eb35010951c895c3432f58d4b021e9&
+
+
+[09/23/2025 19:29] xf0x0f
+Ive reached my limit there too without the IP topic told above 😢
+
+
+[09/23/2025 21:00] erbosnio_17282
+Oh my god
+
+
+[09/23/2025 21:02] erbosnio_17282
+That's it
+
+
+[09/23/2025 21:02] erbosnio_17282
+Interesting, i will write you when my baby let me to send you some strats for testing
+
+
+[09/23/2025 21:03] bigbroseur
+I was drinking a beer.
+you are faster than me
+
+
+[09/23/2025 21:04] anonymuis
+Need some hardware for that?
+
+
+[09/23/2025 21:23] bigbroseur
+hum, hum… 
+like me…
+ why not use producer/ consumer feature and share it to all kind of strat bots
+
+
+[09/24/2025 03:50] serialkiller15
+@Anonymuis we will use the existing for that will write you then thanks
+
+
+[09/24/2025 17:44] bigbroseur
+Autodeployment, very interested about how to proceed... 
+I'll win a pinte of your favorite beer
+
+
+[09/24/2025 17:53] boooooon
+For example, build a Docker image in the pipeline, push to the registry, pull to the server, and launch the container with the specified strategy
+
+
+[09/24/2025 17:53] boooooon
+I think it's semi-automated
+
+
+[09/24/2025 17:54] serialkiller15
+Yes we pick the Strategy the timeframe and the coin list and thats it
+
+{Reactions}
+👍
+
+[09/26/2025 04:01] roderick3897
+can freqtrade open two opposite trades on the same pair simultaneously?
+
+
+[09/26/2025 04:02] roderick3897
+also global profit trailing?
+
+
+[09/26/2025 04:40] serialkiller15
+I don't think so
+
+
+[09/26/2025 05:06] viking046433
+Nope
+
+
+[09/26/2025 05:59] bigbroseur
+yep i saw smth like that in git… let me check
+
+
+[09/26/2025 06:08] bigbroseur
+Strat is called delta neutral and you need to use wallet adress like hyperliquid allow you.
+
+https://github.com/djienne/YOUTUBE_STRATEGIES_FREQTRADE/blob/master/DELTA_NEUTRAL/user_data/strategies/DELTA_NEUTRAL.py
+
+{Embed}
+https://github.com/djienne/YOUTUBE_STRATEGIES_FREQTRADE/blob/master/DELTA_NEUTRAL/user_data/strategies/DELTA_NEUTRAL.py
+YOUTUBE_STRATEGIES_FREQTRADE/DELTA_NEUTRAL/user_data/strategies/DEL...
+Depot contenant les fichiers de stratégies et de configurations présentés dans la chaine Youtube. - djienne/YOUTUBE_STRATEGIES_FREQTRADE
+https://images-ext-1.discordapp.net/external/JqpDUKcqgBf0X7kCB0kCPtWiJ7N9pVscrpYMPaa78Cw/https/opengraph.githubassets.com/a4bafc8c572cf19afcf878955ab19b4fdec1e6d7a1690f7809743843efc0ff53/djienne/YOUTUBE_STRATEGIES_FREQTRADE
+
+
+[09/26/2025 08:40] darkreaper0756
+Hi everyone, do you have any idea how to access the order book on bybit or binance?
+
+
+[09/26/2025 08:40] serialkiller15
+in your Strategy?
+
+
+[09/26/2025 08:40] darkreaper0756
+Yes
+
+
+[09/26/2025 08:41] serialkiller15
+let me check i had a strategy with order book functionality...in it
+
+{Reactions}
+🚀
+
+[09/26/2025 08:41] darkreaper0756
+Thanks man✌🏻
+
+
+[09/26/2025 08:41] serialkiller15
+you are welcome!
+
+
+[09/26/2025 08:43] boooooon
+`self.dp.orderbook` ?
+
+
+[09/26/2025 08:44] serialkiller15
+@DarkReaper check you dm inbox... there is a full integration on alexbattletankkiller...
+
+
+[09/26/2025 08:45] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1421055044656304248/message.txt?ex=69f316a4&is=69f1c524&hm=e56eb48d098572c48e1269991d6be6e5d014c494827bfc1977f45b47fd6d086b&
+
+{Reactions}
+👍
+
+[09/26/2025 08:48] darkreaper0756
+But through the api key (live) I have the impression that it does not take the data from the order book. I think there are some restrictions or I did something wrong. I tried to save the amounts in a CSV file but it always remained empty…
+
+
+[09/26/2025 08:49] serialkiller15
+is i know you have to add in config.json the enable orderbook or orderbook = true ?
+
+
+[09/26/2025 08:49] serialkiller15
+but can check it then...
+
+
+[09/26/2025 08:50] darkreaper0756
+I'll take a look at the config
+
+
+[09/26/2025 11:20] darkreaper0756
+Yes
+
+
+[09/26/2025 11:23] darkreaper0756
+I solved it, it doesn't work because I didn't have it in the config "dataprovider": {
+    "orderbook": {
+        "enabled": true,
+        "limit": 50
+    }
+}
+
+
+[09/26/2025 11:24] darkreaper0756
+“limit” is how many levels in the orderbook to be loaded, for example 5, 20, 50…
+
+
+[09/26/2025 11:24] serialkiller15
+as i told you hehe
+
+{Reactions}
+🚀
+
+[09/26/2025 11:25] darkreaper0756
+Alex Forge CODE✌🏻🥳😇🤣
+
+
+[09/26/2025 11:25] serialkiller15
+dont ask mate i was taking also this time to implement the order book.....
+good learnings!
+
+
+[09/26/2025 11:29] darkreaper0756
+I want to train a CNN model that extracts spatial patterns between bid/ask levels (slope of depth, etc.), LSTM captures the evolution of these patterns over time
+
+{Reactions}
+🚀 (2)
+
+[09/26/2025 12:44] erbosnio_17282
+I tried CNN some months ago, but it was too slow
+
+
+[09/27/2025 11:56] darkreaper0756
+Hello everyone, Have you seen anywhere on "GitHub" or elsewhere projects for FreqAi that run RL models or any strategy designed strictly for an RL model?
+
+
+[09/27/2025 12:01] darkreaper0756
+Hi, What do you mean it was slow?
+
+
+[09/27/2025 13:28] erbosnio_17282
+The training!! But my computer is so old... Maybe yours works better
+
+
+[10/12/2025 08:28] boooooon
+Hi, has anyone tried GPTTrader?
+
+
+[10/12/2025 08:29] serialkiller15
+nope
+
+
+[10/12/2025 08:30] erbosnio_17282
+Yes, is useless
+
+
+[10/12/2025 08:33] anonymuis
+Yes, I tried a bunch of them. But RL is VERY hard to get right. Even big Quants are not full in on it. Most of them have a mix of strategies and RL is just a small part of it.
+
+I think it might be very worth it, but I decided I don't have even 1% of the time available that it needs to get it to some quality level.
+
+
+[10/12/2025 08:34] anonymuis
+If you want RL to work, you need an AI/LLM to do the work for you: constant evaluation and change of reward strategy.
+
+
+[10/12/2025 08:35] erbosnio_17282
+Eyy did you finally test CNN? Maybe with a powerful computer it works better than mine...
+
+
+[10/12/2025 08:41] darkreaper0756
+Hi!
+
+
+[10/12/2025 08:43] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1426852772795519067/Screenshot_2025-10-12_104022.png?ex=69f31632&is=69f1c4b2&hm=6a5df0441a7f41c4101cf0f44884d75da6deea9704db0e08ed7ff6e7e6d18930&
+https://cdn.discordapp.com/attachments/1372215916380688426/1426852773084790966/Screenshot_2025-10-12_104042.png?ex=69f31632&is=69f1c4b2&hm=ea621fe61aeefa97a510df8dfdf134dff535b983c2a3f121d1cc78e8d386ddf6&
+https://cdn.discordapp.com/attachments/1372215916380688426/1426852773441310842/Screenshot_2025-10-12_104047.png?ex=69f31632&is=69f1c4b2&hm=d355a78a5c8b9355b22b5cfad6a21c353cb34ebc1b0238b4439df80945668d24&
+https://cdn.discordapp.com/attachments/1372215916380688426/1426852773743431700/Screenshot_2025-10-12_104054.png?ex=69f31632&is=69f1c4b2&hm=ce2dddab2fc65d71e07f80069e205025905259b3414513521aa58f8da0ca3491&
+https://cdn.discordapp.com/attachments/1372215916380688426/1426852774074646558/Screenshot_2025-10-12_104126.png?ex=69f31632&is=69f1c4b2&hm=79166610bfbfaf7c08f5c59bf1ccf6aa360bc8f9be6825e589073e765914a985&
+https://cdn.discordapp.com/attachments/1372215916380688426/1426852774431166475/Screenshot_2025-10-11_183049.png?ex=69f31633&is=69f1c4b3&hm=8b895eca07c19b976ef4330917ccbdb389324dae9ad2db06873677b91074386f&
+
+
+[10/12/2025 08:45] darkreaper0756
+Hi, I'm still working on it, The results are starting to get better and better, It needs processing power to create an advanced model that trains slowly to avoid overfitting…
+
+
+[10/12/2025 10:23] erbosnio_17282
+I have always think that is quite interesting, but it needs a lot of power and time... If i'm not wrong, google predicts the weather with CNN
+
+
+[10/16/2025 22:11] ch1ck3n_t4c0s
+i did some stuff... who can find what it is:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1428505749604139149/image.png?ex=69f32ae7&is=69f1d967&hm=7030721a41456298b7535e8bf37ee26475f9e7c37c40a762805aa5cb6c8296f6&
+
+
+[10/17/2025 05:44] serialkiller15
+? What strategy
+
+
+[10/17/2025 06:55] .oliver6
+why it's almost longing everywhere
+
+
+[10/17/2025 07:03] themarkx_
+Bcz it is only for long
+
+
+[10/17/2025 07:04] themarkx_
+@Ch1cK3N_t4c0s 's government does not allow him to short
+
+
+[10/17/2025 10:56] ch1ck3n_t4c0s
+Asterdex
+
+
+[10/17/2025 10:58] ch1ck3n_t4c0s
+I just fired it up to see. Ignore the strategy
+
+
+[10/17/2025 10:58] ch1ck3n_t4c0s
+Added new exchange.
+
+
+[10/17/2025 12:15] themarkx_
+Hey everyone,
+
+I've trained a new machine learning model on our strategy, and I'm sharing the first set of predictions on new data.
+
+Instead of just a "buy" or "sell," this model gives a full forecast for every trade signal. Each row in the attached CSV is a single trade signal, and the columns are the model's predictions for it.
+
+What the Model Predicts:
+Core Forecast (pred_reg_mean_ columns): This is the model's best guess for the trade's duration (_actual_hold_candles), max profit (_profit_5x), and max loss (_loss_5x) at different leverages.
+
+Prediction Confidence (pred_reg_lower_ & _upper_ columns): This predicts a range for each outcome. A narrow range means the model is very confident in its prediction; a wide range means it's uncertain.
+
+Signal Confidence (pred_win_at_ columns): This is a direct percentage of confidence that the trade will hit specific profit targets (e.g., pred_win_at_3pct_prob = 0.85 means 85% confidence of hitting a 3% raw profit).
+
+Given this rich data for every signal, how can we best use this in our Freqtrade strategy? What are your ideas for filtering trades or setting dynamic stops/take-profits based on these predictions?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1428718056368242738/ETH_USDT_USDT_lgbm_super_robust_preds.csv?ex=69f347e0&is=69f1f660&hm=4817874d16beccf64aa6b016aefc617e2917a97582d8332bc10e984b417f2d51&
+
+{Reactions}
+🔥 (2)
+
+[10/17/2025 12:17] serialkiller15
+What Modell are you using for let's see if we can integrate that
+
+
+[10/17/2025 12:18] themarkx_
+other models are remain to train but this is first model lgbm,
+i am going to create alpha-meta pipleine where we train 6 alpha models based on that prediction we use their pridiction as features of meta model.
+meta model is Gradient Boosted Tree so at last we just need to call that meta pridiction for our all 7 moldels outcome
+
+{Reactions}
+❤️
+
+[10/17/2025 12:18] themarkx_
+this result is of lgbm
+
+
+[10/17/2025 12:19] serialkiller15
+Nice Thanks
+
+
+[10/17/2025 12:20] themarkx_
+if you think that this is usefull result only and only then i will train other models bcz it takes so much computational cost.
+
+
+[10/17/2025 12:23] serialkiller15
+Let me check it and think about it later
+
+
+[10/17/2025 12:23] themarkx_
+i use following logic to train this model:
+
+Time-Series Cross-Validation for realistic performance evaluation.
+
+A suite of Tiered Classifiers to predict the confidence of hitting various profit targets.
+
+Quantile Regressors to forecast a full range of outcomes (pessimistic, most likely, optimistic), giving you a measure of the model's own uncertainty.
+
+{Reactions}
+🔥
+
+[10/17/2025 12:23] serialkiller15
+Thanks mate
+
+
+[10/17/2025 12:24] themarkx_
+planing to impliment in gkd fisher
+
+
+[10/17/2025 13:53] xf0x0f
+How much power your machine needs? How often do you recalc?
+
+
+[10/17/2025 15:24] ggoyito
+Same thing I wonder, I ordered a mini pc with an Intel n95 just to see how it performed with complex strategies, I don't know what to expect 😆
+
+
+[10/17/2025 17:03] vasko123.
+Resources are needed every hour for optimization
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1428790565096521839/image.png?ex=69f38b68&is=69f239e8&hm=29cb82137efc1216df2a6c0d32181cab35b93b74dc816db19fadbee0654d8edf&
+
+{Reactions}
+🤯
+
+[10/18/2025 01:08] ch1ck3n_t4c0s
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1428912634207666270/image.png?ex=69f35457&is=69f202d7&hm=d43f4ded80c2bb2ace9a45a1f174e1eb15e14a3366df5ae2f47d55fc3c263525&
+
+
+[10/18/2025 10:08] xalt8851
+What is this strategy that uses liquidations?
+
+
+[10/19/2025 11:09] ch1ck3n_t4c0s
+😀 I will share when I get it all done and working.
+
+{Reactions}
+😍
+
+[10/20/2025 18:23] .7thdragon
+https://nof1.ai/
+funny llm project
+
+{Embed}
+https://nof1.ai/
+AI trading in real markets
+SharpeBench - Live trading performance benchmark for AI models
+
+{Reactions}
+🚀
+
+[10/24/2025 22:03] snokard.
+Question here, today i got almost a 7% pf increase just on funding fees. What are the thoughts on creating a strategy that profits from it? Is it doable? Anyone tried it before?
+If no one tried it i will try build a strategy based on it
+
+
+[10/27/2025 12:39] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1432348039745503302/Screenshot_20251027_200350_Chrome.jpg?ex=69f34d90&is=69f1fc10&hm=15b564115a12a8165dc541cdd061aaf23a8583c24719c6222deb0f55e9986946&
+
+
+[10/27/2025 12:40] neveerrk
+make one
+
+
+[10/27/2025 12:43] darkreaper0756
+Magic Prediction😇
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1432348911900688464/Screenshot_2025-10-27_112357.png?ex=69f34e60&is=69f1fce0&hm=6e8f178bc5154406bb0a8958a5b0f8fcaf513802185795a8ca052d96de5be5c3&
+
+{Reactions}
+🚀 (5) 🔥
+
+[10/27/2025 12:52] neveerrk
+which strategy
+
+
+[10/27/2025 13:10] serialkiller15
+make one
+
+{Reactions}
+😂 (3)
+
+[10/28/2025 02:04] neveerrk
+https://github.com/Algovate/ai-quant-trader/tree/main
+
+{Embed}
+https://github.com/Algovate/ai-quant-trader/tree/main
+GitHub - Algovate/ai-quant-trader: AI-powered quantitative trading ...
+AI-powered quantitative trading system with intelligent market analysis and portfolio management. - Algovate/ai-quant-trader
+https://images-ext-1.discordapp.net/external/Eyteh-AXohnNiRZaSRGNLgcY0VNJvCwpYz7NZrRHXq4/https/opengraph.githubassets.com/7d3fc50c8a133b0e39976cd7521be5b9847a9f86328cb8be7ec1db69a76e1163/Algovate/ai-quant-trader
+
+{Reactions}
+👍
+
+[10/28/2025 04:29] viking046433
+https://github.com/moondevonyt/moon-dev-ai-agents
+
+{Embed}
+https://github.com/moondevonyt/moon-dev-ai-agents
+GitHub - moondevonyt/moon-dev-ai-agents: autonomous ai agents for t...
+autonomous ai agents for trading in python. Contribute to moondevonyt/moon-dev-ai-agents development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/5iQARqoPP_kUUM0tf-jqEVFylbctxqTltG-LbHyuUOk/https/opengraph.githubassets.com/aa73bea89e02d15667aae3854ec410bb4f9b9a6a0292f51fbe4314820eb1e54c/moondevonyt/moon-dev-ai-agents
+
+{Reactions}
+👍
+
+[10/28/2025 04:30] viking046433
+Geez deepseak is doing good
+
+
+[10/28/2025 11:14] ch1ck3n_t4c0s
+Copy trade deepseek
+
+
+[10/28/2025 11:15] snokard.
+is that posible?
+
+
+[10/28/2025 11:37] ch1ck3n_t4c0s
+Already doing it
+
+
+[10/28/2025 11:38] ch1ck3n_t4c0s
+W freqtrade
+
+
+[10/28/2025 11:38] snokard.
+didnt know it was posible... where can i find the info?
+
+
+[10/28/2025 11:56] 4v1234
+@Ch1cK3N_t4c0s 
+Can you please share?
+
+
+[10/28/2025 12:04] ch1ck3n_t4c0s
+We are still working on commit
+
+
+[10/28/2025 12:04] ch1ck3n_t4c0s
+Soon
+
+
+[10/28/2025 12:05] ch1ck3n_t4c0s
+Anything is possible.
+
+{Reactions}
+❤️
+
+[10/28/2025 12:05] snokard.
+oh okay! sounds amazing you managed to do it!
+
+thanks for your work... if we can help with anything or ideas just say it!
+
+
+[10/28/2025 12:05] ch1ck3n_t4c0s
+https://tenor.com/view/dream-dreams-if-you-can-dream-it-you-can-do-it-gif-6100422
+
+{Embed}
+https://tenor.com/view/dream-dreams-if-you-can-dream-it-you-can-do-it-gif-6100422
+https://images-ext-1.discordapp.net/external/k5biGGwZ9VLh58uYwDqEqt6zTjdcQ_e_GrZry9liG4w/https/media.tenor.com/zv-iw1w4K_oAAAAe/dream-dreams.png
+
+{Reactions}
+💯 (2)
+
+[10/28/2025 12:05] 4v1234
+Ready to support too.
+
+
+[10/28/2025 12:07] ch1ck3n_t4c0s
+Build your dreams don't let anyone tell you it's impossible...
+
+{Reactions}
+🔥 👍
+
+[10/28/2025 12:08] ch1ck3n_t4c0s
+It's only impossible because no one has done it yet
+
+
+[10/28/2025 12:08] serialkiller15
+right mate nothing is inpossible!
+
+{Reactions}
+💯 💡
+
+[10/28/2025 12:08] ch1ck3n_t4c0s
+Be first, push yourself!
+
+{Reactions}
+🧘‍♂️
+
+[10/28/2025 12:09] ch1ck3n_t4c0s
+Only limit is your imagination and your time!
+
+
+[10/28/2025 15:34] viking046433
+I will share my own creation of. Here it needs good protection tho
+
+{Reactions}
+🔥 (2)
+
+[10/28/2025 15:34] viking046433
+Been working on it for months
+
+
+[10/28/2025 15:45] snokard.
+oh time! if we could trade time to get more... haha
+
+
+[10/28/2025 16:26] viking046433
+Ok this one needs volatile pairs so volume 120 pairs or so no filters it does not trade often but takes big wins and trades are not leveraged i find it woks best like that might be wrong. What you get in backtest is what you get in dry run.
+
+
+[10/28/2025 16:26] viking046433
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1432767590849183856/BuckV4_2B.py?ex=69f382cd&is=69f2314d&hm=8d4575830734f5a7d53208d4858cccaed3bec697e8ac6b9d06062def684a4075&
+
+{Reactions}
+🚀 🔥
+
+[10/28/2025 16:27] viking046433
+Lets see if we can improve this
+
+
+[10/28/2025 16:28] viking046433
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1432768045780303953/message.txt?ex=69f38339&is=69f231b9&hm=8684af09b9f5e358b650e71a8ca2326ef4eed602876c4cb5583caa61cc14c04c&
+
+
+[10/28/2025 16:35] serialkiller15
+do you have any results on it, will take some time when i can take a look on it.
+
+
+[10/28/2025 16:49] viking046433
+No not yet with this new version. I had it Go to 72% in 3 months but October the 10th took back everything
+
+
+[10/28/2025 16:49] viking046433
+That's why it needs some protection against things like the 10th
+
+
+[10/29/2025 01:47] ch1ck3n_t4c0s
+time is the ultimate currency
+
+{Reactions}
+💯
+
+[10/29/2025 01:47] ch1ck3n_t4c0s
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1432908703673094318/image.png?ex=69f35d79&is=69f20bf9&hm=ff0905001ca21aace409b26e90b309c4f7f5aef363ecabdc38c6f8513968293f&
+
+{Reactions}
+🚀 (3)
+
+[10/29/2025 05:40] niutie8977
+no trade after running for 4 hours
+
+
+[10/30/2025 04:52] viking046433
+Daily Profit over the last 7 days:
+Day (count)     USDT         ZAR          Profit %
+--------------  -----------  -----------  ----------
+2025-10-30 (2)  17.705 USDT  304.00 ZAR   1.73%
+2025-10-29 (1)  16.461 USDT  282.63 ZAR   1.64%
+2025-10-28 (3)  13.989 USDT  240.19 ZAR   1.41%
+2025-10-27 (2)  -32 USDT     -549.43 ZAR  -3.13%
+2025-10-26 (3)  33.1 USDT    568.34 ZAR   3.34%
+2025-10-25 (3)  1.031 USDT   17.70 ZAR    0.10%
+2025-10-24 (0)  0 USDT       0.00 ZAR     0.00%
+
+{Reactions}
+😋
+
+[10/30/2025 04:53] viking046433
+BucksV4_2B
+
+
+[10/30/2025 04:57] abb8187
+@ViKiNG Running 5 meters?
+
+
+[10/30/2025 05:08] viking046433
+What
+
+
+[10/30/2025 05:57] serialkiller15
+@everyone created a pair list channel #pairlists
+
+{Reactions}
+🚀 (2) 👍 🔥
+
+[10/30/2025 15:06] themarkx_
+@everyone anyone know about hyperliquid volatility deep ai strategy
+
+
+[10/30/2025 17:00] neveerrk
+https://github.com/0xweb3tech/nof1ai
+
+{Embed}
+https://github.com/0xweb3tech/nof1ai
+GitHub - 0xweb3tech/nof1ai: Building opensource clone of https://no...
+Building opensource clone of https://nof1.ai/ . Contribute to 0xweb3tech/nof1ai development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/ONbTMnOtP7XM9CnYWQ04vgoEaG4sL5fneJjiKEDgjxs/https/opengraph.githubassets.com/c3a8466c730877048c880096c9d0ec430c87b87b6820e59ba296e2071555b108/0xweb3tech/nof1ai
+
+{Reactions}
+❤️ 🚀
+
+[10/30/2025 17:01] neveerrk
+Perhaps someone can help him improve.
+
+
+[10/30/2025 17:11] serialkiller15
+that's realy interesting
+
+
+[10/30/2025 17:12] themarkx_
+Yup
+
+
+[10/30/2025 17:12] neveerrk
+Let's start a separate discussion group. AI trading is quite interesting.
+
+
+[10/30/2025 17:25] snokard.
+Looks like its "ready"? At least for hyperliquid?
+
+
+[10/30/2025 17:27] neveerrk
+yep
+
+
+[10/30/2025 17:29] neveerrk
+It can be deployed and run directly. It would be even better if someone could improve it, perhaps by adding more metrics and discussing some prompts.
+
+
+[10/30/2025 17:30] dragongoattigercat
+can we dry run with it? sorry I have not had a chance to read through it yet
+
+
+[10/30/2025 17:32] snokard.
+Just go low on it...
+
+
+[10/30/2025 17:33] dragongoattigercat
+start with 10 USDT? LOL
+
+
+[10/30/2025 17:33] snokard.
+100-1000 should be enough
+
+
+[10/30/2025 17:35] dragongoattigercat
+let fire it up
+
+
+[10/30/2025 17:38] themarkx_
+Also there is one more strategy call hyperliquid big cap deep ai
+
+
+[10/31/2025 09:57] shalossen
+There is also this one https://github.com/tinkle-community/nofx
+
+{Embed}
+https://github.com/tinkle-community/nofx
+GitHub - tinkle-community/nofx: Multi-exchange AI trading platform ...
+Multi-exchange AI trading platform (Binance/Hyperliquid/Aster) with multi-AI competition(deepseek/qwen/claude), self-evolution, and real-time dashboard - tinkle-community/nofx
+https://images-ext-1.discordapp.net/external/yLM-iNl9N4vmsfqu6OlI3nkTDXEHRiRn5lIM6RjqqAI/https/opengraph.githubassets.com/80a571446bad62f9f2609b7aa394d98c742e5373d555e7f063c80a2c5255eb42/tinkle-community/nofx
+
+
+[10/31/2025 09:58] shalossen
+It's still in early testing but it's pretty good. Though there is no dry run for now. 
+Also beware that the main language is chinese in their telegram
+
+
+[10/31/2025 09:59] shalossen
+Really easy to set up
+
+
+[11/01/2025 05:38] dragongoattigercat
+are you running it now?
+
+
+[11/01/2025 05:53] ywk3926
+Look at the issues , there are many unresolved bugs here.
+
+
+[11/01/2025 05:54] dragongoattigercat
+you mean this one? https://github.com/0xweb3tech/nof1ai
+
+{Embed}
+https://github.com/0xweb3tech/nof1ai
+GitHub - 0xweb3tech/nof1ai: Building opensource clone of https://no...
+Building opensource clone of https://nof1.ai/ . Contribute to 0xweb3tech/nof1ai development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/0wuaJJ9Z5g6AYJgCaGOyo6SHkY0JNe3JbRC8EIEc9Ik/https/opengraph.githubassets.com/65509d46fcc118fa6d38e26269aaf4eb4ec4b6c5f8eaccbc19c00b7518bcc219/0xweb3tech/nof1ai
+
+
+[11/01/2025 07:50] neveerrk
+more better
+
+
+[11/01/2025 07:50] neveerrk
+Too many bugs
+
+
+[11/01/2025 08:24] .7thdragon
+openrouter pack with some fixes (duplicate env)
+yes LIVE trading doesnt even compare with dry, there are many differences and server side limits, rules and particularities that must be overcome
+ps: still not get why all bots use 0.7 temperature as default to let models hallucinate 😄
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1434095725796524033/nof1ai_openrouter.zip?ex=69f311b9&is=69f1c039&hm=53b2b5047caa08e3fe92f370891cebf6912fc4bf88e1332151bcc2bc8ed09f57&
+
+{Reactions}
+🔥 (2)
+
+[11/01/2025 08:54] shalossen
+yes
+
+
+[11/01/2025 09:40] viking046433
+Who can help me create a ml version of my strategy?
+
+
+[11/01/2025 09:41] viking046433
+I have tried but the ring won’t train
+
+
+[11/01/2025 09:41] serialkiller15
+which one?
+
+
+[11/01/2025 09:41] viking046433
+BucksV4_2B
+
+
+[11/01/2025 09:42] viking046433
+Problem I see it needs many pairs to have constant 2 to 3 trades a day. Atleat 80
+
+
+[11/01/2025 09:43] viking046433
+But the trailing stop is set to 7% full stop. The win rate is 62% with a 7% stop loss the % margin is 2% so it’s pretty good
+
+
+[11/01/2025 10:20] viking046433
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1434124834236792884/BucksV4_2B_FreqAI.py?ex=69f32cd5&is=69f1db55&hm=badff1a1602a761a573b8debf35f7150e1277882c3178426cb44585c345b7a7d&
+
+
+[11/01/2025 10:20] viking046433
+What is missing here?
+
+
+[11/01/2025 10:58] abb8187
+I have a version that isn't FreqAI, and it seems to be consistently losing money. I wonder how your test went?
+
+
+[11/01/2025 10:59] viking046433
+How many trades has it made
+
+
+[11/01/2025 11:15] vasko123.
+I only have October 3 - 29 and that's it. W/L 2/1 = 1.84%
+
+
+[11/01/2025 11:16] viking046433
+You need to use volume pairs 120 to 150 and no filtering
+
+
+[11/01/2025 11:16] viking046433
+I’ll also send a fixed updated version
+
+
+[11/01/2025 11:18] viking046433
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1434139564464934972/BuckV4_2B.py?ex=69f33a8d&is=69f1e90d&hm=5b21cebc1a7dd35cecf31168d929983b00f257a3e15f0ac1ff680a1579e969d3&
+
+
+[11/01/2025 11:22] abb8187
+Which Freqaimodels are you using?
+
+
+[11/01/2025 11:23] abb8187
+PyTorchMLPRegressor ？
+
+
+[11/01/2025 11:23] viking046433
+this one is not faqai
+
+
+[11/01/2025 11:23] viking046433
+xgboot trying to get it to train the freqai version
+
+
+[11/01/2025 11:23] abb8187
+BucksV4_2B_FreqAI.py
+BucksV4_2B_FreqAI.py (55 KB)this
+
+
+[11/01/2025 11:23] viking046433
+yes
+
+
+[11/01/2025 11:24] viking046433
+i now put logs in to see if it trains
+
+
+[11/01/2025 11:24] abb8187
+OK
+
+
+[11/01/2025 11:24] abb8187
+xgboot seems to be a single-output model; it doesn't seem to work with multi-output models. You could try it.
+
+
+[11/01/2025 11:26] abb8187
+I see that your `set_freqai_targets` function has multiple outputs.
+
+
+[11/01/2025 11:26] viking046433
+but does regressor not have multipule outputs?
+
+
+[11/01/2025 11:26] viking046433
+im new to freqai
+
+
+[11/01/2025 11:27] abb8187
+有
+
+
+[11/01/2025 11:27] abb8187
+have
+
+
+[11/01/2025 11:28] abb8187
+https://github.com/freqtrade/freqtrade/tree/develop/freqtrade/freqai/prediction_models ，These are the various models provided by the official website.
+
+{Embed}
+https://github.com/freqtrade/freqtrade/tree/develop/freqtrade/freqai/prediction_models
+freqtrade/freqtrade/freqai/prediction_models at develop · freqtrad...
+Free, open source crypto trading bot. Contribute to freqtrade/freqtrade development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/pDqWyncieEUmW1XWBcR-cbQzpCrVjky0QYqh8ffXv-U/https/repository-images.githubusercontent.com/91629816/d6659780-a0e1-11eb-8a38-933cd666cdeb
+
+
+[11/01/2025 11:29] abb8187
+I remember xgboot was a single output; I don't know if the issue has been fixed.
+
+
+[11/01/2025 11:30] viking046433
+but will the bot not refuse to start if the wrong model is used?
+
+
+[11/01/2025 11:30] viking046433
+what one should i try?
+
+
+[11/01/2025 11:31] abb8187
+No, training is complete, but an error message appears: multiple outputs are not supported.
+
+
+[11/01/2025 11:33] abb8187
+https://github.com/freqtrade/freqtrade/tree/develop/freqtrade/freqai/prediction_models  ，This section offers models with multiple outputs. Choose whichever suits your needs. First, train one currency and test it. Once you confirm that this currency has multiple outputs, add more currencies.
+
+{Embed}
+https://github.com/freqtrade/freqtrade/tree/develop/freqtrade/freqai/prediction_models
+freqtrade/freqtrade/freqai/prediction_models at develop · freqtrad...
+Free, open source crypto trading bot. Contribute to freqtrade/freqtrade development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/pDqWyncieEUmW1XWBcR-cbQzpCrVjky0QYqh8ffXv-U/https/repository-images.githubusercontent.com/91629816/d6659780-a0e1-11eb-8a38-933cd666cdeb
+
+
+[11/01/2025 11:35] abb8187
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1434143757837533235/image.png?ex=69f33e74&is=69f1ecf4&hm=3dfb0ac120910a4d85b6b7a403c354bc545be08013b411caaa3cf42dab356062&
+
+
+[11/01/2025 12:03] abb8187
+I remember that PyTorchMLPClassifier.py, PyTorchMLPRegressor.py, and PyTorchTransformerRegressor.py are three files that support multiple model outputs. I haven't tested the others. You can test them yourself.
+
+
+[11/01/2025 12:04] abb8187
+PyTorchMLPClassifier.py, PyTorchMLPRegressor.py, and PyTorchTransformerRegressor.py—one of these three should support it, but I forgot which one. Please test all of them.
+
+
+[11/01/2025 12:05] viking046433
+100%
+
+
+[11/01/2025 12:18] viking046433
+I don’t have a clue wat the names are when loading them
+
+
+[11/01/2025 12:19] abb8187
+这样弄就可以了 。。
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1434154955702276146/image.png?ex=69f348e2&is=69f1f762&hm=2cc126a7c510cc73c1a7a06917038225f169b3299975291d3a72631426ce698e&
+https://cdn.discordapp.com/attachments/1372215916380688426/1434154956029689979/image.png?ex=69f348e2&is=69f1f762&hm=15e2d11528bbbb92ce94a195b07f9626fcda927127e45d6036a4eeba2560d9e1&
+
+
+[11/01/2025 12:22] abb8187
+This also needs to be configured.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1434155600182251580/image.png?ex=69f3497c&is=69f1f7fc&hm=fea8d6647b7cf9914a32070ee18be3e534ce17e7e2e2cf607690d3cd0c0fc716&
+
+
+[11/01/2025 12:27] abb8187
+It's written in the documentation; you can find out by looking at the documentation.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1434156934801526896/image.png?ex=69f34aba&is=69f1f93a&hm=20a8d6ac03a1ee00b6503ac08f0c64fac38e0c004db3fbd99ba0ace43d5d37fb&
+
+
+[11/01/2025 14:40] viking046433
+nope i need some help here with someone that has done this before i have tried all of them still dont kniw if its traianng or not
+
+
+[11/01/2025 14:45] darkreaper0756
+Hi, What model and strategy do you want to try?
+
+
+[11/01/2025 14:54] ch1ck3n_t4c0s
+working on some stuff
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1434193946296455258/image.png?ex=69f36d32&is=69f21bb2&hm=98e0527605405f752b13a8cf57024e739259ee5a8ac34b04632d5693b3a67998&
+
+
+[11/01/2025 14:57] viking046433
+I’ll send you the base strategy what model do you think would work best for it. It is a min trading strategy it works on very volatile pairs when it suddenly drops it opens a trade for the rebound. On 60 pairs it might trade 1 to 3 times per day.
+
+
+[11/01/2025 14:58] darkreaper0756
+Buck?
+
+
+[11/01/2025 14:58] viking046433
+Yes I removed some exit signals that was a hindrance because at 7% trailing stop it works best
+
+
+[11/01/2025 14:59] viking046433
+here is the correct one
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1434195185176150046/BuckV4_2B.py?ex=69f36e5a&is=69f21cda&hm=1aeadf38d42c1be5084e8f6595ffdeaa1fda8c36f58eba954ecea4557a2185a2&
+
+
+[11/01/2025 15:00] viking046433
+ROI: Closed trades
+∙ 61.161 USDT (2.03%) (6.18 Σ%)
+∙ 1061.758 ZAR
+ROI: All trades
+∙ 58.392 USDT (1.88%) (5.9 Σ%)
+∙ 1013.689 ZAR
+Total Trade Count: 22
+Bot started: 2025-10-24 14:07:06
+First Trade opened: 7 days ago (2025-10-24 14:38:36)
+Latest Trade opened: 24 minutes ago (2025-11-01 13:52:29)
+Win / Loss: 14 / 7
+Winrate: 66.67%
+Expectancy (Ratio): 2.91 (0.21)
+Avg. Duration: 8:05:57
+Best Performing: SAPIEN/USDT:USDT: 22.77 USDT (8.45%)
+Trading volume: 8550.806 USDT
+Profit factor: 1.63
+Max Drawdown: 4.29% (44.615 USDT)
+    from 2025-10-30 04:47:37 (50.287 USDT)
+    to 2025-10-31 13:02:31 (5.671 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-10-30 04:47:37 (61.161 USDT)
+
+{Reactions}
+👍
+
+[11/01/2025 15:04] ch1ck3n_t4c0s
+🚀 Asterdex (dry): Exited ZEC/USDT:USDT (#9)
+Profit: 227.57% (profit: 486.214 USDT / 486.026 USD)
+Enter Tag: wallet:0x6d86a472b804
+Exit Reason: exit_signal
+Direction: Long (5x)
+Amount: 3.494
+Open Rate: 305.68 USDT
+Exit Rate: 444.76 USDT
+Duration: 1 day, 12:20:47 (2180.8 min)
+
+{Reactions}
+👍 (3) 🚀 (4) 🔥
+
+[11/01/2025 15:11] darkreaper0756
+I'm trying to make a hybrid strategy, to use a strategy that has ok signals and for the last condition for entering the transaction to be decided by the AI ​​model's prediction.
+
+{Reactions}
+👍 (2)
+
+[11/01/2025 15:14] darkreaper0756
+XGBoost with fine tuning works well
+
+
+[11/01/2025 15:15] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1434199074252263536/Screenshot_2025-11-01_161120.png?ex=69f371f9&is=69f22079&hm=b4455d2b3e5cf8bbf63e767f5104143cf697e760629af6fe735eb26fb9d2c372&
+
+
+[11/01/2025 15:20] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1434200363484844072/IMG_4446.jpg?ex=69f3732c&is=69f221ac&hm=644e9a10156eb246146af0f3c913a97529bd7d016709b72fe05d0455e16f8398&
+
+{Reactions}
+🔥 (2)
+
+[11/01/2025 15:23] viking046433
+Good drawdown
+
+
+[11/01/2025 15:24] serialkiller15
+nice!
+
+
+[11/01/2025 15:26] ywk3926
+Entry signals are extremely rare, right?
+
+
+[11/01/2025 15:38] darkreaper0756
+I tested and logged in tensorboard all strategies that have integrated AI, (those that run without FreqAI). In all strategies, AI introduces noise, lag, and bias. AI models to work well, not perfectly, need a lot of fine tuning and many parameters for the AI ​​model to learn to do something correctly.
+
+{Reactions}
+🚀 (2)
+
+[11/01/2025 15:39] viking046433
+Yes that’s why I have a pair list with extra volatile pairs
+
+
+[11/01/2025 15:39] viking046433
+Then I’ll do something else
+
+
+[11/01/2025 16:31] darkreaper0756
+AlexBandSniper has good signals, It is a starting point, or any other strategy that has good signals and the last condition should be Do_predict
+
+{Reactions}
+👍
+
+[11/03/2025 22:01] xf0x0f
+who else is working with code driven agent architecture to coordinate autonomous trading systems?
+
+
+[11/03/2025 22:03] anonymuis
+Yes, have been experimenting with it on and off for the past 6 months.
+
+
+[11/03/2025 22:06] xf0x0f
+nice, which ai base are you using for your tests?
+
+
+[11/03/2025 22:08] xf0x0f
+was is only freqtrade youre using?
+
+
+[11/03/2025 22:16] xf0x0f
+you can also PM me if it fits you well 😉
+
+
+[11/03/2025 22:23] anonymuis
+I've tried one using deep seek for technical analysis and openai for improving the prompts every 50 cycles.
+Great basics, but the prompt grew too large and deep seek (or any other I tried from Open router) was missing some instructions if the prompt became too complex.
+
+The other is just a concept for now:
+'invent' multiple freqtrade strategies, backtest them (multiple in parallel), the use the signals from backtesting and parse them to a custom analysis that runs them through a more detailed trade-log-historie (more detailed than the OHLCV being used in backtesting, and score only the entries on:
+Low drawdown shortly after the entries (entry precision)
+A high of X ATR within Y candles (percentage of gain within shirt timeframe shows potential of the trade)
+And combine these over multiple timeframes and during different regimes.
+
+So, the first step is getting a database of potential entries setups, generated and tested fully automatic.
+The next step is picking some if these basic strategies and combine them (like different strategies for different regimes) in more complex strategies that also try to create good exits. Also run a battery of parallel tests here. Run them live and only keep the best few for the current regime, while continuing to find other combinations.
+
+
+The design is still rough, but it is fun to see an automatic 'portfolio' of entry-strategies being build!
+
+{Reactions}
+👍 (2)
+
+[11/03/2025 22:23] anonymuis
+Sure, but the basic idea here is to share and inspire! 😉
+
+
+[11/03/2025 22:25] anonymuis
+BTW, I really like Claude Code for automatic code and strategy generation.
+
+{Reactions}
+👍 (2)
+
+[11/03/2025 22:28] xf0x0f
+im also working with claude code in combination with opencode/grok,... had to upgrade to claude max last days where i tried to overpower the agents driven orchestration xD
+
+
+[11/03/2025 22:31] xf0x0f
+this gave me so much more ideas for future planning autonomous backtesting/hyperopt/dryun,... thinking of new combination of strategies, trying to implement new ways and so on,...
+
+
+[11/03/2025 22:34] xf0x0f
+i just find it a pity that the possibilities of a truly autonomous system without a technical background are almost impossible and like searching for a needle in a haystack and that it is really hard to get meaningful results even with agents and monitoring because most of the time the question you are asking is already the one you needed before but didnt have in mind at the tim
+
+{Reactions}
+👍
+
+[11/03/2025 22:38] xf0x0f
+there are also just so many possibilities... why run the stack on an lxc, or maybe better in a vm with passthrough gpu, or maybe better in docker because the ai handles it better that way? you keep running into problems and knowing all of them is almost impossible unless you have either read about them before somewhere or have faced them yourself. what do you do to take a structured approach to this topic?
+
+
+[11/03/2025 22:41] xf0x0f
+next time you go live and get a rate limit problem where almost all of your opened trades got stuck in a loop with wrong values for open trades,... how scary is this,... and no this is not a halloween story 😉
+
+
+[11/03/2025 23:04] anonymuis
+Hahaha! Yes, you are right. These endless possibilities also open up an endless can of worms!
+
+
+[11/13/2025 16:51] darkreaper0756
+Actions taken by RL in training, good boy😅
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1438571931501596733/Screenshot_2025-11-13_172450.png?ex=69f38883&is=69f23703&hm=750bb78287875ca0a3c7cb21c94b1f6218bd6b94eb42cf0c22fca530384939e8&
+https://cdn.discordapp.com/attachments/1372215916380688426/1438571931937931304/Screenshot_2025-11-13_173351.png?ex=69f38883&is=69f23703&hm=5ea93781d2b2dde9f565c8cb7eabaf2b68aa5eba4271d8edd245141b572d74a2&
+
+{Reactions}
+👍 (3) 🔥
+
+[11/13/2025 17:05] serialkiller15
+Yep good boy
+
+
+[11/13/2025 18:36] bigbroseur
+Hello DarkReaper, 
+That's so cool! What strategy are you talking about  and what setup are you using?
+
+
+[11/14/2025 06:51] darkreaper0756
+Hi! It’s about a custom reinforcement learning AI model. I’m still working on stabilizing it…
+
+{Reactions}
+🚀 (2) 👍
+
+[11/14/2025 12:33] xf0x0f
+Running Freqtrade 2025.8
+
+Running with 10xunlimited USDT on binance in futures markets, with Strategy GKD_BinancePatternML_FreqAI.
+
+Stoploss on exchange is disabled.
+
+Currently running, force entry: true
+
+Dry-Run
+Avg Profit 1.289% (∑ 42.551%) in 33 Trades, with an average duration of 2:31:32. Best pair: AAVE/USDT:USDT.
+
+Bot start date: 2025-11-13 22:25:48 (UTC)
+First trade opened: 2025-11-13 22:38:48 (UTC)
+Last trade opened: 2025-11-14 12:01:45 (UTC)
+
+Profit factor: 3.10
+Trading volume: 6339,898 USDT
+
+Profits for
+
+All
+
+Long
+
+Short
+Trades
+Metric
+Value
+ROI closed trades    16,868 USDT (1.35%)
+ROI all trades    18,507 USDT (1.29%)
+Total Trade count    33
+Bot started    2025-11-13 22:25:48 (UTC)
+First Trade opened    2025-11-13 22:38:48 (UTC)
+Latest Trade opened    2025-11-14 12:01:45 (UTC)
+Win / Loss    22 / 7
+Winrate    75.862%
+Expectancy (ratio)    0.58 (0.51)
+Avg. Duration    2:31:32
+Best performing    AAVE/USDT:USDT: 1.51%
+Trading volume    6339,898 USDT
+Profit factor    3.10
+Max Drawdown    0.81% (5,542 USDT) from 2025-11-14 09:45:43 to 2025-11-14 12:23:31
+Current Drawdown    0.81% (5,542 USDT) since 2025-11-14 09:45:43
+
+
+[11/26/2025 18:30] 4v1234
+Perfect test for any strategy 👌
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1443307876390146181/Screenshot_20251126_202843_Bybit.jpg?ex=69f2f6f5&is=69f1a575&hm=cfff2ff02f665624fc7d4a106315c8f2c6da4f9e2717ab67f6488c0d1a2d72de&
+
+{Reactions}
+👍
+
+[12/03/2025 22:48] xf0x0f
+BotOwskyV2
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1445909492012286012/IMG_8929.png?ex=69f33366&is=69f1e1e6&hm=5a85b5ebe8e47c00e7ef654b559a42d853c4e5d333c8fbd8a9deaec5513af6cd&
+
+
+[12/04/2025 01:49] 4v1234
+What strategy 🤔  with only 4 trades looks good
+
+
+[12/04/2025 01:56] ggoyito
+The last time you talked to me about some way of visualizing data, actions in the strategy, researching I found the directory trees, you still have to check that all the indicators end up influencing the LSTM, the decisions that are made will be reflected in the serial monitor by said directory tree
+
+
+[12/04/2025 01:57] ggoyito
+I come back from work, 5 liters of coffee and continue
+
+
+[12/04/2025 02:19] .oliver6
+where is V2 version please I only found V1
+
+
+[12/04/2025 04:40] xf0x0f
+Its still in dev
+
+
+[12/04/2025 05:48] 4v1234
+Is it yours?
+
+
+[12/09/2025 21:57] xf0x0f
+Yes its mine
+
+
+[12/09/2025 21:57] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1448071042793738421/IMG_8978.png?ex=69f32780&is=69f1d600&hm=50526f46ca6ceb68fa56ea14e6afe785f5af53776c7c21eaf33be2d15d346463&
+
+
+[12/09/2025 22:01] 4v1234
+This looks nice, interesting for me is the live run. Can we help with something?
+
+
+[12/09/2025 22:20] xf0x0f
+Will start soon 😅
+
+{Reactions}
+😆
+
+[12/09/2025 22:24] 4v1234
+I can help too 😀
+Fingers crossed
+
+
+[12/12/2025 15:34] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1449061822643703990/IMG_8999.png?ex=69f3767c&is=69f224fc&hm=0a105c644f7fbfc1e9a240ec5a66f5c7c69a5018a1315c4ac380626510143a14&
+
+
+[12/12/2025 15:35] 4v1234
+Totally ready for live
+
+{Reactions}
+🤣
+
+[12/12/2025 15:36] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1449062404809035826/IMG_9001.png?ex=69f37707&is=69f22587&hm=4317fa53c4b3921e9bdc6ca7474606a698eabf051564d4a8f8e59f152fe72446&
+
+{Reactions}
+👍 🔥 (3)
+
+[12/12/2025 15:36] xf0x0f
+I have only 10 pairs and max open 5
+
+
+[12/12/2025 15:38] serialkiller15
+nice results!
+
+
+[12/15/2025 22:56] xf0x0f
+which strats died today?
+
+
+[12/16/2025 05:48] serialkiller15
+Latest versions of Bandsniper survived from my side and also GDK
+
+
+[12/16/2025 05:51] serialkiller15
+Market Manipukation
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1450364578369241158/Screenshot_20251216_065043_Threads.jpg?ex=69f39685&is=69f24505&hm=6e2e4f83f5a5f9e4c9165173408dfe2e373efac811a7cdcb4db2ddee23e9f71b&
+
+{Reactions}
+👍
+
+[12/16/2025 07:00] 4v1234
+Manipulation filter  😉
+
+
+[12/16/2025 07:31] glad8769
+Mine didn’t 🙀
+
+
+[12/16/2025 08:19] glad8769
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1450401899512594586/image.png?ex=69f31088&is=69f1bf08&hm=090a8d6004f66f9c6fb98c46f5a89422265e9f584a06fde3207790d59153e4fd&
+https://cdn.discordapp.com/attachments/1372215916380688426/1450401899856793600/image.png?ex=69f31088&is=69f1bf08&hm=30e2c3aee6dc68970c5e10255e04d31848cb44c607afd87d6bb97cfd14fc17ba&
+https://cdn.discordapp.com/attachments/1372215916380688426/1450401900263637002/image.png?ex=69f31088&is=69f1bf08&hm=03ea838b868c29281ff8b0d261b17f28874622152b6eb0eb0b39741bde451e58&
+
+
+[12/16/2025 08:21] glad8769
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1450402329194004581/image.png?ex=69f310ee&is=69f1bf6e&hm=fdd3d85ebbbc7b599d339c50879be9debfda6071d01bb11302216e46967fb4f4&
+
+
+[12/16/2025 08:22] glad8769
+something was not good here, perhaps this coin mmm
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1450402655900795044/image.png?ex=69f3113c&is=69f1bfbc&hm=b86c98eef9b2105d1fe2f6ce0779d3d5da132dbaa88bba099bac60560081655d&
+https://cdn.discordapp.com/attachments/1372215916380688426/1450402656148263033/image.png?ex=69f3113c&is=69f1bfbc&hm=769fe95a2e687e14a2a2820ffa631bfd7740d16b00745de7fe3052c6a022b71d&
+
+
+[12/16/2025 08:33] glad8769
+I wonder if in this case the reverse could be detected and close the long and open a short
+
+
+[12/16/2025 08:33] serialkiller15
+Sry @glad you loss 3 usdt and are afraid it did but do it Sry but you need to let it run longer
+
+
+[12/16/2025 08:34] glad8769
+Apart the 3usd, it’s going down by 10%, this is live, not dry 🙂
+
+
+[12/16/2025 08:36] glad8769
+I’ll change the config using your pairs and let it run, let’s see
+
+
+[01/07/2026 10:01] xf0x0f
+have fun
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1458400151050649620/BotOwskyStrategy_V3.py?ex=69f3287b&is=69f1d6fb&hm=4b635371a613d158c42befe6b470c4a54a06cd7d1341e59e54c4b4e3df391a41&
+
+{Reactions}
+🚀 (4) 👏
+
+[01/07/2026 10:06] xf0x0f
+15m timeframe on binance
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1458401485325865125/Bildschirmfoto_2026-01-07_um_11.06.39.png?ex=69f329b9&is=69f1d839&hm=9eca84ba97b248c651c887f28eccfb3e1fe2faf39e4e94f97e693c94ff39adf0&
+
+{Reactions}
+🚀 (5) 🫡 👌
+
+[01/07/2026 10:10] xf0x0f
+uptime 4 days or so
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1458402445565628600/Bildschirmfoto_2026-01-07_um_11.10.08.png?ex=69f32a9e&is=69f1d91e&hm=87f1f80637a1d7f0a5d9c2da49d5180f7f889b0f5efb60a27147d44a637b1ec9&
+
+{Reactions}
+👍 (6) 👏 (2)
+
+[01/07/2026 10:23] xf0x0f
+here my conf
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1458405580048826449/botowsky_v3.json?ex=69f32d8a&is=69f1dc0a&hm=42ba461398a34d9aebb1153c4b0004924bf19e1010c51f71f1ac20a6178b9bb4&
+
+
+[01/07/2026 22:11] divarak
+freqtrade.resolvers.iresolver - WARNING - Could not import \\\\\user_data\strategies\BotOwskyStrategy_V3.py due to 'unexpected indent (BotOwskyStrategy_V3.py, line 50)'
+
+
+[01/07/2026 22:11] divarak
+Could not import \\\\\user_data\strategies\BotOwskyStrategy_V3.py due to 'unexpected indent (BotOwskyStrategy_V3.py, line 50)'
+
+
+[01/07/2026 22:19] divarak
+Sorry, my programming skills are below zero, can't understand what's wrong 🤦‍♂️
+
+
+[01/07/2026 22:25] serialkiller15
+There is a small error in the first lines commented out the Strategy will post tomorrow because I am on mobile
+
+{Reactions}
+🫡
+
+[01/07/2026 23:04] thejataxd
+Yeah, it’s an error at the start of the file. I fixed it by cleaning the indentation. Try this one
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1458597200404680724/BotOwskyStrategy_V3.py?ex=69f33740&is=69f1e5c0&hm=065c678425719730a317f34a32052805af2d0685e87f6e0124f0f1e24a776e44&
+
+{Reactions}
+👍
+
+[01/08/2026 15:43] ywk3926
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1458848638590783603/TripleSuperTrendADXRSI.json?ex=69f378ab&is=69f2272b&hm=f41a6659e92e4ef6cf124338cdeb9caf2c2bde23c289f5ce285011af000e5c3c&
+https://cdn.discordapp.com/attachments/1372215916380688426/1458848638863278384/TripleSuperTrendADXRSI.py?ex=69f378ab&is=69f2272b&hm=23062a92ae85c03c35788d7952424231eefaf7e96461a7d46f4d065b350b133f&
+
+{Reactions}
+👍 (4)
+
+[01/08/2026 15:46] ywk3926
+Using the 1-hour timeframe, the maximum number of open orders is 20. I tried setting it to 40, but when the trend reverses, the drawdown becomes larger.
+
+
+[01/08/2026 15:48] ywk3926
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1458849804246454406/image.png?ex=69f379c1&is=69f22841&hm=aace4949851aa59a7c098807985f01aa9fb3d5a8cdf4d74b6fc91401b159c263&
+https://cdn.discordapp.com/attachments/1372215916380688426/1458849804577669325/image.png?ex=69f379c1&is=69f22841&hm=ff22219bddcfa7a237e2dbc0eaf42bcde5401ffb15057e0ae673dae746ac2e36&
+
+
+[01/08/2026 15:59] vasko123.
+https://github.com/djienne/YOUTUBE_STRATEGIES_FREQTRADE/blob/master/Strategies/BB_RPB_TSL/user_data/strategies/BB_RPB_TSL.py - I've tested almost all of this guy's strategies. Well, this one seems to be working so far.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1458852651935600753/4be02273f449142e.png?ex=69f37c68&is=69f22ae8&hm=e23a0457e7975c796bc28595c458bc1d025dc8b79ec16acf477ce15bdfcd8c97&
+
+{Embed}
+https://github.com/djienne/YOUTUBE_STRATEGIES_FREQTRADE/blob/master/Strategies/BB_RPB_TSL/user_data/strategies/BB_RPB_TSL.py
+YOUTUBE_STRATEGIES_FREQTRADE/Strategies/BB_RPB_TSL/user_data/strate...
+Depot contenant les fichiers de stratégies et de configurations présentés dans la chaine Youtube. - djienne/YOUTUBE_STRATEGIES_FREQTRADE
+https://images-ext-1.discordapp.net/external/RNHMu4PyNIvAnsC8a9_Hg_1ytxid82G_qYoOz7HaEQs/https/opengraph.githubassets.com/7fd695defcbf71dfd77b5eeeb920bd5ae9f979d1cb122217561ca81fd833f4fd/djienne/YOUTUBE_STRATEGIES_FREQTRADE
+
+{Reactions}
+👍 (2) 👏
+
+[01/09/2026 21:32] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1459298852279419072/image0.jpg?ex=69f321b6&is=69f1d036&hm=064234bbe34160521eb2d29ec88c38edaa8f05fe202927d809d4a4d5d1a70f3c&
+
+{Reactions}
+👍 (3)
+
+[01/09/2026 21:53] xenigami
+alpha arena leaked
+
+
+[01/09/2026 21:54] glad8769
+But making money with Polymarket is illegal right?
+
+
+[01/09/2026 21:56] evgenyy1981
+https://github.com/carlo9402/alpha-arena-okx
+
+{Embed}
+https://github.com/carlo9402/alpha-arena-okx
+GitHub - carlo9402/alpha-arena-okx: 🤖 Automate BTC trading with ...
+🤖 Automate BTC trading with a web monitoring interface. Benefit from intelligent order management and real-time risk protection for better trading efficiency. - carlo9402/alpha-arena-okx
+https://images-ext-1.discordapp.net/external/uUPn9oaflJmP0XLEaTZ1bgILWR7E3gbHkT6Z-H-qcU8/https/opengraph.githubassets.com/677fd94313498e1192d26af04adac3d08f1b19350018d366ac820fba1f927845/carlo9402/alpha-arena-okx
+
+
+[01/09/2026 22:09] xenigami
+Virus Malware
+
+{Reactions}
+👀 (2)
+
+[01/10/2026 08:18] movdream
+did you get to dld it?
+
+
+[01/10/2026 08:36] darkreaper0756
+No
+
+
+[01/10/2026 08:41] darkreaper0756
+https://github.com/nof1-ai-alpha-arena/nof1.ai-alpha-arena/
+
+
+[01/10/2026 08:42] darkreaper0756
+Has anyone managed to make a copy of this?
+
+
+[01/10/2026 08:48] darkreaper0756
+Why?
+
+
+[01/10/2026 10:22] glad8769
+I read that governments do not like it as it is gambling illegally because they do not pay taxes in many states and there is no way to declare taxes, at least what I know
+
+{Reactions}
+👍
+
+[01/10/2026 16:08] jhonn3214
+hi, how can i use kde nodes like this?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1459579608281252045/image.png?ex=69f37e70&is=69f22cf0&hm=240a5f3a986ad1df4687bb1c939f3fe552251583ec830d3be6ac0bb013fccd57&
+
+
+[01/10/2026 16:10] jhonn3214
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1459580055276491038/image.png?ex=69f37eda&is=69f22d5a&hm=5446c3b7eee55df2aea24dfcd858e4a460eca476b55ac383b2995255da7e6d5c&
+
+
+[01/10/2026 16:55] xf0x0f
+you can plot them in freqtrade by calculating the kde peaks from recent price data and returning them as indicator columns in populate_indicators(), then adding them to your plot config
+
+
+[01/10/2026 16:57] xf0x0f
+https://medium.com/open-crypto-market-data-initiative/kernel-density-estimation-a-quantitative-journey-part-i-bfebf7cebd19
+
+
+[01/10/2026 16:57] xf0x0f
+https://in.tradingview.com/scripts/kde/
+
+{Embed}
+https://in.tradingview.com/scripts/kde/
+Kde — Indicators and Strategies — TradingView — India
+kde — Check out the trading ideas, strategies, opinions, analytics at absolutely no cost! — Indicators and Strategies — India
+https://images-ext-1.discordapp.net/external/Iv203VADxw6KRPFj9w6y8ZDxPcqKZ64feAHcslgvCQ0/https/static.tradingview.com/static/images/logo-preview.png
+
+{Reactions}
+👍
+
+[01/10/2026 18:03] jhonn3214
+I think I'm doing that. Those lines represent KDE node 1 and KDE node 2.
+
+
+[01/18/2026 11:40] ggoyito
+Hello guys, do you have any strategy that makes good short entries, what can you share with me please?
+
+
+[01/19/2026 01:42] sera131
+maybe have a look yourself first? what's the difference between a strategy that has good short entries and a strategy that has good long entries?
+
+
+[01/19/2026 01:45] ggoyito
+Yes, I got to that question too, I already solved yes. Thank you very much mate
+
+
+[01/21/2026 08:37] .oliver6
+all my strategies are dying in this market condition
+
+
+[01/21/2026 08:38] serialkiller15
+no all...
+
+its in development...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1463452747310436638/image.png?ex=69f31514&is=69f1c394&hm=1982a640fc19d29a04d0004e0f548a2fcca259aaba0dcd138870f8db25ef8e57&
+
+{Reactions}
+👍
+
+[01/21/2026 10:23] ohbad1330
+🥷
+
+
+[01/26/2026 01:18] ggoyito
+Hey, I want to share the concept of a strategy that I dreamed of, what channel can I do to maintain order in the community?
+
+{Reactions}
+🚀 (2)
+
+[01/26/2026 08:00] serialkiller15
+You can share it here
+
+
+[01/27/2026 00:53] jhonn3214
+you can chare de idea and talk about
+
+
+[01/27/2026 01:45] ggoyito
+Of course as a dream I have not tried it, I suppose there will still be details but in escence that, I am trying other strategies on my Intel n95 and it is not enough so I turn to you since you have more computing power at your disposal, in the meantime, I continue to solve the problems with my thesis that have me crazy...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1465523111607799972/GGYT_SAC.py?ex=69f35d01&is=69f20b81&hm=2ae874ad5ebafa3732cac49399411ca6b163010d4e90cdce901b15d74bc5abad&
+
+
+[01/27/2026 01:46] ggoyito
+👎
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1465523253094252604/PXL_20260125_211022696.mp4?ex=69f35d23&is=69f20ba3&hm=65b15f05d52a5d514b1fee4ea737ccfe790338341f201f2273b485edcd57221d&
+
+
+[01/27/2026 01:48] jhonn3214
+wow, mechatronics?
+
+
+[01/27/2026 02:01] ggoyito
+Mechatronics work to apply for the degree of Electrical Engineer.
+
+
+[01/27/2026 14:19] serialkiller15
+some improvments i found on telegram seems our member @DarkReaper created it?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1465712866664513627/image.png?ex=69f364fb&is=69f2137b&hm=2fd7ac4b6d8fa3e2240c029f35321258bd5ba598c9bcbdad320fcde183afb7de&
+
+
+[01/27/2026 16:57] darkreaper0756
+yes, let's make money💶💶💶💶
+
+
+[01/30/2026 17:49] xf0x0f
+New try to build a hybrid strat
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1466852877485211976/IMG_0375.png?ex=69f39632&is=69f244b2&hm=881a1f3efbd89de18c3fd179e450d723c28b79802819a84817887d9454cfd2b7&
+
+{Reactions}
+👍 🚀 (2)
+
+[02/06/2026 03:26] themarkx_
+https://offlinepixel.gumroad.com/l/trader-on-the-go
+@everyone can any one help to get this indicator's script or something
+
+{Embed}
+https://offlinepixel.gumroad.com/l/trader-on-the-go
+Trader On The Go - Invite Only
+An exclusive invite-only Pine Script strategy built for traders who want clear, actionable market insights in real time. Perfect for intraday scalpers, day traders, and swing traders who can’t afford to miss the smart money moves. Please note if you are looking for 1cr pulse strategy. you need to contact/subscribe via the link provided on bott...
+https://images-ext-1.discordapp.net/external/llCNHcsr12ejAG9GxgGF3Ds4zeZZyzdOo1tun6lkvYo/https/public-files.gumroad.com/9b5hgtalvr9hz72jso4otegb3pdc
+
+
+[02/06/2026 03:27] serialkiller15
+Morning mate let my ask y AI Assistent
+
+
+[02/06/2026 03:56] themarkx_
+OPUS 4.6  just release
+
+
+[02/06/2026 07:24] 4v1234
+Is it a strategy or just signals? The info is not clear for me.
+
+
+[02/06/2026 07:24] serialkiller15
+its a strategy you can by for
+
+
+[02/06/2026 07:26] 4v1234
+Collective purchase? 5-6 or 7 people.....one can take it and then we can analyze and remake it? Any thoughts
+
+
+[02/06/2026 07:36] ywk3926
+Or even more people. We could buy a bunch of paid strategies and remake our own versions, hahaha.
+
+
+[02/06/2026 07:36] serialkiller15
+i will not buy any stratgies i already feed my AIAssistant with the stuff hof the post and doing backtest at the moment!
+
+
+[02/06/2026 07:37] serialkiller15
+first of all ninja is good but lets see how it recovers when the market changes....
+
+
+[02/06/2026 08:00] 4v1234
+No offense intended at all — it was only a suggestion for discussion.
+I really appreciate the progress we’ve made in the last few months, especially the open exchange of ideas and teamwork.
+The community feels more united, and that’s a great thing.
+Different perspectives only make us stronger.
+
+
+[02/06/2026 08:18] serialkiller15
+Absolute yes mate we did all a good job we will see what happens in the future
+
+
+[02/13/2026 07:22] xf0x0f
+IMPERATOR STRATEGY v1.0 by xF0x0F
+Ultimate Binance Futures ML Strategy
+
+Combines:
+- XGBoost ML predictions (from AlexBandSniperV18)
+- HMM Regime Detection (from HMMRegimeStrategy)
+- Multi-Timeframe Analysis
+- Smart Divergence Detection
+- Dynamic Position Sizing based on confidence
+- Advanced Exit Logic with profit protection
+
+Timeframe: 15m | Leverage: 5x | Exchange: Binance Futures
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1471768398164791296/ImperatorStrategy.py?ex=69f30322&is=69f1b1a2&hm=e9cfd0aa54e5ba5621be82c0435b79de0d62a738c0f99f6f74351c576345b47e&
+
+{Reactions}
+👍 🚀
+
+[02/13/2026 07:23] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1471768684350537819/Bildschirmfoto_2026-02-13_um_08.23.11.png?ex=69f30366&is=69f1b1e6&hm=2239bb46d0483755203b704c740be6b847a2c91d412354dd5c7f8402b4976699&
+
+{Reactions}
+🚀 (7)
+
+[02/13/2026 13:07] lukovicka
+what is ur pairlist?
+
+
+[02/13/2026 13:07] lukovicka
+can I use CPU server? or GPU is required?
+
+
+[02/21/2026 12:01] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1474737685141786678/ImperatorStrategy_V3.py?ex=69f3447f&is=69f1f2ff&hm=6c87a8491405b7eb28c1d43e1d7c681cb8be91b7c466e54002af64c157c49d6d&
+
+
+[02/21/2026 12:01] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1474737889853313296/AdaptiveFlowRegime.py?ex=69f344b0&is=69f1f330&hm=4230b9e8b2c48a5c7b9408639f9400980d3a3ba670b033d79529c30eb133fc6e&
+
+{Reactions}
+🚀 (6) ✅
+
+[02/21/2026 12:04] vasko123.
+Thank you. Thanks again to the community.
+
+{Reactions}
+👍
+
+[02/21/2026 12:20] xf0x0f
+Im only using gpu for those
+
+
+[02/21/2026 12:22] xf0x0f
+"pair_whitelist": [
+    "BTC/USDT:USDT",
+    "ETH/USDT:USDT",
+    "SOL/USDT:USDT",
+    "XRP/USDT:USDT",
+    "BNB/USDT:USDT",
+    "ADA/USDT:USDT",
+    "AVAX/USDT:USDT",
+    "DOT/USDT:USDT",
+    "LINK/USDT:USDT",
+    "TRX/USDT:USDT",
+    "TON/USDT:USDT",
+    "LTC/USDT:USDT",
+    "BCH/USDT:USDT",
+    "ATOM/USDT:USDT",
+    "UNI/USDT:USDT",
+    "NEAR/USDT:USDT",
+    "APT/USDT:USDT",
+    "SUI/USDT:USDT",
+    "ARB/USDT:USDT",
+    "OP/USDT:USDT",
+    "INJ/USDT:USDT",
+    "ICP/USDT:USDT",
+    "FET/USDT:USDT",
+    "RENDER/USDT:USDT",
+    "TIA/USDT:USDT",
+    "SEI/USDT:USDT",
+    "XLM/USDT:USDT",
+    "FIL/USDT:USDT",
+    "HBAR/USDT:USDT",
+    "AAVE/USDT:USDT"
+]
+
+{Reactions}
+👍
+
+[02/25/2026 08:44] glad8769
+Did you find more effective in terms of profit the fact of using GPU rather than the CPU? I mean, if the GPU could really affect positively the performance of a strategy
+
+
+[03/28/2026 20:17] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1487546265746145521/IMG_0971.png?ex=69f3102b&is=69f1beab&hm=58db873b1c12548fadf13051c2effec180df5351f0c7701043867e0e9ea0f7c8&
+
+
+[04/05/2026 14:07] serialkiller15
+needs some more adjustments but already not bad at all
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1490352212054904882/image.png?ex=69f36228&is=69f210a8&hm=d6ed00d78824b504ad4bbfdedd914b147e1a5a42df1caccb1528d6e6b96d1c41&
+
+
+[04/06/2026 03:01] ggoyito
+Guys, I have a question, that a strategy depends on specific market conditions, makes it a good strategy for doing one thing well or a bad strategy for not being prepared for "all market contexts"? 
+What do you think?
+
+
+[04/17/2026 10:18] alexandermoysa
+Bad market is the best test for strategy
+
+
+[04/17/2026 19:00] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372215916380688426/1494774585218961448/Bildschirmfoto_2026-04-17_um_20.58.55.png?ex=69f2fe10&is=69f1ac90&hm=e8205a84bd15777955789abb0bacd670e823d278790b502e9f6abcb0811b08bf&
+
+{Reactions}
+👏 (2)
+
+[04/24/2026 09:54] glad8769
+Which Strat is it this one?
+
+
+[04/24/2026 18:35] xf0x0f
+Mine 😂
+
+
+[04/24/2026 18:40] xf0x0f
+I think im done in here. I think there is so much more out there. I will not post any new strats here to feed paid ai subs, sorry
+
+
+[04/24/2026 19:00] serialkiller15
+Your choice good look and all the best
+
+
+[04/25/2026 07:13] ohbad1330
+is it dca? if not wow the stake amount is big and have big risk as well. but yeah same like Alex said, good luck and all the best bro 👌
+
+
+==============================================================
+Exported 932 message(s)
+==============================================================

@@ -1,0 +1,395 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🚀alexbattletankkillerhurstv4
+==============================================================
+
+[07/02/2025 17:38] serialkiller15
+🚀 AlexBattleTankKillerHurst Trading Strategy
+🎯 Advanced Multi-Timeframe Crypto Strategy with Hurst Exponent Intelligence
+📊 Core Features
+
+🕐 15-minute timeframe optimized for active trading
+🔄 Long & Short positions with dynamic leverage (1-20x)
+🎯 Murrey Math Levels (MML) for precision entry/exit points
+📈 Multiple signal types: Support bounces, breakouts, trend continuations
+💰 Smart DCA system with progressive sizing (max 3 orders)
+🛡️ Dynamic stop-loss based on ATR and time-in-trade
+
+🧠 NEW: Hurst Exponent Intelligence
+
+📊 Hurst Exponent calculation - detects mean-reverting vs trending markets
+🔄 Mean-reversion signals when Hurst < 0.4 (market overshoots)
+📈 Trend-following signals when Hurst > 0.7 (strong momentum)
+⚖️ Adaptive strategy switches between reversal and continuation modes
+🎯 Enhanced exits using Hurst-based momentum shifts
+
+🧠 Market Intelligence
+
+₿ BTC correlation filter - aligns with Bitcoin trends
+📊 Market breadth analysis - monitors 7+ major crypto pairs
+🏛️ Market regime detection - adapts to bull/bear/volatile conditions
+🔄 Enhanced re-entry system with pullback-based timing
+
+⚙️ Risk Management
+
+🎚️ Position sizing: Max 5% portfolio per trade, 10 USDT max stake
+📉 Fixed 7% stop-loss with time-based loosening for development
+🎯 Smart exits: MML + Hurst-based profit-taking at key levels
+🚫 Force exit protection - prevents premature closures
+
+Designed for consistent profits using advanced market microstructure analysis! 🌊💎
+
+{Reactions}
+🚀
+
+[07/02/2025 17:38] serialkiller15
+Release Date after finished Tests
+
+
+[07/03/2025 05:51] serialkiller15
+@Beta-Tester here it comes.
+Use it on 15m Timeframe with my pairlist or your own
+You can do use Custom_Stoploss or Stoploss on Exchange
+have fun with this nice stuff!
+Added Hurst Stuff
+
+{Reactions}
+🔥 (3)
+
+[07/03/2025 05:52] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390023643203108884/1390208488222756915/AlexBattleTankKillerV4H.py?ex=69f396cc&is=69f2454c&hm=824a1d0f4f27def261cdb1a07b36f1e735e6ead3d5eee6672c93c998acd731f4&
+
+
+[07/03/2025 06:11] serialkiller15
+Tests are being done with 20 Trades with 10 USDT
+Leverage is Standard in it with max 7x
+dont use other Leverage because it will kill the Stoploss
+
+{Reactions}
+👍 (2)
+
+[07/03/2025 08:50] serialkiller15
+@Beta-Tester do pip install hurst bevore running if not installed! or you get an error...
+
+
+[07/03/2025 09:35] .7thdragon
+better use informative this way, i will test it also:
+```
+    def informative_pairs(self):
+        pairs = self.dp.current_whitelist()
+        informative_pairs = []
+
+        # Define base informative pairs (major coins for correlation analysis)
+        base_pairs = [
+            'BTC/USDT:USDT',
+            'ETH/USDT:USDT', 
+            'BNB/USDT:USDT',
+            'SOL/USDT:USDT',
+            'XRP/USDT:USDT',
+            'ADA/USDT:USDT',
+            'AVAX/USDT:USDT'
+        ]
+
+        # Define timeframes
+        timeframes = ['15m', '1h', '4h']
+
+        # Combine all unique pairs (whitelist + base informative pairs)
+        all_pairs = list(set(pairs + base_pairs))
+
+        # Create informative pairs for all timeframes
+        for pair in all_pairs:
+            for tf in timeframes:
+                informative_pairs.append((pair, tf))
+
+        return informative_pairs
+```
+
+{Reactions}
+👍 (2)
+
+[07/03/2025 09:37] maxgorbachevskiy
+Let’s test all code variations! That’s what we’re here for. If anyone comes up with his own sub-version, we can also set it to test & compare
+
+
+[07/03/2025 09:39] .7thdragon
+Agree but in original version only BTC is added the others data will be missed
+
+
+[07/03/2025 09:41] maxgorbachevskiy
+Sure, i understand that and I agree with your assumptions. 
+The result of dry run might appear to be different from expectations - that’s what i mean.
+
+
+[07/03/2025 09:41] maxgorbachevskiy
+For example, i have a theory that a certain combination of correlated pairs would perform better than other combinations. But current tests did not proove that concept yet (((
+
+
+[07/03/2025 09:41] serialkiller15
+yes absolute thanks @7thDragon noted it and will be in the next release, we also have some small problems with the trend_cont needs adjustments wenn market changes... i am on it
+
+{Reactions}
+🤘
+
+[07/03/2025 09:43] .7thdragon
+At least input should be correct 😉 computations and monitoring came after 😉
+
+{Reactions}
+💯
+
+[07/03/2025 09:59] serialkiller15 (pinned)
+@Beta-Tester Discussion for Changes/Failures and Optimizing
+
+{Reactions}
+👍
+
+[07/03/2025 09:59] serialkiller15
+Pinned a message.
+
+
+[07/03/2025 13:27] ch1ck3n_t4c0s
+Ah you using the Hurst module!
+
+
+[07/03/2025 13:27] serialkiller15
+yes
+
+
+[07/03/2025 13:30] ch1ck3n_t4c0s
+I saw that the other night does it have a built in fft function. Believe it or not Hurst exponent is a different Hurst than the stuff I've been putting in strategies. I'll be making a spot version. Tonight 😉
+
+{Reactions}
+🔥
+
+[07/03/2025 13:36] serialkiller15
+i have already changed it to fft if you want it will send you
+
+
+[07/03/2025 18:17] viking046433
+Anyone getting a constructive red calculation error?
+
+
+[07/03/2025 18:32] serialkiller15
+No what do you mean?
+
+
+[07/03/2025 20:36] .7thdragon
+maybe patching timezone?
+```
+    def bot_loop_start(self, **kwargs) -> None:
+        """
+        🔍 Log any trades that might be candidates for force exit
+        """
+        try:
+            trades = Trade.get_open_trades()
+            current_time = datetime.now(timezone.utc)
+```
+
+
+[07/04/2025 14:59] ch1ck3n_t4c0s
+@Alex Crypto King should the market score have a center around 0.5 if we are clipping (0,1)?
+
+
+[07/04/2025 15:03] serialkiller15
+let me check
+
+
+[07/04/2025 15:03] ch1ck3n_t4c0s
+trying to get a feel for the strategy lowest values im seeing are around  like 0.31 in some cases...
+
+
+[07/04/2025 15:05] ch1ck3n_t4c0s
+in some cases it see ranges from like 0.31 - 0.61, 0.51 -0.81 it seems theres usually a value  of 0.3 ish inbetween the market score min max.
+
+
+[07/04/2025 15:08] ch1ck3n_t4c0s
+market_score = df['market_score'].fillna(0.5)
+
+
+[07/04/2025 15:08] ch1ck3n_t4c0s
+im taking it from this line that the center is 0.5
+
+
+[07/04/2025 15:08] ch1ck3n_t4c0s
+and intended scaling is from 0-1
+
+
+[07/04/2025 15:09] serialkiller15
+ach i see let me check it...
+
+
+[07/04/2025 15:17] ch1ck3n_t4c0s
+im doing a 1h/4h spot version i fired it up a little last night to take a peak
+
+
+[07/04/2025 15:19] ch1ck3n_t4c0s
+well i removed the clip and the values appear to be the same 🤔
+
+
+[07/04/2025 15:29] ch1ck3n_t4c0s
+ah there is a bullish bias...
+
+
+[07/04/2025 15:39] serialkiller15
+hehe sry bro
+
+
+[07/05/2025 13:34] ch1ck3n_t4c0s
+morning legends 🦾
+
+
+[07/05/2025 13:35] serialkiller15
+Morning bro
+
+
+[07/05/2025 13:35] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390023643203108884/1391049854876254299/20250705_153507.jpg?ex=69f35aa1&is=69f20921&hm=7bbb2b2e5de5c6cc5771228f67354d804d12dc26eeb15f736536e67a3f3d67b8&
+
+
+[07/05/2025 13:40] ch1ck3n_t4c0s
+nioce
+
+
+[07/05/2025 13:40] ch1ck3n_t4c0s
+i'll be floating later 🙂
+
+
+[07/05/2025 13:40] ch1ck3n_t4c0s
+cofffee time here...
+
+
+[07/05/2025 13:41] ch1ck3n_t4c0s
+retirement soon for this guy 🙂
+
+
+[07/05/2025 13:44] ch1ck3n_t4c0s
+im adding logging mode... selection for faster optimization
+
+
+[07/05/2025 13:48] serialkiller15
+I do no optimization today only have a look that bear is cold
+
+{Reactions}
+🔥
+
+[07/07/2025 18:45] serialkiller15
+@everyone i have to say i am stucked? need new ideas not only testers or people waiting for the next relese? any ideas?
+i am not satisfied with the hurst stuff, will maybee swith to bb or other stuff let me think about it
+
+
+[07/07/2025 19:20] viking046433
+My personal opinion is if I look at the signals they are random no real order they need to be fine tuned
+
+
+[07/07/2025 19:20] viking046433
+A bit more strict
+
+
+[07/07/2025 19:49] ch1ck3n_t4c0s
+I've had a bit of writers block to I did start on a 1/4h spot version of the strategy but I have not finished it yet
+
+
+[07/07/2025 20:16] ch1ck3n_t4c0s
+I do have some code for 2 candle theory.
+
+{Reactions}
+🚀
+
+[07/07/2025 20:18] serialkiller15
+@ViKiNG sry they are not random... Please read the code yes they are nit perfect they need more optimizing that's all...
+
+{Reactions}
+👍
+
+[07/07/2025 20:22] ch1ck3n_t4c0s
+It's taking me a while to figure out all the bits in the strategy because for spot 0.5% movements are not really a thing that is feasible. Depending on your trading volume and exchnage the fees may get you pretty good. Many many wonderful things in the strategy. Bidirectional scalping to spot is a big change so give me a bit. But it's on deck.
+
+{Reactions}
+👍
+
+[07/07/2025 20:23] serialkiller15
+Thanks @Ch1cK3N_t4c0s  take your time will also think about it
+
+
+[07/07/2025 20:24] serialkiller15
+Maybee true boilinger bands and kick Hurst out
+
+
+[07/07/2025 20:25] ch1ck3n_t4c0s
+Hrmmm...
+
+
+[07/07/2025 20:25] serialkiller15
+VVro will check it
+
+
+[07/07/2025 20:25] ch1ck3n_t4c0s
+I'm working on like 6 different strategies here and there.
+
+
+[07/07/2025 20:26] serialkiller15
+It's fine will fix it
+
+
+[07/07/2025 20:30] serialkiller15
+@Ch1cK3N_t4c0s will ask your community for help maybee ideas
+
+
+[07/07/2025 20:37] ch1ck3n_t4c0s
+I know gio has a run started
+
+
+[07/08/2025 14:47] serialkiller15
+@everyone i was not sleeping....i only did some time to sort out.
+what i have found in my tests that there are some modifcations needed - market breadth...btc coll and other stuff
+I did a Mod Version with some improvments on it and willl share after Tests ar Finished
+the version runs now backtest are realy nice will see in dry stay on hold it will come the next days!
+
+
+[07/08/2025 14:47] serialkiller15
+also the bugs and optimization of @7thDragon are in it also indicators_1h....hurst rsi trend and othter stuff
+
+{Reactions}
+💪
+
+[07/08/2025 17:04] serialkiller15
+@everyone please make your tests
+
+{Reactions}
+👍 (2)
+
+[07/08/2025 17:04] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390023643203108884/1392189736424313005/ABTKV4HV6.py?ex=69f38bba&is=69f23a3a&hm=5a8dd3c25a53a7b101cef967c1ea2ca0862d0ca2e85988d91db09e90301ac5df&
+
+
+[07/09/2025 08:07] giovannimauro
+Im wondering if backtest can be usefull in a strategy like this. 
+I see that at first it make calculations for market regime, breath, score BTC etc.... but in dry/live run this happen periodically, but in backtest it happen justg at the first candle... so, backtest is not rielable, dryrun is soo much important
+
+
+[07/09/2025 08:07] serialkiller15
+absolute mate you are right about this, i use backtest to see for errors and other stuff, only dry will tell the trooth
+
+
+[07/09/2025 08:09] giovannimauro
+previous version, not bad, but I had some stop in my machine due to another strategy that freezed the terminals for an error, so, not so much rielable...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390023643203108884/1392417278313631826/image.png?ex=69f30e25&is=69f1bca5&hm=5d2229f74323fd93df787c1152af2b81c18b6afaf357ff898083ba2740876c92&
+
+
+[07/11/2025 05:22] serialkiller15
+Thanks for sharing
+
+
+==============================================================
+Exported 66 message(s)
+==============================================================

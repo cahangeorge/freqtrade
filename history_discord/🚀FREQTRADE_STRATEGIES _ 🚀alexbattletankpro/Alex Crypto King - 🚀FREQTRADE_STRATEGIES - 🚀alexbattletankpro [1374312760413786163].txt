@@ -1,0 +1,1805 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🚀alexbattletankpro
+==============================================================
+
+[05/20/2025 09:11] serialkiller15
+@everyone here is a nice straegy posted by i member of us.....
+backtesting results
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1374313613552128030/image.png?ex=69f31cca&is=69f1cb4a&hm=2c44e8ed819b342728c9fe43d6914b6b31397ef134f7f8c60a905daa30893c80&
+
+{Reactions}
+🤘 👍 ♥️
+
+[05/20/2025 09:12] serialkiller15
+@joaolool thanks for sharing!
+
+
+[05/20/2025 09:12] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1374313798030196796/NOTankAi152.py?ex=69f31cf6&is=69f1cb76&hm=1b6530e76dcb41f6b9669da6569623bb5a8be65bd6fb6247deb39794105dc7c8&
+
+{Reactions}
+🇧🇷
+
+[05/20/2025 09:25] giovannimauro
+interesting! 
+Wondering if the lookaheadbias of minima/maxima is soo strong as in the oriinal Notankai
+
+{Reactions}
+👍 🙂
+
+[05/20/2025 09:26] serialkiller15
+will run it on dry and will report
+
+
+[05/20/2025 09:26] serialkiller15
+need to translate it to english, i am on it
+
+
+[05/20/2025 09:38] serialkiller15 (pinned)
+Here is the Translation in English
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1374320476372865034/NOTankAi152F.py?ex=69f3232f&is=69f1d1af&hm=362f4ada5a64459ee538bc00ed2297f8870e84b636503281b178b2af34aaa90b&
+
+
+[05/20/2025 09:39] serialkiller15
+Pinned a message.
+
+
+[05/20/2025 09:52] serialkiller15
+i use this pairlist for dry run - 
+  "pairlists": [
+    {
+      "method": "VolumePairList",
+      "number_assets": 50,
+      "sort_key": "quoteVolume",
+      "min_value": 10000000
+    }
+  ],
+
+
+[05/20/2025 10:41] giovannimauro
+yesm is lookahead
+
+
+[05/21/2025 17:47] serialkiller15
+Absolute backtest is fine but live horror
+
+
+[05/21/2025 17:48] serialkiller15
+Have to take a deeper look on it
+
+
+[05/21/2025 17:51] serialkiller15
+Meanwhile I stopped all dry and live runs maybee need some recreation or new minding I don't know
+
+
+[05/21/2025 17:55] xenigami
+Dryrun i tested was fine
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1374807713497874522/image.png?ex=69f39775&is=69f245f5&hm=43ee03cf6ffa25d9d870af4e8444d2ef0783f5ea95a133a419deaa6921b37480&
+https://cdn.discordapp.com/attachments/1374312760413786163/1374807713753595954/image.png?ex=69f39775&is=69f245f5&hm=87ba7ebeb34587b70222e6652f1ba01d89cb6402a8b3bbded49b6b6836fd3eff&
+https://cdn.discordapp.com/attachments/1374312760413786163/1374807713992675429/image.png?ex=69f39775&is=69f245f5&hm=9ab6475cfcbe4651de035e25b89160235f58e0661d3b6de2ec85bad425ecaff9&
+
+
+[05/21/2025 17:55] serialkiller15
+Longs only? Coin list?
+
+
+[05/21/2025 17:55] serialkiller15
+Tbanks
+
+
+[05/21/2025 18:04] xenigami
+short true, coin list : https://remotepairlist.com?q=10b2fb8c2a46eaad
+
+
+[05/21/2025 18:05] serialkiller15
+Thanks mate for sharing
+
+
+[05/21/2025 18:05] serialkiller15
+Will test tomorrow
+
+
+[05/22/2025 14:26] serialkiller15 (pinned)
+@everyone some testing stuff...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1375117602782707833/NoTankAi156F_Alex.py?ex=69f36690&is=69f21510&hm=792ea9c3c9a14fbef81f188ceb3d7f9c436daa6f33f15e4fa76354e04d87eef3&
+
+{Reactions}
+👍 (4)
+
+[05/22/2025 14:26] serialkiller15
+and with VVRP
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1375117658982449192/NoTankAi158F_VVRP_Alex.py?ex=69f3669e&is=69f2151e&hm=8be3eed94a490b8dadacf4befb8197b1372c2e25f6553d104c2fa0548b3b99d7&
+
+{Reactions}
+👍 (3)
+
+[05/22/2025 14:26] serialkiller15
+testers and mods hardly welcome
+
+
+[05/22/2025 14:26] serialkiller15
+Pinned a message.
+
+
+[05/23/2025 07:37] serialkiller15
+Vvrp is doing even better need to fix the exit logic there are some doubles in there I am in it stay tuned...
+
+
+[05/23/2025 07:38] branly76
+I will test both in dry run as spot and futures
+
+{Reactions}
+👍
+
+[05/23/2025 08:43] ximontan
+double populate_exit_trend
+
+{Reactions}
+👍
+
+[05/23/2025 08:43] serialkiller15
+thanks yes i saw it new version is in working process...
+
+
+[05/23/2025 13:26] ximontan
+hyperopt it for one pair,  really weird process, it return random profit positive and negative.
+But good result, not positive all time. I'll dry it on my raspberry!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1375464977124556860/image.png?ex=69f35895&is=69f20715&hm=f5f0e9625fab4756e3b68d1f23f9ef9237805e8beabe1b1352f03b185c5afeb4&
+https://cdn.discordapp.com/attachments/1374312760413786163/1375464977367830610/image.png?ex=69f35895&is=69f20715&hm=71920071ea31e617ee3aef1e8e16464a7d7e95a1912c80e9c56da6f3607feeb1&
+
+{Reactions}
+👍
+
+[05/23/2025 15:11] xenigami
+Continuing testing, the profit is good.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1375491354683117688/Screenshot_20250524_000718_Chrome.jpg?ex=69f37126&is=69f21fa6&hm=d93d5fbbabe94791dce585175a9a9d248f231f9c249c49f9d32ce12cb89faf1f&
+https://cdn.discordapp.com/attachments/1374312760413786163/1375491354993627266/Screenshot_20250524_000742_Chrome.jpg?ex=69f37126&is=69f21fa6&hm=24268d90e037953018de7b403c6bc46bd3a617201e176a6edeae1584ed9fff07&
+https://cdn.discordapp.com/attachments/1374312760413786163/1375491355320520744/Screenshot_20250524_000804_Chrome.jpg?ex=69f37126&is=69f21fa6&hm=91d7561bd0b5d241e85f9fc8bd8c67f0aa91a0e62cc1a3b1238df2bb9be47538&
+https://cdn.discordapp.com/attachments/1374312760413786163/1375491355601670265/Screenshot_20250524_001005_Chrome.jpg?ex=69f37126&is=69f21fa6&hm=7ae58f8c5f65e8ef10f2a3088eecebb98228c4b252422008b55d70df65943dbc&
+
+{Reactions}
+👍
+
+[05/23/2025 15:33] ximontan
+VolumePairList?
+
+
+[05/23/2025 15:36] xenigami
+https://remotepairlist.com?q=10b2fb8c2a46eaad
+
+{Reactions}
+👍
+
+[05/23/2025 16:21] serialkiller15
+i am on it ....
+
+
+[05/23/2025 16:21] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1375508835082571896/image.png?ex=69f3816e&is=69f22fee&hm=31e711bf8407770d1bca1252b00a91c74dd2dc52b5ca17380cfcb4b47119f808&
+
+
+[05/23/2025 18:36] erbosnio_17282
+modified for spot, but no entries...
+
+{Reactions}
+😉
+
+[05/23/2025 20:33] joaolool
+I'm surprised with the results, top
+
+
+[05/26/2025 17:05] .7thdragon
+Hey @Alex Crypto King , nice work here!
+Needs some more adjustments, for example the static method is useless, use it with self, the adjustments function it keeps adding stake on every 60s cycle needs some new conditions , like ema or something.
+leverage (like many other profiles around) is it used wrong, should not be calculated far away (like checking 130minutes candles back) than current candles (around 5-60minutes)
+it might be a good idea to use informative 1m data for example
+
+
+[05/26/2025 17:40] serialkiller15
+Thanks mate I restarted and try to handle this but thanks for your Infos feel free to adjust something
+
+
+[05/28/2025 05:56] serialkiller15
+@everyone good morning have fixed and optimized some stuff in here, lets make tests 
+the two losses are both with 0 and Strong_VVRP_Long_Zone_Exit...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1377163669976121365/image.png?ex=69f397dd&is=69f2465d&hm=7905e427b1aaae7b84533a1f35ba7b6e420ec93f1b1dd184c4a46ee858f6bc56&
+
+{Reactions}
+👍
+
+[05/28/2025 06:12] huangyafei_90755
+Can you share the strategies and config files
+
+
+[05/28/2025 06:49] serialkiller15
+let me finished the tests will share then
+
+
+[05/28/2025 07:07] serialkiller15 (pinned)
+@everyone make your tests, but its not finished......maybee i get some impacts from you
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1377181518123892806/NoTankAiF_VVRP_AlexV2.py?ex=69f2ffbc&is=69f1ae3c&hm=038ca87e7942f57575f46aabb8c76e6e0008073d39532892587f5063f18e5628&
+
+{Reactions}
+👍
+
+[05/28/2025 07:08] serialkiller15
+i use pairlist - but you can also use volume pairlist - "BTC/USDT:USDT","ETH/USDT:USDT","BNB/USDT:USDT","SOL/USDT:USDT","BCH/USDT:USDT","MKR/USDT:USDT","TAO/USDT:USDT","LTC/USDT:USDT","AAVE/USDT:USDT","AVAX/USDT:USDT","LINK/USDT:USDT","ORDI/USDT:USDT","XRP/USDT:USDT","COMP/USDT:USDT","ENS/USDT:USDT","ETC/USDT:USDT","TRB/USDT:USDT","UNI/USDT:USDT","DOT/USDT:USDT","INJ/USDT:USDT","APT/USDT:USDT","SUI/USDT:USDT","FIL/USDT:USDT","TIA/USDT:USDT","NEO/USDT:USDT","BSV/USDT:USDT","NEAR/USDT:USDT","WIF/USDT:USDT","WLD/USDT:USDT","AR/USDT:USDT","RENDER/USDT:USDT","BANANA/USDT:USDT","ATOM/USDT:USDT","ADA/USDT:USDT","ZRO/USDT:USDT","GMX/USDT:USDT","PNUT/USDT:USDT","ILV/USDT:USDT","TON/USDT:USDT","EIGEN/USDT:USDT","RUNE/USDT:USDT","ZEN/USDT:USDT","CRV/USDT:USDT","SAND/USDT:USDT","PENDLE/USDT:USDT","DYDX/USDT:USDT","FET/USDT:USDT","FTM/USDT:USDT","OP/USDT:USDT","SUSHI/USDT:USDT","STX/USDT:USDT","ONDO/USDT:USDT","HBAR/USDT:USDT","APE/USDT:USDT"
+    ],
+    "pair_blacklist": [
+      
+    ]
+
+
+[05/28/2025 07:08] serialkiller15
+Pinned a message.
+
+
+[05/28/2025 07:11] erbosnio_17282
+Do you have the config file? I'm adapting the previous one for spot, no entries after multiple mods
+
+
+[05/28/2025 07:13] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1377182999745134653/message.txt?ex=69f3011d&is=69f1af9d&hm=2f221d634c6420f7670b430c3cd989e52666958b76161e111ad11685a1b33741&
+
+
+[05/28/2025 07:15] erbosnio_17282
+Thanks!
+
+
+[05/28/2025 07:15] serialkiller15
+you are welcome do your tests
+
+
+[05/28/2025 08:04] brewy_024
+I'm testing 4 bots at the moment and my CPU usage is bellow 50% most of the time. When i started this bot one of 4 cores was constantly on 100% and rest 3 cores peaking to 100% at times as well. Just a heads up for performance of that last version
+
+
+[05/28/2025 08:10] erbosnio_17282
+Interesting
+
+
+[05/28/2025 08:12] ximontan
+have same issue, try measure time of fn calculate_rolling_vvrp and it not so heavy, then comment adjustment, custom exit, entry and stoploss, not help, something else influence to performance...
+
+
+[05/28/2025 08:13] serialkiller15
+thanks for the feedback will check it because i have enough power here so i dont have problems at all give me some time to check
+
+
+[05/28/2025 08:25] serialkiller15
+i ron the strategies inside docker and have limited the cpus so i am fine with that but let me check...
+
+
+[05/28/2025 08:35] serialkiller15
+also reduce the amount of coins for testing the performance...
+
+
+[05/28/2025 09:39] erbosnio_17282
+Adapted version for spot, still testing on dry-run, let's see
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1377219843547463680/NoTankAiF_VVRP_AlexV2spot.py?ex=69f3236e&is=69f1d1ee&hm=9f0ec2cb584fe1117c6098394de7d18416ffb9d33c0879c7236e1517aff62e47&
+
+{Reactions}
+👍 (2)
+
+[05/28/2025 10:17] ximontan
+V2  faster then V1, thanks!
+
+
+[05/28/2025 10:18] serialkiller15
+there are some issues in v2 on the exit signals here you can remove them for testing it was for testing only -         # === FORCED EXITS ON OPPOSITE ENTRY SIGNAL ===
+
+        # Close SHORT if long entry signal detected (only if using can_short)
+        if self.can_short:
+            df.loc[
+                (df["enter_long"] == 1),
+                ["exit_short", "exit_tag"]
+            ] = (1, "Opposite_Signal_Long_Exit")
+
+        # Close LONG if short entry signal detected
+        df.loc[
+            (df["enter_short"] == 1),
+            ["exit_long", "exit_tag"]
+        ] = (1, "Opposite_Signal_Short_Exit")
+
+{Reactions}
+👍
+
+[05/28/2025 11:11] branly76
+NOTankAI versions 156F, 158F not running well, MultiV15 is soso, AlexSmartMoneyV3 is running well H1 timeframe. All spot market
+
+
+[05/28/2025 11:11] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1377242940715565117/image.png?ex=69f338f1&is=69f1e771&hm=826bdecc0912eb0943167476ed0aa722140b7c52c421019c8dff6664d85a2054&
+
+
+[05/28/2025 11:12] branly76
+This is version V3, not version V2 as in the survey. A little renaming error.
+
+
+[05/28/2025 11:12] serialkiller15
+thanks for sharing mate..
+
+
+[05/28/2025 11:46] xenigami
+NOTankAi152F.. It showed a very big drop and the principal was lost.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1377251561096351765/Screenshot_20250528_204302_Chrome.jpg?ex=69f340f8&is=69f1ef78&hm=2e143d543d6847f2fa9d956a7424e3c0f9ab79afcd3b5d949710566c9d4bb992&
+
+{Reactions}
+👍
+
+[05/29/2025 11:36] ximontan
+does any body successfully optimize V2?
+result for backtesting is negative for same data as optimized
+trying hyperopt second day...
+compare to V1 it's look better for optimizing
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1377611443750567997/image.png?ex=69f33ea2&is=69f1ed22&hm=67f801e33c53d5e6d1a992b67ce6f5474512a4f2ac45a2a439da35ad52902a75&
+https://cdn.discordapp.com/attachments/1374312760413786163/1377611444006162555/image.png?ex=69f33ea3&is=69f1ed23&hm=2210652f8d06d6b75f1e5fb2e69af4d1e260bcd3b293937f29ec5c7f753b5589&
+
+
+[05/30/2025 05:47] serialkiller15
+Let me check that
+
+
+[05/31/2025 11:07] serialkiller15
+What did you optimize with hyper?
+
+
+[05/31/2025 18:38] ximontan
+freqtrade hyperopt --strategy NOTankAiF_VVRP_AlexV2 --hyperopt-loss SharpeHyperOptLossDaily --spaces buy protection -e 1000 -j 10 -c /freqtrade/user_data/NoTankAiF_VVRP_AlexV2_config.json --analyze-per-epoch --timerange=20250201-20250401 -p ADA/USDT:USDT  SOL/USDT:USDT
+
+
+[06/02/2025 08:22] serialkiller15
+@Ximontan i am already on Version3 and it looks better the signals are more....take a look here will do some testing stuff
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1379012244838289448/image.png?ex=69f3113b&is=69f1bfbb&hm=a17247b0d962470605e5a40c23ae636a48c3bea4a222c6c4545cf662bca4ed32&
+
+
+[06/02/2025 08:34] ximontan
+can you share it plz
+
+
+[06/02/2025 08:39] serialkiller15
+@everyone - here is the V3 but please do your tests before...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1379016676476977172/message.txt?ex=69f3155c&is=69f1c3dc&hm=8753dc70f40a34f0d7f9f0b66cb52aba2dd5a53d55ec0fc6443b05b7138d7909&
+
+{Reactions}
+👍 (3)
+
+[06/02/2025 08:40] serialkiller15
+did not do hyperopt or other stuff let it run since yesterday looks better will see ...
+
+
+[06/02/2025 09:39] serialkiller15
+better then the other versions vvrp modifications look at the candles here
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1379031658921201785/image.png?ex=69f32350&is=69f1d1d0&hm=faf6aa59a35a51a2d081126245bfdce06d781a5a31cf4a269cb6b1a4029f5839&
+
+
+[06/02/2025 09:40] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1379031904833114223/image.png?ex=69f3238b&is=69f1d20b&hm=657055a78f0fdefb92ccb21d148dabe551bd7e1ef0ff2953b367d369b3346332&
+
+
+[06/02/2025 10:26] ch1ck3n_t4c0s
+Does that have the rolling vvrp
+
+
+[06/02/2025 10:29] serialkiller15
+yep
+
+
+[06/02/2025 10:37] ch1ck3n_t4c0s
+I'll check that out here with some ☕️.
+
+{Reactions}
+👍
+
+[06/02/2025 11:15] ch1ck3n_t4c0s
+Broke out the old MML!
+
+
+[06/02/2025 11:16] ch1ck3n_t4c0s
+The vtl script I wrote is cool but I havent figured out how it moves yet
+
+
+[06/02/2025 11:26] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1379058697979953253/image.png?ex=69f33c7f&is=69f1eaff&hm=cb6492fda19258b81b3f9c5fbc714efc4af5a39ca5b195a8b1da5eca5d6d9be5&
+
+
+[06/02/2025 13:33] serialkiller15
+Still in profit....
+
+
+[06/02/2025 19:46] serialkiller15
+@everyone any other testers here in v3 it runs.... Runs. Only be careful with the stake amount and the adjustment of trades that could kill some trades.
+
+{Reactions}
+👍 (2)
+
+[06/02/2025 21:46] erbosnio_17282
+I will try to adapt the logic tomorrow to spot and will test it
+
+
+[06/03/2025 08:18] serialkiller15
+did some optimazions. - > best Practice change Timeframe to min. 15 Minutes 
+DCA Entrys max 2 
+Because of Calculations on 5M Timeframe there can be some missing/wrong signals they can kill your Profits
+Will Post the Adaptions after Finished Tests
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1379373735332544532/image.png?ex=69f31066&is=69f1bee6&hm=f0ca45f6860df3243d4eabbec17d54f2c5e51e940af286559baf3bebb2eb1f8e&
+
+{Reactions}
+👍 (3) 😎
+
+[06/03/2025 10:10] ch1ck3n_t4c0s
+Market going green
+
+
+[06/03/2025 10:12] erbosnio_17282
+Exactly, we have to wait for the market to go down to check the effectiveness of the strategy.
+
+{Reactions}
+👍
+
+[06/03/2025 15:49] migtaber_92822
+Alex, do you use DCA in your logic?
+
+
+[06/03/2025 16:20] serialkiller15
+Yep I do but you should maximize it I use max 2 new orders being made..
+
+
+[06/03/2025 17:45] serialkiller15
+getting closer with new adapted entrys modified and also exits
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1379516286488412160/image.png?ex=69f39528&is=69f243a8&hm=041f2c8ab4d2c40f59ce1afd6eb8e5741076084f69db4a6214c9c8731fd4337f&
+
+{Reactions}
+❤️
+
+[06/03/2025 17:46] serialkiller15
+the signals are great
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1379516579691237427/image.png?ex=69f3956e&is=69f243ee&hm=8509cfae2d3ac32cc317d770bdd2cc38fd668ee5b00edac7e669d67d6e3f5e1a&
+
+
+[06/03/2025 17:47] migtaber_92822
+How long ago is this data?
+
+
+[06/03/2025 17:47] serialkiller15
+its for testing 1 month, will expand it when finished the exits....there are the Problem at the moment
+
+
+[06/03/2025 17:48] serialkiller15
+was a try for target_reversal but not successfull
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1379516993853718699/image.png?ex=69f395d1&is=69f24451&hm=6c2d8789e2e658e0874fe2ffe9074f3b7563bbc78b377879cf9c94b5bff32b18&
+
+
+[06/03/2025 17:49] migtaber_92822
+I remember the notank indicators, but here are other types of indicators to get that profit...trend?
+
+
+[06/03/2025 17:49] serialkiller15
+yes i added some
+
+
+[06/03/2025 17:50] serialkiller15
+# VVRP Integration
+        dataframe = calculate_rolling_vvrp(dataframe, lookback_period=120, num_bins=9, max_bars=200)
+        dataframe['VVRP_High_Volume_Long'] = 0
+        dataframe['VVRP_High_Volume_Short'] = 0
+        for i in range(len(dataframe)):
+            for j in range(1, 10):
+                mid_price = dataframe.get(f'VVRP_Mid_Price_{j}', pd.Series([None]*len(dataframe))).iloc[i]
+                buy_bars = dataframe.get(f'VVRP_Buy_Bars_{j}', pd.Series([0]*len(dataframe))).iloc[i]
+                sell_bars = dataframe.get(f'VVRP_Sell_Bars_{j}', pd.Series([0]*len(dataframe))).iloc[i]
+                price = dataframe['close'].iloc[i]
+                atr = dataframe['atr'].iloc[i] if 'atr' in dataframe else 1.0
+                if pd.notnull(mid_price) and abs(price - mid_price) < atr * self.tightness_factor.value:
+                    if buy_bars - sell_bars > self.dominance_threshold.value:
+                        dataframe.at[i, 'VVRP_High_Volume_Long'] = 1
+                    if sell_bars - buy_bars > self.dominance_threshold.value:
+                        dataframe.at[i, 'VVRP_High_Volume_Short'] = 1
+        # === Global filter indicators ===
+        dataframe["volatility_range"] = dataframe["high"] - dataframe["low"]
+        dataframe["avg_volatility"] = dataframe["volatility_range"].rolling(window=20).mean()
+        dataframe["avg_volume"] = dataframe["volume"].rolling(window=20).mean()
+        dataframe["uptrend"] = (dataframe["ema50"] > dataframe["ema50"].shift(5)).astype(int)
+
+
+[06/03/2025 17:51] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1379517930596860035/image.png?ex=69f396b0&is=69f24530&hm=161558ac6378ea37c2aa68c080aaa0b84948edb0a476cb518253de38eba6e9ea&
+
+
+[06/03/2025 17:52] serialkiller15
+and for short
+
+
+[06/03/2025 17:52] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1379518074079674388/image.png?ex=69f396d3&is=69f24553&hm=7007bb3216eebe89bb32685fa3d6291f3367f890680c1f24e5630b8083470d52&
+
+
+[06/03/2025 17:53] migtaber_92822
+And you add it to the Notank ones for the entries, there was a very interesting article where they recommended getting a reference pair...
+
+
+[06/03/2025 17:54] serialkiller15
+yes i used the base notankai was written and posted here, did some mods, but it was mostly the problem with extrema in backtest good results, but not in dry or live, so i tried to ingetrate other indicators and also changed the extrema min max.... with others you will found them in the V3 Version, more to come need only time to make the adjust and the test, run 4 diff Versions now.....will report
+
+{Reactions}
+👍 (3)
+
+[06/03/2025 19:53] serialkiller15
+Any experience with mml? Need to check that in the Strategy
+
+
+[06/03/2025 19:56] ch1ck3n_t4c0s
+Papa and I made that over a year ago tbh... forgot about it in the tool kit.
+
+
+[06/03/2025 19:56] serialkiller15
+Yes but I'm NoTankai no entry rules for that or I missed something need to go deeper
+
+
+[06/03/2025 19:57] serialkiller15
+Ah i See it's not used and not necessary
+
+
+[06/04/2025 08:53] serialkiller15
+@everyone i am getting closer on it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1379744793105530951/image.png?ex=69f31879&is=69f1c6f9&hm=1f454615c0346ef65a9a7fffce71008554214cca78efa8cf8ad58102d2a5ef0f&
+
+{Reactions}
+🔥 (3) 💪
+
+[06/04/2025 08:53] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1379744815406649394/image.png?ex=69f3187e&is=69f1c6fe&hm=fe68170254037a8a43ce240e1453d151229d1c4e26d25529e31a5579cb90f3df&
+
+
+[06/04/2025 09:01] anonymuis
+Impressive! 👏
+
+
+[06/04/2025 09:02] serialkiller15
+was a long night.......did 20 versions....
+
+
+[06/04/2025 09:02] serialkiller15
+an 100 adaptions hehe
+
+
+[06/04/2025 09:03] erbosnio_17282
+Let's see on dry mode
+
+
+[06/04/2025 09:03] erbosnio_17282
+but it looks good
+
+
+[06/04/2025 09:09] serialkiller15
+need to do some larger backtest for 3 months yes will start it den, mostly the problem of notankai where the exits.....
+
+
+[06/04/2025 13:21] serialkiller15
+But I need testers here and also some impacts.
+.
+
+
+[06/04/2025 13:23] maxgorbachevskiy
+I want / I can
+
+
+[06/04/2025 13:52] serialkiller15
+@MaxG will write dm then
+
+
+[06/05/2025 07:44] serialkiller15
+@everyone
+Here is the Version i called it "AlexBattleTankPro" doing well on dry run. -> Futures Version
+Make your Tests and your Decisions
+I Cleand out all the Exits because with ROI Table is working even better!
+Happy Testing!
+15Min Timeframe!!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1380089862354374777/AlexBattleTankPro.py?ex=69f30858&is=69f1b6d8&hm=cea791649800a3935077630c1dc794abcbffaa18b3139655b556cd0b12aeb42f&
+
+{Reactions}
+👍 (2) 🔥 (3)
+
+[06/05/2025 07:48] anonymuis
+Nice! Thank you!
+
+
+[06/05/2025 07:51] serialkiller15
+Backtest 2 Months....
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1380091554085081128/image.png?ex=69f309eb&is=69f1b86b&hm=1f762a3c357bd59c118c642363e428938bfc5f8c3a18861680ea6f9dbac07dc5&
+
+
+[06/05/2025 07:57] ximontan
+look promising...did you optimize it? for me without hyperopt negative
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1380093274366283776/image.png?ex=69f30b85&is=69f1ba05&hm=880037a607e9cea9cb75f3e999cfde05de2c95ce5473610a297a9817bf5e7b8f&
+
+
+[06/05/2025 07:58] serialkiller15
+no optimizing needed!
+
+
+[06/05/2025 07:59] serialkiller15
+here is my coin list!
+"BTC/USDT:USDT","ETH/USDT:USDT","BNB/USDT:USDT","SOL/USDT:USDT","BCH/USDT:USDT","MKR/USDT:USDT","TAO/USDT:USDT","LTC/USDT:USDT","AAVE/USDT:USDT","AVAX/USDT:USDT","LINK/USDT:USDT","ORDI/USDT:USDT","XRP/USDT:USDT","COMP/USDT:USDT","ENS/USDT:USDT","ETC/USDT:USDT","TRB/USDT:USDT","UNI/USDT:USDT","DOT/USDT:USDT","INJ/USDT:USDT","APT/USDT:USDT","SUI/USDT:USDT","FIL/USDT:USDT","TIA/USDT:USDT","NEO/USDT:USDT","BSV/USDT:USDT","NEAR/USDT:USDT","WIF/USDT:USDT","WLD/USDT:USDT","AR/USDT:USDT","RENDER/USDT:USDT","BANANA/USDT:USDT","ATOM/USDT:USDT","ADA/USDT:USDT","ZRO/USDT:USDT","GMX/USDT:USDT","PNUT/USDT:USDT","ILV/USDT:USDT","TON/USDT:USDT","EIGEN/USDT:USDT","RUNE/USDT:USDT","ZEN/USDT:USDT","CRV/USDT:USDT","SAND/USDT:USDT","PENDLE/USDT:USDT","DYDX/USDT:USDT","FET/USDT:USDT","FTM/USDT:USDT","OP/USDT:USDT","SUSHI/USDT:USDT","STX/USDT:USDT","ONDO/USDT:USDT","HBAR/USDT:USDT","APE/USDT:USDT"
+
+{Reactions}
+👍 (2)
+
+[06/05/2025 08:00] serialkiller15
+what about your entrys? and exits? please share! thanks mate
+
+
+[06/05/2025 08:00] erbosnio_17282
+Thanks, lets take a look
+
+
+[06/05/2025 11:19] xenigami
+NOTankAiF_VVRP_AlexV2, 3 dry run~
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1380143951754825749/image.png?ex=69f33ab7&is=69f1e937&hm=11641974417b44ec37071655ff0f6157b52b5da651542092e53e40a8c5838c41&
+https://cdn.discordapp.com/attachments/1374312760413786163/1380143952191295569/image.png?ex=69f33ab8&is=69f1e938&hm=911d6f98c23f8e56c2def49ff2b0ce604d2ff33a35f5a89c3d6e750356c5b0b1&
+
+
+[06/05/2025 11:20] serialkiller15
+NICE!
+
+
+[06/05/2025 11:22] ch1ck3n_t4c0s
+Doing the work @Alex Crypto King 😎
+
+{Reactions}
+👍
+
+[06/05/2025 11:23] serialkiller15
+with your nice base @Ch1cK3N_t4c0s yes...
+
+
+[06/05/2025 11:25] erbosnio_17282
+This is not the last version, is the previous one, am i right?
+
+
+[06/05/2025 11:27] serialkiller15
+you mean the alexbattletankpro? its mostly the same only deleted mostly exits and split to roi! the v2 V3 are doing good from my point of view so no need to change, 
+only be carful in dry i got some trades that killed my profit....
+
+{Reactions}
+👍
+
+[06/05/2025 11:37] xenigami
+This is the previous version that came up here.
+
+
+[06/05/2025 11:37] erbosnio_17282
+ok, i see in the tittle
+
+
+[06/05/2025 11:37] maxgorbachevskiy
+Dryrunning!
+
+{Reactions}
+🔥
+
+[06/05/2025 11:44] serialkiller15
+nice to be back here again....thanks for all!
+
+{Reactions}
+👍
+
+[06/05/2025 13:46] .7thdragon
+well done Alex!
+this needs to be this way, and re optimized:
+```
+        if exit_reason in blocked_exits and current_profit_ratio > self.stoploss:
+            logger.info(f"{pair} BLOCKING exit reason: {exit_reason} (was unprofitable)")
+            return False
+```
+exit_reason is not anymore stoploss if the custom_stoploss is activated
+and "**stoploss**" is "**stop_loss**" as the succesful exit
+and last line of confirm_trade_exit
+```
+        return current_profit_ratio > 0.0 or current_profit_ratio < self.stoploss
+```
+
+this was by roughly peak on code but make me curious will give it a shot on dry 😉
+
+{Reactions}
+👍
+
+[06/05/2025 14:08] ximontan
+you are right with exit something strange happened. It should exit by sl
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1380186400044875786/image.png?ex=69f36240&is=69f210c0&hm=0798601baa6ce4b204a6d6dfe7f581c6df8f5172311ca3401a90ff06f04e4bd0&
+https://cdn.discordapp.com/attachments/1374312760413786163/1380186400523030609/image.png?ex=69f36240&is=69f210c0&hm=8c09a0c0c24953004f20385f5c745edc41594530a23f7f1242f69833b1fb0b92&
+
+
+[06/05/2025 14:09] serialkiller15
+@7thDragon thanks for the input!
+
+{Reactions}
+❤️
+
+[06/05/2025 14:09] serialkiller15
+will fix it
+
+
+[06/05/2025 16:20] serialkiller15
+thanks fix done..
+
+
+[06/06/2025 07:06] serialkiller15
+@everyone here is the fixed version
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1380442653010956429/AlexBattleTankPro.py?ex=69f2ff67&is=69f1ade7&hm=1613cf539e1e70adf863f3be7d64e4c6a8fdf80a4c126bc8a6835bb7fe24b6a0&
+
+{Reactions}
+🔥 (4)
+
+[06/06/2025 09:24] xenigami
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1380477363556454502/Screenshot_20250606_182219_Chrome.jpg?ex=69f31fbb&is=69f1ce3b&hm=91507ab53031662868391bf4f68683ef0c435421d738d797748e0fc788a55e79&
+https://cdn.discordapp.com/attachments/1374312760413786163/1380477363837468713/Screenshot_20250606_182225_Chrome.jpg?ex=69f31fbb&is=69f1ce3b&hm=237edd26ccaa49590f9d115773fe58e974aea5616aeda1cfe34d1adfc8984c61&
+https://cdn.discordapp.com/attachments/1374312760413786163/1380477364156239883/Screenshot_20250606_182231_Chrome.jpg?ex=69f31fbb&is=69f1ce3b&hm=7a5f6a9f7970bdf9f6e083706e6897ac396686551c6d816028279c41bceab097&
+
+
+[06/06/2025 09:39] laupapp
+@Alex Crypto King an error occurred and crashed on backtesting 😉
+
+2025-06-06 11:36:52,429 - AlexBattleTankPro - INFO - WIF/USDT:USDT DCA condition met by Freqtrade, but current profit 16.68% is above strategy threshold for 2 entries. Skipping 
+strategy-side DCA.
+2025-06-06 11:36:52,429 - freqtrade - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/home/adok/freqtrade/freqtrade/main.py", line 47, in main
+    return_code = args["func"](args)
+  File "/home/adok/freqtrade/freqtrade/commands/optimize_commands.py", line 61, in start_backtesting
+    backtesting.start()
+  File "/home/adok/freqtrade/freqtrade/optimize/backtesting.py", line 1820, in start
+    min_date, max_date = self.backtest_one_strategy(strat, data, timerange)
+  File "/home/adok/freqtrade/freqtrade/optimize/backtesting.py", line 1748, in backtest_one_strategy
+    results = self.backtest(
+  File "/home/adok/freqtrade/freqtrade/optimize/backtesting.py", line 1692, in backtest
+    self.backtest_loop(row, pair, current_time, trade_dir, not is_last_row)
+  File "/home/adok/freqtrade/freqtrade/optimize/backtesting.py", line 1488, in backtest_loop
+    self._check_trade_exit(trade, row, current_time)  # Place exit order if necessary
+  File "/home/adok/freqtrade/freqtrade/optimize/backtesting.py", line 925, in _check_trade_exit
+    exits = self.strategy.should_exit(
+  File "/home/adok/freqtrade/freqtrade/strategy/interface.py", line 1509, in should_exit
+    roi, _ = self.min_roi_reached_entry(trade_dur)
+TypeError: IStrategy.min_roi_reached_entry() missing 2 required positional arguments: 'trade_dur' and 'current_time'
+
+
+[06/06/2025 10:14] serialkiller15
+let me check this
+
+
+[06/06/2025 10:24] migtaber_92822
+Alex, do you have these startegy in live???
+
+
+[06/06/2025 10:25] serialkiller15
+yes
+
+
+[06/06/2025 10:28] migtaber_92822
+and?? good or bad?
+
+
+[06/06/2025 10:30] serialkiller15
+yes it is but would recommend to start with money you can loose...
+
+{Reactions}
+😀
+
+[06/06/2025 10:33] ch1ck3n_t4c0s
+Sent you a  vm on tg
+
+
+[06/06/2025 10:33] migtaber_92822
+I always thought Notank could have good things, now I think about the logic of trends, but a mix could also be good.
+
+
+[06/06/2025 10:36] serialkiller15
+@Ch1cK3N_t4c0s thanks budy!
+
+
+[06/06/2025 10:37] ch1ck3n_t4c0s
+Did that make sense? Not sure if I'm right need a lil more time than what I had last night
+
+
+[06/06/2025 10:37] serialkiller15
+i have listen to it then will write you back but thanks!
+
+{Reactions}
+❤️
+
+[06/06/2025 11:31] laupapp
+i think it's on my freqtrade, don't worry 🙂
+
+
+[06/06/2025 11:41] serialkiller15
+Yes Update to the latest version
+
+{Reactions}
+👌
+
+[06/06/2025 13:08] .7thdragon
+ah u applied my roi patch, needs an update on the roi function for ft 2025.5
+https://discord.com/channels/1238181199206154373/1284586552760074323/1380552977680564275
+
+
+[06/06/2025 13:08] laupapp
+ahah yes that's it
+
+
+[06/06/2025 13:09] .7thdragon
+roll back (bak file) and reapply
+
+{Reactions}
+👍
+
+[06/07/2025 12:02] serialkiller15
+@everyone also the fixed notankai v3 (SL)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1380879673332072529/NoTankAI_AlexV4.py?ex=69f344e9&is=69f1f369&hm=99494c814e2d0e6a36d92359a283ff18100a5f0a63e1de2a7d2ce8b163ac247c&
+
+{Reactions}
+🔥 (3)
+
+[06/07/2025 14:12] ximontan
+fixed VPro, standard pairs and config, binance, not optimized, what can be wrong
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1380912373627490436/image.png?ex=69f3635d&is=69f211dd&hm=9415d8aab8cf19fdb74ea1473cbf80df5a38dd85b7c1a6f0a7aaa7b8203edf0d&
+
+
+[06/07/2025 14:21] serialkiller15
+good question
+
+
+[06/07/2025 18:47] xenigami
+Starting with 6,000 dollars, net profit exceeded 10,000 dollars for the first time. Only the timeframe was modified to 1 hour.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1380981399057862737/Screenshot_20250608_032917_Chrome.jpg?ex=69f2fae6&is=69f1a966&hm=ed4063d4eb00e68ede76c9f88ee9c27fdfef1a9fc52fd8117b02e74006436e23&
+https://cdn.discordapp.com/attachments/1374312760413786163/1380981399397597377/Screenshot_20250608_032959_Chrome.jpg?ex=69f2fae7&is=69f1a967&hm=2215a95d849f860d8baaf88978ceab5cac8faabe9184d0c8443dedbbc300e476&
+https://cdn.discordapp.com/attachments/1374312760413786163/1380981399653191720/Screenshot_20250608_033036_Chrome.jpg?ex=69f2fae7&is=69f1a967&hm=9b7269919a62ee28312f597de30b323c0a93bfd887dbc03d0912f7c74673a296&
+https://cdn.discordapp.com/attachments/1374312760413786163/1380981399993188464/Screenshot_20250608_033141_Chrome.jpg?ex=69f2fae7&is=69f1a967&hm=f3eef9fb72b849c3c2bdf6416ad9eefe0db1a8f125330624754748af39d921d6&
+
+{Reactions}
+🔥
+
+[06/07/2025 19:25] erbosnio_17282
+Amazing, i will test the v3 also
+
+
+[06/07/2025 19:28] erbosnio_17282
+You started on 03/06 but it was publish today? Or this is another strategy?
+
+
+[06/07/2025 19:28] erbosnio_17282
+Is this one?
+
+
+[06/07/2025 19:48] serialkiller15
+Nice..
+
+
+[06/07/2025 19:49] serialkiller15
+V3 is fine v4 has fixed stop loss
+
+
+[06/07/2025 23:45] xenigami
+same v3 strategy~
+
+
+[06/08/2025 12:56] maxgorbachevskiy
+In my V3/V4, I have a problem with DCA/wallet size.
+
+DCA eats up the whole wallet.
+`2025-06-08 14:44:54 WARNING freqtrade.freqtradebot - Unable to create trade for EIGEN/USDT:USDT: Available balance (2.4280668199999695 USDT) is lower than stake amount (10 USDT)`
+
+ANyone found the best way to solve? There are several solutions:
+1) Change max_entry_position_adjustment (current 7) so a smaller number (But this is = artificial limit of a strategy = chains on the legs of potentially good working solution)
+2) Bigger wallet (But this is = more financial risk)
+3) Fix amount of additional purchases by DCA. The script has to be modified - anyone?
+4) other ideas?
+
+Please share what works best for you
+
+
+[06/08/2025 13:04] serialkiller15
+I think we should adjust thr amount factor for the additional purchase as a value so everybody can manage it... Will take a look on it tomorrow
+
+
+[06/08/2025 14:17] anonymuis
+Same for me on V3. One trade (out of 3) now uses 90% of balance.
+
+
+[06/08/2025 14:24] maxgorbachevskiy
+Did. some fixes, setting it dry, will report
+
+{Reactions}
+👍 (2)
+
+[06/09/2025 12:36] maxgorbachevskiy
+looks like 1h timeframe might work for this strategy (or, at least, NOTankAiF_VVRP_AlexV4) . 
+My guess is that the strategy filters out bad trades because on such long timeframe all trends are more distinctive. 
+(I may be wrong).
+I think we need to research this further
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1381612844105334824/image.png?ex=69f34cbb&is=69f1fb3b&hm=e1422eeeb4f79e83e72e2f4cb8ec3eb8939eecf619ad7448cf590edcefe78931&
+
+
+[06/09/2025 13:34] xenigami
+I also think that 1h timeframe works better.
+
+
+[06/09/2025 13:52] maxgorbachevskiy
+I started my test because i saw your message earlier with 1h screehshots with positive results.
+Thanks for your input, it was very valuable! 
+community power!
+
+
+[06/09/2025 14:04] xenigami
+tankpro.. What is the problem? I have a lot of balance, but don't use it.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1381635038638243890/Screenshot_20250609_230221_Chrome.jpg?ex=69f36166&is=69f20fe6&hm=58e67a024687c411c795c008471ecd7289d2995b75316d6b4d92eb0dbe64b60f&
+
+
+[06/09/2025 15:38] serialkiller15
+Look at the chart signals?
+
+
+[06/09/2025 15:39] serialkiller15
+Yesterday I did some changes adjustments in battletankpro still in testing but they are good...
+
+
+[06/09/2025 15:54] serialkiller15
+I also don't have many trades on battletank
+
+
+[06/09/2025 15:54] serialkiller15
+At the moment
+
+
+[06/10/2025 13:12] serialkiller15
+@everyone did some good tests and expanded the AlexBattleTankPro to use mml fully, vvrp is gone was not used anymore, so the signals look even better now ...stay informed the next hours
+
+{Reactions}
+🔥 🎉 (2) 🤟 (2)
+
+[06/10/2025 13:30] serialkiller15
+this is it....
+
+
+[06/10/2025 13:30] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1381988829287944192/image.png?ex=69f35965&is=69f207e5&hm=9a47ca5ddc69b11f589a6a17880f1c139150160b91c5aed58b98f26f7c5c59f0&
+
+
+[06/10/2025 14:19] anonymuis
+The graph looks interesting. Would love to test dry.
+
+
+[06/10/2025 15:22] serialkiller15
+Will post it than here
+
+
+[06/10/2025 15:34] serialkiller15
+its not finished some issues maybee inside because of the mml, but feel free to test it...
+
+
+[06/10/2025 15:35] serialkiller15
+Pinned a message.
+
+
+[06/11/2025 07:47] serialkiller15
+@everyone so here it is with many imporments and adding max dca amount an other stuff
+    max_dca_orders = 3
+    max_total_stake_per_pair = 10
+    max_single_dca_amount = 5
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1382264997828104202/AlexBattleTankProV5.py?ex=69f30918&is=69f1b798&hm=28d04a24ae36631645ad717b40663f9f8c1a192acc4fd2981a0ead449b8d6ba5&
+
+{Reactions}
+👍
+
+[06/11/2025 07:48] anonymuis
+I'm running it. So far so good!
+
+
+[06/11/2025 08:46] ximontan
+if I have msg XXX/USDT:USDT DCA below min_stake. Adjusting to 5.25 USDT
+should I increace max_single_dca_amount?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1382279838215180328/image.png?ex=69f316ea&is=69f1c56a&hm=1bd5971b9cf6600550a4cd3ce01cb04603a66e7a790372c70c765961b39d9ebd&
+
+
+[06/11/2025 08:48] serialkiller15
+try this settings here 
+max_dca_orders = 2              
+max_total_stake_per_pair = 15  
+max_single_dca_amount = 7
+
+{Reactions}
+👍
+
+[06/11/2025 08:49] serialkiller15
+keep testing on it
+
+
+[06/11/2025 08:49] serialkiller15
+but its better to use it because it will not kill your wallet....with single trades
+
+
+[06/11/2025 09:08] serialkiller15
+see it here in the signals
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1382285305788502086/image.png?ex=69f31c02&is=69f1ca82&hm=8b8bff8b3a62cf57fd5e778745c4aab9b2385f4a8190f18b4b03e9c6f24568c6&
+
+
+[06/11/2025 09:09] xalt8851
+Have error with V5
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1382285646017724489/image.png?ex=69f31c53&is=69f1cad3&hm=e2718b4eccd5a0dc5ff9477fa051c8b6b745e73ba06aaae177f44b479ef969e0&
+
+
+[06/11/2025 09:10] serialkiller15
+change the name to V2.....when strategy start
+
+{Reactions}
+👍🏻
+
+[06/11/2025 09:10] serialkiller15
+AlexBattleTankProV2
+
+
+[06/11/2025 14:54] xalt8851
+V5
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1382372548607737887/image.png?ex=69f36d42&is=69f21bc2&hm=ac592c1460b200c8aa6e98b357d6f30f3900b9df9dfd3ffe9b319305cb625b98&
+
+
+[06/11/2025 17:35] ximontan
+looks good too V5
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1382412837825151068/image.png?ex=69f392c8&is=69f24148&hm=2c1857c5768bb144c42b5edbc941b3b99a93170d2a7f2ec2f965256780568cd4&
+
+{Reactions}
+🔥 (2)
+
+[06/11/2025 17:46] serialkiller15
+Also on my side it does good
+
+
+[06/12/2025 14:52] ammart90
+Can you share hyperopt file ?
+
+
+[06/12/2025 15:09] serialkiller15
+There is no
+
+
+[06/12/2025 15:16] ammart90
+This 24h dry running
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1382740332252500070/image.png?ex=69f37249&is=69f220c9&hm=5c6e16f06cdccce997b96975db32f0e5143fcdda6f8e213d507f4d739139d175&
+
+
+[06/12/2025 16:44] serialkiller15
+The market now is not good for spot mate
+
+{Reactions}
+👍
+
+[06/13/2025 17:45] ximontan
+I notice pro v5 rebuy some time very close to entry or at the same candle, is it ok?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1383140345524654130/image.png?ex=69f39553&is=69f243d3&hm=162e822c83109ffe4fca619744c21f32210813066bf1036a44c100b692ae8bcb&
+
+
+[06/20/2025 08:54] serialkiller15
+when the tests are finished mate
+
+
+[06/21/2025 08:25] serialkiller15
+yes mate
+
+
+[06/21/2025 08:30] serialkiller15
+yes 1h you can try 15m and 30m with backtesting
+
+
+[06/24/2025 08:46] viking046433
+Does this strategy use freqAI?
+
+
+[06/24/2025 08:46] serialkiller15
+no
+
+
+[06/24/2025 08:46] viking046433
+I’m trying to figure out
+
+
+[06/24/2025 08:46] viking046433
+Thx
+
+
+[06/24/2025 08:46] serialkiller15
+i stopped using freqai....
+
+{Reactions}
+👍
+
+[06/24/2025 08:46] viking046433
+Testing v3 seems the best on 1h
+
+
+[06/24/2025 08:53] serialkiller15
+absolute..
+
+
+[06/24/2025 09:24] serialkiller15
+battletankpro 1h signals are coming...
+
+{Reactions}
+🚀
+
+[06/24/2025 10:57] viking046433
+What is it on config that I keep getting timeouts on orders
+
+
+[06/24/2025 10:57] viking046433
+Should order entry be market?
+
+
+[06/24/2025 10:58] viking046433
+And what time should it be ? 1m 5m
+
+
+[06/24/2025 10:59] serialkiller15
+"order_types": {
+    "entry": "market",
+    "exit": "market",
+    "emergency_exit": "market",
+    "force_entry": "market",
+    "force_exit": "market",
+    "stoploss": "market",
+    "stoploss_on_exchange": false,
+    "stoploss_on_exchange_interval": 60
+  },
+  "entry_pricing": {
+    "price_side": "other",
+    "ask_last_balance": 0,
+    "use_order_book": true,
+    "order_book_top": 1,
+    "check_depth_of_market": {
+      "enabled": false,
+      "bids_to_ask_delta": 1
+    }
+  },
+  "exit_pricing": {
+    "price_side": "other",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+
+{Reactions}
+🚀
+
+[06/24/2025 13:58] viking046433
+What is the exit signals on v3? Some trades made 30% and never exit then it drops to -
+
+
+[07/01/2025 15:01] viking046433
+Hey you still working on this or is the other talking priority
+
+
+[07/01/2025 15:02] maxgorbachevskiy
+Currently not that good results, so priorities are clear. If you have improvements, much welcome
+
+
+[07/01/2025 15:03] viking046433
+Sweet
+
+
+[07/01/2025 15:03] viking046433
+Tnx
+
+
+[07/01/2025 15:18] maxgorbachevskiy
+As always, improvements are welcome! We’re here not just to consume others’ strategies but also to provide valuable inputs, if possible 😜
+
+
+[07/01/2025 15:18] viking046433
+Fantastic
+
+
+[07/01/2025 15:33] ch1ck3n_t4c0s
+https://tenor.com/view/mando-way-this-is-the-way-mandalorian-star-wars-gif-18467370
+
+{Embed}
+https://tenor.com/view/mando-way-this-is-the-way-mandalorian-star-wars-gif-18467370
+https://images-ext-1.discordapp.net/external/iBdi9hqsozCO4D_7F6xWd0Xx_VLILPFJ4Wc7szncrhk/https/media.tenor.com/2jgbEi-vCuQAAAAe/mando-way-this-is-the-way.png
+
+
+[08/12/2025 09:53] shalossen
+launched a dry run on the four timeframes, we'll see how it goes
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1404764641971802112/image.png?ex=69f32685&is=69f1d505&hm=48f5d2fb0cf3c810b8e8a83442782987b481b275e3ac032316103cc53afb2cec&
+
+{Reactions}
+👍
+
+[08/15/2025 16:22] shalossen
+Running for 3 days, after a bullish and bearish market :
+
+
+[08/15/2025 16:22] shalossen
+1h
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1405949850759204995/image.png?ex=69f381d5&is=69f23055&hm=234da80615a91cb5fc505c468f49c689a16b9800f8e44c74756ee2af6844a3e2&
+
+
+[08/15/2025 16:23] shalossen
+4h
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1405949947878183022/image.png?ex=69f381ec&is=69f2306c&hm=397d3d7635bccca1091e36d170c3666ba53ec4ae901bc4d9bca2d2408a0a39d4&
+
+
+[08/15/2025 16:23] shalossen
+5m
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1405950043151667340/image.png?ex=69f38203&is=69f23083&hm=2e157afdedeaed37674cbfa6929a23fbea6299dee34513cdbfe9084f306ba3bf&
+
+
+[08/15/2025 16:23] shalossen
+15m
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1405950134709256383/image.png?ex=69f38219&is=69f23099&hm=2535103df431d8eb052ad34af69f53dc65fb4603beda539f23cfd200bdd5964c&
+
+
+[08/31/2025 14:05] shalossen
+1h
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1411713546563358800/image.png?ex=69f361b1&is=69f21031&hm=fe5e35e83b5f0dc2577c5c4c8c7b54c3cb05d115c571d4ddd7cb5ee52093b029&
+
+
+[08/31/2025 14:05] shalossen
+4h
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1411713621666562259/image.png?ex=69f361c3&is=69f21043&hm=8d1aa4f544ada7b46b6f2a7fd1084015a3f2ecc18e92bbc427ebcf24ca9186fe&
+
+
+[08/31/2025 14:06] shalossen
+5m
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1411713760594366557/image.png?ex=69f361e4&is=69f21064&hm=2168f4022205b4a075afec2027faf9285e541b8e2335108ecb9f10eaaaebef5e&
+
+
+[12/04/2025 08:02] serialkiller15
+@everyone mostly the only Strategie that survived the market...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1446049011869159464/Screenshot_20251204_090136_Firefox.jpg?ex=69f30c96&is=69f1bb16&hm=6f9da5eaa7a6fa46757370f9887ae357502967bafdec045756f13f23fe104f81&
+
+
+[12/04/2025 08:04] .oliver6
+wow
+
+
+[12/04/2025 08:04] .oliver6
+this one?
+
+
+[12/04/2025 09:30] serialkiller15
+Yep
+
+
+[12/04/2025 10:38] nerazurri0420
+I’m starting to test your AlexBattleTankPro now. Since I’ve also made a lot of improvements on NotankAI, I’ll do an in-depth comparison of the strategies. If I discover useful indicators or good ideas, I’ll share them with you. @Alex Crypto King
+
+
+[12/04/2025 10:38] serialkiller15
+Thanks
+
+
+[12/04/2025 10:38] serialkiller15
+It's based on NoTankai
+
+
+[12/04/2025 10:42] nerazurri0420
+Yep it feels very familiar.
+
+
+[12/04/2025 10:42] serialkiller15
+Yes the only strategy that survived this market the past days..
+
+
+[12/04/2025 12:44] xf0x0f
+Hope its also working in some weeks 😜 batteltankpro never worked for me
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1446120030512218244/IMG_8936.png?ex=69f34eba&is=69f1fd3a&hm=a74a53b160ab155cf4d37df9a9782d82e6ee455692d10a41d86d5eb2e156ac7e&
+
+{Reactions}
+💯
+
+[12/04/2025 13:00] 4v1234
+Does this mean that you have 15 bots running? The normal people use post 8080 or 8081 🙂 😀😃
+
+
+[12/04/2025 13:05] serialkiller15
+I run 30 bots
+
+
+[12/04/2025 13:05] serialkiller15
+Change the port in config for each bot
+
+
+[12/04/2025 13:36] serialkiller15
+The problem is every strategy mostly not work for all market situations
+
+
+[12/04/2025 13:43] divarak
+Any suggested config file?
+
+
+[12/04/2025 14:34] serialkiller15
+Nope static pair list I use always 15m or 30m timeframe
+
+{Reactions}
+🫡
+
+[12/04/2025 14:34] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1446147632379465850/Screenshot_20251204_153322.jpg?ex=69f3686f&is=69f216ef&hm=28e02b9fd6c49e737a101456d9bd32a2a7f721dc0ee7a1622cf90dd8b1d3cfe8&
+
+{Reactions}
+🚀
+
+[12/10/2025 12:14] divarak
+Day (count)      USDT         USD        Profit %
+---------------  -----------  ---------  ----------
+2025-12-10 (5)   5.219 USDT   5.22 USD   3.59%
+2025-12-09 (11)  8.07 USDT    8.07 USD   5.87%
+2025-12-08 (5)   1.356 USDT   1.36 USD   1.00%
+2025-12-07 (17)  10.407 USDT  10.41 USD  8.28%
+2025-12-06 (12)  -0.75 USDT   -0.75 USD  -0.59%
+2025-12-05 (0)   0 USDT       0.00 USD   0.00%
+2025-12-04 (0)   0 USDT       0.00 USD   0.00%
+
+
+[12/10/2025 12:14] divarak
+ROI: Closed trades
+∙ 24.302 USDT (5.38%) (16.2 Σ%)
+∙ 24.302 USD
+ROI: All trades
+∙ 21.924 USDT (4.38%) (14.62 Σ%)
+∙ 21.924 USD
+Total Trade Count: 56
+Bot started: 2025-12-06 12:27:22
+First Trade opened: 3 days ago (2025-12-06 12:55:48)
+Latest Trade opened: 17 minutes ago (2025-12-10 11:57:11)
+Win / Loss: 30 / 20
+Winrate: 60.00%
+Expectancy (Ratio): 0.49 (0.42)
+Avg. Duration: 6:17:52
+Best Performing: PENDLE/USDT:USDT: 4.987 USDT (20.66%)
+Trading volume: 8462.896 USDT
+Profit factor: 2.06
+Max Drawdown: 3.96% (5.933 USDT)
+    from 2025-12-06 13:10:28 (-1.47 USDT)
+    to 2025-12-06 14:40:38 (-5.933 USDT)
+Current Drawdown: 1.12% (1.971 USDT)
+    from 2025-12-10 01:55:33 (26.272 USDT)
+
+
+[12/10/2025 12:15] divarak
+Looks primising 🤩
+
+
+[12/11/2025 22:08] divarak
+Fck!!
+Daily Profit over the last 7 days:
+Day (count)      USDT          USD         Profit %
+---------------  ------------  ----------  ----------
+2025-12-11 (16)  -19.873 USDT  -19.87 USD  -11.69%
+2025-12-10 (9)   4.821 USDT    4.82 USD    2.92%
+2025-12-09 (11)  8.07 USDT     8.07 USD    5.14%
+2025-12-08 (5)   1.356 USDT    1.36 USD    0.87%
+2025-12-07 (17)  10.407 USDT   10.41 USD   7.16%
+2025-12-06 (12)  -0.75 USDT    -0.75 USD   -0.51%
+2025-12-05 (0)   0 USDT        0.00 USD    0.00%
+
+
+[12/11/2025 22:08] divarak
+just increasing the max number of trades make the strategy another loser. 😢
+
+
+[12/11/2025 22:09] divarak
+was on 6, increased to 20.
+
+
+[12/11/2025 22:10] 4v1234
+After you increase to 20, you got this big loss?
+
+
+[12/11/2025 22:10] divarak
+yes
+
+
+[12/11/2025 22:10] divarak
+closed the bot, edit the config (one detail.. there was open trades)
+
+
+[12/11/2025 22:11] divarak
+maybe my mistake was not to strart from clean database
+
+
+[12/11/2025 22:15] 4v1234
+Never tested this one.....the market is crazy now....
+
+
+[12/11/2025 22:16] divarak
+I hope it is only that.. will wait...
+
+
+[12/11/2025 22:16] divarak
+ROI: Closed trades
+∙ 4.031 USDT (0.93%) (2.69 Σ%)
+∙ 4.031 USD
+ROI: All trades
+∙ 4.031 USDT (0.93%) (2.69 Σ%)
+∙ 4.031 USD
+Total Trade Count: 70
+Bot started: 2025-12-06 12:27:22
+First Trade opened: 5 days ago (2025-12-06 12:55:48)
+Latest Trade opened: an hour ago (2025-12-11 20:27:38)
+Win / Loss: 34 / 36
+Winrate: 48.57%
+Expectancy (Ratio): 0.06 (0.04)
+Avg. Duration: 7:28:14
+Best Performing: PENDLE/USDT:USDT: 4.987 USDT (20.66%)
+Trading volume: 10947.367 USDT
+Profit factor: 1.08
+Max Drawdown: 13.25% (23.349 USDT)
+    from 2025-12-10 01:55:33 (26.272 USDT)
+    to 2025-12-11 21:13:42 (2.923 USDT)
+Current Drawdown: 12.62% (22.242 USDT)
+    from 2025-12-10 01:55:33 (26.272 USDT)
+
+
+[12/11/2025 22:16] divarak
+after all, 5 days...
+
+
+[12/12/2025 01:00] glad8769
+Hi, I've dove some backtest with the last 6 months and the V1 seems to be better than V2.
+
+In the V1 I have changed only this: `max_entry_position_adjustment = 3`.
+
+I am trying only one pair, BTC, to understand how it reacts.
+
+Any recommendation? I have tested binance.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1448841971022958603/v1.txt?ex=69f3527c&is=69f200fc&hm=417549bd50f9caad56b65bfcf78a66f2633d894287764036bd321ff4ff5a58c6&
+https://cdn.discordapp.com/attachments/1374312760413786163/1448841971459297290/v2.txt?ex=69f3527c&is=69f200fc&hm=948d6a76d66ff1345192d4ce2c3b97b16104c6662deb77b94a002f7fc31e2850&
+
+
+[12/12/2025 01:01] glad8769
+mmm I've just realized that `AlexBattleTankPro`has one trade in pending since `29 days, 10:45:00`and it is in loss LOL
+
+
+[12/12/2025 12:24] branly76
+For AlexBattleTankProV5 and AlexDivergenceV3 I added the following.
+- Only half of the max_trades can be long or short
+- If X trades (use now X=3, config file) in a row give a stop-loss, then for   Y (use now Y=36, config file) hours no trading.
+By this I expect(maybe hope)  to prevent the heavy loosing periods, particulary the divergence showed this. Time will tell us.
+
+{Reactions}
+👍
+
+[12/12/2025 12:25] glad8769
+I’ll make some tests as well
+
+
+[12/12/2025 12:55] 4v1234
+It seems logical....good point 🙂
+Is ti position to share the .py and .json ? I would like to observe its behavior, I can return suggestions and analysis, because my codes are not perfect 🙂
+
+
+[12/12/2025 13:09] branly76
+Want to let it run 1 day to see if no bugs, then i will share it here.
+
+
+[12/12/2025 13:09] 4v1234
+Perfect,  thank you in advance
+
+
+[12/12/2025 13:20] 4v1234
+Something that bothers me is the focus on loss trades.  I believe and observed that after entry is generated and trade finishes on loss......most ot the people coding strategies just mark is " bad trade" For me loss trade is more powerful I  terms of information regarding the curent market movements.  So, if we have loss on particular trade, I believe that it is good to re evaluate and search the potential to recover the lost amount of our stake. Thae idea behind : I it possible to recalculate the information for that loss, and if we can....
+After loss: hold new entry
+Re-evaluated: curent market data + statistics from the lost trade.
+Surch or immediate re entry at same coin pair. 
+Again, if we have a loss, this means thet there is a movement of the coin against our first calculation,  but this automatically shows that we can correct and re enter with the specific coin behavior.
+
+
+[12/12/2025 14:27] branly76
+Probably you learn more from your mistakes then from your success.
+Anyway if the mistakes hurt. That is daily live.
+We know that crypto is very much manipulated by big companies/whales.
+If the bunch expects a bull, they make a bear and vice versa.
+Call them the market makers, they decide in which direction the price go.
+And if all strategies/indicators scream a buy, they push the price more down. They make a lot of money this way.
+That is why i believe stop trading a while can help preventing more stop-loss trades.
+Let the market makers first do their thing.
+For sure you will miss some winners, but stop-loss values are mostly much bigger then take-profits.
+
+To me there is no strategy which can predict the bull, bear or ranging market precize.
+Anyway we did not find up to now, otherwise live was easy and this group was close to death.
+
+Analyzing loosing trades can help. But needs the data to evaluate later on.
+As far as i know in freqtrade you can not add data/metrics to trades.
+Maybe also data about the last previous trades.
+I would be nice if at opening a trade we had one parameter in which we could save all metrics we want.
+This would be needed to do a good analysis afterwards. So this has to added to your strategy and via some stand alone code/script analyze the loosing trades.
+
+
+[12/12/2025 15:13] 4v1234
+There is such file under one of the Alex strategies @Alex Crypto King  Please see pictures and name of it.  Another approach would be, in this strategies " any one" to add a code that states
+- of stade is False start clock and after 241 minutes recal the data form that loss trade. 
+So we will have one more info for our loss. Whay I'm giving this example: after many observations under live traiding many loss trades which "the strategy: closed them at loss " after some 4 to 8 ours,  they are returning to the start level price.  On memory from 40+ trades that hit the stop loss 37 recover to entry level. Take this as another imput and idea for improvement. @Branly
+
+
+[12/12/2025 15:13] 4v1234
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1449056577603506226/20251212_170143.jpg?ex=69f3719a&is=69f2201a&hm=8df6888716258f9febb7863ab9fb339372a0c0a8cb8ac0565af04df10d06eb60&
+
+
+[12/12/2025 15:16] serialkiller15
+@Branly i am with you. I am in crypto many years and it the market changed rapidly. Yes no strategy can predict any movements of the market so I also saw in the last weeks that a big stoploss can handle good profits. But when the market changes then it's not profitable at all. What we are all missing is a trend up or down so the profits will get better there. I run about mostly all strategys hier on live or dry run and see different profits different losses. From the past weeks ml Wir optuna is doing most stable. But this can change after Market changes
+
+
+[12/14/2025 19:13] branly76
+The version you asked for
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1449841859596652737/Alex_Divergence_V3a.py?ex=69f30134&is=69f1afb4&hm=13601bc954544b56b255b0cd453dd9ddbb37b4b4748f306bc2ce81923d3bdf46&
+
+
+[12/14/2025 19:16] branly76
+Add to config file. In this case if the last 3 trades are in stop-loss, then 36 hours no trading.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1449842525618835557/image.png?ex=69f301d2&is=69f1b052&hm=e36e588abcb65efbc8f8da1da4d99452af7e43cc87690c72eccb3443f558ccb3&
+
+
+[12/14/2025 19:17] branly76
+If "max_last_trades" : 5, then if 3 trades in stop-loss in the last 5 trades, 36 hours no trading
+
+
+[12/14/2025 19:18] serialkiller15
+👍
+
+
+[12/14/2025 19:45] 4v1234
+Ok, thank you 😊 🙏
+
+
+[12/14/2025 19:58] branly76
+Same here, add same 3 lines in config
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1449853026423799939/AlexBattleTankProV5.py?ex=69f30b9a&is=69f1ba1a&hm=52f457ba41e21066ae361d83e6f706700e83a4e776fcf333d4430d7ebb228287&
+
+
+[12/14/2025 20:12] 4v1234
+Thanks man 😀
+
+
+[12/14/2025 20:23] branly76
+Maybe i forgot to mention, if max trades is 10, then you have a max of 5 open longs or shorts!
+
+{Reactions}
+👍
+
+[12/15/2025 06:28] nerazurri0420
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1450011713465487400/image.png?ex=69f2f6a4&is=69f1a524&hm=2b0cefa52c55022ed6ec9f37ca8cbfece799fa2c17b41705ec796ab69783d0a8&
+
+
+[12/15/2025 06:29] nerazurri0420
+tankpro testing
+
+
+[12/18/2025 03:17] nerazurri0420
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1451050692423843975/image.png?ex=69f37284&is=69f22104&hm=fb462875099b9460e5331872c0f7daa44714f56747c2814fef57ac480ef84ac1&
+
+
+[12/22/2025 04:31] dragongoattigercat
+Hi Folk, I dont know why did my bot do DCA at the same price?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1452518952138965062/image.png?ex=69f383f0&is=69f23270&hm=1e779c07be98013a1fbf6bf0497c051d3d16842848e631c3c13f9ee3e62996c5&
+
+
+[12/22/2025 04:32] dragongoattigercat
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1452519179596071083/image.png?ex=69f38426&is=69f232a6&hm=ed3951662fb4e4f57853635737954567145fde02a7004a6efd3bcbfe1f0ffe8b&
+
+
+[03/04/2026 11:51] serialkiller15
+@everyone 
+my personal Assistand is helping me to fix some old Problems and Old Strategies
+
+🚀 AlexBattleTankProV7 Update Summary 🚀
+
+Hey traders! We've just pushed critical fixes to the AlexBattleTankPro strategy. Here's what's new:
+
+🛡️ Critical Fixes
+
+1. Stoploss Protection Fixed 🔒
+
+• ❌ Removed: Exit blocking that caused catastrophic losses (-1029%, -54%)
+• ✅ Added: Hard stoploss limit at -8% (prevents disasters)
+• ✅ Added: Emergency exit at -15% loss (auto-kill switch)
+
+2. Exit Logic Overhaul 🚪
+
+• ❌ Before: Exits blocked unless profit > 1%
+• ✅ Now: Stoploss exits ALWAYS allowed
+• ✅ Now: Force exits allowed if loss > 3%
+• ✅ Now: Trailing stops allowed if profit > 2%
+
+3. Leverage Reduced ⚖️
+
+• Was: 5-20x default 10x
+• Now: 3-10x default 5x
+• 💡 Less leverage = smaller losses on bad trades
+
+🔄 New Feature: Automatic Reversals
+
+Smart Position Flipping 🔄
+
+• When LONG signal fires → auto-close any open SHORT
+• When SHORT signal fires → auto-close any open LONG
+• Exit tags: Reversal_Short_On_Long_Entry / Reversal_Long_On_Short_Entry
+
+No more holding losing positions during reversals!
+
+📊 Results
+| Issue          | Before (V6)   | After (V7)        |
+| -------------- | ------------- | ----------------- |
+| Worst loss     | -1029% 😱     | -8% max ✅         |
+| Stoploss works | ❌ Blocked     | ✅ Always works    |
+| Force exits    | ❌ Profit only | ✅ Loss protection |
+| Reversals      | ❌ Manual      | ✅ Automatic       |
+
+{Reactions}
+👍 (2)
+
+[03/04/2026 11:52] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1374312760413786163/1478721843174183053/AlexBattleTankProV7.py?ex=69f34288&is=69f1f108&hm=8df9c05e2ff801223df7fc9f180a50ddeb6a16a69c95eabe4c11fe143c6c59fd&
+
+{Reactions}
+👍
+
+==============================================================
+Exported 291 message(s)
+==============================================================

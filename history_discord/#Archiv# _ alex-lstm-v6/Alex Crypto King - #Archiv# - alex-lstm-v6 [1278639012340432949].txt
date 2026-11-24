@@ -1,0 +1,700 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: #Archiv# / alex-lstm-v6
+==============================================================
+
+[08/29/2024 08:55] serialkiller15
+Hi there, in this Channel i will post my first FREQAI Strategy with LSTM Learing Modell i adapted.
+
+{Reactions}
+👍🏼
+
+[08/29/2024 09:42] serialkiller15 (pinned)
+GITHUB:
+https://github.com/AlexCryptoKing/freqailstm?tab=readme-ov-file
+
+{Embed}
+https://github.com/AlexCryptoKing/freqailstm?tab=readme-ov-file
+GitHub - AlexCryptoKing/freqailstm
+Contribute to AlexCryptoKing/freqailstm development by creating an account on GitHub.
+
+
+[08/29/2024 09:43] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278639012340432949/1278651334530170963/README.md?ex=69f3245a&is=69f1d2da&hm=0ce1a8ea69927dacd858c224ff06d692b34eb2e12c956820d5fddc52a02d9833&
+
+
+[08/29/2024 09:44] serialkiller15
+Here is the Full modified Strategy with all features
+
+{Reactions}
+👍🏼 (2)
+
+[08/29/2024 09:45] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278639012340432949/1278651610985402398/freqailstm-main.zip?ex=69f3249c&is=69f1d31c&hm=3d211fb77a8ee6f4ad18f46558bc296a7f1d3a4dd05ed30da5f8209e5abc6f1f&
+
+
+[08/29/2024 10:06] maxgorbachevskiy
+Hi Alex!
+
+
+[08/29/2024 10:07] serialkiller15
+Started a thread.
+
+
+[08/29/2024 10:08] francois5156
+Hi there
+
+
+[08/29/2024 10:08] serialkiller15
+WELCOME - we can use the Discussion Thread for questions, faq.... more channels will come
+
+
+[08/29/2024 10:58] highlander926
+hi alex
+will it work on spot market ?
+
+
+[08/29/2024 10:58] highlander926
+or can you please make spot version of it ? without leverage
+
+
+[08/29/2024 11:25] giovannimauro
+Hey!
+
+
+[08/29/2024 11:25] giovannimauro
+thank you for your efforts!
+
+
+[08/29/2024 11:39] serialkiller15
+@highlander926 it should work with spot also the leverage you can set to 1.0 in the strategy and make config for spot in config.json file
+
+{Reactions}
+🔥
+
+[08/29/2024 12:09] maxgorbachevskiy
+@Alex Crypto King to start with, thanks a lot for your enormous generosity in building & SHARING your efforts. Will backtest and report, and, hopefully, contribute back.
+
+
+[08/29/2024 12:13] serialkiller15
+thanks, yes will make a group with results, its sometimes a little bit tricky, do the test on your own and also with the config.json i postet because the rl, machine learining algo needs some time because the market is a little horrible at the past weeks so i got better results on that!
+
+
+[08/29/2024 12:13] serialkiller15
+mods, ideas hardly welcome
+
+
+[08/29/2024 12:15] maxgorbachevskiy
+different. exchanges might lead to different. results, too. Which exchange are you in?
+
+
+[08/29/2024 12:18] serialkiller15
+yes absolute i used binance before, but now bybit and have good resulsts mostly, kucoin did also tests, but have do test it on dryrun!
+
+
+[08/29/2024 12:25] serialkiller15
+Started a thread.
+
+
+[08/29/2024 15:04] giovannimauro
+Hey Alex! Can you share some results? I'm running it now, But not sure that it's running at his full features
+
+
+[08/29/2024 15:05] giovannimauro
+For example, is it normal that it place an entry on  every new calculated candle?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278639012340432949/1278732309943685161/image.png?ex=69f36fc4&is=69f21e44&hm=5b77a612f3beaa4ee14cd377cffc02bafcce82f38cad10fd1f455e583715ace9&
+
+
+[08/29/2024 15:05] serialkiller15
+did you do backtest?
+
+
+[08/29/2024 15:05] serialkiller15
+and hyperopt?
+
+
+[08/29/2024 15:05] giovannimauro
+No I'm using your raw files
+
+
+[08/29/2024 15:06] giovannimauro
+just to test if it run
+
+
+[08/29/2024 15:06] serialkiller15
+hopefuly in dry run?
+
+
+[08/29/2024 15:06] giovannimauro
+yeah 🙂
+
+
+[08/29/2024 15:06] serialkiller15
+fine
+
+
+[08/29/2024 15:07] serialkiller15
+you should see
+
+
+[08/29/2024 15:07] giovannimauro
+When I try to backtest it give me an error, something like "No attribute 'model' and something like "noneType"
+
+
+[08/29/2024 15:07] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278639012340432949/1278732679314931794/image.png?ex=69f3701c&is=69f21e9c&hm=33ea99709ac1b286796c645e5b13354df2126979862af8b1e5b2f2e968a1fa59&
+
+
+[08/29/2024 15:07] serialkiller15
+long short entrys, exits and so on
+
+
+[08/29/2024 15:07] serialkiller15
+after training of your choosen coins is finished!
+
+
+[08/29/2024 15:09] giovannimauro
+See this... and another question; why in your image I can see both long and short signal on the same candle? it's a bit confusing, not a critique, just trying to understand freqAI mind
+
+
+[08/29/2024 15:09] serialkiller15
+absolute you are welcome, this i have to fix its a plotting issue but the strategy works so everything is fine
+
+
+[08/29/2024 15:10] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278639012340432949/1278733603294941204/image.png?ex=69f370f8&is=69f21f78&hm=1b168ca441d2b65e66130981a517735998957ee9351c8184ba2403d02045950e&
+
+
+[08/29/2024 15:11] giovannimauro
+is it profitable on medium long run?
+
+
+[08/29/2024 15:12] giovannimauro
+or it's in RnD stage yet?
+
+
+[08/29/2024 15:13] giovannimauro
+Just started
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278639012340432949/1278734168657887386/image.png?ex=69f3717f&is=69f21fff&hm=bf62a16c16d2c3cbe90bb0d1c3a0efe51178f5c49df18fdc6e00ddaacc911b0e&
+
+
+[08/29/2024 15:14] maxgorbachevskiy
+I adjust the timeframe (backtesting start_date - several days after downloaded data start_date) and this error is gone. Try
+
+
+[08/29/2024 15:15] giovannimauro
+can you explain?
+
+
+[08/29/2024 15:15] maxgorbachevskiy
+if you were following telegram, this strategy is just several days old. So we all have to check it and contribute improvements.
+
+
+[08/29/2024 15:15] giovannimauro
+really good
+
+
+[08/29/2024 15:16] serialkiller15
+yes please do it, make your own decissions also the coins you use for it
+
+
+[08/29/2024 15:17] maxgorbachevskiy
+for now it is "promising" and we have top dry_run (and live_run), it takes weeks and months of time to pass and real trades to happen, to prove anything
+
+
+[08/29/2024 15:17] serialkiller15
+@MaxG absolute
+
+
+[08/29/2024 15:17] maxgorbachevskiy
+especially at flash ups/downs
+
+
+[08/29/2024 15:18] andreis9311
+Hey guys! Which docker image you are using for this strategy?
+
+
+[08/29/2024 15:18] giovannimauro
+thank you!
+
+
+[08/29/2024 15:18] serialkiller15
+yes, i do test with different roi settings to make small profits
+
+
+[08/29/2024 15:18] serialkiller15
+in short times
+
+
+[08/29/2024 15:18] maxgorbachevskiy
+check "docker" setup instructions and docker file inside
+
+
+[08/29/2024 15:18] serialkiller15
+@AndreiS i will post a docker file
+
+{Reactions}
+🫡
+
+[08/29/2024 15:19] maxgorbachevskiy
+follow step 3 from "install with Docker" . Download data, then backtest. It will start rtaining
+
+
+[08/29/2024 15:21] serialkiller15
+yep
+
+
+[08/29/2024 15:21] andreis9311
+I'm using https://github.com/AlexCryptoKing/freqailstm/blob/main/torch/Dockerfile, but I'm encountering an issue after a few tries.
+
+`
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqai/freqai_interface.py", line 161, in start
+    dk = self.start_backtesting(dataframe, metadata, self.dk, strategy)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqai/freqai_interface.py", line 375, in start_backtesting
+    self.dd.save_data(self.model, pair, dk)
+  File "/freqtrade/freqtrade/freqai/data_drawer.py", line 521, in save_data
+    model.save(save_path / f"{dk.model_filename}_model.zip")
+  File "/freqtrade/user_data/freqaimodels/PyTorchModelTrainer.py", line 167, in save
+    torch.save(
+  File "/home/ftuser/.local/lib/python3.12/site-packages/torch/serialization.py", line 652, in save
+    save(obj, openedzipfile, pickle_module, pickle_protocol, disablebyteorder_record)
+  File "/home/ftuser/.local/lib/python3.12/site-packages/torch/serialization.py", line 864, in _save
+    pickler.dump(obj)
+TypeError: cannot pickle '_thread.lock' object`
+
+
+[08/29/2024 15:25] giovannimauro
+Ok, done a backtest with few pairs
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278639012340432949/1278737282530148456/image.png?ex=69f37465&is=69f222e5&hm=0e750362b93bd31d5408372f84174133d304f0975350e215b1649072afa9b916&
+
+
+[08/29/2024 15:25] giovannimauro
+I don't know if we can considering it as proper
+
+
+[08/29/2024 15:26] serialkiller15
+i firstly doe hyperopt for maybe max 1 week timeframe and then backtest try it out
+
+
+[08/29/2024 15:29] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278639012340432949/1278738251477417994/message.txt?ex=69f3754c&is=69f223cc&hm=469e3849d7394a469b7f6224e0caaacc08f392e2d895cfc6a008d700dddbba50&
+
+
+[08/29/2024 15:29] serialkiller15
+DOCKEFILE there was the old path in it but it must work both!
+
+
+[08/29/2024 15:30] serialkiller15
+@AndreiS replace the modell file from my github then it will work
+
+
+[08/29/2024 15:30] maxgorbachevskiy
+you copied the text two times
+
+
+[08/29/2024 15:31] giovannimauro
+I know it's just the start, but for now, It seam to be in the good way
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278639012340432949/1278738688271978536/image.png?ex=69f375b5&is=69f22435&hm=3147a955f30d0e5689978870b53c1c97d3058a12a7bf8e764945bd55d0030f39&
+
+
+[08/29/2024 15:31] raul0909
+Where can you see this interface?
+
+
+[08/29/2024 15:31] raul0909
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278639012340432949/1278738906665193585/image.png?ex=69f375e9&is=69f22469&hm=2f2bc2444f7a67cd88bb998150297e6f426e13b8a0374b862dd5a0145ddfe449&
+
+
+[08/29/2024 15:31] raul0909
+still getting errors on `time-range`
+
+
+[08/29/2024 15:32] serialkiller15
+@Raul C welcome budy, this is freqtrade on freqtradeai different to tradingview
+
+
+[08/29/2024 15:32] raul0909
+that's amazing! can you please assist me to set it up?
+
+
+[08/29/2024 15:32] raul0909
+there are some errors on docker configuration, and I want to keep testing on bybit
+
+
+[08/29/2024 15:32] serialkiller15
+you forget a number 20220600-20230600 for example
+
+
+[08/29/2024 15:32] serialkiller15
+@Raul C always write me on telegram no prob
+
+
+[08/29/2024 15:33] raul0909
+okay
+
+
+[08/29/2024 15:34] giovannimauro
+Alex, sorry for the tons of question, but I'm mid experienced with freqtrade, but I'm a noob in freqAI, so, please bear with me. 
+
+Just to understand, over the Hyperparametrisation you write "Weights for calculating the aggregate score - the sum of all weighted normalized indicators has to be 1!"
+
+BUT; in the Hyperopted one the sum is a lot over 1!!!
+
+I'm missing  something or it's a code bug?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278639012340432949/1278739583848157244/image.png?ex=69f3768a&is=69f2250a&hm=ec47e78909bc4184b369a48e1b79328a6060cbef4f7d6eec2db9279ecdf3f1d9&
+https://cdn.discordapp.com/attachments/1278639012340432949/1278739584104140852/image.png?ex=69f3768a&is=69f2250a&hm=a0c27a86978fb883e477e1d599e3ed1b27a8a21ebfa1b6defd9085e26760b083&
+
+
+[08/29/2024 15:35] brewy_024
+@Alex Crypto King Hyperopt should be done with this new updated strategy or with the one you sheared on telegram with  AlexstrategyFinalV4Hyper name that doesn't have freqai components?
+
+
+[08/29/2024 15:37] serialkiller15
+@Brewy use the Strategy here in Discord its modified and does longs and shorts....
+
+
+[08/29/2024 15:38] serialkiller15
+@Giovanni Mauro thats a good question normaly hyperopt should handle this with 1 and not more, i will check it! thanks for your input, and there are no bad questions, only bad response! you are welcome
+
+
+[08/29/2024 15:39] giovannimauro
+Great!
+
+
+[08/29/2024 15:39] giovannimauro
+Can be  this one the reason it "overplace" order (?).... anyway, thank you very much for the opportunity
+
+
+[08/29/2024 15:40] maxgorbachevskiy
+there in telegram was a separate config with different parameters (freqai disabled, also anumber of params were different). Do you plan to keep the same strategy (different hyper config) or we should use only one strategy for everything?
+
+
+[08/29/2024 15:44] serialkiller15
+this strategy hir is the modified strategy.... and here will be the updates on it, got to many requests on telegram on pm so i made the discord server, we all can learn about each other and make good thinks happend for free thats it.
+
+{Reactions}
+💯 (2)
+
+[08/29/2024 15:53] serialkiller15
+@Giovanni Mauro i see the error have rewritten its testing now=
+
+
+[08/29/2024 15:53] serialkiller15
+thats wy i build this community i was getting blind for some stuff and any imput will help as all!
+
+
+[08/29/2024 15:55] maxgorbachevskiy
+now we test your results and learn your strategy. When we understand it and try playing with params ourselves, then we wil lbe knowledgeble enough to generate some suggestions
+
+
+[08/29/2024 16:03] serialkiller15
+every input is welcome, its a beta and together we will make it better thanks for support!
+
+
+[08/29/2024 16:10] serialkiller15
+here es my telegram group ho wants to use it
+
+
+[08/29/2024 16:10] cursu
+```
+ERROR   freqtrade - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/main.py", line 43, in main
+    return_code = args["func"](args)
+                  ^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 38, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 54, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 173, in __init__
+    self.strategy.ft_bot_start()
+  File "/freqtrade/freqtrade/strategy/interface.py", line 212, in ft_bot_start
+    self.load_freqAI_model()
+  File "/freqtrade/freqtrade/strategy/interface.py", line 179, in load_freqAI_model
+    from freqtrade.freqai.utils import download_all_data_for_training
+  File "/freqtrade/freqtrade/freqai/utils.py", line 16, in <module>
+    from freqtrade.freqai.data_drawer import FreqaiDataDrawer
+  File "/freqtrade/freqtrade/freqai/data_drawer.py", line 25, in <module>
+    from freqtrade.freqai.data_kitchen import FreqaiDataKitchen
+  File "/freqtrade/freqtrade/freqai/data_kitchen.py", line 14, in <module>
+    from datasieve.pipeline import Pipeline
+ModuleNotFoundError: No module named 'datasieve'
+```
+
+
+is this normal?
+
+
+[08/29/2024 16:10] serialkiller15
+no
+
+
+[08/29/2024 16:11] cursu
+hmmmmmmmmm
+
+
+[08/29/2024 16:11] serialkiller15
+config.json=?
+
+
+[08/29/2024 16:11] maxgorbachevskiy
+maybe better streamline all the communications in one channel?
+
+
+[08/29/2024 16:11] serialkiller15
+did you download data?
+
+
+[08/29/2024 16:11] serialkiller15
+yes budy as we prefer! keep it here
+
+
+[08/29/2024 16:11] cursu
+I did
+
+
+[08/29/2024 16:12] maxgorbachevskiy
+otherwise you will be thorn apart between multiple channel groups. I like it here in discord
+
+
+[08/29/2024 16:12] serialkiller15
+@curs send me a messege here on discord with your config so its not beeing overbloated here
+
+
+[08/29/2024 16:12] maxgorbachevskiy
+Here it is easier to publish code and share things
+
+
+[08/29/2024 16:12] serialkiller15
+keep discord
+
+{Reactions}
+👍
+
+[08/29/2024 16:13] cursu
+im using the config from the github xD
+
+
+[08/29/2024 16:13] maxgorbachevskiy
+telegram is horrible when you need to share a log
+
+
+[08/29/2024 16:13] serialkiller15
+oh yes @MaxG
+
+
+[08/29/2024 16:31] maxgorbachevskiy
+I am not the owner of this discord, but I would suggest channeling conversation into several channels here. For example: newbie issues, troubleshooting&bugs,  strategy development, general.
+
+
+[08/29/2024 17:02] .7thdragon
+Hi, it is not clear how to hyperopt on V6 the AlexStrategyFinalV6.json parameter file like in V4
+
+
+[08/29/2024 17:19] .7thdragon
+Also please add cuda line option in PyTorchLSTMRegressor.py
+`
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+`
+and then can be used either cuda or cpu here:
+`
+        "model_training_parameters": {
+          "learning_rate": 3e-3,
+          "trainer_kwargs": {
+            "n_steps": null,
+            "batch_size": 32,
+            "n_epochs": 10,
+            "n_jobs": 10,
+            "device": "cuda",
+          },
+`
+
+{Reactions}
+👍
+
+[08/29/2024 17:20] serialkiller15
+@MaxG yes thanks for input
+
+
+[08/29/2024 17:23] serialkiller15
+i made some channels please use them its easier to handle!
+
+
+[08/29/2024 17:23] serialkiller15
+@7thDragon will do a test with it!
+
+
+[08/29/2024 17:25] maxgorbachevskiy
+In my case, cuda resource monitor shows that cuda is utilized during training. So I expect that cuda is compatible straight  out of the box. Is this misleading?Should there be any benefit on top of that? 
+(you know my setup pretty well 😆 )
+
+
+[08/29/2024 17:26] maxgorbachevskiy
+right now during the training, initiated by backtesting
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278639012340432949/1278767866790936626/image.png?ex=69f390e1&is=69f23f61&hm=7513d32d61e0de69bc33c311ebba61ec2886c1723e774f6a0155dd3884f9bd2b&
+
+
+[08/29/2024 17:30] .7thdragon
+i have win10 python3.10 setup as i need tf2.10, in my case it is used only this way
+in my case speeds up a bit (~3x) and decommission cpu from other tasks
+
+
+[08/29/2024 17:31] maxgorbachevskiy
+same setup, yes. I see some resource load, GPU is available in all commands – s looks like for me it works out of the box
+
+
+[08/29/2024 17:32] maxgorbachevskiy
+maybe there wll be some extra benefit..
+
+
+[08/29/2024 17:35] serialkiller15
+Started a thread.
+
+
+[08/29/2024 18:53] chelosino
+Has someone managed to run it on raspi without freezing and killing the process?
+
+
+[08/29/2024 19:00] .7thdragon
+I think the parameters should be Decimal (with 2 decimals, no need for more) instead of Real
+w0 = RealParameter(0, 1, default=0.19837002318138768, space='buy')
+is faster on hyper
+
+
+[08/29/2024 20:20] serialkiller15
+@7thDragon try it out
+
+
+[08/29/2024 20:42] .7thdragon
+i am already testing it
+
+
+[08/30/2024 04:11] serialkiller15
+@7thDragon when you have finished please share the modifications you made! on w0-w8 and s0-s8 thanks budy
+
+
+[08/30/2024 05:14] dodwmd
+@Alex Crypto King the Dockerfile has `RUN sed -i "s/5m/1h/" freqtrade/configuration/config_validation.py` but i think it should be `'s/5m/15m/g'`
+
+
+[08/30/2024 05:54] serialkiller15
+@Chelosino yes I did but Performance was horrible
+
+
+[08/30/2024 07:28] .7thdragon
+Started a thread.
+
+
+[08/30/2024 07:31] maxgorbachevskiy
+Hmm interesting. Same for me - I changed to 15m because I thought that 1h was a mistake. As a reslt,  I spent the whole evening trying to understand why I ave poor performance. 
+Do you understand what make 1h better ? Or this is just our tril-and-error?
+
+
+[08/30/2024 07:41] .7thdragon
+Still, i wonder why you removed 1h from V7 config torch example...
+            "include_timeframes": [
+                "15m"
+            ],
+
+
+[08/30/2024 08:38] serialkiller15
+@7thDragon you can add 1h to no problem
+
+
+[08/30/2024 08:46] .7thdragon
+Yes of course, needs retrain, but not sure if it really helps if it is better this way
+
+
+[08/30/2024 09:49] highlander926
+This is for my exchange? Or strategy problem
+
+2024-08-30 10:16:22,669 - freqtrade.wallets - INFO - Stake amount for pair SOL/USDT is too small (20 < 35.12854275), adjusting to 35.12854275.
+2024-08-30 10:16:22,669 - freqtrade.wallets - INFO - Adjusted stake amount for pair SOL/USDT is more than 30% bigger than the desired stake amount of (20.00000000 * 1.3 = 26.00000000) < 35.12854275), ignoring trade.
+
+
+[08/30/2024 09:51] highlander926
+I change the amount per trade from 2 to 20 and dry run wallet from 100 to 1000 in the config file 
+and i see above message for different pairs
+
+
+[08/30/2024 21:30] andreis9311
+Hey guys, I need your help in understanding the proper workflow.
+
+Should we start with hyperopt to find the best parameters, then train the model, and finally backtest? Or is there a better approach?
+
+I'm asking because I noticed that when I change the parameters in ExampleLSTMStrategy.json, the model becomes invalid and throws an exception like this:
+
+`dk.full_df.at[index, f"{label}_mean"] = self.dk.data["labels_mean"]`
+
+So, the main question is, what's the proper workflow? Also, I heard that it's possible to hyperopt without using FreqAI? And that there's a way to backtest a strategy with a trained model but without retraining. How do I do that?
+
+Any advice would be appreciated!
+
+
+[08/31/2024 03:56] dodwmd
+@AndreiS My workflow involves running Freqtrade in Docker, with the user_data directory mounted to a local volume, and keeping the bot continuously in trading mode. Every few hours or daily, I use Freqtrade to download-data and then launch a separate instance in hyperopt mode. During this process, I use an additional --config argument to modify the freqai.indicator value, ensuring that I remove the existing directory if needed and set a different database location. This allows hyperopt to run and update the JSON without disrupting the active trading bot. Afterward, I restart the trading bot to apply the new hyperopt settings. Additionally, whenever I restart the Docker container, I clear the training models so they are regenerated at startup.
+
+
+[08/31/2024 09:09] serialkiller15
+Pinned a message.
+
+
+[09/02/2024 07:48] serialkiller15
+Started a thread.
+
+
+[09/03/2024 07:09] serialkiller15
+Alex LSTM Strategy V81 - 15M Timeframe
+
+Modifications:
+split buy and sell parameters
+optimize entry for long
+optimize entry for short
+Target calculation for longs
+Target calculation for shorts
+included Prediction
+FIXED Seperate Entry Long - Long Conditions ->T_long_shifted
+FIXED Seperate Entry Short - Short Conditions ->T_short_shifted
+
+{Reactions}
+👍 (2)
+
+==============================================================
+Exported 133 message(s)
+==============================================================

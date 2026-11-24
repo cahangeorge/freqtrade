@@ -1,0 +1,346 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖FREQAI_FUTURES / 🚀v90-optuna
+==============================================================
+
+[09/19/2024 08:27] serialkiller15 (pinned)
+Here is another aproach i tried to ....
+Based on Version9 without changes
+I integrated Automated Optuna on it.
+This is just a Test i cann not say if it will be profitable.....
+
+It uses the OLD Targets from Version 9 !!
+
+pip install optuna
+There are this Files to use for
+AlexStrategyFinalV90.py                  - Main Script wor Live/Dry RUN
+AlexStrategyFinalV90.json               - json file for Live/Dry RUN
+AlexStrategy_Optuna.py                  - Optuna Script
+AlexBTStrategyFinalV90.py            - For Backtest!
+AlexBTStrategyFinalV90.json         - json file for Backtest   
+
+For Testrun i used this command (for testing)
+python ./freqtrade/user_data/strategies/AlexStrategy_Optunan.pyt --showft --trials 10000 --maxtrials 100 --days 30 --download
+
+
+the main idea is, get first an hyperopted BT json (the attached is a start option but the market already changed). hyperopt recommendation is SharpeHyperOptLossDaily --spaces buy , leave max_open_trades more (30)
+
+it will do around 200 tests per day for a busy machine but you might obtain more
+practically after first hyperopt you do not need hyperopt anymore, suggestions from optuna are more scientific than FT hyperopt trials
+Example of starting Optuna (in your FT python environment .venv)
+python AlexStrategy_Optuna.pyt 
+I renamed pyt as the FT has a problem on searching strategies and python scripts in the same folder
+
+
+[09/25/2024 17:18] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1286241944304877578/1288550314135257201/AlexBTStrategyFinalV90.json?ex=69f38efe&is=69f23d7e&hm=3f224b6e0362cd24226865ff9f45512809aef2c30f77d05035adf6a68e81849c&
+https://cdn.discordapp.com/attachments/1286241944304877578/1288550314466869290/AlexBTStrategyFinalV90.py?ex=69f38eff&is=69f23d7f&hm=a4a21e52fcef5969893ed2315a3d88a8123b7be002e501ed9a9f975a6b8b5b84&
+https://cdn.discordapp.com/attachments/1286241944304877578/1288550314810806322/AlexStrategy_Optuna.pyt?ex=69f38eff&is=69f23d7f&hm=b8fd5cf71f80e8ef42d520a42be20badc996eb3eaf9c4a86f75aea381e32ff0c&
+https://cdn.discordapp.com/attachments/1286241944304877578/1288550315146215425/AlexStrategyFinalV90.json?ex=69f38eff&is=69f23d7f&hm=66882c5b803fc764f18e20e2303738cb7b147f55e366c4fb57a06d3c2e2df5bd&
+https://cdn.discordapp.com/attachments/1286241944304877578/1288550315465113621/AlexStrategyFinalV90.py?ex=69f38eff&is=69f23d7f&hm=af33ef5e5a1a2ad2641e11342e08a0dc90ab8855f2c2bb38af030e82472aa4f9&
+
+
+[09/25/2024 17:20] serialkiller15
+Pinned a message.
+
+
+[09/25/2024 21:33] ximontan
+have a problem, no luck for optuna in docker and in linux, all times negative. Compare to usual hyperopt.
+Does anybody have same problem?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1286241944304877578/1288614306648424571/Screenshot_from_2024-09-26_00-30-43.png?ex=69f321d8&is=69f1d058&hm=120dc0c133a710dd550f9b2c61d103835b6049336aa9c7192557bad38102119f&
+
+
+[09/25/2024 21:46] ch1ck3n_t4c0s
+Just remember hyperopts are a random parameter search sometimes they find only wrong parameters
+
+
+[09/25/2024 21:49] ximontan
+and that's way with hyperopt with many threads faster then optuna by 1 thread
+
+
+[09/26/2024 10:13] priezz
+I still have the same after a few hyperopt runs (1000 epochs each). Runninv V93 though.
+
+
+[09/26/2024 10:15] .7thdragon
+weird, do u have negative also with the original json posted?
+
+
+[09/26/2024 10:15] priezz
+Yes. and the result is always the same and only at epoch 1/1000
+
+
+[09/26/2024 10:16] priezz
+Data is from Binance, 80 pairs, no warnings
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1286241944304877578/1288806501355487243/CleanShot_2024-09-26_at_12.15.492x.png?ex=69f32c16&is=69f1da96&hm=27a9802272b2715232676500013943db51f4cfe85f1e821e26f61e72df8d07d9&
+
+
+[09/26/2024 10:18] .7thdragon
+post all the epochs image not only the first
+
+
+[09/26/2024 10:19] priezz
+There are no others, just the 1st. This is what I've tried to explain yesterday 🙂
+
+
+[09/26/2024 10:20] priezz
+Like this
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1286241944304877578/1288807382830415922/CleanShot_2024-09-26_at_12.20.032x.png?ex=69f32ce8&is=69f1db68&hm=6ec4ea0b500e7ea67d8103fa34d3e5a6728d5d4528e89a853d4df3f1dfbec8a1&
+
+
+[09/26/2024 10:22] priezz
+If it matters I've cleaned up `models` and `backtest_results` before the first hyperopt run.
+
+
+[09/26/2024 10:24] priezz
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1286241944304877578/1288808418555199612/config-alex.json?ex=69f32ddf&is=69f1dc5f&hm=7810fa382188a35f24ef099df37dd468f210e1c65a4a9520c59d1d03252947d7&
+https://cdn.discordapp.com/attachments/1286241944304877578/1288808418953396277/AlexBTStrategyFinalV93.py?ex=69f32ddf&is=69f1dc5f&hm=8fcaaf0e9fadf128c542da53cbdadcd73f84bc987e62cf1a49632a6552398d03&
+https://cdn.discordapp.com/attachments/1286241944304877578/1288808419410706485/AlexBTStrategyFinalV93.json?ex=69f32de0&is=69f1dc60&hm=988be743dede40234d76baaaf32a399cf7877fa23c703df6ded6e2b64be94baf&
+
+
+[09/26/2024 10:25] .7thdragon
+no, models is important only on dry
+try BT hyper first SharpeHyperOptLossDaily --spaces buy stoploss
+or/and lower first in BT json max_open_trades like 20
+
+
+[09/26/2024 10:32] priezz
+Just did both and already have a few results in different epochs, both with the positive profit, but still poor winrate. Will report once it finishes. Please clarify, can I run the optuna script after the first hyperopt run or is it still better to have a few iterations 1000 epochs each? If the latter do I have to optimize for `stoploss` at every iteration or only aat the first one?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1286241944304877578/1288810325897904168/CleanShot_2024-09-26_at_12.30.352x.png?ex=69f32fa6&is=69f1de26&hm=177a0f2ebb02e3dc48b0e9e01723017d52d2a8179fcf400789b47b11529bca49&
+
+
+[09/26/2024 10:35] .7thdragon
+after BT 1000 hyperopted iterations use the BT json output as the base for BT optuna. start optuna and it will suggest the new values directly in dry json, dry run will use buy_params and stoploss values in realtime
+
+
+[09/26/2024 10:38] priezz
+Umm, ok, so iteration seems to be an epoch, not a single run (which takes about an hour) otherwise I will never be able to complete it ))
+What is the recommended epochs number for the optuna script config?
+
+{Reactions}
+☝️
+
+[09/26/2024 10:43] priezz
+I have `n_epochs`=10 in the config, is it fine?
+
+
+[09/26/2024 10:44] .7thdragon
+yes, it is for dry run freqai prediction and is enough
+
+{Reactions}
+👍
+
+[09/26/2024 10:46] priezz
+Ok thank you for the help, I'll report the results when ready
+
+
+[09/26/2024 11:08] serialkiller15
+like @7thDragon said o do this 
+1. DO HYPEROPT THE BACKTEST STRATEGY
+freqtrade hyperopt --hyperopt-loss SharpeHyperOptLossDaily --spaces buy stoploss -c user_data/config-torch.json --strategy AlexBTStrategyFinalV93 --timerange=20240816-20240916 -e 1000
+2. RUN OPTUNA WITH
+python ./freqtrade/user_data/strategies/AlexStrategy_Optunan.pyt--showft --trials 10000 --maxtrials 100 --days 30 --download
+
+
+[09/26/2024 20:33] bigbroseur
+@Alex Crypto King, @Alex Crypto King, just finish hyper AlexBTStrategyFinalV90 with no good results with futures : 
+freqtrade hyperopt --hyperopt-loss SharpeHyperOptLossDaily --spaces buy stoploss -c user_data/config-alex.json --strategy AlexBTStrategyFinalV90 --timerange=20240816-20240916 -e 1000
+Doesn't make sense to run optuna I suppose.
+Trying with spot...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1286241944304877578/1288961642507272252/image.png?ex=69f313d3&is=69f1c253&hm=1c7d0a623a098bf03835b04b202532548ea31bd6240e67d26b0ba257d7825ef0&
+
+
+[09/26/2024 20:35] ximontan
+I give up with optuna too, old hyper opt only)
+
+{Reactions}
+👍
+
+[09/26/2024 20:46] serialkiller15
+Thanks for your Tests will think about it....
+
+
+[09/26/2024 20:47] .7thdragon
+thanks guys, it is very weird anyway, i do not have seen negative tests in mine neither in first row
+
+
+[09/26/2024 20:48] serialkiller15
+Mine are also not negative but let's rethink it will do tests tomorrow with Optuna and without.. Will share then
+
+
+[09/26/2024 20:48] bigbroseur
+@Alex Crypto King
+freqtrade hyperopt --hyperopt-loss SharpeHyperOptLossDaily --spaces buy stoploss -c user_data/config-alex-spot.json --strategy AlexBTStrategyFinalV90_spot --timerange=20240816-20240916 -e 1000
+Same on spot
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1286241944304877578/1288965544049119294/image.png?ex=69f31775&is=69f1c5f5&hm=f60a24f64991d7499f6ac1d5a2d0483d8dd7733c0e0bf15a9b2c22ca3461c3e2&
+
+
+[09/26/2024 20:49] bigbroseur
+Backtest to see details iwith futures
+
+
+[09/26/2024 20:50] serialkiller15
+Thanks
+
+
+[09/26/2024 20:57] bigbroseur
+@Alex Crypto King
+freqtrade backtesting -c user_data/config-alex.json --strategy AlexBTStrategyFinalV90 --timerange=20240816-20240916 --timeframe-detail 15m
+Seems to be the__ short stoploss__ that make it not profitable
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1286241944304877578/1288967701053833301/image.png?ex=69f31977&is=69f1c7f7&hm=3d6771c8a0bf7bb4a99783ff538a6c7eac8594f2bf47e9e1c0277467cf302840&
+https://cdn.discordapp.com/attachments/1286241944304877578/1288967701406023740/image.png?ex=69f31977&is=69f1c7f7&hm=d1841e894bb5eb9a99b5f52970dc0d44d873e7b5b284e67e9e2dcff38348e7ec&
+https://cdn.discordapp.com/attachments/1286241944304877578/1288967701724659843/image.png?ex=69f31977&is=69f1c7f7&hm=b05aa2fde3f5f0fa6290ba860bf1470334a5301eec201b61b8ef743356094415&
+https://cdn.discordapp.com/attachments/1286241944304877578/1288967702127579146/image.png?ex=69f31978&is=69f1c7f8&hm=8394386adb7211c3eedd5afac86f5d3b5925dcc120430bf2ae59df521672cb9d&
+https://cdn.discordapp.com/attachments/1286241944304877578/1288967702484090890/image.png?ex=69f31978&is=69f1c7f8&hm=b49406bc327845081e14dc1475792c9eaa0ea8080243f21671deb0fa86e2ae3b&
+
+
+[09/26/2024 21:01] serialkiller15
+Interesting...
+
+
+[09/26/2024 21:44] bigbroseur
+@Alex Crypto King Finally hyper works fine if, 
+1. you remove .json of strat 
+2. hyper only space stoploss trades, not buy
+waiting for final results but now it shows: 
+ Best   │ 121/1000 │   1447 │ 1240     0   207  85.7 │      0.69% │  977.438 USDT   (97.74%) │      1:26:00 │  -5.84568 │ 284.410 USDT   (26.48%) 
+Don't ask me to explain why?
+
+
+[09/26/2024 21:47] serialkiller15
+You did hyperopt in the AlexBT strategy file and delete Json before?
+
+
+[09/26/2024 21:48] bigbroseur
+Yep
+
+
+[09/26/2024 22:04] bigbroseur
+Final resuts:
+@Alex Crypto King
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1286241944304877578/1288984685921439834/image.png?ex=69f32949&is=69f1d7c9&hm=84fe7155eac7e9dff44e99e55015b87c1b2cf63d3e5c39e8d3e0dcdae778153c&
+https://cdn.discordapp.com/attachments/1286241944304877578/1288984686269562952/image.png?ex=69f32949&is=69f1d7c9&hm=fd9489e3d0183a85778256922e0b1af1d34bc7a00f661452fa0945d3c6b3cb67&
+
+
+[09/26/2024 22:05] serialkiller15
+That's better
+
+
+[09/26/2024 22:06] bigbroseur
+Yep, I'll backtest and optuna after
+
+
+[09/26/2024 22:06] serialkiller15
+Which oarams you use buy sell?
+
+
+[09/26/2024 22:06] serialkiller15
+On hyperopt
+
+
+[09/26/2024 22:07] bigbroseur
+Which what?
+
+
+[09/26/2024 22:07] serialkiller15
+Sry i am tired which  parameters buy sell or different in hyperopt?
+
+
+[09/26/2024 22:08] bigbroseur
+No in fact only stoploss and trades spaces. I didn't use buy neither sell
+
+
+[09/26/2024 22:09] serialkiller15
+Hm intersting let's check backtest will do tomorrow tthe same then will see. Thanks for sharing and your time
+
+
+[09/26/2024 22:10] bigbroseur
+Have a good night and dream
+
+
+[09/26/2024 22:10] serialkiller15
+Thanks mate and welcome here..
+
+
+[09/26/2024 22:10] bigbroseur
+thanks
+
+
+[09/26/2024 22:49] maxgorbachevskiy
+You don't use ExpectancyHyperOptLoss anymore? It performs bad?
+
+
+[09/26/2024 22:50] .7thdragon
+lately no, seems yes
+
+
+[10/13/2024 05:32] serialkiller15
+Pinned a message.
+
+
+[11/19/2024 17:46] xaviertoor
+2024-11-19 12:42:00,331 - freqtrade.optimize.backtesting - INFO - Running backtesting for Strategy AlexStrategyFinalV9
+2024-11-19 12:42:01,330 - freqtrade.resolvers.iresolver - WARNING - Could not import /opt/freqailstm/user_data/freqaimodels/PyTorchLSTMRegressor_Cuda.py due to 'No module named 'freqtrade.freqai.torch.PyTorchLSTMModel''
+2024-11-19 12:42:01,330 - freqtrade.resolvers.iresolver - WARNING - Could not import /opt/freqailstm/user_data/freqaimodels/PyTorchLSTMRegressor.py due to 'No module named 'freqtrade.freqai.torch.PyTorchLSTMModel''
+2024-11-19 12:42:01,720 - freqtrade - ERROR - Impossible to load FreqaiModel 'PyTorchLSTMRegressor'. This class does not exist or contains Python code errors.
+
+
+[11/19/2024 18:27] ximontan
+in github we have this files, check instructions
+
+
+[11/19/2024 19:24] xaviertoor
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1286241944304877578/1308513345527087175/image.png?ex=69f303c4&is=69f1b244&hm=7a0a9c28db8c28c705a7ded871d99ddc47f885fba9dde1b92c24e79400754a1e&
+
+
+[11/19/2024 19:25] xaviertoor
+Still it didn't run
+
+
+[11/19/2024 20:03] serialkiller15
+@Xaviertoor please check #🐳installation
+
+{Reactions}
+👍
+
+[02/05/2026 20:55] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1286241944304877578/1469074044845424787/IMG_0392.png?ex=69f31912&is=69f1c792&hm=aef47cababe5654fc2e5cf963a2bd5090e4820b743ce2dd8ff5d0a0fc378c422&
+
+{Reactions}
+👍
+
+[02/05/2026 20:56] xf0x0f
+Its AlexStrategyFinalV90Hyper
+
+
+==============================================================
+Exported 58 message(s)
+==============================================================

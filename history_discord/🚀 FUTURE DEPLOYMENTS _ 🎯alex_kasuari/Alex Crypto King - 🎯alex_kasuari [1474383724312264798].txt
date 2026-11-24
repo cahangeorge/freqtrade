@@ -1,0 +1,44 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🎯alex_kasuari
+==============================================================
+
+[02/20/2026 12:37] serialkiller15
+Alex_Kasuari — Strategy Overview (VIP) 🤘☠️
+
+Alex_Kasuari is a 15m strategy built for high‑volatility markets (BTC‑style) with a strong focus on catching deep pullbacks, fast reversals, and momentum continuations. It blends multiple “speed layers” of indicators to react quickly, but still uses filters to avoid random noise.
+
+Key Benefits ✅
+
+• Multi‑speed trend engine: combines HMA / DEMA / TEMA (fast → slow) to detect both quick turns and broader direction.
+• Momentum + volume confirmation: uses RSI + MFI logic (with rolling/diff ideas) to catch real oversold/overbought conditions with confirmation.
+• Adaptive exit structure: includes multiple exit concepts (EMA-based profit taking / protection) and logic aimed at handling older trades in a controlled way.
+• Built for volatile conditions: parameter choices and trade-clearing logic are clearly oriented toward markets where spikes and swings are normal.
+
+What it’s best for 🎯
+
+• BTC / high-vol pairs on futures/spot where mean reversion + momentum bursts happen often
+• Traders who want a strategy that can react fast to pullbacks and impulse moves
+
+Notes / Expectations ⚠️
+
+This strategy is complex and highly parameterized (many knobs). Start with DRY‑RUN + backtests, and don’t run it “max aggressive” without proper risk controls (leverage, stake sizing, protections). Always verify exchange settings + pair behavior first.
+
+
+[02/20/2026 14:47] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474383724312264798/1474417292291997817/Alex_Kasuari.py?ex=69f36b9b&is=69f21a1b&hm=defdbde583d03d81ce74b1fd7b171cf70ba47a575c92275e2f3d14df0d0da9d0&
+
+
+[02/21/2026 13:04] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474383724312264798/1474753773091033175/message.txt?ex=69f3537b&is=69f201fb&hm=aac4477cbbb870961f07c7d1f77f64096f91714bc41bb80dc9bc3bde073d0299&
+
+
+==============================================================
+Exported 3 message(s)
+==============================================================

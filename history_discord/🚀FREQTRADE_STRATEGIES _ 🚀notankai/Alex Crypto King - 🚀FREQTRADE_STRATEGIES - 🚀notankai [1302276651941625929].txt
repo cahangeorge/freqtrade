@@ -1,0 +1,2495 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🚀notankai
+==============================================================
+
+[11/02/2024 14:24] serialkiller15
+Here comes the notankai-futures strategy @7thDragon thanks for sharing
+
+
+[11/02/2024 14:24] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1302277241111314522/NOTankAi_15.py?ex=69f36631&is=69f214b1&hm=17b2e141ca752547c574d81d0475ec88b90d58f71ddee78f3426f04a4b795deb&
+
+
+[11/02/2024 14:24] serialkiller15
+Pinned a message.
+
+
+[11/02/2024 14:31] .7thdragon
+- extract your static volume pairlist as your wish with the volume settings provided, i use around top 30 pairs
+- the stoploss is set to 0.05 but you can play with it lower 0.04 0.03
+- tip: i always use stoploss on exchange
+- i started also some days ago but reinitialized a lot of times due to testing and upgrades to FT 2024.10, roi is practically not used now as the values are high, and don't forget the fix 😉 https://discord.com/channels/1238181199206154373/1284586552760074323
+- NOTank comes from a non-AI spot version but i kept the name 😉
+- default FT does not have **ta** library, use in your environment *`pip install ta`*
+- i usually download data for 5m (for help in case of bt) 15m 1h 4h for a whole 365days before, can be less
+- have fun and please post your comments, observations, results **but search the thread(s) first**!
+**Bear in mind this is still work in progress !**
+current v1.2.2 https://discord.com/channels/1238181199206154373/1302276651941625929/1302688301194547292
+freqai settings https://discord.com/channels/1238181199206154373/1302276651941625929/1302277274845843546
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1302278907956957254/freqai.json?ex=69f367be&is=69f2163e&hm=c988e62d2433c0b7e106761db68147245a1c1ada950eef7e2cf95291548daf95&
+https://cdn.discordapp.com/attachments/1302276651941625929/1302278908544028725/pairlists_volumefilter_futures_RL.json?ex=69f367be&is=69f2163e&hm=b18e54cd6974ac92e2e7bc837ccedc823dc3b42542ff5c0c023c6a645462275e&
+https://cdn.discordapp.com/attachments/1302276651941625929/1302278909257322506/image.png?ex=69f367bf&is=69f2163f&hm=ef605e351943273442fee26d3146577e2acba850946196f73c342bb2206a09ce&
+
+
+[11/02/2024 14:33] serialkiller15
+THANKS FOR SHARING!
+
+
+[11/02/2024 14:35] daniel2314_xx
+this version looks like no define stop4/4a,stop5/5a ....., or it' s my problem?🤨
+
+{Reactions}
+👍
+
+[11/02/2024 14:38] .7thdragon
+what is commented out were never used
+
+
+[11/02/2024 14:40] .7thdragon
+yellow is do_predict decision
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1302281174621880360/image.png?ex=69f369db&is=69f2185b&hm=082fa79c0c3e3ba0a1121602fa1f3b81f3e5ca776dfe8cfb753bfc321f168642&
+
+
+[11/02/2024 14:45] daniel2314_xx
+When I open the file, vscode tells me that the parts in red are undefined. Or maybe I missed defining stop5, stop5a = self.ts6.range?
+
+
+[11/02/2024 14:46] daniel2314_xx
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1302282668381175919/2024-11-02_224609.png?ex=69f36b3f&is=69f219bf&hm=aa4c172e0b62b014905b19a542bc1eac962b4fff8a1593178107bc9fff19adc0&
+
+
+[11/02/2024 14:48] daniel2314_xx
+Thank you for your kindly sharing, i just remind it.😀
+
+
+[11/02/2024 14:54] metinbarut._73694
+Thanks for sharing. Let me run backtest and dry-run with config files that you shared
+
+
+[11/02/2024 15:24] .7thdragon
+Ah ok, indeed, those i forgot about it, these are only time exit levels similar roi,  are just if case, still the main entries and exits are made by freqai
+The original script (i have more versions in fact) is not mine and is spot based.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1302292296498413778/NOTankAi_15.py?ex=69f37436&is=69f222b6&hm=8d8e11404fa10c2336867559b4bc219fd4d3029bbbe35cea2512c33c05ad5c04&
+
+
+[11/02/2024 15:46] youssefmgerges
+I would love a spot based one @7thDragon 
+
+In USA crypto futures are unavailable 😦
+
+
+[11/02/2024 15:49] .7thdragon
+use either the versions posted in https://discord.com/channels/1238181199206154373/1293975854539477094 or try this one with can_short=false, but in my opinion the maxima and minima are towards both directions, to give you gain overall
+
+
+[11/03/2024 08:30] lijunnan0113
+Whether or not it needs to be set when doing hyperopt
+"add_state_info": false and from freqtrade.optimize.space import SKDecimal
+
+{Reactions}
+👍
+
+[11/03/2024 12:29] .7thdragon
+it is already there state info in freqai.json, otherwise rl will not work
+usually use from freqtrade.optimize.space import Categorical, Dimension, Integer, SKDecimal to full cover if it case
+but here **not need to optimize anything**, is just a fallback just in case
+strategy is already good, but still needs some tuning (ex. proper exits, roi is not a solution just a fallback, already found some mistakes, also i do not like the leverage approach
+
+
+[11/03/2024 12:45] .7thdragon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1302614552000598117/image.png?ex=69f34ed6&is=69f1fd56&hm=9abd1fde128009464e28161ffe0b4bf516730f3fa54947469e471626a99a7d07&
+
+
+[11/03/2024 12:52] .7thdragon
+v1.2.0
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1302616333053333566/NOTankAi_15.py?ex=69f3507f&is=69f1feff&hm=50408d0dcaf792cb7b01cd25028379b1455e4133b02e01a3c55049f9816e64b3&
+
+
+[11/03/2024 12:52] dorimon5
+hi @7thDragon ! i wana ask if NOTankAi_15 is good in spot? thanks!
+
+
+[11/03/2024 12:56] .7thdragon
+https://discord.com/channels/1238181199206154373/1302276651941625929/1302298600004390964 . dry it
+
+
+[11/03/2024 12:57] dorimon5
+ahh. ok. thank you! 🙂
+
+
+[11/03/2024 15:55] lijunnan0113
+Does it mean that it can't be hyperopt?
+
+
+[11/03/2024 16:09] .7thdragon
+u can try but is taking too long :), especially if you have more than few pairs
+
+
+[11/03/2024 17:38] .7thdragon
+v1.2.2 - cleanedup and bugfixing, adjusting leverage (is way lower, fixed amount, not proposed_stake) and exit points
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1302688300536168521/NOTankAi_15.py?ex=69f39385&is=69f24205&hm=b388ab44bd82d864cb13db7e4a95b87cb68c4a1e455956d37ec7036853a182fb&
+https://cdn.discordapp.com/attachments/1302276651941625929/1302688301014061157/image.png?ex=69f39385&is=69f24205&hm=5ac7368b1917aa207b33f83a770ad174dfcd09d5e4acc1462606d80b4173f4c2&
+
+{Reactions}
+💯 (2)
+
+[11/03/2024 18:24] cheluxe
+I always have this error when dry running a strategy with a Reinforcemente Learner model ☹️
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1302700030972395550/Captura_desde_2024-11-03_19-22-43.png?ex=69f2f5b2&is=69f1a432&hm=e02d25625cb9ed96609ad167f23d790c4fafe6182961ee5bd1a5e00b25c656a4&
+
+
+[11/03/2024 18:26] cheluxe
+It happend to me the first time i tried to test your first version two weeks ago @7thDragon
+
+
+[11/03/2024 19:03] .7thdragon
+this is different strat aproach (that one is also ok, i am using it without ai)
+still, for this error u need to download data first, i have an automated script and i do not think to it anymore, thats why i forgot to mention in info
+for this strat i download 5m (for help in case of bt) 15m 1h 4h for a whole 365days before
+
+
+[11/03/2024 19:04] cheluxe
+mmm i thought that in dry run and live it wasn't necesary to download data
+
+
+[11/03/2024 19:06] .7thdragon
+it uses history data of course :), thats why can be used startup candles, but i do not like to wait
+
+
+[11/03/2024 19:10] cheluxe
+I meant that I thought in dry run and live, data for those pairs was downloaded automatically when running the trade command. At least, if I remember correctly, that was the case with PyTorchLSTMRegressor. I’ve always done the data download beforehand only for backtesting
+
+
+[11/03/2024 19:13] .7thdragon
+ah, yes i dont bother thinking of ft logic 🙂 i just download the necessary data before startup ANYWAY
+also i am using my patch to avoid issue with opened positions
+
+
+[11/03/2024 19:15] cheluxe
+Ok, i'll check it then. Thanks 👍
+
+{Reactions}
+👍
+
+[11/04/2024 06:47] serialkiller15
+@everyone For all having Problems running on docker here is a Guide for Docker - > https://discordapp.com/channels/1238181199206154373/1289112409415352360/1302886412248682558
+
+{Reactions}
+👍 (3)
+
+[11/04/2024 13:20] korenhskoh
+thanks for the sharing ! Anyway, how is the config file ? i mean in the section of freqai
+
+
+[11/04/2024 14:22] serialkiller15
+see the post of @7thdragon  - https://discordapp.com/channels/1238181199206154373/1302276651941625929/1302614552206376981
+
+
+[11/04/2024 15:33] laupapp
+@7thDragon, very long to train model without cuda 😉 how can i improve config ? multi thread possible ?
+
+
+[11/04/2024 15:36] laupapp
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1303020091411009626/image.png?ex=69f37706&is=69f22586&hm=cc1fa4b3fbc1b8dd172fe6f7c9d12a6f3045ece25e3301c5f1a17e08ff997a7d&
+
+
+[11/04/2024 17:03] .7thdragon
+this is optimized for my setup to not kill it 🙂 and cover few hours of training for 30-50 pairs, **but to not exceed expiration or retrain hours**
+- you can only get smaller "train_period_days": 60, lets say to 30 - it might not change results
+- in rest, you can try higher with
+        "data_kitchen_thread_count": 7,
+            "thread_count": 4,
+            "cpu_count": 8, - this last one might not help much
+still, "n_epochs": 7, "train_cycles": 7, are at minimum, higher would be better especially if train_period_days gets lower, anyway you need to get an overall balance
+Anyway, is not a risky strategy, is steady, if you miss a trade will come another.
+I am still working on a smarter adjustement of amount partial exits as still not like them, now market is silent tomorrow is violent, even RL is screwed this way 😄
+
+{Reactions}
+👍
+
+[11/04/2024 17:07] lijunnan0113
+V1.2.2
+
+
+[11/04/2024 17:08] .7thdragon
+what do you expect in
+First Trade opened: 23 hours ago (2024-11-03 18:00:30)
+Latest Trade opened: an hour ago (2024-11-04 15:45:16) 🙂
+might need more weeks to see real results
+But thank you for posting! Do not delete messages 😉
+
+
+[11/04/2024 17:13] lijunnan0113
+How to improve RL, and it takes about 3,600 seconds for 18 pairs
+
+{Reactions}
+👍
+
+[11/04/2024 17:27] .7thdragon
+https://discord.com/channels/1238181199206154373/1302276651941625929/1303042046147432480 , just play around for deep trials, Laurent said it takes too long 🙂
+
+
+[11/04/2024 21:24] .7thdragon
+seems that still chaos, do_predict needs more tuning, some RL parameters, long way to go...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1303107545954779156/image.png?ex=69f31fb9&is=69f1ce39&hm=71292e8fb96413ca7cd33a0e5fe7f5f0c595810714879910512edc74ff7d9ea0&
+https://cdn.discordapp.com/attachments/1302276651941625929/1303107546323750963/image.png?ex=69f31fb9&is=69f1ce39&hm=6e8be62d476ed9497751e9bc0237325a12b3a625e5ca68fde3bc5cbbb32b95b6&
+
+{Reactions}
+👍 🤪
+
+[11/05/2024 16:54] lijunnan0113
+Can't hyperopt roi feel lost a lot of profit
+
+
+[11/05/2024 16:56] .7thdragon
+i am now at a new modified version
+do not look at the downside as having a lot of tests and restarts, is good that we entered in bull market but will not hold last, in my opinion based on history next 3-5 months,  btc could reach 100k, then spot will be useless for a good period
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1303402626364211210/image.png?ex=69f389ca&is=69f2384a&hm=221c430596525f664a74ba10bd51301c007c37c02754fbcc6b5181f25445d432&
+
+
+[11/05/2024 16:57] serialkiller15
+looks good/better,
+
+{Reactions}
+👍
+
+[11/05/2024 16:58] .7thdragon
+u must not hyperopt anything, why roi?? i set roi as big as possible to let strat do it s job
+
+
+[11/06/2024 16:36] serialkiller15
+@Ternura welcome and thanks for sharing will move it to a nother channel, because here we are on notankai-futures channel!
+
+
+[11/06/2024 16:39] serialkiller15
+#🚀member-rl-features-strategy
+
+
+[11/07/2024 12:37] .7thdragon
+guys, i am dropping this RL version project (v1.2.2 is last) as i figured out is not a reliable solution (in general), it is depending on trades/no of pairs used, practically the frequency of the trades which in low quantity is not enough to predict something, and when is stabilized after a while, market already changed. So i will continue with a LSTM version as v2 (most probably torch as it is faster) for argrelextrema and murrey levels trade confirmations
+
+{Reactions}
+❤️ 👍
+
+[11/07/2024 14:13] .7thdragon
+completly rewritten strat, using now PyTorchLSTMRegressorMultiTarget (derived from basic single target) as i want more predicted output columns, based on custom config on cuda or on cpu, still lot of work to do
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1304086221185744947/image.png?ex=69f3636f&is=69f211ef&hm=2c579020ef536548641ed5ea519efbe25359d5881ae75f9265fbf0907b4b6a54&
+
+{Reactions}
+👍 (4)
+
+[11/07/2024 14:23] ximontan
+I have question, by documentation for RL we need define actions, like &-action, but I didn't found it in the code
+How it works without actions? or may be it works other witch I don't know...
+
+
+[11/07/2024 14:31] .7thdragon
+you are completly right, i used &-action as specified, but "hidden" in &extrema and getting the values there
+i corrected (meaning considering 1-4 values for specific actions) and tested it a little bit and i didnt like it, RL is based on trades which i concluded is not the way i want to go. as i mentioned i want only confirmations for argrelextrema
+
+
+[11/07/2024 14:35] ximontan
+aaa now I get it, thanks
+
+
+[11/08/2024 08:07] .7thdragon
+I encountered some weird situation regarding the freqaimodels, the only one that works as it should, meaning for example predict the price with LSTMRegressor is closer to real trend than XBoost (contradictory thing from what others say about it :/), the problem is that i could not manage it to make it MultiTarget, lots of errors top of my head.
+XBoost works but is almost linear and didnt find any reliable freqai json compatible parameters to change the predicted line, is always the same as in picture.
+LSTM is changing nicely when epochs are increased, learning rate batch size, drop rate etc,  but is changing mostly preserving the trends despite of features used, not having a screenshot as i tested it previously and forgot to take a screen.
+So the question is, do anyone have/exist a working LSTM MT freqai model?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1304356532057800744/image.png?ex=69f30daf&is=69f1bc2f&hm=3dfe326e08969235242cc32d4326adbf822861d57b33a58e00cf8319c7632a10&
+
+
+[11/08/2024 18:00] ximontan
+you mean already trained model LSTM for freqai, but we can get it until freqai works (with continual_learning=true), just wait some time
+and then we can apply this model to MultiTarget, like start point...
+
+
+[11/08/2024 18:29] serialkiller15
+I think that would be the Goal
+
+
+[11/08/2024 19:11] .7thdragon
+no, multi target means having multiple prediction objectives, like predicting price/close and other values (indicators/combinations) in the same time.  Also, having multiple types as results, in the same time, like classification from xgboost would be even greater but i do get weird predictions compared with LSTM.
+LSTM i have (Platform or Torch does not matter) can only be used only with one dimension: self.output_dim: int = config.get("output_dim", 1), if i do use more predictions i get an error as is not integrated with FreqaiMultiOutputRegressor (freqai default), something like this:
+    if list(X.columns) != list(self.features_in):
+AttributeError: 'Pipeline' object has no attribute 'features_in'. Did you mean: 'feature_list'?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1304523828436795463/PyTorchLSTMRegressor.py?ex=69f300bd&is=69f1af3d&hm=7ae5c1e07106fda43123571c0c44d7ff07d1ede26cad87359d2119be647f0119&
+
+{Reactions}
+👍
+
+[11/08/2024 19:31] serialkiller15
+So you want to use lstm Modell for example with no tankai?
+
+
+[11/08/2024 19:33] .7thdragon
+i am already testing it, but only with one dimension and i want more (2 or 3)
+
+
+[11/08/2024 19:36] serialkiller15
+if you need help let me know I did many tests and have to say that I will stay on lstm did spend too much time with other thinks and it's better to stay in one.. Also the best results I got is with thrgreatdi.... I posted from am member yes market is uptrend but got no losses... Also chicken and I made a modification of my old version. V943... That also Needs further improvements but time is horrible to expand all that  many ideas... And to many unfinished project I will focus on one strategy maximum
+
+{Reactions}
+👍
+
+[11/08/2024 19:39] serialkiller15
+Also the thegreatdiver...i made a futures Version of it doping good but also needs some adjusts... so what I wanted to say if some people have to much time or will try will post them in different groups and maybee someone can finish them... Or make improvements.
+.
+
+
+[11/08/2024 19:49] .7thdragon
+yeah, also adapted for futures but not tested
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1304533364589727764/TGDF.py?ex=69f3099f&is=69f1b81f&hm=04d26fbe41d5faf49fa536e62e5c7049d0c4c536911f17d0722a16d611b5b640&
+
+{Reactions}
+❤️ (2) 👍
+
+[11/08/2024 21:42] .7thdragon
+just checked now nice :), only stoploss hypered
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1304561757812949123/image.png?ex=69f32410&is=69f1d290&hm=23959100f58069aff5013848d4cee2fa131347c048c29c3287c3f32a8c6b7b7d&
+https://cdn.discordapp.com/attachments/1302276651941625929/1304561758022926428/image.png?ex=69f32410&is=69f1d290&hm=20dcf7868bda96c3ce8ed4becd2e3ccf996c14e77edf11395c94d900ee18c38b&
+
+
+[11/08/2024 21:53] .7thdragon
+also good underwater
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1304564478997692488/image.png?ex=69f32699&is=69f1d519&hm=5f57eb7ee0640bbec397bf62813029b13278e587dfee1d248a0c1bdc6abd82b2&
+
+
+[11/08/2024 23:21] ximontan
+little bit increase performance by move out iterators and pass it to each call of divergence. custom_exit and custom_stoploss find signal candle without loop...
+and next I'll try fix find pivots by not start when it just find, need wait window time
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1304586637396807881/TGDF.py?ex=69f33b3c&is=69f1e9bc&hm=a9f7241ed4244ab5275864ca317e5ae010e6b67414ed6288d6010e7dd4f0233a&
+
+{Reactions}
+🔥 (2)
+
+[11/09/2024 00:25] .7thdragon
+@Alex Crypto King please help creating new channel for TheGreatDivergenceFutures
+
+
+[11/09/2024 00:29] .7thdragon
+So compared to XBoost, LSTM below is either way better or i miss something in model_training_parameters for above XBoost. Both models have a prediction with a shift for 24h (for testing)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1304603650596933652/image.png?ex=69f34b14&is=69f1f994&hm=c750c31ea1e0eff6615cc112dffbccbab6476688f44728233a2951cd534d88b5&
+
+
+[11/09/2024 17:32] serialkiller15
+@everyone Made a channel for it thanks #🎯alexbandsniper
+
+{Reactions}
+👏 (3) 👍 (3)
+
+[11/10/2024 08:53] ammart90
+@7thDragon  i'm using your original notankai, 1.2.2 version for spot,  short diabled and leverage = 1, and it is performing very well,
+Thanks for all your efforts
+
+{Reactions}
+❤️
+
+[11/10/2024 10:13] serialkiller15
+That's nice to hear
+
+
+[11/10/2024 11:06] .7thdragon
+this because is a bull market, when the market is changing direction or silent might not working well , but not totally sure. the problem with implementation is not as it should, RL action recommendation is not fully respected.
+
+
+[11/10/2024 14:20] ammart90
+do you prefer to change the model only ? or a code change is needed also ?
+
+
+[11/10/2024 14:27] .7thdragon
+RL vs other is a different concept so needs rewritten, but if u have good results with current strat keep it further
+
+
+[11/11/2024 09:01] lijunnan0113
+Haha, tried to use LSTM. but piecing together the feature code seems to have failed.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1305457483653058570/2024-11-11_165454.png?ex=69f31a86&is=69f1c906&hm=0512462cdc1baa4443fc675e6e7cdd987ed9dae9ff9388649ae59f3704dde96d&
+
+
+[11/11/2024 13:32] ximontan
+try add check num_batches to 0 in trainer
+
+
+[11/11/2024 15:29] lijunnan0113
+How to modify the feature part
+
+
+[11/12/2024 12:59] lijunnan0113
+What to do if the prediction is too far off
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1305879615788683274/image.png?ex=69f3522a&is=69f200aa&hm=45ed478d6b6cc1b66aa537733705ed59e7ca27739bc2f297a24a54f49e38f2b7&
+
+
+[11/12/2024 13:43] .7thdragon
+fo lstm, num_batches to 0 is not a good fix, how do you calculate &-s_close ?
+for a lstm approach, use exactly the same function like in default freqtrate freqai example, then retrain, but this way &s-extrema will be ignored for the rest of the decisions and should be removed as being inexistent in df
+
+so, i said before, with current lstm models (found public or pytorch one) you cannot have both &close and @extrema or any other variable as output in the same time, is 1 dimension output only
+
+
+[11/12/2024 16:03] lijunnan0113
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1305926054497615892/image.png?ex=69f37d6a&is=69f22bea&hm=0c581bb4879c18423edd3b7402dd1997ac5a0cfbf06e542f1dd050c4c69df684&
+https://cdn.discordapp.com/attachments/1302276651941625929/1305926054795415642/feature.txt?ex=69f37d6a&is=69f22bea&hm=243eef039c5a11d8c78e3e6dfd1cf0ee6913cd560cc54c02903690572a85dc22&
+
+
+[11/12/2024 17:46] .7thdragon
+looks good, dataframe["&-s_close"] = dataframe["close"].shift(-1) means that u try to predict only 1 timeframe, use more, like 10 20 50
+maybe is better to stick to the median close values formula from the template
+the other indicators are your flavour, is a trial and error game here
+
+{Reactions}
+👍 (2)
+
+[11/12/2024 18:11] lijunnan0113
+Thanks for your help, I will try it.Use the predicted price in the buy and sell functions.Can't think of a good way to do this at the moment.
+
+{Reactions}
+👍
+
+[11/12/2024 20:03] .7thdragon
+i am also trying to find a good use of extremas points and murrey levels, i think are more predictive up down than the price itself, as using lstm i need to find a good combination, but only one
+also what is your lstm error rate? is low enough? < 0.01
+
+
+[11/13/2024 03:51] lijunnan0113
+Almost >0.1
+
+
+[11/13/2024 06:46] .7thdragon
+is not good, needs training deeply, more epochs, layers, change learning rate, bigger batch size etc
+
+
+[11/13/2024 19:43] .7thdragon
+v2.0.4 so for anybody wants to test this simple Ai version (might be good)
+- based on PyTorchLSTMRegressor or u can use LSTMRegressor
+- pivots are based on argrelextrema and murrey levels and confirmed by Ai trend
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306343816592101416/NOTankAi_15.py?ex=69f3083c&is=69f1b6bc&hm=6a61268cf3c1640c04b0d236fb6cc53d2db586f469f5ee6968264e36f51fea3c&
+https://cdn.discordapp.com/attachments/1302276651941625929/1306343817171046461/freqai_config.json?ex=69f3083c&is=69f1b6bc&hm=fbb41eb174506469d26d1cbfc700cf95b1c26d782baff6e3a17c11a817418449&
+
+{Reactions}
+👍 (4) 🔥 (2) 🤘 (2)
+
+[11/13/2024 22:34] alex_737071
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306386736045363290/Screenshot_2024-11-13_at_23.33.34.png?ex=69f33035&is=69f1deb5&hm=92ddb7e82926fcb181939f0ea37e2dfeac8072890aa72ba9fbcb2f8764de55fb&
+
+
+[11/13/2024 23:34] alex_737071
+Hi mate, Any idea on this error? Did i set somting up wrong?
+
+
+[11/14/2024 06:35] lijunnan0113
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306507817439461436/image.png?ex=69f2f839&is=69f1a6b9&hm=8da65ef1ef38cb614f43bc465b8717cfe9320af0e2af7b3b887b6dcc9d086cd0&
+
+
+[11/14/2024 06:39] lijunnan0113
+Looks better than before.
+
+
+[11/14/2024 08:27] cheluxe
+How do you see this lines, following the candles track? I can only see straight lines
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306535947495669760/Captura_desde_2024-11-14_09-25-44.png?ex=69f3126c&is=69f1c0ec&hm=f2d71ee83c35623b3a696ce1762d5b30389b451607c6f09d1005024038492c80&
+
+
+[11/14/2024 08:28] cheluxe
+Are you using volumePairList? I had to use Static to fix this error
+
+
+[11/14/2024 08:52] lijunnan0113
+I think you mean this.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306542143262949416/2024-11-14_164831.png?ex=69f31831&is=69f1c6b1&hm=09eb98f6aa57165f4fb7ddbaa28d0bc40f076390a7dba04e572cadb83e512741&
+
+
+[11/14/2024 08:53] serialkiller15
+@Ternura nice stuff you made here, i also did some mods, you use PyTorchModell?
+
+
+[11/14/2024 08:56] lijunnan0113
+Yes, I'm using your PyTorchLSTMRegressorCuda
+
+
+[11/14/2024 08:59] serialkiller15
+cpu or gpu?
+
+
+[11/14/2024 09:04] lijunnan0113
+gpu
+
+
+[11/14/2024 09:11] serialkiller15
+nice thanks! if someone needs testing results/dryrun i have enough of them, can do tests in background on my servers.....
+
+
+[11/14/2024 09:45] .7thdragon
+really nice! what did you change? also from features?
+
+
+[11/14/2024 09:46] cheluxe
+I mean this blue and yellow lines, yes
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306555847438110731/image.png?ex=69f324f4&is=69f1d374&hm=53a5d97fecaf7fcbf4fb0ffaefedce979e5a1fa6b89d85d266d782b12cc57479&
+
+
+[11/14/2024 09:47] cheluxe
+What did you add in "Select indicator to add"?
+
+
+[11/14/2024 09:52] .7thdragon
+i do not have this error, weird, DI_values`are get from freqai
+maybe adding in populate indicators the missing lines would help
+        dataframe["DI_cutoff"] = self.freqai_info["extra_returns_per_train"]["DI_cutoff"]
+
+        dataframe["DI_catch"] = np.where(
+            dataframe["DI_values"] > dataframe["DI_cutoff"], 0, 1,
+        )
+
+
+[11/14/2024 09:58] lijunnan0113
+The white line is the predicted closing price, the yellow the actual closing price
+
+{Reactions}
+👍
+
+[11/14/2024 10:06] lijunnan0113
+There are some minor changes
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306560823065575485/feature2.py?ex=69f32996&is=69f1d816&hm=c641b7fcd6582b9469a0b301d8a9c769b58c6e7d58d8c2ddef2e0b3fc2c27240&
+
+{Reactions}
+❤️
+
+[11/14/2024 10:26] .7thdragon
+really nice you nailed it, but did you change something in freqai config?
+
+
+[11/14/2024 10:33] lijunnan0113
+I wanted to know the prediction quickly, so I used “n_epochs”: 20
+
+        "feature_parameters": {
+            "include_corr_pairlist": [
+                "BTC/USDT:USDT",
+                "ETH/USDT:USDT"
+            ],
+            "include_timeframes": [
+                "15m",
+                "30m",
+                "1h",
+                "4h"
+            ],
+
+
+        "model_training_parameters": {
+            "learning_rate": 0.003,
+            "device": "cuda", 
+            "trainer_kwargs": {
+                "device": "cuda",
+                "n_steps": null,
+                "batch_size": 64,
+                "n_epochs": 20
+            },
+            "model_kwargs": {
+                "num_lstm_layers": 3,
+                "hidden_dim": 128,
+                "dropout_percent": 0.3,
+                "window_size": 64
+            }
+
+
+[11/14/2024 10:38] .7thdragon
+yes n_epochs 20 is good for lstm, as it is usually converges rapidly, but only that?? 🙂 you added 30m, ok
+test size? is the same 0.25?
+btw indeed, usually despite the large models, in fact you only need few features to get a good prediction 🙂
+
+
+[11/14/2024 10:41] lijunnan0113
+"test_size": 0.33,"train_size":0.66,
+
+
+[11/14/2024 10:47] lijunnan0113
+I'm using criterion = torch.nn.SmoothL1Loss(reduction='mean'), maybe that has something to do with it too!
+
+{Reactions}
+🚀
+
+[11/14/2024 11:01] .7thdragon
+hmm, you changed also other thing besides that in PyTorchLSTMRegressor? it might be need to adapt also something else? (just to not go from scratch 😉 )
+thanks for sharing ideas!
+
+
+[11/14/2024 11:06] lijunnan0113
+Only the criterion has been modified.
+
+{Reactions}
+👍
+
+[11/14/2024 11:09] .7thdragon
+~~doing some tests i think i found another PR in python datasieve package (\freqtrade\.venv\Lib\site-packages\datasieve\pipeline.py, Version: 0.1.7), features_in is not defined, lol, and sometimes generates memory troubles :/
+fix:
+`    def __init__(self, steps: List[Tuple] = [],
+                 fitparams: Dict[str, dict] = {}):
+        """
+        Pipeline object which holds a list of fit/transform objects.
+        :param steps: list of tuples (str, transform())
+        :param fitparams: dictionary of dictionaries, where the string key
+        matches the str used to name the step in the steps list.
+        """
+        self.steps: List[Tuple] = steps
+        self.fitparams: Dict[str, dict] = self._validate_fitparams(fitparams, steps)
+        self.pandas_types: bool = False
+        self.feature_list: list = []
+        self.features_in: list = [] ######## added
+        self.label_list: list = []
+        self.step_strings: list = []`~~
+
+
+[11/14/2024 12:02] .7thdragon
+i am also checking now the model, did you also get a good error rate in 20?
+how do you intend to further smooth &close? 🙂
+
+
+[11/14/2024 12:50] .7thdragon
+ahhh, you fouled the prediction 🙂, is not the model
+dataframe['&-target'] = dataframe['close'].shift(-1) 
+so you predict only the 1 timeframe period, u need some long period like bigger than 3
+if the minimal period of all used indicators is lets say 7 then this is a good starting point
+
+
+[11/14/2024 13:06] cheluxe
+Do i have to train the model everytime i do a backtest?? Its really annoying... 🙂 .  If i try to do the same backtest without deleting the model directory i always have the same error.
+
+
+[11/14/2024 13:07] cheluxe
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306606316164219000/message.txt?ex=69f353f5&is=69f20275&hm=393907b8ed79ab8b3df4dcb4ca70352282bce0bb8aec451b7b320331d78a1483&
+
+
+[11/14/2024 13:20] laupapp
+very long to train with CPU 😦 i don't know what to improve
+
+
+[11/14/2024 13:29] lijunnan0113
+I tried using ['&-target'] = dataframe['close'].shift(-5)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306611863852814377/2024-11-14_212403.png?ex=69f35920&is=69f207a0&hm=3154837745f22bbb6175c01c8c1b795a7ab43d6eee973c757d2702142297de9e&
+https://cdn.discordapp.com/attachments/1302276651941625929/1306611864100147200/2024-11-14_211801.png?ex=69f35920&is=69f207a0&hm=5c16bc653444a8c2c4befeaa9281992dd6dc3b5d98986e9d27781c266e13dc87&
+
+
+[11/14/2024 13:34] lijunnan0113
+I'd like to try to figure out the features that are close to the true price first, and at the moment I'm not sure how to go about smoothing &closes
+
+
+[11/14/2024 14:22] .7thdragon
+you can have 2 configs, 2 models folders, one for dry one for bt
+
+
+[11/14/2024 16:23] cheluxe
+Yep, i already have it. My problem is that i get that error everytime i use the backtest command for second time if i do not delete the trained model directory.
+
+{Reactions}
+😵‍💫
+
+[11/14/2024 16:25] cheluxe
+So i have to train the model again if i want to backtest with a diferent configuration 🙃
+
+
+[11/14/2024 16:27] cheluxe
+I remember that using v9 Alex strategy didn't happen, i just deleted the backtest part of the model directory and i can use the training everytime i want. But not now
+
+
+[11/14/2024 16:27] cheluxe
+Maybe freqtrade version, who knows
+
+
+[11/14/2024 16:40] serialkiller15
+interessting normaly that should work with different model folders for dry and bt
+
+
+[11/14/2024 18:43] .7thdragon
+i found the answer to my pipeline error :), for freqai settings:
+model_training_parameters.window_size <= label_period_candles
+and set output_dim 1
+
+
+[11/14/2024 19:15] cheluxe
+I think is doing a really good job
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306699066117197918/Captura_desde_2024-11-14_20-14-58.png?ex=69f30196&is=69f1b016&hm=59803aa75eecd56ed118172f4e5227c7862cfcbffc43c89418a03179826370ea&
+
+{Reactions}
+🚀
+
+[11/14/2024 19:25] .7thdragon
+i do not have in dry as i do a lot of tests/restarts, so thanks for that 🙂
+
+{Reactions}
+❤️
+
+[11/14/2024 19:44] .7thdragon
+Can you post the graph and table with close reasons? as i check also for adjustements
+In my version i removed custom stoploss and added a protection condition for 0 values in enters and exit
+`                & (df["&s-extrema"] != 0) & (df["&s-extrema"].shift(1) != 0) # protection for failed predicted 0 value`
+
+
+[11/14/2024 19:48] cheluxe
+Do you mean something like this?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306707431103139981/2024-11-14_212403.png?ex=69f30961&is=69f1b7e1&hm=c0d3d0c95b9fe6eb2672dd618ad9b1a2b697121b2273b03798c5a42083795d64&
+
+
+[11/14/2024 19:49] cheluxe
+I still don't know how to set it 🙃 ...
+
+
+[11/14/2024 19:50] cheluxe
+I found the close price but couldn't find the predict close
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306707917197803642/Captura_desde_2024-11-14_20-49-48.png?ex=69f309d4&is=69f1b854&hm=32135f3fb591c655a36412cb0d9a0465f4de76f3fc37a35fa181fdc7fc7e4606&
+
+
+[11/14/2024 20:31] .7thdragon
+no, the table with closed positions.
+for graph mine is not using close but predicted extremas, check for predicted &s-extrema instead
+
+{Reactions}
+👍
+
+[11/14/2024 20:32] .7thdragon
+is mine or temura? 🙂
+
+
+[11/14/2024 20:56] cheluxe
+I have both haha
+
+{Reactions}
+🤘
+
+[11/14/2024 20:59] cheluxe
+But this is yours. The only modification i did was to activate trailing
+
+    trailing_stop = True
+    trailing_stop_positive = 0.01
+    trailing_stop_positive_offset = 0.02
+    trailing_only_offset_is_reached = True
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306725227107192860/Captura_desde_2024-11-14_21-33-52.png?ex=69f319f3&is=69f1c873&hm=5538292809d9229fb2412f9817d465dd5cc8d91b1751a38a562af5cb93a227f6&
+
+{Reactions}
+🤣
+
+[11/14/2024 20:59] cheluxe
+(I know you don't like it haha)
+
+
+[11/14/2024 21:01] .7thdragon
+we need to find a way to not be necessary to use trailing 😉
+still, it might be a good idea tho for the current version 👍
+
+{Reactions}
+👍
+
+[11/14/2024 21:07] cheluxe
+It sems so, at least for the moment 😁
+
+
+[11/15/2024 09:12] cheluxe
+Without trailing. Much better
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306909624787796009/Captura_desde_2024-11-15_10-10-47.png?ex=69f31cef&is=69f1cb6f&hm=7875f945f75013b75051d98a931c1068eeb516994418c3f7fd8eeba8e752befd&
+
+{Reactions}
+🤘
+
+[11/15/2024 09:42] laupapp
+with LSTM ? CUDA ?
+
+
+[11/15/2024 09:42] cheluxe
+Yep, both
+
+
+[11/15/2024 09:43] .7thdragon
+wos you added pairs :)i starting also dry, i still not get it why it has trailing stop :/, also leverage i do not like it as it is high in volatility and viceversa 🙂
+
+
+[11/15/2024 09:45] laupapp
+okay, because with CPU it's tooooo slow. Have 10 coins and train all night for one single time ^^ maybe for LIVE account VPS need GPU ?
+
+
+[11/15/2024 09:55] .7thdragon
+if your cpu is not hugg, try increase your "n_jobs": 6, "data_kitchen_thread_count": 16, and see the difference, i am not sure if with curent freqaimodel from github is working without cuda which in some cases might be slow, check the cuda if is working there
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306920562500698144/image.png?ex=69f3271f&is=69f1d59f&hm=030eb8a5cf7b7280b63eaad05c8572f87e4048fea27eddcf402f323c4b96c7df&
+
+
+[11/15/2024 09:56] serialkiller15
+nice work from all of you, please whats the latest version that @7thDragon posted? and the modifications after the posts you have done? sry busy want to test it
+
+
+[11/15/2024 10:00] .7thdragon
+the one Chelu is using i think is above v2.0.4 + freqai, here  is v2.0.4.1, with custom_stoploss removed, adjustement corrected and added a protection for enters and exit in case of crash with 0 values
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1306921714948771870/NOTankAi_15.py?ex=69f32832&is=69f1d6b2&hm=a1a222c26a57608cab0740db35ba9eb7aef31c8ecc5b1e681c8678783a2ae69b&
+
+{Reactions}
+🔥 (4) 💯
+
+[11/15/2024 10:03] serialkiller15
+tanks mate!!!!!
+
+
+[11/15/2024 10:09] .7thdragon
+but guys, if you have an idea why trailing.... wtf,  is not normal 🙂
+
+
+[11/15/2024 10:10] laupapp
+thx i tried but already slow, i need to test deeper
+
+
+[11/15/2024 10:19] .7thdragon
+jeez i think use_custom_stoploss = True with stoploss 0.05 is the culprit
+it might need to be false even the function does not exist
+hope for the same performance tho 🙂
+
+
+[11/15/2024 10:22] cheluxe
+Yes, when i deactivate the custom stop loss, trailing exits stop
+
+
+[11/15/2024 10:27] .7thdragon
+so we have 2 flavours now 🙂 let's see... the continous learning will adjust in time, so i think is better to put it false. i did not removed yet the leverage (to review or to make it constant like 5x) but will see...
+
+{Reactions}
+👍
+
+[11/15/2024 18:43] .7thdragon
+for a little speed up comment those lines
+        #for mp in min_peaks[0]:
+        #    dataframe.at[mp, "extrema"] = -1
+        #for mp in max_peaks[0]:
+        #    dataframe.at[mp, "extrema"] = 1
+            
+        dataframe.loc[min_peaks[0], "extrema"] = -1
+        dataframe.loc[max_peaks[0], "extrema"] = 1
+i think trailing is a plus but only in the small range of 2x stoploss then let extramas to be reached
+what are your results for today? 🙂
+
+
+[11/15/2024 19:11] cheluxe
+Yes, I think the main issue is that it doesn’t know when to stop. Most of the time it reaches 10% or 20% profit, but since it doesn’t find an exit, the market eventually turns against it, and it loses everything. It seems to perform better with long, steady upward and downward trends, but it struggles more with volatility.
+
+
+[11/15/2024 19:11] cheluxe
+Today, I had almost 40 euros in open trade profits, but it only managed to keep less than 10 before the market changed direction.
+
+
+[11/15/2024 19:13] cheluxe
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1307060941971783751/Captura_desde_2024-11-15_20-12-01.png?ex=69f3011c&is=69f1af9c&hm=de5b863611bbe6f2b60b444e13dfee57bbca7fc3f8b973d35c95dd11c20aa417&
+
+
+[11/15/2024 19:14] cheluxe
+But even with that it managed to stay in profit through the day
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1307061293013794836/Captura_desde_2024-11-15_20-13-13.png?ex=69f30170&is=69f1aff0&hm=5309f71760fe76febcc1b633964ff75b52ad4196fd0bba25026d7540adec5249&
+
+
+[11/15/2024 19:18] cheluxe
+What a waste... 🥲
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1307062266671140894/Captura_desde_2024-11-15_20-17-03.png?ex=69f30258&is=69f1b0d8&hm=53c4c0080d33e053357290c158e2156b5fd85ec42fef4f93cce95944bb1b0bac&
+
+
+[11/15/2024 19:20] .7thdragon
+so without trailing right? "the market eventually turns against it" this is... unpredictable 🙂
+hmmm, let me check something as the exit points can be a little "wider"
+weird
+(df['maxima'].rolling(window=5).max() == 1), practically if any of last 5 bars before prediction get an extrema point should exit
+if not first climb extrema at least on the second one :/
+
+
+[11/15/2024 19:21] .7thdragon
+also the adjustements should work but seems not 🙂
+
+
+[11/15/2024 19:29] cheluxe
+Yes, this is the default version 2.0.4.1 you sent today.
+
+
+[11/15/2024 19:30] cheluxe
+It’s possible that when it passed through the exit points, the container restarted. This has happened to me several times when it fills up the entire swap memory on my computer. It might not be a problem with the strategy itself but rather the heavy load it places on the computer, leaving it inactive during the time it takes to reactivate, reload all data, and become operational again.
+
+
+[11/15/2024 19:31] cheluxe
+When i have more than 10 bots running at the sme time this get crazy
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1307065343361028118/Captura_desde_2024-11-15_20-28-33.png?ex=69f30535&is=69f1b3b5&hm=4917d7734819f21b4addf6cc8b0a516ae0806405b4c5dd34523decd6b00ecf6c&
+
+
+[11/15/2024 19:31] .7thdragon
+aaaah 🙂 so thats why it needs at least a stoploss protection as i mentioned
+it is complicated to calculate a good stoploss but at least have a minimum for this situations
+
+{Reactions}
+👍
+
+[11/15/2024 19:33] .7thdragon
+something simple like this (according to your observation on trailing 😉 )
+`       ** if current_profit > trailing_stop+trailing_delta:
+                if trade.is_short:
+                    return stoploss_from_absolute(current_rate+current_rate*abs(self.trailing_stop), current_rate, is_short=trade.is_short, leverage=trade.leverage)
+                else:
+                    return stoploss_from_absolute(current_rate-current_rate*abs(self.trailing_stop), current_rate, is_short=trade.is_short, leverage=trade.leverage)**
+        
+        if trailing_enable:
+            if current_profit > trailing_start and current_profit < trailing_stop:
+                if trade.is_short:
+                    return stoploss_from_absolute(current_rate+current_rate*abs(self.trailing_delta), current_rate, is_short=trade.is_short, leverage=trade.leverage)
+                else:
+                    return stoploss_from_absolute(current_rate-current_rate*abs(self.trailing_delta), current_rate, is_short=trade.is_short, leverage=trade.leverage)
+        `
+
+
+[11/15/2024 19:40] cheluxe
+Nice, i'll check it 👍
+
+
+[11/15/2024 19:44] .7thdragon
+v2.0.4.3 - all mentions above, didnt checked but i think are working
+trailing is not enabled 🙂 as i do not like it too much (the problem is on silent market only)
+thanks @Chelu for testing it ❤️
+
+{Reactions}
+❤️
+
+[11/15/2024 19:45] cheluxe
+Thanks, i'll test it and let's see this days
+
+
+[11/15/2024 19:48] .7thdragon
+so if the trailing is enabled it will loose a lot 🙂, better protect it with small amounts
+and also i expected in that marked point at least to exit a part, will see if i can fix it...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1307069859808411648/image.png?ex=69f3096a&is=69f1b7ea&hm=2c439208dbb906c45edba328ea12959d6dd713fc371310de09e501103857b05a&
+
+
+[11/15/2024 19:50] .7thdragon
+ah have a bug deleted it for the moment, used reserved words 😦
+starting to see is fully loaded
+
+{Reactions}
+👍
+
+[11/15/2024 19:53] cheluxe
+Yes, i saw it yesterday. Trailing lose lots of opportunities to sell at a much better price
+
+
+[11/15/2024 19:56] serialkiller15
+Trailing is mostly waste of time I did not do any trailing anymore...
+
+
+[11/15/2024 19:57] .7thdragon
+haha, but u optimized TGDs this way 🙂
+
+
+[11/15/2024 19:57] serialkiller15
+I know that
+
+
+[11/15/2024 19:57] serialkiller15
+Wrong choice
+
+
+[11/15/2024 20:01] .7thdragon
+v2.0.4.3 - ok loaded, still not reached stoploss routine yet hope is ok now
+
+
+[11/15/2024 20:01] serialkiller15
+Thanks for sharing
+
+
+[11/15/2024 20:02] .7thdragon
+dont thank me every line 😛 test it 🙂
+@Alex Crypto King you have some results?
+
+
+[11/15/2024 20:08] .7thdragon
+v2.0.4.3 - forgot a self 🙂, sorry guys i am editing in notepad 🙂, pycharm is not working for me as it mixes a lot of things can screw compatible things easily
+added:
+    trail_enable = False
+    stoploss_protection = True
+    trail_delta = 0.01
+    trail_start = 0.02 # lower than stop
+    trail_stop = abs(stoploss) # higher than start, better to be low or equan than abs(stoploss), 999 if unlimited
+
+
+[11/15/2024 20:08] serialkiller15
+Yep wait a min the thanks is for the community mate so everybody can test it 💪
+
+{Reactions}
+❤️
+
+[11/15/2024 20:40] .7thdragon
+oh another mistake, sorry i will repost it after i toughly test it then 😦
+
+
+[11/15/2024 20:51] .7thdragon
+v2.0.4.3
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1307085593557073972/NOTankAi_15.py?ex=69f31811&is=69f1c691&hm=16275e9b72819247fafdc367a4f4db9b8f3fcdffd4215f60e47acab435994e5f&
+
+
+[11/15/2024 20:56] .7thdragon
+@Laurent D. did u have torch for cuda installed? something similar to this
+pip install torch==2.5.1+cu118 torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu118/
+
+
+[11/15/2024 20:59] .7thdragon
+for my limited resources testing i use only 30d back but still
+INFO - -------------------- Done training ADA/USDT:USDT (218.88 secs) -----------------
+
+
+[11/15/2024 21:00] laupapp
+I don't have NVIDIA CUDA on this computer, just CPU with NPU but I think it's not compatible for the moment
+
+{Reactions}
+😥
+
+[11/15/2024 21:03] laupapp
+i want to find a VPS GPU but i don't know if it's enough to train model :
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1307088507042402435/image.png?ex=69f31ac8&is=69f1c948&hm=c4674847e29be27ad2e4627b777be9a98c455901efeae94669011a41f8c110b8&
+
+
+[11/15/2024 21:05] cheluxe
+Wow, which web is that?
+
+
+[11/15/2024 21:05] cheluxe
+I tried AWS but to have good pecs is expensive as hell
+
+
+[11/15/2024 21:06] laupapp
+https://www.vps-mart.com/gpu-server
+
+{Embed}
+https://www.vps-mart.com/gpu-server
+Best VPS with GPU - GPU Dedicated Server in 2022
+The GPU Dedicated Server with 1 primary IP, unmetered bandwidth and OS options can be used in Android emulators, gaming & video rendering.
+https://images-ext-1.discordapp.net/external/jsZ8_uUIJjqN338VWZAj8SzGRcKoP31ryDdPJXu8Ub0/https/images.cloudclusters.io/996b414bdb384f819cf0a4035afcfa72/gpu-03.png
+
+
+[11/15/2024 21:06] cheluxe
+Nice, i'll check it. Thanks
+
+
+[11/15/2024 21:07] cheluxe
+I heard Vultr is a good options for bots like that too
+
+{Reactions}
+👍
+
+[11/15/2024 21:08] laupapp
+Yes but locate in USA, maybe we can find in Asia for the same price
+
+{Reactions}
+👍
+
+[11/15/2024 21:09] .7thdragon
+vultr (can choose location on Tokyo!) is at** 1ms** from bybit and binance
+
+
+[11/15/2024 21:10] laupapp
+CUDA Cores: 384
+GPU Memory: 2GB DDR3
+FP32 Performance: 0.692
+enough ?
+
+
+[11/15/2024 21:12] cheluxe
+mmm... i don't know i have a 3070 ti and for me training is still a bit slow
+
+
+[11/15/2024 21:12] .7thdragon
+unfortunately win / 10 pairs / about 10-15gb of ram, maybe an option is to diminish the training period might gain the same results, but thats why the tests are for...
+lol, i have 1080ti card and still good 🙂
+
+
+[11/15/2024 21:14] cheluxe
+Mine is laptop, so is way worst than in a desktop pc
+
+{Reactions}
+👍
+
+[11/15/2024 21:15] serialkiller15
+As I told you guys if you need running tests Infrastructure is here on my side
+
+{Reactions}
+👍 (3)
+
+[11/15/2024 21:15] serialkiller15
+For testing
+
+
+[11/15/2024 22:12] .7thdragon
+i am thinking to extract top volume pairs but with more stability and smoothness, similar this, what do you think?
+    {
+      "method": "RangeStabilityFilter",
+      "lookback_days": 7,
+      "min_rate_of_change": 0.07,
+      "max_rate_of_change": 0.99,
+      //"refresh_period": 43200,
+    },
+    {
+      "method": "VolatilityFilter",
+      "lookback_days": 7,
+      "min_volatility": 0.00,
+      "max_volatility": 0.33,
+      "refresh_period": 43200,
+      "sort_direction": "asc",
+    },
+
+
+[11/15/2024 23:55] cheluxe
+Sounds like a good approach, especially to achieve smoother pair selection
+
+
+[11/15/2024 23:56] cheluxe
+For now, I'm using static pairs in dry run, i still need to fix the dynamic pair update issue with VolumePairList and freqai models
+
+
+[11/16/2024 00:42] .7thdragon
+u cannot fix as is not allowed using volume pairs, need to be extracted separately and reload
+
+{Reactions}
+👍
+
+[11/16/2024 09:33] cheluxe
+ooh ok
+
+
+[11/16/2024 11:43] laupapp
+For extraction : https://remotepairlist.com
+
+{Embed}
+https://remotepairlist.com/
+Freqtrade RemotePairList - Remote Pairlist
+Freqtrade RemotePairList, Remotepairlist Providing a Pairlist which can be used to prefilter or sort your Pairlist and reduce API-Calls.
+
+{Reactions}
+❤️ (3)
+
+[11/16/2024 12:42] cheluxe
+Thanks!
+
+
+[11/16/2024 16:23] .7thdragon
+v2.0.4.4
+- corrected against leverage, are now enabled by default, i think is better when silence
+    trail_enable = True # goes only to trail_stop = abs(stoploss)
+    stoploss_protection = True
+    - those are only for your flavours ! in a silent market might not work well
+- added some comment ideas fo using slope, to further checking predicted trend
+- do_predict for me is still < 0 which is weird
+- corrected adjustments but could happen only at high profit values
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1307380427035643945/NOTankAi_15.py?ex=69f381e7&is=69f23067&hm=f451c56ced0681083f5608647ff4346e5871908216989283ce462e76024794d0&
+
+{Reactions}
+👍 (3)
+
+[11/16/2024 20:48] ammart90
+can you please add config file for the freqai part ?
+
+
+[11/16/2024 21:01] .7thdragon
+https://discord.com/channels/1238181199206154373/1302276651941625929/1306343817204731998
+
+{Reactions}
+🔥
+
+[11/17/2024 06:14] ammart90
+i got the following error, and the bot breaks 😦
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1307589773380030494/image.png?ex=69f39c1f&is=69f24a9f&hm=428fb68eca692c731ee818df59a8177e49167830ccaa94b395d3dc8e3ebb9bb4&
+
+
+[11/17/2024 08:33] ammart90
+for some reason the bot stopped after sometime and crashes
+
+
+[11/17/2024 08:44] .7thdragon
+Does not continue running? Usually happens on first training only
+I might have a workaround fix later
+
+
+[11/17/2024 11:28] .7thdragon
+so here you go a more generic fix
+- will not overwrite default FT base pytorch
+- added LSTM separate model with SmoothL1Loss
+- cuda/cpu can be used specific with "device" argument in config for both trainer and model
+- of course have a backup first of your current user freqaimodels and base FT freqai folders
+- evererybody loves error free 🙂
+https://discord.com/channels/1238181199206154373/1302276651941625929/1307794391812931686
+
+
+[11/17/2024 11:41] cheluxe
+Yep, i had the same problem. With every second training, model it always crash and i have to delete the live model folder
+
+{Reactions}
+☝️
+
+[11/17/2024 12:46] ximontan
+have same problem and it continue running, and for other pairs it works ok, and get some orders...
+Anyway it works! Thanks
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1307688198813650944/image.png?ex=69f34f0a&is=69f1fd8a&hm=ea33ffe2492c7b3cb3f5c0300899d38be6b858a424e3da87178a8e9b114ef8de&
+
+{Reactions}
+👍
+
+[11/17/2024 12:47] ximontan
+I have question, for 135 pairs it get 23Gb +/-
+How match ram usage do you have?
+
+{Reactions}
+🤘
+
+[11/17/2024 12:50] .7thdragon
+nice, with around 10 pairs ~ 10gb consumed  🙂 but i will increase to the limit
+compared with other models is quite light
+
+
+[11/17/2024 12:54] ximontan
+sounds good thanks
+
+
+[11/17/2024 14:30] .7thdragon
+😦 seems that i still get the error from time to time, will look deeper
+
+
+[11/17/2024 14:51] serialkiller15
+Will make also tests thanks
+
+
+[11/17/2024 18:46] .7thdragon
+i am currently testing, it seems that outliers are too much in some situations, fit cannot be performed and the pipeline (lib i dont want to modify) verification checks for features_in which are used only in multidimentional model
+use either like           "DI_threshold": 10,  or 20,
+or            "use_SVM_to_remove_outliers": false,
+or both and let lstm only do it's job
+Anyway, error is a verification only and NOT a blocker, prediction continues...
+
+
+[11/17/2024 19:48] .7thdragon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1307794391343042640/PyTorchLSTMRegressor_pack.zip?ex=69f30930&is=69f1b7b0&hm=f25ae715aed3173c083b8afba2f2bbb99660837ab864c531922022ce99b3cebb&
+
+
+[11/17/2024 19:53] ammart90
+Thanks i will test
+
+
+[11/18/2024 06:35] lijunnan0113
+Would like to use this code as a smoothing, or feature, but I'm experiencing frequent error reporting🥲
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1307957271518773268/Adaptive_Trend_Reversal.py?ex=69f2f822&is=69f1a6a2&hm=6421a48ec2db0a23fdd98bab30c593aa91ab1994b6cfbb429eee94979832a5dd&
+https://cdn.discordapp.com/attachments/1302276651941625929/1307957271879487548/2024-11-18_142202.png?ex=69f2f822&is=69f1a6a2&hm=63be957f4d90e6dadb21134ab4b2e4b0201342ecac9be689bcab5c0d5316cddc&
+
+{Reactions}
+👍
+
+[11/18/2024 11:27] .7thdragon
+**found another issue with LSTM, cannot be used at it is for "reverse_test_train_order": true,**
+it is used in training but it is used (sent) also in predict lol which is stupid, and cudnn does not allow, do not know how is working on cpu
+
+
+[11/18/2024 11:28] .7thdragon
+does anybody still use 2.0.4.1? what are your latest results ?
+
+
+[11/18/2024 11:29] xokaidos
+I had it running for three days
+
+
+[11/18/2024 11:29] xokaidos
+it didn’t start a single trade
+
+
+[11/18/2024 11:30] xokaidos
+Turned it off today
+
+
+[11/18/2024 13:27] .7thdragon
+what version? all should have trades
+
+
+[11/18/2024 13:33] xokaidos
+I had v2.0.4.3
+
+{Reactions}
+👍
+
+[11/18/2024 13:36] .7thdragon
+you should try the first posted one v2.0.4.1, maybe with chelu trailing (this might useful when fixed static pairs are side moving), as you can see he has trades
+
+
+[11/18/2024 20:23] ammart90
+@7thDragon i got another error after successfully deployed cuda in WSL 😦
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1308165746714738739/image.png?ex=69f3118a&is=69f1c00a&hm=62be608a95d00ae9f855f5e32a113aa7522a55a9789c4dbe2f4a43f4bd4571f4&
+
+
+[11/18/2024 20:25] ammart90
+i can see some training was started
+
+
+[11/18/2024 21:00] .7thdragon
+try first with XGBoostRegressor to see if works, i do not think is from lstm regressor
+
+{Reactions}
+👍
+
+[11/20/2024 10:00] .7thdragon
+https://discord.com/channels/1238181199206154373/1283053114383143033/1308711666468392990 🔥
+`def fit(self, data_dictionary: Dict, dk: FreqaiDataKitchen, **kwargs) -> Any:
+    trainer = self.get_init_model(dk.pair)
+    if trainer is None:
+        temp_trainer = self.get_init_model(dk.pair)
+        if temp_trainer is None:
+            trainer = PyTorchLSTMTrainer(
+                model=model,
+                optimizer=optimizer,
+                criterion=criterion,
+                device=self.device,
+                data_convertor=self.data_convertor,
+                tb_logger=self.tb_logger,
+                window_size=self.window_size,
+                **self.trainer_kwargs,
+            )
+        else:
+            trainer = PyTorchLSTMTrainer(
+                model=temp_trainer.model,
+                optimizer=temp_trainer.optimizer,
+                model_meta_data=temp_trainer.model_meta_data,
+                criterion=criterion,
+                device=self.device,
+                data_convertor=self.data_convertor,
+                tb_logger=self.tb_logger,
+                window_size=self.window_size,
+                **self.trainer_kwargs,
+            )
+    
+    trainer.fit(data_dictionary, self.splits)
+    self.model = trainer
+    return trainer
+`
+
+
+[11/21/2024 15:47] .7thdragon
+fixed cudnn error
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1309183313067380736/PyTorchLSTMRegressor_pack.zip?ex=69f37979&is=69f227f9&hm=4fc26750999d5c58d22e37b17e583861103a1113997991fbe37e96a821ece94d&
+
+
+[11/21/2024 16:19] .7thdragon
+since yesterday market was pumping but still, did managed to find well the longs for the moment
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1309191498255831060/image.png?ex=69f38118&is=69f22f98&hm=1047c94268ca66f25f7cff532945ec72562fffefe1080b4e0dd70e7fc97cbffc&
+https://cdn.discordapp.com/attachments/1302276651941625929/1309191498578923623/image.png?ex=69f38118&is=69f22f98&hm=cc89198f270f3a7658d92f543e567fee0c53363b71ada7aca51ba1ee3a63f782&
+
+{Reactions}
+👍 🤘 😆
+
+[11/21/2024 16:45] ximontan
+are you run it locally or in VPS?
+
+
+[11/21/2024 16:48] .7thdragon
+locally, as still testing it and monitoring, is quite changed since first version
+
+
+[11/21/2024 17:04] xokaidos
+I run it for 3 pairs and it was amazing
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1309202839599448115/image.png?ex=69f38ba8&is=69f23a28&hm=ba93f1781d71df67e8f90aa748e6b801052071f9d63fee1dda431cab3c6a38e4&
+
+
+[11/21/2024 17:49] _s9h
+I dry run it twice different versions, for a month or so and after a few days of profitable trades I got huge losses, much bigger than the profits... It was about a month ago I think with 90 filtered pairs. Dunno if something has changed since then. I stopped following the updates
+
+
+[11/21/2024 17:50] _s9h
+The nonai version
+
+
+[11/21/2024 17:51] xokaidos
+I ran it several times too but this last version works well for me. The lost trades are much less than win ones and the final profit is very impressive.
+
+
+[11/21/2024 17:58] _s9h
+Was that an ai version? I might give it another try in the future. The original version was kind of biased as well from what I know
+
+
+[11/21/2024 18:09] .7thdragon
+exactly, the amount of looses needs to be less than wins almost each day, despite side, bullish or bearish
+using 2.0.4.4? is intersting btc, eth and sol... i use top 14 by volume only except btc and eth
+
+
+[11/21/2024 18:14] .7thdragon
+the nonai of course is biased but it gives a good hint for ups and downs
+
+{Reactions}
+👍
+
+[11/21/2024 18:16] xokaidos
+Yes, I'm using v2.0.4.4
+
+{Reactions}
+👍
+
+[11/22/2024 12:11] .7thdragon
+unfortunately there is a big problem in ft data kitchen and continual learning (any model), in fact not working at all, so workaround is to diminish the re-training time to a more appropriate value to 3-4h
+        "live_retrain_hours": 4,
+        "continual_learning": false,
+
+{Reactions}
+👍 (2)
+
+[11/23/2024 01:51] huangyafei_90755
+Hello everyone, I ran into a problem where this strategy got stuck while running, and the log shows the following.
+
+
+[11/23/2024 01:51] huangyafei_90755
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1309697908458917989/mmexport1732326679600.png?ex=69f35e7a&is=69f20cfa&hm=86f4473820590438647365b038f503d8df049ed4eac160b58e0be5a856ef5d1e&
+
+
+[11/23/2024 01:52] huangyafei_90755
+Does this strategy need to use a GPU?
+
+
+[11/23/2024 04:09] huangyafei_90755
+This error has been resolved.
+
+{Reactions}
+😀
+
+[11/23/2024 08:59] .7thdragon
+Hey, @xok @Ximontan do u have some late results?
+it seems that on market side movement it slightly losses but in rest it rocks
+i do not have the whole picture as i am still testing, lots of restarts
+
+
+[11/23/2024 09:44] ximontan
+no, sorry, I have no any results, I have electricity problems every day...
+
+{Reactions}
+👍
+
+[11/23/2024 09:54] .7thdragon
+same conditions here :), with all my restarts still is positive
+i test based on v2044 still need to find a formula for side movement to have a little bit more gain
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1309819354363334706/image.png?ex=69f326d5&is=69f1d555&hm=409d87478f184f3b159bc31942088b81dc6189e873c7f3fbb4f0d9fa1d655dde&
+
+
+[11/23/2024 11:05] xokaidos
+Yesterday it lost several big trades, then I applied your fix and today it stands well.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1309837157971791872/image.png?ex=69f3376a&is=69f1e5ea&hm=15081138b8a2678257aa3264632ab0448b203d0dc70bf59f2028af6f14e097f5&
+
+{Reactions}
+🤘
+
+[11/23/2024 11:05] xokaidos
+This is your latest version, v2.0.4.4
+
+
+[11/23/2024 12:51] .7thdragon
+i presumed so, anyway, still i am not sure if it loosed because of the lstm error or market side movement, will see after this pump, i am working on a bias prediction movement addon but will see after this today pump and then down will go well...
+and thanks for help!
+
+{Reactions}
+❤️
+
+[11/23/2024 18:03] xokaidos
+What a pity loss
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1309942538907549766/image.png?ex=69f3998e&is=69f2480e&hm=19c0af423f3f15cc7dd4bb9549d5bd00c7fde5209b65db221265743f478465e5&
+
+{Reactions}
+👍
+
+[11/23/2024 18:04] xokaidos
+The prediction was right, it just missed couple of candles..
+
+
+[11/23/2024 19:03] .7thdragon
+yep, unfortunately prediction is not accurate of course but it catch the opportunities, otherwise we could not cover a balance between entries and gains
+anyway the stoploss in this version is quite high, instead of 10% should loose less than 4%
+till i get to a more stable version check this v2.0.4.6 (it should use existing trained models)
+
+
+[11/23/2024 21:33] .7thdragon
+freqai json https://discord.com/channels/1238181199206154373/1302276651941625929/1306343817204731998
+https://discord.com/channels/1238181199206154373/1302276651941625929/1309491376588591187
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1309995224541429851/NOTankAi_15.py?ex=69f321e0&is=69f1d060&hm=f1b0cd0ba00718780cd66ac7d3efe8c17449397927477e37b07931aa26888a98&
+
+
+[11/23/2024 21:48] xaviertoor
+```Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'DI_cutoff'```
+
+
+[11/23/2024 22:20] ximontan
+check in config, it should be like this:
+      "extra_returns_per_train": {
+         ...
+          "DI_cutoff": 2,
+        ...
+      },
+here https://discord.com/channels/1238181199206154373/1302276651941625929/1306343817204731998
+
+
+[11/24/2024 02:13] huangyafei_90755
+Hi!How should I resolve this error?
+
+
+[11/24/2024 02:14] huangyafei_90755
+NOTANK  | 2024-11-24 02:10:13,282 - freqtrade.resolvers.iresolver - WARNING - Could not import /freqtrade/user_data/freqaimodels/PyTorchLSTMRegressor.py due to 'No module named 'freqtrade.freqai.base_models.BasePyLSTMTorchRegressor''
+NOTANK  | 2024-11-24 02:10:13,288 - freqtrade.resolvers.iresolver - WARNING - Could not import /freqtrade/user_data/freqaimodels/PyTorchLSTMRegressorL1.py due to 'No module named 'freqtrade.freqai.torch.PyTorchLSTMModel''
+NOTANK  | 2024-11-24 02:10:14,200 - matplotlib.font_manager - INFO - generated new fontManager
+NOTANK  | 2024-11-24 02:10:14,732 - freqtrade - ERROR - Impossible to load FreqaiModel 'PyTorchLSTMRegressor'. This class does not exist or contains Python code errors.
+
+
+[11/24/2024 08:43] serialkiller15
+@feifei please read the Error  you don't have  copied the Lstm Regressor1.Py file in the folder?
+
+
+[11/24/2024 11:16] xokaidos
+@7thDragon Almost sequential loses.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1310202434424934481/image.png?ex=69f33a1a&is=69f1e89a&hm=7cbb1626d435cf877cb901b90ea4c9d478184b7427a2a9e856076671e97eb3ae&
+
+{Reactions}
+👍
+
+[11/24/2024 11:30] .7thdragon
+it is so weird for me also as for example doge i have no loosing trade, but for popcat all entered wrong, needs to deep dive to understand
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1310206011839348736/image.png?ex=69f33d6f&is=69f1ebef&hm=a1ce192f17f1a28a0227363d14d3053007d82aea0294cc08f0ed99b7c7406756&
+
+
+[11/24/2024 11:44] ch1ck3n_t4c0s
+Because it's on a different dominant_freq... using the same period of indicators for all assets is like making everyone wear a #10 shoe. Some fit , some it's a bit to big, some a bit to small, some don't fit at all.
+
+
+[11/24/2024 11:46] xokaidos
+How do we adjust then? Are you meaning every asset needs separate bot running for specific configurations?
+
+
+[11/24/2024 11:47] .7thdragon
+🙂 are not related, it's about the models
+
+
+[11/24/2024 11:47] ch1ck3n_t4c0s
+A solution is inside of hafbm 😉
+
+{Reactions}
+👍
+
+[11/24/2024 11:48] xokaidos
+I ran hafbm and it almost blew the account...
+
+
+[11/24/2024 11:48] ch1ck3n_t4c0s
+Or...
+
+
+[11/24/2024 11:48] ch1ck3n_t4c0s
+ROI: Closed trades
+∙ 4276.795 USDT (3.40%) (42.77 Σ%)
+∙ 4281.072 USD
+ROI: All trades
+∙ 3768.895 USDT (2.72%) (37.69 Σ%)
+∙ 3772.664 USD
+Total Trade Count: 101
+Bot started: 2024-11-01 23:31:03
+First Trade opened: 21 days ago (2024-11-03 02:08:44)
+Latest Trade opened: 45 minutes ago (2024-11-24 11:03:03)
+Win / Loss: 91 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 47.00 (100.00)
+Avg. Duration: 1 day, 5:54:50
+Best Performing: HBAR/USDT: 32.19%
+Trading volume: 276604.33 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from  (0 USDT)
+    to  (0 USDT)
+
+
+[11/24/2024 11:48] xokaidos
+Wow, impressive results, what's the strat?
+
+
+[11/24/2024 11:49] ch1ck3n_t4c0s
+Spot... gimme a minute I'll drop driving
+
+
+[11/24/2024 11:49] xokaidos
+it didn't lose a single trade for 21 days?.. 😮
+
+
+[11/24/2024 11:49] huangyafei_90755
+The path is correct, and the file is indeed there, but it still reports that the file cannot be found.
+
+
+[11/24/2024 11:49] .7thdragon
+yes, combine tank with habfm is a good choice, but...
+and i am talking about futures 😉
+winrate of 100% without sl is not a choice in a bullrun. as you will not know when it ends 🙂
+
+
+[11/24/2024 11:52] xokaidos
+It's not about the file, it's about the file was not imported because of some problems. You probably miss some modules. Did you install everythign properly?
+
+
+[11/24/2024 11:53] xokaidos
+And imagine notankai gained some great profits with shorting in this insane bull run...
+
+{Reactions}
+👍
+
+[11/24/2024 11:53] .7thdragon
+use the last pack above of lstm, needs also add files in freqtrade\freqai subfolders
+no need to overwrite anything of default ft instalation
+
+
+[11/24/2024 12:07] serialkiller15
+It works nice with the improvements @Ch1cK3N_t4c0s made...
+
+
+[11/24/2024 12:08] ch1ck3n_t4c0s
+Well tbh I can't trade leverage so I plan for a minimum a double tap entry on spot with a  swing time of 1-7days.
+
+
+[11/24/2024 12:09] ch1ck3n_t4c0s
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1310215771825246318/TankAiRevival_1.py?ex=69f34686&is=69f1f506&hm=f8a37fc4b5d74170cd5967d89fdda75f7eb381bd9084d9d4850ae6b2dcc2335a&
+
+
+[11/24/2024 12:12] ch1ck3n_t4c0s
+Please read the notes Inside the strategy. This is a wip version... working on exits and am currently working on a version that does not use exit conditions but take profits and stoploss only. It is not perfect but it is doing pretty well on spot for me at the moment.
+
+There is a HODL condition in the confirm exit section that I am working on. It's close to working how I want but not there yet. You will need a multi target regressor for this.
+
+
+[11/24/2024 12:14] ch1ck3n_t4c0s
+It will not DCA if the trade is not below the 1/3 harmonic ptp move as far a profit goes.
+
+{Reactions}
+👍 (3)
+
+[11/24/2024 12:17] ch1ck3n_t4c0s
+"freqai": {
+        "enabled": true,
+        "conv_width": 1,
+        "purge_old_models": 2,
+        "expiration_hours": 48,
+        "live_retrain_hours": 24,
+        "train_period_days": 30,
+        "backtest_period_days": 1,
+        "write_metrics_to_disk": false,
+        "identifier": "TankAi",
+        "fit_live_predictions_candles": 100,
+        "data_kitchen_thread_count": 6,
+        "track_performance": false,
+        "weibull_outlier_threshold": 0.999,
+        "extra_returns_per_train": {
+            "DI_value_param1": 0,
+            "DI_value_param2": 0,
+            "DI_value_param3": 0,
+            "DI_cutoff": 2,
+            "&s-minima_sort_threshold": -1,
+            "&s-maxima_sort_threshold": 1
+        },
+        "feature_parameters": {
+            "include_corr_pairlist": [
+  
+            ],
+            "include_timeframes": [
+                "30m",
+                "4h",
+
+            ],
+            "label_period_candles": 16,
+            "indicator_periods_candles": [
+                8,
+                16,
+                32
+            ],
+            "include_shifted_candles": 5,
+            "DI_threshold": 20,
+            "weight_factor": 0.3,
+            "noise_standard_deviation": 0.01,
+            "plot_feature_importances": 50,
+            "buffer_train_data_candles": 50,
+            "balance_weights": false,
+            "include_santiment_data": false
+        },
+        "data_split_parameters": {
+            "test_size": 0.05,
+  
+            "random_state": 1,
+            "shuffle": false
+        },
+
+
+[11/24/2024 12:17] ch1ck3n_t4c0s
+"model_training_parameters": {
+            "n_estimators": 150,
+            "device": "cuda",
+            "tree_method": "hist",
+            "n_jobs": 6,
+            "verbosity": 0,
+            "alpha": 0.5,
+            "min_child_weight": 5,
+            "learning_rate": 0.1,
+            "max_depth": 6,
+            "early_stopping_rounds": 20
+        },
+        "optuna_config": {
+            "n_trials": 40,
+            "train_period_candles_min": 120,
+            "train_period_candles_max": 2520,
+            "train_period_candles_step": 60,
+            "train_target_kernel_min": 6,
+            "train_target_kernel_max": 22,
+            "train_target_kernel_step": 4,
+            "test_size_min": 0.005,
+            "test_size_max": 0.02,
+            "test_size_step": 0.005
+        }
+    }
+
+
+[11/24/2024 12:19] ch1ck3n_t4c0s
+Day (count)     USDT          USD         Profit %
+--------------  ------------  ----------  ----------
+2024-11-24 (1)  95.484 USDT   95.68 USD   0.70%
+2024-11-23 (5)  325.191 USDT  325.84 USD  2.44%
+2024-11-22 (4)  466.189 USDT  467.12 USD  3.62%
+2024-11-21 (2)  221.028 USDT  221.47 USD  1.75%
+2024-11-20 (1)  30.948 USDT   31.01 USD   0.25%
+2024-11-19 (2)  1.478 USDT    1.48 USD    0.01%
+2024-11-18 (7)  727.854 USDT  729.31 USD  6.12%
+
+
+[11/24/2024 12:20] ch1ck3n_t4c0s
+Day (count)     USDT          USD         Profit %
+--------------  ------------  ----------  ----------
+2024-11-24 (1)  138.637 USDT  138.78 USD  0.99%
+2024-11-23 (7)  376.79 USDT   377.17 USD  2.77%
+2024-11-22 (4)  293.666 USDT  293.96 USD  2.20%
+2024-11-21 (3)  113.609 USDT  113.72 USD  0.86%
+2024-11-20 (2)  52.318 USDT   52.37 USD   0.40%
+2024-11-19 (5)  341.89 USDT   342.23 USD  2.67%
+2024-11-18 (2)  152.298 USDT  152.45 USD  1.20%
+
+
+[11/24/2024 12:20] ch1ck3n_t4c0s
+Day (count)     USD         USD        Profit %
+--------------  ----------  ---------  ----------
+2024-11-24 (1)  1.256 USD   1.26 USD   0.25%
+2024-11-23 (3)  10.653 USD  10.65 USD  2.18%
+2024-11-22 (1)  1.578 USD   1.58 USD   0.32%
+2024-11-21 (2)  6.521 USD   6.52 USD   1.36%
+2024-11-20 (2)  9.964 USD   9.96 USD   2.12%
+2024-11-19 (1)  3.297 USD   3.30 USD   0.71%
+2024-11-18 (1)  4.719 USD   4.72 USD   1.02%
+
+
+[11/24/2024 12:20] ch1ck3n_t4c0s
+Day (count)     USD          USD         Profit %
+--------------  -----------  ----------  ----------
+2024-11-24 (0)  0 USD        0.00 USD    0.00%
+2024-11-23 (3)  114.318 USD  114.32 USD  3.62%
+2024-11-22 (2)  37.994 USD   37.99 USD   1.22%
+2024-11-21 (0)  0 USD        0.00 USD    0.00%
+2024-11-20 (0)  0 USD        0.00 USD    0.00%
+2024-11-19 (1)  7.457 USD    7.46 USD    0.24%
+2024-11-18 (3)  115.817 USD  115.82 USD  3.86%
+
+
+[11/24/2024 12:21] huangyafei_90755
+Thank you for your help.
+
+
+[11/24/2024 12:21] ch1ck3n_t4c0s
+All my runs
+
+{Reactions}
+❤️ (2)
+
+[11/24/2024 12:24] .7thdragon
+Back to study 🧐 🙏
+
+
+[11/24/2024 12:25] ch1ck3n_t4c0s
+I am still working on it so it may change...sorry have not been super active on the internet last few weeks.
+
+{Reactions}
+❤️
+
+[11/24/2024 12:27] .7thdragon
+But what regressor do you use? as i get more reliable (generic speaking) results only with lstm and this is not built for multitarget
+
+
+[11/24/2024 12:28] cheluxe
+So which freqai model should we use?
+
+
+[11/24/2024 12:34] .7thdragon
+Ahhh i get now the trick with extremas :), i am sooo stupid, i was not using as prediction values
+        dataframe["minima"] = np.where(dataframe["&s-extrema"] == -1, 1, 0)
+        dataframe["maxima"] = np.where(dataframe["&s-extrema"] == 1, 1, 0)
+
+
+[11/24/2024 12:39] .7thdragon
+I think LightGBMRegressorMultiTarget or XGBoostRegressorMultiTarget can be used as there are
+&s-extrema &-s_max &-s_min as outputs
+but let @Ch1cK3N_t4c0s to confirm
+
+{Reactions}
+👍
+
+[11/24/2024 13:23] serialkiller15
+@Ch1cK3N_t4c0s thanks mate.....
+
+
+[11/24/2024 13:24] serialkiller15
+@7thDragon yep I use the mutitarget since 2 weeks and it's nice...
+
+
+[11/24/2024 13:26] serialkiller15
+I will send you my configs I got from @Ch1cK3N_t4c0s because he is mostly busy as I am
+
+
+[11/24/2024 13:28] .7thdragon
+But i think he is using the QV3 or QV4 regressor
+
+
+[11/24/2024 13:28] serialkiller15
+Multi target xgboost 4.6
+
+
+[11/24/2024 13:28] serialkiller15
+It's used for it
+
+
+[11/24/2024 13:29] .7thdragon
+and this cannot be shared? as it is completly different than normal ones and we will not get the same results
+
+
+[11/24/2024 13:29] serialkiller15
+I will never share stuff from others without the ok from them so calm down
+
+{Reactions}
+👍
+
+[11/24/2024 13:30] serialkiller15
+It's his work I asked him so he shared it today so it's fine
+
+
+[11/24/2024 13:31] .7thdragon
+then we need to find another solution, as the default regressors are not reliable
+
+
+[11/24/2024 13:31] serialkiller15
+I am in contact with him when we have time so the impacts are good vry nice
+
+
+[11/24/2024 13:37] serialkiller15
+I will make a new channel for it when I am on my laptop and share the results and the stuff needed for config and installation for others here
+
+{Reactions}
+❤️ (3)
+
+[11/24/2024 13:41] ch1ck3n_t4c0s
+The regressor I can not share
+
+
+[11/24/2024 13:45] xokaidos
+You cannot share it publicly or inperson too?
+
+
+[11/24/2024 13:47] ch1ck3n_t4c0s
+I was explicitly told not too. But a multitarget regressor should work very similarly using xgboost and optuna. Additionally I have not hyperopted it at all or even attempted it.
+
+{Reactions}
+👍 🥲 (2)
+
+[11/24/2024 13:53] ch1ck3n_t4c0s
+🚀 Kraken: Exited TIA/USD (#242)
+Profit: 9.47% (profit: 6.13867969 USD / 6.139 USD)
+Enter Tag: Extrema
+Exit Reason: trailing_stop_loss
+Direction: Long
+Amount: 8.94882000
+Open Rate: 7.21700000
+Exit Rate: 7.96370000
+Duration: 4:14:51 (254.8 min)
+
+
+[11/24/2024 13:58] xokaidos
+Is that result from a spot or futures?
+
+
+[11/24/2024 13:58] xokaidos
+Can that strat short also or only longs?
+
+
+[11/24/2024 14:06] ch1ck3n_t4c0s
+Spot
+
+
+[11/24/2024 14:07] ch1ck3n_t4c0s
+🚀Coinbase TankAi Revival🚀:
+🚀 Coinbase: Partially exited LCX/USD (#103)
+Sub Profit: 15.65% (profit: 4.066 USD / 4.066 USD)
+Cumulative Profit: 4.07 USD / 4.070 USD
+Enter Tag: Minima
+Exit Reason: partial_exit
+Direction: Long
+Amount: 229.8
+Open Rate: 0.113 USD
+Exit Rate: 0.131 USD
+Remaining: 174.229 USD / 174.229 USD
+
+🚀 Coinbase: Exited LCX/USD (#103)
+Sub Profit: 7.28% (profit: 12.733 USD / 12.733 USD)
+Final Profit: 8.05% (16.80289685 USD / 16.803 USD)
+Enter Tag: Minima
+Exit Reason: trailing_stop_loss
+Direction: Long
+Amount: 1546.9
+Open Rate: 0.113 USD
+Exit Rate: 0.122 USD
+Duration: 10 days, 19:34:49 (15574.8 min)
+
+🚀 Coinbase: Partially exited PNG/USD (#116)
+Sub Profit: 9.26% (profit: 1.131 USD / 1.131 USD)
+Cumulative Profit: 1.131 USD / 1.131 USD
+Enter Tag: Extrema
+Exit Reason: partial_exit
+Direction: Long
+Amount: 55
+Open Rate: 0.221 USD
+Exit Rate: 0.243 USD
+Remaining: 221.184 USD / 221.184 USD
+
+🚀 Coinbase: Exited AKT/USD (#113)
+Profit: 5.40% (profit: 76.361 USD / 76.361 USD)
+Enter Tag: Extrema
+Exit Reason: Maxima
+Direction: Long
+Amount: 366.26
+Open Rate: 3.848 USD
+Exit Rate: 4.077 USD
+Duration: 3 days, 20:00:40 (5520.7 min)
+
+✳ Coinbase: Exited PNG/USD (#116)
+Sub Profit: 4.38% (profit: 9.723 USD / 9.723 USD)
+Final Profit: 4.63% (10.85478194 USD / 10.855 USD)
+Enter Tag: Extrema
+Exit Reason: trailing_stop_loss
+Direction: Long
+Amount: 999
+Open Rate: 0.221 USD
+Exit Rate: 0.233 USD
+Duration: 12:30:21 (750.4 min)
+
+
+[11/24/2024 14:08] xokaidos
+Is that using FreqAI or not?
+
+
+[11/24/2024 14:08] ch1ck3n_t4c0s
+Also in the adjust trade portion change the first tp divisor from 4 -> 2
+
+
+[11/24/2024 14:10] ch1ck3n_t4c0s
+It is freqai. It's pretty light though. I run 91 pairs on coinbase and 32 pairs on kraken on the same 4c/4t i5 w 8gb ram and a decent size swap, but it really doesn't get into the swap.
+
+
+[11/24/2024 14:11] ch1ck3n_t4c0s
+🚀Coinbase TankAi Revival🚀:
+🚀 Coinbase: Exited AGLD/USD (#104)
+Sub Profit: 43.09% (profit: 42.402 USD / 42.402 USD)
+Final Profit: 26.11% (273.89934566 USD / 273.899 USD)
+Enter Tag: Minima
+Exit Reason: trailing_stop_loss
+Direction: Long
+Amount: 67.12
+Open Rate: 1.46 USD
+Exit Rate: 2.106 USD
+Duration: 1 day, 0:56:08 (1496.1 min)
+
+✳ Coinbase: Exited PRO/USD (#100)
+Sub Profit: 4.27% (profit: 0.067 USD / 0.067 USD)
+Final Profit: 4.39% (37.24396725 USD / 37.244 USD)
+Enter Tag: Minima
+Exit Reason: Maxima
+Direction: Long
+Amount: 1.2
+Open Rate: 1.299 USD
+Exit Rate: 1.362 USD
+Duration: 4 days, 10:03:41 (6363.7 min)
+
+🚀 Coinbase: Exiting CRO/USD (#108)
+Unrealized Profit: 12.34% (profit: 73.583 USD / 73.583 USD)
+Enter Tag: Minima Full Send
+Exit Reason: Maxima
+Direction: Long
+Amount: 3849.3
+Open Rate: 0.154 USD
+Current Rate: 0.175 USD
+Exit Rate: 0.175 USD
+Duration: 4 days, 0:30:55 (5790.9 min)
+
+
+[11/24/2024 14:11] ch1ck3n_t4c0s
+These are just some of the better wins...
+
+
+[11/24/2024 14:17] xokaidos
+It's interesting, so that strat was in the trade for 4 days to get 4.39% profit...
+
+
+[11/24/2024 14:32] ch1ck3n_t4c0s
+Yep
+
+
+[11/24/2024 16:23] cheluxe
+Hei guys, does anyone know why I get this error when doing baktest? It claims that all training data was dropped due to NaNs and suggests that I may not have downloaded enough data. But, I’ve already do it for an entire year for all pairs using the same configuration file in both commands. It's not the first time that i get this error in time to time.
+
+docker compose run --rm freqtrade_NOTankAi_15_RL backtesting -c user_data/configuration/config-NOTankAi-futures.json --cache none --timeframe 30m --breakdown day week month --timerange 20241001-20241030 --strategy TankAiRevival
+
+docker-compose run --rm freqtrade download-data --config user_data/configuration/config-NOTankAi-futures.json --days 360 -t 1m 5m 15m 30m 4h
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1310279675645399040/message.txt?ex=69f3820a&is=69f2308a&hm=c096678d29f19f4499b217569ecfe9e1277be4fc8c756a01497fc07a7e4359e8&
+
+
+[11/24/2024 17:06] ximontan
+have same, try do with  timeframe = '15m' and     "freqaimodel": "XGBoostRegressor",
+just run it...
+or freqaimodel have no influence...
+
+
+[11/24/2024 17:10] ch1ck3n_t4c0s
+It is a 30m strat do NOT alter it with out changing the window limits properly
+
+{Reactions}
+👍
+
+[11/24/2024 17:49] cheluxe
+It worked for you after doing that changes?
+
+
+[11/24/2024 17:50] cheluxe
+I am still having the same error, even changing the timeframe and the model ☹️
+
+
+[11/24/2024 17:51] cheluxe
+It works well in dry mode though
+
+
+[11/24/2024 17:52] ximontan
+Yes,but result is 0
+
+
+[11/24/2024 18:13] .7thdragon
+2024-11-24 20:02:34,442 - datasieve.pipeline - INFO - VarianceThreshold will remove 3596 features from the dataset.on transform. ['%-fBm_mean_gen_DOGE/USDTUSDT_5m'
+ '%-cycle_move_mean_gen_DOGE/USDTUSDT_5m'
+ '%-h0_move_mean_gen_DOGE/USDTUSDT_5m' ...
+ '%-isBearishSmooth_gen_shift-24_ETH/USDTUSDT_4h'
+ '%-alertBullish_gen_shift-24_ETH/USDTUSDT_4h'
+ '%-alertBearish_gen_shift-24_ETH/USDTUSDT_4h']
+2024-11-24 20:04:08,085 - XGBoostRegressorMultiTarget - INFO - Training model on 24985 features
+2024-11-24 20:04:08,085 - XGBoostRegressorMultiTarget - INFO - Training model on 4392 data points
+just for test i move it to 5m timeframe, but.... r u kidding me ? 24k (3k were removed) 😄 is about 24gb in peak
+
+
+[11/24/2024 18:22] ch1ck3n_t4c0s
+You don't want to run that on 5m
+
+
+[11/24/2024 18:35] .7thdragon
+yes i know, still, is the same thing on 30m and
+[149]   validation_0-rmse:0.25792 at this huge number of features does not improve much (from 0.4)
+
+
+[11/24/2024 18:36] xokaidos
+This would be very painful if running live.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1310313140856295424/image.png?ex=69f2f875&is=69f1a6f5&hm=aee8e3774bec516c91e7de8f36a5f28dc8627345357fff53e6b0dc7fb1c9f72b&
+
+
+[11/24/2024 19:51] .7thdragon
+runned the strat exactly as it is
+1. there are high fragmentation warnings, we could ignore them? with
+from warnings import simplefilter
+simplefilter(action="ignore", category=pd.errors.PerformanceWarning)
+
+2. there are also other not initialized variables like cp, h0, h1, h2
+i presume should have default values something like
+    cp = 80
+    h0 = 40
+    h1 = 27
+    h2 = 20
+
+3. and last, fbm is removed from features (probably is 0), so those are useless
+2024-11-24 21:45:17,430 - freqtrade.freqai.base_models.BaseRegressionModel - INFO - -------------------- Training on data from 2024-10-27 to 2024-11-24 --------------------
+2024-11-24 21:45:17,893 - datasieve.pipeline - INFO - VarianceThreshold will remove 552 features from the dataset.on transform. ['%%-fBm_mean_gen_DOGE/USDTUSDT_30m'
+ '%%-cycle_move_mean_gen_DOGE/USDTUSDT_30m'
+ '%%-h0_move_mean_gen_DOGE/USDTUSDT_30m'
+ '%%-h1_move_mean_gen_DOGE/USDTUSDT_30m'
+ '%%-h2_move_mean_gen_DOGE/USDTUSDT_30m'
+ '%%-candle_-1perc_50_gen_DOGE/USDTUSDT_30m'....
+
+
+[11/24/2024 20:13] ch1ck3n_t4c0s
+I don't get fragmentation warnings, also as the model settles in less things will be removed on subsequent retrains
+
+{Reactions}
+🧐
+
+[11/24/2024 20:14] ch1ck3n_t4c0s
+They are initialized. self.cp etc...
+
+
+[11/25/2024 02:08] .7thdragon
+definitely this cannot be used for shorts in bullrun as it is 🙂
+but still, from what i checked, for 3x lev might be ok 0.1 stoploss, let's dry
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1310426983397589092/image.png?ex=69f3627b&is=69f210fb&hm=b28553513a71173b9d6d364839d3ea2f13c095a7cb5af08c60dd438cea5b7a68&
+
+
+[11/25/2024 09:51] .7thdragon
+2024-11-24 21:45:17,893 - datasieve.pipeline - INFO - VarianceThreshold will remove 552 features from the dataset.on transform. ['%%-h2_move_mean_gen_DOGE/USDTUSDT_30m'
+the problem is that variables are removed completly and cannot be used further for example in custom_exit
+TP0 = current_candle[f'h2_move_mean{pair_tag}']
+KeyError: 'h2_move_mean_gen_DOGE/USDT:USDT_30m'
+
+
+[11/25/2024 10:22] eakapob
+Please share this strategy to me.
+
+
+[11/25/2024 10:23] animeshbarai2006
+yes i would also like to test the strategy
+
+
+[11/25/2024 10:23] animeshbarai2006
+please share it
+
+
+[11/25/2024 12:19] serialkiller15
+@cs could you please use the right channel for it thanks
+
+
+[11/25/2024 12:25] cs_0612_49562
+OK, sorry. I will put the messages to v93-optuna.
+
+
+[11/25/2024 12:27] serialkiller15
+No problem it's easyier to handle
+
+
+[11/25/2024 12:42] laupapp
+someone plan to adjust TankAiRevival for shorting ? because entry point for long is amazing for the moment @Alex Crypto King @7thDragon ? 🤩
+
+
+[11/25/2024 12:49] laupapp
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1310588143065497620/image.png?ex=69f34fd2&is=69f1fe52&hm=aeea75e0ba2e10edbd8e6aea60909023f02e3ce16d1881eea7c4205c63dedd8e&
+
+
+[11/25/2024 12:50] .7thdragon
+in my opinion we are still fouled by the bullrun, the code itself has errors, dataframes used are not ok, but overall "prediction" works, coding regression and tests takes time
+u can use it as it is for longs only
+
+{Reactions}
+👌
+
+[11/25/2024 12:57] serialkiller15
+For longs it's perfect the moment yes I will do some modifications when I have time.
+
+
+[11/25/2024 12:57] laupapp
+yes maybe, difficult to test a strategy with this conditions. Maybe use some approaches to improve some others.
+
+
+[11/25/2024 12:58] serialkiller15
+Absolute
+
+
+[11/25/2024 12:59] laupapp
+ok everyone would have liked to have more time 😉
+
+{Reactions}
+👍
+
+[11/25/2024 13:04] serialkiller15
+@Laurent D. yep absolute
+
+
+[11/25/2024 14:26] ch1ck3n_t4c0s
+Very much a work in progress but it was the next evolutionary step in trying to tame the argelextrema function. I have other ideas but testing takes time at 30m having to wait a few days for a small bit of info then adjust.
+
+
+[11/25/2024 14:28] ch1ck3n_t4c0s
+Currently testing no exit conditions code with take profit automation and trailing stop only and shifting entries forward by one candle.
+
+{Reactions}
+❤️
+
+[11/25/2024 14:30] ch1ck3n_t4c0s
+🚀TankAi-Revival Dev🚀:
+🚀 Kucoin (dry): Exited LINK/USDT (#103)
+Sub Profit: 5.00% (profit: 35.027 USDT / 35.027 USD)
+Final Profit: 5.75% (80.56712894 USDT / 80.567 USD)
+Enter Tag: Extrema
+Exit Reason: trailing_stop_loss
+Direction: Long
+Amount: 40.6637
+Open Rate: 17.21 USDT
+Exit Rate: 18.107 USDT
+Duration: 1 day, 8:00:41 (1920.7 min)
+
+🚀 Kucoin (dry): Exited ICP/USDT (#105)
+Sub Profit: 6.08% (profit: 2.754 USDT / 2.754 USD)
+Final Profit: 6.58% (5.95733708 USDT / 5.957 USD)
+Enter Tag: Extrema
+Exit Reason: trailing_stop_loss
+Direction: Long
+Amount: 3.9821
+Open Rate: 11.357 USDT
+Exit Rate: 12.072 USDT
+Duration: 21:29:37 (1289.6 min)
+
+✳ Kucoin (dry): Exited BCH/USDT (#102)
+Profit: 4.40% (profit: 61.603 USDT / 61.665 USD)
+Enter Tag: Extrema
+Exit Reason: trailing_stop_loss
+Direction: Long
+Amount: 2.8017
+Open Rate: 499.57 USDT
+Exit Rate: 522.58 USDT
+Duration: 1 day, 12:33:20 (2193.3 min)
+
+🚀 Kucoin (dry): Exited AVAX/USDT (#99)
+Sub Profit: 10.14% (profit: 34.992 USDT / 35.027 USD)
+Final Profit: 8.63% (119.09515061 USDT / 119.214 USD)
+Enter Tag: Extrema
+Exit Reason: trailing_stop_loss
+Direction: Long
+Amount: 8.0789
+Open Rate: 42.663 USDT
+Exit Rate: 47.084 USDT
+Duration: 2 days, 0:15:01 (2895.0 min)
+
+
+[11/25/2024 14:31] ch1ck3n_t4c0s
+ROI: Closed trades
+∙ 4544.018 USDT (3.52%) (45.44 Σ%)
+∙ 4548.562 USD
+ROI: All trades
+∙ 3960.936 USDT (2.94%) (39.61 Σ%)
+∙ 3964.897 USD
+Total Trade Count: 103
+Bot started: 2024-11-01 23:31:03
+First Trade opened: 22 days ago (2024-11-03 02:08:44)
+Latest Trade opened: 57 minutes ago (2024-11-25 13:32:47)
+Win / Loss: 95 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 47.83 (100.00)
+Avg. Duration: 1 day, 6:06:37
+Best Performing: AVAX/USDT: 36.89%
+Trading volume: 285681.79 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from  (0 USDT)
+    to  (0 USDT)
+
+
+[11/25/2024 14:38] serialkiller15
+@Ch1cK3N_t4c0s if you need testers or infrastructure let me know
+
+{Reactions}
+❤️
+
+[11/25/2024 17:05] cheluxe
+Can i ask which stake did you use for each order? Also how many open trades did you have at the same time?
+
+
+[11/25/2024 17:07] .7thdragon
+@Ch1cK3N_t4c0s "but testing takes time at 30m having to wait a few days for a small bit of info then adjust."
+thats why testing at 5m (at least for most tunnings) even is not profitable is a good choice at least for take out the code culprits
+dont get me wrong i really respect your work !
+
+{Reactions}
+❤️
+
+[11/25/2024 17:11] ch1ck3n_t4c0s
+I'm running 10 slots 10k starting  dry unlimited stake. I haven't turned on the stake amount logic yet. Trying to nail down other functionality.
+
+
+[11/25/2024 18:27] cheluxe
+Nice! 👍
+
+
+[11/26/2024 08:41] serialkiller15
+@everyone for tankai-revival discussions and adaptions please use the new channel #🚀tankai-revival🚀
+
+{Reactions}
+👍 (2)
+
+[08/15/2025 08:45] .oliver6
+Hi would like to ask if there's Notankai Futures without FreqAI settings? Thanks!
+
+
+[01/27/2026 14:17] serialkiller15
+@everyone after i finished (i think so) BandSniper and others, i will concentrate on the old but gold notankai...
+based on this version i got a good tip of @Pete Wong to include rsi and other stuff into it.
+its runing good at the moment, the signals also look good on chart..stay tuned will report when done!
+
+{Reactions}
+👍 (10)
+
+[01/27/2026 14:17] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1302276651941625929/1465712358650286213/image.png?ex=69f36481&is=69f21301&hm=f05d8ef67dfdf0ac2d441bb41294274b111fff7da5cf33a32a968b1e01cd42a8&
+
+
+==============================================================
+Exported 376 message(s)
+==============================================================

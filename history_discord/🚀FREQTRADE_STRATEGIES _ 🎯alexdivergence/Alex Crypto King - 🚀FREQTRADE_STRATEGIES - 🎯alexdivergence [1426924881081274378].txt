@@ -1,0 +1,2440 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🎯alexdivergence
+==============================================================
+
+[10/12/2025 13:31] serialkiller15
+🎯 Alex Divergence Strategy - The Divergence Hunter 🎯
+
+🔥 What It Does: Your bot now spots divergences across 11 powerful indicators (RSI, MACD, Stochastic, ROC, UO, AO, CCI, CMF, OBV, MFI, ADX) and strikes when multiple signals align!
+
+📊 Entry Logic:
+
+    🟢 LONG: Catches bullish divergences at lower bands (Keltner/Bollinger) when RSI < 60
+    🔴 SHORT: Catches bearish divergences at upper bands when momentum shifts
+
+⚡ Smart Filters:
+
+    ✅ Avoids choppy/ranging markets
+    ✅ RSI confirmation prevents overbought entries
+    ✅ Volume validation on every trade
+    ✅ EMA trend filters (9/20/50/200)
+
+🛡️ Risk Management:
+
+    🎯 ATR-based stop loss & take profit
+    📈 Trailing stop: 2% activation at 3% profit
+    🔧 5x leverage ready
+    ⏱️ 15-minute timeframe
+
+💎 ROI Targets:
+
+    5% @ 0 min
+    3% @ 30 min
+    2% @ 60 min
+    1% @ 300 min
+
+🧠 The Edge: Multi-indicator divergence detection that spots reversals before they happen - when price and momentum disagree, opportunity knocks! 🚀
+
+Trade smart, trade safe! 💪📈
+
+
+[10/12/2025 13:31] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1426925287391625226/Alex_Divergence.py?ex=69f359bb&is=69f2083b&hm=dda30445ed8f586d981eb8c1124eb61ef3feaf89b636bd54eb515e84cc30e108&
+
+{Reactions}
+🚀 (4) 👍 (2)
+
+[10/12/2025 13:32] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1426925403989344422/image.png?ex=69f359d7&is=69f20857&hm=6dbdc8c3947233aaf94b7b46b03f39e87bae5f5f828a63c785ab4bb13612efc0&
+
+{Reactions}
+🚀 (3) 👍 🔥
+
+[10/12/2025 13:32] serialkiller15
+@everyone It was the initial Idea of "TheGreatDivergence" i optimized it and do your tests
+
+{Reactions}
+❤️
+
+[10/12/2025 13:32] serialkiller15
+BandSniper is Based on it...... but this one only does Divergence
+
+{Reactions}
+🚀
+
+[10/12/2025 14:49] boooooon
+Amazing. Look at the distance
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1426944803714896022/Screenshot_20251012_174827_Telegram.jpg?ex=69f36be8&is=69f21a68&hm=d64181bb1ca8e0aa7c4fff98a1f9d94a09ea11b611cd5904e2a2144c74e58b5a&
+
+{Reactions}
+🔥
+
+[10/12/2025 14:51] serialkiller15
+I know
+
+
+[10/12/2025 14:57] ywk3926
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1426946805010006106/Screenshot_2025-10-12-22-56-55-83_948cd9899890cbd5c2798760b2b95377.jpg?ex=69f36dc5&is=69f21c45&hm=52893e691f2716a0647fdf142c77fae1d32b1282d04cce5f12e6e6581b1fe03c&
+
+
+[10/12/2025 15:03] boooooon
+Give a time
+
+
+[10/12/2025 15:40] serialkiller15
+But be aware of the longs was not so successful maybee it works now did some changes..
+
+
+[10/12/2025 17:48] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1426989965551861780/IMG_8543.png?ex=69f395f7&is=69f24477&hm=dcbb9e52f23abe70d4cbd5c926d56c0d4e0f4b0d87baf5e9d1054c3869c16e95&
+
+
+[10/12/2025 17:48] xf0x0f
+Need to check conf again
+
+
+[10/12/2025 17:49] xf0x0f
+Whats your TF?
+
+
+[10/12/2025 17:58] serialkiller15
+15m it only works in good up or downtrend, will fix it soon give me some minutes..
+
+
+[10/13/2025 07:41] serialkiller15
+more stable version!
+
+
+[10/13/2025 07:41] serialkiller15
+@everyone fixed the entrys looks more stable now
+
+
+[10/13/2025 07:41] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1427199658085843055/TGDF_ALEXV6.py?ex=69f307c2&is=69f1b642&hm=a7c596fbb72e2f0334e9608f03eac52c255435d0addd2ffb820474ed658634f6&
+
+
+[10/13/2025 09:19] ywk3926
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1427224128884052039/image.png?ex=69f31e8c&is=69f1cd0c&hm=b77fc5f575c7ffc5995466191ee380ab6f8cc0a35a35de1369bd68b0dc25d759&
+
+
+[10/13/2025 09:39] serialkiller15
+and what do you want me to say about this?
+
+{Reactions}
+😂 (6)
+
+[10/13/2025 11:13] vasko123.
+ROI: Closed trades
+∙ 38.876 USDT (2.90%) (3.93 Σ%)
+∙ 38.915 USD
+ROI: All trades
+∙ 15.665 USDT (0.86%) (1.58 Σ%)
+∙ 15.681 USD
+Total Trade Count: 37
+Bot started: 2025-10-13 08:48:12
+First Trade opened: 2 hours ago (2025-10-13 08:51:37)
+Latest Trade opened: 9 minutes ago (2025-10-13 11:03:04)
+Win / Loss: 26 / 1
+Winrate: 96.30%
+Expectancy (Ratio): 1.44 (3.71)
+Avg. Duration: 1:01:03
+Best Performing: ETHFI/USDT:USDT: 3.714 USDT (7.38%)
+Trading volume: 15880.81 USDT
+Profit factor: 101.16
+Max Drawdown: 0.04% (0.388 USDT)
+    from 2025-10-13 09:19:13 (8.326 USDT)
+    to 2025-10-13 09:19:16 (7.938 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-10-13 11:06:39 (38.876 USDT)
+
+{Reactions}
+🔥 (3)
+
+[10/13/2025 11:15] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1427253290231402516/image.png?ex=69f339b5&is=69f1e835&hm=dfe975552a8c95c907eac8b376ed7b1030be9cc6d82a7c23d054b9355dd2d97f&
+
+
+[10/13/2025 20:41] xf0x0f
+hmmmm
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1427395754334490684/Bildschirmfoto_2025-10-13_um_22.40.45.png?ex=69f315a3&is=69f1c423&hm=10caf9b06fb61730e2ccec4796ddaec9aa799eaf5eea1b85f0ba334407867840&
+
+{Reactions}
+👀 (2)
+
+[10/14/2025 15:29] serialkiller15
+Added 1h divergence let's finish tests..
+
+
+[10/15/2025 10:31] boooooon
+but results of dry-run are crazy
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1427967170968682629/image.png?ex=69f32f8f&is=69f1de0f&hm=4086535b3d32797d8734a41eb6c72c9e41112b2b0d383537e034f55e62650d05&
+https://cdn.discordapp.com/attachments/1426924881081274378/1427967171421671518/image.png?ex=69f32f90&is=69f1de10&hm=b9d5827674fa22fffdf378733e4d18c5143df50f4d29c4f3f544148e9976da73&
+https://cdn.discordapp.com/attachments/1426924881081274378/1427967171857874954/image.png?ex=69f32f90&is=69f1de10&hm=6d960a52a5652badef62392f39a8c726b866ac8b413bf465e20e356980a7fffe&
+
+
+[10/15/2025 10:33] serialkiller15
+thanks mate i know it has lookahead bias, but not in the signals/entrys the have no lookahead, sometimes lookahead is bad but not in this case, as you see your results are pretty good.? what pairlist are you using for?
+
+
+[10/15/2025 10:35] boooooon
+```json
+  "pairlists": [
+    {
+      "method": "VolumePairList",
+      "number_assets": 80,
+      "sort_key": "quoteVolume",
+      "min_value": 1000000,
+      "refresh_period": 3600,
+    },
+    {
+       "method": "AgeFilter", 
+       "min_days_listed": 45 
+    }
+  ]
+```
+
+
+[10/15/2025 14:05] viking046433
+Is this the last one shared?
+
+
+[10/15/2025 14:15] boooooon
+yes
+
+{Reactions}
+🚀
+
+[10/17/2025 10:56] serialkiller15
+Next release is good will release before weekend...
+
+{Reactions}
+👍 (6) 🚀
+
+[10/18/2025 11:24] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1429067734750072913/image.png?ex=69f33c0a&is=69f1ea8a&hm=0385a4725988a143a0334db24947db96f0f12610060970c88bb13f2e753b123a&
+
+
+[10/18/2025 11:25] serialkiller15
+Release on Monday!
+
+
+[10/18/2025 11:25] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1429067805634072587/image.png?ex=69f33c1b&is=69f1ea9b&hm=51dadab32e5834c86d271e5eacc7101f88b66cb5886b9b10b2c642857755033f&
+
+{Reactions}
+🚀 (6)
+
+[10/18/2025 11:26] darkreaper0756
+Very nice result! 🍾
+
+{Reactions}
+👍
+
+[10/18/2025 11:26] viking046433
+Can you also please share your config when time comes because I can never repeat any results you guys have
+
+
+[10/18/2025 11:26] serialkiller15
+no problem will upload both after weekend!
+
+
+[10/18/2025 11:27] viking046433
+Tnx
+
+
+[10/18/2025 11:29] darkreaper0756
+The config is not the problem. There are many other factors…
+
+
+[10/18/2025 11:30] viking046433
+I have seen a config file break profits
+
+
+[10/18/2025 11:48] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1429073664535433237/image.png?ex=69f34190&is=69f1f010&hm=f173b7baaface4037972710da8a162b50a0f3a9fef1536f6573167e9c3d611d4&
+
+{Reactions}
+🔥 (2)
+
+[10/18/2025 11:57] serialkiller15
+Nice Results!
+
+
+[10/20/2025 08:09] viking046433
+@Alex Crypto King  you at work today?
+
+
+[10/20/2025 08:10] serialkiller15
+Morning, i am on my pc! and will finish it today
+
+{Reactions}
+🔥 (2)
+
+[10/20/2025 08:10] viking046433
+Super star
+
+
+[10/20/2025 08:11] serialkiller15
+there was a small bug on shorts, its fixed looks better now....backtest is running...
+
+{Reactions}
+🚀
+
+[10/20/2025 08:11] viking046433
+Share some backtest results just for kicks
+
+
+[10/20/2025 08:13] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1429744291777085481/image.png?ex=69f30f22&is=69f1bda2&hm=9ce04d76f9149562cde868d885cbbf1cd8c147488975c11f294207d0539ca3dc&
+
+
+[10/20/2025 08:13] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1429744368876650586/image.png?ex=69f30f34&is=69f1bdb4&hm=f06135f84cc81521f376c7801875e3bec86799b8919f10e1fcaee5e3a6abd115&
+
+{Reactions}
+🔥 (3)
+
+[10/20/2025 08:13] snokard.
+you running it on 1h?
+
+
+[10/20/2025 08:14] serialkiller15
+nope 15m
+
+
+[10/20/2025 08:14] serialkiller15
+since friday
+
+
+[10/20/2025 08:14] snokard.
+Day (count)      USDT              Profit %
+---------------  ------------  --  ----------
+2025-10-20 (16)  18.518 USDT    0  1.91%
+2025-10-19 (21)  25.303 USDT    0  2.69%
+2025-10-18 (8)   20.39 USDT     0  2.21%
+2025-10-17 (58)  -110.73 USDT   0  -10.73%
+2025-10-16 (29)  -6.953 USDT    0  -0.67%
+2025-10-15 (15)  39.045 USDT    0  3.90%
+2025-10-14 (0)   0 USDT         0  0.00%
+
+Got this on 1h
+
+
+[10/20/2025 08:14] snokard.
+Oh i see i will set it up for 15m on next run 😉
+
+
+[10/20/2025 08:14] serialkiller15
+the Curve is yesterday going down because of the bug in shorts!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1429744603736834058/image.png?ex=69f30f6c&is=69f1bdec&hm=78662c16faa0205cbbf3ddf0cc1e9255c39d426b6f85f5466ae9efa7497986ad&
+
+{Reactions}
+🔥 (2) 🚀
+
+[10/20/2025 08:14] snokard.
+Looks amazing....
+
+
+[10/20/2025 08:14] serialkiller15
+can you please share your entrys? the Bear_Div was not good
+
+
+[10/20/2025 08:15] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1429744743625130034/image.png?ex=69f30f8e&is=69f1be0e&hm=8a319ac32cb234439bd1066066133bec60f2998c68c70f4a9a9e3cde93ad7efd&
+
+
+[10/20/2025 08:15] snokard.
+Entry Tag Performance:
+1.  bearish_div_short 71.284 USDT (2.75%) (54)
+2.  bullish_div_long -85.709 USDT (-1.91%) (93)
+
+
+[10/20/2025 08:15] boooooon
+this is my results
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1429744876022661230/image.png?ex=69f30fad&is=69f1be2d&hm=069ca07677ad288790ff6fe89053cf92b05145f16b494852aa32ccb9bb402a4e&
+
+
+[10/20/2025 08:15] serialkiller15
+thanks!
+
+
+[10/20/2025 08:16] snokard.
+We both having issues with longs looks like
+
+
+[10/20/2025 08:16] snokard.
+I also noticed that both in divergence and bandsniper im getting lots of trades "stuck" for days
+
+
+[10/20/2025 08:16] serialkiller15
+yes this is fixed in V2
+
+{Reactions}
+🔥
+
+[10/20/2025 08:17] serialkiller15
+will release soon last test!
+
+
+[10/20/2025 08:29] serialkiller15 (pinned)
+@everyone 
+🎯 Alex Divergence Strategy V18 - Discord Description
+📊 Strategy Overview:
+Advanced multi-timeframe divergence trading system that catches market reversals using 11 technical indicators across RSI, MACD, Stochastic, CCI, MFI, and more. Optimized for 15m timeframe with 1H confirmation.
+Bull_Div: Standard bullish divergence with falling price momentum confirmation
+Bull_Div_HQ: High-quality bullish divergence (no momentum requirement - cleaner signal)
+Bear_Div: Bearish divergence with rising price momentum filter
+AGG: Aggressive entries at band extremes (15m)
+CONS: Conservative high-confidence signals (multiple divergences)
+PB: Pullback entries at EMA support/resistance
+1H: Early warnings from higher timeframe divergences
+
+⚙️ Key Features:
+✅ Dual timeframe analysis (15m + 1h)
+✅ Price momentum filters prevent late entries (Bull_Div only triggers while price falling, Bear_Div while rising)
+✅ HQ variant for cleaner signals without momentum requirement
+✅ Bollinger Band + Keltner Channel filters
+✅ Dynamic ATR-based stop loss & take profit (2x ATR targets)
+✅ Opposite divergence exit detection (auto-exit on reversal signals)
+✅ Choppy market filters (avoids whipsaw trades)
+✅ RSI-based momentum exits (protect profits at extremes)
+✅ Works for both LONG and SHORT positions
+
+🔄 Entry Logic Difference:
+Bull_Div: Requires price falling (2 consecutive down candles) - catches active reversals
+Bull_Div_HQ: No momentum filter - triggers on divergence + bands only - fewer but cleaner signals
+Bear_Div: Requires price rising (prevents shorting already-falling price)
+💡 Best For:
+Crypto pairs with good volatility and clear trends. Excels at catching bottoms (Bull_Div/HQ) and tops (Bear_Div) in trending markets. Also works in range-bound reversals. Not recommended for extremely choppy or low-volume pairs.
+
+{Reactions}
+🚀 (2)
+
+[10/20/2025 08:30] serialkiller15
+Config
+  "pairlists": [
+    {
+      "method": "VolumePairList",
+      "number_assets": 150,
+      "sort_key": "quoteVolume",
+      "min_value": 1000000,
+      "refresh_period": 3600
+    },
+    {
+      "method": "AgeFilter",
+      "min_days_listed": 45
+    },
+    {
+      "method": "PrecisionFilter"
+    },
+    {
+      "method": "PriceFilter",
+      "low_price_ratio": 0.01
+    },
+    {
+      "method": "SpreadFilter",
+      "max_spread_ratio": 0.005
+    },
+    {
+      "method": "VolatilityFilter",
+      "lookback_days": 10,
+      "min_volatility": 0.02,
+      "max_volatility": 0.75,
+      "refresh_period": 86400
+    }
+
+{Reactions}
+🔥 (4)
+
+[10/20/2025 08:30] serialkiller15
+Pinned a message.
+
+
+[10/20/2025 08:36] serialkiller15
+if need you can adjust the Stoploss ! your choice please do your tests, and decisions!
+
+{Reactions}
+🚀
+
+[10/20/2025 09:28] viking046433
+Tnx my man
+
+{Reactions}
+🔥 (2)
+
+[10/20/2025 09:40] serialkiller15
+Pinned a message.
+
+
+[10/20/2025 10:43] xf0x0f
+can yo uplease also post some of your signals?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1429781948187803731/Bildschirmfoto_2025-10-20_um_12.42.21.png?ex=69f33234&is=69f1e0b4&hm=87381215efa40f19dd73b30fd9bb404e05017a979e8582d28e05c514273700a5&
+https://cdn.discordapp.com/attachments/1426924881081274378/1429781948527804456/Bildschirmfoto_2025-10-20_um_12.42.13.png?ex=69f33234&is=69f1e0b4&hm=51c2a32bef3cd8dc7cd96d8b6b606934f56e579dac8ab967d6cb5bb6a8e1b9c6&
+https://cdn.discordapp.com/attachments/1426924881081274378/1429781948871606344/Bildschirmfoto_2025-10-20_um_12.42.00.png?ex=69f33234&is=69f1e0b4&hm=9705c6efe6fc9b171d7063f9c0e71dccb64c5c0e7b4fd9c8efa5579b7223799d&
+
+
+[10/20/2025 10:45] viking046433
+@Alex Crypto King  do you have some kind of kill switch if btc drops suddenly? One of my strategies was in 70% profit had 5 open trades and the bot could not catch it. Wiped all my profit. Or would stop loss on exchange help with this?
+
+
+[10/20/2025 10:46] ch1ck3n_t4c0s
+I wouldn't tie anything to another asset... your heading into alt szn
+
+
+[10/20/2025 13:53] serialkiller15
+@everyone Fixed Price Rising and Falling
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1429829970775244962/AlexDivergenceV2.py?ex=69f35eed&is=69f20d6d&hm=e4c6d9e986bbf6b0345d582e0f224c3eae386e25907f0fb08d54cd71e1a9e90c&
+
+{Reactions}
+🔥 (3)
+
+[10/20/2025 17:48] serialkiller15
+after the weekend hype today it crashed realy bad...
+need to rethink some thinks in here, dont do on live! will check it the next days!
+
+
+[10/20/2025 17:52] boooooon
+1st version looks better for me
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1429890023976735021/Screenshot_20251020_205102_Telegram.jpg?ex=69f396db&is=69f2455b&hm=70f45d1d89fdc356c71a627d566e56cc562bc031ef058342cfca16d1dbcf7b21&
+https://cdn.discordapp.com/attachments/1426924881081274378/1429890024970784798/Screenshot_20251020_205117_Telegram.jpg?ex=69f396dc&is=69f2455c&hm=e063615dd0861ac87bebe339bdaa9d89a52210129ee421d4841194f7853b07a5&
+
+
+[10/20/2025 17:56] viking046433
+Wow the market is so extremely dynamic it's so strange for me that indicators works 100% for a time then just how wack
+
+
+[10/20/2025 17:57] serialkiller15
+@x thanks for sharing will rethink it
+
+
+[10/20/2025 18:09] serialkiller15
+but not today will let it run enjoy your day!
+
+{Reactions}
+🚀
+
+[10/20/2025 18:42] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1429902687566299286/image.png?ex=69f2f9e7&is=69f1a867&hm=99fed9fc866617dc6313c84a294c8e81977dfbb8b2928011b18c7207c7f7aa1d&
+
+
+[10/20/2025 18:44] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1429903034200363230/image.png?ex=69f2fa39&is=69f1a8b9&hm=2705e1a08e970003bc0e8518366f18640bdbbc8c7243d11165fac97112846c27&
+
+
+[10/20/2025 18:51] serialkiller15
+V1 and v2?
+
+
+[10/20/2025 18:52] serialkiller15
+Or what is the difference
+
+
+[10/20/2025 18:52] serialkiller15
+Ah i See thanks V1 is better
+
+
+[10/21/2025 00:39] divarak
+So.. How is it going you guys who are  running both versions? Which one is performing better in your tests?
+
+
+[10/21/2025 01:43] ywk3926
+ROI: Closed trades
+∙ -68.406 USDT (-1.27%) (-6.91 Σ%)
+∙ -68.406 USD
+ROI: All trades
+∙ -88.933 USDT (-1.41%) (-8.98 Σ%)
+∙ -88.933 USD
+Total Trade Count: 133
+Bot started: 2025-10-20 14:23:14
+First Trade opened: 11 hours ago (2025-10-20 14:23:54)
+Latest Trade opened: 4 minutes ago (2025-10-21 01:32:16)
+Win / Loss: 63 / 50
+Winrate: 55.75%
+Expectancy (Ratio): -0.61 (-0.23)
+Avg. Duration: 0:45:50
+Best Performing: EIGEN/USDT:USDT: 3.118 USDT (3.55%)
+Trading volume: 58146.294 USDT
+Profit factor: 0.48
+Max Drawdown: 6.91% (68.406 USDT)
+    from 2025-10-20 14:25:44 (-2.621 USDT)
+    to 2025-10-21 01:32:11 (-68.406 USDT)
+Current Drawdown: 6.91% (68.406 USDT)
+    from 2025-10-20 14:25:44 (0 USDT)
+
+
+[10/21/2025 06:43] serialkiller15
+from my Tests the AlexdivergenceV1 is doing best mostly! the V2 is worse but the Signals on Charts are good will go deeper into it!
+
+
+[10/21/2025 06:45] viking046433
+I'm working on a v3 the bias have been removed it has bad Drawdown in backtest but overall in profit of 17% in 19 days
+
+
+[10/21/2025 06:45] viking046433
+10 days sorry
+
+
+[10/21/2025 06:46] serialkiller15
+Thanks so if you would share it with me (DM) so we dont have to do it double? thanks mate
+
+
+[10/21/2025 06:46] viking046433
+Sure
+
+
+[10/21/2025 06:53] boooooon
+results of V1 from 1h timeframe
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1430086585889591316/image.png?ex=69f2fc6b&is=69f1aaeb&hm=c432b71cdd40ce7022c8e7832813d5c2298a350121ec7e2ace68c111b59cdca2&
+
+{Reactions}
+🔥
+
+[10/21/2025 06:53] serialkiller15
+damn thats realy nice!
+
+
+[10/21/2025 06:54] serialkiller15
+could you be so kind and show the entrys?
+
+
+[10/21/2025 06:55] boooooon
+```
+Entry Tag Performance:
+1.  bearish_div_short 8521.901 USDT (1.89%) (45)
+2.  bullish_div_long 1959.61 USDT (0.35%) (56)
+```
+
+
+[10/21/2025 06:55] serialkiller15
+Thats nice! so we will continue with v1!
+
+{Reactions}
+🔥
+
+[10/21/2025 06:58] viking046433
+ya thats nice
+
+
+[10/21/2025 06:58] viking046433
+What is your max open trades?
+
+
+[10/21/2025 06:59] boooooon
+20
+
+
+[10/21/2025 06:59] ywk3926
+Which V1 is this? Is it the version released last week?
+
+
+[10/21/2025 06:59] boooooon
+yes
+
+
+[10/21/2025 07:00] serialkiller15
+https://discord.com/channels/1238181199206154373/1426924881081274378/1427199658463072276
+
+
+[10/21/2025 07:00] serialkiller15
+this should it be!
+
+
+[10/21/2025 07:04] ywk3926
+If we set the stop loss for v2 to 0.5, Will the result be better than v1? I feel that v1 is mainly that the stop loss is very large, and there is a chance to wait for the market to turn around, but the risk is also greater.
+
+
+[10/21/2025 07:04] ywk3926
+Let me test it.
+
+
+[10/21/2025 07:07] boooooon
+but the duration of the signals will also increase, which is also not very good
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1430090040696111164/image.png?ex=69f2ffa3&is=69f1ae23&hm=c1f9d675e0a99d4f13c9cd46296be460170677ebc061f9fa7f945ec6eb451ff5&
+
+
+[10/21/2025 09:10] viking046433
+All statagies I was working on has faild after 3 months of trading now I'm totally invested in to this team sport
+
+{Reactions}
+😆 (2)
+
+[10/21/2025 09:11] xf0x0f
+lets go 😄
+
+{Reactions}
+🔥
+
+[10/21/2025 15:52] viking046433
+What is V1 stop loss?
+
+
+[10/21/2025 17:22] viking046433
+ROI: Closed trades
+∙ 209.104 USDT (6.21%) (21.12 Σ%)
+∙ 3646.779 ZAR
+ROI: All trades
+∙ 210.348 USDT (4.79%) (21.25 Σ%)
+∙ 3668.474 ZAR
+Total Trade Count: 21
+Bot started: 2025-10-20 16:17:39
+First Trade opened: 9 hours ago (2025-10-21 07:40:06)
+Latest Trade opened: 2 minutes ago (2025-10-21 17:19:30)
+Win / Loss: 15 / 1
+Winrate: 93.75%
+Expectancy (Ratio): 13.07 (5.10)
+Avg. Duration: 1:30:07
+Best Performing: MYX/USDT:USDT: 44.033 USDT (20.83%)
+Trading volume: 39112.839 USDT
+Profit factor: 82.65
+Max Drawdown: 0.24% (2.561 USDT)
+    from 2025-10-21 15:11:35 (94.464 USDT)
+    to 2025-10-21 16:10:41 (91.904 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-10-21 17:19:18 (209.104 USDT)
+
+{Reactions}
+😮 (4)
+
+[10/21/2025 17:22] viking046433
+V1 1h timeframe
+
+
+[10/21/2025 17:27] serialkiller15
+Nice I also switched to 1h
+
+{Reactions}
+🫡
+
+[10/21/2025 17:37] viking046433
+I also it have 5 max open trades
+
+
+[10/21/2025 17:56] ch1ck3n_t4c0s
+1h looking good
+
+
+[10/21/2025 18:08] serialkiller15
+Yes
+
+
+[10/21/2025 18:08] serialkiller15
+ROI: Closed trades
+∙ 48.13 USDT (3.77%) (6.02 Σ%)
+∙ 48.13 USD
+ROI: All trades
+∙ 43.882 USDT (3.14%) (5.49 Σ%)
+∙ 43.882 USD
+Total Trade Count: 70
+Bot started: 2025-10-20 16:02:33
+First Trade opened: 11 hours ago (2025-10-21 06:19:21)
+Latest Trade opened: 6 minutes ago (2025-10-21 18:01:54)
+Win / Loss: 64 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 0.75 (100.00)
+Avg. Duration: 0:24:33
+Best Performing: F/USDT:USDT: 5.156 USDT (25.78%)
+Trading volume: 13297.404 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from 2025-10-21 06:26:48 (0.142 USDT)
+    to 2025-10-21 06:26:48 (0.142 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-10-21 17:20:14 (48.13 USDT)
+
+
+[10/22/2025 00:52] ohbad1330
+v2 also doing good at 1h TF
+
+
+[10/22/2025 00:54] ch1ck3n_t4c0s
+the problem may not be the strat but the timeframe
+
+{Reactions}
+👍
+
+[10/22/2025 00:54] ch1ck3n_t4c0s
+even at 1hr very easy to miss the big picture
+
+
+[10/22/2025 06:09] serialkiller15
+@Ch1cK3N_t4c0s yes you are right about it 1h is even better with the results!
+
+
+[10/22/2025 06:10] serialkiller15
+@ohbad can you please share results in the results channel? thanks
+
+
+[10/22/2025 06:59] ohbad1330
+Done.
+
+
+[10/22/2025 07:00] serialkiller15
+Thanks!
+
+{Reactions}
+👍
+
+[10/22/2025 14:13] jsplaybox
+@Alex Crypto King Which V1 version file are you testing, Alex_Divergence.py or TGDF_ALEXV6.py？
+
+
+[10/22/2025 14:27] serialkiller15
+I think it's tgsf...
+
+
+[10/22/2025 14:28] jsplaybox
+Okay, thanks, I'll go test it now and see what happens.
+
+
+[10/22/2025 16:36] serialkiller15 (pinned)
+@everyone here is V1 with custom exits implemented this version i am running for a view days!
+use 1h its getting better resulsts!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1430595589153882112/AlexDivergenceV1_customexits.py?ex=69f384f7&is=69f23377&hm=d3486a749d14a3def0af97a8d580b8c83db5f7734ff187a79b412d988ceed765&
+
+{Reactions}
+🚀 (6)
+
+[10/22/2025 16:48] serialkiller15
+Pinned a message.
+
+
+[10/22/2025 21:09] ch1ck3n_t4c0s
+what all did you change did you remove 1h informative?? or just change main tf to 1h
+
+
+[10/22/2025 21:18] divarak
+I modified the timeframe and the informative to 1h, so far no entries... I guess I shouldn't touch the informative timeframe.
+
+
+[10/22/2025 21:19] ch1ck3n_t4c0s
+i fired up the diveregnce for rn.. trying to get aster working w freqtrade by the weekend.
+
+
+[10/23/2025 00:20] ch1ck3n_t4c0s
+in dry mode... looks great... im turning up the heat..
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1430712550424842350/image.png?ex=69f34925&is=69f1f7a5&hm=1ed5eb063cd9c0a93280e3101eef4334cf9e9bbb1640f5c0feb28ea8b7721fb7&
+
+
+[10/23/2025 00:21] ch1ck3n_t4c0s
+10x 5 pairs
+
+
+[10/23/2025 00:21] ch1ck3n_t4c0s
+very small pairs list...
+
+
+[10/23/2025 04:12] niutie8977
+the infoamative timeframe is 15m in strategy, and we use 1h
+
+
+[10/23/2025 04:12] niutie8977
+in config?
+
+
+[10/23/2025 06:24] viking046433
+I think 1h is informed not 15m original 15m timeframe and 1h inform
+
+
+[10/23/2025 08:14] serialkiller15
+on V1 please reduce the stoploss from 0,5 to 0.07 or another value, because you will get stuck on some looses if market changes! thanks!
+
+{Reactions}
+👍 (2)
+
+[10/23/2025 08:50] willibolo
+Hey Alex! Was it somehow tested? Does SL of 0.07 significantly reduce potential drawdowns and trade duration?
+
+
+[10/23/2025 09:01] brewy_024
+If i understand right, that is hard stop loss and it is 50% of current trade stake at the moment, reducing it to 0.07 will stop and exit any trade that goes 7% in negative. Isn't that almost same approach you tried with V2 and 0.05 stop loss and is 7% enough for market wiggle room?
+
+
+[10/23/2025 09:03] serialkiller15
+i think we should test it, yesterday i got stocked with trades in negative about -80 usdt thats why i am posting this here!
+
+
+[10/23/2025 09:04] serialkiller15
+i dont thik it will be enough! yes but better then 0.5
+
+
+[10/23/2025 09:04] serialkiller15
+or define a custom_stoploss...
+
+
+[10/23/2025 09:32] brewy_024
+That's what i was talking about last week in results channel that made you do V2 which turned out fail. This is high risk strategy which also means that it high reward. Reducing SL will most certainly reduce win rate by a lot. I can't stress much about it but if you have 20 long open trades with 5x leverage (which is default for this strat) and we get market movement like it happened on October 10th, your account is 100% liquidated. Keep that in mind before trying this strategy live
+
+
+[10/23/2025 09:34] serialkiller15
+you are absolute right mate!
+
+
+[10/23/2025 09:39] brewy_024
+I will try to think of some good ideas about custom_exit or custom_stoploss or maybe add some kind of protections, but i can't promise anything and I'm kinda limited with resources since this startegy is really CPU heavy for my old laptop that i use to test them
+
+
+[10/23/2025 09:40] serialkiller15
+the custom_exits are good as they are at the moment, let me think about a custom_stoploss ok! enough recoursces here, also protections would bee good to implement!
+
+{Reactions}
+💪
+
+[10/23/2025 09:42] viking046433
+I was working on a emergency cut off switch if the btc drops by 3% instantly it instantly closes all open trades and pause trading for an hour. But it's a problem to test
+
+
+[10/23/2025 09:45] .7thdragon
+1. tgdf is a repainting strat - fixing it will have a winner. the confirmation take around 5 candles if remember correctly, i need to check
+2. volatility screws the 0.02-0.07 sl, it needs to be bigger (relative to trade.open_rate) only few candles after opening
+
+
+[10/23/2025 09:47] serialkiller15
+thanks mate!
+
+
+[10/23/2025 10:01] serialkiller15
+yes there where 5 candles i will fix it !
+
+
+[10/23/2025 10:04] viking046433
+@Alex Crypto King do we have some results for V1 with custom exit yet?
+
+
+[10/23/2025 10:05] serialkiller15
+yes posted it #📊alexdivergence_results
+
+
+[10/23/2025 10:06] viking046433
+I'm trying to figure out what will the best be slower profit with min Drawdown so more max opem Trades or faster profits
+
+
+[10/23/2025 10:20] serialkiller15
+i think i fixed the repainting stuff, lets run backtest and dry....will share results later on
+
+
+[10/23/2025 11:27] ywk3926
+Do I need to manually change tf to 1h in the new version?
+
+
+[10/23/2025 11:45] serialkiller15
+Yes
+
+
+[10/23/2025 13:01] neveerrk
+What is the difference between shift(1) and shift(-1)? Which one represents the previous K line?
+
+
+[10/23/2025 14:08] michele.tedeschi
+i'm trying V1 but CPU is always at 100%, suggestions?
+
+
+[10/23/2025 14:36] serialkiller15
+@neveerr i already fixed it!
+
+{Reactions}
+👍
+
+[10/23/2025 14:40] serialkiller15
+@everyone i fixed the repainting this Version is Based on V1 with custom_exits, 
+please test on 1h and 15m running it since 11 am still no trades. need testers thanks! V24
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1430928922358579391/AlexDivergenceV24.py?ex=69f369e8&is=69f21868&hm=6f8319070ec59129da05d8ba4ceb0091d845bffed35548fc2672d374af0d5e16&
+
+{Reactions}
+🚀 (7) 🇷🇴 👍
+
+[10/23/2025 15:54] serialkiller15
+for testing will run a version without any exits, only reversal exits will see how it does!
+
+
+[10/23/2025 19:29] dragongoattigercat
+I have run V24 for 4 hours with 1h TF and there is no trade so far
+
+
+[10/23/2025 19:30] serialkiller15
+You see some entrys signals in the chart I have the same here will check tomorrow
+
+
+[10/23/2025 19:31] dragongoattigercat
+yes, there are signals for entry and exits on the chart. I will let it run for now
+
+
+[10/23/2025 19:31] serialkiller15
+Will check thanks
+
+
+[10/23/2025 19:32] michele.tedeschi
+i'm trying V24 but CPU is always at 100%, like V1
+
+
+[10/23/2025 19:32] dragongoattigercat
+my CPU is running only 50%
+
+
+[10/23/2025 19:46] michele.tedeschi
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1431005862499057734/Screenshot_2025-10-23_at_21.45.36.png?ex=69f308d0&is=69f1b750&hm=64422d3ccd3e6f6f08f8576bcda02dfde43e0928f62ec7e200f32756b5c5baf3&
+
+
+[10/23/2025 19:47] ggoyito
+What cpu do you have?
+
+
+[10/23/2025 19:47] serialkiller15
+It's not a problem of the Strategy I have 7 bots running and no performance iasues
+
+
+[10/23/2025 19:47] serialkiller15
+On the same Maschine
+
+
+[10/23/2025 19:47] michele.tedeschi
+I left it on for hours but it stays at 100%
+
+
+[10/23/2025 19:48] michele.tedeschi
+AMD Ryzen 5 7640HS
+
+
+[10/23/2025 19:49] michele.tedeschi
+Could it be related to a configuration? The V2 didn't give me this problem.
+
+
+[10/23/2025 19:54] serialkiller15
+You have this problem on V1?
+
+
+[10/23/2025 20:15] michele.tedeschi
+yes
+
+
+[10/23/2025 21:17] boooooon
+the same with v3
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1431028757870936094/image.png?ex=69f31e23&is=69f1cca3&hm=7550c687de6d12e93e010e534cdb81813e873c4e3275e50b1584a9a10eb6f06f&
+
+
+[10/24/2025 01:28] divarak
+Guys, I am trying V3 (AlexDivergenceV24.py), I'm not using docker on my windows server, on log show an error about not using freqai, I am running with this parameter: --freqaimodel LightGBMRegresor . Is this Ok? should ignore the error?
+
+
+[10/24/2025 04:50] serialkiller15
+There is no freqai on it no need to use the freqai in there
+
+{Reactions}
+🫡
+
+[10/24/2025 14:41] serialkiller15
+@everyone some review of the different Version - 
+V1 is running best on 1h Timeframe
+V2 is waste of time at the moment no entrys at all
+also V24 no Entrys.
+
+yes V1 has repainting in it but if we see the results its not a real problem from my side
+run V1 with custom exits i posted here on 1h Timeframe
+also i would say max 10 trades usd -> your decision!
+
+{Reactions}
+👍 (2)
+
+[10/24/2025 14:42] serialkiller15
+@x you can limit the cpu usage in docker with a command or in portainer
+
+
+[10/24/2025 14:42] serialkiller15
+i never had issues with cpu on divergence, maybee i have to much power here
+
+
+[10/24/2025 14:44] boooooon
+So, is `v1_custom_exits` (1h tf) better than the basic `v1`?
+https://discord.com/channels/1238181199206154373/1426924881081274378/1430595589720117319
+
+
+[10/24/2025 14:45] serialkiller15
+the signals are the same, your choice i prefer the custom_exits (small profits but faster exits) running both at the moment!
+will release a Vx_custom_exits with longer holding the trades after the tests, some market situations are good to hold the trades longer!
+
+{Reactions}
+👍 (3)
+
+[10/24/2025 16:29] sliper82_32020
+I’m currently testing Version 2 live, set on 1h as main timeframe and 4h as informative timeframe, and it’s actually entering trades consistently.
+
+
+[10/24/2025 16:34] sliper82_32020
+Today we had a lot of power outages, so I closed the last trades and exited the exchange, even some in loss. Now I started again with only one trade running and 5x leverage, before that I was testing only with 2x.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1431319965964959764/image.png?ex=69f38498&is=69f23318&hm=9d0674e1890d6bce760824b3ce64a5213b541bf5110b918adb45c02c2622e871&
+https://cdn.discordapp.com/attachments/1426924881081274378/1431319966530932876/image.png?ex=69f38498&is=69f23318&hm=86b6dc827c8f85c91027be61ad00f1a817d2b8e8505d2c69320a37df493872eb&
+https://cdn.discordapp.com/attachments/1426924881081274378/1431319967151947986/image.png?ex=69f38498&is=69f23318&hm=024cabb845d3ec4ecaf64c8da9c1ff0725df90a8ccb40b2e47f3db96c8ce426a&
+https://cdn.discordapp.com/attachments/1426924881081274378/1431319967709659287/image.png?ex=69f38498&is=69f23318&hm=8a306385960d89e28e5835f891f0c1ef14e4aefe2be4d8aec673ad3731c74647&
+
+
+[10/28/2025 08:24] serialkiller15
+I am playing with different Variants of AlexDivergence
+And yes mostly the Problem is 
+Stoploss in Combination with the custom_stoploss
+because you need 1 Stoploss that will kill your 6-7 last Trades Profit
+So i am trying different Versions
+
+
+[10/28/2025 08:24] serialkiller15
+Version - Only Reversal Logic
+Version2 - Extended Custom Exits
+and other stuff!
+
+
+[10/28/2025 08:26] themarkx_
+Is that realised??
+
+
+[10/28/2025 08:26] serialkiller15
+noooooooooooooooo neds some time no hurry at all
+
+
+[10/28/2025 08:32] willibolo
+Have you considered tracking BTC volatility? Its clrealy visible the strategy performs well on flat market. Perhaps If we see a strong trend (we can use ADX as proxy) we should immediately quit existing trades.
+
+
+[10/28/2025 08:33] serialkiller15
+let me first fix the custom_exits and then we can implement other ideas into it step by step guys
+
+
+[10/28/2025 08:33] serialkiller15
+the signals are good in there
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1432648519935725689/image.png?ex=69f313e8&is=69f1c268&hm=ade434bcc9848c6ab181028b0ec026924b7f75c96ced49c2e3d0d75343310886&
+
+
+[10/28/2025 08:34] 4v1234
+Same toughs here, many coins follow the trend with some delay time.
+
+
+[10/28/2025 08:35] serialkiller15
+yes but the divergence is beeing checked on every coin so thats a better aproach! the custom_exits are the problem nothing more
+
+{Reactions}
+👍
+
+[10/28/2025 08:36] serialkiller15
+perfect example here 
+in the previos versions it would exit profit about 2-3 percent
+but this goes long so its in profit now about 7% lets see what happens
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1432649168941350962/image.png?ex=69f31483&is=69f1c303&hm=d3db39820086a9290982cedea2158be3ab59b3d56fa52ba8cc9f8780dd6c41b8&
+
+{Reactions}
+👍
+
+[10/28/2025 08:38] willibolo
+BTW Alex if Divergence has lookahead bias it implies you cant test the strategy on backtest. Do you perform all your checks on dry run only?
+
+
+[10/28/2025 08:38] themarkx_
+does it show repaint?
+
+
+[10/28/2025 08:39] serialkiller15
+backtest is useless here, because its repainting
+its repainting yes but it does not have many impacts on the entrys, as you see on the charts! the signals are realy good after all so
+
+
+[10/28/2025 11:41] serialkiller15
+The Exits look better now will let it run for some hours and post the 2 Versions i made
+
+{Reactions}
+👍 (2)
+
+[10/28/2025 11:44] ywk3926
+Mainly due to the trend, it will cause SL to be triggered quickly, resulting in profit loss
+Secondly, the profit margin is too low
+I think if these two problems are solved, this strategy will be perfect.
+
+
+[10/28/2025 11:44] serialkiller15
+i already fixed this, will let it run...
+
+
+[10/28/2025 11:45] serialkiller15
+no the trades run longer and exits with minimum 6% profit, and more up to 25%
+
+{Reactions}
+👍 (2)
+
+[10/28/2025 11:46] serialkiller15
+like this here
+
+
+[10/28/2025 11:46] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1432696934925209733/image.png?ex=69f340ff&is=69f1ef7f&hm=fca9213a4ddf3012183cf8cdd884559626f3698fbb88d37d716e3000b5d45022&
+
+
+[10/28/2025 11:53] 4v1234
+My observation: it performs better with SL 7-10% it needs more freedom of movement.  
+Where is your SL set ?
+
+
+[10/28/2025 11:53] serialkiller15
+stoploss = -0.07 and on -0.10 this looks fine now
+
+
+[10/28/2025 11:54] 4v1234
+Perfect
+
+
+[10/28/2025 11:54] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1432699051656220733/image.png?ex=69f342f8&is=69f1f178&hm=e53f2e3c1fe9c45025580e1f672019bdcc11f166f667b019816882f10d01541c&
+
+{Reactions}
+🔥
+
+[10/28/2025 11:55] serialkiller15
+also build in protection for stoploss per pair is in there
+
+
+[10/28/2025 11:58] 4v1234
+Look good.
+Just to add something, on live bybit I get not good results when the coin is in innovation zone. What is white list specifics for the above example?
+
+
+[10/28/2025 12:15] serialkiller15
+i use two different pairlists will also publish them when tests are beeing done later
+
+{Reactions}
+❤️ 👍
+
+[10/28/2025 14:49] serialkiller15 (pinned)
+@Everyone
+here is the Version 2 with extendend Custom Exits
+Also there is a Protection for Coin in it!
+The Profits are doing well at the moment
+max 10 trades a 20 usdt is my preference Pairlist static or 
+Timeframe i testet is 1h!
+Can also been run on 15m TF!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1432743140363600016/AlexDivergenceV2_CustomExits.py?ex=69f36c07&is=69f21a87&hm=4125b4bf23fa886bade80d848e394a02769cf167c57053fdacc8c9cbfbb5ffd8&
+
+{Reactions}
+🚀 (10)
+
+[10/28/2025 14:49] serialkiller15
+Pinned a message.
+
+{Reactions}
+🚀
+
+[10/28/2025 15:31] ywk3926
+At this moment, I am running 15m and 1h at the same time, and 1h performs better.
+
+
+[10/28/2025 15:32] serialkiller15
+yes 1h gets better signals thats clear
+
+
+[10/28/2025 15:32] viking046433
+Recommend SL
+
+
+[10/28/2025 15:32] ywk3926
+The signals are completely opposite, 15m and 1h
+
+
+[10/28/2025 15:33] serialkiller15
+i would say 0.07 or 0.10 not more
+
+{Reactions}
+🚀
+
+[10/28/2025 16:36] dragongoattigercat
+Can you please show me how to set Stop Loss?
+
+
+[10/28/2025 16:37] serialkiller15
+in the strategy? stoploss = -0.07 ?
+
+
+[10/28/2025 16:37] snokard.
+its on the file, search for  "stoploss"
+
+
+[10/28/2025 16:39] dragongoattigercat
+if I want to set Stop loss is 7%, stoploss=0.07 or stoploss= -0.07?
+
+
+[10/28/2025 16:39] serialkiller15
+-0.07
+
+
+[10/28/2025 16:39] dragongoattigercat
+Thank you Alex.
+
+
+[10/28/2025 16:52] snokard.
+somehow its not triggering sl... will look at it tomorrow
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1432774144726138970/image.png?ex=69f388e7&is=69f23767&hm=b99568961f24d082268eab0beaa26920e1506c09960e594ac6ecdc6c75e4a889&
+
+
+[10/28/2025 19:50] sebastiaan0045
+in def custom_exit  and custom_stoploss; Trade is not imported from freqtrade.persistence it needs to be added at the top of the file:
+from freqtrade.persistence import Trade
+
+{Reactions}
+❤️
+
+[10/28/2025 20:49] snokard.
+thank you! will check tomorrow!
+
+
+[10/29/2025 06:33] serialkiller15
+my 3 versions are realy running good, 
+only the exit on 6h is sometimes beeing hit, if someone wants to change so do change this lines in custom_exit
+
+        # Final force exit after 6 hours (longer than before)
+        if trade_duration_minutes >= 360:  # 6 hours
+            if current_profit >= 0.001:  # Cut small losses
+                return log_and_exit("Force_Exit_6HR")
+
+{Reactions}
+👍 (2)
+
+[10/29/2025 07:03] themarkx_
+@Alex Crypto King can you suggest the best pairlist
+
+
+[10/29/2025 07:04] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1432988544833556490/message.txt?ex=69f2ff14&is=69f1ad94&hm=af3c181f2cf76708e85abf40aa06c14b8db4d30d6ee10009a729ca0b13cba375&
+
+
+[10/29/2025 07:57] serialkiller15
+No Financal advise here
+i startet V2 and V3 (mod not released) on Monday, and i am in Profit live, about 5-7% on two bots! will report after i have good results here, but it looks promising!
+
+{Reactions}
+👍 (2)
+
+[10/29/2025 07:59] viking046433
+V3?
+
+
+[10/29/2025 08:00] serialkiller15
+yes i added your divergence stuff into it! but will let it run and then post here, when its fine! thanks for your input!
+
+
+[10/29/2025 08:00] viking046433
+Oh awesome
+
+
+[10/29/2025 08:28] serialkiller15
+for everyone ho is doing live trade see the differences bettween bybit and frequi
+
+
+[10/29/2025 08:28] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1433009586977112094/image.png?ex=69f312ad&is=69f1c12d&hm=44ce2b490edfc26079b193c3196316ad698159120a67175db3c4c43f75083449&
+
+
+[10/29/2025 08:28] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1433009632657412116/image.png?ex=69f312b8&is=69f1c138&hm=0039a2e35600d7bc69709bb5b03801572f1fbd211472c6d081648512fa938ab5&
+
+
+[10/29/2025 08:28] serialkiller15
+but this is normal!
+
+
+[10/29/2025 08:46] 4v1234
+This is exactly what I was trying to explain  🙂 everyone would have - 0.25 % in mind when setting the parameters.
+
+
+[10/29/2025 08:46] 4v1234
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1433014203483947008/20251029_104513.jpg?ex=69f316fa&is=69f1c57a&hm=3d47bf2e48e7ba0c959e72327c660501a9456bf3c72cc82610f85bfb0b332d20&
+
+
+[10/29/2025 09:39] serialkiller15
+for me is nice at is is! so keep it in mind!
+
+
+[10/29/2025 10:07] 4v1234
+This is V1 and you are doing V2 and V3 from what I see.
+
+
+[10/29/2025 10:08] serialkiller15
+its V2 at the moment, on live yes, v3 is on dry
+
+{Reactions}
+👍
+
+[10/29/2025 10:10] 4v1234
+Definitely what to try, but I need more info from live of V1 , there are 2 ideas I can share with you for optimization.
+
+
+[10/29/2025 10:11] serialkiller15
+V1 us already beeing postet here, i only adjustet the custom_exits is also here online
+
+
+[10/29/2025 11:12] ywk3926
+A lot of false signals in 15m tf, wouldn't it be amazing to trade in the opposite direction?😆
+
+
+[10/29/2025 11:20] 4v1234
+Hahahaha yes we did  this with force reversal  😀 the same results.....slightly worse
+
+
+[10/29/2025 11:21] 4v1234
+Recommendation not to do it, by experience I'm talking  😀
+
+
+[10/29/2025 11:21] ywk3926
+
+
+{Stickers}
+https://cdn.discordapp.com/stickers/796141859016540160.json
+
+
+[10/29/2025 11:41] serialkiller15
+@ywk use it on 1h tf
+
+
+[10/29/2025 11:48] ywk3926
+Yes, I tested both 15m and 1h simultaneously, and the 1h test performed very well.
+
+
+[10/29/2025 11:58] serialkiller15
+yes thats what i said hehe enjoy
+
+
+[10/29/2025 12:05] serialkiller15
+?
+
+
+[10/29/2025 12:06] abb8187
+@Alex Crypto King How profitable is TankAi in 5 minutes?
+
+
+[10/29/2025 12:07] abb8187
+I was so excited just now, I'm so used to using Chinese.
+
+
+[10/29/2025 12:09] serialkiller15
+not useable on 5m timeframe because on learining modeel lstm dont use it on 5m
+
+
+[10/29/2025 12:10] serialkiller15
+and you are in the wrong channel mate thanks
+
+
+[10/29/2025 12:15] niutie8977
+why you so excited?
+
+
+[10/29/2025 12:19] abb8187
+Because I rarely communicate or chat in English, I've gotten used to using my native language， I can't say I'm excited, I made a mistake with my words.
+
+
+[10/29/2025 14:16] ggoyito
+We are still in diapers to get into that field, better than I do this video explains it
+
+
+[10/29/2025 14:16] ggoyito
+https://youtu.be/iwRaNYa8yTw?si=2NBdlMNfbAbO0GiD
+
+{Embed}
+ByteMonk
+https://www.youtube.com/watch?v=iwRaNYa8yTw
+Inside a Real High-Frequency Trading System | HFT Architecture
+High-Frequency Trading System (HFT) are the bleeding edge of real-time systems — HFT architecture is designed for nanosecond-level execution, not just milliseconds.
+
+In this video, we dive into the **real-world architecture** of an HFT system:
+✅ Market data ingestion via multicast + kernel bypass  
+✅ In-memory order books and event-driven ...
+https://images-ext-1.discordapp.net/external/lcbHSofxXb5PRQpc3OYoBHZry0-Z3V6QWvjpvbk78qs/https/i.ytimg.com/vi/iwRaNYa8yTw/maxresdefault.jpg
+
+
+[10/29/2025 17:23] viking046433
+This is quite impressive
+
+
+[10/29/2025 19:32] serialkiller15
+V3 is doing good what's new I run it on 15m tf and added 1h divergence entrys also so more signals will seethe next days how it goes
+
+
+[10/29/2025 20:00] 4v1234
+Nice one......do you have any observations on the number of candles to watch behind? I firs test with 200 and did not like it  then went to 800 and it is much better, talking for V1
+
+
+[10/29/2025 20:12] serialkiller15
+You mean startup candle count
+
+
+[10/29/2025 20:33] 4v1234
+Yes
+I'm not sure for the formula, how to calculate the time frame with candles.  There is correlation between them.
+
+
+[11/03/2025 11:09] willibolo
+@Alex Crypto King , may i wonder  what was the point of setting process_only_new_candles = False for v.1?
+
+
+[11/03/2025 11:20] serialkiller15
+i did different test with the process_only_new candles. but because of divergence its better to use it process_only_new_candles = True
+
+
+[11/03/2025 13:45] michele.tedeschi
+FYI: in my case this strategy not working fine because use a single core at 100% and the default cycle time of freqtrade (process_throttle_secs = 5 seconds) it's not enaugh to calculate all divergences for 30 pairs.
+on my Macbook pro M2 Pro a single populate_indicators takes about 12 seconds (~ 0,4 sec per pair).
+I've tried to increase process_throttle_secs but it's too heavy
+
+
+[11/03/2025 16:47] serialkiller15
+i run 4 divergence on one machine and dont have any problems with it
+
+
+[11/03/2025 16:49] ggoyito
+Python 3.14.0 solves the problem of administration and distribution of tasks between cores, in search of better results I would recommend updating
+
+
+[11/03/2025 16:52] serialkiller15
+@everyone after playing around with divergence, i have made a mod version, with different divergences. 
+the total_divergence 
+and also some with early divergence, that signals goes on the candle and then it does the entrys.
+if you have saw in the past the divergence was hit but the trade was executed 1-2 candles later, thats a problem because the signals are good, but because of market it sometimes get worse. I will post the version after some test here thanks for your patience
+
+
+[11/03/2025 16:55] 4v1234
+@Alex Crypto King  Do you want me to make some specific test on live,  still playing with it ?
+
+
+[11/03/2025 16:55] serialkiller15
+let it run on dry run but it looks even better as the other versions.
+
+{Reactions}
+👍
+
+[11/03/2025 16:56] serialkiller15
+market is horrible these days for live...
+
+
+[11/03/2025 17:06] 4v1234
+Perfect to increase blood pressure and stimulating new strategies for better precision. In future the market will be even more unstable. Now is the time for preparation.  We must have solutions for every situation.
+
+
+[11/03/2025 17:08] serialkiller15
+@everyone use it for tests please. its finished, but not realy tested 
+AlexDivergenceV3...
+
+{Reactions}
+💯
+
+[11/03/2025 17:17] boooooon
+thx. how it looks after today's dump?
+
+
+[11/03/2025 17:29] serialkiller15
+i was starting it about 3 hours ago, i need testers that why i posted it so early please do tests on 15m and also 1h timeframe
+
+{Reactions}
+👍 (2)
+
+[11/03/2025 17:29] snokard.
+I will cancel my run on v2 and start this one
+
+{Reactions}
+👍
+
+[11/03/2025 17:29] snokard.
+Will do same as in gkd, performance pairlist and 100 trades 0,8 tradable
+
+{Reactions}
+👍
+
+[11/03/2025 17:30] serialkiller15
+i startet it at about 3:30 you se on the candle when it startet to grow...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1434957803256025278/image.png?ex=69f39198&is=69f24018&hm=c214852132b8e24099354e224d04ec98840c2d15a70e38859923a91ddcca18b5&
+
+
+[11/03/2025 17:30] snokard.
+Thank you
+
+
+[11/03/2025 17:30] dragongoattigercat
+I do the same, 100 trade and 1 tradable
+
+
+[11/03/2025 17:30] snokard.
+So you didnt reset db?
+
+
+[11/03/2025 17:32] 4v1234
+Any special recommendations for TP/SL/ Trailing/ Leverage ?
+Where is the target test ?
+
+
+[11/03/2025 17:34] serialkiller15
+let it run as it is, the leverage will be set atuomaticly i set it default as value 5, sl 0.07 or 0.10
+
+
+[11/03/2025 17:37] serialkiller15
+damn small failure!
+
+
+[11/03/2025 17:38] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1434959889469542572/AlexDivergenceV3.py?ex=69f39389&is=69f24209&hm=194c93a26e8325438ca0b3979519147dc9e11f818e554401b7c866b451cf6c36&
+
+{Reactions}
+👍
+
+[11/03/2025 17:38] serialkiller15
+fixed sry, to many windows opend here!
+
+
+[11/03/2025 17:38] serialkiller15
+whats new
+divergence super
+divergence hq
+divergence early
+divergence weak...
+
+
+[11/03/2025 17:41] serialkiller15
+Pinned a message.
+
+
+[11/03/2025 17:47] serialkiller15
+here you can see the difference about the 4 div signals on it..
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1434962308215345162/image.png?ex=69f395ca&is=69f2444a&hm=1e3b0ceda6ad21c370748fa68467b8ece4af11de07f6eb1975a575fd350499bc&
+
+
+[11/03/2025 18:01] dragongoattigercat
+I got banned from Binance when I run multi bots. does anyone get this issue?
+
+
+[11/03/2025 18:02] dragongoattigercat
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1434966067691917404/image.png?ex=69f3994a&is=69f247ca&hm=8d02338704f4605620c062ce883141cdab09c4401ef912b093e7dcf89bf176d9&
+
+
+[11/03/2025 18:23] boooooon
+use proxy
+
+
+[11/03/2025 18:25] serialkiller15
+Proxy will help
+
+
+[11/03/2025 19:04] dragongoattigercat
+do you have document or link to setup a proxy? Thanks mate
+
+
+[11/03/2025 19:43] boooooon
+https://www.freqtrade.io/en/stable/configuration/#proxy-exchange-requests
+https://docs.ccxt.com/#/README?id=proxy
+
+{Embed}
+https://docs.ccxt.com/
+ccxt - documentation
+ccxt documen
+
+{Embed}
+https://www.freqtrade.io/en/stable/configuration/
+Configuration - Freqtrade
+Freqtrade is a free and open source crypto trading bot written in Python, designed to support all major exchanges and be controlled via Telegram or builtin Web UI
+
+
+[11/03/2025 19:43] kugodybe
+I had a error... AlexDivergenceV3  | 2025-11-03 20:22:13,033 - freqtrade.resolvers.iresolver - WARNING - Could not import /freqtrade/user_data/strategies/AlexDivergenceV3.py due to 'invalid syntax (AlexDivergenceV3.py, line 409)'
+AlexDivergenceV3  | 2025-11-03 20:22:13,037 - freqtrade.resolvers.iresolver - WARNING - Could not import /freqtrade/user_data/strategies/AlexDivergenceV3.py due to 'invalid syntax (AlexDivergenceV3.py, line 409)'
+AlexDivergenceV3  | 2025-11-03 20:22:13,040 - freqtrade.resolvers.iresolver - WARNING - Could not import /freqtrade/user_data/strategies/AlexDivergenceV3.py due to 'invalid syntax (AlexDivergenceV3.py, line 409)'
+
+
+[11/03/2025 19:45] dragongoattigercat
+I have to setup a proxy server on my LAN network first. Then I can configure the file to point to this proxy server address?
+
+
+[11/03/2025 20:25] serialkiller15
+@x use the latest file Sry there was a failure in the code..
+
+{Reactions}
+✅
+
+[11/03/2025 20:46] boooooon
+you can setup you own vpn or buy in some proxy provider
+
+
+[11/03/2025 20:48] dragongoattigercat
+I will go with my own VPN. which VPN/proxy server are you using? can you please share the name so I can google the instruction to set it up. Thank you
+
+
+[11/03/2025 20:48] boooooon
+webshare
+
+
+[11/03/2025 21:02] dragongoattigercat
+Thanks, I just found out my synolgoy NAS has proxy server. I will try with it first, if it does not work, I will install webshare
+
+
+[11/04/2025 03:50] niutie8977
+timeframe on 15m or 1h?
+
+
+[11/04/2025 07:47] serialkiller15
+try both if its ok for you!
+
+
+[11/04/2025 10:19] zzokbary
+This strategy didn’t execute any trades for 10hours
+
+
+[11/04/2025 10:22] 4v1234
+Same here, at 3:00 pm it reported WS mistake,  so I made it REST 
+0 is better profit than negative %  😀
+
+{Reactions}
+🤣 (2)
+
+[11/04/2025 10:36] serialkiller15
+will fix
+
+
+[11/04/2025 17:20] ywk3926
+The current market is terrible.🙁
+
+
+[11/04/2025 17:20] serialkiller15
+Yep don't ask
+
+
+[11/04/2025 17:36] kugodybe
+Thank you Alex
+
+
+[11/05/2025 09:21] serialkiller15
+@everyone Fixed Version with other Entrys included, should do better
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1435559732914946149/AlexDivergenceV34.py?ex=69f31f2f&is=69f1cdaf&hm=bc28c3a7bfdf8a0dc6380aa6a4ed58ac30bf856d5235f38794b1e0b56a9fd16c&
+
+{Reactions}
+🚀 🔥
+
+[11/05/2025 09:23] 4v1234
+You are really King 🤴  Thank you. Will post results
+
+{Reactions}
+😂
+
+[11/05/2025 09:23] serialkiller15
+Copy Paste Failure
+
+
+[11/05/2025 09:24] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1435560492252008529/image.png?ex=69f31fe4&is=69f1ce64&hm=c2da3c52ec2e16b19e524ed4f32a99aba03c2e5e406d2c0eaf2cf009474d91a0&
+
+
+[11/05/2025 09:25] serialkiller15
+Confirmation of Divergence works now... new Signals Bull_div and Bear_DIV!
+
+{Reactions}
+👍 (3)
+
+[11/05/2025 09:53] themarkx_
+so @Alex Crypto King can you please tell us that what is main diffrence b/w AlexDivergenceV34 and AlexBandSniperV8
+
+
+[11/05/2025 09:54] serialkiller15
+AlexDivergence only uses Divergence, BandSniper has Divergence and also Fisher in there thats it, Bandsniper also does Optuna!
+
+
+[11/05/2025 09:55] abb8187
+I tested version V3 and it resulted in a loss.😫
+
+
+[11/05/2025 09:55] abb8187
+I wonder what the V34 is like?
+
+
+[11/05/2025 09:55] serialkiller15
+use V34 see the description mate
+
+
+[11/05/2025 09:57] abb8187
+v3 resulted in a loss, not a failure; I had a problem with my vocabulary.
+
+
+[11/05/2025 09:58] serialkiller15
+please us V34, thats it
+
+
+[11/05/2025 09:58] abb8187
+😋
+
+
+[11/05/2025 13:08] serialkiller15
+Testing the new Entrys
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1435616650639572992/image.png?ex=69f35431&is=69f202b1&hm=185e39a55e3dbbafbcc2cd8c75e6dbce1d9efd62b521145804b4532c25cd58d6&
+
+
+[11/05/2025 13:08] abb8187
+15m ？
+
+
+[11/05/2025 13:08] serialkiller15
+yep next update in a view minutes, hours...
+
+
+[11/05/2025 13:13] serialkiller15
+@everyone major update coming sooon, sry for the many updates here but they are necessary because i see some stuff in live/dry that needs optimazion!
+
+{Reactions}
+👍 (3) 🔥
+
+[11/05/2025 14:16] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1435633901971308576/AlexDivergenceV34.py?ex=69f36443&is=69f212c3&hm=9e889bd361d5d844ef9f26316aae49eee4d6ed7b0d61b24bc92579a25c427fd4&
+
+{Reactions}
+❤️ 🚀 (2)
+
+[11/05/2025 14:16] serialkiller15
+Pinned a message.
+
+
+[11/06/2025 20:10] serialkiller15
+Hey @everyone its realy interesting that we have som different values here.
+to restart i have already fixed the repainting stuff on AlexDivergence Strategy.
+DO your tests i run it on 15m and also 1h
+Because market is mostly i would say quiet will take a while to compare the results
+
+{Reactions}
+👍 (3)
+
+[11/06/2025 20:11] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1436085483103850536/AlexDivergenceV35_Fixed_Repainting.py?ex=69f30e94&is=69f1bd14&hm=6c7fbbffce38ec03ce3016533ca78c8e5504a935da4a721d4cf6f2da8ded7f4a&
+
+{Reactions}
+🚀 🔥
+
+[11/06/2025 20:19] 4v1234
+I will ketch up Monday with this test., just started another one 😀
+
+{Reactions}
+👍
+
+[11/08/2025 13:42] serialkiller15
+@everyone as my wife always say never give up, doing test on repainting and other fixes in the confirmation of divergence (adjusted)
+it works good at the moment and will let it run, the entrys stay and will not beeing repainted.
+after test will post here, and also include the logic into band sniper
+
+
+[11/08/2025 13:42] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1436712547318497280/image.png?ex=69f35c54&is=69f20ad4&hm=fd9ae447972157a80247476dd5e92a3cb34ab1f00929f93036d4936287a249d9&
+
+{Reactions}
+🚀 (8)
+
+[11/08/2025 15:10] themarkx_
+Looks amazing man
+
+
+[11/08/2025 15:52] serialkiller15
+have to let it run for a few days...
+
+
+[11/08/2025 16:02] ohbad1330
+been running 3 days, it's alexdiv3 first release, up and down but still green at least 😅
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1436747595761320147/Screenshot_2025-11-08_at_23.00.38.png?ex=69f37cf8&is=69f22b78&hm=d92514b01d90f3e098712e954c0fc0a7e84e4978958c2b2fbb794d121267dfa1&
+
+{Reactions}
+👍
+
+[11/08/2025 16:06] serialkiller15
+Thanks let it run I also let it run will compare with my version
+
+{Reactions}
+👍 (2)
+
+[11/25/2025 15:57] migtaber_92822
++
+
+
+[11/27/2025 14:57] willibolo
+Hey Alex in your version 3 you in populate_entry_trend there are 'Super DIvergence Entries', 'WEAK DIVERGENCE ENTRIES'. But i cant get why they are there? If on dry they will never execute?
+
+
+[01/02/2026 22:33] branly76
+Results over 2 months, 8 december last change. Hyperliquid, 15 instruments
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1456777404050571405/image.png?ex=69f32fee&is=69f1de6e&hm=492d0167d3535ab1edd6cc1ec862c38abb42c5b42a311d9f64219227a87fe4f4&
+
+{Reactions}
+👍
+
+[01/06/2026 17:36] serialkiller15
+its the First Version i mean V3 ! can you please show me your Entrys? thanks Mate!
+
+
+[01/06/2026 17:51] branly76
+It is version V34 with the addition only 50% of max trades short or long and after 3 losses in a row 36 hours no trading.
+
+
+[01/06/2026 17:53] serialkiller15
+thanks! mate
+
+
+[01/06/2026 17:54] branly76
+around 8 december i did the change of no trades after 3 losses
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1458156773612453958/image.png?ex=69f39752&is=69f245d2&hm=9bbd3908f56c47c321c42ab578eda881b46ba0430d69f03187507542a72c4690&
+
+
+[01/06/2026 17:54] serialkiller15
+good decision!
+
+
+[01/06/2026 17:55] branly76
+The entry survey is over 2 months
+
+
+[01/06/2026 17:56] branly76
+exits
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1458157298068492409/image.png?ex=69f397cf&is=69f2464f&hm=b1053c5d815d51023241838ab1d9cf0d0130ebd99d0e4c3016eeff008dc326f3&
+
+
+[01/06/2026 18:09] serialkiller15
+Thank you will check tomorrow to adapt some stuff like exits and so on..
+
+
+[01/06/2026 23:00] .oliver6
+could you please share config much appreciated🙏
+
+
+[01/07/2026 05:06] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1458325795893153896/config.Alex_DivergenceV3.json?ex=69f38bfc&is=69f23a7c&hm=ed607dfa983cccb5e8dceec34826800ccbba0a34732de5065ca973e7ed1cc7c4&
+
+
+[01/07/2026 05:06] branly76
+In combination with this version
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1458325959835910259/Alex_Divergence_V3a.py?ex=69f38c23&is=69f23aa3&hm=f34a4f5c0487902a5f56acc35ad96753d568974558c9dad5f6a5db4d8f0a0269&
+
+{Reactions}
+👍
+
+[01/07/2026 05:08] .oliver6
+Thanks. alot!
+
+
+[01/07/2026 05:16] branly76
+Watch Alex remark above.
+
+
+[01/09/2026 01:52] sera131
+The "Time Travel" Bug (Lookahead Bias)
+The core issue lies in divergence_finder_dataframe (Lines 1050-1051 and 1095-1098).
+When the strategy detects a divergence at the current candle ( index ), it goes back and updates the record for the candle 30 periods ago :
+
+```
+ Inside divergence_finder_dataframe loop at 'index'
+if index > 30:
+    # Writes to the PAST (index - 30) based on CURRENT 
+    (index) finding
+    dataframe.loc[index-30, 
+    "total_bearish_divergences_count"] += 1
+```
+
+
+[01/09/2026 01:52] sera131
+- In Backtesting: The strategy processes the whole list. When it checks candle T , the value total_bearish_divergences_count has already been updated by the loop when it reached T + 30 . The strategy "sees" a divergence count that won't actually be detected until 30 candles in the future.
+- In Live Trading: At candle T , the loop hasn't reached T + 30 yet. The count will be 0. The signal will effectively never trigger (or trigger 30 candles late, likely missing the move). 2. Pivot Point Lookahead
+The pivot_points function (Line 1169) uses a window of 5 candles to confirm a high/low.
+
+```
+ Checks 5 candles ahead to confirm if current is a pivot
+if len(last_values) >= window * 2 + 1:
+    # ... logic confirming pivot ...
+    pivot_points_highs[index - window] = ...
+```
+- A pivot at candle T is only confirmed at candle T + 5 .
+- The strategy treats these pivots as if they were known immediately at T , adding another 5 candles of lookahead. 3. Entry Logic
+The entry logic relies on this tainted data:
+
+```
+ Reads the 'future-leaked' count
+dataframe['bull_div_strength'] = dataframe.get
+('total_bullish_divergences_count', 0).shift(1)
+
+ Enters if count >= 3 (knowing 3 divergences WILL 
+complete in the future)
+super_long = (dataframe['bull_div_strength'] >= 3) & ...
+```
+This means the strategy buys at the bottom because it "knows" (from 30+ candles in the future) that a strong divergence pattern is forming.
+
+
+[01/09/2026 02:04] sera131
+1. Fixed Pivot Point Lookahead
+- The Problem: The original pivot_points function confirmed a pivot at T but wrote the data back to T-5 (5 candles in the past). This allowed the strategy to "know" a high/low occurred 5 candles before it was actually confirmed.
+- The Smart Fix:
+  - Modified pivot_points to write the pivot data to the Confirmation Index (current time) instead of the past.
+  - Result: If a high occurs at 12:00, it is only confirmed at 12:25 (assuming 5-candle window). The strategy now receives this signal at 12:25, not 12:00. 2. Fixed "Time Travel" Divergence Writing
+- The Problem: The divergence_finder_dataframe function contained a logic bomb: dataframe.loc[index-30, ...] . When detecting a pattern at index , it wrote the signal 30 candles into the past . In backtesting, this meant the strategy entered a trade 30 candles before the pattern was detected.
+- The Smart Fix:
+  - Removed all writes to index-30 .
+  - Divergences are now recorded strictly at index (the moment of detection). 3. Corrected Indicator Alignment
+- The Problem: With pivots now appearing at confirmation time (e.g., T+5), comparing indicators blindly would compare "Price at T" (stored in the pivot column) with "RSI at T+5".
+- The Smart Fix:
+  - Updated divergence_finder_dataframe and its helpers ( bearish/bullish_divergence_finder ) to accept a window parameter (default 5).
+  - The logic now correctly compares:
+    - Price: From the pivot column (which carries the original price).
+    - Indicator: From index - window (the actual time the pivot occurred).
+
+
+[01/09/2026 02:04] sera131
+### Code Changes Explanation
+1. pivot_points function:
+   
+   ```
+   # OLD (Lookahead):
+   # pivot_points_highs[index - window] = getattr
+   (current_value, high_source)
+   
+   # NEW (Causal):
+   pivot_points_highs[index] = getattr(current_value, 
+   high_source)
+   ```
+2. bearish_divergence_finder function:
+   
+   ```
+   # NEW Logic:
+   # Check Price at Confirmation Time (current_pivot)
+   # Check Indicator at Actual Time (current_pivot - 
+   window)
+   if (dataframe['pivot_highs'][current_pivot] > dataframe
+   ['pivot_highs'][prev_pivot] and 
+       indicator[current_pivot - window] < indicator
+       [prev_pivot - window]):
+   ```
+3. divergence_finder_dataframe function:
+   
+   ```
+   # OLD (Time Travel):
+   # if index > 30:
+   #     dataframe.loc[index-30,
+   "total_bearish_divergences_count"] += 1
+   
+   # NEW (Real-time):
+   dataframe.loc[index,"total_bearish_divergences_count"] 
+   += 1
+   ```
+The strategy is now safe for backtesting and live trading, though you will likely see lower (but real) performance metrics compared to the "fake" 100% win-rate versions caused by the previous lookahead bugs.
+
+{Reactions}
+👏 (4) 👍
+
+[01/09/2026 02:13] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1459007106702250116/AlexDivergenceV35_Fixed_Repainting.py?ex=69f36381&is=69f21201&hm=40486b067eb64e62e908edbfd18291eaa3c543477ec07a3f9272625ae4bf2c6b&
+
+
+[01/09/2026 02:14] sera131
+Expected lag is unavoidable now: pivots require the full window confirmation, so divergences necessarily appear after-the-fact
+
+{Reactions}
+🚀 (6)
+
+[01/09/2026 08:34] serialkiller15
+Thanks for your work!
+
+
+[01/09/2026 08:55] .oliver6
+so with the version without bias I got this in backtesting 😂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1459108346740215859/WechatIMG5780.jpg?ex=69f3190a&is=69f1c78a&hm=6698ffb0f2364eff4375b7371483fadece4eb4236c13ddfd6cf296ef42bd1c57&
+
+{Reactions}
+😅
+
+[01/09/2026 13:15] sera131
+exactly.
+
+
+[01/09/2026 13:16] sera131
+I didn't want to stop anyone from anything but I also see a lot of potential worked being moved from this to something better or other way of handling this strategy
+
+
+[01/09/2026 13:17] sera131
+just being realistic and protecting your wallets a bit; its not my business to intrude like this, I just came for latest updates as I am working on one of Alex's strategies
+
+{Reactions}
+👍 (2)
+
+[01/09/2026 13:18] sera131
+I believe it has high potential if managed right so I am trying to get myself updated with your latest group work and if I see something nasty ill point it out for debate
+
+
+[01/09/2026 13:19] sera131
+most of the people here might not  know me so please don't be mad at me if I say something that might sound harsh; its not my intention; i'm here to support further
+
+I see this group with a lot of potential, some mechanics developed here I borrowed for myself
+
+{Reactions}
+👍 (3)
+
+[01/09/2026 18:08] serialkiller15
+We are all here to grow and learn from each other so everythink is fine thanks for your ideas and your work let's grow together mate
+
+{Reactions}
+👏 (4) 💪 (2)
+
+[01/09/2026 19:03] xf0x0f
+n1 work
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1459261314613514540/Bildschirmfoto_2026-01-09_um_20.03.15.png?ex=69f2fec1&is=69f1ad41&hm=aae98310db684f2a0623039eec103c3fcc85d46d65ab2c19f046ccfeaa911711&
+
+
+[01/09/2026 19:15] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1459264424299855994/4b4ea623ca27d682.png?ex=69f301a6&is=69f1b026&hm=99a23e1318c94f1f524ea637a8a7ff773d72895d6a60758fdd2f568dc6287d56&
+
+
+[01/11/2026 06:40] xf0x0f
+Seems to hang in a loop
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1459799205714464986/IMG_0195.png?ex=69f2f974&is=69f1a7f4&hm=2028cf0d5f25b5f726fb2b782eac50d9d598a3c097d615e1ab0485481699e153&
+
+
+[01/12/2026 16:53] serialkiller15 (pinned)
+This is the Version i use in Live for some days! (Version 1 and edited Costum_Exits) it repaints yes but it does a goed job!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1460315779101757562/Alex_Divergence.py?ex=69f3890d&is=69f2378d&hm=3d0024b04a8be4f3cf4e0cb6f6392578f0657ee371c7838d900c177d0115ff03&
+
+
+[01/12/2026 16:53] serialkiller15
+Pinned a message.
+
+
+[01/12/2026 16:54] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1460315969615302677/image.png?ex=69f3893a&is=69f237ba&hm=58b5240e1e0611130ee7dca557b5d98bba78a8dac9536148505de0add7ac11f0&
+
+{Reactions}
+🔥 (3)
+
+[01/12/2026 16:55] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1460316209273766060/image.png?ex=69f38973&is=69f237f3&hm=e3d0cf58c00b007a076c11c7edecc8e661f5e103df37627927f1f2a8b13407ba&
+
+
+[01/12/2026 19:21] glad8769
+I cannot figure it out why the CPU is always 100% :/ It seems that is stuck into some loops. Any hint?
+
+
+[01/12/2026 19:22] serialkiller15
+Which version?
+
+
+[01/12/2026 19:24] glad8769
+With this version @Alex Crypto King
+
+
+[01/12/2026 19:24] serialkiller15
+Did nit have any problems with it but let me check
+
+{Reactions}
+🙏
+
+[01/14/2026 17:16] serialkiller15
+some tests
+
+
+[01/14/2026 17:16] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1461046443652681872/image.png?ex=69f38e89&is=69f23d09&hm=50a594b4a2cd1dfb2c8eb90b4049003d44d0be3309c6b7428632135d8168e71c&
+
+
+[01/14/2026 17:22] serialkiller15
+after 5 minutes
+
+
+[01/14/2026 17:22] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1461047824543121419/image.png?ex=69f38fd2&is=69f23e52&hm=cc4b0e7d554a141c04f58ed10fc8ed144e00cbc89c4fb567ce0278e79c52c417&
+
+
+[01/14/2026 17:23] serialkiller15
+getting better
+
+
+[01/14/2026 17:23] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1461048184037179442/image.png?ex=69f39028&is=69f23ea8&hm=83ce7a5eb5ed2eb604d1a33e334f88cf6775f16b5ca4671459c41612f9f1498a&
+
+
+[01/14/2026 17:31] serialkiller15
+ok finaly - shorts
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1461050201899794672/image.png?ex=69f39209&is=69f24089&hm=42fccb5e6fab5d1f49316a4ef327f1b926440315a8ce92c31d23854fd23a162b&
+
+{Reactions}
+🚀 🔥
+
+[01/14/2026 18:58] vasko123.
+Version 4 and TF 1h - are superb.
+We're eagerly awaiting the release.
+A deep bow for your hard work.
+
+
+[01/14/2026 18:59] serialkiller15
+lets see this are mostly shorts (small profits) need to fix the longs also for this market! but thanks mate!
+
+
+[01/14/2026 20:48] xf0x0f
+I think i fixed it „a little“
+
+
+[01/14/2026 20:48] serialkiller15
+Bull div.... I adjusted filter on it and also did other stuff
+
+
+[01/14/2026 20:54] xf0x0f
+OMG,... how different are our setups?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1461101096360612185/Bildschirmfoto_2026-01-14_um_21.53.52.png?ex=69f318af&is=69f1c72f&hm=0e4be5ddfc435cf1185fbc6251edbd6dfec3b3165a120866ed54afd130cada60&
+
+
+[01/14/2026 20:54] xf0x0f
+that was the one to fix,...
+
+
+[01/14/2026 20:55] serialkiller15
+I did backtest today on about 20 different entry code... So this in the screenshot was the best on chart.... Maybee it's the market today that it was good I will let it run for some days...
+
+
+[01/14/2026 20:58] xf0x0f
+its such a ridiculously tough and ambitious path to get even a halfway decent strategy running in freqtrade something that performs consistently, adapts across diverse market conditions, and doesnt collapse the moment volatility shifts. the amount of finetuning, debugging, and testing involved is insane. its like endless trial and error with constantly moving targets, yet every small win feels like a piece of magic when the backtests finally start making sense.
+
+
+[01/14/2026 21:00] serialkiller15
+🙂 🔥 Yep absolute. But I can say that the ml stuff is also getting better day by day... Learning learning learning... The next days will spend testing different llm models... For the Dark Prophet stuff
+
+
+[01/16/2026 16:49] sera131
+avoid lookaheads and major repaints at all times otherwise work becomes obsolete very fast.
+
+
+[01/16/2026 16:54] sera131
+@Alex Crypto King i understand you have a live version of some strategies, i'm curious about latest results (share only if its up for a week at least)
+
+{Reactions}
+👍 (2)
+
+[01/16/2026 17:05] serialkiller15
+Yes thanks
+
+
+[01/22/2026 10:47] vasko123.
+AlexDivergenceV35_Fixed Repainting.py - Divergences use .shift(1) twice
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1463847648934105181/b3ff23b486c0fe18.png?ex=69f3335c&is=69f1e1dc&hm=b923ed3dd1e71b93b0d04f521e881b0420ca4e2d8bc2dd0c17aaf852ded27cf4&
+https://cdn.discordapp.com/attachments/1426924881081274378/1463847649424969879/acae3c2b65c5343c.png?ex=69f3335c&is=69f1e1dc&hm=a608aacd34389d9a7be439aef1da561703bdb208919517929b113b829f33f66b&
+
+
+[01/22/2026 10:48] serialkiller15
+yep!
+
+
+[01/22/2026 10:51] vasko123.
+**What’s wrong (the flaw):**
+
+**Scenario:** A long position is opened at $100, price drops to $95 (−5%), and a strong bearish divergence appears (3+ indicators).
+
+RSI = 35 (oversold, since price is falling)
+Condition `rsi > 60` = **FALSE**
+➡️ **The exit does NOT trigger**, even though the divergence is clearly signaling a bearish reversal.
+
+**Why this logic is wrong:**
+
+Bearish divergence forms when:
+
+* Price makes **higher highs** (RSI is often in the **60–80** range)
+* Indicators make **lower highs**
+
+However, **by the time the exit is evaluated**, price may have already pulled back, and:
+
+* RSI has dropped below 60
+* While the bearish divergence is **already confirmed and still valid**
+
+**Conclusion:**
+Tying the exit condition to `RSI > 60` is a logical mistake.
+RSI reflects the **current state**, whereas divergence is a **structural signal formed in the past**.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1463848621463044220/fa20ae9a492dbd53.png?ex=69f33444&is=69f1e2c4&hm=872a6b33306c58dc513ff6515ff40510a20d03cd5ddabe1b0db10563e9e6b71f&
+
+
+[01/22/2026 10:53] serialkiller15
+in V4 i removed all RSI stuff do your tests
+
+{Reactions}
+👍
+
+[01/22/2026 15:00] serialkiller15
+@everyone Here is AlexDivergenceV4 - Repainting fixed (V35) Adjustments on the Entrys
+Exits and other stuff! Lets do test!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1426924881081274378/1463911265859539170/Alex_DivergenceV4.py?ex=69f36e9b&is=69f21d1b&hm=9ee829b5568f329f77189d1ac136a63e663e7962f8a5c329d4e1f1a9bd8fdb9e&
+
+{Reactions}
+🚀 (4) 🔥 (2) 🫡
+
+==============================================================
+Exported 408 message(s)
+==============================================================

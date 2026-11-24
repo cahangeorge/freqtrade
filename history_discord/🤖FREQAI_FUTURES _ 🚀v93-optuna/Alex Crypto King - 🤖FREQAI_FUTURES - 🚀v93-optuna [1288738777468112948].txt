@@ -1,0 +1,1150 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖FREQAI_FUTURES / 🚀v93-optuna
+==============================================================
+
+[09/26/2024 21:04] .7thdragon
+so some POW of optuna with 93 since 3 days ago
+it is steady growing not sensational but safely 
+it is hyperopted till just 10 epoch only as i didnt had resources, then let optuna do the job
+i didnt reset the db and the previous tests get into dark negative side
+To get the picture, stake unlimited for fixed 30 max open orders, 50 pairs
+sugested stoploss "stoploss": -0.15
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1288969452552978574/image.png?ex=69f31b19&is=69f1c999&hm=d2e89e62b6ca0b18170f67752e713ccedcc3daafaf5d0547dc38609984023531&
+
+
+[09/26/2024 21:08] sera131
+not bad but why do you have trailing stoploss in negative?
+
+
+[09/26/2024 21:08] sera131
+that might be a issue
+
+
+[09/26/2024 21:09] serialkiller15
+Yes it is i also had this
+
+
+[09/26/2024 21:09] sera131
+ok so that should not happen, i guess its from the core trailing stoploss?
+
+
+[09/26/2024 21:10] serialkiller15
+Normaly trailing stop loss should not be negative
+
+
+[09/26/2024 21:10] serialkiller15
+In profit
+
+
+[09/26/2024 21:10] sera131
+ever...
+
+{Reactions}
+😵
+
+[09/26/2024 21:11] serialkiller15
+My personal meaning is trailing is not working good mostly I prefer roi
+
+
+[09/26/2024 21:11] .7thdragon
+is not true, i am not a newbie, please
+            "trailing_only_offset_is_reached": false
+
+
+[09/26/2024 21:11] sera131
+do you have a dynamic trailing that goes negative also?
+
+
+[09/26/2024 21:14] serialkiller15
+Nobody said you are a newbie man
+
+
+[09/26/2024 21:14] .7thdragon
+read the docs, also FT stoploss goes only in positive direction, meaning it is shrinking profit
+
+
+[09/26/2024 21:15] .7thdragon
+please sorry i am tired a little bit
+
+
+[09/26/2024 21:16] sera131
+sorry for creating wrong impression 😄 i ask questions based on my knowledge, i personally used in the past trailing stoploss that goes negative and was a bad experiece for me.
+
+The question itself, came from the confusion, as I really don't know the intention
+
+{Reactions}
+🍻 (2)
+
+[09/26/2024 21:17] serialkiller15
+@7thDragon me too long week let's catch some sleep..
+
+
+[09/26/2024 21:18] sera131
+so Dragon, what did you want to have with the negative trailing? just curiuos, i might have some code to help with that
+
+
+[09/26/2024 21:18] .7thdragon
+do u know zootopia movie i feel like the lazy guy 🙂
+
+{Reactions}
+🤣 (2)
+
+[09/26/2024 21:18] sera131
+cause I used complex trailing for that in the past...
+
+
+[09/26/2024 21:19] sera131
+we are all sloths after this week lol
+
+
+[09/26/2024 21:19] .7thdragon
+it is not my decision 🙂 is the first hyperopt
+
+
+[09/26/2024 21:19] sera131
+aaa and optuna picks it up and should improve from there?
+
+
+[09/26/2024 21:22] .7thdragon
+this first optimize values except buy params and stoploss are staying fixed until u provide a new hyperopt file. the idea is that for example you do a new a hyperopt only when the market is changing, no need often, is optuna job
+this was the idea, maybe i am wrong
+
+
+[09/26/2024 21:23] sera131
+makes a lot of sense, might be a solution for the issues we have with trend switches
+
+{Reactions}
+👍
+
+[09/26/2024 21:24] serialkiller15
+No I dont think we or you where wrong first we have to do a good FAQ in that how to do the right steps and then everybody can test the same with different parameters or times or what else
+
+{Reactions}
+👍 (2)
+
+[09/26/2024 21:24] serialkiller15
+Than make improvements in New Version
+
+
+[09/26/2024 21:25] sera131
+now I understand the negative values btw; question is... is there a way to avoid that in the start?
+
+
+[09/26/2024 21:25] serialkiller15
+I will prepare that tomorrow and send you to recheck then we can do all tests in it and iptimize it.... Optuna is working good but how to use it it's not clear for anybody
+
+
+[09/26/2024 21:27] .7thdragon
+at the start will be based from first hyper
+
+
+[09/26/2024 21:28] serialkiller15
+1. Hyper...
+2. Run Optuna.... Pyt
+3.backtest
+4.dryrun strategy
+5.let Optuna oyt run All 1 2 3 h.... For example
+
+
+[09/26/2024 21:28] sera131
+ooh so you pass the first hyper to it.
+
+{Reactions}
+👍
+
+[09/26/2024 21:29] sera131
+nice i'm getting my first hyper now also, should be ready for tomorrow
+
+{Reactions}
+🤘
+
+[09/26/2024 21:29] sera131
+im going for 1k epochs since i wanna have a better start xD
+
+
+[09/26/2024 21:30] sera131
+almost done 992 xD
+
+
+[09/26/2024 21:30] .7thdragon
+a better one is to maybe 100k epochs for the real parms spaces. and then do not change the pairs 🙂
+
+
+[09/26/2024 21:31] sera131
+i might not have enough space for that xD
+
+
+[09/26/2024 21:31] serialkiller15
+I have Infrastructure here more then enough that is not the problem
+
+
+[09/26/2024 21:32] serialkiller15
+Importand is that the ootuna.pyt is running in background in cronjob or timeframe as we decied to dio that
+
+
+[09/26/2024 21:32] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1288976580642738206/image.png?ex=69f321bc&is=69f1d03c&hm=ffd4bf28b6f1710465d81731a91e37e1893304ee830ba4b74c19447da2ebde94&
+https://cdn.discordapp.com/attachments/1288738777468112948/1288976580936335382/image.png?ex=69f321bc&is=69f1d03c&hm=0ea6c9c39384c121d77bd1e212fa5a07338c3f92347f31480dc2b04b2a39d8e1&
+https://cdn.discordapp.com/attachments/1288738777468112948/1288976581162696855/image.png?ex=69f321bc&is=69f1d03c&hm=9cd2e7604ce0289e627341c2361b9a6aaded79f6c6e1576c3580ce001fb2ff7b&
+
+
+[09/26/2024 21:33] serialkiller15
+Look that's better
+
+
+[09/26/2024 21:34] .7thdragon
+i ve seen it lol, i do not have this gain, how many pairs? and u have fixed max orders?
+
+
+[09/26/2024 21:34] sera131
+i have 5 orders only yes and alex's pairlist; its a good pairlist except EGLD that is a shitcoin
+
+
+[09/26/2024 21:35] .7thdragon
+really interesting, as the lower max is much better, i did have 30 for testing purposes
+
+
+[09/26/2024 21:36] sera131
+from my experience only, in dry testing, more open trade spots, weak resuls
+
+
+[09/26/2024 21:36] sera131
+results*
+
+
+[09/26/2024 21:36] sera131
+because of the trend switches, it can be a disastetr
+
+
+[09/26/2024 21:36] serialkiller15
+Absolute i testing results thanks
+
+
+[09/26/2024 21:36] sera131
+many coins drop a lot harder than others
+
+
+[09/26/2024 21:37] .7thdragon
+yes but is easy to check more situations, for 6, need to wait to close 🙂
+
+
+[09/26/2024 21:38] sera131
+true also; a way for me to handle loss with 5 trades is like this. I take out all pairs that generated only losses or heavy losses
+
+
+[09/26/2024 21:38] sera131
+then redo
+
+
+[09/26/2024 21:38] sera131
+then check if other pairs taken in place
+
+
+[09/26/2024 21:38] sera131
+then take those out too
+
+
+[09/26/2024 21:38] sera131
+then redo and so on
+
+
+[09/26/2024 21:39] sera131
+if it continues to replace bad pairs with other pairs, something is wrong and hyperopt/backtesting for the strat itself might not be reliable and can only rely on dry testing
+
+
+[09/26/2024 21:39] .7thdragon
+not in most situations, if u have 50% long 50% shorts u are safe. if the whole market falls u anyway use a small risk amount (not balance divide by number of trades)
+
+
+[09/26/2024 21:40] sera131
+yes, true. There is a situation where you might be on the right direction, but even so, the pairs to remain dormant
+
+
+[09/26/2024 21:40] sera131
+did you guys notice how a big % of pairs are dormant?
+
+
+[09/26/2024 21:41] .7thdragon
+btw, hard landing will not happen anymore as most exchanges took care of the throttling, a lot of regulations are in place now
+
+
+[09/26/2024 21:42] sera131
+interesting
+
+
+[09/26/2024 21:48] sera131
+btw I used a different hyperopt method
+
+
+[09/26/2024 21:48] sera131
+maybe that is why different results
+
+
+[09/26/2024 21:48] sera131
+freqtrade hyperopt --config user_data/config-torch.json -s AlexBTStrategyFinalV93 --freqaimodel PyTorchLSTMRegressor --spaces buy stoploss roi trailing --epochs 1000 --hyperopt-loss ProfitDrawDownHyperOptLoss --timerange 20240828-20240925
+
+
+[09/26/2024 21:49] .7thdragon
+ah i see, is not quite good, Daily provides a normalized gain along the days passed so more appropiate to the reality
+
+
+[09/26/2024 21:50] sera131
+i'll try different methods and test them all xD
+
+
+[09/26/2024 21:50] sera131
+but i only used this in the past, I didn't know about who and what is better
+
+
+[09/26/2024 21:50] sera131
+my interest is to have as low drawdown as possible
+
+
+[09/26/2024 21:52] sera131
+damn... i didnt even know about the min trailing offset
+
+
+[09/26/2024 21:52] sera131
+what the hell is even that
+
+
+[09/26/2024 21:52] sera131
+=))
+
+
+[09/26/2024 21:53] .7thdragon
+yes, this is the main goal, unfortunately i didnt made optuna for multi purpose model
+maximize profit and minimize drawdown in the same time, i didnt fully understand how to implement it and seems more complicated, mybe there is someone here that could help...
+
+
+[09/26/2024 21:54] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1288982003819221007/AlexStrategyFinalV93.json?ex=69f326c9&is=69f1d549&hm=76376bd87347c950c8b73316d9772d4240327213c0d6f5571b0b156560c5c571&
+
+{Reactions}
+🔥 👍
+
+[09/26/2024 21:54] sera131
+if someone wants to test it
+
+
+[09/26/2024 21:54] serialkiller15
+Thanks mate tomorrow
+
+{Reactions}
+🍻
+
+[09/26/2024 21:55] serialkiller15
+Your results look promising...
+
+
+[09/26/2024 21:55] sera131
+might be a disaster in dry, might be a lot better, will see
+
+
+[09/26/2024 21:55] serialkiller15
+Absolute will see thanks for your time
+
+
+[09/26/2024 21:56] ximontan
+may be get profit and get Drawdown, and for example profit / Drawdown, and we have like profit factor and we need increase it by optuna...
+
+
+[09/26/2024 21:58] .7thdragon
+is not ok if u have big drawdawn as solely. this i expect in range higher than -0.3 best is higher than -0.1
+but is a good idea anyway
+
+
+[09/26/2024 22:01] sera131
+if you make some time to explain optuna to me these days, I might try to set up or configure it also
+
+
+[09/26/2024 22:01] serialkiller15
+@upSera we will do tomorrow..
+
+{Reactions}
+🍻
+
+[09/26/2024 22:03] serialkiller15
+So good night have ti csch some sleep
+
+
+[09/26/2024 22:03] sera131
+ok im done, gn bois
+
+{Reactions}
+🥱
+
+[09/26/2024 22:04] ximontan
+😴
+
+
+[09/26/2024 22:16] maxgorbachevskiy
+Will give it a shot! Thanks man
+
+
+[09/27/2024 02:07] xenigami
+Hello, I would like to test v93, but where can I get the file? Do I need to request access?
+
+
+[09/27/2024 12:45] .7thdragon
+did a hyperopt for my 50 pairs last night, as had it stop for a week, reinitialized
+{
+    "strategy_name": "AlexBTStrategyFinalV93",
+    "params": {
+        "roi": {},
+        "trailing": {
+            "trailing_stop": false,
+            "trailing_stop_positive": null,
+            "trailing_stop_positive_offset": 0.0,
+            "trailing_only_offset_is_reached": false
+        },
+        "buy": {
+            "target_pct_change": 1.592161049534314,
+            "w0": 0.5844066822274594,
+            "w1": 0.6506906430624589,
+            "w2": 0.557756928422148,
+            "w3": 0.47718739677624944,
+            "w4": 0.7444428368811136,
+            "w5": 0.5246029615444328,
+            "w6": 0.1617791767810267,
+            "w7": 0.9462608521681798,
+            "w8": 0.44318767598789166,
+            "predicted_R_factor": 0.7824464551296018,
+            "predicted_V_factor": 1.3023081584751726,
+            "predicted_S_factor": 1.3664176724176114,
+            "predicted_R2_factor": 1.547516768564834,
+            "predicted_V2_factor": 0.41329431712839704,
+            "min_trailing_stop": 0.1,
+            "max_trailing_stop": 0.3,
+            "min_trailing_offset": 0.1,
+            "max_trailing_offset": 0.3
+        },
+        "sell": {},
+        "protection": {},
+        "stoploss": {
+            "stoploss": -0.14
+        },
+        "max_open_trades": {
+            "max_open_trades": 30
+        }
+    },
+    "ft_stratparam_v": 1,
+    "export_time": "2024-09-27 01:51:48.711588+00:00"
+}
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1289206382116995124/image.png?ex=69f34f01&is=69f1fd81&hm=af6722633269004c2e5353b0dd6a92c34c9ed9fe669e5320112049c351c08252&
+
+
+[09/27/2024 12:47] .7thdragon
+still, no trades since my first post
+
+
+[09/27/2024 12:55] priezz
+I had ~70% profit from hyperopt and [-10; 150] when backtesting with optuna. I don't really like how it works because the best result is found at a first few iterations and then results are random and are repeated pretty often (including the best one). But the approach itself (continuous backtesting to find a better params set) seems to be reasonable, so currently I am looking for a way to improve it.
+
+{Reactions}
+❤️ (2)
+
+[09/27/2024 13:22] serialkiller15
+Thanks for your inputs
+
+
+[09/27/2024 13:24] .7thdragon
+if you find a way for use multi-objective (gain maximize and stoploss minimize) it would be really powerfull
+https://optuna.readthedocs.io/en/stable/tutorial/20_recipes/002_multi_objective.html
+my workaround was to keep stoploss small
+
+
+[09/27/2024 13:37] ximontan
+@Alex Crypto King is V93 same as V91 unless optuna?
+
+
+[09/27/2024 13:39] .7thdragon
+yes, i took 91 and adapted it for optuna, especially variables, logic was not modifed
+this was the scope, but i might missed something 🤪
+
+
+[09/27/2024 13:40] serialkiller15
+Absolute yes
+
+
+[09/27/2024 13:40] ximontan
+thanks
+
+
+[09/27/2024 13:52] priezz
+Yep, I am on that page already )) Together with multiprocessing. Btw, have you tried torch sampler?
+
+
+[09/27/2024 14:02] .7thdragon
+no, as i saw a comparative table somewhere, the best option in my opinion was TPESampler
+
+
+[09/27/2024 14:10] priezz
+This one https://optuna.readthedocs.io/en/stable/reference/samplers/index.html ? BoTorch also seems to be applicable for our needs
+
+
+[09/27/2024 14:42] .7thdragon
+is ok if has multiple objective , small trials, but maybe we want to use other variable types, eg categ. but is about the code implementation, you can simply change the model type afterwards and should work seemly
+
+
+[09/27/2024 16:34] maxgorbachevskiy
+Dumb question  v93optuna. Trying multiple hyperopts - they are all identical. 
+I delete json with strategy params, and hyperopt results. But this does not fix the problem. What did I forget?
+
+
+[09/27/2024 16:43] priezz
+hyperopts or optuna?
+
+
+[09/27/2024 16:51] maxgorbachevskiy
+hyperopt'ing of optuna (command `freqtrade hyperopt ....`)
+
+
+[09/27/2024 16:52] serialkiller15
+so i am back was on a business trip, will no try to reproduce this results.....
+
+
+[09/27/2024 17:39] priezz
+I had a similar issue with hyperopt, it returned just one result (always at 1st epoch), then optuna alsa returned always the same result. For me reduction of max_trades to 20 helped.
+
+{Reactions}
+👍
+
+[09/27/2024 17:48] serialkiller15
+guys i am on it i found the failure i think have to many versions here.....but in my excel i did any tests after changes from @7thDragon and myself ..and good that i did documented them! there was a version bevor @7thDragon postet V93 with this results....
+
+
+[09/27/2024 17:50] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1289283051829858439/image.png?ex=69f39669&is=69f244e9&hm=3cc133a9d5c28c899e3c262446c95a9f875f420739d847e3ca1184075546626d&
+
+
+[09/27/2024 17:51] serialkiller15
+and the Backtest
+
+
+[09/27/2024 17:52] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1289283415128014951/image.png?ex=69f396bf&is=69f2453f&hm=66b9ddf2a92893f6c7f5eda21ef6cdd89e87990095a0858976156223b93770fc&
+
+
+[09/27/2024 17:53] serialkiller15
+an another backtest
+
+
+[09/27/2024 17:53] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1289283729339973652/image.png?ex=69f3970a&is=69f2458a&hm=e52ad9f426704f5aff0f85d5e1f34fa87a8bed51e7c507252f06427ccc96536e&
+
+
+[09/27/2024 18:04] serialkiller15
+hyperopt buy and stoploss nothing more.... will do on dry run and report!
+
+
+[09/27/2024 18:48] maxgorbachevskiy
+Yes the same problem. just one result (always at 1st epoch), always the same result.  Chjanging to smaller max_trades does not help. Because it only limits the velocity of trading, but does not re-start the hyperopt randomizing. For example, .my hyperopts are identical for max_trades=30 and =15.  It tonly means that during hyperopt the model never reaches 15 simultaneous trades; and always returns the same config numbers.
+I am stuck, like a dumb, like a rookie..
+
+
+[09/27/2024 18:49] serialkiller15
+@MaxG look at my Post here before
+
+
+[09/27/2024 20:21] maxgorbachevskiy
+You mean, that you (potentially) found a bug ? and you will post an update with the corrected code?
+
+
+[09/27/2024 20:22] serialkiller15
+Yes I will... Let's finish the test and make an Review tomorrow but the results in hyperopt and backtest are promising...
+
+{Reactions}
+👍
+
+[09/28/2024 07:01] serialkiller15
+so problem solved, to much overload in the latest version
+Optuna is running, let me start dry run, 
+will report in the afternoon, because of weekend i am on the road!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1289482138634424330/image.png?ex=69f2fe53&is=69f1acd3&hm=377a23182349d000c9e5d9c4642d41b973e1592b7d9bb7dc1dd1cf77b69ab9ee&
+
+{Reactions}
+👍 (3)
+
+[09/28/2024 11:31] priezz
+Not sure I understand what do you do. Hyperopt it to be done just **once** on a clean database. Then you have to run optuna
+
+
+[09/28/2024 11:41] serialkiller15
+Absolute @priezz
+
+
+[09/28/2024 13:15] .7thdragon
+⛑️ i update again here (with my jsons) the last used versions, @Jenny found a discrepancy in v90, which is reflected also in 93 on BT V having nans
+lately i am not so convinced that freqai makes a good difference, i am thinking to use only the BT version
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1289576174024130711/AlexStrategyFinalV93.py?ex=69f355e7&is=69f20467&hm=b6c1d681b7727b1e480ca12095723201b4babbb87a8638097bfc83aab00e193f&
+https://cdn.discordapp.com/attachments/1288738777468112948/1289576174338707486/AlexStrategy_Optuna.pyt?ex=69f355e7&is=69f20467&hm=027d4467cc29eb5a68ec03071a9e6110c69649be2d12f74985a07c6ffee57d7b&
+https://cdn.discordapp.com/attachments/1288738777468112948/1289576174669791295/AlexStrategyFinalV93.json?ex=69f355e7&is=69f20467&hm=1b3433c8ce50e5cade9d0ca1c18256117d8c0e213cde57776ad6de26d9ff87a4&
+https://cdn.discordapp.com/attachments/1288738777468112948/1289576175030763601/AlexBTStrategyFinalV93.json?ex=69f355e7&is=69f20467&hm=3d54c465f85c84ead7b4f2566d5ada1e4094de659477e8ee8f47b3822cd51678&
+https://cdn.discordapp.com/attachments/1288738777468112948/1289576175382827048/AlexBTStrategyFinalV93.py?ex=69f355e7&is=69f20467&hm=9daad77fc4c328b1c785c56f9ed0e8a69f315f60eebba8677292881eaeb0be38&
+
+{Reactions}
+👍
+
+[09/28/2024 17:39] ximontan
+Interesting idea use just bt version, it would be great run bt and ai parallel
+
+
+[10/01/2024 19:58] .7thdragon
+no trades lately with BT (dropped freqai) but existing ones are provisioned ok, average duration 3 days 😉 backtest is around 50% always, got also more but 100 tests cycle were passed
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1290764784467443765/image.png?ex=69f30ba1&is=69f1ba21&hm=a570988b6c9b45100034172d456d0fcbebfb2e8b3addc6851c01149fb11b03d5&
+https://cdn.discordapp.com/attachments/1288738777468112948/1290764784865640499/image.png?ex=69f30ba1&is=69f1ba21&hm=2f26dd2f003f2b5be5a95a48113ce155b2847a6a7cc22450de9c9f2e522ede5a&
+
+
+[10/01/2024 19:59] serialkiller15
+Thanks for sharing
+
+
+[10/01/2024 20:00] serialkiller15
+Freqai is unusable when market changes quickly or like today.... Goes down... I am on it with some ideas to handle that
+
+
+[10/01/2024 20:02] .7thdragon
+was expected 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1290765904749133936/image.png?ex=69f30cac&is=69f1bb2c&hm=93d4d773e122d09c2eb4250e54e67b49011835c09db0dd655487a007abbe3a2a&
+
+
+[10/01/2024 20:03] serialkiller15
+Absolute right
+
+
+[10/01/2024 22:46] alex_737071
+Anyone getting this? `freqtrade.freqai.freqai_interface - WARNING - Model expired for OP/USDT:USDT, returning null values to strategy. Strategy construction should take care to consider this event with prediction == 0 and do_predict == 2`
+
+
+[10/01/2024 22:53] .7thdragon
+is normal, the pair should be already placed in queue for training, tight live_retrain_hours or enlarge expiration_hours
+
+
+[10/01/2024 22:54] alex_737071
+OK, this is during startup and initial model training, but i have just realised i have some PairList plugins, so its not such a 'Static' list, i wonder if thats causing it?
+
+
+[10/01/2024 22:55] .7thdragon
+during the startup model is already old, practically is expired and will not be taken in consideration
+
+
+[10/01/2024 22:56] alex_737071
+Already Old? So why does it train all the models before startup?
+
+
+[10/01/2024 22:59] .7thdragon
+? do not get your question, on FT start will check the models to build the queue list for trainings, for sure that is trained more than expiration_hours ago
+
+
+[10/01/2024 23:02] alex_737071
+OK, so it need history, makes sense! Sorry man, this AI thing is all new to me! 🙂
+
+
+[10/01/2024 23:04] .7thdragon
+ah yes it is possible also failed to train because of the missing/bad history.
+Also FT with FreqAI have some real issues with open orders if u change the pairs make sure u fix FT: https://discord.com/channels/1238181199206154373/1284586552760074323
+
+
+[10/01/2024 23:05] alex_737071
+FT: link?
+
+
+[10/01/2024 23:05] alex_737071
+Thank you!
+
+{Reactions}
+👍
+
+[10/07/2024 14:09] alex_737071
+Hey guys, i dont recall who was in the conversation other than @Laurent D. and I about the Palau ID Card, but mine arrived today, and i have passed level 1 varification on ByBit, and can trade futures from inside the EU for anyone interested.
+
+{Reactions}
+👍 (3) 🔥 (2)
+
+[10/07/2024 14:17] serialkiller15
+oh realy thats nice!
+
+
+[10/07/2024 14:17] serialkiller15
+@Alex may i ask where you are from? thanks mate
+
+
+[10/07/2024 14:47] alex_737071
+Im from UK, but Spanish Resident
+
+
+[10/07/2024 14:51] serialkiller15
+Thanks nice that it works with the ID
+
+
+[10/07/2024 14:56] anonymuis
+Very good to know! 🙏 
+It's getting harder and harder to trade futures from inside the EU.
+
+
+[10/12/2024 23:45] amiralbhar
+Here is my first run with v93. I hyperopted 08/24-09/24 and backtested 09/24-10/24 using AlexBTStrategyFinalV93, then copied and pasted the JSON results into AlexStrategyFinalV93.json. I ran it in dry mode. Everythings seems working, the logs shows any errors but I do not see entry points green indactors for previous timestep, is it normal ? However, trades are triggered
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1294808275124228126/image.png?ex=69f340ed&is=69f1ef6d&hm=d217f29281312de8e20f4b45b5d6fb5a3261b5d014b5d4e0e6750f04d7f787e0&
+https://cdn.discordapp.com/attachments/1288738777468112948/1294808275380076605/image.png?ex=69f340ed&is=69f1ef6d&hm=6db290fb82e8b086fdad955b4529182feb8840c651c0145a6e9c92ca51f208b3&
+https://cdn.discordapp.com/attachments/1288738777468112948/1294808275681939496/image.png?ex=69f340ed&is=69f1ef6d&hm=87b5c90d876aab9dbe474cb3e00d09ef4264588f79d3535342289283da041d11&
+
+
+[10/13/2024 05:31] serialkiller15
+Did you read the instructions for optuna here met me find the post
+
+
+[10/13/2024 05:33] serialkiller15
+
+
+{Forwarded Message}
+Here is another aproach i tried to ....
+Based on Version9 without changes
+I integrated Automated Optuna on it.
+This is just a Test i cann not say if it will be profitable.....
+
+It uses the OLD Targets from Version 9 !!
+
+pip install optuna
+There are this Files to use for
+AlexStrategyFinalV90.py                  - Main Script wor Live/Dry RUN
+AlexStrategyFinalV90.json               - json file for Live/Dry RUN
+AlexStrategy_Optuna.py                  - Optuna Script
+AlexBTStrategyFinalV90.py            - For Backtest!
+AlexBTStrategyFinalV90.json         - json file for Backtest   
+
+For Testrun i used this command (for testing)
+python ./freqtrade/user_data/strategies/AlexStrategy_Optunan.pyt --showft --trials 10000 --maxtrials 100 --days 30 --download
+
+
+the main idea is, get first an hyperopted BT json (the attached is a start option but the market already changed). hyperopt recommendation is SharpeHyperOptLossDaily --spaces buy , leave max_open_trades more (30)
+
+it will do around 200 tests per day for a busy machine but you might obtain more
+practically after first hyperopt you do not need hyperopt anymore, suggestions from optuna are more scientific than FT hyperopt trials
+Example of starting Optuna (in your FT python environment .venv)
+python AlexStrategy_Optuna.pyt 
+I renamed pyt as the FT has a problem on searching strategies and python scripts in the same folder
+Originally sent: 09/19/2024 08:27
+
+{Reactions}
+👍
+
+[10/13/2024 05:35] serialkiller15
+@Amylow this is the instructions for v90 v93 works also
+
+
+[10/13/2024 12:44] amiralbhar
+thanks @Alex Crypto King I'm running AlexStrategy_Optunan.py now, and live hyperopt is automatically generating AlexBTStrategyFinalV93.json. In parallel, I have a dry run with AlexStrategyFinalV93.py. I'll let it run for a few days and will share the results. I still don't see any entry markers but that's normal right?
+
+
+[10/14/2024 15:35] alex_737071
+Sorry guys, might be a stupid question, but if your running the optuna and a dry_run, how does optuna trigger a reload on the running trader? Am i missing somthing in the code or the setup?
+
+
+[10/14/2024 15:35] serialkiller15
+There are only stupid answer did you Check the Post with Installation i ut in here
+
+
+[10/14/2024 15:36] alex_737071
+I think i have followed everything... im not saying its not doing it... just asking how it does! 🙂
+
+
+[10/14/2024 22:23] alex_737071
+I have clearly missed somthing... we run hyperopt to get a good initial config, then we run the Optune.pty for continus hyperoptermising, but the optune.pty file does not run a trader bot right... it opens and updates the json params file with the latast and greatest params. So how does the running trader know when to reload? FT does not relaod config files unless told to do so i thought... what am i missing here? Im sure im being stupid, but im really confused how this optuna think is supposed to integrate.
+
+
+[10/15/2024 20:45] .7thdragon
+ft is python, u can do it in this, check the reload_parameters_from_json() function. it is reloading hourly buy_params and stoploss
+
+
+[11/01/2024 10:33] z.rux
+AlexBTStrategyFinalV93.py for Backtest and hyperopt right?
+
+
+[11/01/2024 13:03] serialkiller15
+yes its also described in the instructions!
+
+{Reactions}
+✅
+
+[11/09/2024 20:44] joaolool
+Guys, could someone help me with a docker file, I'm having difficulty with the git file?
+
+
+[11/09/2024 20:56] serialkiller15
+@joaolool yeo what do you need
+
+
+[11/12/2024 08:48] paul321_123
+Dear all,
+I'm in the process of researching some strategies for freqai and stumbled across your strategy 🙂 I find the concept of the strategy very interesting, due to the scoring system that seems to be implemented.
+
+However, I don't really understand how freqai is working in the strategy. If I look into the documentation (e.g. https://www.freqtrade.io/en/stable/freqai-configuration/), a lot revolves around the "targets" set in "set_freqai_targets"m for instance
+df['&s-close_price'] = df['close'].shift(-100)
+is given as example of predicting the close price in the future.
+
+However, when looking into the LSTM strategy, I can't find a similar assignment. The base strategy (https://github.com/Netanelshoshan/freqAI-LSTM/blob/main/ExampleLSTMStrategy.py) makes the following assignment in set_freqai_targets:
+ dataframe['&-target'] = dataframe['T']
+-> so I don't see any prediction of candles here.
+
+In AlexBTStrategyFinalV93.py, there is no "set_freqai_targets"-function, instead the target "&-target" is set at the end of populate_indicators with a target_horizon of 1, i.e. 1 candle is predicted. I guess this is intended that way because this version of the strategy shall work without freqai. Is this correct?
+
+In AlexStrategyFinalV93, all this stuff is done in set_freqai_targets (so freqai should work properly), but again with a horizon of 1, so 1 candle is predicted into the future. Is this intended as well?
+
+
+In a nutshell, my question is:
+How is freqai exactly employed in this strategy? is it just the prediction of a single candle as outlined before, or am I missing something?
+
+Thanks for a short note on that, this would be well-appreciated!
+
+{Embed}
+https://github.com/Netanelshoshan/freqAI-LSTM/blob/main/ExampleLSTMStrategy.py
+freqAI-LSTM/ExampleLSTMStrategy.py at main · Netanelshoshan/freqAI-...
+A Trading Model Utilizing a Dynamic Weighting and Aggregate Scoring System with LSTM Networks - Netanelshoshan/freqAI-LSTM
+https://images-ext-1.discordapp.net/external/N8DhalOcWuWdHTIpXWjwX73YT7vbbGKVXIQSGq48v2g/https/opengraph.githubassets.com/85608c38466536258c3eb9210010ede2f94954e709dff73206416e9b830422f8/Netanelshoshan/freqAI-LSTM
+
+
+[11/12/2024 13:57] serialkiller15
+@paul321_123 thanks for your inputs, yes you are right in some cases, the AlexBTStrategy.xxxx is always for Backtesting or can also be run with freqai=false, 
+on the Main Strategy like AlexStrategyFinalVxxxx we added the Horizon later, and yes that should me a better way to do a horizon like 10, 20 ... but on my tests this was very ressource hungry so if you have good impacts you are welcome, you can also write me an DM i am here! THANKS and Welcome!
+
+
+[11/12/2024 22:54] paul321_123
+Ok, thanks for the feedback! Yes, once freqai is employed it seems you need a quite good graphics card and lots of RAM, I bought a PC in summer that can kind of support this. Hyperopting also works with freqai directly, just the training takes some time.  Let's see, if I have some time I'll try a few things w.r.t. the prediction settings and report on the results. Cheers!
+
+
+[11/13/2024 04:49] serialkiller15
+Thanks 😊
+
+
+[11/14/2024 12:00] serialkiller15
+@paul321_123 if you need something please let me know!
+
+
+[11/17/2024 14:24] cs_0612_49562
+Hi guys. I want to know Where can I download AlexStrategyFinalV93? In https://github.com/AlexCryptoKing/freqailstm there are only V90 earlier versions
+
+{Embed}
+https://github.com/AlexCryptoKing/freqailstm
+GitHub - AlexCryptoKing/freqailstm
+Contribute to AlexCryptoKing/freqailstm development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/t8pdN9_KWHpPmUfOtF-qqQec8wK3DIvODphCKKcBxqs/https/opengraph.githubassets.com/20e06f3786edd7419a105bcde2f459f23f23f4019d2bc12055ec14141b5203cd/AlexCryptoKing/freqailstm
+
+
+[11/17/2024 14:25] serialkiller15
+Hi and welcome here @cs let me check the channels
+
+{Reactions}
+😃
+
+[11/17/2024 14:25] serialkiller15
+It's not in github
+
+
+[11/19/2024 16:33] xaviertoor
+Need GPU?
+
+
+[11/20/2024 06:33] cs_0612_49562
+You mean I need GPU resource? Yeah, I am short of strong GPU.
+
+
+[11/23/2024 08:57] gizdulock
+hy!
+i try the AlexBTStrategyFinalV93 with optuna script,  and i got this error:
+Impossible to load Strategy 'AlexBTStrategyFinalV93'. This class does not exist or contains Python code errors.
+Working path ok, Class name ok. so idk what is problem. Can anyone help?
+
+
+[11/23/2024 09:47] xaviertoor
+Backtesting or trade?
+
+
+[11/23/2024 09:48] gizdulock
+everything. bactest, trade, and optuna
+
+
+[11/23/2024 09:49] xaviertoor
+I managed to run only backtesting
+
+
+[11/23/2024 10:05] gizdulock
+wtf.. backtest now run with AlexBTStrategyFinalV93.. my bad
+
+{Reactions}
+👍 (2)
+
+[11/23/2024 14:53] serialkiller15
+BT stands for Backtest.... Have fun and enjoy
+
+
+[11/23/2024 14:59] gizdulock
+Nice, thanks!
+And which useable with optuna script v93?
+
+
+[11/23/2024 15:20] serialkiller15
+Did you read the instructions?
+
+
+[11/23/2024 15:23] serialkiller15
+https://discord.com/channels/1238181199206154373/1288738777468112948/1289576175705915454
+
+
+[11/23/2024 15:23] serialkiller15
+Try this version...
+
+
+[11/23/2024 18:45] gizdulock
+I follow this instruction and used files, and i got this error:
+```freqtrade - ERROR - Impossible to load Strategy 'AlexStrategyFinalV93'. This class does not exist or contains Python code errors.```
+
+
+[11/23/2024 18:52] xaviertoor
+I also have the same error here, I can run the AlexStrategyFinalV90Hyper strategy
+
+
+[11/23/2024 19:33] xaviertoor
+2024-11-23 19:32:40,180 - freqtrade.resolvers.iresolver - WARNING - Could not import /freqtrade/user_data/strategies/AlexBTStrategyFinalV93.py due to 'name 'List' is not defined'
+2024-11-23 19:32:40,180 - freqtrade - ERROR - Impossible to load Strategy 'AlexBTStrategyFinalV93'. This class does not exist or contains Python code errors.
+
+
+[11/23/2024 19:34] gizdulock
+yeah name list resolved on my file.
+need add ```from typing import List```
+and ```pip install typing```
+
+
+[11/23/2024 19:40] gizdulock
+I wrote a simple strategy checker code whithout running freqtrade that can detect Python errors or check if it is compatible with Freqtrade. Here is the file, as well as the Docker Compose file for Docker users. **The strategy name and the class name must match!**
+```Using it is very simple; you just need to fill in the STRATEGY_FILE_PATH = part in the Python file, including the .py extension! For example: "user_data/strategies/ALEX/AlexStrategyFinalV93.py"```
+**strategies_checker.py file need move to user_data folder!**
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1309966943968559104/docker-compose_checker.yml?ex=69f30789&is=69f1b609&hm=06b13922e28f80de8c346939f5ece695780f3e28c50df61589d2926d7c221208&
+https://cdn.discordapp.com/attachments/1288738777468112948/1309966944371216455/strategies_checker.py?ex=69f30789&is=69f1b609&hm=550012a077b04beda993ae14a7b04388cd05f755868bafe807f4604985b9917a&
+
+
+[11/23/2024 19:41] gizdulock
+And i see AlexStrategyFinalV93.py working..
+
+
+[11/23/2024 19:42] gizdulock
+So, I don’t know how to get the Optuna script to work with V93...
+
+
+[11/23/2024 19:44] xaviertoor
+Works now with from typing import List
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1309967845672751154/image.png?ex=69f30860&is=69f1b6e0&hm=2eb259b8c51f34654e90951e3b4e7530022c143d80768743f6c9c18d6550ccde&
+
+
+[11/23/2024 19:44] xaviertoor
+Thanks
+
+{Reactions}
+👍
+
+[11/23/2024 19:45] gizdulock
+Very nice! 😊
+
+
+[11/23/2024 21:49] gizdulock
+idk why worked, but added my strategies path to ``` # Global variable declarations (initially set to None or default values)
+working_path = "user_data/strategies/ALEX/" ```
+in optunan file and now working fine with V93 🤔
+
+
+[11/24/2024 04:53] serialkiller15
+Perfect you did it
+
+
+[11/25/2024 12:29] cs_0612_49562
+Hi, I tried AlexBTStrategyFinalV93 to backtest(enable freqai), the result is good, but I can't use Visualize result. It gives error logs like the image. How can I solve it ?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1310583059271254066/image.png?ex=69f34b16&is=69f1f996&hm=f52bd723f8aa36e21823f85cc8fb8078994edbdbea6045475edf52635111eb95&
+
+
+[11/25/2024 12:30] cs_0612_49562
+And the log is here,
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1310583281175232565/log.log?ex=69f34b4b&is=69f1f9cb&hm=8ff66feafd2f50e9d03acc4088eae498569a593ea05283e2dcf61e0a3a28f5c7&
+
+
+[11/25/2024 12:30] serialkiller15
+USDT:USDT raised exception OperationalException. Message: BTC/USDT:USDT: all training data dropped due to NaNs. You likely did not download enough training data prior to your backtest timerange. Hint:
+http
+
+
+[11/25/2024 12:31] serialkiller15
+Read the Error and download enough data before backtest for your coin list
+
+
+[11/25/2024 12:35] cs_0612_49562
+Oh, I think my data is enough. Because I had finished backtest without any error. The error log appears when I use freqUI to visualize the ready made result.
+
+
+[11/26/2024 13:32] cs_0612_49562
+I know where the problem happens. Just comment out the code here, then it becomes normal.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1310961356320800839/image.png?ex=69f359e7&is=69f20867&hm=9132a0d174b46fbc7375e7121aa310fc17e444899e8a4ad7b874dccfc72f9ac2&
+https://cdn.discordapp.com/attachments/1288738777468112948/1310961357079838793/image.png?ex=69f359e8&is=69f20868&hm=eeae7a3437498020a07507990affba1ff8428c0b49fd011560e04ec8e353fdb2&
+
+{Reactions}
+🧐 👍
+
+[11/26/2024 13:33] cs_0612_49562
+It's another bug in freqtrade.😂
+
+
+[11/26/2024 16:38] serialkiller15
+Thanks @cs
+
+{Reactions}
+😃
+
+[11/29/2024 14:17] cs_0612_49562
+OK, The matter has been completely resolved. The freqtrade maintainer has submitted a PR to fix this bug, please refer to the link below for details. https://github.com/freqtrade/freqtrade/pull/11005
+
+{Embed}
+https://github.com/freqtrade/freqtrade/pull/11005
+freqAI bug causing failures on 2nd backtest by xmatthias · Pull Req...
+Summary
+
+if we don&#39;t call freqai_set_targets() - we can&#39;t get .find_labels() either (nested in get_unique_classes_from_labels() - as there won&#39;t be targets assigned to the d...
+
+{Reactions}
+👍 (3)
+
+[12/18/2024 15:51] xiaocui110
+Please share version 931 and optimize parameter configuration for a high win rate version. Thank you
+
+
+[12/18/2024 15:57] serialkiller15
+@xiaocui yesvwill do thanks...
+
+
+[12/18/2024 16:00] xiaocui110
+Thank you
+
+
+[12/18/2024 16:01] serialkiller15
+You are welcome
+
+
+[12/19/2024 07:45] xiaocui110
+Your strategy is not based on using AI to predict the direction of rise and fall, but on using many future functions for prediction. Do you have an actual AI version for predicting the direction of rise and fall?
+
+
+[12/20/2024 13:24] serialkiller15
+@everyone here it is the V931... i did not follow any modifications since Oktober because of less time.....
+
+{Reactions}
+😍
+
+[12/20/2024 13:25] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1319656834620985356/AlexBTStrategyFinalV931.json?ex=69f35833&is=69f206b3&hm=50910fe086aa3c57bc10fdff9c358e5d48f05ae6d359fe6b4487930c8568b3a0&
+https://cdn.discordapp.com/attachments/1288738777468112948/1319656834952593439/AlexBTStrategyFinalV931.py?ex=69f35833&is=69f206b3&hm=46393470f1014d49a34512908b076b94a5919764460008e3257835a243fb5512&
+https://cdn.discordapp.com/attachments/1288738777468112948/1319656835338207263/AlexStrategy_Optuna.pyt?ex=69f35833&is=69f206b3&hm=b5cf19abf9ad978e7c87b3c9251b50471b7c329aa073c45ea50acbc78c5175b0&
+https://cdn.discordapp.com/attachments/1288738777468112948/1319656835636006973/AlexStrategyFinalV93.json?ex=69f35833&is=69f206b3&hm=97aba4c3c75a6447a2286e8cf33b0900a247ee833b038b2b679eb66ca235f1bc&
+https://cdn.discordapp.com/attachments/1288738777468112948/1319656835946643546/AlexStrategyFinalV93.py?ex=69f35833&is=69f206b3&hm=823b5b87199b51d03946add48df00332a92dbb80ed21301dbda0d02510d04dd8&
+
+
+[12/20/2024 13:25] serialkiller15
+Pinned a message.
+
+
+[12/20/2024 15:40] eakapob
+?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1319690964302041109/message.txt?ex=69f377fc&is=69f2267c&hm=a3a60c353134ab3e0e0324280b6b774f12202e7d8598a0a605a51bea68c51d93&
+
+
+[12/20/2024 15:41] eakapob
+Pls help
+
+
+[12/20/2024 15:46] serialkiller15
+@eaka3 please ch the basics here in the first post
+
+
+[12/20/2024 15:47] serialkiller15
+https://discord.com/channels/1238181199206154373/1285962815508713613/1285963144816234517
+
+
+[12/20/2024 15:47] serialkiller15
+Here is the description how this works
+
+
+[12/20/2024 15:48] serialkiller15
+Also you dint have installed the model for training start on the beginner sessions you are welcome.
+
+
+[12/21/2024 09:59] xiaocui110
+@Alex Crypto KingThe content of your 93 version can be directly run on real disk or simulated disk, right?
+
+
+[02/26/2025 18:47] serialkiller15
+Yep
+
+
+[02/27/2025 14:43] 133900029
+why i dry run the AlexBTStrategyFinalV931  it will buy and sell at the same price ?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288738777468112948/1344681362568904754/image.png?ex=69f36a9b&is=69f2191b&hm=e4bb1df4f32d2b17f13ca4214135a02354df7fcbc1b4f0365873b9091bc25f44&
+
+
+[03/06/2025 16:30] serialkiller15
+No it exits long and does sell
+
+
+[08/17/2025 19:54] divarak
+Hello everybody, someone can post a config file that has some results for this strategy?? without API keys, of course. 😁
+
+
+[08/17/2025 19:55] divarak
+forgot to say please, and thanks in advance.
+
+
+==============================================================
+Exported 216 message(s)
+==============================================================

@@ -1,0 +1,126 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 📊alexbattletankkillerhurstv4_results
+==============================================================
+
+[07/03/2025 08:28] serialkiller15
+@Beta-Tester some results running since yesterday
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390209233085272145/1390247915263361075/image.png?ex=69f312c4&is=69f1c144&hm=bb12f53dd72ed21fdfbf51ae912367897f624973e3496c5a6cbf297ce1bbda3b&
+
+
+[07/04/2025 17:31] serialkiller15
+Let the rocket fly...
+
+
+[07/04/2025 17:31] serialkiller15
+@everyone
+
+
+[07/04/2025 17:31] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390209233085272145/1390746893989974066/image-4.png?ex=69f391fa&is=69f2407a&hm=e6b91b8cec581c34ca3ddd84ca754350f787eb4ecbc82b824a58f01721b867fc&
+
+
+[07/04/2025 17:33] viking046433
+Mine have been running for a few hours let’s see
+
+
+[07/04/2025 20:33] laupapp
+{
+        "method": "VolumePairList",
+        "number_assets": 200,
+        "sort_key": "quoteVolume",
+        "min_value": 1000000,
+        "refresh_period": 90000,
+        },
+        { "method": "AgeFilter", "min_days_listed": 300 },
+        { "method": "FullTradesFilter" },
+        {
+          "method": "OffsetFilter",
+            "offset": 1,
+            "number_assets": 50 
+        }
+
+MOT = 20
+STAKE = 10
+TIMEFRAME = 15m
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390209233085272145/1390792762156122342/image.png?ex=69f313f2&is=69f1c272&hm=9cb968d4bb56accacfad6b621d42a5c4c0b1e7eaf021650a685a543cc00ed6f1&
+
+
+[07/04/2025 20:45] .7thdragon
+{
+      "method": "VolumePairList",
+      "number_assets": 1000,
+      "sort_key": "quoteVolume",
+     "min_value": 1000000,
+      "refresh_period": 630000,
+      "lookback_days": 30,
+        },
+        { "method": "AgeFilter", "min_days_listed": 300 },
+        { "method": "FullTradesFilter" }
+    { 
+        "method": "OffsetFilter",
+        "offset": 0,
+        "number_assets": 60, 
+    },
+MOT = 20
+STAKE = 10
+version 40H TF 15m
+ive patched only roi and trade.is_short
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390209233085272145/1390795638752542830/image.png?ex=69f316a0&is=69f1c520&hm=8925bc18e12a8e8bbd30bcba6d6710ca3d569e397d66d72cc7e00e2979e0d78c&
+
+
+[07/10/2025 07:06] giovannimauro
+unfortunately I had some stop, IDK why.... but the new version hurst look pretty good!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390209233085272145/1392763833210114078/image.png?ex=69f2ff66&is=69f1ade6&hm=5321db30c67d9d2c30dd7c9119f227ad3a82b7bf8ffc4a87e40e748c7bfadcbf&
+
+{Reactions}
+👍
+
+[07/10/2025 07:06] giovannimauro
+started yesterday
+
+
+[07/10/2025 23:13] mmnbm_79378
+At present, according to my backtest, 30 minutes is the best effect
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390209233085272145/1393007291590119434/image.png?ex=69f33963&is=69f1e7e3&hm=a25127893ced0ae13b29a3f5c74b38321048be59ece64228dc4e523d1fdd3bbe&
+
+
+[07/24/2025 22:12] ammart90
+running on 21
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390209233085272145/1398065375567937646/image.png?ex=69f32b18&is=69f1d998&hm=e4dd1032e95c58c4eb352cb96536c76911843c77721f29d14f2e80f429f53c67&
+
+
+[01/25/2026 14:14] anonymuis
+Probably a scam
+
+
+[01/25/2026 14:15] darkreaper0756
+I won 10k😂
+
+
+[01/25/2026 14:18] raul0909
+@Alex Crypto King
+
+
+[01/25/2026 14:23] viking046433
+How did this sneak in
+
+
+==============================================================
+Exported 15 message(s)
+==============================================================

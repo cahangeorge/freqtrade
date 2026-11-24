@@ -1,0 +1,499 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🤖multibot-dashboard
+==============================================================
+
+[10/22/2025 08:20] serialkiller15 (pinned)
+📊 FreqTrade Multi-Bot Dashboard
+
+🤖 Monitor all your trading bots in one clean interface!
+
+✨ Features:
+📈 Real-time P&L tracking
+🔄 Auto-discovery of bots
+💰 Win rates & trade stats
+🎮 Bot controls (start/stop/restart)
+🐳 Docker + systemd support
+
+🚀 Open source & easy setup!
+
+{Reactions}
+🚀 (5)
+
+[10/22/2025 08:22] serialkiller15
+some screenshots available colors dark/white
+
+
+[10/22/2025 08:22] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1430471415055777844/image.png?ex=69f31152&is=69f1bfd2&hm=c316a3dedb053bad89508aedc5de23b9f1553b5933e4f893f2f550fff586e2f1&
+
+
+[10/22/2025 08:22] serialkiller15
+Pinned a message.
+
+
+[10/22/2025 08:22] serialkiller15
+Pinned a message.
+
+
+[10/22/2025 08:37] serialkiller15
+Big Thanks goes to or Great Member, Developer how made this happens @xF0x0F
+
+
+[10/22/2025 08:42] damian_ox9
+can you guide us how to install it ?
+
+
+[10/22/2025 08:42] serialkiller15
+give me some time i am on it!
+
+
+[10/22/2025 08:43] damian_ox9
+sure, no rush
+
+
+[10/22/2025 08:44] serialkiller15
+I made to Versions
+Version 1 from @xF0x0F with uses venv
+Version 2 mine running outside docker and uses the freqtrade when running in docker!
+
+{Reactions}
+🚀
+
+[10/22/2025 08:44] damian_ox9
+love it, i still use linux
+
+
+[10/22/2025 08:44] boooooon
+can we connect to this dashboard from many bots runned on different servers?
+
+
+[10/22/2025 08:46] serialkiller15
+it must run on the server where you have the docker/env bots running, i have 5 machines and it runs good, maybee yes but wee ned to adjust the logic on it!
+you can custom your config also!
+
+{Reactions}
+👍
+
+[10/22/2025 08:46] serialkiller15
+but its a great idea to implement this!
+
+
+[10/22/2025 08:47] boooooon
+if you need some help tell me
+
+
+[10/22/2025 08:48] serialkiller15
+will post first here! than you can do the work for me hehe
+
+{Reactions}
+👍
+
+[10/22/2025 08:50] serialkiller15
+Pinned a message.
+
+
+[10/22/2025 08:51] serialkiller15 (pinned)
+Version2 running in venv - if the freqtrade bots ar running in venv you can use this!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1430478732593856584/freqtrade-multibot-dashboard.zip?ex=69f31822&is=69f1c6a2&hm=2fa2f912f787b98b988b29470e45f7b49eac331dcacc8f83da5eddb1d0c52fee&
+
+
+[10/22/2025 08:51] serialkiller15
+have fun and enjoy!
+
+
+[10/22/2025 08:51] serialkiller15
+Pinned a message.
+
+
+[10/22/2025 09:03] snokard.
+thank you for this @xF0x0F  cant wait to set this up
+
+
+[10/22/2025 09:12] serialkiller15
+Version 2 @Alex Crypto King - for using for Dockers-bots
+I run it outside the docker so its easyer to handle with!
+in Folder Templates you have 2 Versions dashboard.html - grey and dashboard_white
+as Standard it uses the dashboard.html if you want use the white one only rename the files!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1430483925481816064/freqtrade-multibot-dashboard-docker.tar.gz?ex=69f31cf8&is=69f1cb78&hm=186a30f1549a6e3e32cbfe71db7c828265622182e3cdcd9ae9127e1b0297a781&
+
+
+[10/22/2025 11:07] ch1ck3n_t4c0s
+Nice dark mode!!!
+
+
+[10/22/2025 11:08] serialkiller15
+👍
+
+
+[10/22/2025 11:08] ch1ck3n_t4c0s
+Excellent work guys!
+
+
+[10/22/2025 14:53] dennyhui8023
+A small update that allows switching themes on the page. If needed, simply overwrite some files.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1430569830045712557/freqtrade-multibot-dashboard-docker-Switchtheme.zip?ex=69f36cfa&is=69f21b7a&hm=ed3005c48e1ebc1914197c7483540a47e358f97d7c52e4b796b93631b8ba1337&
+
+
+[10/22/2025 14:54] dennyhui8023
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1430570130097836103/image.png?ex=69f36d41&is=69f21bc1&hm=397cc298eb111b73a4a4f46722253b102620975ea732b3a6e76e1b8c6f77cb22&
+https://cdn.discordapp.com/attachments/1430470914369130717/1430570130441764884/image.png?ex=69f36d41&is=69f21bc1&hm=d34ee238adce3c6987a375d426cd5fdf94798687d20bab8a6e427baa2f011271&
+
+{Reactions}
+👍
+
+[10/22/2025 14:58] serialkiller15
+Perfekt thanks
+
+
+[10/24/2025 07:08] serialkiller15
+@everyone
+https://github.com/saamy4r/Freqtrade_app
+
+{Embed}
+https://github.com/saamy4r/Freqtrade_app
+GitHub - saamy4r/Freqtrade_app: This is freqtrade visualization app...
+This is freqtrade visualization app built by flutter and dart language - saamy4r/Freqtrade_app
+https://images-ext-1.discordapp.net/external/LzMCbS3aPCowzNLgKY9IGjycshyaWaDrrsS2DHRn1gY/https/opengraph.githubassets.com/4720c69592591eef808f3bf65a21c0821aec7d82c84510df93a6321a8cb475b8/saamy4r/Freqtrade_app
+
+{Reactions}
+👍 (2)
+
+[10/27/2025 11:32] erkankesemen6252
+I just couldn't get the bots to connect to the Dashboard.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1432331019733962842/IMG-20251027-WA0013.jpg?ex=69f33db6&is=69f1ec36&hm=b200f6688b6c5334cb8137d4e99ccf26f653309ca72bcda2af9dbeb3b6886a52&
+
+
+[10/27/2025 12:30] serialkiller15
+docker or venv?
+
+
+[10/29/2025 12:38] ywk3926
+Does anyone have a pre-packaged Android app that they could share with me?
+
+
+[10/29/2025 12:38] serialkiller15
+see the post bevore there is one
+
+
+[10/29/2025 12:41] ywk3926
+Could you help me locate it? https://github.com/saamy4r/Freqtrade_app
+
+{Embed}
+https://github.com/saamy4r/Freqtrade_app
+GitHub - saamy4r/Freqtrade_app: This is freqtrade visualization app...
+This is freqtrade visualization app built by flutter and dart language - saamy4r/Freqtrade_app
+https://images-ext-1.discordapp.net/external/x08m6P5H8gidD_F2LkH7EGjQJH-7PDsmL1Ul9OWJXkE/https/opengraph.githubassets.com/f23417a5610cb92bce50c68867290897d732291fb2ca4c1aa8c2c755a90da693/saamy4r/Freqtrade_app
+
+
+[10/29/2025 12:43] serialkiller15
+its to big to post it here write me on telegram
+
+
+[10/29/2025 12:45] ywk3926
+I found it, thank you so much!
+
+{Reactions}
+👍
+
+[10/29/2025 13:04] saamyar
+I build the apk if you need
+
+
+[10/29/2025 13:07] ywk3926
+I've found it, has been shared it on Telegram before. Thank you so much!
+
+{Reactions}
+🫡
+
+[10/29/2025 13:08] themarkx_
+Can you share
+
+
+[10/29/2025 15:09] serialkiller15
+its to big to upload here
+
+
+[10/29/2025 15:11] ggoyito
+https://t.me/pycryptobotconfigs/1/56625
+
+{Embed}
+https://t.me/pycryptobotconfigs/1/56625
+Sami in 🚀🚀Freqtrade Strategies🚀🚀
+Made a simple android app to visualize running freqtrade bots
+https://images-ext-1.discordapp.net/external/cwlHVJyUBGM5QZYWc0p90Ew732KTkNXMwaSc3GBHIpg/https/cdn1.telesco.pe/file/K-7HdwiWkm6etzfdOgj7UmNgAYSNrIg-ZhGaWuRO9G6EdltmZwYy1VQF2vfrGveMiuXjo1ksKKFdLorkMRItODvPePYsXlr941XG3skDiOJUeG6RvTCKsnd-o1w_u7SRvCGcnfQ_DkinP4hDr2VRSXS_S2_sPiavgxSx9m9-SmT-TgA6DwZmHb2hZ97NlAIETR7mdRyDn8Y02nWzqHDj5A0bCQ3eAdux3Ae-6YL6sjuXVJXCZH2zo5Gsmcmueo9wccyi1spuAZm1isUgBkTg60HrcCKg5wCVyTXmpu5Yt3HKYbKM7E8vB_StQGHQBMOy27CaHoLuIrv-KIxo1obpqQ.jpg
+
+{Reactions}
+👍 (2)
+
+[11/06/2025 17:13] joaolool
+Could someone send me the updated Dockerfile?
+
+
+[12/05/2025 12:59] xf0x0f
+update coming soon
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1446486215770505297/Bildschirmfoto_2025-12-05_um_13.57.42.png?ex=69f35244&is=69f200c4&hm=4b11699dd90225a0fd1c3a50b397863e2bda570b47beb0c82090572c1069df38&
+
+{Reactions}
+🔥 (5) 👍 (2)
+
+[12/05/2025 13:59] darkreaper0756
+Nice UI🍾✌🏻
+
+
+[12/05/2025 22:25] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1446628650857533481/Bildschirmfoto_2025-12-05_um_23.25.27.png?ex=69f32e2b&is=69f1dcab&hm=0262f301956cae9306ba0f27e295d3a5b89cfed9d6fb8b42ebcc67f38bc9d2d5&
+https://cdn.discordapp.com/attachments/1430470914369130717/1446628651297673347/Bildschirmfoto_2025-12-05_um_23.25.17.png?ex=69f32e2b&is=69f1dcab&hm=6f130e3944d78a9c936373809fda76da489a35e2f6bf947a7938eea2fd4ef98b&
+
+
+[12/05/2025 22:31] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1446630000580231520/Bildschirmfoto_2025-12-05_um_23.30.54.png?ex=69f32f6d&is=69f1dded&hm=eb52039aabdb79b789a3ecff0582f74960d825d40fda2e16c958360d3fd9bbb2&
+https://cdn.discordapp.com/attachments/1430470914369130717/1446630001242935488/Bildschirmfoto_2025-12-05_um_23.30.47.png?ex=69f32f6d&is=69f1dded&hm=0b52bf0b08337c3175981b45bbaf5efd5697717c99701b2a9923cece5d35ed10&
+https://cdn.discordapp.com/attachments/1430470914369130717/1446630001746382962/Bildschirmfoto_2025-12-05_um_23.30.41.png?ex=69f32f6d&is=69f1dded&hm=8a63c7988a49cded5ce90b8d11426eaff7018b51b5be571431ab0636d7620616&
+https://cdn.discordapp.com/attachments/1430470914369130717/1446630002270404748/Bildschirmfoto_2025-12-05_um_23.30.36.png?ex=69f32f6d&is=69f1dded&hm=c3a89be84de309de5beed4d6d49e8d64bd14158ae703f6b3c0f014b3d0f7b0af&
+
+{Reactions}
+🚀 (3)
+
+[12/06/2025 01:05] 4v1234
+Looking nice for comparison,  you are good 😀
+
+
+[12/06/2025 01:47] ohbad1330
+Nicee
+
+
+[12/06/2025 05:12] densky188
+very nice
+
+
+[02/02/2026 19:45] serialkiller15
+not finished but work in progress
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1467969313653920060/image.png?ex=69f308b5&is=69f1b735&hm=898d8849a11c7879d075185a6772c960f67a524724bddde1940c05414aed860c&
+
+{Reactions}
+👏 (3)
+
+[02/02/2026 20:08] serialkiller15
+@xF0x0F will you share yours? i asked you about this thanks mate!
+
+
+[02/02/2026 20:09] serialkiller15
+mine is collecting the data and save it in a database of all running bots, i need the data for future deployment!
+
+
+[02/02/2026 21:05] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1467989275646623977/freqtrade-dashboard-v1.0.0.tar.gz?ex=69f31b4d&is=69f1c9cd&hm=f05953e63a670cc923e62730a665b515305d9ceb72ca52c1c813cd7f91a5c4b5&
+
+{Reactions}
+👍
+
+[02/02/2026 21:06] serialkiller15
+Thanks Mate appreciate that 🔥
+
+
+[02/02/2026 21:07] xf0x0f
+Much work to do on it
+
+
+[02/02/2026 21:07] xf0x0f
+But for me its running stable and pretty fast
+
+
+[02/02/2026 21:07] serialkiller15
+Share a list of expectations but looks good can send it ownclaw tomorrow will see
+
+
+[02/02/2026 21:08] serialkiller15
+Connect to dB collect keep data long term and so on but thanks
+
+
+[02/03/2026 11:34] serialkiller15
+thanks for sharing they miss the docker files in there maybee i did miss somethink let me create a version with the fixes!
+
+
+[02/06/2026 13:55] serialkiller15
+@everyone
+some updates!
+
+it will collect data of all bots running, and also keep data of all old bots (disabled) 
+i build this because i need it hehe!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1469330584059777268/image.png?ex=69f35f3e&is=69f20dbe&hm=e3d33c4cc35d096e77abd9f3d742867593f1ad2a92d5906044ac95f0cb7ed819&
+
+{Reactions}
+👍 (2)
+
+[02/06/2026 16:08] liam_77636
+Just tell me straight—all in long or short!!!
+
+
+[02/06/2026 16:27] serialkiller15
+mixed!
+
+
+[02/06/2026 17:43] dragongoattigercat
+can we setup a seperate VM for the dashboard?
+
+
+[02/06/2026 18:03] serialkiller15
+it runs in docker -4 containers easy let me fix the installation guide then will share here!
+
+
+[02/06/2026 18:04] dragongoattigercat
+Thank you Alex, I am stuck to get it working.
+
+
+[02/15/2026 11:19] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1472552985963004059/image.png?ex=69f33ad6&is=69f1e956&hm=577a42e061cb8a4bf5857dd9b9c2819c8abefb404b6ebf95b9f70f6630fcfc6a&
+
+
+[02/15/2026 11:20] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1472553050563547279/image.png?ex=69f33ae5&is=69f1e965&hm=e743f7acb06fc73a22eb0a6b2d73ac3bd17983d95dc0e9197a6f5a23094fd8da&
+
+
+[02/15/2026 11:20] serialkiller15
+and the historic stuff
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1472553159326175393/image.png?ex=69f33aff&is=69f1e97f&hm=b32e89f17623063921f748976d4fc6a10bd0c7f2833948ccd1f2dcd85e4dc936&
+
+
+[02/17/2026 19:04] jhonn3214
+Wow
+
+
+[02/17/2026 19:05] jhonn3214
+How do I install it?
+
+
+[02/17/2026 19:17] serialkiller15
+Not released yet there will be a docker file that does it... Added backtest results import into it
+
+
+[02/26/2026 17:26] serialkiller15
+@7thDragon @everyone implemented the Strategy Lab into the Dashboard, will test it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1476631648870072474/image.png?ex=69f390e3&is=69f23f63&hm=f02c542a6398fb9f6e7e9fe93bda1de001915db31860fd9857b5dba49ec3feb1&
+
+{Reactions}
+👍 👏 (3)
+
+[02/26/2026 17:27] serialkiller15
+Goal - Fully control of everything in there no more manual commands and other stuff
+
+{Reactions}
+👍 🔥
+
+[03/05/2026 07:53] erkankesemen6252
+Hello, where can I access the latest version?
+
+
+[03/11/2026 12:39] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1481270414809239694/image.png?ex=69f34d93&is=69f1fc13&hm=a4e7671856582c7ec3b0110c5a0c79979ff26685858b4b1cbd39d3a8dcbebdd5&
+
+{Reactions}
+🚀
+
+[03/11/2026 18:45] serialkiller15
+@everyone
+many work is done here and still on testing!
+will release after finishing tests!
+to long for description see the Video.... i must say i love it!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1481362562271412316/AlexFreqAlphaDeck.mp4?ex=69f2faa5&is=69f1a925&hm=0cf69cd7f8cc36f2ec7f323be1fe164de8e67ba85afa1d6e736f517a3edd70df&
+
+{Reactions}
+🚀 (5) 👍 (2)
+
+[03/11/2026 18:55] dragongoattigercat
+can it be installed on a seperate VM and each strategy is on a seperate VM?
+
+{Reactions}
+👍
+
+[03/11/2026 18:56] kot7979
+@Alex Crypto King nice work, good job for all 🙂
+
+{Reactions}
+👍
+
+[03/11/2026 18:57] anonymuis
+Fantastic!
+
+
+[03/11/2026 18:57] serialkiller15
+all settings are adjustable, i ron 2 servers with about 100 dockers you can add in discovery machines where they are does not depends if docker, linux, windows or what else that was the main idea of it
+one dashboard for alll for everythink..........
+
+
+[03/11/2026 18:58] serialkiller15
+and everythink is stored in a database so the informations are realy helpful for comparing, strategy lab and other stuff.
+there are some improvmeents to be done will integrate automated bots and other stuff but as i said will share this version the next days and then work with my other ideas!
+
+{Reactions}
+👍
+
+[03/11/2026 19:00] serialkiller15
+ONE GUI FOR ALL/EVERYTHINK THATS NEEDED for me it makes sense no more commands, no more downloading data and other stuff. Also works good on mobile devices..
+
+{Reactions}
+👍 🚀
+
+[03/11/2026 19:02] serialkiller15
+Based on the Main IDEA @xF0x0F and also @7thDragon ....thanks for the work
+
+{Reactions}
+🍻 (2)
+
+[03/12/2026 18:18] serialkiller15
+next milestone full automated optimizing......
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1430470914369130717/1481718147747680377/image.png?ex=69f39d0f&is=69f24b8f&hm=352fa0159bc97e958e18da6fe5fafab9360637da6a81aebf4b9b4bc9c3d6b869&
+
+{Reactions}
+🚀 (4) 👍 (2)
+
+==============================================================
+Exported 84 message(s)
+==============================================================

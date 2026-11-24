@@ -1,0 +1,63 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖FREQAI_FUTURES / lstm-regressor
+==============================================================
+
+[09/02/2024 07:09] serialkiller15
+PyTorchLSTMRegressor - Standard
+
+
+[09/02/2024 07:13] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1280061618549559319/1280062927461683232/PyTorchLSDTMRegressor.py.txt?ex=69f30100&is=69f1af80&hm=afe7bf7f7265884dac8bd3d4a1f8b631e8b527a58047ea7e6ff273a72f42236f&
+
+
+[09/02/2024 07:13] serialkiller15
+PyTorchLSTMRegressor - CUDA enabled
+
+
+[09/02/2024 07:13] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1280061618549559319/1280062992423059496/PyTorchLSTMRegressor_Cuda.py?ex=69f3010f&is=69f1af8f&hm=f5ab0b7fbdceb288fe5c93c3785fd11ae8ee5095621f2dca812eb1ecd1739401&
+
+{Reactions}
+👍
+
+[09/02/2024 07:21] .7thdragon
+for cuda, needs to be added word cuda in kwargs in the main config, freqai section, practically the arguments for playing around (multiple gpu) are in that section
+        "model_training_parameters": {
+....
+          "trainer_kwargs": {
+....
+            "device": "cuda",
+...
+           },
+          }
+
+
+[09/02/2024 07:23] giovannimauro
+CHi guys!
+I want to use my 4080 🙂 Can you explain a bit more?
+
+
+[09/04/2024 14:02] sera131
+any thoughts about AMD GPU's ? would the cuda enabled one, also work for AMD?
+
+{Reactions}
+👀
+
+[09/20/2024 07:15] serialkiller15
+Pinned a message.
+
+
+[09/20/2024 07:15] serialkiller15
+Pinned a message.
+
+
+==============================================================
+Exported 9 message(s)
+==============================================================

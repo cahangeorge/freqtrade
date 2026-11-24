@@ -1,0 +1,46 @@
+# Git
+.git/
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+npm-debug.log*
+coverage/
+
+# IDE
+.vscode/
+.idea/
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Logs and temp
+*.log
+*.tmp
+logs/
+
+# Environment
+.env*
+!.env.example
+
+# Tests
+tests/
+**/tests/
+**/__tests__/
+
+# Documentation
+docs/
+*.md
+!README.md

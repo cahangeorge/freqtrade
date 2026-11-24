@@ -1,0 +1,860 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖FREQAI_FUTURES / 🚀v9-bugs
+==============================================================
+
+[09/10/2024 13:15] serialkiller15
+Please repurt Bugs on Version9 and any requests for change
+
+
+[09/10/2024 13:43] serialkiller15
+@7thDragon  - Real to Decimal, Change -V91
+
+
+[09/10/2024 13:46] andreis9311
+you mean change RealParameter to Decimal? Why?
+
+
+[09/10/2024 13:47] .7thdragon
+it does less computations (especially for w params), do not need more than 4-5 decimals
+
+{Reactions}
+🤟
+
+[09/10/2024 13:50] serialkiller15
+will test it on v91
+
+
+[09/10/2024 15:46] serialkiller15
+on 15m timeframe -  Model expired for POLYX/USDT:USDT, returning null values to strategy. Strategy construction should take care to consider this event with prediction == 0 and do_predict == 2#
+
+
+[09/10/2024 15:54] giovannimauro
+Hello guys, here you can see the plot of the V9Hyper strategy, and as you can see, the red line, which represents the "&-target" indicator, is almost always flat (at zero), which means that when there's a peak or a valley, that's the moment to place a trade.
+On the contrary, the Hyperopt results give a negative value for the buy_threshold and a positive one for the sell_threshold, which means, considering the entry conditions:
+_df['&-target'] > self.threshold_buy.value for Longs
+_df['&-target'] < self.threshold_sell.value for Shorts
+That the signals are not present when &-target moves, but almost always, because &-target is almost always below that threshold.
+I think this happens because the hyperopt looks for the best conditions to make a profit, and this aspect, combined with the fact that the strategy, through its "target_horizon=1", is absolutely Lookahead biased, creates a winning strategy in hyperopt and backtest, but in reality, it places continuous trades at each candle without criteria, as both entry conditions are almost always satisfied.
+I may be on the wrong track, but that's what I noticed when running and plotting the Hyper strategies.
+I think, therefore, that we should consider changing the logic, or forcing the threshold values to only one side.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1283093274789281792/image.png?ex=69f37b3b&is=69f229bb&hm=a273bd11e86f06070ea46e0c8ee374fa8ed94b6562d101b17be2564cc8e1c527&
+
+
+[09/10/2024 15:54] giovannimauro
+Moreover, I noticed that the "R2" indicator also has problems, as it is often interrupted in the plot, which means it doesn't return any value, and consequently, the &-target indicator remains incomplete as well.
+I might be mistaken, but this is what I see.
+I invite everyone to plot the indicators so that you can all better notice any potential issues.
+
+here the code, hoping that it can be an help:
+
+plot_config = {
+        "subplots": {
+            "T": {
+                '&-target': {'color': 'red'},
+            },
+            "S": {
+                'S': {'color': 'blue'},
+            },
+            "R": {
+                'R': {'color': 'yellow'},
+            },
+            "V": {
+                'V': {'color': 'pink'},
+            },
+            "R2": {
+                'R2': {'color': 'purple'},
+            },
+            "V2": {
+                'V2': {'color': 'green'},
+            },
+        },
+    }
+
+
+[09/10/2024 15:56] serialkiller15
+the R2 value is on ma_100 so it needs time to give good values for it but you can remove R2 in T as value so it would work
+
+
+[09/10/2024 16:01] giovannimauro
+Thank you!
+
+Anyway, as expected, removing target_horizon from T, the hyperopt make lees profit, and the threesholds become inverse. Now the strategy make a lot less trades, only when the &-target move, so, removing target-horizon in the hyper version can make realistic values
+
+
+[09/10/2024 16:05] serialkiller15
+good point yes !
+
+
+[09/10/2024 16:19] giovannimauro
+On the other side, on the FreqAi version, the &-target indicator looks very different from the Hyperopt one... we don't have a flat indicator with peaks and valley as signal, but a continuous oscillator, like an RSI. 
+For this reason, a threshold He can't be enough as signal. 
+I think that we have to try to find the peaks and valley inside this oscillator, for example:
+
+ df['&-target_ptc_change'] > self.&-target_ptc_change.value, 
+df['&-target'].shift(2) > df['&-target'].shift(1), 
+df['&-target'].shift(1) < df['&-target'], 
+df['&-target'] > 0, 
+df['volume'] > 0
+
+df['&-target_ptc_change'] = a percentage calculation of the gap from the actual value from the previous one.
+
+Assuming to have a "new indicator" called  df['&-target_ptc_change'], the strategy can try to look inside this oscillator looking for big values change, that can be represent the old peaks and  valley, and place a trade on it. 
+
+it's only an idea
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1283099502907101194/image.png?ex=69f38108&is=69f22f88&hm=209c449159fb1d11c0922a8451b38acca6f52c1af39b75b5d026ed507c8f9b52&
+
+
+[09/10/2024 16:41] serialkiller15
+Hmm a good idea i think
+
+
+[09/10/2024 16:41] serialkiller15
+The mostly problem is freqai and the hyperopt version
+
+
+[09/10/2024 19:19] .7thdragon
+the exit is a problem, for example when optimized buytreshold is smaller that selltreshold, it will initiate imediate sell if not having predict condition (V9)
+one simple fix for hyper (but also for freqai) would be like this, meaning to consider enters (and hyper) only when thresholdbuy>threshhold sell
+`        enter_long_conditions = [
+            df["do_predict"] == 1,
+            (df['&-target'] > self.threshold_buy.value),
+            self.threshold_buy.value>self.threshold_sell.value,
+            df['volume'] > 0`
+another quick option is to remove exit section an be based on roi and trailing. otherwise needs another logic that do not collude with entry one
+
+
+[09/10/2024 21:09] ximontan
+in file **AlexStrategyFinalV90.py** you have call function **self.trailing_stop_logic**, but it's not declare there, I found it only in **AlexStrategyFinalV90_Trail.py**. Seems you forget add it to **AlexStrategyFinalV90.py**
+
+
+[09/10/2024 21:12] ximontan
+and in both files for using fn custom_stoploss, need add use_custom_stoploss=true, or maybe it's not used in strategy?
+
+
+[09/10/2024 21:33] ximontan
+AlexStrategyFinalV90.py, call         **dataframe = self.dp.get_analyzed_dataframe(pair, self.timeframe)** should be         **dataframe, _ = self.dp.get_analyzed_dataframe(pair, self.timeframe)**
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1283178508960399462/Screenshot_from_2024-09-11_00-28-42.png?ex=69f321dc&is=69f1d05c&hm=d781a9d8e151fb4a9e1052079d8849d40215d29d9d98555aabbdc9ef11f3b1df&
+
+
+[09/10/2024 21:54] serialkiller15
+Thanks will check tomorrow
+
+
+[09/11/2024 06:07] serialkiller15
+good morning, fixed custom_stoploss, and - dataframe, row = self.dp.get_analyzed_dataframe(pair, self.timeframe) thanks for input, will post after test!
+
+
+[09/11/2024 11:22] .7thdragon
+For target T why dont u use minmax normalization ? as for each pair is in way too different ranges
+Sorry in fact S needs that
+
+
+[09/11/2024 11:57] serialkiller15
+i am on it -
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1283396000597151825/image.png?ex=69f343aa&is=69f1f22a&hm=c11e33e76976d0e3b0a55f06b026e3c94096e07e9555d02356d256a0c7658c9a&
+
+
+[09/11/2024 14:22] ximontan
+File "/home/den/freqtrade/user_data/strategies/AlexStrategyFinalV90.py", line 415, in leverage
+    atr = dataframe['atr'].iat[-1]  # Get the ATR of the most recent candle
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1283432484398305311/Screenshot_from_2024-09-11_17-20-40.png?ex=69f365a5&is=69f21425&hm=de3fbfa5a0705ba6c2ae1505b33545e19b5b72d96ee1d8b99968d7d5ed54cdc7&
+
+
+[09/11/2024 14:22] ximontan
+seems we need additionally add: dataframe['atr'] = ta.ATR(dataframe, timeperiod=14) to populate_indicators
+
+
+[09/11/2024 14:34] serialkiller15
+i need some programmers here hehe
+
+{Reactions}
+🤣
+
+[09/11/2024 14:38] ximontan
+I'm here
+
+
+[09/11/2024 14:39] ximontan
+this code is fix bug
+    def populate_indicators(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
+...        
+**        dataframe['atr'] = ta.ATR(dataframe, timeperiod=14)**
+
+        return dataframe
+
+
+[09/11/2024 15:02] serialkiller15
+dataframe['atr'] = ta.ATR(dataframe, timeperiod=14) is in there already budy
+
+
+[09/11/2024 15:49] andreis9311
+` 2024-09-11 15:48:36 INFO    freqtrade.freqai.data_kitchen - AVAX/USDT:USDT: dropped 4049 training points due to NaNs in populated dataset 11499.
+2024-09-11 15:48:36 WARNING freqtrade.freqai.data_kitchen -  35 percent  of training data dropped due to NaNs, model may perform inconsistent with expectations. Verify &-target
+2024-09-11 15:48:38 INFO    freqtrade.freqai.base_models.BasePyTorchRegressor - Training model on 209 features
+2024-09-11 15:48:38 INFO    freqtrade.freqai.base_models.BasePyTorchRegressor - Training model on 5960 data points
+2024-09-11 15:48:39 ERROR   freqtrade.freqai.freqai_interface - Training AVAX/USDT:USDT raised exception RuntimeError. Message: The size of tensor a (32) must match the size of tensor b (6) at non-singleton dimension 1, skipping. `
+
+Has anyone seen this issue before? The data has been valid and downloaded for the past 180 days.
+
+Maybe something went wrong with my freqai settings?
+
+
+[09/11/2024 16:06] serialkiller15
+guys need testers... will make a small group for it how whants in need feedback before i make it life
+
+{Reactions}
+👍
+
+[09/11/2024 16:21] inviting_moose_32088
+@Alex Crypto King I could be as +1 tester, but I still try to optimize your strategy for spot...  cuz idk about futures-markets rules xDD
+
+
+[09/11/2024 16:22] serialkiller15
+@bndr you are welcome but sry mate i dont have time for spot now, you can do it on dry_run on features! we will handle that later ok! first the indicators should give good .....
+
+
+[09/11/2024 16:23] inviting_moose_32088
+btw I have big vm and a couple of H100 gpu...
+
+
+[09/11/2024 16:23] inviting_moose_32088
+ok, np.
+I can executing this in parallel
+
+
+[09/11/2024 16:28] serialkiller15
+Thanks will join you in the tester group
+
+
+[09/11/2024 16:35] anonymuis
+As in other channel:
+I can test from Friday on. 
+My IT company has enough hardware to run on. Time is more sparse actually! 😅
+
+
+[09/12/2024 16:23] lijunnan0113
+Should I do something?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1283825237682684026/IMG_1122.jpg?ex=69f381ec&is=69f2306c&hm=a9e03d03a6bc4083e797838fd03284e1277fe69cec08b7a0e5dff48e50b6b741&
+
+
+[09/13/2024 14:41] noobie8938
+And may be , security expert also:
+
+/freqtrade/freqtrade/freqai/data_drawer.py:615: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.                             zipfile = torch.load(dk.data_path / f"{dk.model_filename}_model.zip")
+
+{Embed}
+https://github.com/pytorch/pytorch/blob/main/SECURITY.md
+pytorch/SECURITY.md at main · pytorch/pytorch
+Tensors and Dynamic neural networks in Python with strong GPU acceleration - pytorch/pytorch
+https://images-ext-1.discordapp.net/external/0OxN1hatIQhKZIqtvLKWPugMdMR-4GLhH4n0ghS-OOs/https/opengraph.githubassets.com/9a7f830c9fe992de2b9f2d1965d6fdac59230d36fd8a601e8afc142648e95397/pytorch/pytorch
+
+{Reactions}
+👍
+
+[09/13/2024 15:03] sera131
+will start V9 today or tomorrow -> was away
+
+
+[09/13/2024 15:14] inviting_moose_32088
+Its because you have spot data.
+
+
+[09/13/2024 15:15] inviting_moose_32088
+And R2 dataframe returns NaN
+
+
+[09/14/2024 19:44] alex_737071
+Any suggestions where im going wrong with the backtest?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1284600566948823103/Screenshot_2024-09-14_at_21.41.05.png?ex=69f30841&is=69f1b6c1&hm=758ee77403c8bfe26fcfee49873dcc60a707042abdd966a6f17969a96edd9e74&
+
+
+[09/14/2024 19:55] laupapp
+maybe clean your user_data/models folder ?
+
+
+[09/22/2024 15:19] andreis9311
+What do you mean by this? 
+it's only futures in my packages. No spot. but still facing this problem
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1287433072345874462/image.png?ex=69f372fb&is=69f2217b&hm=33b3c4dbef272f76fb24b117752db3aadd6f6cc131dbe44207f6d882860ee05a&
+
+
+[09/22/2024 15:21] alex_737071
+For backtesting, what does your pairlist look like? Need to be in futures format ie. USDT/BTC:USDT
+
+
+[09/22/2024 15:22] andreis9311
+Yes, it is in this format
+
+
+[09/22/2024 15:22] alex_737071
+try passing --trading-mode futures arg to your download-data
+
+
+[09/22/2024 15:58] andreis9311
+did it but still I'm receiving lots of logs like
+
+freqtrade.freqai.data_kitchen - INFO - CELO/USDT:USDT: dropped 2698 training points due to NaNs in populated dataset 2859.
+
+in config I specified 
+`
+ "ccxt_async_config": {
+      "enableRateLimit": true,
+      "rateLimit": 200,
+      "options": {
+        "defaultType": "future"
+      }
+    },`
+
+but it didn't help at all.
+
+in config.json also specified:
+`
+  "trading_mode": "futures",
+  "margin_mode": "isolated",
+`
+
+
+[09/22/2024 15:59] alex_737071
+Try dropping the model maybe?
+
+
+[09/22/2024 16:00] andreis9311
+Removed all that I had 🙂 Data, models
+
+
+[09/22/2024 16:00] alex_737071
+Which exchance?
+
+
+[09/22/2024 16:00] andreis9311
+Tried with Okx and binance
+
+
+[09/22/2024 16:00] andreis9311
+binance has even more dropped due to nan's
+
+
+[09/28/2024 10:12] 491030360
+1.Do not include 'nan' in the predicted data.
+dataframe['R2'] = np.where(dataframe['close'] > dataframe['ma_100'] * (1 + buffer_pct), 1, 
+                                    np.where(dataframe['close'] < dataframe['ma_100'] * (1 - buffer_pct), -1, np.nan))
+There will be 'nan' values here.
+2.In the populate_entry_trend method, do not satisfy both long and short conditions simultaneously. In the populate_exit_trend method, do not satisfy both exit_long and exit_short conditions simultaneously. Although it does not affect trading, it will cause issues with the freq-ui display.
+
+
+[09/28/2024 12:57] serialkiller15
+@ByteWizard thanks welcome here will take a look on it
+
+
+[09/28/2024 13:03] .7thdragon
+Thanks jenny, indeed but for V, is corrected in dry 93 but missed the BT V
+        dataframe['V'] = np.where(dataframe['V_norm'] > upper_threshold, 1,
+                          np.where(dataframe['V_norm'] < lower_threshold, -1, 0))
+        dataframe['V2'] = np.where(dataframe['V2_norm'] > upper_threshold, 1,
+                           np.where(dataframe['V2_norm'] < lower_threshold, -1, 0))
+
+
+[10/15/2024 16:54] 0jessica0_
+@Alex Crypto Kinghi there, I used the command freqtrade download-data -c ./user_data/strategies/strategies/AlexStrategyFinalV9Hyper/config_v1.json --timerange 20240101-20240909 –timeframes 5m 1h 2h 4h download data for every pair. But after I put the PyTorchLSTMRegressor file, it shows " No data left after adjusting for startup candles". What did I do wrong?
+
+
+[10/15/2024 16:56] 0jessica0_
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1295792348604792902/image.png?ex=69f389aa&is=69f2382a&hm=ac4c0f3040802525df4c3c360eb5e67a199d1b1b055fdbdf53d74b9fd1c0a7e0&
+https://cdn.discordapp.com/attachments/1283053114383143033/1295792348961439784/image.png?ex=69f389aa&is=69f2382a&hm=ce6d349c475a68256f10e7231e3df6c2807a3b28a3871a7cd0f7bd581e4abfca&
+
+
+[10/15/2024 19:51] serialkiller15
+Hey what timeframe do you use AT the Moment with the Strategy?
+
+
+[10/16/2024 01:42] 0jessica0_
+I didn't change anything in the strategy. I think the timeframe is 1h
+
+
+[10/16/2024 01:44] serialkiller15
+Ah i See what strings you have in Startup candle you the Standard i think?
+
+
+[10/16/2024 01:44] serialkiller15
+IT takes some time to Start the Training
+
+
+[10/16/2024 01:45] 0jessica0_
+Sorry, I don't quite understand
+
+
+[10/16/2024 01:46] 0jessica0_
+startup_candle_count = 0
+
+
+[10/16/2024 01:49] serialkiller15
+You use the v9 Version with freqai? So this is based on the lstm Modell... You followed the Installation instructions?  What i wanted to say it takes some time to Start the Training for Lstm Modell you can See in log file also check your Modell folder is there some Content in it? Which coins you used for?
+
+
+[10/16/2024 01:51] 0jessica0_
+where is the Installation instructions? I just put the file from your github into certain places. I think the package can be find and used.
+
+
+[10/16/2024 01:52] 0jessica0_
+here is the config I use
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1295927373740642324/config_v1.json?ex=69f35eab&is=69f20d2b&hm=1e609d6c27791d56a2d1bd472f97fe325a59971a0fd24839f2526ff494ae9d3e&
+
+
+[10/16/2024 01:53] 0jessica0_
+Here is the log
+
+
+[10/16/2024 01:56] 0jessica0_
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1295928234650636339/message.txt?ex=69f35f78&is=69f20df8&hm=25e718fe02cb757657d9548580df2cc190810b3bb921e833c1ec0c3a63022924&
+
+
+[10/16/2024 02:02] serialkiller15
+https://discordapp.com/channels/1238181199206154373/1289112409415352360
+
+
+[10/16/2024 02:03] serialkiller15
+this is for docker installation, if you do it manualy without github 
+please check that this files are in the right place, 
+cp torch/BasePyTorchModel.py <freqtrade dir>/freqtrade/freqai/base_models/
+cp torch/PyTorchLSTMModel.py <freqtrade dir >/freqtrade/freqai/torch/
+cp torch/PyTorchModelTrainer.py <freqtrade dir>/freqtrade/freqai/torch/
+cp torch/PyTorchLSTMRegressor.py <freqtrade dir>/user_data/freqaimodels/
+alternative send me your logfile on dm,
+
+
+[10/17/2024 02:06] 0jessica0_
+@Alex Crypto KingHi, I was trying to dry run the nonfrqai version. But it pause after around one hour, and starts to give errors of "Failed to reuse" and "Outdated history for pair". Here is the log. Any idea what happened?
+
+
+[10/17/2024 02:08] 0jessica0_
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1296293716054642748/log.txt?ex=69f36259&is=69f210d9&hm=57b7fa707d90e63eabb48b8a3e0243496bb25db082bb3153850e81dc7b495a6c&
+
+
+[10/17/2024 02:08] 0jessica0_
+Here is the log
+
+
+[10/17/2024 07:27] ximontan
+it means, that you have delay with connection to exchange, I have same in my vpc...
+
+
+[10/17/2024 08:23] 0jessica0_
+Did you start your dry run? DO you have trades?
+
+
+[10/17/2024 09:11] ximontan
+yes, v9, now I turn it of
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1296400299245834251/image.png?ex=69f31cdd&is=69f1cb5d&hm=7e68442ee7d3ab92f9ab4fcb7c6b7d409b8761087761c5cb8602e40e0e2b1952&
+
+
+[10/17/2024 09:18] 0jessica0_
+did you enable the freqai?
+
+
+[10/17/2024 09:18] 0jessica0_
+This is the result?
+
+
+[10/17/2024 09:19] ximontan
+yes, it's with ai
+
+
+[10/17/2024 09:20] 0jessica0_
+cool
+
+
+[10/17/2024 09:20] 0jessica0_
+what is the leverage you used?
+
+
+[10/17/2024 09:20] ximontan
+right it's result, seems others have better results, now I figure out/ try optimize...
+
+
+[10/17/2024 09:21] 0jessica0_
+the server i rent is too shit to run with ai
+
+
+[10/17/2024 09:21] 0jessica0_
+i may only run it without ai model
+
+
+[10/17/2024 09:21] ximontan
+not bit from 1 - 10, don't member
+
+
+[10/17/2024 09:22] ximontan
+yeahh)) same, I was upgrate it to 4gb ram and 60 gb ssd...
+
+
+[10/17/2024 09:22] 0jessica0_
+oh, you used the only that with floating leverage
+
+
+[10/17/2024 09:22] 0jessica0_
+cool
+
+
+[10/17/2024 09:22] 0jessica0_
+the one with hyper is fixed, at 5
+
+
+[10/17/2024 09:22] ximontan
+yes floating more profitable in test and in dry
+
+
+[10/17/2024 09:23] 0jessica0_
+really? I was going to test it
+
+
+[10/17/2024 09:24] ximontan
+yes, b/c it depend of indicatort not just percantage, different pairs have different percentage and that's why better use this dinamic leverage...
+
+
+[10/17/2024 09:24] 0jessica0_
+I am using 2. It crashed like four times......
+
+
+[10/17/2024 09:25] 0jessica0_
+cool, thanks
+
+
+[10/17/2024 16:21] serialkiller15
+found a bug in the v90 sry about it, to much strategys on my servers, i am on fixing it!!!! give me 10 minutes! runing hyperopt and backtest! it does not do any trades with the Hyper.py Version!
+
+{Reactions}
+🔥
+
+[10/17/2024 16:46] 0jessica0_
+Hi, I think I find another problem. I am not sure if it is a question. When I was running the bot, there are so many short signals. basically all over. When backtesting, one hour can only trigger once, but in live trading it may triggle multiple times.
+
+
+[10/17/2024 17:08] serialkiller15
+here is the modified VERSION -> https://discordapp.com/channels/1238181199206154373/1283028025620828210/1296519919952728096
+
+
+[10/18/2024 19:41] daniel2314_xx
+Hi, I also have this problem. So how to deal with it?
+
+
+[10/18/2024 19:42] daniel2314_xx
+I use the new version (ai disabled)
+
+
+[10/18/2024 19:43] daniel2314_xx
+Starts to give errors of "Failed to reuse" and "Outdated history for pair".
+
+
+[10/19/2024 03:04] 0jessica0_
+I think I met this question before. I didn’t find the solution about it. There is one post on GitHub may show the reason. It is because your memory is not enough for your calculation. Your server crashed. Just reduce the number of coins.
+
+
+[10/19/2024 08:00] serialkiller15
+Freqai is Ressource Hungry try with 50 coins Max i orefer Volumen based
+
+
+[10/19/2024 12:50] 0jessica0_
+Hi, Alex. I think the stop loss part has some problem too. To be precise, it is the line "trailing_stop, trailing_offset = self.trailing_stop_logic(dataframe, row)".
+
+
+[10/19/2024 12:53] serialkiller15
+THERE are to version here one with trailing and one without trailing which one you use?
+
+
+[10/20/2024 04:25] 0jessica0_
+the one with trailing
+
+
+[10/22/2024 05:13] lijunnan0113
+it doesn't seem normal.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1298152180179800125/image.png?ex=69f38dae&is=69f23c2e&hm=76d2b8c1e176e20e42cf4ea4967d497b0d434c0e4ea81d26156cdd6c436a7307&
+
+
+[10/22/2024 05:15] serialkiller15
+@Ternura this is not a bug its an failure in your config, please check #🐳installation
+
+
+[10/23/2024 20:53] geze21
+hey guys,
+I am facing with a problem. 
+Does anyone have an idea for a solution?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1298751177265250416/image.png?ex=69f3188a&is=69f1c70a&hm=5786e9cc25ab33d916efb8294d7ec86a95511d31dcf5f2e2c5f46a7326ba71f8&
+
+
+[10/23/2024 21:19] ximontan
+try not use json on download, 
+comment this:
+ "dataformat_ohlcv": "json",
+ "dataformat_trades": "jsongz",
+or use on backtesting flag --data-format-ohlcv json
+https://www.freqtrade.io/en/2024.9/backtesting/#backtesting-command-reference
+
+{Embed}
+https://www.freqtrade.io/en/2024.9/backtesting/
+Backtesting - Freqtrade
+Freqtrade is a free and open source crypto trading bot written in Python, designed to support all major exchanges and be controlled via Telegram or builtin Web UI
+
+
+[10/24/2024 16:47] geze21
+thanks @Ximontan 🙏
+
+
+[10/25/2024 09:21] geze21
+hi,
+i get the same problem;
+i pasted the log file; maybe the problem is from leverage settings?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1299301924012560414/message.txt?ex=69f31f36&is=69f1cdb6&hm=5f395142279b0131a67bcf37b59f09a3df6598136dd84577dd6de884486c5601&
+
+
+[10/25/2024 09:26] ximontan
+try backtest only with one pair, seems you have pair not available in bybit...
+
+
+[10/25/2024 14:20] geze21
+i have the same problem with one pair for backtesting
+
+
+[10/26/2024 15:21] geze21
+hey guys,
+I checked all pairs from bybit and I see that pairs are available only for the spot.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1299754757308551279/message.txt?ex=69f37372&is=69f221f2&hm=c4a356fdba1764405a6e58231003f0bf5f38a0f47485df533ee9d34747a21dec&
+
+
+[10/26/2024 15:40] serialkiller15
+Thanks for sharing
+
+
+[10/26/2024 15:41] ximontan
+try start from scratch, get exactly same config from Alex (find somewhere in discord) or use this, 
+it works for everyone, seems you do something wrong
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1299759805321314344/config-torch-def.json?ex=69f37825&is=69f226a5&hm=3380710486fba1ef32b3580b2e316125dfc4050055a26a97be11774a7b01f230&
+
+
+[11/02/2024 07:10] dorimon5
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1302167872830967879/image.png?ex=69f30055&is=69f1aed5&hm=b094f869dfc6a6661648d7740ae784e2dee57be851a43530318e7dc9293cccd6&
+
+
+[11/02/2024 07:10] dorimon5
+need help. i got error while installing freqailstm. 😦
+
+
+[11/02/2024 07:12] serialkiller15
+@dorimon5 did you read the installation instructions #🐳installation
+
+
+[11/02/2024 07:12] dorimon5
+yes. i follow the instructions. after running this command sudo chmod +x setup_alexfreqailstm.sh . i got this error. 😦
+
+
+[11/02/2024 07:13] dorimon5
+i mean sudo ./setup_alexfreqailstm.sh command
+
+
+[11/02/2024 07:13] dorimon5
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1302168816603627592/image.png?ex=69f30137&is=69f1afb7&hm=2ee540af462517e62d225a2d19aa6831748c5d2aa52e2e3e81b4d44f52f3fc4d&
+
+
+[11/19/2024 13:11] cs_0612_49562
+Has anyone met this problem that tensorboard doesn't work? And there are no errors in the log.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1308419381600194610/image.png?ex=69f35501&is=69f20381&hm=d4bb0276bd256f540c0abbcd3a7fcde1631a4fb93cf5b1d834d1bba5eca97545&
+
+
+[11/19/2024 13:20] serialkiller15
+What show the log
+
+
+[11/19/2024 13:23] cs_0612_49562
+(freqtrade) D:\MyTools\Desktop\freqtrade>tensorboard --logdir user_data/models/cs1
+2024-11-19 21:23:04.280266: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-11-19 21:23:05.477028: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Serving TensorBoard on localhost; to expose to the network, use a proxy or pass --bind_all
+TensorBoard 2.18.0 at http://localhost:6006/ (Press CTRL+C to quit)
+
+
+[11/19/2024 13:24] cs_0612_49562
+seems that everything is normal.
+
+
+[11/19/2024 13:43] cs_0612_49562
+I konw, there is no .tfevents file.
+
+
+[11/19/2024 14:38] cs_0612_49562
+OK, I find the reason. Just set "activate_tensorboard" to true in config-torch.json. I should have thought of it from the beginning😂
+
+
+[11/19/2024 15:11] cs_0612_49562
+But if I do that, then errors come:
+2024-11-19 22:45:00,697 - freqtrade.freqai.freqai_interface - INFO - Saving backtest model to disk.
+2024-11-19 22:45:00,721 - freqtrade - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "D:\MyTools\Desktop\freqtrade\freqtrade\main.py", line 45, in main
+    return_code = args["func"](args)
+  File "D:\MyTools\Desktop\freqtrade\freqtrade\commands\optimize_commands.py", line 60, in start_backtesting
+    backtesting.start()
+  File "D:\MyTools\Desktop\freqtrade\freqtrade\optimize\backtesting.py", line 1619, in start
+    min_date, max_date = self.backtest_one_strategy(strat, data, timerange)
+  File "D:\MyTools\Desktop\freqtrade\freqtrade\optimize\backtesting.py", line 1529, in backtest_one_strategy
+    preprocessed = self.strategy.advise_all_indicators(data)
+  File "D:\MyTools\Desktop\freqtrade\freqtrade\strategy\interface.py", line 1586, in advise_all_indicators
+    return {
+  File "D:\MyTools\Desktop\freqtrade\freqtrade\strategy\interface.py", line 1587, in <dictcomp>
+    pair: self.advise_indicators(pair_data.copy(), {"pair": pair}).copy()
+ce.py", line 161, in start
+    dk = self.start_backtesting(dataframe, metadata, self.dk, strategy)
+  File "D:\MyTools\Desktop\freqtrade\freqtrade\freqai\freqai_interface.py", line 375, in start_backtesting
+    self.dd.save_data(self.model, pair, dk)
+  File "D:\MyTools\Desktop\freqtrade\freqtrade\freqai\data_drawer.py", line 521, in save_data
+    model.save(save_path / f"{dk.model_filename}_model.zip")
+  File "D:\MyTools\Desktop\freqtrade\freqtrade\freqai\torch\PyTorchModelTrainer.py", line 168, in save
+    torch.save(
+  File "D:\MyTools\Anconda\envs\freqtrade\lib\site-packages\torch\serialization.py", line 850, in save
+    _save(
+  File "D:\MyTools\Anconda\envs\freqtrade\lib\site-packages\torch\serialization.py", line 1088, in _save
+    pickler.dump(obj)
+TypeError: cannot pickle 'tensorflow.python.lib.io._pywrap_file_io.WritableFile' object
+
+
+[11/19/2024 15:12] cs_0612_49562
+It's strange that in the first train_period_days everything is OK, but the second train_period_days always end with this error log.
+
+
+[11/19/2024 15:13] ximontan
+is it docker? or you install this for win by conda?
+
+
+[11/19/2024 15:14] ximontan
+try docker
+
+
+[11/19/2024 15:14] cs_0612_49562
+Not docker, it's source code.
+
+
+[11/19/2024 15:15] ximontan
+in first run it save file?
+
+
+[11/19/2024 15:16] cs_0612_49562
+yes, and the Tensorboard successfully shows the chart for the first train.
+
+
+[11/19/2024 15:18] ximontan
+try disable Tensorboard  and all pairs except one, to understand, may be it happened of other pairs, try exclude configs/params unless you have success run...
+
+
+[11/19/2024 15:20] cs_0612_49562
+If I disable Tensorboard, it becomes normal.
+
+
+[11/19/2024 15:23] ximontan
+then I can't help...
+
+
+[11/19/2024 15:25] cs_0612_49562
+Take it easy, it's a tricky problem. I'll try to debug it
+
+{Reactions}
+👍
+
+[11/20/2024 08:32] cs_0612_49562
+OK, I think I have solved it. just change the code like this image. This is a bug for freqtrade, and the resason is similar to https://github.com/freqtrade/freqtrade/issues/10855.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1308711666564730940/image.png?ex=69f313b7&is=69f1c237&hm=760ae9c4e788584f9a6d1108b90f8a745e796ec9500832413fbe7af8d65cda91&
+
+{Embed}
+https://github.com/freqtrade/freqtrade/issues/10855.
+Issues · freqtrade/freqtrade
+Free, open source crypto trading bot. Contribute to freqtrade/freqtrade development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/pDqWyncieEUmW1XWBcR-cbQzpCrVjky0QYqh8ffXv-U/https/repository-images.githubusercontent.com/91629816/d6659780-a0e1-11eb-8a38-933cd666cdeb
+
+{Reactions}
+🤘
+
+[11/20/2024 08:33] cs_0612_49562
+By this, we can enjoy lstm with tensorboard😃
+
+
+[11/20/2024 22:09] Deleted User
+KeyError: 'train_features' do someone know why i get this error after installation?
+
+
+[11/20/2024 22:17] Deleted User
+the error log
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1308919239004000378/message.txt?ex=69f32c49&is=69f1dac9&hm=f108b95c4a285b16d2c635f8b38894b857a021c9f2b06a97cd92ae11d0b7be0d&
+
+
+[11/20/2024 22:57] xaviertoor
+Try to download 5m and 4h
+
+
+[11/20/2024 22:58] xaviertoor
+docker run -v ./data:/freqtrade/user_data/data  -it freqai  download-data -c user_data/config-torch.json --timerange 20240101-20241118 --timeframe 5m 15m 30m 1h 2h 4h 1d --erase
+
+
+[11/20/2024 22:58] xaviertoor
+docker run -v ./data:/freqtrade/user_data/data  -it freqai  backtesting -c user_data/config-torch.json --breakdown day week month --timerange 20241001-20241118
+
+
+[01/14/2025 17:16] geze21
+hello,
+i run this cmd freqtrade hyperopt --hyperopt-loss SharpeHyperOptLossDaily --spaces buy trades stoploss -c user_data/config_alex_90.json --strategy AlexStrategyFinalV90Hyper_Trail --timerange 20241108-20241208 -e 1000 and I get this error file. Someone to help me?🙏
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283053114383143033/1328774821693096027/message.txt?ex=69f38e7c&is=69f23cfc&hm=f74aad61f82e58e16dd5f0febc9aea48e8aa9ca8fab28d8bf6b586058e68ac25&
+
+
+==============================================================
+Exported 148 message(s)
+==============================================================

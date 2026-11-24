@@ -1,0 +1,319 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 📊alexgkdtransform_results
+==============================================================
+
+[02/20/2026 11:52] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1474373166959956156/image.png?ex=69f34283&is=69f1f103&hm=1e3c93660b4515a381e4f963e30d668303a5d8719de3b671ce1aa553f5fe73b0&
+
+
+[02/25/2026 15:35] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1476241086698754110/image.png?ex=69f376a6&is=69f22526&hm=66fe8077b9a316db87c93d3b0a39527c7517a3dc5d1d5e3ac6f1ce6c753d44a7&
+
+
+[02/25/2026 16:16] liam_77636
+I'm really scared during these DCA moments. It's almost like betting everything. If I lose, it hurts badly; even if I win, I worry it's just luck.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1476251627190222970/3b0fa91e-c408-4e20-83b4-3eb78942dc4f.png?ex=69f38077&is=69f22ef7&hm=db36ff33a4fa0a1592681008fb9ba5659c910315c9cc7b4f9cf5659e0d902690&
+
+
+[02/25/2026 16:17] liam_77636
+Counter-trend trading really gives me anxiety. I'm more used to trend-following. Why not strengthen its take-profit and stop-loss settings?
+
+
+[02/25/2026 16:17] serialkiller15
+I already have adjusted the dca stuff and reversal logic will post later here
+
+
+[02/25/2026 16:23] liam_77636
+This strategy is already excellent on its own; it just seems to need some more detailed adjustments.
+
+{Reactions}
+👍
+
+[02/25/2026 16:23] liam_77636
+To develop a profitable strategy in such a tough market, mate, that must be really powerful—and probably a strategy that works in any market condition!
+
+
+[02/27/2026 10:18] themarkx_
+Day (count)      USDT              Profit %
+---------------  ------------  --  ----------
+2026-02-27 (17)  -53.939 USDT   0  -4.89%
+2026-02-26 (12)  14.332 USDT    0  1.32%
+2026-02-25 (0)   0 USDT         0  0.00%
+2026-02-24 (0)   0 USDT         0  0.00%
+2026-02-23 (0)   0 USDT         0  0.00%
+2026-02-22 (0)   0 USDT         0  0.00%
+2026-02-21 (0)   0 USDT         0  0.00%
+
+
+[03/02/2026 19:27] serialkiller15
+some results of V53...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1478111518699553090/image.png?ex=69f30460&is=69f1b2e0&hm=38bda20ba47de7d3ea109282b9b53375d745ab04c5875cf4a9aaa0f4db8e35d1&
+
+
+[03/02/2026 22:22] bovejuan
+GKD_TRANSFORMV57_ML
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1478155644803747981/Captura_desde_2026-03-02_19-19-28.png?ex=69f32d78&is=69f1dbf8&hm=64f43f2495fd3bf0dd9078296f19a5da3d0eb6a9b6fe47ce6b7406efca12162f&
+
+
+[03/02/2026 22:23] bovejuan
+I couldn't find version 53, could you share it?
+
+
+[03/02/2026 22:24] serialkiller15
+It's still in development
+
+
+[03/02/2026 22:26] serialkiller15
+In v57 be aware as I know the stoploss is not beeing working or beeing blocked
+
+
+[03/02/2026 22:42] bovejuan
+OK thanks
+
+
+[03/03/2026 18:02] alexander_22542
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1478452603275837623/image.png?ex=69f39948&is=69f247c8&hm=9ed9792d186024772c1782912750f9d4efc74f4327b5a2108d4e295d08682534&
+
+
+[03/12/2026 16:49] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1481695616219218121/image.png?ex=69f38813&is=69f23693&hm=9ed77c0c936b11374291eaeafcb150e950316943c6b004fbaf1c753bcb21e011&
+
+
+[03/13/2026 10:22] alexandermoysa
+Hi guys, I noticed that you are using 1h time frame for many strategies as well for gkdtransform. During dry run I noticed that it makes entries too late. Price changing 1-2 % usually takes less than hour. Strategy open position when the price already high, after that price move down and strategy start making position adjustments that resulted in losses. What is the reason of using 1h time? On my view, it can be good when the market moves up, but it several months moves down.
+
+
+[03/13/2026 10:24] serialkiller15
+the main think about fisher is 1h tf, but i must say never tested it on 15m tf, you can try it if it does better, but i must say i am happy with the results the past days....
+
+
+[03/13/2026 15:16] dragongoattigercat
+V5 version. it is already good
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1482034566565986437/image.png?ex=69f3723f&is=69f220bf&hm=a567adb1dfb8e28ea1767af0dd1981e6e9ddaa496644808378204fe9c31ed810&
+
+
+[03/13/2026 15:23] serialkiller15
+thanks mate.....
+
+
+[03/17/2026 19:08] vasko123.
+Leverage 1x?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1483542570964353335/675f696689b8b037.png?ex=69f2ffef&is=69f1ae6f&hm=e7e5b7d6f0d9631a96f4577332a74415c61c00e78dd55e765745c8bdc367dad1&
+
+
+[03/17/2026 19:11] serialkiller15
+i switched mostly to small leverage! better risk managment....
+but your choice!
+
+{Reactions}
+👍 (2)
+
+[03/20/2026 12:37] vasko123.
+Version 61
+History repeats itself. You're up. I'm down.
+Isn't that strange?
+What about everyone else testing this version?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1484531328388169878/b4ef3f0650e9da78.png?ex=69f34d09&is=69f1fb89&hm=5220db43407c378670bf567041c0a0827bf1f4f6d3b463dc7c98567fa742b18e&
+
+
+[03/20/2026 12:40] vasko123.
+Version 6
+He watches and thinks about how to lose more money.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1484532182533013514/769ce8267c6101aa.png?ex=69f34dd5&is=69f1fc55&hm=3e63de26acae69bb5ca50833059f9293ea7bf32057b79bedda10c9e4afd354e8&
+
+
+[03/20/2026 12:45] glad8769
+Same it seems that all strategies are down for me as well.
+
+
+[03/20/2026 12:59] vasko123.
+I made some minor changes to GKD_FisherTransformV4_ML using claude, and it still works better. It's hovering around zero. But that's just a quick fix and a few tweaks. Long entries still need to be optimized.
+And with versions 6 and 61, there's not even a hint of a positive result. Wasted time.
+I followed all the setup recommendations. ALEX  v6 & v61 - Is your still a PLUS?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1484536878060404737/0d7095e73ca6b6dc.png?ex=69f35235&is=69f200b5&hm=b3231eb32788aba6440e4109f3a18036e65ffb3418614c133d57610d84af8858&
+
+
+[03/20/2026 13:24] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1484543228567883776/image.png?ex=69f3581f&is=69f2069f&hm=41b78d1a40e46e8d15532fd5e903a898a73e7f106ded517652a001ca1a72361e&
+
+{Reactions}
+👍
+
+[03/20/2026 13:25] serialkiller15
+i am in plus yes but also lost some trades..
+
+
+[03/21/2026 09:07] alexandermoysa
+Hi guys, I have a question regarding the strategy architecture. In the strategy, there is an ML component. However, the strategy logic mainly relies on parameters from Optuna. Was this architecture planned this way, or was the ML added later as an overlay?
+
+I also have another question regarding the ML part. It looks quite simplified—why not use the FreqAI architecture for data management and machine learning?
+
+
+[03/23/2026 22:15] divarak
+Daily Profit over the last 7 days:
+Day (count)      USDT           USD          Profit %
+---------------  -------------  -----------  ----------
+2026-03-23 (5)   5.896 USDT     5.89 USD     0.13%
+2026-03-22 (11)  -49.54 USDT    -49.53 USD   -1.05%
+2026-03-21 (8)   -8.836 USDT    -8.83 USD    -0.19%
+2026-03-20 (2)   -16.563 USDT   -16.56 USD   -0.35%
+2026-03-19 (8)   -269.656 USDT  -269.59 USD  -5.39%
+2026-03-18 (1)   4.356 USDT     4.36 USD     0.09%
+2026-03-17 (0)   0 USDT         0.00 USD     0.00%
+Updated: Mon Mar 23 19:15:30 2026
+
+
+[03/23/2026 22:16] divarak
+ROI: Closed trades
+∙ -334.342 USDT (-2.78%) (-6.69 Σ%)
+∙ -334.254 USD
+ROI: All trades
+∙ -360.515 USDT (-2.61%) (-7.21 Σ%)
+∙ -360.419 USD
+Total Trade Count: 41
+Bot started: 2026-03-17 20:07:36
+First Trade opened: 6 days ago (2026-03-17 20:20:32)
+Latest Trade opened: 20 hours ago (2026-03-23 02:03:55)
+Win / Loss: 7 / 28
+Winrate: 20.00%
+Expectancy (Ratio): -9.55 (-0.62)
+Avg. Duration: 1 day, 3:35:37
+Best Performing: CRV/USDT:USDT: 23.708 USDT (4.02%)
+Trading volume: 26542.869 USDT
+Profit factor: 0.22
+Max Drawdown: 7.28% (364.081 USDT)
+    from 2026-03-18 08:04:02 (4.356 USDT)
+    to 2026-03-22 21:20:28 (-359.725 USDT)
+Current Drawdown: 6.77% (338.699 USDT)
+    from 2026-03-18 08:04:02 (4.356 USDT)
+
+
+[03/23/2026 22:16] divarak
+Not performing good to me 😢
+
+
+[04/01/2026 08:17] vasko123.
+v61 - 2 weeks. You can see it all in the picture 🙁
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1488814501108256828/259c1c8b7c569a2a.png?ex=69f3100d&is=69f1be8d&hm=0797c23eb1776a9f126aec013665f41403ad855d3d8b000f02f16ad6fdc70121&
+
+
+[04/01/2026 08:18] vasko123.
+v6 - 2 weeks. You can see it all in the picture
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1488814738480824360/36cb2d867f58b3dd.png?ex=69f31046&is=69f1bec6&hm=b38b6af14bb480eb598debfbca3b5f8662c252b88357048ab50d84e6f3251916&
+
+
+[04/01/2026 08:18] serialkiller15
+thanks for sharing mate!
+
+
+[04/01/2026 08:19] lukovicka
+totally different from mine results🤯 
+
+v61
+```
+ROI: Closed trades
+∙ 2.592 USDT (-0.19%) (2.59 Σ%)
+∙ 2.59 USD
+ROI: All trades
+∙ 3.915 USDT (0.01%) (3.91 Σ%)
+∙ 3.912 USD
+Total Trade Count: 38
+Bot started: 2026-03-18 13:28:14
+First Trade opened: 13 days ago (2026-03-18 17:00:09)
+Latest Trade opened: 2 hours ago (2026-04-01 06:00:20)
+Win / Loss: 16 / 17
+Winrate: 48.48%
+Expectancy (Ratio): 0.08 (0.16)
+Avg. Duration: 1 day, 14:39:53
+Best Performing: APT/USDT:USDT: 1.681 USDT (2.58%)
+Trading volume: 1664.271 USDT
+Profit factor: 1.32
+Max Drawdown: 3.53% (3.752 USDT)
+    from 2026-03-27 03:42:52 (6.323 USDT)
+    to 2026-04-01 00:00:13 (2.571 USDT)
+Current Drawdown: 3.51% (3.732 USDT)
+    from 2026-03-27 03:42:52 (6.323 USDT)
+```
+
+v6
+```
+ROI: Closed trades
+∙ 0.57 USDT (1.43%) (0.57 Σ%)
+∙ 0.57 USD
+ROI: All trades
+∙ -11.717 USDT (-7.20%) (-11.72 Σ%)
+∙ -11.712 USD
+Total Trade Count: 5
+Bot started: 2026-03-17 15:14:53
+First Trade opened: 14 days ago (2026-03-17 16:00:25)
+Latest Trade opened: 14 days ago (2026-03-17 18:00:18)
+Win / Loss: 2 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 0.28 (100.00)
+Avg. Duration: 1 day, 17:02:30
+Best Performing: ATOM/USDT:USDT: 0.455 USDT (2.29%)
+Trading volume: 185.126 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from 2026-03-18 08:00:15 (0 USDT)
+    to 2026-03-18 08:00:15 (0 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2026-03-18 08:00:15 (0.57 USDT)
+```
+
+
+[04/13/2026 05:40] vasko123.
+v61 - 2 weeks.  a game with zero
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1493123750525145208/220be2ad400f2a56.png?ex=69f3941b&is=69f2429b&hm=1716d1519b27617cf1bf52b145b05731288ee27ad38813256b7caa8a4035743d&
+
+
+[04/13/2026 05:42] vasko123.
+v6 - 2 weeks.  W/L - 62/0
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474372934142398485/1493124184866553856/6299e86b2ef9c628.png?ex=69f39482&is=69f24302&hm=18d999f2f8fa65cbcc08bc56904f7ebf1a5a6125e4395cda37216c2e44c47b16&
+
+{Reactions}
+🤔
+
+==============================================================
+Exported 38 message(s)
+==============================================================

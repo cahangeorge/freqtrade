@@ -1,0 +1,271 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 📜DISCUSS Q & A / discussion-strategies-github
+==============================================================
+
+[10/13/2024 09:46] ximontan
+MacheteV8b show good result in backtest.
+but it bais
+
+| filename      | strategy   | has_bias   |   total_signals |   biased_entry_signals |   biased_exit_signals | biased_indicators   |
+|---------------+------------+------------+-----------------+------------------------+-----------------------+---------------------|
+| MacheteV8b.py | MacheteV8b | True       |              20 |                      0 |                     0 | chikou_span_inf     |
+
+
+https://github.com/AlexCryptoKing/freqtrade/blob/main/Strategies/MacheteV8b.py
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1294615198111371304/1294959462855217193/Screenshot_2024-04-14_120736.png?ex=69f324fb&is=69f1d37b&hm=b66a9b6d642dde366b20a6acd366c7ffc4137a8714474449d19936cddbd8d887&
+
+
+[10/13/2024 09:52] ximontan
+newstrategy53  show good result in backtest.
+
+https://strat.ninja/overview.php?strategy=newstrategy53&action=open
+
+have low frequency to get orders
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1294615198111371304/1294960935387140146/Capture.PNG?ex=69f3265a&is=69f1d4da&hm=0b4c573e1905aca8548b1e0d40aba90299aea9a336aac769f0354a260d0a8c0b&
+
+
+[10/13/2024 10:29] bigbroseur
+Don't lose your time with MacheteV8b.py, it's bias and overfit. I've tried dry and lose half of cap in less than 1 month 😭
+
+{Reactions}
+👍 (3)
+
+[10/13/2024 10:57] muhammadatifh
+MacheteV8b is for spot right ?
+
+
+[10/13/2024 12:11] bigbroseur
+Yep,I would say it’s neither one nor the other.
+
+
+[10/13/2024 12:14] bigbroseur
+If you want dry results, it's better to start here: http://frequenthippo.ddns.net/superset/dashboard/dry/ rather than ninja that give only backtest which are not accurate by definition.
+
+{Reactions}
+👍 (2)
+
+[11/16/2024 09:38] xokaidos
+I am setting up an easy access bots for testing...
+
+
+[11/16/2024 09:39] xokaidos
+Currently I run 4 bots on the same server with easy UI access to all of them...
+
+
+[11/16/2024 09:39] xokaidos
+I can share username / password and the bot URL to anyone.
+
+
+[11/16/2024 09:40] xokaidos
+This is how it looks right now..
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1294615198111371304/1307279038691147847/image.png?ex=69f3237a&is=69f1d1fa&hm=c874e68111867bc1f2b91bfe062525f9108328f48a46748f4fb23e1a3055e52d&
+
+
+[11/16/2024 10:37] serialkiller15
+Nice
+
+
+[11/16/2024 10:39] anonymuis
+Looks interesting!
+
+
+[11/16/2024 16:36] cs_0612_49562
+I have optimized AlexStrategyFinalV90Hyper by maintaining a dynamic ROI table for each pair and conducting small comparative experiments. Currently, the results are good.
+But it still needs hyperopt, and I don't have enough resources on hand. Is anyone considering improving it together?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1294615198111371304/1307383916142919760/05cb5b5d6ef07334749750fc3491e4a.jpg?ex=69f38527&is=69f233a7&hm=af3d362399383352de149431f5e95cc07348c820cfebdb36292694a7b1e7ba9d&
+
+
+[11/16/2024 17:48] xokaidos
+I can give you access to my server
+
+{Reactions}
+👍
+
+[11/16/2024 17:49] xokaidos
+16 cores and 32GB of RAM...
+
+
+[11/17/2024 14:07] cs_0612_49562
+Thank you! I would have a private chat with you when I'm ready.
+
+
+[11/18/2024 13:24] huangyafei_90755
+https://botacademy.ddns.net/2024/05/02/st-kasuari-btc/
+
+{Embed}
+stash86
+https://botacademy.ddns.net/2024/05/02/st-kasuari-btc/
+ST – Kasuari BTC
+
+
+[11/18/2024 13:25] huangyafei_90755
+Can someone improve this strategy?
+
+
+[11/18/2024 13:39] .7thdragon
+it is using basic indicators, tema dema hma rsi which need to optimize often, nothing based on a real strategy like extremas or vvrp
+
+
+[12/03/2024 13:32] laupapp
+someone have try Hyperliquid integration ?
+
+
+[12/03/2024 13:35] serialkiller15
+Nope
+
+
+[12/03/2024 13:50] laupapp
+for the moment they support few SPOT pairs but I think they will increase rapidly, and they have many FUTURES pairs
+
+
+[12/17/2024 11:05] juninhojesus
+📊The best repacks of 24 years only in our group📊
+IPTVPlayer AtlasVPN TradingView-Premium...
+✍️ https://t.me/repackme888777 ✍️
+
+{Embed}
+https://t.me/repackme888777
+Cʀᴀᴄᴋɪɴɢ Cʟᴀss [ᴄʜᴀᴛʀᴏᴏᴍs]
+The best programs are only free
+https://images-ext-1.discordapp.net/external/28fxi58YXu_P--stod8kqzgZjXWB-oVt-3Rl8b_I9-g/https/cdn4.cdn-telegram.org/file/owgWX_8ueMP99kjWi0LMxKqz9aEaYQK05qZZKt60Kbb6fxH2QDNfqpe6ooMf05I_OllQrG-0az8vgz7k0v5yPGhUfAkw4zi4pSZHgjiVt0eqFFWsenm_BsrdeRYOq960d69_qpQ7C5v-w6L9KVB3mc5PcUnVF8ho83jXn_jaEafNNm0FkCBIbHp0_Tp0Yg140KB7W7uXUDVTAuvB2sSs1FpOouH-xueF0zjjdj0sHqm_11v9ALNzsrm4MHkUCIPHqSvx7cyGgJJm_YpJUL5MwEHHxGBzV5MDg5H04p7ZtCWDxJ-M8h9GZV0QQg46Fg8B9pWcAsjs7N3q-1CxtqwyLg.jpg
+
+
+[12/17/2024 11:06] serialkiller15
+@Ademilson Júnior no spam here
+
+
+[06/17/2025 09:01] maxgorbachevskiy
+Guys, anyone wants to dive deeper into Lorentzian Classification strategy?
+I have some initial developments, but I failed to continue. Here is to share:
+— Lorentzian from jdehorty is expected to be VERY powerful https://www.tradingview.com/script/WhBzgfDu-Machine-Learning-Lorentzian-Classification/
+— AI/ML-based
+— There's a port to Python (link to github: https://github.com/techfreaque/octobot-lorentzian-classification and to latest version: https://github.com/techfreaque/octobot-lorentzian-classification/blob/main/releases/latest/any_platform.zip
+
+Me and @7thDragon, we were trying to make that Octane work a while ago, but that project was too heavy to run and it went offline. 
+I saw a post of @Ch1cK3N_t4c0s  on Telegram group with some Lorentzian implementation, but it seems to me that it was only static version (no AI/ML). 
+Maybe these ↑  additions will help?
+What do you think?
+@Alex Crypto King
+
+{Embed}
+https://www.tradingview.com/script/WhBzgfDu-Machine-Learning-Lorentzian-Classification/
+Machine Learning: Lorentzian Classification — Indicator by jdehorty
+█ OVERVIEW
+
+A Lorentzian Distance Classifier (LDC) is a Machine Learning classification algorithm capable of categorizing historical data from a multi-dimensional feature space. This indicator demonstrates how Lorentzian Classification can also be used to predict the direction of future price movements when used as the distance metric for a ...
+https://images-ext-1.discordapp.net/external/GiRHNB6XhOHyWgnOqtqKpLVziJwGQzPI2DSoL3w3jCQ/https/s3.tradingview.com/w/WhBzgfDu_big.png
+
+{Embed}
+https://github.com/techfreaque/octobot-lorentzian-classification
+GitHub - techfreaque/octobot-lorentzian-classification: OctoBot Lor...
+OctoBot Lorentzian Classification evaluator, based on the trading view indicator from ©jdehorty https://www.tradingview.com/script/WhBzgfDu-Machine-Learning-Lorentzian-Classification/ - techfreaque...
+https://images-ext-1.discordapp.net/external/Q69EZug0m25mneDy2wVQjz6_n_gD80b3mKGtXNEre5U/https/opengraph.githubassets.com/aae73f1a35a9490328e0b7c39877abdcbe1f0304f4fcb874baff5b642e26f29a/techfreaque/octobot-lorentzian-classification
+
+{Embed}
+https://github.com/techfreaque/octobot-lorentzian-classification/blob/main/releases/latest/any_platform.zip
+octobot-lorentzian-classification/releases/latest/any_platform.zip ...
+OctoBot Lorentzian Classification evaluator, based on the trading view indicator from ©jdehorty https://www.tradingview.com/script/WhBzgfDu-Machine-Learning-Lorentzian-Classification/ - techfreaque...
+https://images-ext-1.discordapp.net/external/Q69EZug0m25mneDy2wVQjz6_n_gD80b3mKGtXNEre5U/https/opengraph.githubassets.com/aae73f1a35a9490328e0b7c39877abdcbe1f0304f4fcb874baff5b642e26f29a/techfreaque/octobot-lorentzian-classification
+
+
+[06/17/2025 09:43] serialkiller15
+@MaxG yes i finsihed my optimations and will not continue them more the next days the run in dry will see what happen, but after about 100 backtest and 100 optimazions i am happy with the results now.
+Lets talk about that !
+
+{Reactions}
+👍 (2)
+
+[06/17/2025 09:52] serialkiller15
+i think i saw an lorentzian classifcation strategy for freqtrade let me check that...
+
+
+[06/17/2025 09:53] maxgorbachevskiy
+Here: https://t.me/pycryptobotconfigs/33041/51466
+
+{Embed}
+https://t.me/pycryptobotconfigs/33041/51466
+Ch1cK3N_t4c0s | Event 16 💀 in 🚀🚀Freqtrade Strategies🚀🚀
+https://images-ext-1.discordapp.net/external/luCMQ-yEZLutXzqcEHfj5BpVXinN5EGxoHbucraSZks/https/cdn1.cdn-telegram.org/file/nGUiSwKN0RIotowq8ebD8F6p9s6vRO_6kkOOnYVzaskU6VWeYT8Tsdu2nMZq5X8kD0da9nMWMQux3fGli_G3j_RiJru8RCGXoOa_ui1hRrV4l6B2DX_nqW7BRY76Fdy85STpL6jq1UAGeH7wwX8CLRYlKNP7Us8VyekYorVy_YftwUr5nzvL8nraXjLrr93WjbRsZKJMfuqmf2jKpDLb9ILANUxc2TGB2qEZqpludf9Mekp0sxik7RukfT4-S8X4rBQb1wvKbLpWiROu4QtPVy8xGVMalIbIkgu54wmBBiSYUNif9guoMgVroqiFGpjkxdTXeH9ii28dFWvzjW7w7g.jpg
+
+
+[06/17/2025 10:01] serialkiller15
+got it thanks mate! will take a look on it!
+
+
+[08/27/2025 10:22] darkreaper0756
+Hi, Wavelet+Lorentzian heed hyperopt and ajustment parameters
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1294615198111371304/1410207785886421064/WSTimeSpace.py?ex=69f32d58&is=69f1dbd8&hm=5ff2e83d43c03f7ef94070f505473261b19b1d2385a567f60509aa43f01ec88a&
+
+{Reactions}
+👍 (2)
+
+[08/27/2025 11:26] divarak
+Backtesting...
+
+
+[08/27/2025 11:30] divarak
+2025-08-27 08:25:46,659 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2025-08-27 08:25:46,660 - freqtrade - ERROR - No Hyperopt loss set. Please use `--hyperopt-loss` to specify the Hyperopt-Loss class to use.
+Built-in Hyperopt-loss-functions are: ShortTradeDurHyperOptLoss, OnlyProfitHyperOptLoss, SharpeHyperOptLoss, SharpeHyperOptLossDaily, SortinoHyperOptLoss, SortinoHyperOptLossDaily, CalmarHyperOptLoss,
+MaxDrawDownHyperOptLoss, MaxDrawDownRelativeHyperOptLoss, MaxDrawDownPerPairHyperOptLoss, ProfitDrawDownHyperOptLoss, MultiMetricHyperOptLoss
+
+Best hyperparameters found: {'target_pct_change': 9.048360867012157, 'sell_multiplier': 0.9487967860595283, 'w0': 0.7419634440422527, 'w1': 0.8195880105783986, 'w2': 0.31195169784475296, 'w3': 0.23129559988433374, 'w4': 0.23293574678272516, 'w5': 0.6395777739353125, 'w6': 0.4164118522153045, 'w7': 0.7428527662234468, 'w8': 0.5276563190906901}
+2025-08-27 08:25:47,808 - freqtrade - ERROR - Impossible to load Strategy 'WWS'. This class does not exist or contains Python code errors.
+
+Any suggestions on what could be wrong?
+
+
+[08/27/2025 11:32] divarak
+I am backtesting, not hyperopting
+
+
+[08/27/2025 12:14] darkreaper0756
+pip install pywt
+
+
+[08/30/2025 04:01] divarak
+thanks, found it: pip install PyWavelets
+
+
+[12/15/2025 20:50] dubbleju
+Any ideas for the best strat ATM for OKX usdt?
+
+
+[04/17/2026 09:43] ohbad1330
+may someone want to check and discuss about it.
+
+https://github.com/darkvolg/trendrider-strategy
+
+{Embed}
+https://github.com/darkvolg/trendrider-strategy
+GitHub - darkvolg/trendrider-strategy: Open-source Freqtrade strate...
+Open-source Freqtrade strategy from the TrendRider crypto bot. Live stats: trendrider.net/live - darkvolg/trendrider-strategy
+https://images-ext-1.discordapp.net/external/6iHEcpwpM8-o0E9LBoHjiXInP1PBmBFrf0-YLOGwBcg/https/repository-images.githubusercontent.com/1210174281/c8baec57-72bc-4410-97b6-8bc4c627e022
+
+
+[04/17/2026 09:59] alexandermoysa
+Nothing interesting
+
+
+[04/17/2026 10:09] glad8769
+Nothing works…
+
+
+[04/18/2026 02:04] ohbad1330
+thanks for checking!
+
+
+==============================================================
+Exported 40 message(s)
+==============================================================

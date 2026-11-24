@@ -1,0 +1,1146 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#installation"
+  - banner [ref=e3]:
+    - navigation "Header" [ref=e4]:
+      - link "Freqtrade" [ref=e5] [cursor=pointer]:
+        - /url: ..
+        - img "logo" [ref=e6]
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - generic [ref=e10]: Freqtrade
+          - generic [ref=e11]:
+            - button "Select version" [ref=e12] [cursor=pointer]: 2026.3stable
+            - list:
+              - listitem [ref=e13]:
+                - link "developlatest" [ref=e14] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/develop/
+              - listitem [ref=e15]:
+                - link "2026.3stable" [ref=e16] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2026.3/
+              - listitem [ref=e17]:
+                - link "2026.2" [ref=e18] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2026.2/
+              - listitem [ref=e19]:
+                - link "2026.1" [ref=e20] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2026.1/
+              - listitem [ref=e21]:
+                - link "2025.12" [ref=e22] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.12/
+              - listitem [ref=e23]:
+                - link "2025.11.2" [ref=e24] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.11.2/
+              - listitem [ref=e25]:
+                - link "2025.11.1" [ref=e26] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.11.1/
+              - listitem [ref=e27]:
+                - link "2025.11" [ref=e28] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.11/
+              - listitem [ref=e29]:
+                - link "2025.10" [ref=e30] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.10/
+              - listitem [ref=e31]:
+                - link "2025.9.1" [ref=e32] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.9.1/
+              - listitem [ref=e33]:
+                - link "2025.9" [ref=e34] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.9/
+              - listitem [ref=e35]:
+                - link "2025.8" [ref=e36] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.8/
+              - listitem [ref=e37]:
+                - link "2025.7" [ref=e38] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.7/
+              - listitem [ref=e39]:
+                - link "2025.6" [ref=e40] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.6/
+              - listitem [ref=e41]:
+                - link "2025.5" [ref=e42] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.5/
+              - listitem [ref=e43]:
+                - link "2025.4" [ref=e44] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.4/
+              - listitem [ref=e45]:
+                - link "2025.3" [ref=e46] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.3/
+              - listitem [ref=e47]:
+                - link "2025.2" [ref=e48] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.2/
+              - listitem [ref=e49]:
+                - link "2025.1" [ref=e50] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.1/
+              - listitem [ref=e51]:
+                - link "2024.12.1" [ref=e52] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.12.1/
+              - listitem [ref=e53]:
+                - link "2024.12" [ref=e54] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.12/
+              - listitem [ref=e55]:
+                - link "2024.11" [ref=e56] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.11/
+              - listitem [ref=e57]:
+                - link "2024.10" [ref=e58] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.10/
+              - listitem [ref=e59]:
+                - link "2024.9" [ref=e60] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.9/
+              - listitem [ref=e61]:
+                - link "2024.8" [ref=e62] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.8/
+              - listitem [ref=e63]:
+                - link "2024.7.1" [ref=e64] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.7.1/
+              - listitem [ref=e65]:
+                - link "2024.7" [ref=e66] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.7/
+              - listitem [ref=e67]:
+                - link "2024.6" [ref=e68] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.6/
+              - listitem [ref=e69]:
+                - link "2024.5" [ref=e70] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.5/
+              - listitem [ref=e71]:
+                - link "2024.4" [ref=e72] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.4/
+              - listitem [ref=e73]:
+                - link "2024.3" [ref=e74] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.3/
+              - listitem [ref=e75]:
+                - link "2024.2" [ref=e76] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.2/
+              - listitem [ref=e77]:
+                - link "2024.1" [ref=e78] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.1/
+              - listitem [ref=e79]:
+                - link "2023.12" [ref=e80] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.12/
+              - listitem [ref=e81]:
+                - link "2023.11" [ref=e82] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.11/
+              - listitem [ref=e83]:
+                - link "2023.10" [ref=e84] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.10/
+              - listitem [ref=e85]:
+                - link "2023.9" [ref=e86] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.9/
+              - listitem [ref=e87]:
+                - link "2023.8" [ref=e88] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.8/
+              - listitem [ref=e89]:
+                - link "2023.7" [ref=e90] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.7/
+              - listitem [ref=e91]:
+                - link "2023.6" [ref=e92] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.6/
+              - listitem [ref=e93]:
+                - link "2023.5.1" [ref=e94] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.5.1/
+              - listitem [ref=e95]:
+                - link "2023.5" [ref=e96] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.5/
+              - listitem [ref=e97]:
+                - link "2023.4" [ref=e98] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.4/
+              - listitem [ref=e99]:
+                - link "2023.3" [ref=e100] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.3/
+              - listitem [ref=e101]:
+                - link "2023.2" [ref=e102] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.2/
+              - listitem [ref=e103]:
+                - link "2023.1" [ref=e104] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.1/
+              - listitem [ref=e105]:
+                - link "2022.12" [ref=e106] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.12/
+              - listitem [ref=e107]:
+                - link "2022.11" [ref=e108] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.11/
+              - listitem [ref=e109]:
+                - link "2022.10" [ref=e110] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.10/
+              - listitem [ref=e111]:
+                - link "2022.9.1" [ref=e112] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.9.1/
+              - listitem [ref=e113]:
+                - link "2022.9" [ref=e114] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.9/
+              - listitem [ref=e115]:
+                - link "2022.8" [ref=e116] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.8/
+              - listitem [ref=e117]:
+                - link "2022.7" [ref=e118] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.7/
+              - listitem [ref=e119]:
+                - link "2022.6" [ref=e120] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.6/
+              - listitem [ref=e121]:
+                - link "2022.5.1" [ref=e122] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.5.1/
+              - listitem [ref=e123]:
+                - link "2022.5" [ref=e124] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.5/
+              - listitem [ref=e125]:
+                - link "2022.4.2" [ref=e126] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.4.2/
+              - listitem [ref=e127]:
+                - link "2022.4.1" [ref=e128] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.4.1/
+              - listitem [ref=e129]:
+                - link "2022.3" [ref=e130] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.3/
+              - listitem [ref=e131]:
+                - link "2022.2.2" [ref=e132] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.2.2/
+              - listitem [ref=e133]:
+                - link "2022.2.1" [ref=e134] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.2.1/
+              - listitem [ref=e135]:
+                - link "2022.2" [ref=e136] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.2/
+              - listitem [ref=e137]:
+                - link "2022.1" [ref=e138] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.1/
+              - listitem [ref=e139]:
+                - link "2021.12" [ref=e140] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.12/
+              - listitem [ref=e141]:
+                - link "2021.11" [ref=e142] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.11/
+              - listitem [ref=e143]:
+                - link "2021.10" [ref=e144] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.10/
+              - listitem [ref=e145]:
+                - link "2021.9" [ref=e146] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.9/
+              - listitem [ref=e147]:
+                - link "2021.8" [ref=e148] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.8/
+              - listitem [ref=e149]:
+                - link "2021.7" [ref=e150] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.7/
+              - listitem [ref=e151]:
+                - link "2021.6" [ref=e152] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.6/
+              - listitem [ref=e153]:
+                - link "2021.5" [ref=e154] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.5/
+              - listitem [ref=e155]:
+                - link "2021.4" [ref=e156] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.4/
+              - listitem [ref=e157]:
+                - link "2021.3" [ref=e158] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.3/
+              - listitem [ref=e159]:
+                - link "2021.2" [ref=e160] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.2/
+              - listitem [ref=e161]:
+                - link "2021.1" [ref=e162] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.1/
+              - listitem [ref=e163]:
+                - link "2020.12" [ref=e164] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.12/
+              - listitem [ref=e165]:
+                - link "2020.11" [ref=e166] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.11/
+              - listitem [ref=e167]:
+                - link "2020.10" [ref=e168] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.10/
+              - listitem [ref=e169]:
+                - link "2020.9.1" [ref=e170] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.9.1/
+              - listitem [ref=e171]:
+                - link "2020.9" [ref=e172] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.9/
+              - listitem [ref=e173]:
+                - link "2020.8" [ref=e174] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.8/
+              - listitem [ref=e175]:
+                - link "2020.7" [ref=e176] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.7/
+              - listitem [ref=e177]:
+                - link "2020.6" [ref=e178] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.6/
+              - listitem [ref=e179]:
+                - link "2020.5" [ref=e180] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.5/
+              - listitem [ref=e181]:
+                - link "2020.4" [ref=e182] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.4/
+              - listitem [ref=e183]:
+                - link "2020.3" [ref=e184] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.3/
+              - listitem [ref=e185]:
+                - link "2020.02" [ref=e186] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.02/
+              - listitem [ref=e187]:
+                - link "2020.01" [ref=e188] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.01/
+              - listitem [ref=e189]:
+                - link "2019.11" [ref=e190] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2019.11/
+              - listitem [ref=e191]:
+                - link "2019.10" [ref=e192] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2019.10/
+              - listitem [ref=e193]:
+                - link "2019.9" [ref=e194] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2019.9/
+              - listitem [ref=e195]:
+                - link "2019.8-1" [ref=e196] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2019.8-1/
+              - listitem [ref=e197]:
+                - link "2019.8" [ref=e198] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2019.8/
+              - listitem [ref=e199]:
+                - link "2019.7" [ref=e200] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2019.7/
+              - listitem [ref=e201]:
+                - link "2019.6" [ref=e202] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2019.6/
+        - generic:
+          - generic: Installation
+      - generic [ref=e203]:
+        - radio "Switch to dark mode"
+        - generic "Switch to dark mode" [ref=e204] [cursor=pointer]:
+          - img [ref=e205]
+        - radio "Switch to light mode"
+      - dialog [ref=e207]:
+        - search [ref=e208]:
+          - generic [ref=e209]:
+            - textbox "Search" [ref=e210]
+            - generic:
+              - img
+            - navigation "Search":
+              - link "Share":
+                - /url: https://www.freqtrade.io/en/stable/installation/?q=
+                - img
+              - button "Clear":
+                - img
+          - generic [ref=e212]: Initializing search
+      - link "GitHub 2026.3 49.6k 10.3k" [ref=e214] [cursor=pointer]:
+        - /url: https://github.com/freqtrade/freqtrade
+        - img [ref=e216]
+        - generic [ref=e218]:
+          - text: GitHub
+          - list:
+            - listitem: "2026.3"
+            - listitem: 49.6k
+            - listitem: 10.3k
+  - generic [ref=e219]:
+    - main [ref=e220]:
+      - generic [ref=e221]:
+        - navigation "Navigation" [ref=e225]:
+          - generic [ref=e226]: Freqtrade
+          - list [ref=e227]:
+            - listitem [ref=e228]:
+              - link "Home" [ref=e229] [cursor=pointer]:
+                - /url: ..
+                - generic [ref=e230]: Home
+            - listitem [ref=e231]:
+              - link "Quickstart with Docker" [ref=e232] [cursor=pointer]:
+                - /url: ../docker_quickstart/
+                - generic [ref=e233]: Quickstart with Docker
+            - listitem [ref=e234]:
+              - link "Installation" [ref=e235] [cursor=pointer]:
+                - /url: ./
+                - generic [ref=e236]: Installation
+            - listitem [ref=e237]:
+              - link "Freqtrade Basics" [ref=e238] [cursor=pointer]:
+                - /url: ../bot-basics/
+                - generic [ref=e239]: Freqtrade Basics
+            - listitem [ref=e240]:
+              - link "Configuration" [ref=e241] [cursor=pointer]:
+                - /url: ../configuration/
+                - generic [ref=e242]: Configuration
+            - listitem [ref=e243]:
+              - link "Strategy Quickstart" [ref=e244] [cursor=pointer]:
+                - /url: ../strategy-101/
+                - generic [ref=e245]: Strategy Quickstart
+            - listitem [ref=e246]:
+              - link "Strategy Customization" [ref=e247] [cursor=pointer]:
+                - /url: ../strategy-customization/
+                - generic [ref=e248]: Strategy Customization
+            - listitem [ref=e249]:
+              - link "Strategy Callbacks" [ref=e250] [cursor=pointer]:
+                - /url: ../strategy-callbacks/
+                - generic [ref=e251]: Strategy Callbacks
+            - listitem [ref=e252]:
+              - link "Stoploss" [ref=e253] [cursor=pointer]:
+                - /url: ../stoploss/
+                - generic [ref=e254]: Stoploss
+            - listitem [ref=e255]:
+              - link "Plugins" [ref=e256] [cursor=pointer]:
+                - /url: ../plugins/
+                - generic [ref=e257]: Plugins
+            - listitem [ref=e258]:
+              - link "Start the bot" [ref=e259] [cursor=pointer]:
+                - /url: ../bot-usage/
+                - generic [ref=e260]: Start the bot
+            - listitem [ref=e261]:
+              - generic [ref=e263]: Control the bot
+            - listitem [ref=e265]:
+              - link "Data Downloading" [ref=e266] [cursor=pointer]:
+                - /url: ../data-download/
+                - generic [ref=e267]: Data Downloading
+            - listitem [ref=e268]:
+              - link "Backtesting" [ref=e269] [cursor=pointer]:
+                - /url: ../backtesting/
+                - generic [ref=e270]: Backtesting
+            - listitem [ref=e271]:
+              - link "Hyperopt" [ref=e272] [cursor=pointer]:
+                - /url: ../hyperopt/
+                - generic [ref=e273]: Hyperopt
+            - listitem [ref=e274]:
+              - generic [ref=e276]: FreqAI
+            - listitem [ref=e278]:
+              - link "Short / Leverage" [ref=e279] [cursor=pointer]:
+                - /url: ../leverage/
+                - generic [ref=e280]: Short / Leverage
+            - listitem [ref=e281]:
+              - link "Utility Sub-commands" [ref=e282] [cursor=pointer]:
+                - /url: ../utils/
+                - generic [ref=e283]: Utility Sub-commands
+            - listitem [ref=e284]:
+              - link "Plotting" [ref=e285] [cursor=pointer]:
+                - /url: ../plotting/
+                - generic [ref=e286]: Plotting
+            - listitem [ref=e287]:
+              - link "Exchange-specific Notes" [ref=e288] [cursor=pointer]:
+                - /url: ../exchanges/
+                - generic [ref=e289]: Exchange-specific Notes
+            - listitem [ref=e290]:
+              - generic [ref=e292]: Data Analysis
+            - listitem [ref=e294]:
+              - generic [ref=e296]: Advanced Topics
+            - listitem [ref=e298]:
+              - link "FAQ" [ref=e299] [cursor=pointer]:
+                - /url: ../faq/
+                - generic [ref=e300]: FAQ
+            - listitem [ref=e301]:
+              - link "Strategy migration" [ref=e302] [cursor=pointer]:
+                - /url: ../strategy_migration/
+                - generic [ref=e303]: Strategy migration
+            - listitem [ref=e304]:
+              - link "Updating Freqtrade" [ref=e305] [cursor=pointer]:
+                - /url: ../updating/
+                - generic [ref=e306]: Updating Freqtrade
+            - listitem [ref=e307]:
+              - link "Deprecated Features" [ref=e308] [cursor=pointer]:
+                - /url: ../deprecated/
+                - generic [ref=e309]: Deprecated Features
+            - listitem [ref=e310]:
+              - link "Contributors Guide" [ref=e311] [cursor=pointer]:
+                - /url: ../developer/
+                - generic [ref=e312]: Contributors Guide
+        - navigation "Table of contents" [ref=e316]:
+          - generic [ref=e317]: Table of contents
+          - list [ref=e318]:
+            - listitem [ref=e319]:
+              - link "Information" [ref=e320] [cursor=pointer]:
+                - /url: "#information"
+                - generic [ref=e321]: Information
+            - listitem [ref=e322]:
+              - link "Requirements" [ref=e323] [cursor=pointer]:
+                - /url: "#requirements"
+                - generic [ref=e324]: Requirements
+              - navigation "Requirements" [ref=e325]:
+                - list [ref=e326]:
+                  - listitem [ref=e327]:
+                    - link "Install guide" [ref=e328] [cursor=pointer]:
+                      - /url: "#install-guide"
+                      - generic [ref=e329]: Install guide
+                  - listitem [ref=e330]:
+                    - link "Install code" [ref=e331] [cursor=pointer]:
+                      - /url: "#install-code"
+                      - generic [ref=e332]: Install code
+                    - navigation "Install code" [ref=e333]:
+                      - list [ref=e334]:
+                        - listitem [ref=e335]:
+                          - link "Install necessary dependencies" [ref=e336] [cursor=pointer]:
+                            - /url: "#install-necessary-dependencies"
+                            - generic [ref=e337]: Install necessary dependencies
+                        - listitem [ref=e338]:
+                          - link "Install necessary dependencies" [ref=e339] [cursor=pointer]:
+                            - /url: "#install-necessary-dependencies_1"
+                            - generic [ref=e340]: Install necessary dependencies
+            - listitem [ref=e341]:
+              - link "Freqtrade repository" [ref=e342] [cursor=pointer]:
+                - /url: "#freqtrade-repository"
+                - generic [ref=e343]: Freqtrade repository
+            - listitem [ref=e344]:
+              - link "Script Installation" [ref=e345] [cursor=pointer]:
+                - /url: "#script-installation"
+                - generic [ref=e346]: Script Installation
+              - navigation "Script Installation" [ref=e347]:
+                - list [ref=e348]:
+                  - listitem [ref=e349]:
+                    - link "Use /setup.sh -install (Linux/MacOS)" [ref=e350] [cursor=pointer]:
+                      - /url: "#use-setupsh-install-linuxmacos"
+                      - generic [ref=e351]: Use /setup.sh -install (Linux/MacOS)
+                    - navigation "Use /setup.sh -install (Linux/MacOS)" [ref=e352]:
+                      - list [ref=e353]:
+                        - listitem [ref=e354]:
+                          - link "Other options of /setup.sh script" [ref=e355] [cursor=pointer]:
+                            - /url: "#other-options-of-setupsh-script"
+                            - generic [ref=e356]: Other options of /setup.sh script
+                        - listitem [ref=e357]:
+                          - link "Activate your virtual environment" [ref=e358] [cursor=pointer]:
+                            - /url: "#activate-your-virtual-environment"
+                            - generic [ref=e359]: Activate your virtual environment
+                  - listitem [ref=e360]:
+                    - link "Use ./setup.ps1 (Windows)" [ref=e361] [cursor=pointer]:
+                      - /url: "#use-setupps1-windows"
+                      - generic [ref=e362]: Use ./setup.ps1 (Windows)
+                    - navigation "Use ./setup.ps1 (Windows)" [ref=e363]:
+                      - list [ref=e364]:
+                        - listitem [ref=e365]:
+                          - link "Activate your virtual environment (Windows)" [ref=e366] [cursor=pointer]:
+                            - /url: "#activate-your-virtual-environment-windows"
+                            - generic [ref=e367]: Activate your virtual environment (Windows)
+            - listitem [ref=e368]:
+              - link "Manual Installation" [ref=e369] [cursor=pointer]:
+                - /url: "#manual-installation"
+                - generic [ref=e370]: Manual Installation
+              - navigation "Manual Installation" [ref=e371]:
+                - list [ref=e372]:
+                  - listitem [ref=e373]:
+                    - link "Setup Python virtual environment (virtualenv)" [ref=e374] [cursor=pointer]:
+                      - /url: "#setup-python-virtual-environment-virtualenv"
+                      - generic [ref=e375]: Setup Python virtual environment (virtualenv)
+                  - listitem [ref=e376]:
+                    - link "Install python dependencies" [ref=e377] [cursor=pointer]:
+                      - /url: "#install-python-dependencies"
+                      - generic [ref=e378]: Install python dependencies
+                  - listitem [ref=e379]:
+                    - link "(Optional) Post-installation Tasks" [ref=e380] [cursor=pointer]:
+                      - /url: "#optional-post-installation-tasks"
+                      - generic [ref=e381]: (Optional) Post-installation Tasks
+            - listitem [ref=e382]:
+              - link "Installation with Conda" [ref=e383] [cursor=pointer]:
+                - /url: "#installation-with-conda"
+                - generic [ref=e384]: Installation with Conda
+              - navigation "Installation with Conda" [ref=e385]:
+                - list [ref=e386]:
+                  - listitem [ref=e387]:
+                    - link "What is Conda?" [ref=e388] [cursor=pointer]:
+                      - /url: "#what-is-conda"
+                      - generic [ref=e389]: What is Conda?
+                  - listitem [ref=e390]:
+                    - link "Installation with conda" [ref=e391] [cursor=pointer]:
+                      - /url: "#installation-with-conda_1"
+                      - generic [ref=e392]: Installation with conda
+                    - navigation "Installation with conda" [ref=e393]:
+                      - list [ref=e394]:
+                        - listitem [ref=e395]:
+                          - link "Install Conda" [ref=e396] [cursor=pointer]:
+                            - /url: "#install-conda"
+                            - generic [ref=e397]: Install Conda
+                        - listitem [ref=e398]:
+                          - link "Freqtrade download" [ref=e399] [cursor=pointer]:
+                            - /url: "#freqtrade-download"
+                            - generic [ref=e400]: Freqtrade download
+                        - listitem [ref=e401]:
+                          - 'link "Freqtrade install: Conda Environment" [ref=e402] [cursor=pointer]':
+                            - /url: "#freqtrade-install-conda-environment"
+                            - generic [ref=e403]: "Freqtrade install: Conda Environment"
+                        - listitem [ref=e404]:
+                          - link "Enter/exit freqtrade environment" [ref=e405] [cursor=pointer]:
+                            - /url: "#enterexit-freqtrade-environment"
+                            - generic [ref=e406]: Enter/exit freqtrade environment
+                  - listitem [ref=e407]:
+                    - link "Important shortcuts" [ref=e408] [cursor=pointer]:
+                      - /url: "#important-shortcuts"
+                      - generic [ref=e409]: Important shortcuts
+                  - listitem [ref=e410]:
+                    - link "Further info on anaconda" [ref=e411] [cursor=pointer]:
+                      - /url: "#further-info-on-anaconda"
+                      - generic [ref=e412]: Further info on anaconda
+            - listitem [ref=e413]:
+              - link "You are ready" [ref=e414] [cursor=pointer]:
+                - /url: "#you-are-ready"
+                - generic [ref=e415]: You are ready
+              - navigation "You are ready" [ref=e416]:
+                - list [ref=e417]:
+                  - listitem [ref=e418]:
+                    - link "Initialize the configuration" [ref=e419] [cursor=pointer]:
+                      - /url: "#initialize-the-configuration"
+                      - generic [ref=e420]: Initialize the configuration
+                  - listitem [ref=e421]:
+                    - link "Start the Bot" [ref=e422] [cursor=pointer]:
+                      - /url: "#start-the-bot"
+                      - generic [ref=e423]: Start the Bot
+            - listitem [ref=e424]:
+              - link "Troubleshooting" [ref=e425] [cursor=pointer]:
+                - /url: "#troubleshooting"
+                - generic [ref=e426]: Troubleshooting
+              - navigation "Troubleshooting" [ref=e427]:
+                - list [ref=e428]:
+                  - listitem [ref=e429]:
+                    - 'link "Common problem: \"command not found\"" [ref=e430] [cursor=pointer]':
+                      - /url: "#common-problem-command-not-found"
+                      - generic [ref=e431]: "Common problem: \"command not found\""
+                  - listitem [ref=e432]:
+                    - link "MacOS installation error" [ref=e433] [cursor=pointer]:
+                      - /url: "#macos-installation-error"
+                      - generic [ref=e434]: MacOS installation error
+                  - listitem [ref=e435]:
+                    - link "Windows Installation error" [ref=e436] [cursor=pointer]:
+                      - /url: "#windows-installation-error"
+                      - generic [ref=e437]: Windows Installation error
+        - article [ref=e439]:
+          - link "Edit this page" [ref=e440] [cursor=pointer]:
+            - /url: https://github.com/freqtrade/freqtrade/edit/develop/docs/installation.md
+            - img [ref=e441]
+          - heading "Installation ¶" [level=1] [ref=e443]:
+            - text: Installation
+            - link "¶" [ref=e444] [cursor=pointer]:
+              - /url: "#installation"
+          - paragraph [ref=e445]: This page explains how to prepare your environment for running the bot.
+          - paragraph [ref=e446]: The freqtrade documentation describes various ways to install freqtrade
+          - list [ref=e447]:
+            - listitem [ref=e448]:
+              - link "Docker images" [ref=e449] [cursor=pointer]:
+                - /url: ../docker_quickstart/
+              - text: (separate page)
+            - listitem [ref=e450]:
+              - link "Script Installation" [ref=e451] [cursor=pointer]:
+                - /url: "#script-installation"
+            - listitem [ref=e452]:
+              - link "Manual Installation" [ref=e453] [cursor=pointer]:
+                - /url: "#manual-installation"
+            - listitem [ref=e454]:
+              - link "Installation with Conda" [ref=e455] [cursor=pointer]:
+                - /url: "#installation-with-conda"
+          - paragraph [ref=e456]:
+            - text: Please consider using the prebuilt
+            - link "docker images" [ref=e457] [cursor=pointer]:
+              - /url: ../docker_quickstart/
+            - text: to get started quickly.
+          - generic [ref=e458]:
+            - paragraph [ref=e459]: Updating
+            - paragraph [ref=e460]:
+              - text: Keeping freqtrade updated is important to
+              - link "ensure ongoing compatibility" [ref=e461] [cursor=pointer]:
+                - /url: ../updating/#why-update
+              - text: with exchange API's. Please refer to the
+              - link "updating guide" [ref=e462] [cursor=pointer]:
+                - /url: ../updating/
+              - text: for details on how to update your installation.
+          - generic [ref=e463]:
+            - paragraph [ref=e464]: Windows users
+            - paragraph [ref=e465]:
+              - text: We
+              - strong [ref=e466]: strongly
+              - text: recommend that Windows users use
+              - link "Docker" [ref=e467] [cursor=pointer]:
+                - /url: ../docker_quickstart/
+              - text: as this will work much easier and smoother (also more secure).
+            - paragraph [ref=e468]:
+              - text: If that is not possible, try using the Windows Linux subsystem (WSL) - for which the Ubuntu/Linux instructions will work. If you really want to install freqtrade natively on Windows, best use the
+              - link "./setup.ps1 installation script" [ref=e469] [cursor=pointer]:
+                - /url: "#use-setupps1-windows"
+                - code [ref=e470]: ./setup.ps1
+                - text: installation script
+              - text: .
+            - paragraph [ref=e471]: Please also make sure to use the 64bit version of Python, as 32bit versions have severe memory limitations, which can negatively impact your experience with backtesting/hyperopt.
+          - separator [ref=e472]
+          - heading "Information ¶" [level=2] [ref=e473]:
+            - text: Information
+            - link "¶" [ref=e474] [cursor=pointer]:
+              - /url: "#information"
+          - paragraph [ref=e475]:
+            - text: The easiest way to install and run Freqtrade is to clone the bot Github repository and then run the
+            - code [ref=e476]: ./setup.sh
+            - text: (
+            - code [ref=e477]: ./setup.ps1
+            - text: for Windows) script, if it's available for your platform.
+          - generic [ref=e478]:
+            - paragraph [ref=e479]: Version considerations
+            - paragraph [ref=e480]:
+              - text: When cloning the repository the default working branch has the name
+              - code [ref=e481]: develop
+              - text: . This branch contains all last features (can be considered as relatively stable, thanks to automated tests). The
+              - code [ref=e482]: stable
+              - text: branch contains the code of the last release (done usually once per month on an approximately one week old snapshot of the
+              - code [ref=e483]: develop
+              - text: branch to prevent packaging bugs, so potentially it's more stable).
+          - generic [ref=e484]:
+            - paragraph [ref=e485]: Note
+            - paragraph [ref=e486]:
+              - text: Either
+              - link "uv" [ref=e487] [cursor=pointer]:
+                - /url: https://docs.astral.sh/uv/
+              - text: ", or Python3.11 or higher and the corresponding"
+              - code [ref=e488]: pip
+              - text: are assumed to be available. The install-script will warn you and stop if that's not the case.
+              - code [ref=e489]: git
+              - text: is also needed to clone the Freqtrade repository.
+              - text: Also, python headers (
+              - code [ref=e490]: python<yourversion>-dev
+              - text: /
+              - code [ref=e491]: python<yourversion>-devel
+              - text: ) must be available for the installation to complete successfully.
+          - generic [ref=e492]:
+            - paragraph [ref=e493]: Up-to-date clock
+            - paragraph [ref=e494]: The clock on the system running the bot must be accurate, synchronized to a NTP server frequently enough to avoid problems with communication to the exchanges.
+          - separator [ref=e495]
+          - heading "Requirements ¶" [level=2] [ref=e496]:
+            - text: Requirements
+            - link "¶" [ref=e497] [cursor=pointer]:
+              - /url: "#requirements"
+          - paragraph [ref=e498]:
+            - text: These requirements apply to both
+            - link "Script Installation" [ref=e499] [cursor=pointer]:
+              - /url: "#script-installation"
+            - text: and
+            - link "Manual Installation" [ref=e500] [cursor=pointer]:
+              - /url: "#manual-installation"
+            - text: .
+          - generic [ref=e501]:
+            - paragraph [ref=e502]: ARM64 systems
+            - paragraph [ref=e503]:
+              - text: If you are running an ARM64 system (like a MacOS M1 or an Oracle VM), please use
+              - link "docker" [ref=e504] [cursor=pointer]:
+                - /url: ../docker_quickstart/
+              - text: to run freqtrade. While native installation is possible with some manual effort, this is not supported at the moment.
+          - heading "Install guide ¶" [level=3] [ref=e505]:
+            - text: Install guide
+            - link "¶" [ref=e506] [cursor=pointer]:
+              - /url: "#install-guide"
+          - list [ref=e507]:
+            - listitem [ref=e508]:
+              - link "Python >= 3.11" [ref=e509] [cursor=pointer]:
+                - /url: http://docs.python-guide.org/en/latest/starting/installation/
+            - listitem [ref=e510]:
+              - link "pip" [ref=e511] [cursor=pointer]:
+                - /url: https://pip.pypa.io/en/stable/installing/
+            - listitem [ref=e512]:
+              - link "git" [ref=e513] [cursor=pointer]:
+                - /url: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+            - listitem [ref=e514]:
+              - link "virtualenv" [ref=e515] [cursor=pointer]:
+                - /url: https://virtualenv.pypa.io/en/stable/installation.html
+              - text: (Recommended)
+          - heading "Install code ¶" [level=3] [ref=e516]:
+            - text: Install code
+            - link "¶" [ref=e517] [cursor=pointer]:
+              - /url: "#install-code"
+          - paragraph [ref=e518]: We've included/collected install instructions for Ubuntu, MacOS, and Windows. These are guidelines and your success may vary with other distros. OS Specific steps are listed first, the common section below is necessary for all systems.
+          - generic [ref=e519]:
+            - paragraph [ref=e520]: Note
+            - paragraph [ref=e521]: Python3.11 or higher and the corresponding pip are assumed to be available.
+          - generic [ref=e522]:
+            - radio "Debian/Ubuntu" [checked]
+            - radio "MacOS"
+            - radio "RaspberryPi/Raspbian"
+            - generic [ref=e523]:
+              - link "Debian/Ubuntu" [ref=e525] [cursor=pointer]:
+                - /url: "#__tabbed_1_1"
+              - link "MacOS" [ref=e527] [cursor=pointer]:
+                - /url: "#__tabbed_1_2"
+              - link "RaspberryPi/Raspbian" [ref=e529] [cursor=pointer]:
+                - /url: "#__tabbed_1_3"
+            - generic [ref=e531]:
+              - heading "Install necessary dependencies ¶" [level=4] [ref=e532]:
+                - text: Install necessary dependencies
+                - link "¶" [ref=e533] [cursor=pointer]:
+                  - /url: "#install-necessary-dependencies"
+              - generic [ref=e535]:
+                - navigation [ref=e536]:
+                  - button "Copy to clipboard" [ref=e537] [cursor=pointer]
+                - code [ref=e538]: "# update repository sudo apt-get update # install packages sudo apt install -y python3-pip python3-venv python3-dev python3-pandas git curl"
+            - button [ref=e539] [cursor=pointer]
+            - button [ref=e540] [cursor=pointer]
+          - separator [ref=e541]
+          - heading "Freqtrade repository ¶" [level=2] [ref=e542]:
+            - text: Freqtrade repository
+            - link "¶" [ref=e543] [cursor=pointer]:
+              - /url: "#freqtrade-repository"
+          - paragraph [ref=e544]:
+            - text: Freqtrade is an open source crypto-currency trading bot, whose code is hosted on
+            - code [ref=e545]: github.com
+          - generic [ref=e547]:
+            - navigation [ref=e548]:
+              - button "Copy to clipboard" [ref=e549] [cursor=pointer]
+            - code [ref=e550]: "# Download `develop` branch of freqtrade repository git clone https://github.com/freqtrade/freqtrade.git # Enter downloaded directory cd freqtrade # your choice (1): novice user git checkout stable # your choice (2): advanced user git checkout develop"
+          - paragraph [ref=e551]:
+            - text: (1) This command switches the cloned repository to the use of the
+            - code [ref=e552]: stable
+            - text: branch. It's not needed, if you wish to stay on the (2)
+            - code [ref=e553]: develop
+            - text: branch.
+          - paragraph [ref=e554]:
+            - text: You may later switch between branches at any time with the
+            - code [ref=e555]: git checkout stable
+            - text: /
+            - code [ref=e556]: git checkout develop
+            - text: commands.
+          - group [ref=e557]:
+            - generic "Install from pypi" [ref=e558] [cursor=pointer]
+          - separator [ref=e559]
+          - heading "Script Installation ¶" [level=2] [ref=e560]:
+            - text: Script Installation
+            - link "¶" [ref=e561] [cursor=pointer]:
+              - /url: "#script-installation"
+          - paragraph [ref=e562]:
+            - text: First of the ways to install Freqtrade, is to use provided the Linux/MacOS
+            - code [ref=e563]: ./setup.sh
+            - text: script, which install all dependencies and help you configure the bot.
+          - paragraph [ref=e564]:
+            - text: Make sure you fulfill the
+            - link "Requirements" [ref=e565] [cursor=pointer]:
+              - /url: "#requirements"
+            - text: and have downloaded the
+            - link "Freqtrade repository" [ref=e566] [cursor=pointer]:
+              - /url: "#freqtrade-repository"
+            - text: .
+          - heading "Use /setup.sh -install (Linux/MacOS) ¶" [level=3] [ref=e567]:
+            - text: Use /setup.sh -install (Linux/MacOS)
+            - link "¶" [ref=e568] [cursor=pointer]:
+              - /url: "#use-setupsh-install-linuxmacos"
+          - paragraph [ref=e569]: If you are on Debian, Ubuntu or MacOS, freqtrade provides the script to install freqtrade.
+          - generic [ref=e571]:
+            - navigation [ref=e572]:
+              - button "Copy to clipboard" [ref=e573] [cursor=pointer]
+            - code [ref=e574]: "# --install, Install freqtrade from scratch ./setup.sh -i"
+          - heading "Other options of /setup.sh script ¶" [level=4] [ref=e575]:
+            - text: Other options of /setup.sh script
+            - link "¶" [ref=e576] [cursor=pointer]:
+              - /url: "#other-options-of-setupsh-script"
+          - paragraph [ref=e577]:
+            - text: You can also update, configure and reset the codebase of your bot with
+            - code [ref=e578]: ./setup.sh
+          - generic [ref=e580]:
+            - navigation [ref=e581]:
+              - button "Copy to clipboard" [ref=e582] [cursor=pointer]
+            - code [ref=e583]: "# --update, Command git pull to update. ./setup.sh -u # --reset, Hard reset your develop/stable branch. ./setup.sh -r"
+          - generic [ref=e585]:
+            - navigation [ref=e586]:
+              - button "Copy to clipboard" [ref=e587] [cursor=pointer]
+            - code [ref=e588]: "** --install ** With this option, the script will install the bot and most dependencies: You will need to have git and python3.11+ installed beforehand for this to work. * Mandatory software as: `ta-lib` * Setup your virtualenv under `.venv/` This option is a combination of installation tasks and `--reset` ** --update ** This option will pull the last version of your current branch and update your virtualenv. Run the script with this option periodically to update your bot. ** --reset ** This option will hard reset your branch (only if you are on either `stable` or `develop`) and recreate your virtualenv."
+          - heading "Activate your virtual environment ¶" [level=4] [ref=e589]:
+            - text: Activate your virtual environment
+            - link "¶" [ref=e590] [cursor=pointer]:
+              - /url: "#activate-your-virtual-environment"
+          - paragraph [ref=e591]:
+            - text: Each time you open a new terminal, you must run
+            - code [ref=e592]: source .venv/bin/activate
+            - text: to activate your virtual environment.
+          - generic [ref=e594]:
+            - navigation [ref=e595]:
+              - button "Copy to clipboard" [ref=e596] [cursor=pointer]
+            - code [ref=e597]: "# activate virtual environment source ./.venv/bin/activate"
+          - heading "Use ./setup.ps1 (Windows) ¶" [level=3] [ref=e598]:
+            - text: Use ./setup.ps1 (Windows)
+            - link "¶" [ref=e599] [cursor=pointer]:
+              - /url: "#use-setupps1-windows"
+          - paragraph [ref=e600]: The script will ask you a few questions to determine which parts should be installed.
+          - generic [ref=e602]:
+            - navigation [ref=e603]:
+              - button "Copy to clipboard" [ref=e604] [cursor=pointer]
+            - code [ref=e605]: Set-ExecutionPolicy -ExecutionPolicy Bypass cd freqtrade . .\setup.ps1
+          - heading "Activate your virtual environment (Windows) ¶" [level=4] [ref=e606]:
+            - text: Activate your virtual environment (Windows)
+            - link "¶" [ref=e607] [cursor=pointer]:
+              - /url: "#activate-your-virtual-environment-windows"
+          - generic [ref=e609]:
+            - navigation [ref=e610]:
+              - button "Copy to clipboard" [ref=e611] [cursor=pointer]
+            - code [ref=e612]: "# activate virtual environment . .\\.venv\\Scripts\\Activate.ps1"
+          - paragraph [ref=e613]:
+            - link "You are now ready" [ref=e614] [cursor=pointer]:
+              - /url: "#you-are-ready"
+            - text: to run the bot.
+          - separator [ref=e615]
+          - heading "Manual Installation ¶" [level=2] [ref=e616]:
+            - text: Manual Installation
+            - link "¶" [ref=e617] [cursor=pointer]:
+              - /url: "#manual-installation"
+          - paragraph [ref=e618]:
+            - text: Make sure you fulfill the
+            - link "Requirements" [ref=e619] [cursor=pointer]:
+              - /url: "#requirements"
+            - text: and have downloaded the
+            - link "Freqtrade repository" [ref=e620] [cursor=pointer]:
+              - /url: "#freqtrade-repository"
+            - text: .
+          - heading "Setup Python virtual environment (virtualenv) ¶" [level=3] [ref=e621]:
+            - text: Setup Python virtual environment (virtualenv)
+            - link "¶" [ref=e622] [cursor=pointer]:
+              - /url: "#setup-python-virtual-environment-virtualenv"
+          - paragraph [ref=e623]:
+            - text: You will run freqtrade in separated
+            - code [ref=e624]: virtual environment
+          - generic [ref=e626]:
+            - navigation [ref=e627]:
+              - button "Copy to clipboard" [ref=e628] [cursor=pointer]
+            - code [ref=e629]: "# create virtualenv in directory /freqtrade/.venv python3 -m venv .venv # run virtualenv source .venv/bin/activate"
+          - heading "Install python dependencies ¶" [level=3] [ref=e630]:
+            - text: Install python dependencies
+            - link "¶" [ref=e631] [cursor=pointer]:
+              - /url: "#install-python-dependencies"
+          - generic [ref=e633]:
+            - navigation [ref=e634]:
+              - button "Copy to clipboard" [ref=e635] [cursor=pointer]
+            - code [ref=e636]: "python3 -m pip install --upgrade pip python3 -m pip install -r requirements.txt # install freqtrade python3 -m pip install -e ."
+          - paragraph [ref=e637]:
+            - link "You are now ready" [ref=e638] [cursor=pointer]:
+              - /url: "#you-are-ready"
+            - text: to run the bot.
+          - heading "(Optional) Post-installation Tasks ¶" [level=3] [ref=e639]:
+            - text: (Optional) Post-installation Tasks
+            - link "¶" [ref=e640] [cursor=pointer]:
+              - /url: "#optional-post-installation-tasks"
+          - generic [ref=e641]:
+            - paragraph [ref=e642]: Note
+            - paragraph [ref=e643]:
+              - text: If you run the bot on a server, you should consider using
+              - link "Docker" [ref=e644] [cursor=pointer]:
+                - /url: ../docker_quickstart/
+              - text: or a terminal multiplexer like
+              - code [ref=e645]: screen
+              - text: or
+              - link "tmux" [ref=e646] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/Tmux
+                - code [ref=e647]: tmux
+              - text: to avoid that the bot is stopped on logout.
+          - paragraph [ref=e648]:
+            - text: On Linux with software suite
+            - code [ref=e649]: systemd
+            - text: ", as an optional post-installation task, you may wish to setup the bot to run as a"
+            - code [ref=e650]: systemd service
+            - text: or configure it to send the log messages to the
+            - code [ref=e651]: syslog
+            - text: /
+            - code [ref=e652]: rsyslog
+            - text: or
+            - code [ref=e653]: journald
+            - text: daemons. See
+            - link "Advanced Logging" [ref=e654] [cursor=pointer]:
+              - /url: ../advanced-setup/#advanced-logging
+            - text: for details.
+          - separator [ref=e655]
+          - heading "Installation with Conda ¶" [level=2] [ref=e656]:
+            - text: Installation with Conda
+            - link "¶" [ref=e657] [cursor=pointer]:
+              - /url: "#installation-with-conda"
+          - paragraph [ref=e658]: Freqtrade can also be installed with Miniconda or Anaconda. We recommend using Miniconda as it's installation footprint is smaller. Conda will automatically prepare and manage the extensive library-dependencies of the Freqtrade program.
+          - heading "What is Conda? ¶" [level=3] [ref=e659]:
+            - text: What is Conda?
+            - link "¶" [ref=e660] [cursor=pointer]:
+              - /url: "#what-is-conda"
+          - paragraph [ref=e661]:
+            - text: "Conda is a package, dependency and environment manager for multiple programming languages:"
+            - link "conda docs" [ref=e662] [cursor=pointer]:
+              - /url: https://docs.conda.io/projects/conda/en/latest/index.html
+          - heading "Installation with conda ¶" [level=3] [ref=e663]:
+            - text: Installation with conda
+            - link "¶" [ref=e664] [cursor=pointer]:
+              - /url: "#installation-with-conda_1"
+          - heading "Install Conda ¶" [level=4] [ref=e665]:
+            - text: Install Conda
+            - link "¶" [ref=e666] [cursor=pointer]:
+              - /url: "#install-conda"
+          - paragraph [ref=e667]:
+            - link "Installing on linux" [ref=e668] [cursor=pointer]:
+              - /url: https://conda.io/projects/conda/en/latest/user-guide/install/linux.html#install-linux-silent
+          - paragraph [ref=e669]:
+            - link "Installing on windows" [ref=e670] [cursor=pointer]:
+              - /url: https://conda.io/projects/conda/en/latest/user-guide/install/windows.html
+          - paragraph [ref=e671]: Answer all questions. After installation, it is mandatory to turn your terminal OFF and ON again.
+          - heading "Freqtrade download ¶" [level=4] [ref=e672]:
+            - text: Freqtrade download
+            - link "¶" [ref=e673] [cursor=pointer]:
+              - /url: "#freqtrade-download"
+          - paragraph [ref=e674]: Download and install freqtrade.
+          - generic [ref=e676]:
+            - navigation [ref=e677]:
+              - button "Copy to clipboard" [ref=e678] [cursor=pointer]
+            - code [ref=e679]: "# download freqtrade git clone https://github.com/freqtrade/freqtrade.git # enter downloaded directory 'freqtrade' cd freqtrade"
+          - 'heading "Freqtrade install: Conda Environment ¶" [level=4] [ref=e680]':
+            - text: "Freqtrade install: Conda Environment"
+            - link "¶" [ref=e681] [cursor=pointer]:
+              - /url: "#freqtrade-install-conda-environment"
+          - generic [ref=e683]:
+            - navigation [ref=e684]:
+              - button "Copy to clipboard" [ref=e685] [cursor=pointer]
+            - code [ref=e686]: conda create --name freqtrade python=3.12
+          - generic [ref=e687]:
+            - paragraph [ref=e688]: Creating Conda Environment
+            - paragraph [ref=e689]:
+              - text: The conda command
+              - code [ref=e690]: create -n
+              - text: "automatically installs all nested dependencies for the selected libraries, general structure of installation command is:"
+            - generic [ref=e692]:
+              - navigation [ref=e693]:
+                - button "Copy to clipboard" [ref=e694] [cursor=pointer]
+              - code [ref=e695]: "# choose your own packages conda env create -n [name of the environment] [python version] [packages]"
+          - heading "Enter/exit freqtrade environment ¶" [level=4] [ref=e696]:
+            - text: Enter/exit freqtrade environment
+            - link "¶" [ref=e697] [cursor=pointer]:
+              - /url: "#enterexit-freqtrade-environment"
+          - paragraph [ref=e698]: To check available environments, type
+          - generic [ref=e700]:
+            - navigation [ref=e701]:
+              - button "Copy to clipboard" [ref=e702] [cursor=pointer]
+            - code [ref=e703]: conda env list
+          - paragraph [ref=e704]: Enter installed environment
+          - generic [ref=e706]:
+            - navigation [ref=e707]:
+              - button "Copy to clipboard" [ref=e708] [cursor=pointer]
+            - code [ref=e709]: "# enter conda environment conda activate freqtrade # exit conda environment - don't do it now conda deactivate"
+          - paragraph [ref=e710]: Install last python dependencies with pip
+          - generic [ref=e712]:
+            - navigation [ref=e713]:
+              - button "Copy to clipboard" [ref=e714] [cursor=pointer]
+            - code [ref=e715]: python3 -m pip install --upgrade pip python3 -m pip install -r requirements.txt python3 -m pip install -e .
+          - paragraph [ref=e716]:
+            - link "You are now ready" [ref=e717] [cursor=pointer]:
+              - /url: "#you-are-ready"
+            - text: to run the bot.
+          - heading "Important shortcuts ¶" [level=3] [ref=e718]:
+            - text: Important shortcuts
+            - link "¶" [ref=e719] [cursor=pointer]:
+              - /url: "#important-shortcuts"
+          - generic [ref=e721]:
+            - navigation [ref=e722]:
+              - button "Copy to clipboard" [ref=e723] [cursor=pointer]
+            - code [ref=e724]: "# list installed conda environments conda env list # activate base environment conda activate # activate freqtrade environment conda activate freqtrade #deactivate any conda environments conda deactivate"
+          - heading "Further info on anaconda ¶" [level=3] [ref=e725]:
+            - text: Further info on anaconda
+            - link "¶" [ref=e726] [cursor=pointer]:
+              - /url: "#further-info-on-anaconda"
+          - generic [ref=e727]:
+            - paragraph [ref=e728]: New heavy packages
+            - paragraph [ref=e729]: It may happen that creating a new Conda environment, populated with selected packages at the moment of creation takes less time than installing a large, heavy library or application, into previously set environment.
+          - generic [ref=e730]:
+            - paragraph [ref=e731]: pip install within conda
+            - paragraph [ref=e732]:
+              - text: The documentation of conda says that pip should NOT be used within conda, because internal problems can occur. However, they are rare.
+              - link "Anaconda Blogpost" [ref=e733] [cursor=pointer]:
+                - /url: https://www.anaconda.com/blog/using-pip-in-a-conda-environment
+            - paragraph [ref=e734]:
+              - text: Nevertheless, that is why, the
+              - code [ref=e735]: conda-forge
+              - text: "channel is preferred:"
+            - list [ref=e736]:
+              - listitem [ref=e737]:
+                - text: more libraries are available (less need for
+                - code [ref=e738]: pip
+                - text: )
+              - listitem [ref=e739]:
+                - code [ref=e740]: conda-forge
+                - text: works better with
+                - code [ref=e741]: pip
+              - listitem [ref=e742]: the libraries are newer
+          - paragraph [ref=e743]: Happy trading!
+          - separator [ref=e744]
+          - heading "You are ready ¶" [level=2] [ref=e745]:
+            - text: You are ready
+            - link "¶" [ref=e746] [cursor=pointer]:
+              - /url: "#you-are-ready"
+          - paragraph [ref=e747]: You've made it this far, so you have successfully installed freqtrade.
+          - heading "Initialize the configuration ¶" [level=3] [ref=e748]:
+            - text: Initialize the configuration
+            - link "¶" [ref=e749] [cursor=pointer]:
+              - /url: "#initialize-the-configuration"
+          - generic [ref=e751]:
+            - navigation [ref=e752]:
+              - button "Copy to clipboard" [ref=e753] [cursor=pointer]
+            - code [ref=e754]: "# Step 1 - Initialize user folder freqtrade create-userdir --userdir user_data # Step 2 - Create a new configuration file freqtrade new-config --config user_data/config.json"
+          - paragraph [ref=e755]:
+            - text: You are ready to run, read
+            - link "Bot Configuration" [ref=e756] [cursor=pointer]:
+              - /url: ../configuration/
+            - text: ", remember to start with"
+            - code [ref=e757]: "dry_run: True"
+            - text: and verify that everything is working.
+          - paragraph [ref=e758]:
+            - text: To learn how to setup your configuration, please refer to the
+            - link "Bot Configuration" [ref=e759] [cursor=pointer]:
+              - /url: ../configuration/
+            - text: documentation page.
+          - heading "Start the Bot ¶" [level=3] [ref=e760]:
+            - text: Start the Bot
+            - link "¶" [ref=e761] [cursor=pointer]:
+              - /url: "#start-the-bot"
+          - generic [ref=e763]:
+            - navigation [ref=e764]:
+              - button "Copy to clipboard" [ref=e765] [cursor=pointer]
+            - code [ref=e766]: freqtrade trade --config user_data/config.json --strategy SampleStrategy
+          - generic [ref=e767]:
+            - paragraph [ref=e768]: Warning
+            - paragraph [ref=e769]: You should read through the rest of the documentation, backtest the strategy you're going to use, and use dry-run before enabling trading with real money.
+          - separator [ref=e770]
+          - heading "Troubleshooting ¶" [level=2] [ref=e771]:
+            - text: Troubleshooting
+            - link "¶" [ref=e772] [cursor=pointer]:
+              - /url: "#troubleshooting"
+          - 'heading "Common problem: \"command not found\" ¶" [level=3] [ref=e773]':
+            - text: "Common problem: \"command not found\""
+            - link "¶" [ref=e774] [cursor=pointer]:
+              - /url: "#common-problem-command-not-found"
+          - paragraph [ref=e775]:
+            - text: If you used (1)
+            - code [ref=e776]: Script
+            - text: or (2)
+            - code [ref=e777]: Manual
+            - text: installation, you need to run the bot in virtual environment. If you get error as below, make sure venv is active.
+          - generic [ref=e779]:
+            - navigation [ref=e780]:
+              - button "Copy to clipboard" [ref=e781] [cursor=pointer]
+            - code [ref=e782]: "# if: bash: freqtrade: command not found # then activate your virtual environment source ./.venv/bin/activate"
+          - heading "MacOS installation error ¶" [level=3] [ref=e783]:
+            - text: MacOS installation error
+            - link "¶" [ref=e784] [cursor=pointer]:
+              - /url: "#macos-installation-error"
+          - paragraph [ref=e785]:
+            - text: Newer versions of MacOS may have installation failed with errors like
+            - code [ref=e786]: "error: command 'g++' failed with exit status 1"
+            - text: .
+          - paragraph [ref=e787]: This error will require explicit installation of the SDK Headers, which are not installed by default in this version of MacOS. For MacOS 10.14, this can be accomplished with the below command.
+          - generic [ref=e789]:
+            - navigation [ref=e790]:
+              - button "Copy to clipboard" [ref=e791] [cursor=pointer]
+            - code [ref=e792]: open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
+          - paragraph [ref=e793]: If this file is inexistent, then you're probably on a different version of MacOS, so you may need to consult the internet for specific resolution details.
+          - heading "Windows Installation error ¶" [level=3] [ref=e794]:
+            - text: Windows Installation error
+            - link "¶" [ref=e795] [cursor=pointer]:
+              - /url: "#windows-installation-error"
+          - generic [ref=e797]:
+            - navigation [ref=e798]:
+              - button "Copy to clipboard" [ref=e799] [cursor=pointer]
+            - code [ref=e800]: "error: Microsoft Visual C++ 14.0 is required. Get it with \"Microsoft Visual C++ Build Tools\": http://landinghub.visualstudio.com/visual-cpp-build-tools"
+          - paragraph [ref=e801]: Unfortunately, many packages requiring compilation don't provide a pre-built wheel. It is therefore mandatory to have a C/C++ compiler installed and available for your python environment to use.
+          - paragraph [ref=e802]:
+            - text: You can download the Visual C++ build tools from
+            - link "the Visual Studio website" [ref=e803] [cursor=pointer]:
+              - /url: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+            - text: and install "Desktop development with C++" in it's default configuration. Unfortunately, this is a heavy download / dependency so you might want to consider WSL2 or
+            - link "docker compose" [ref=e804] [cursor=pointer]:
+              - /url: ../docker_quickstart/
+            - text: first.
+          - paragraph [ref=e805]:
+            - img "Windows installation" [ref=e806]
+      - button "Back to top":
+        - img
+        - text: Back to top
+    - contentinfo [ref=e807]:
+      - navigation "Footer" [ref=e808]:
+        - 'link "Previous: Quickstart with Docker" [ref=e809] [cursor=pointer]':
+          - /url: ../docker_quickstart/
+          - img [ref=e811]
+          - generic [ref=e813]:
+            - text: Previous
+            - generic [ref=e814]: Quickstart with Docker
+        - 'link "Next: Freqtrade Basics" [ref=e815] [cursor=pointer]':
+          - /url: ../bot-basics/
+          - generic [ref=e816]:
+            - text: Next
+            - generic [ref=e817]: Freqtrade Basics
+          - img [ref=e819]
+      - generic [ref=e823]:
+        - text: Made with
+        - link "Material for MkDocs" [ref=e824] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/

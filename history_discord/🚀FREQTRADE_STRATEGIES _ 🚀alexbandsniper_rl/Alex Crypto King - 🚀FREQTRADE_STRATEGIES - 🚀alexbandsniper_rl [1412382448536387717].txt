@@ -1,0 +1,267 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🚀alexbandsniper_rl
+==============================================================
+
+[09/02/2025 10:25] serialkiller15 (pinned)
+🚀 AlexBandSniperML  🚀
+Precision crypto sniper on 15m timeframe – spots divergences & bands for smart entries/exits!
+
+📊 Key Features:
+
+🔍 Multi-Indicator Divergences (RSI, MACD, CCI + more) for bull/bear signals
+
+📈 Keltner/Bollinger Bands with EMA trends & 1h confirmation
+
+🤖 ML Confidence Scoring (RandomForest) – filters weak signals (65%+ threshold)
+
+⚖️ Adaptive Leverage (up to 10x) based on strength/confidence
+
+💰 Custom Exits: Emergency profits, quick scalps, swing targets
+
+🛡️ Protections: Cooldown, drawdown guard, custom stoploss
+
+📉 Supports Long/Short – Hyperopt optimized!
+
+
+[09/02/2025 10:25] serialkiller15
+Pinned a message.
+
+
+[09/12/2025 14:58] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1412382448536387717/1416075540766654507/AlexBandSniperV86AI.py?ex=69f36e1e&is=69f21c9e&hm=87804f71ee20cbdb3ff45a6debe7b6cce482b558673e5dd4eb667af23d0e88ce&
+
+{Reactions}
+👍 (2)
+
+[09/15/2025 07:26] boooooon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1412382448536387717/1417048925952544828/Screenshot_20250915_102613_Telegram.jpg?ex=69f30427&is=69f1b2a7&hm=01af820e7305e7c156a8d3288ff8858926af692a2ff45d61e12ff1c81cd2dd62&
+
+{Reactions}
+👍
+
+[09/15/2025 07:54] janyy9003
+2 trades?
+
+
+[09/15/2025 07:55] serialkiller15
+there is a filter in it have to be removed, and needs some optimizing, will fix it....
+
+{Reactions}
+🚀
+
+[09/15/2025 07:55] serialkiller15
+was a try another aproach!
+
+
+[09/16/2025 13:14] boooooon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1412382448536387717/1417498998230745158/image.png?ex=69f355d1&is=69f20451&hm=31432776f42b29de75f3410a0b0ecd952119b9e533f268203570548d3dc24886&
+https://cdn.discordapp.com/attachments/1412382448536387717/1417498998612295821/image.png?ex=69f355d1&is=69f20451&hm=ceddd25f94f7e9fac3327750c829c65e7c5a90046d870797278c8537938850c5&
+
+
+[09/16/2025 14:09] viking046433
+Looking good so far
+
+
+[09/16/2025 15:56] serialkiller15
+some mods
+
+
+[09/16/2025 15:56] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1412382448536387717/1417539617380634624/image.png?ex=69f37ba5&is=69f22a25&hm=7238b34e472015ab06b83fd2a566e8ba437bf51439f4c91f4dca75170cccd1da&
+
+{Reactions}
+👍 🍺
+
+[09/18/2025 20:36] serialkiller15
+Small update the RL Stuff is doing realy good will post updates tomorrow was busy these days...
+
+{Reactions}
+🚀 (5)
+
+[09/19/2025 10:11] serialkiller15
+never trust this resulsts, backtest only to see if it works, with ml
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1412382448536387717/1418539966903877642/image.png?ex=69f32acb&is=69f1d94b&hm=5bbe51ac63670dc0a7598849b98772231dc24fc731e7d1f2ebd9f0af8b2b8477&
+
+{Reactions}
+🔥 🚀 (4)
+
+[09/19/2025 10:25] xaviertoor
+Release Today?
+
+
+[09/19/2025 10:29] serialkiller15
+let me finish the teststs
+
+
+[09/19/2025 10:31] serialkiller15
+its starting trraining when this part is ok will release
+
+
+[09/19/2025 10:31] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1412382448536387717/1418545020130033664/image.png?ex=69f32f80&is=69f1de00&hm=c049caa92b7fa8f7ee26f34c8b420eeaeb80519b5ce0ff82bad02db13a1f89c4&
+
+{Reactions}
+🧘
+
+[09/19/2025 14:36] serialkiller15
+need more time no release today maybee next week. enjoy your weekend ....
+
+
+[09/19/2025 14:40] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1412382448536387717/1418607656087584768/image.png?ex=69f369d5&is=69f21855&hm=348b7ccf555bcfee75c9e0042f4775bf2cf1b0e11dc0f50cb2617112f9c6b995&
+
+{Reactions}
+🤣 (2) 🔥 👍
+
+[09/19/2025 14:41] xf0x0f
+Ascii optimzer stole your strat optimizing time 😜
+
+{Reactions}
+👍
+
+[09/19/2025 14:41] serialkiller15
+its only for cosmetics hehe
+
+
+[09/19/2025 14:42] serialkiller15
+will remove it then
+
+
+[10/10/2025 16:07] xf0x0f
+ROI: Closed trades
+∙ 189.932 USDT (0.35%) (1.92 Σ%)
+∙ 189.932 USD
+ROI: All trades
+∙ 585.877 USDT (0.94%) (5.92 Σ%)
+∙ 585.877 USD
+Total Trade Count: 183
+Bot started: 2025-10-10 06:12:08
+First Trade opened: 8 hours ago (2025-10-10 07:17:50)
+Latest Trade opened: 52 minutes ago (2025-10-10 15:14:10)
+Win / Loss: 116 / 37
+Winrate: 75.82%
+Expectancy (Ratio): 1.24 (0.04)
+Avg. Duration: 1:08:52
+Best Performing: KOMA/USDT:USDT: 42.919 USDT (6.40%)
+Trading volume: 397394.154 USDT
+Profit factor: 1.15
+Max Drawdown: 4.54% (467.495 USDT)
+    from 2025-10-10 12:54:47 (408.604 USDT)
+    to 2025-10-10 13:48:09 (-58.891 USDT)
+Current Drawdown: 2.12% (218.672 USDT)
+    from 2025-10-10 12:54:47 (408.604 USDT)
+
+{Reactions}
+👍
+
+[10/10/2025 16:08] ywk3926
+Why can you trade so frequently? I like this.😆
+
+
+[10/10/2025 16:09] serialkiller15
+@xF0x0F could you share your entry tags? would be helpful thanks!
+
+
+[10/10/2025 16:13] xf0x0f
+I will
+
+
+[10/10/2025 16:13] serialkiller15
+thanks mate!
+
+
+[10/10/2025 16:26] serialkiller15
+thanks mate i see no div... at all but nice..
+
+
+[10/10/2025 16:26] xf0x0f
+screenshot will be easier to read 😉
+
+
+[10/10/2025 16:27] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1412382448536387717/1426244726092333147/Bildschirmfoto_2025-10-10_um_18.27.08.png?ex=69f382e9&is=69f23169&hm=04fcbff7d288076bc13af7089ef66da055f4dee21e0fc892dc66a17722d0826c&
+https://cdn.discordapp.com/attachments/1412382448536387717/1426244726356709446/Bildschirmfoto_2025-10-10_um_18.27.04.png?ex=69f382e9&is=69f23169&hm=6ab2c6aa4ad09719f59636252956933c9baa14524eefd693a9f127ea04f97f4d&
+
+{Reactions}
+👍
+
+[10/10/2025 16:28] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1412382448536387717/1426244901267439637/Bildschirmfoto_2025-10-10_um_18.27.54.png?ex=69f38312&is=69f23192&hm=d6bd0d1c19677ea39e374a5d42f739e57e0c0bac383e340680b56ee25101b957&
+
+
+[10/10/2025 16:36] ywk3926
+Is this version 63?
+
+
+[10/10/2025 16:37] xf0x0f
+AlexBandSniperV100CO
+
+
+[10/10/2025 16:38] xf0x0f
+was in the wrong channel
+
+
+[10/10/2025 16:38] serialkiller15
+yes i think so hehe
+
+
+[10/10/2025 16:40] ywk3926
+😆 😆
+
+
+[10/10/2025 16:42] serialkiller15
+V100CO Optuna Version?
+
+
+[10/10/2025 16:42] xf0x0f
+yes
+
+
+[10/10/2025 16:42] serialkiller15
+ok thanks mate!
+
+
+[10/10/2025 16:43] xf0x0f
+its asleep now too 😄
+
+{Reactions}
+👍
+
+[10/10/2025 16:52] ywk3926
+After v63 just made a profit, he started to sleep, haha.
+
+
+[10/10/2025 17:01] boooooon
+I had latest signal 3 hours ago😩
+
+
+==============================================================
+Exported 42 message(s)
+==============================================================

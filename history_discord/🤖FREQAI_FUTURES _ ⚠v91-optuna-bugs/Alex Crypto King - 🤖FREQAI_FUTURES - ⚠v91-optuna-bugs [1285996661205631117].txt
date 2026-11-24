@@ -1,0 +1,113 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖FREQAI_FUTURES / ⚠v91-optuna-bugs
+==============================================================
+
+[09/18/2024 20:48] laupapp
+@Alex Crypto King I have a problem with dry run
+2024-09-18 22:47:03 freqtrade.strategy.interface: WARNING - Unable to analyze candle (OHLCV) data for pair AXS/USDT:USDT: Pipeline expected Index(['%-cci-period_10_AXS/USDTUSDT_15m', '%-rsi-period_10_AXS/USDTUSDT_15m',
+       '%-momentum-period_10_AXS/USDTUSDT_15m',
+       '%-ma-period_10_AXS/USDTUSDT_15m', '%-macd-period_10_AXS/USDTUSDT_15m',
+       '%-macdsignal-period_10_AXS/USDTUSDT_15m',
+       '%-macdhist-period_10_AXS/USDTUSDT_15m',
+       '%-roc-period_10_AXS/USDTUSDT_15m',
+       '%-bb_width-period_10_AXS/USDTUSDT_15m',
+       '%-close-bb_lower-period_10_AXS/USDTUSDT_15m',
+       ...
+       '%-ma-period_20_ETH/USDTUSDT_2h', '%-macd-period_20_ETH/USDTUSDT_2h',
+       '%-macdsignal-period_20_ETH/USDTUSDT_2h',
+       '%-macdhist-period_20_ETH/USDTUSDT_2h',
+       '%-roc-period_20_ETH/USDTUSDT_2h',
+       '%-bb_width-period_20_ETH/USDTUSDT_2h',
+       '%-close-bb_lower-period_20_ETH/USDTUSDT_2h',
+       '%-pct-change_gen_ETH/USDTUSDT_2h', '%-raw_volume_gen_ETH/USDTUSDT_2h',
+       '%-raw_price_gen_ETH/USDTUSDT_2h'],
+      dtype='object', length=209) but got Index(['%-cci-period_10_AXS/USDTUSDT_1h', '%-rsi-period_10_AXS/USDTUSDT_1h',
+       '%-momentum-period_10_AXS/USDTUSDT_1h',
+       '%-ma-period_10_AXS/USDTUSDT_1h', '%-macd-period_10_AXS/USDTUSDT_1h',
+       '%-macdsignal-period_10_AXS/USDTUSDT_1h',
+       '%-macdhist-period_10_AXS/USDTUSDT_1h',
+       '%-roc-period_10_AXS/USDTUSDT_1h',
+       '%-bb_width-period_10_AXS/USDTUSDT_1h',
+       '%-close-bb_lower-period_10_AXS/USDTUSDT_1h',
+       ...
+       '%-ma-period_20_ETH/USDTUSDT_2h', '%-macd-period_20_ETH/USDTUSDT_2h',
+       '%-macdsignal-period_20_ETH/USDTUSDT_2h',
+       '%-macdhist-period_20_ETH/USDTUSDT_2h',
+       '%-roc-period_20_ETH/USDTUSDT_2h',
+       '%-bb_width-period_20_ETH/USDTUSDT_2h',
+       '%-close-bb_lower-period_20_ETH/USDTUSDT_2h',
+       '%-pct-change_gen_ETH/USDTUSDT_2h', '%-raw_volume_gen_ETH/USDTUSDT_2h',
+
+
+[09/19/2024 04:48] serialkiller15
+@Laurent D. please Check your timeframe, the error expets 15m timeframe, but the Strategy i posted is for 1h?
+
+
+[09/24/2024 09:39] priezz
+@Alex Crypto King I have tried to test the optuna version running `python user_data/strategies/AlexStrategyFinalV911_Optuna.py`, but it is not working out of the box and I am not sure what is the right approach to use it. 
+
+In `AlexStrategyFinalV911_Optuna.py` you are running
+```
+freqtrade hyperopt --strategy AlexStrategyFinalV911 --timerange 20240801-20240917 --config /freqtrade/user_data/config-torch_optuna.json
+```
+, which gives a set of errors:
+1. `ERROR - No Hyperopt loss set. Please use `--hyperopt-loss` to specify the Hyperopt-Loss class to use.` 
+2. When fixing 1. by adding `--hyperopt-loss SharpeHyperOptLossDaily` I get `ERROR - The 'buy' space is included into the hyperoptimization but no parameter for this space was found in your Strategy.`
+3. Adding `--spaces roi stoploss trades` allows to fix 2. and go further, but after populating `user_data/models/torch-lstm12` it gives `KeyError: '&-target'`
+4. Replacing `AlexStrategyFinalV911` with `AlexStrategyFinalV911Backtest` gives no logs besides `A new study created in memory`, so I am not sure it is the way to go.
+
+So what is the right way to go? Is there anything special in your `config-torch_optuna.json` that prevents all those issues?
+
+EDIT: Actually there is the backtesting output from 4. in a while, but unsurprisingly it is followed by `Error decoding JSON from Freqtrade output: Hyperopt results` and `No output received from Freqtrade. Exiting this trial.` errors.
+
+
+[09/26/2024 11:05] maxgorbachevskiy
+did you manage ? need help?
+
+
+[09/26/2024 11:08] priezz
+Not with V911, but V93 seems to be working
+
+
+[09/26/2024 11:09] serialkiller15
+V93 is modified Optuna Script and some other changes, will remove V911 from here because it was the first aproach we did....
+
+
+[09/26/2024 16:07] maxgorbachevskiy
+After hyperopt of Optuna v93, JSON with the best parameters is NOT generated automatically (unlike v90). Is it my bug, or a feature?
+What can be the reason?
+
+
+[09/26/2024 16:08] priezz
+You have to update output locations in all 3 scripts
+
+
+[09/26/2024 16:12] .7thdragon
+only in optuna
+
+
+[09/26/2024 16:13] maxgorbachevskiy
+I specifically mean **after hyperopt**, not optuna.
+
+
+[09/26/2024 16:13] .7thdragon
+weird, as it is a specifically parameter for NOT generating 🙂
+thats why u should have everyting in order
+especially "strategy_path" in config
+
+
+[09/26/2024 16:26] priezz
+@MaxG check for errors in the log. If "strategy_path" or anything else important is missing you'll have an error line
+
+
+[09/26/2024 16:27] serialkiller15
+add this in your config i had the same Problem 
+    "strategy_path": "user_data/strategies",
+    "recursive_strategy_search": false,
+    "disable_dataframe_checks": false,
+
+
+==============================================================
+Exported 13 message(s)
+==============================================================

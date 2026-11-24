@@ -1,0 +1,1531 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🚀alexnexusforge
+==============================================================
+
+[06/11/2025 12:25] serialkiller15
+AlexNexusForge 🚀
+Advanced Multi-Factor Trading Strategy
+A sophisticated 15-minute/1-hour strategy that combines 7 powerful analysis systems into one unified approach:
+✅ Confluence Analysis - Multiple signal convergence points
+✅ Smart Volume Pressure - Advanced buying/selling pressure detection
+✅ Momentum Quality System - Multi-timeframe momentum scoring
+✅ Market Structure Analysis - Higher highs/lows pattern recognition
+✅ Murrey Math Levels - Dynamic support/resistance zones
+✅ Advanced Risk Management - Dynamic stops & progressive DCA
+✅ Quality-Based Entries - High/Medium/Backup entry classification
+Key Features:
+
+🎯 Selective Entry System - Only trades high-probability setups
+📊 Ultimate Score Algorithm - Combines all factors into single quality metric
+💰 Smart Position Sizing - Volatility-adjusted stakes with DCA protection
+🔄 Trend-Following Core - Exits only on opposite signals (let winners run!)
+🛡️ Multi-Layer Filtering - Reduces false signals and whipsaws
+
+Perfect for: Traders who want systematic, data-driven entries with strong risk management and the patience to wait for quality setups.
+
+{Reactions}
+👍
+
+[06/11/2025 12:26] serialkiller15
+@everyone because of some adjustments i made an Version of Basicly AlexBattleTankKiller with cutting out the btc trend, coll it was not worth it 
+so i got an adapted one here!
+
+
+[06/11/2025 12:28] migtaber_92822
+new strategy??
+
+
+[06/11/2025 12:45] serialkiller15
+yep.. modified
+
+{Reactions}
+🔥 🧘
+
+[06/11/2025 13:02] huangyafei_90755
+Can you share it? I want to test it.
+
+
+[06/11/2025 13:04] serialkiller15 (pinned)
+@everyone 
+some explanations on the parameters
+there is an advanced exit feature
+    max_stake_per_trade = 10.0
+    max_portfolio_percentage_per_trade = 0.05
+    max_entry_position_adjustment = 1
+    process_only_new_candles = True
+    max_dca_orders = 3
+    max_total_stake_per_pair = 10
+    max_single_dca_amount = 5
+    use_custom_exits_advanced = True
+    use_emergency_exits = True
+
+you can set use_custom_exits_advanced = False then only simple exits will be enabled with roi...... make your tests
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1382344666472513536/message.txt?ex=69f3534b&is=69f201cb&hm=74881f69c0c12912c62689935396d27e6334ff29dd4516fd3bc48aadee1ebada&
+
+{Reactions}
+👍
+
+[06/11/2025 13:04] serialkiller15
+@feifei done!
+
+
+[06/11/2025 13:04] serialkiller15
+Pinned a message.
+
+
+[06/11/2025 13:05] serialkiller15
+and why a new one
+maybee someone will stay on the other versions
+i was not happy with the btc stuff in there so i rethink it and try this aproach
+✅ Confluence Analysis - Multiple signal convergence points
+✅ Smart Volume Pressure - Advanced buying/selling pressure detection
+✅ Momentum Quality System - Multi-timeframe momentum scoring
+✅ Market Structure Analysis - Higher highs/lows pattern recognition
+✅ Murrey Math Levels - Dynamic support/resistance zones
+✅ Advanced Risk Management - Dynamic stops & progressive DCA
+✅ Quality-Based Entries - High/Medium/Backup entry classification
+
+{Reactions}
+👍
+
+[06/11/2025 13:05] serialkiller15
+SIgnal
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1382345060107948132/image.png?ex=69f353a9&is=69f20229&hm=e5a1deda3c65df967ffeb9b0935330f4028c40e5883999159ac7efede885e689&
+
+
+[06/11/2025 13:09] serialkiller15
+do tests on 15m and also 1h
+
+
+[06/11/2025 13:09] serialkiller15
+but prefer 1h
+
+
+[06/11/2025 13:30] xalt8851
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1382351163776565428/image.png?ex=69f35958&is=69f207d8&hm=f90bf2c1da27989acdc245ddb72f830cf63be52500357b486bd5dfffd1e0ad31&
+
+
+[06/11/2025 13:30] xalt8851
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1382351301744263279/image.png?ex=69f35979&is=69f207f9&hm=16ffc9e023b14397e20f69fdf01328ed8386ec8dbc67e17b723b78a061fc340d&
+
+
+[06/11/2025 13:31] serialkiller15
+its not filled so thats normal the trade is pending its not the strategy mate please do the basics
+
+
+[06/11/2025 13:32] xalt8851
+Sorry to bother you, this is all new to me.😊
+
+
+[06/11/2025 13:32] serialkiller15
+no problem ....you are welcome thats always if you start something new
+
+
+[06/11/2025 13:38] huangyafei_90755
+I don't understand why max_entry_position_adjustment = 1 while max_dca_orders = 3. Shouldn't DCA be based on max_entry_position_adjustment = 1?
+
+
+[06/11/2025 13:42] huangyafei_90755
+If max_entry_position_adjustment = 1, will it only add positions once regardless of the value of max_dca_orders?
+
+
+[06/11/2025 15:40] xaviertoor
+🚀 Binance: Exited ETH/USDT:USDT (#9)
+Profit: 15.50% (profit: 1.755 USDT / 9.723 BRL)
+Enter Tag: breakout_long
+Exit Reason: roi
+Direction: Long (10x)
+Amount: 0.04
+Open Rate: 2831.13 USDT
+Exit Rate: 2876.15 USDT
+Duration: 1:00:03 (60.0 min)
+
+
+[06/11/2025 15:59] serialkiller15
+Nice but be aware it's of it signals are fine but the exits not need some more time
+
+
+[06/11/2025 16:09] serialkiller15
+and let it run on 1h my experience!
+
+
+[06/11/2025 16:56] xaviertoor
+# General strategy parameters
+    timeframe = "15m" to 1h?
+
+
+[06/11/2025 16:57] serialkiller15
+My preference yes
+
+
+[06/11/2025 17:01] .7thdragon
+eth exited toooo early, is a breakout, @Alex Crypto King is might be a good idea of custom_roi, not fixed...
+
+{Reactions}
+👍
+
+[06/12/2025 10:05] xalt8851
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1382662077348581409/image.png?ex=69f32967&is=69f1d7e7&hm=2ad94f0f859e2181297c7514d6cb52e708d40a1e492ba446d600abb13e4f2e24&
+
+
+[06/12/2025 10:42] serialkiller15
+Short Signals incomming
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1382671425697222717/image.png?ex=69f3321c&is=69f1e09c&hm=886d09fb7292bafb7951eaa2da69d74b4773fac44ed4eb5961fa2207013727ea&
+
+
+[06/12/2025 11:58] serialkiller15
+so next lets integrate 
+# 🚨 REGIME CHANGE DETECTION PARAMETERS 
+to handle fast or slow changes of market conditions!
+
+{Reactions}
+👍🏻 (2) 🧘
+
+[06/12/2025 12:00] serialkiller15
+regime_protection_reasons = [
+            "⚡ FLASH PUMP", "⚡ FLASH DUMP",
+            "🔊 VOLUME PUMP", "🔊 VOLUME DUMP", 
+            "🌊 BULLISH SENTIMENT", "🌊 BEARISH SENTIMENT",
+            "🎯 HIGH REGIME INTENSITY", "₿ BTC PUMP", "₿ BTC DUMP"
+        ]
+
+
+[06/12/2025 12:17] xalt8851
+Maybe that's the key,😊  TWAP is a smart order and everything is SELL only right now
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1382695233321570446/image.png?ex=69f34848&is=69f1f6c8&hm=7d96b41b54b59bdd9f438781aa63d752b53d1fb51fac8c4b2431ef7ecdf0227d&
+
+
+[06/12/2025 12:17] serialkiller15
+thanks yes i am on it....have to do some code......will report
+
+
+[06/13/2025 16:28] anonymuis
+Freqtrade is free and is trading on your behalf. It does not need commission.
+
+
+[07/08/2025 14:46] serialkiller15
+@everyone i was not sleeping....i only did some time to sort out.
+what i have found in my tests that the AlexNexusForge is dooing good 
+I did a Mod Version with some improvments on it and willl share after Tests ar Finished
+
+{Reactions}
+🙏 (3)
+
+[07/08/2025 16:05] serialkiller15
+@everyone so the tests are finished let it run we need results
+
+
+[07/08/2025 16:45] xalt8851
+some errors
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1392184847878983770/image.png?ex=69f3872d&is=69f235ad&hm=1f70d3db9a92c17b9d3583be7454ee8589ff71375bb5db5fa1b5be8a9ff9dfda&
+
+{Reactions}
+👍
+
+[07/08/2025 16:55] cutypie.
+there is no "f" there, works fine for me
+
+
+[07/08/2025 16:56] cutypie.
+replace that code line with this code:
+```
+    # Trend alignment signal
+    dataframe['trend_signal'] = (
+        (dataframe['close'] > dataframe['ema50']) &
+        (dataframe['trend_strength'] > 0)
+    ).astype(int)
+    
+```
+
+
+[07/08/2025 16:56] serialkiller15
+i did not get this error before
+
+
+[07/08/2025 16:56] cutypie.
+yea me too
+
+
+[07/08/2025 16:59] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1392188248998150225/AlexNexusForgeV7.py?ex=69f38a58&is=69f238d8&hm=7c5918eda1101eea0d58a0824e7ef4568757253fb464b7333ca42f89190dbd7d&
+
+{Reactions}
+👍 (4)
+
+[07/08/2025 16:59] serialkiller15
+@everyone
+
+
+[07/08/2025 18:52] xalt8851
+Deposit $1,000, how many pairs can be placed at the same time and what is the size of stake_amount?
+
+
+[07/08/2025 19:05] serialkiller15
+I always do 10 trades each 10usdt max
+
+{Reactions}
+👌🏻
+
+[07/08/2025 19:53] xalt8851
+I set it to 50 usdt and maxed out at 20, but I have almost the entire balance unused
+
+
+[07/08/2025 21:24] serialkiller15
+And what are your expectations? Would you in real life do that that with 50usdz I am getting tired about these questions here
+
+
+[07/09/2025 07:56] serialkiller15
+Next step reduce and redefine the signals there are to much of them...
+
+
+[07/10/2025 11:18] libebcnof
+Some code review from me and my AI, if I may.
+
+`calculate_market_structure()` func has `shift(-1)` in it which makes it non-backtestable.
+
+In dry/live shift(-1) will return NaN for the last candle becuse no future candle exists yet.
+
+This ` (dataframe['high'] > dataframe['high'].shift(-1))` becomes `false` (because any comparison with a `NaN` is `false`) so everything that depends on these `swing_high` and `swing_low` columns won't work.
+
+Hope this helps in future improvements.
+
+{Reactions}
+👍
+
+[07/10/2025 11:34] ch1ck3n_t4c0s
+That is correct unless it is in the context of re aligning data frame shift -1 should not be used
+
+
+[07/10/2025 12:07] serialkiller15
+fixed it thanks and will test it
+
+{Reactions}
+👍
+
+[07/11/2025 06:16] boooooon
+Why aren't these signals cancelled?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1393113678735478874/image.png?ex=69f39c77&is=69f24af7&hm=2064b51ed1e5cc29e51eeebffd6724369b5697052db7ccacd17178af0e4d9de6&
+
+
+[07/11/2025 06:35] libebcnof
+`unfilledtimeout` in your config?
+
+
+[07/11/2025 06:37] boooooon
+.
+```json
+{
+    "cancel_open_orders_on_exit": false,
+    "unfilledtimeout": {
+        "unit": "minutes",
+        "enter": 10,
+        "exit": 30
+    },
+    "order_types": {
+        "entry": "limit",
+        "exit": "limit",
+        "emergency_exit": "market",
+        "force_entry": "market",
+        "force_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60
+    },
+    "entry_pricing": {
+        "price_side": "same",
+        "ask_last_balance": 0,
+        "use_order_book": true,
+        "order_book_top": 1,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    }
+}
+```
+
+
+[07/11/2025 06:40] boooooon
+entry order should be cancelled in 10 minutes? but, I see
+```
+Trade ID: 94 (since 2025-07-11 06:24:36)
+Current Pair: BCH/USDT:USDT
+Direction: Long  (5.0x)
+Amount: 0.0 (5 USDT)
+Total invested: 5 USDT
+Enter Tag: breakout_long
+Number of Entries: 1/2
+Number of Exits: 0
+Open Rate: 522.92333333
+Open Date: 2025-07-11 06:24:36
+ 
+Current Rate: 523.12
+Unrealized Profit: 0.00% (0 USDT)
+ 
+Stoploss: 507.24 (-15.00%)
+Stoploss distance: -15.88 (-3.04%)
+Open Order: (limit buy rem=0.04700000)
+```
+
+
+[07/11/2025 06:42] viking046433
+Something wrong reboot the bot
+
+
+[07/11/2025 06:42] boooooon
+Tried it. Didn't help. I'll try to look at the logs...
+
+
+[07/11/2025 06:42] serialkiller15
+you can also to entrys on market?
+
+
+[07/11/2025 06:42] serialkiller15
+"order_types": {
+    "entry": "market",
+    "exit": "market",
+    "emergency_exit": "market",
+    "force_entry": "market",
+    "force_exit": "market",
+    "stoploss": "market",
+    "stoploss_on_exchange": false,
+    "stoploss_on_exchange_interval": 60
+
+
+[07/11/2025 06:43] serialkiller15
+so i does it immidiatly, on limit only when the price is beeing hit!
+
+
+[07/11/2025 06:43] viking046433
+This also
+
+
+[07/11/2025 06:43] boooooon
+Thank you. I'll try to change it.
+
+
+[07/11/2025 06:43] serialkiller15
+its better to handle
+
+
+[07/11/2025 09:18] libebcnof
+Here is a suggestion:
+
+```
+    def __init__(self, config: dict):
+        super().__init__(config)
+        
+        stake_amount = self.config['stake_amount']
+        max_open_trades = self.config['max_open_trades']
+        
+        try:
+            wallet_balance = self.wallets.get_total_stake_amount()
+        except AttributeError:
+            # Fallback for backtesting
+            wallet_balance = self.config.get('dry_run_wallet', 1000)
+
+        self.max_total_stake_per_pair = (wallet_balance / max_open_trades) * 1.5
+        self.max_single_dca_amount = stake_amount / 2
+        
+        logger.info(f"Dynamic DCA limits initialized: Max total per pair: ${self.max_total_stake_per_pair:.2f}, Max single DCA: ${self.max_single_dca_amount:.2f}")
+```
+
+Because I tried testing it on a micro balance of $10, max_open_trades=3, stake_amount=1 (preparing for live testing) and, because of the hard coded values, it began DCAing too agressively my balance was not enough to withstand it. They should be dynamic based on the config.
+
+{Reactions}
+👍 (2)
+
+[07/11/2025 10:49] libebcnof
+or simply
+
+```
+    def __init__(self, config: dict):
+        super().__init__(config)
+        
+        stake_amount = self.config['stake_amount']
+
+        if stake_amount == 'unlimited':
+            logger.warning("stake_amount is 'unlimited'. Cannot calculate dynamic DCA limits. Falling back to strategy defaults.")
+            return
+        
+        self.max_total_stake_per_pair = stake_amount
+        self.max_single_dca_amount = stake_amount / 2
+        
+        logger.info(
+            f"Dynamic DCA limits initialized: Max total per pair: "
+            f"${self.max_total_stake_per_pair:.2f}, Max single DCA: "
+            f"${self.max_single_dca_amount:.2f}"
+        )
+```
+
+(removed dependency on wallet size and added check for "unlimited")
+
+{Reactions}
+👍
+
+[07/11/2025 23:14] libebcnof
+Here is something puzzling. Candles are more or less identical but look at the signals: totally different on the 2 exchanges.
+
+The only other difference between the two bots is the balance ($400 on bybit and $15 on binance). 
+How can the exhange (or the balance) affect the signal so strongly?
+
+BTC scores are slightly different:
+
+`BTC/USDT:USDT Ultimate Score: 0.182, Signal Strength: 2`
+`BTC/USDT:USDT Ultimate Score: 0.142, Signal Strength: 2`
+
+Volume dynamics are also visibly different on the 2 exchanges, but just barely, and they are the only explanation I can think of.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1393369916861714544/image.png?ex=69f3399b&is=69f1e81b&hm=c0989c35082dd4de8c05f87fea6f37cfb90018affa0ab6170fe3c342a3584bb0&
+https://cdn.discordapp.com/attachments/1382334861871812678/1393369917096464456/image.png?ex=69f3399b&is=69f1e81b&hm=8f66bbfc22fb9505b46ca9914049deee94fe01f701aba99eaceb174a0210af47&
+
+
+[07/12/2025 13:38] viking046433
+Volume might be different so
+
+
+[07/13/2025 08:45] libebcnof
+So, I asked my AI to modify the logic to ensure symmetry between long and short which, after a few iterations, it seems to have done pretty well by adding things like this.  I can't fully verify it because much of it is still a black box to me. Testing it now. If anyone wants my version, let me now.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1393876054627717270/image.png?ex=69f316bc&is=69f1c53c&hm=ba68ee866eb4c14a240cb324b10f2e489476a7d845e122f1508d957c4868d5f8&
+
+{Reactions}
+👍
+
+[07/14/2025 23:57] libebcnof
+This looks like a bug:
+
+```
+        if self.last_entry_price is not None and abs(entry_price - self.last_entry_price) < 0.000005:
+            increment_factor = self.increment_for_unique_price.value if side == "long" else (
+                1.0 / self.increment_for_unique_price.value)
+            entry_price *= increment_factor
+            logger.info(
+                f"{pair} Entry price incremented to {entry_price:.8f} (previous: {self.last_entry_price:.8f}) due to proximity.")
+        self.last_entry_price = entry_price
+```
+
+There is only one instance of the strategy class for all pairs so this field is going to be "shared" among them so depending on which pair's price was written to it last it will remember that value
+
+
+[07/15/2025 00:07] libebcnof
+Should be: 
+
+```
+    # last_entry_price: Optional[float] = None
+    last_entry_prices: Dict[str, float] = {}
+
+...
+...
+
+        # if self.last_entry_price is not None and abs(entry_price - self.last_entry_price) < 0.000005:
+        #     increment_factor = self.increment_for_unique_price.value if side == "long" else (
+        #         1.0 / self.increment_for_unique_price.value)
+        #     entry_price *= increment_factor
+        #     logger.info(
+        #         f"{pair} Entry price incremented to {entry_price:.8f} (previous: {self.last_entry_price:.8f}) due to proximity.")
+        # self.last_entry_price = entry_price
+        # return entry_price
+
+        last_price_for_pair = self.last_entry_prices.get(pair)
+
+        if last_price_for_pair is not None:
+            if abs(entry_price - last_price_for_pair) < 0.000005:
+                increment_factor = self.increment_for_unique_price.value if side == "long" else (
+                    1.0 / self.increment_for_unique_price.value)
+                entry_price *= increment_factor
+                logger.info(
+                    f"{pair} Entry price incremented to {entry_price:.8f} (previous: {last_price_for_pair:.8f}) due to proximity.")
+
+        self.last_entry_prices[pair] = entry_price
+        return entry_price
+
+````
+
+{Reactions}
+👍 (2)
+
+[07/15/2025 11:49] serialkiller15
+Will be then in the next Version..
+
+{Reactions}
+👍
+
+[07/15/2025 12:24] serialkiller15 (pinned)
+@everyone if someone need it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1394655913868263574/message.txt?ex=69f34a09&is=69f1f889&hm=58f81f3b705cc9ea6aeab8960e036d85848ff9d11301c342a66dac17eba219e2&
+
+{Reactions}
+❤️
+
+[07/15/2025 12:24] serialkiller15
+Pinned a message.
+
+
+[07/15/2025 12:27] locd0140
+@Alex Crypto King Thank you
+
+
+[07/15/2025 13:21] libebcnof
+Correct me if I am wrong but maybe DCA should come with some corresponding custom_stoploss. 
+
+```
+    stoploss = -0.15
+    stoploss_on_exchange = True
+```
+
+I just watch the strat enlarge a loosing position so "break even" line moved as it should have but stoploss order stayed the same and never got updated. Shouldn't it be moved further from the current price also?
+And the position just closed by stop loss as I was typing this.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1394670283687985202/image.png?ex=69f3576b&is=69f205eb&hm=eaf060ebb2f80d525a49f7dcdd75f8964f2db958996799a6563a0984ed4c662b&
+https://cdn.discordapp.com/attachments/1382334861871812678/1394670283935322193/image.png?ex=69f3576b&is=69f205eb&hm=19faab15c44a2951c57f51631d07ddb2e2d245cf9d4caf384866aa7dc700abbe&
+
+
+[07/15/2025 13:28] locd0140
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1394671863241773106/image.png?ex=69f358e3&is=69f20763&hm=d320f69a1e92596bf83e7b9ee497bb6a0d98715d3b5145d57d9760da26af0b0a&
+
+
+[07/15/2025 13:28] locd0140
+I am using 10,000$ real disks for testing.
+
+
+[07/15/2025 13:40] serialkiller15
+yes it should, but i didnt implemented it yet let me check! thanks for the imput!
+
+
+[07/15/2025 15:14] boooooon
+I see in the strategy parameters
+```python
+use_custom_stoploss = False # Disable custom logic
+```
+So, the `custom_stoploss` method is not called. Has anyone tried to run a dry run with it?
+
+
+[07/15/2025 15:35] serialkiller15
+You can set it to true and set stoploss on exchange to false
+
+
+[07/22/2025 00:38] pi_01328
+Has anyone tried to change the stoploss from-15 to lower?
+
+
+[08/05/2025 08:07] viking046433
+What should the entry be ? Market ? I see shorts times out
+
+
+[08/05/2025 08:26] serialkiller15
+if you use stop_loss on exchange? better use limit, because freqtrade had sometimes bugs with sl...
+
+
+[08/05/2025 08:27] viking046433
+No I don’t but I have now changed to entry to market and it’s taking short trades
+
+
+[08/08/2025 13:14] boooooon
+I want to run 1h strategy (v7) in live mode with 10k balance and 20 max open trades (with only long side).
+If I calculated correctly, the initial trade size should be $250 and increase to a maximum of $500.
+Can you help me what parameters need to be changed for this, since the basic settings create trades of $5/$10, regardless of the balance?
+
+
+[08/08/2025 13:15] viking046433
+Are you just
+
+
+[08/08/2025 13:16] viking046433
+We don’t even know if this strategy is working and you want to run it live
+
+
+[08/08/2025 13:17] boooooon
+I tested it on dryrun for a month. Why not?
+
+
+[08/08/2025 13:17] viking046433
+Ok bra
+
+
+[08/08/2025 13:21] mmnbm_79378
+Around line 400 of the code, the configuration file also needs to be modified accordingly.
+
+{Reactions}
+👍 (2)
+
+[08/17/2025 04:07] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1406489497469718650/Screenshot_20250817_120608_Telegram.jpg?ex=69f37e2b&is=69f22cab&hm=4af3e8657e05c9805481ff5c0e4aaa9a7e0788a20ed1f31d71053825d48a25dc&
+
+{Reactions}
+🔥 (3) 🚀
+
+[08/18/2025 05:06] serialkiller15
+@everyone we have three different versions of V8 running on test since yesterday we will let them run for some weeks before doing any other deployment here it takes time to build the code and also test it so please wait for it every developer knows it takes time to finish tests..
+
+{Reactions}
+👍 (11)
+
+[08/18/2025 14:01] neveerrk
+😫
+
+
+[08/18/2025 17:22] serialkiller15
+I will not publish unfinished and untested Stuff here.. Sry but that's how I w developing should work test test test
+
+{Reactions}
+👍 💯
+
+[08/18/2025 17:33] viking046433
+How it should be
+
+
+[08/19/2025 13:51] darkreaper0756
+Implemented a small AI model.  I will upload the strategy here in a few hours.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1407361436014870548/IMG_3908.png?ex=69f35e79&is=69f20cf9&hm=2a5dca9a431a5d8d59e05a4d7dd462316e152006b4a759e88336709e733febd6&
+
+{Reactions}
+🔥
+
+[08/19/2025 13:52] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1407361600381390950/IMG_3910.png?ex=69f35ea1&is=69f20d21&hm=672c1139b8f60e3406b72fef4aadb34bb0bb15c5b29e65b92b0d621b1fe3c08c&
+https://cdn.discordapp.com/attachments/1382334861871812678/1407361601572438036/IMG_3909.png?ex=69f35ea1&is=69f20d21&hm=bb6e6b0539335ce2546813e345ea87933ae701d12723fcb5137d6d9622a9beb9&
+
+{Reactions}
+🔥 (2) 👏
+
+[08/19/2025 13:52] him1564rese
+great work！
+
+
+[08/19/2025 13:53] neveerrk
+👍
+
+{Reactions}
+😂
+
+[08/19/2025 14:11] darkreaper0756
+Thanks, Still needs optimizations. I don't know at the moment if there are problems with the strategy because it has only been running for a very short time.
+
+{Reactions}
+🫡
+
+[08/19/2025 14:27] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1407370446474838046/IMG_3912.png?ex=69f366de&is=69f2155e&hm=c4cbc4e56c764cfb7ac89eacd5ba1d418f0789fbc463ecb08096704b5d17ca7e&
+
+{Reactions}
+👍 (2)
+
+[08/19/2025 15:49] maxgorbachevskiy
+Great contribution, @DarkReaper ! 
+I always support self initiatives! 🤝🏻💪🏼🙏🏼
+You are the example for many of us.
+
+
+[08/19/2025 15:52] maxgorbachevskiy
+As for the details, I’m curious about your timeframes, and entry_tag / exit_reason statistics. 
+My analysis shows that you have to wait several days (at least), only then you will be ableto analyze,  how the mode tackles reversals.
+
+
+[08/19/2025 15:54] maxgorbachevskiy
+PS we had some ideas re implementing RL, but nothing finished yet.
+
+{Reactions}
+❤️ (2)
+
+[08/19/2025 16:05] maxgorbachevskiy
+For 4h timeframe, for any decent analytics, it took me 3 weeks to dryrun the bot - to collect the data - only after 3 weeks i had enough data to make any relevant analysis - update the code.
+
+
+[08/19/2025 16:28] maxgorbachevskiy
+…And approximately 20 different dry runs with various settings
+
+
+[08/19/2025 16:34] erbosnio_17282
+I need your computer 😭😭😭😭😭
+
+
+[08/19/2025 16:35] maxgorbachevskiy
+Currently running
+
+
+[08/19/2025 16:35] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1407402606996754554/image.png?ex=69f384d1&is=69f23351&hm=eca681ff82360e635f02cf11dfafd924d869bbc6b618c5e77e3957ea8bec6ed4&
+
+{Reactions}
+👍 😮 (2)
+
+[08/19/2025 16:36] him1564rese
+🔥 🔥 🔥
+
+
+[08/19/2025 16:37] maxgorbachevskiy
+Without such scale, you cannot make any relevant decision, whether specific strategy is good or bad. The same strategy may be working very bad for one set of pairs, and extremely perfect for another set of pairs (with the same configuration and everything!!!)
+
+
+[08/19/2025 16:38] maxgorbachevskiy
+This is why we with @Alex Crypto King always say, that we need serious people who want to contribute heavily, being its time, or computing power, or anything else, in order to making this thing working.
+
+
+[08/19/2025 16:39] darkreaper0756
+Hi Max, I'm currently running on a set of 120 coins and the training is quite computationally stressful. But I made some settings reducing the performance of the AI models so I could run the strategy on an i3 7100. In 5 hours it trained all the models on the 120 coins
+
+{Reactions}
+🔥
+
+[08/19/2025 16:40] erbosnio_17282
+😱😱😱😱😱
+
+
+[08/19/2025 17:08] darkreaper0756
+"pip install scikit-learn"  "pip install PyWavelets" Not run in FreqAI!! Work only with StaticPairlist, needs a lot of parameter optimizations. Enjoy!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1407410852302164148/AlexNexusForgeV8AI.py?ex=69f38c7f&is=69f23aff&hm=e7ca479423d13aae023be4bcfd01cb913c694e4008b832c0c164dcb3494274e1&
+
+{Reactions}
+👍 (3) 🚀
+
+[08/19/2025 17:08] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1407410911458889740/Screenshot_from_2025-08-19_19-03-51.png?ex=69f38c8d&is=69f23b0d&hm=73678eabb554d2f7278ac096a21971787db86edf5e958af92539f8faa2e11269&
+https://cdn.discordapp.com/attachments/1382334861871812678/1407410911756423389/Screenshot_from_2025-08-19_19-05-46.png?ex=69f38c8d&is=69f23b0d&hm=51139e2c4da6439276b1c2b074ee284b750fafc3b3a8b2248dda8343f5c77fd2&
+
+{Reactions}
+👍
+
+[08/19/2025 17:09] him1564rese
+i wait this in midnight
+
+
+[08/19/2025 17:09] darkreaper0756
+i run in 1h Timeframe, normal config
+
+
+[08/19/2025 17:10] mmnbm_79378
+I also started running
+
+
+[08/19/2025 17:14] darkreaper0756
+line 1008, def train_predictive_models These are parameters that influence the quality of predictions, higher values, better prediction quality, higher processing power. Currently it only runs on CPU.
+
+
+[08/19/2025 17:17] neveerrk
+Can u share the config dude
+
+
+[08/19/2025 17:19] him1564rese
+any parameter optimization result? 
+is hard for potato 🫡
+
+
+[08/19/2025 17:21] neveerrk
+Professional
+
+
+[08/19/2025 17:23] snokard.
+im curious on how do you set all of that up without getting baned from apis, too much ports...etc
+
+im currently running 4 strategies with 2 servers and use my pc for hyperopts
+
+
+[08/19/2025 17:24] serialkiller15
+@everyone I am a developer mostly but @MaxG  always challangr me and our work and make this nice and great Adjustments data... That's all about community nobody can do that alone
+
+{Reactions}
+🫡 (3)
+
+[08/19/2025 17:26] mmnbm_79378
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1407415518406770798/image.png?ex=69f390d8&is=69f23f58&hm=cdf665b723013b664e5487b0d2320ff441e6859b9ce51e83b14079f8f332af78&
+
+
+[08/19/2025 17:32] serialkiller15
+@DarkReaper respekt from my side good work we need more of it
+
+{Reactions}
+🚀 (2) 👍
+
+[08/19/2025 17:33] darkreaper0756
+Thanks
+
+
+[08/19/2025 17:34] serialkiller15
+Need to check your code
+
+
+[08/19/2025 17:35] xf0x0f
+if anyone is experiencing multiprocessing errors on macos, id be happy to share a solution that worked for me
+
+
+[08/19/2025 17:38] boooooon
+we also have around 10 different strategies on the only one dedicated server using proxy
+
+
+[08/19/2025 17:39] darkreaper0756
+It's not a critical error; it's a preventative mechanism to avoid training with too few positives.
+
+
+[08/19/2025 17:48] xf0x0f
+nice work @DarkReaper . im excited to see how your strategy plays out in the coming days
+
+{Reactions}
+👍
+
+[08/19/2025 17:50] darkreaper0756
+this resolve WARNING - Low positive ratio (0.139), using lenient 
+target
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1407421541204885564/AlexNexusForgeV8AI.py?ex=69f39674&is=69f244f4&hm=75cc9f89808149040b2726fb31cfb823e8d7b2de2dc9b69a0e789d575cbbf636&
+
+
+[08/19/2025 17:51] xf0x0f
+btw. how long does it usually take to train a model for a pair on your pc/server?
+
+
+[08/19/2025 17:52] snokard.
+how are you managing api requests? even i limited them multiple strategies ban api.... using multiple APIs?
+
+
+[08/19/2025 17:57] boooooon
+using different ccxt proxy for each strategy
+
+
+[08/19/2025 18:17] snokard.
+So you set up a diferent ip for each one but can reuse the api right?
+Thanks a lot for this info!
+
+
+[08/19/2025 18:18] snokard.
+I guess you arent managing telegrams for each strategy, just freq ui for each ip right?
+
+
+[08/19/2025 18:18] xf0x0f
+impossible, see bot limit on telegram
+
+{Reactions}
+👍
+
+[08/19/2025 18:19] snokard.
+I guess i dont have enough telegram bots 🤣.
+I like to track some of them on there when im not at the pc
+
+
+[08/19/2025 18:19] snokard.
+Thanks for your insights guys
+
+
+[08/19/2025 18:21] boooooon
+We use different proxies for API requests, but each strategy has its own API keys, telegram bots.
+
+{Reactions}
+👍 🔥
+
+[08/19/2025 18:21] boooooon
+we don't use freq ui for trade mode
+
+{Reactions}
+👍
+
+[08/19/2025 18:23] xaviertoor
+🥶
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1407429726053859501/image.png?ex=69f2f553&is=69f1a3d3&hm=c5a42633f9e891c8f2f59395cddb2ab8c77315eb51b08c21175b4b8eb6752bd7&
+
+
+[08/19/2025 18:23] snokard.
+Such a big and crazy structure you should have.... congrats on making it work!
+
+
+[08/19/2025 18:23] xaviertoor
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1407429911177593004/image.png?ex=69f2f57f&is=69f1a3ff&hm=c05385b2514f6ffa1453cba2d590d653d9963d1b6d251012b165aedb02956576&
+
+
+[08/19/2025 18:25] xf0x0f
+mine took appr. 2min per pair for training and yours?
+
+
+[08/19/2025 18:31] xaviertoor
+I didn't time it, but the processors are at 100% all the time. Is this normal?
+
+
+[08/19/2025 18:34] snokard.
+I guess thats the one for the VIP members and its not availabe yet right?
+Still need to get into freqai but didnt have time to dive into it
+
+
+[08/19/2025 18:53] darkreaper0756
+Is normal, after training all not use CPU, After 24h retraining with 24 h timeframe data use
+
+{Reactions}
+👍
+
+[08/19/2025 18:59] maxgorbachevskiy
+Started a thread.
+
+
+[08/19/2025 19:05] maxgorbachevskiy
+———
+———
+➡️ ➡️ ➡️  I moved discussion about AI version to sub-thread https://discord.com/channels/1238181199206154373/1407438824807731383, kindly please comtinue the discussion there 
+———
+———
+
+{Reactions}
+👍 (2)
+
+[08/19/2025 23:33] xaviertoor
+👍
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1407507851592732733/image.png?ex=69f33e16&is=69f1ec96&hm=dbd2440b7646eb7826b6edbb503fe04b19c78215c237973576c8b09f297cc09b&
+
+{Reactions}
+🚀
+
+[08/21/2025 10:56] serialkiller15
+The mod Strategy is fine inke need to remove backup_long. At the moment
+
+
+[08/21/2025 11:21] neveerrk
+U mean AlexNexusForgeV8 or ai version
+
+
+[08/21/2025 11:21] serialkiller15
+There is no v8
+
+
+[08/21/2025 11:21] serialkiller15
+I mean the ai
+
+{Reactions}
+👍 (3)
+
+[09/12/2025 14:01] serialkiller15
+@everyone Alex Nexus Forge V8..............I was not doing some stuff in here for about weeks maybee someone wants to give it a try.....
+its ANFV8......good and stable profit but not so many trades as on other ones...
+
+
+[09/12/2025 14:01] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1416061204539113593/message.txt?ex=69f360c4&is=69f20f44&hm=88dc2b06ac26431cf4d3c900669d598d810acb2eae2c5eae9542d71efc29a323&
+
+{Reactions}
+🚀 (2)
+
+[09/12/2025 14:01] serialkiller15
+Pinned a message.
+
+
+[09/12/2025 14:07] darkreaper0756
+Alex Strategy Factory🍾🍾🍾
+
+{Reactions}
+👍
+
+[09/12/2025 14:08] serialkiller15
+hehe i was forgeting to post it its running since a few weeks....
+
+{Reactions}
+🚀
+
+[09/12/2025 14:08] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1416063022350467153/image.png?ex=69f36275&is=69f210f5&hm=47de191f95eaa6573e3c94c944c167cd47860c23cd46523cf096449f2c6f5942&
+
+{Reactions}
+😱 🔥
+
+[09/12/2025 14:11] serialkiller15
+V8 no Optuna and no AI ML RL
+
+
+[09/12/2025 14:11] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1416063705556320458/image.png?ex=69f36318&is=69f21198&hm=9882929d28b13e7687dd6bce5c40bb80049cf0fca96db5747b8be1698e75b08e&
+
+{Reactions}
+🔥 🚀
+
+[09/12/2025 14:12] snokard.
+amazing
+
+
+[09/12/2025 14:12] snokard.
+15m timeframe?
+
+
+[09/12/2025 14:12] serialkiller15
+i forget about it....shame on me
+
+{Reactions}
+❤️
+
+[09/12/2025 14:12] serialkiller15
+1h
+
+
+[09/12/2025 15:17] boooooon
+```
+2025-09-12 15:16:30,350 - freqtrade.strategy.strategy_wrapper - ERROR - Unexpected error 'ANFV8' object has no attribute 'copy' calling <bound method IStrategy._analyze_ticker_internal of <ANFV8.ANFV8
+object at 0x78ff699ba270>>
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/strategy/strategy_wrapper.py", line 31, in wrapper
+    return f(*args, **kwargs)
+  File "/freqtrade/freqtrade/strategy/interface.py", line 1216, in _analyze_ticker_internal
+    dataframe = self.analyze_ticker(dataframe, metadata)
+  File "/freqtrade/freqtrade/strategy/interface.py", line 1194, in analyze_ticker
+    dataframe = self.advise_indicators(dataframe, metadata)
+  File "/freqtrade/freqtrade/strategy/interface.py", line 1803, in advise_indicators
+    dataframe = self.populate_indicators(dataframe, metadata)
+  File "/freqtrade/user_data/strategies/ANFV8.py", line 1453, in populate_indicators
+    dataframe = self.calculate_market_structure(dataframe)
+  File "/freqtrade/user_data/strategies/ANFV8.py", line 708, in calculate_market_structure
+    df = dataframe.copy()
+         ^^^^^^^^^^^^^^
+AttributeError: 'ANFV8' object has no attribute 'copy'
+2025-09-12 15:16:30,351 - freqtrade.strategy.interface - WARNING - Unable to analyze candle (OHLCV) data for pair TON/USDT:USDT: 'ANFV8' object has no attribute 'copy'
+```
+
+
+[09/12/2025 15:18] serialkiller15
+Let me check maybe wrong version Sry
+
+
+[09/12/2025 15:21] boooooon
+need to add `self` to `calculate_market_structure` or make it as `staticmethod`
+
+
+[09/12/2025 15:29] serialkiller15
+I have so many versions here but I have a logbook will post then but need to cach some beer first everything is empty
+
+{Reactions}
+👍
+
+[09/12/2025 20:28] serialkiller15
+
+
+{Forwarded Message}
+Originally sent: 09/12/2025 17:56
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1416158588124008538/AlexNexusForgeV81.py?ex=69f312b6&is=69f1c136&hm=d7c9240b98b31090f14c3fba2aa002fc1af231d8fec0613d53fcfac2c7adb78a&
+
+
+
+[09/15/2025 07:25] boooooon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1417048758205681805/Screenshot_20250915_102529_Telegram.jpg?ex=69f303ff&is=69f1b27f&hm=bc1426917f3560fdf18045a0e5696a9899d894d9e6f2ed6e087091c2922c1d13&
+
+{Reactions}
+👍
+
+[09/17/2025 19:58] damian_ox9
+Hi
+
+
+[09/17/2025 19:58] damian_ox9
+I get this error
+
+
+[09/17/2025 19:58] damian_ox9
+/root/freqtrade/.venv/lib/python3.10/site-packages/pandas_ta/__init__.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import get_distribution, DistributionNotFound
+2025-09-18 02:57:08,542 - freqtrade - ERROR - Impossible to load Strategy 'AlexNexusForgeV8'. This class does not exist or contains Python code errors.
+
+
+[09/17/2025 20:14] damian_ox9
+does anyone know this error
+
+
+[09/17/2025 20:14] boooooon
+> This class does not exist or contains Python code errors.
+
+
+[09/17/2025 20:15] damian_ox9
+I use this
+
+
+[09/17/2025 20:16] erbosnio_17282
+This happens usually when the name in the strategy is diferent than the one in the config
+
+
+[09/17/2025 20:16] erbosnio_17282
+But it could be another error
+
+
+[09/17/2025 20:17] neveerrk
+Data conflict
+
+
+[09/17/2025 20:17] neveerrk
+Open a new one
+
+
+[09/17/2025 20:17] damian_ox9
+let me try it out
+
+
+[09/17/2025 20:23] damian_ox9
+its still showing the same error
+
+
+[09/17/2025 20:27] damian_ox9
+thanks for the help
+
+
+[09/17/2025 20:27] damian_ox9
+I found the issue
+
+
+[10/24/2025 09:29] serialkiller15
+@everyone the latest version, there are to many signals in there, but in this market situation it does a good job on 1h timeframe
+as i am working on AlexDivergence its not easy to handle support on different Strategys so do your Tests and post them under Results thanks
+
+{Reactions}
+👍 (2)
+
+[10/24/2025 09:29] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1431213049284526215/AlexNexusForgeAIV10.py?ex=69f32105&is=69f1cf85&hm=cc0d3de310166bffd6a5921bb62038cc92540468884da58ccbfa909f31bad073&
+
+{Reactions}
+🔥 (2) 👍
+
+[10/24/2025 09:29] serialkiller15
+Pinned a message.
+
+
+[10/24/2025 09:40] .7thdragon
+this is smart, but still big dump or pump can happen within first hour way bigger than 2%
+        # BLOCK EXITS THAT MIGHT CUT LOSSES TOO EARLY
+        if current_profit_ratio < -0.02 and trade_duration < 1:  # Loss within first hour
+needs some extra safe protection something like adding bottom limit (ex >-0.20)
+
+
+[10/24/2025 09:41] serialkiller15
+thanks mate no time for it now...maybee the next weeks
+
+{Reactions}
+👍 (2)
+
+[10/26/2025 03:59] dragongoattigercat
+anyone gets this error? my bot was running fine and recent got this error.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1431854753717026989/image.png?ex=69f37c67&is=69f22ae7&hm=6ada055107785568614187248ca7e9edc23430771db5e125fa823408ca065bb9&
+
+
+[10/26/2025 05:51] viking046433
+It’s self explanatory
+
+
+[11/03/2025 02:09] divarak
+Hello guys, sorry to bother, any idea what I am doing wrong? No trades at all and more of 7Gb memory consumption.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1434726245647646872/image.png?ex=69f362b0&is=69f21130&hm=232d63e010b0b82e80c7e182dc7fc6b02048ffd103cfc2fd158417d1d63b7d9e&
+
+
+[11/03/2025 09:30] darkreaper0756
+Work on the cpu or gpu?
+
+
+[11/03/2025 10:56] divarak
+CPU, it is a barebone pc, intel generic card
+
+
+[11/03/2025 10:58] darkreaper0756
+Hi, Normally it works on dedicated GPU, it needs to be changed in code to work on GPU on CPU
+
+
+[11/03/2025 10:59] divarak
+So, i can't use on this machine. Thanks for the explanation 🙏🏻
+
+
+[11/03/2025 15:47] ohbad1330
+try the v10 the one that last alex post here, it work well on me on CPU
+
+{Reactions}
+👍
+
+[11/03/2025 15:51] ohbad1330
+mine only use around 3gb ram in v10
+
+
+[11/03/2025 15:57] darkreaper0756
+You're welcome✌️
+
+
+[03/07/2026 09:26] serialkiller15 (pinned)
+@everyone 
+NEW UPDATE RELEASE - AlexNexusForgeV8AIV3
+3 Changes from V2:
+
+| Location             | V2                   | V3                          |
+| -------------------- | -------------------- | --------------------------- |
+| Class name           | AlexNexusForgeV8AIV2 | AlexNexusForgeV8AIV3        |
+| startup_candle_count | 1000                 | 200                         |
+| stoploss             | -0.07 (7%)           | -0.04 (4%)                  |
+| use_custom_stoploss  | True                 | False                       |
+| confirm_trade_exit   | Blocks early exits   | Allows all exits            |
+|                      |                      | Added emergency exit at -5% |
+
+That's it! Only these changes:
+
+1. Class name
+2. startup_candle_count 1000→200
+3. stoploss -0.07→-0.04
+4. use_custom_stoploss True→False
+5. Removed early exit blocking in confirm_trade_exit
+6. Added emergency exit check at -5%
+
+The entry logic (populate_entry_trend) is identical between V2 and V3! 🤘
+
+
+[03/07/2026 09:27] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1479772363762696352/AlexNexusForgeAIV3.py?ex=69f32068&is=69f1cee8&hm=50221ab3d47a1c4ea209c7f93ac4096abc28d724fbecdeaa0601f88a4cca82ba&
+
+{Reactions}
+🔥
+
+[03/07/2026 09:29] lukovicka
+thx. can u share your config, or pairlist at least?
+
+
+[03/07/2026 09:30] serialkiller15
+yes give me a minute..
+
+
+[03/07/2026 09:31] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1479773365148450827/message.txt?ex=69f32157&is=69f1cfd7&hm=3c62585525342254dab33c4feca489f881265e90cd4351fbc350e1e923090ad9&
+
+
+[03/07/2026 09:38] serialkiller15
+Pinned a message.
+
+
+[03/07/2026 09:38] serialkiller15
+Pinned a message.
+
+
+[03/07/2026 15:13] gl20_
+Alex, tell me how you set this parameter for this strategy. Can you give me some recommendations for the config file?
+
+What parameters do you use in your strategies?
+
+ "unfilledtimeout": {
+    "entry": 2,
+    "exit": 1,
+    "exit_timeout_count": 0,
+    "unit": "minutes"
+  },
+
+
+[03/07/2026 15:17] serialkiller15
+"unfilledtimeout": {
+    "unit": "minutes",
+    "entry": 10,
+    "exit": 30
+  },
+  "order_types": {
+    "entry": "market",
+    "exit": "market",
+    "emergency_exit": "market",
+    "force_entry": "market",
+    "force_exit": "market",
+    "stoploss": "limit",
+    "stoploss_on_exchange": true,
+    "stoploss_on_exchange_interval": 60,
+    "stoploss_on_exchange_limit_ratio": 0.99
+  },
+  "entry_pricing": {
+    "price_side": "other",
+    "ask_last_balance": 0,
+    "use_order_book": true,
+    "order_book_top": 1,
+    "check_depth_of_market": {
+      "enabled": false,
+      "bids_to_ask_delta": 1
+    }
+  },
+ "exit_pricing": {
+     "price_side": "other",
+     "use_order_book": true,
+     "order_book_top": 1,
+ },
+
+
+[03/07/2026 15:17] serialkiller15
+this are mine
+
+
+[03/07/2026 15:31] gl20_
+Thanks a lot
+
+
+[03/07/2026 15:32] serialkiller15
+welcome mate!
+
+{Reactions}
+🤝 🙏
+
+[03/07/2026 15:43] dragongoattigercat
+Can it run on CPU?
+
+
+[03/07/2026 15:43] serialkiller15
+yes i run it since some weeks on cpu, no problems at all
+
+
+[03/07/2026 15:45] dragongoattigercat
+Thank you. I got a problem with the previous version where it run for couple days at the beginning and then no more trade and no error.
+
+
+[03/07/2026 15:45] serialkiller15
+yes i know....so i fixed it
+
+
+[03/07/2026 15:48] dragongoattigercat
+Awesome. Thank you Alex
+
+{Reactions}
+👍
+
+[03/07/2026 15:51] serialkiller15
+other updates on other strategies will come the next days...
+
+
+[03/07/2026 15:52] serialkiller15
+will need to add an reversal logic for exiting longs and shorts not implemented yet, but let it run...
+
+
+[03/13/2026 15:37] dragongoattigercat
+my bot stopped trading after 1 day. I run it with CPU only. its log has some error like this
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1482039984897921035/image.png?ex=69f3774b&is=69f225cb&hm=d88648b2ef55c14c51dbdc9eb378ba159f9e76da0d82afb03fd16ba50792e661&
+
+
+[03/13/2026 15:38] kalibeus
+Reduce your pairlist
+
+
+[03/13/2026 15:39] dragongoattigercat
+Thank you. that is what I am doubting too.
+
+{Reactions}
+💯 👍
+
+[03/24/2026 21:03] branly76
+I wanted to run the AlexNexusForgeAIv1.py on hyperliquid exchange. Downloading history gave some problems. So i took my basic hyperliquid instruments on Binance exchange and did run the strategy. Made a copy trade version reading the database and run the USDC instruments on hyperliquid. In general the trades have a delay of 15 minutes w.r.t. binance at entry. Below are the results. Bots started 19 feb.
+
+
+[03/24/2026 21:03] branly76
+Binance
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1486108316533919774/image.png?ex=69f31af9&is=69f1c979&hm=b4512159b15c9729161fa9b57e5d9cd0309480637e5227bec6b4c09f9435de82&
+
+
+[03/24/2026 21:04] branly76
+hyperliquid
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1382334861871812678/1486108467801362712/image.png?ex=69f31b1d&is=69f1c99d&hm=2bbae123ac19d9f1d5b2cf5153ad495804a389c9d028f2e08d25a4af3d00d1dc&
+
+
+[03/24/2026 21:06] serialkiller15
+Thanks for sharing
+
+
+[04/02/2026 10:44] serialkiller15
+New Release in progress
+AlexNexusForgeV8AIV4 - some Bugfixes...
+
+{Reactions}
+👍 (2)
+
+[04/24/2026 09:53] cypresski
+omg! can you share?
+
+
+[04/26/2026 10:18] vasko123.
+Hi. AlexNexusForgeV8AIV7 - This is the latest version you're testing. I have the latest AlexNexusForgeV8AIV3, and I disabled it because it didn't work as well as your test versions.
+
+
+[04/26/2026 10:54] serialkiller15
+Yes it's the latest but was not online the last days it needs some better exits will post when ready
+
+{Reactions}
+🔥
+
+==============================================================
+Exported 233 message(s)
+==============================================================

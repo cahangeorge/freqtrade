@@ -1,0 +1,713 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖FREQAI_FUTURES / 🚀v9-strategy
+==============================================================
+
+[09/10/2024 11:45] serialkiller15
+Changelog on Version 9 1h Timeframe (you can adjust and make tests)
+many impacts from our community thanks for that
+Correction Market Regime Filter added ma100
+Correction Dynamic Whights Adjustment
+Correction Volatility Adjustment V
+Stop Loss
+Removed do_predict on exit values
+You can use Trailing, but my tests results where better without the Trailing!!
+
+Best thanks to @everyone and especially @7thDragon @Ximontan @Mori @MaxG how give me nice impacts!
+
+{Reactions}
+🔥 (5) 🤟 (2) 👏🏻
+
+[09/10/2024 13:21] serialkiller15
+Version 9 without Trailing integrated!
+
+
+[09/10/2024 13:21] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283028025620828210/1283054728929873980/message.txt?ex=69f35755&is=69f205d5&hm=234f3f987e9879fed645b4e3fcc29ae84d4508a6c6ae249eea410e2f82e3c738&
+
+{Reactions}
+🔥 (4)
+
+[09/10/2024 13:21] serialkiller15
+Version 9 Hyperopt
+
+
+[09/10/2024 13:21] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283028025620828210/1283054847813222470/message.txt?ex=69f35771&is=69f205f1&hm=d9c123d8855d62ddf753390a71d181da7aa4e037d32bb798660fe3a7f06e7838&
+
+{Reactions}
+🚬 (3)
+
+[09/10/2024 13:22] serialkiller15
+have fun!
+
+
+[09/10/2024 13:22] serialkiller15
+Version 9 with Trailing integrated!
+
+
+[09/10/2024 13:22] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283028025620828210/1283055010732572713/message.txt?ex=69f35798&is=69f20618&hm=6f278a185baa3332a2c1426bf5fb8b0520a0b491f6fcc38a32f132bb304b7331&
+
+{Reactions}
+👍 🔥 (2) 🤟
+
+[09/10/2024 13:23] serialkiller15
+Version 9 Hyperopt with Trailing
+
+
+[09/10/2024 13:24] serialkiller15
+@everyone THANK YOU FOR YOUR SUPPORT AND ALL INPUTS YOU GAVE ME
+NOW I WILL GET SOME BEEEEER
+PLEASE USE THE NEW CHANNELS FOR #🚀v9-bugs and #📈v9-results 
+THANKS!
+
+{Reactions}
+🍻 (9)
+
+[09/10/2024 13:27] maxgorbachevskiy
+Beers! Cheers! 🍻
+
+{Reactions}
+🤟
+
+[09/10/2024 13:36] serialkiller15
+Version 9 Hyperopt with Trailing
+
+
+[09/10/2024 13:36] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283028025620828210/1283058557675114597/message.txt?ex=69f35ae6&is=69f20966&hm=d5e54c1d7920768aeddf5e5b641044c0a18ad1d29082510c727763dccb24dd65&
+
+
+[09/10/2024 13:37] serialkiller15
+Pinned a message.
+
+
+[09/10/2024 13:37] serialkiller15
+Pinned a message.
+
+
+[09/10/2024 13:37] serialkiller15
+Pinned a message.
+
+
+[09/10/2024 13:37] serialkiller15
+Pinned a message.
+
+
+[09/10/2024 15:35] giovannimauro
+Is  it normal to see  the  &.target indicator at 0? I'm in the  foirst hour but training is finished
+
+
+[09/12/2024 14:57] francois5156
+Hey Alex, thanks for sharing! This is awesome.
+Are you able to share the config-torch.json file you used for V9? I want to be able to be as close as possible to your settings. Thanks!
+
+
+[09/12/2024 15:01] serialkiller15
+YES no problem Here is the example config
+
+
+[09/12/2024 15:01] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283028025620828210/1283804807324241963/message.txt?ex=69f36ee6&is=69f21d66&hm=1bf3b25a8f227f25ee98b6e74e455bc5d4cc9be38a6ff403af11a05e1b546633&
+
+
+[09/12/2024 15:04] serialkiller15
+Pinned a message.
+
+
+[09/12/2024 15:22] francois5156
+Thank you so much
+
+
+[09/12/2024 15:23] serialkiller15
+you are welcome!
+
+
+[09/13/2024 15:10] sera131
+hi @Alex Crypto King , quick question, is V9 still doing only shorts?
+
+
+[09/13/2024 16:11] serialkiller15
+No longs and Shorts
+
+{Reactions}
+👍
+
+[09/13/2024 16:12] sera131
+perfect, started testing also, training started.
+
+
+[09/13/2024 16:21] serialkiller15
+My personaly preference disable trailing
+
+
+[09/13/2024 16:25] sera131
+i use trailing on 25% gains usually but will see, will play with it a bit
+
+
+[09/13/2024 16:26] maxgorbachevskiy
+check the threads in this discord on the subject of ts, we decided that its implementation in tf is not reliable, until fixed
+
+
+[09/13/2024 16:27] maxgorbachevskiy
+https://discord.com/channels/1238181199206154373/1279787768406474752/1281932975818150022 and below
+
+{Reactions}
+👍
+
+[09/13/2024 16:29] sera131
+will check
+
+
+[09/14/2024 12:53] ltran88
+Alex. Can you share with us V91? I see you mentioned it in the result channel. I don’t know what is different compared with V9. Thank you!
+
+
+[09/14/2024 13:25] serialkiller15
+@ltran not now sry, we are on beta testing phase, because if i share the support for it will be overheated here, so we cannot handle it, let us please fix the v91 and then we will post it!
+
+{Reactions}
+👍 💯 (2)
+
+[09/14/2024 16:54] sera131
+started, currently still doing only shorts, will keep posting in the coming days and see how it goes.
+
+
+[09/14/2024 17:14] serialkiller15
+@upSera thanks
+
+
+[09/15/2024 11:16] ch1ck3n_t4c0s
+Is this more of a leverage scalping strategy?
+
+
+[09/15/2024 14:47] alex_737071
+I not getting Longs at all in backtesting or 20 hours of dry_run. Not sure why tho!
+
+
+[09/15/2024 14:50] ch1ck3n_t4c0s
+Is your model warmed up?
+
+
+[09/15/2024 14:50] ch1ck3n_t4c0s
+I have not started this but with other FreqAI strats all had significant warm up periods
+
+
+[09/15/2024 14:51] ch1ck3n_t4c0s
+Sometimes week or better
+
+
+[09/15/2024 15:47] sera131
+same, no longs for my side. just shorts, but i didnt hyperopt it so maybe thats why
+
+
+[09/15/2024 15:48] sera131
+@Alex Crypto King is mainly developing it, added you here as you can bring a lot of value to it.
+
+
+[09/15/2024 15:59] serialkiller15
+@upSera thanks for that!!! amazing inputs here! a very warm welcome!
+
+
+[09/15/2024 16:00] serialkiller15
+i added you to the beta testers!
+
+{Reactions}
+💪 (3)
+
+[09/15/2024 16:03] anonymuis
+Does it help for me to run tests on V9, since you are already bugfixing on V9.1?
+It feels kinda useless.
+
+
+[09/15/2024 16:06] serialkiller15
+I run 2 dry runs in V9 and there are not so Bad make your choice v91 will make some improvements but we are still testing
+
+
+[09/15/2024 18:47] ch1ck3n_t4c0s
+I will fire it up on Gemini or Bitrue tonight. How long is the initial training on this?
+
+
+[09/15/2024 18:50] serialkiller15
+Depends  on your coins
+
+
+[09/15/2024 19:20] ch1ck3n_t4c0s
+How many pairs you running and on what kinda gear
+
+
+[09/16/2024 07:58] alex_737071
+Im running top 20 coins by Volume, on 16core VPS. Be interested to see what others are doing. 🙂
+
+
+[09/16/2024 09:57] sera131
+@Alex Crypto King  still doing only shorts
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283028025620828210/1285177677854281740/image.png?ex=69f3277b&is=69f1d5fb&hm=99cd5fcda08624893b8694bbc09a73d8517fda74c41f33b250cb5a8a37daf81d&
+
+
+[09/16/2024 09:57] sera131
+am i doing something wrong?
+
+
+[09/16/2024 09:59] alex_737071
+Same for me in my dry_run. Also hyperopted overnight and none of the backtest results from there have Longs in them...
+
+
+[09/16/2024 10:09] maxgorbachevskiy
+BTC is down in last 24h, so i expect your model behaves according to the market conditions
+
+
+[09/16/2024 10:53] maxgorbachevskiy
+My dryrun was silent for the last 30 hrs, and sparked with 36 trades (both longs and shorts)  half and hour ago.
+
+{Reactions}
+👍
+
+[09/16/2024 10:59] maxgorbachevskiy
+so when doing a backtests / dryrun, mind the market conditions
+
+
+[09/16/2024 11:22] ch1ck3n_t4c0s
+I'm gonna fire it up on an old usff HP 4c 50-60 pairs
+
+
+[09/16/2024 12:26] serialkiller15
+@upSera with Version are you using? V9?
+
+
+[09/16/2024 13:43] alex_737071
+@upSera @Alex Crypto King  Im on V9, but I have now found settings, that on backtest at least, does open Longs... So im gonna dry_run this for a few days and see what happens 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283028025620828210/1285234494206513192/Screenshot_2024-09-16_at_14.57.07.png?ex=69f35c65&is=69f20ae5&hm=5504ac96b7b5a8d50897950e0a286ea709046b9572082c6a95851137dd2072e2&
+
+{Reactions}
+💪
+
+[09/16/2024 13:45] serialkiller15
+thanks @Alex
+
+{Reactions}
+👍
+
+[09/16/2024 14:00] serialkiller15
+@Alex if you want i can join you to the beta group for V91 there are good ideas there
+
+
+[09/16/2024 14:01] alex_737071
+Yea love to mate, got some spare CPU time to play with! 🙂
+
+
+[09/16/2024 14:15] serialkiller15
+you are in for beta testing! have fun
+
+{Reactions}
+👍
+
+[09/16/2024 14:15] serialkiller15
+mate
+
+
+[09/16/2024 14:45] sera131
+v9.0
+
+
+[09/17/2024 16:26] carneiro_16462
+Hi Guys!! I'm new here. I'm running backtesting fist time with V9 and got this error: 2024-09-17 12:36:23,345 - freqtrade.strategy.strategy_wrapper - ERROR - Unexpected error 'tuple' object has no attribute 'empty' calling <bound method AlexStrategyFinalV9.leverage of <AlexStrategyFinalV90_Trail.AlexStrategyFinalV9 object at 0x7f2df4f6e7a0>>
+Traceback (most recent call last):
+  File "/opt/freqtrade/freqtrade/strategy/strategy_wrapper.py", line 28, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/freqtrade/user_data/strategies/AlexStrategyFinalV90_Trail.py", line 432, in leverage
+    if dataframe is None or dataframe.empty:
+AttributeError: 'tuple' object has no attribute 'empty'
+
+
+[09/17/2024 16:32] carneiro_16462
+Does anyone know how to solve this problem?
+
+
+[09/17/2024 16:49] serialkiller15
+no did you have a value on leverage = 10.0? or something else?
+
+
+[09/17/2024 16:53] serialkiller15
+and use futures?
+
+
+[09/17/2024 17:58] ximontan
+seems it should be  dataframe,** _ **= self.dp.get_analyzed_dataframe(pair, self.timeframe)
+
+
+[09/17/2024 17:58] ximontan
+not just  dataframe = self.dp.get_analyzed_dataframe(pair, self.timeframe)
+
+
+[09/17/2024 18:00] carneiro_16462
+Yes, I have on 
+user_data\strategies\AlexStrategyFinalV90.py (leverage_value = 10.0) and at user_data\config-torch.json "trading_mode": "futures",
+
+
+[09/17/2024 18:13] alex_737071
+I solved this by commenting out the code in the leverage function and setting `return 10.0`... Not looked into why it occours yet tho
+
+
+[09/17/2024 18:15] carneiro_16462
+I will test this situation. Thanks!
+
+
+[09/17/2024 19:18] serialkiller15
+Ok nice
+
+
+[09/17/2024 21:11] chryses4371
+Hi, I'm trying it in dry over gate.io, can I ask any good starting point for the configuration?
+
+
+[10/15/2024 02:24] ch1ck3n_t4c0s
+Been dealing with a cranky wifi card. Working on v9 spot improvements.
+
+
+[10/15/2024 08:08] cheluxe
+Ooh, is there a v9 spot version? I thought it was only for futures
+
+
+[10/15/2024 11:07] ch1ck3n_t4c0s
+ROI: Closed trades
+∙ 60.333 USDT (1.52%) (0.6 Σ%)
+∙ 60.313 USD
+ROI: All trades
+∙ 54.857 USDT (0.62%) (0.55 Σ%)
+∙ 54.839 USD
+Total Trade Count: 9
+Bot started: 2024-09-27 23:38:07
+First Trade opened: 2 days ago (2024-10-13 01:38:34)
+Latest Trade opened: an hour ago (2024-10-15 09:30:12)
+Win / Loss: 2 / 2
+Winrate: 50.00%
+Expectancy (Ratio): 15.08 (8.40)
+Avg. Duration: 11:23:30
+Best Performing: ETH/USDT: 5.76%
+Trading volume: 13005.146 USDT
+Profit factor: 17.80
+Max Drawdown: 0.02% (1.855 USDT)
+    from 2024-10-15 05:00:48 (62.189 USDT)
+    to 2024-10-15 11:00:06 (60.333 USDT)
+
+
+[10/15/2024 11:09] ch1ck3n_t4c0s
+The wifi card keeps going out on the computer randomly so reset the run. Gotta make a ethernet cable for it tonight... but hard to work on when the wifi goes dark all the time!
+
+
+[10/15/2024 11:15] serialkiller15
+Ok good luck mate
+
+
+[10/15/2024 11:17] ch1ck3n_t4c0s
+I'm just gonna LAN it with another mini next to it.
+
+
+[10/15/2024 11:18] xokaidos
+I can give you an access to my server if you want
+
+
+[10/15/2024 12:19] serialkiller15
+Me to we habe good Ressource here @Ch1cK3N_t4c0s unused because of time
+
+
+[10/15/2024 14:50] hirotakah7
+I am testing v9Hyper but no trades yet
+
+
+[10/15/2024 14:50] hirotakah7
+do i need to look for some config
+
+
+[10/15/2024 14:50] hirotakah7
+i am using all standard config
+
+
+[10/15/2024 16:17] bigbroseur
+it is better to work on long waves (spot) on cable than on short waves (futures) on wifi
+
+
+[10/15/2024 18:47] ch1ck3n_t4c0s
+Lol
+
+
+[10/15/2024 19:52] serialkiller15
+Hehe thats true
+
+
+[10/16/2024 06:31] 0jessica0_
+hey guys, I have two questions: 1. why I need to turn on the freqtradeai when I do dry/live trade? 2. Can i use the hyperopt result when I use dry/live trade? will that make a differ?
+
+
+[10/16/2024 14:46] hirotakah7
+You got any solution to this ??
+
+
+[10/16/2024 14:53] ch1ck3n_t4c0s
+1. Because it won't use the regressor otherwise 2. It automatically imports the hyperopt parameters on startup from the .json if it exists for said strategy
+
+
+[10/16/2024 14:53] 0jessica0_
+I think the one below is the answer
+
+
+[10/16/2024 14:53] 0jessica0_
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283028025620828210/1296123956247662634/image.png?ex=69f36cff&is=69f21b7f&hm=8089588ba07ba610e712df21b73837c15c5f237de1bde0aea3caf24352824c14&
+
+
+[10/16/2024 14:54] hirotakah7
+i am confused one thing
+
+
+[10/16/2024 14:54] 0jessica0_
+it returns a tuple, not a df
+
+
+[10/16/2024 14:54] hirotakah7
+We hyperopt using the AlexStrategyFinalV90Hyper.py this file
+
+
+[10/16/2024 14:55] hirotakah7
+the hyperopt create a json file with. the name of AlexStrategyFinalV90Hyper.json
+
+
+[10/16/2024 14:55] 0jessica0_
+Thanks,
+
+
+[10/16/2024 14:55] hirotakah7
+We need to rename the file to AlexStrategyFinalV90.json to be used with AlexStrategyFinalV90.py
+
+{Reactions}
+💯
+
+[10/16/2024 15:01] serialkiller15
+Yes absolute thats it
+
+{Reactions}
+👑
+
+[10/16/2024 15:02] hirotakah7
+perfect
+
+
+[10/16/2024 15:02] hirotakah7
+rename one ?
+
+
+[10/16/2024 15:08] hirotakah7
+I cant find this in AlexStrategyFinalV90.py
+
+
+[10/16/2024 15:23] 0jessica0_
+it is not in the py file. it is in the dataprovider file
+
+
+[10/16/2024 15:29] serialkiller15
+https://discordapp.com/channels/1238181199206154373/1289112409415352360
+
+
+[10/16/2024 15:30] serialkiller15
+there is the description for installation, and hyperopt and backtest, i will ad the parameters for starting the Strategy!
+
+
+[10/16/2024 15:55] hirotakah7
+yes please
+
+
+[10/16/2024 16:42] serialkiller15
+https://discordapp.com/channels/1238181199206154373/1289112409415352360/1296151212386816033
+
+
+[10/16/2024 16:43] serialkiller15
+i added the description of usage v9x NOT OPTUNA VERSIONS!! - please Read it should be clear now! thanks to all
+
+
+[10/16/2024 16:46] serialkiller15
+@everyone i do dry run on my strategys a view days ago and i can say that the NONFREQAI VERSIONS are RUNNING BETTER the Results of Backtest and DRYRUN ARE Better the with Freqai enabled.......lets test will report on weekend when finished the dry RUNS.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283028025620828210/1296152228658282608/image.png?ex=69f38754&is=69f235d4&hm=e78f48a4143c20aa1fdea8be9eaff7bf7e2e93e6ff121936edfc0f73558699a7&
+
+{Reactions}
+👍 (3)
+
+[10/16/2024 16:57] 0jessica0_
+you sure? I am about to start the dry run
+
+
+[10/16/2024 16:59] 0jessica0_
+I don't know how to backtest the freqai enabled version
+
+
+[10/16/2024 17:03] 0jessica0_
+quick question: if I want to run the NONFREQAI version, should I use AlexStrategyFinalV9Hyper or AlexStrategyFinalV9 with freqai disabled?
+
+
+[10/16/2024 17:18] serialkiller15
+If you want use freqai disabled and run dryrun you have to run the hyoer.py Strategy file i hope its clear now...
+
+
+[10/16/2024 17:20] 0jessica0_
+Cool, just double check
+
+
+[10/16/2024 17:21] serialkiller15
+No Problem you are welcome
+
+
+[10/17/2024 17:07] serialkiller15 (pinned)
+Here comes the UPDATED VERSION V9-Strategy 
+    AlexStrategyFinal90Hyper.py
+    ➡️ Strategy file for Hyperopt and Backtesting, with Progressor and FreqAI disabled.
+    👉 To deactivate FreqAI, set freqai=false in your config file.
+    AlexStrategyFinal9xHyper.json
+
+I used on 15min Timeframe you can change it for 1h if you prefer, but do hyperopt and backtest on different TIMEFRAMES!
+
+In my Tests the passt days the Hyper Version in dry run and backtest ist mostly better then the Normal Version with freqai.....
+So try dry/run with this Version now -> no freqai disable freqai in config!!
+
+HAPPY TRADING!
+
+{Reactions}
+🚀 (7)
+
+[10/17/2024 17:07] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283028025620828210/1296520066388721675/AlexStrategyFinalV90Hyper.json?ex=69f38c68&is=69f23ae8&hm=e2c6b50c107fadb4e7adf17a8ab7b6c87644f4f58f5b4e72ebb2508593ddffa9&
+https://cdn.discordapp.com/attachments/1283028025620828210/1296520066724139058/AlexStrategyFinalV90Hyper.py?ex=69f38c68&is=69f23ae8&hm=f6990e7d48399cec79343446ac970bb4e358f75eee2f5430fa0fb8ff464fa0db&
+
+{Reactions}
+👍
+
+[10/17/2024 17:08] serialkiller15
+Pinned a message.
+
+
+[10/17/2024 17:08] serialkiller15
+Pinned a message.
+
+
+[10/17/2024 17:08] ._.emilio._.
+What’s up?
+
+
+[10/19/2024 20:51] hirotakah7
+any one using 1h timeframe for updated strategy ?
+
+
+[10/20/2024 08:23] ximontan
+yes, it's not bad, after hyperopt
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283028025620828210/1297475335125991515/image.png?ex=69f31191&is=69f1c011&hm=27162c814ecb3132922c1f3e6ee091c7964618b41cc6419abaf8202a3f255138&
+
+
+[10/20/2024 10:29] 0jessica0_
+what? I lost 40% during these two days
+
+
+[10/20/2024 11:24] ximontan
+try with this config https://discord.com/channels/1238181199206154373/1283031043019898922/1296823964143980616 ,
+I check this config with other pairs not bad result too...
+
+
+[10/20/2024 11:25] 0jessica0_
+What is your leverage?
+
+
+[10/20/2024 11:27] 0jessica0_
+did you just start you dry run?
+
+
+[10/20/2024 11:28] ximontan
+leverage_value = 5.0, default,
+no start yesterday
+
+
+[10/20/2024 23:18] smidelis
+Boys and girls, this might be a bummer for all of you, but the strategies posted by alex here are not FreqAI strategies.
+They neither include `dataframe = self.freqai.start(dataframe, metadata, self)`, nor the `set_freqai_targets` method. Maybe you should start of with reading the docs https://www.freqtrade.io/en/2024.9/freqai-configuration/
+
+{Reactions}
+😆
+
+[10/20/2024 23:19] smidelis
+Hot tip!
+
+{Reactions}
+👍
+
+[10/20/2024 23:25] hirotakah7
+recommend some good strategies for freqai
+
+
+[10/20/2024 23:25] smidelis
+There are no public ones available
+
+
+[10/21/2024 04:17] branly76
+I see both in the strats.
+
+
+[10/21/2024 04:32] serialkiller15
+@smidelis first of all welcome here! i am confused what you are talking about, the strategies with freqai have already implemented the self.freqai.start and also the set_freqai_targets already, also a do predict here, when you mean the HYPEROPT Version i disabled it in here to do Backtest/Hyperopt without Freqai, please first read my documentions on the channels, before doing some Posts here and make the community confused!!!! Thanks!
+
+{Reactions}
+🔥 (2)
+
+[11/05/2024 21:09] ximontan
+Latest AlexStrategyFinalV90Hyper futures (not AI), 
+what results do you have?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283028025620828210/1303466141854990406/image.png?ex=69f31c31&is=69f1cab1&hm=5b8869b9ddf76966341544f678799423670d25a6089dfe4f9fec819bfa6238ca&
+https://cdn.discordapp.com/attachments/1283028025620828210/1303466142077030440/image.png?ex=69f31c31&is=69f1cab1&hm=de916087ec3ed543b45a55f053a7c9f37afdd23d3c94929d34661629f993e799&
+
+
+[12/15/2024 07:35] attique_80740
+how do you run the strategy in dry mode with AI,  its been a while the strategy is up and it did not place any trade in backtesting it places 2000+ trades over a month.
+
+
+[12/15/2024 07:36] attique_80740
+this is how i run this strategy i followed the installation guide,
+
+
+[12/15/2024 07:36] attique_80740
+sudo docker compose run --rm freqtrade trade  --strategy AlexStrategyFinalV9Hyper --config user_data/config-torch.json  --freqaimodel PyTorchLSTMRegressor
+
+
+[12/18/2024 13:28] xiaocui110
+Is there a reference for the config-torch.json configuration file
+
+
+==============================================================
+Exported 142 message(s)
+==============================================================

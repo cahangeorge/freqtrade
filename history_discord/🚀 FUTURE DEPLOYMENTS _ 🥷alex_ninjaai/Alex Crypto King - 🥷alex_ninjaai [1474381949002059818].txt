@@ -1,0 +1,74 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🥷alex_ninjaai
+==============================================================
+
+[02/20/2026 12:30] serialkiller15
+AlexNinja — Strategy Overview (VIP) 🤘☠️
+
+AlexNinja is an adaptive momentum/trend strategy with ML-assisted filtering built to trade cleaner signals and avoid getting chopped up. It’s designed to be more “smart and selective” instead of firing nonstop entries.
+
+Key Benefits ✅
+
+• 🤖 ML / confidence layer: uses feature scoring to filter weak setups and improve signal quality over time (less noise, better entries).
+• ⚡️ Early vs confirmed entries: supports staged logic (small “probe” entries early, full size on confirmation) to reduce FOMO traps.
+• 🧯 Anti‑whipsaw protection: cooldown logic + false-signal handling to avoid rapid re-entries in sideways markets.
+• 🌪️ Volatility-aware: ATR-normalized checks help adapt behavior in low vs high volatility regimes.
+• 🛡️ Strong profit protection: aggressive profit-locking tiers (protect gains as profit grows) + time-based exit logic to avoid holding dead trades forever.
+• 📉 Risk tightened: sensible limits like reduced max open trades and tighter stop/exit management compared to “wild” versions.
+
+What it’s best for 🎯
+
+• Markets with momentum bursts and clear trend legs
+• Traders who want quality > quantity
+• Running a bot fleet where risk control + consistency matters
+
+Notes ⚠️
+
+Because AlexNinja includes ML components, treat it like a system: start with DRY‑RUN, keep leverage sane, and don’t judge it after a handful of trades.
+
+
+[02/20/2026 12:31] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474381949002059818/1474382917311529184/Alex_NinjaV9.py?ex=69f34b98&is=69f1fa18&hm=9ce2b7dc4fbccb3ae1327b7aa80139dab97d06245a7dae6a820bb09262bc1186&
+
+
+[02/20/2026 13:53] themarkx_
+What is the difference between/this vip and open for all version
+
+
+[02/20/2026 13:55] serialkiller15
+This is my latest Version i expanded and its running good for the last days. 
+But i must say i did not had the time to take a view to the other versions!
+
+
+[04/01/2026 08:27] serialkiller15
+V9 is not dooing so good as the First Version i get it was V4....will share here
+
+{Reactions}
+🔥
+
+[04/03/2026 07:01] nerazurri0420
+@Alex Crypto King
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474381949002059818/1489520200159068180/message.txt?ex=69f2fe49&is=69f1acc9&hm=d208fbd05fdcc63b063d8a633bbff0e797a04e37fc104ba43542057fc476f0c1&
+
+
+[04/03/2026 07:07] serialkiller15
+interesting did not get this error let me check it later!
+
+
+[04/16/2026 21:17] accursed1528
+Hi, I'm using alex_ninjav9. It runs incredibly well in Dyrun, but when I switch to Live, it messes me up. 😁 What's the problem?
+
+
+[04/16/2026 21:20] accursed1528
+The same configuration included both dry run and live run. Dry run was generating revenue. Live was losing money every day.
+
+
+==============================================================
+Exported 9 message(s)
+==============================================================

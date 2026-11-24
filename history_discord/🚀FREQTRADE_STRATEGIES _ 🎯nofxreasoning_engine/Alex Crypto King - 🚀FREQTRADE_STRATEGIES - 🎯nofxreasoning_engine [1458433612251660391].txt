@@ -1,0 +1,407 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🎯nofxreasoning_engine
+==============================================================
+
+[01/07/2026 12:18] serialkiller15 (pinned)
+@xF0x0F thanks for your nice work
+@everyonehere it comes 
+
+🤖 AI Trading Bot Setup — Crypto Futures Strategy
+
+A hands-on, experimental AI-powered crypto futures trading strategy that uses a local LLM to generate:
+
+🎯 Entry & exit signals
+📈 Dynamic leverage (1–10x)
+🛡️ Stop-loss & risk control
+📊 Position sizing & trade management
+
+Built on Freqtrade + LiteLLM, works fully offline with Ollama — or optionally with OpenAI / Anthropic models.
+
+This channel is for:
+🧩 installation & setup help
+⚙️ model tuning & thresholds
+🧠 strategy experiments & improvements
+🧪 dry-run results & findings
+💡 Runs locally — zero API cost when using Ollama. Always test in dry-run mode first before going live.
+
+⚡ Quick Installation Overview
+🔧 Requirements
+
+Python 3.11+
+Git
+8GB+ RAM (recommended for local models)
+
+🧠 Install Ollama (Local AI Runtime)
+Mac
+brew install ollama
+
+
+Linux
+curl -fsSL https://ollama.com/install.sh | sh
+
+Windows
+Download from the official site.
+Then start Ollama & pull the model:
+
+ollama serve &
+ollama pull qwen2.5:7b
+
+📦 Clone & Setup Project
+git clone https://github.com/your-repo/nofxfreqtrade.git
+cd nofxfreqtrade
+
+python -m venv .venv
+source .venv/bin/activate   # mac/linux
+.\.venv\Scripts\activate    # windows
+
+pip install -r requirements.txt
+
+Create .env config:
+
+LITELLM_MODEL=ollama/qwen2.5:7b
+REASONING_AI_TIMEOUT=30
+REASONING_ENTRY_THRESHOLD=55
+REASONING_EXIT_THRESHOLD=50
+Add your exchange keys to config.json.
+
+🚀 Run the Bot
+Dry-run (paper trading):
+freqtrade install-ui
+freqtrade trade --dry-run
+
+Live trading (⚠️ use caution):
+freqtrade trade
+
+👀 Optional — View AI Prompts in Real-Time
+python prompt_viewer.py &
+freqtrade trade --dry-run
+Open in browser:
+http://localhost:5555
+⭐ Key Features
+🤖 AI-generated trading decisions
+📉 Loss-timeout & stagnation exit rules
+🔀 Works with Ollama / OpenAI / Anthropic
+💸 Local model = $0 daily cost
+
+
+[01/07/2026 12:19] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1458433612251660391/1458434808035151942/nofxfreqtrade-package.zip?ex=69f348c2&is=69f1f742&hm=1d24c4e4b0372f70c18032e3863d5b670decb12ce9f93bdb36ed0a15fe5e2d47&
+
+
+[01/07/2026 12:19] serialkiller15
+Pinned a message.
+
+{Reactions}
+🚀 (8) ❤️ (5) 🔥 (2)
+
+[01/07/2026 16:39] darkreaper0756
+I think it's worth trying online. Offline is quite computationally difficult
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1458433612251660391/1458500354529300562/IMG_5122.jpg?ex=69f385ce&is=69f2344e&hm=6d9e7210f9ee1126cec4f6a06094f50986c6d46d53cf5cc68c74ee5ba258d5f8&
+https://cdn.discordapp.com/attachments/1458433612251660391/1458500354818838548/IMG_5121.jpg?ex=69f385ce&is=69f2344e&hm=0ddca207fe5bab9f7ee3a70d60df3d62f6c6c9df5c5b7c564134f3378aa67aef&
+
+
+[01/07/2026 16:43] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1458433612251660391/1458501347904192698/IMG_5123.jpg?ex=69f386ba&is=69f2353a&hm=801b6f989d48cb84ae2b488824f6fab2ccdf45b9d7c290a95697ea386b07edf0&
+
+
+[01/07/2026 16:53] darkreaper0756
+Has anyone checked how many tokens they use in 24 hours?
+
+
+[01/07/2026 16:58] themarkx_
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1458433612251660391/1458505167644131485/Screenshot_2026-01-07-22-28-21-24_320a9a695de7cdce83ed5281148d6f19.jpg?ex=69f38a49&is=69f238c9&hm=3cade49e3d7167a7c5a674bcaab47a0be9f1a7b0412acdac0a771ab4b85f0481&
+
+
+[01/07/2026 16:59] serialkiller15
+use the zip file i uploaded there is no repo
+
+
+[01/07/2026 17:06] movdream
+Microsoft has released a 1bit inference local llm.
+
+{Reactions}
+👍
+
+[01/07/2026 17:06] movdream
+Happy new year, mothers-fathers 🙂
+
+{Reactions}
+😂
+
+[01/07/2026 17:07] darkreaper0756
+LLM Name?
+
+
+[01/07/2026 17:07] serialkiller15
+Microsofts LLMs (Large Language Models)
+
+
+[01/07/2026 17:07] serialkiller15
+Copilot and co..
+
+
+[01/07/2026 17:08] serialkiller15
+as i am also a Microsoft Certified Trainer let me look into it!
+
+{Reactions}
+👏
+
+[01/07/2026 17:10] darkreaper0756
+https://huggingface.co/microsoft/bitnet-b1.58-2B-4T
+
+{Embed}
+https://huggingface.co/microsoft/bitnet-b1.58-2B-4T
+microsoft/bitnet-b1.58-2B-4T · Hugging Face
+We’re on a journey to advance and democratize artificial intelligence through open source and open science.
+https://images-ext-1.discordapp.net/external/tEo2TE8uJ-lXMef-SRBitVJH-IxW32oTsMGHNTIdxFc/https/cdn-thumbnails.huggingface.co/social-thumbnails/models/microsoft/bitnet-b1.58-2B-4T.png
+
+{Reactions}
+🔥 👍
+
+[01/07/2026 17:10] movdream
+https://github.com/microsoft/BitNet
+
+{Embed}
+https://github.com/microsoft/BitNet
+GitHub - microsoft/BitNet: Official inference framework for 1-bit LLMs
+Official inference framework for 1-bit LLMs. Contribute to microsoft/BitNet development by creating an account on GitHub.
+
+{Reactions}
+👍 🔥
+
+[01/07/2026 17:24] anonymuis
+I'm using Qwen3-14B-AWQ mostly. Support reasoning when you need it and has /nothink when you prefer speed. It's quite good with json and numbers.
+However, keep in mind than LLMs are good I'm Text. They can explain very nicely why something in a trade or market happens. But I fall back to ML for prediction.
+
+If you do use LLM, don't give them numbers. They often 'forget' that an RSI of 15 is low. Give them 'RSI is low and rising' and the LLM can work pretty good with that. Again: use interpretal text instead of numbers.
+
+{Reactions}
+👍
+
+[01/07/2026 17:39] darkreaper0756
+Good idea with the difference between numbers and text. I'm currently using gpt oss, it's super fast.
+
+{Reactions}
+👍
+
+[01/07/2026 18:29] anonymuis
+Some more tips:
+1) Do all definitions (regime, trend, volatility) as a named calculation I'm freqtrade. And even give it some older timelines.
+2) Not too much, because it gets easily overwhelmed and will forget things. Like it will focus on emas instead of rain and trends or the other way around.
+3) ask another agent (not within the same context) to check if the LLM is correct. It will work better because it is  easier to slot errors than to come up with a trading decision.
+4) I've even tried with multiple smaller agents each with a specific task and context: one for regime and trending, one for S/R levels, one for choosing a strategy (reversion, breakout, trend following), one as a critic to check on all the others and one for setting up the final exact numbers like multiple entry and exit levels.
+5) instead of reinventing a new strategy setup every cycle, stick with one and out it in the prompt withe the question 'is this still viable'
+6) Put important instructions and guardrails first. Ask another LLM (like CHATGPT or Claude) to improve the prompt after collecting 10 or so decisions. Again, you will see that it often keeps growing the prompt untill it strat hallucinating again. LESS IS MORE! it keeps the task clear.
+
+You will face some difficulties:
+1) It will always try to do what is best, like lowering entries and increasing exits because thats it what the best outcome could be. So it can keep lowering entries every cycle and thus missing the trade.
+2) it will very often make up small things that will do crazy stuff like exiting a perfectly good position. Always re-evaluate important decisions (even by another LLM).
+3) It's very hard to get all small thing perfectly aligned... Just a minor change in a prompt can make a huge difference in the outcome. Remember: LLMs are text trained and will always find a way to explain things correctly, even if it is not the perfect answer.
+
+Good luck! Let me know if you have some questions.
+
+{Reactions}
+👍 (3) 💯 (2)
+
+[01/07/2026 18:33] serialkiller15
+Thanks mate!
+
+
+[01/07/2026 18:40] serialkiller15
+the question i am thinking about maybee i could host an llm (in my cloud) so the strategies then goes there? means so not everybody would need so much power? why i have more then enough power here? what do you think?
+
+
+[01/07/2026 18:42] dragongoattigercat
+that is very kind of you.
+
+
+[01/07/2026 18:43] serialkiller15
+when it then grows and works we can make a small fee (only for infrastructure costs) because if maybee everybody buys an api ....and so on its more expensive, but to be clear i dont want to make money with that!
+
+{Reactions}
+👍 (3)
+
+[01/07/2026 18:44] darkreaper0756
+You need to check how many simultaneous users it can handle
+
+
+[01/07/2026 18:45] serialkiller15
+yes its only an idea
+
+
+[01/07/2026 18:46] darkreaper0756
+Do you want to run on your own server?
+
+
+[01/07/2026 18:46] serialkiller15
+own or private cloud
+
+
+[01/07/2026 18:49] serialkiller15
+but let me first finish the test of the nice stuff and then rethink it and make some more test on my infrastructure also on azure and private cloud we will see stay tuned but realy nice aproach
+
+{Reactions}
+👍
+
+[01/07/2026 18:50] branly76
+For most of us, this is new. Let it be step by step before we jump into the future.
+
+
+[01/07/2026 18:51] serialkiller15
+lets always think of future, but yes you are right!
+
+
+[01/07/2026 18:54] branly76
+I ment more we flee into the future.
+
+
+[01/07/2026 18:54] serialkiller15
+ok than let flee together hehe
+
+{Reactions}
+🚀 (2)
+
+[01/07/2026 19:02] 4v1234
+Today the same toughs pass  in my mind....to collect money for machine dedicated to the group or to the wiling individuals from here....I'm OK with such steps
+
+
+[01/07/2026 19:03] serialkiller15
+as i said and also the others lets first complete tests learn new stuff and see how it does, then we can grow together! but first will get a walk with my dog and pick up some bear!
+
+
+[01/07/2026 19:04] 4v1234
+At least 2 beers 😀
+
+
+[01/07/2026 19:07] 4v1234
+@Anonymuis  thank you for the clear text and explanation....really appreciate   your imput. 
+@xF0x0F  see poin 4 from the text: this what I was talking about in terms of operations and task management with agents. This idea came from  
+@sliper82
+
+{Reactions}
+👍
+
+[01/07/2026 19:20] .7thdragon
+@xF0x0F ollama is resource hogger compared with others (llama.cpp)
+it is better using something directly like CUSTOM_API_BASE instead of OLLAMA_API_BASE
+with litellm.drop_params = True
+ps: very nice implementation 👏 👏 👏
+
+
+[01/07/2026 21:49] xf0x0f
+thanks! you're right - ollama adds overhead vs raw llama.cpp. using openai/model with OPENAI_API_BASE and litellm.drop_params = True would be more flexible for any backend. kept ollama for now because of easy gpu detection and modelmanagement, but will consider switching for production
+
+
+[01/07/2026 21:57] anonymuis
+vLLM seems to beat both in performance, queueing, parallelism and quick side-loading/switching models (if you have enough RAM).
+
+
+[01/08/2026 17:14] darkreaper0756
+Hi, do you have any dryrun tests with this version?
+
+
+[01/08/2026 17:36] xenigami
+The Qwen 2.5:7B model continues to experience losses, so replacing it with the Qwen 3-30B-A3B model and are currently testing it.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1458433612251660391/1458876924142161962/Screenshot_20260109_022917_Telegram.jpg?ex=69f39303&is=69f24183&hm=cfd594626ec6786819f4a8d2e488b5709e1f67dd415b8b7b805148b423db121e&
+
+{Reactions}
+👏 (2)
+
+[01/08/2026 20:02] xf0x0f
+Losses made of timeout i think, or others? Thats the thing ive not managed good till now
+
+
+[01/08/2026 20:25] .7thdragon
+btw Qwen 2.5 is very bad on trading or finance, use Qwen3 higher as possible
+for sequential 5min strat needs (300s/no pairs) max response...
+@xF0x0F looking at the code, it does not send system prompt to llm which is major issue on logic flows and can contribute to bigger latencies. in system prompt should be the instructions and in user prompt  must be sent only data (raw if necessary)
+
+
+[01/08/2026 22:54] dubbleju
+Does this also work good on fiat pairs?
+
+
+[01/09/2026 05:33] xf0x0f
+good idea, that was  a problem i already had on entries. will try to fix it. i need to test which performance i can get with qwen 3
+
+
+[01/09/2026 09:27] xf0x0f
+system prompt with instructions done,.... informative pairs used, cause mine went long everytime also when rsi was oversold also on falling market. btc trend must be met. on 70% confidence there were too much bad trades. extended logging. now using qwen 3 8b (but without thinking, cause this x7 the response time) with nearby same performance (have to try it on my tesla p40 next week when i got more time). exit optimization still in progress
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1458433612251660391/1459116478124265514/Bildschirmfoto_2026-01-09_um_10.22.40.png?ex=69f3209d&is=69f1cf1d&hm=525009e8c0e98547169589e2bd0c5d14cb182a7a4d18154d33a344f0c1a1bef6&
+
+{Reactions}
+👏 (2)
+
+[01/09/2026 09:56] .7thdragon
+yp, this is a real problem in FT, the 25% rule so processing (for all pairs) need to be done in 75s for 5m tf, so response for one pair+processing<75s/no pairs which is quite impossible withouthaving a monster machine
+also my 2c, the prompt for 0-100 candles of 1m-5m is pure measuring noise radomness...
+
+
+[01/09/2026 10:03] .7thdragon
+this is a windows helper example that creates a clone model in ollama with less context, the trick is only for using 100% only gpu vram and leave cpu alone, ctx input parameter depend on your card and model
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1458433612251660391/1459125416773029928/create_ollama_model.bat?ex=69f328f0&is=69f1d770&hm=fed9cb7e1b6027ec47237abbe8d3574e8c205fe09b66b6ab2ff3ab1cefd9c3ee&
+
+
+[01/09/2026 10:05] xf0x0f
+i need 4 secs with qwen3 8b per token/prompt with my nas amd ryzen 9 hx pro 370
+
+{Reactions}
+🤘
+
+[01/09/2026 12:14] xf0x0f
+And this is to slow 😂
+
+
+[01/09/2026 12:23] darkreaper0756
+Runs on Tesla P4 a model llm that fit on vrm
+
+
+[01/09/2026 12:25] darkreaper0756
+GPT OSS 20B parameters run too fast
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1458433612251660391/1459161209696686180/Screenshot_2026-01-09_132144.png?ex=69f34a46&is=69f1f8c6&hm=165a86bd546dd6cd153a1ce2c1e805d61b8f820b351be776300b94b8d268c165&
+
+
+[01/09/2026 13:26] xf0x0f
+nice
+
+
+[01/10/2026 19:07] darkreaper0756
+Hi, how is it going, what timeframe are you running on? are the results ok?
+
+
+[01/16/2026 02:12] xenigami
+Decimal truncation cannot fully represent some coin prices.
+
+snapshot.py, 93 line
+f"O:{candle.open:.2f} H:{candle.high:.2f} L:{candle.low:.2f} C:{candle.close:.2f}"
+
+ex) VET/USDT:USDT
+real -> 21:50: O:0.011457 H:0.011466 L:0.011442 C:0.011443
+.2f -> 21:50: O:0.01 H:0.01 L:0.01 C:0.01
+
+{Reactions}
+👏
+
+==============================================================
+Exported 55 message(s)
+==============================================================

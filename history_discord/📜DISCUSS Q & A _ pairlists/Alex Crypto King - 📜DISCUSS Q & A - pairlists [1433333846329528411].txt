@@ -1,0 +1,859 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 📜DISCUSS Q & A / pairlists
+==============================================================
+
+[10/30/2025 06:03] serialkiller15
+Use this channel for discussing #pairlists and settings for them will post later then I am busy today with building our Wintergarden...
+
+{Reactions}
+👍 (3)
+
+[10/30/2025 06:04] viking046433
+Divergence strategy can you @Alex Crypto King  please share your full config obviously without keys 🔑 for us I’m getting way different results than you
+
+{Reactions}
+👍 (2)
+
+[10/30/2025 07:43] snokard.
+Open discussion: i see some people asking for static pairlist but ive found lately the "art" of variable pairlists...
+
+This is one im using i really like. 
+
+I want to know if someone uses this kind of pairlists or suggestions to improve this one.
+
+Thanks all in advance!
+
+
+  "pairlists": [
+    {
+      "method": "VolumePairList",
+      "number_assets": 200,
+      "sort_key": "quoteVolume",
+      "refresh_period": 21600
+    },
+    { "method": "AgeFilter", "min_days_listed": 14 },
+    { "method": "SpreadFilter", "max_spread_ratio": 0.01 },
+    { "method": "VolatilityFilter", "min_volatility": 0.005 },
+    {
+      "method": "PerformanceFilter",
+      "lookback_days": 3,
+      "min_profit": 0.01,
+      "min_trades": 5,
+      "refresh_period": 1440
+    }
+  ],
+
+{Reactions}
+👍 (2)
+
+[10/30/2025 07:44] snokard.
+Still this one is in "testing" since im using it on gkd and some trades took 5 days im thinking ill need to modify the refresh period and lookback
+
+
+[10/30/2025 16:37] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1433495093242761296/message.txt?ex=69f38557&is=69f233d7&hm=3706bf769b67eb27f5485402654912628746c4aefb48f41d4760e8c4f3abd31c&
+
+{Reactions}
+👍 (5) 🚀
+
+[10/30/2025 16:37] serialkiller15
+Divergence Pairlist/Config
+
+
+[12/16/2025 15:45] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1450514196528631991/message.txt?ex=69f3791d&is=69f2279d&hm=1b8a0a599f89f1b55e71cd7e8d9dbeb3fe357e5cac9a147e8a0abd3657b2f089&
+
+
+[12/20/2025 07:38] serialkiller15
+@everyone
+my testet static pairlist for AlexBandSniper
+"pair_whitelist": [
+    "LINK/USDT:USDT",
+    "TNSR/USDT:USDT",
+    "ONDO/USDT:USDT",
+    "ADA/USDT:USDT",
+    "ETHFI/USDT:USDT",
+    "1000RATS/USDT:USDT",
+    "PEOPLE/USDT:USDT",
+    "ENA/USDT:USDT",
+    "ARB/USDT:USDT",
+    "1000FLOKI/USDT:USDT",
+    "ORDI/USDT:USDT",
+    "1000LUNC/USDT:USDT",
+    "TRB/USDT:USDT",
+    "LTC/USDT:USDT",
+    "AVAX/USDT:USDT",
+    "OP/USDT:USDT",
+    "LDO/USDT:USDT",
+    "CFX/USDT:USDT",
+    "ENS/USDT:USDT",
+    "MANTA/USDT:USDT",
+    "W/USDT:USDT",
+    "XAI/USDT:USDT",
+    "SUI/USDT:USDT",
+    "NOT/USDT:USDT",
+    "GRT/USDT:USDT",
+    "EDU/USDT:USDT",
+    "MINA/USDT:USDT",
+    "GALA/USDT:USDT",
+    "CRV/USDT:USDT",
+    "BCH/USDT:USDT",
+    "RSR/USDT:USDT",
+    "MASK/USDT:USDT",
+    "ALT/USDT:USDT",
+    "DEEP/USDT:USDT",
+    "BTC/USDT:USDT",
+    "BEAM/USDT:USDT",
+    "BIO/USDT:USDT",
+    "AEVO/USDT:USDT",
+    "UNI/USDT:USDT",
+    "CYBER/USDT:USDT",
+    "FIL/USDT:USDT",
+    "GMT/USDT:USDT",
+    "PYTH/USDT:USDT",
+    "AAVE/USDT:USDT",
+    "ETH/USDT:USDT",
+    "TON/USDT:USDT",
+    "SOL/USDT:USDT",
+    "PIXEL/USDT:USDT",
+    "DGB/USDT:USDT",
+    "1000BONK/USDT:USDT",
+    "STRK/USDT:USDT",
+    "PENGU/USDT:USDT",
+    "THETA/USDT:USDT",
+    "APT/USDT:USDT",
+    "ENJ/USDT:USDT",
+    "NEO/USDT:USDT",
+    "MEME/USDT:USDT",
+    "SAND/USDT:USDT",
+    "VIRTUAL/USDT:USDT",
+    "TAO/USDT:USDT",
+    "IMX/USDT:USDT",
+    "BICO/USDT:USDT",
+    "UMA/USDT:USDT",
+    "BNB/USDT:USDT",
+    "MANA/USDT:USDT",
+    "STX/USDT:USDT",
+    "DOT/USDT:USDT",
+    "SNX/USDT:USDT",
+    "API3/USDT:USDT",
+    "RENDER/USDT:USDT",
+    "HBAR/USDT:USDT",
+    "CETUS/USDT:USDT",
+    "CKB/USDT:USDT",
+    "BRETT/USDT:USDT",
+    "BIGTIME/USDT:USDT",
+    "JTO/USDT:USDT",
+    "ETC/USDT:USDT",
+    "CHZ/USDT:USDT",
+    "JASMY/USDT:USDT",
+    "PENDLE/USDT:USDT",
+    "NEAR/USDT:USDT",
+    "SPELL/USDT:USDT",
+    "INJ/USDT:USDT"
+]
+
+{Reactions}
+👍 (6)
+
+[01/05/2026 11:09] serialkiller15 (pinned)
+@everyone
+🚀 NEW TOOL: ML Pairlist Optimizer 🤖
+
+Hey everyone! Just built something EPIC for optimizing trading pairs! 🔥
+
+🎯 What It Does:
+This tool automatically finds the BEST pairs for your ML trading strategy by testing hundreds of pairs and ranking them by ML validation accuracy!
+
+⚡ Fully Automated Workflow:
+1️⃣ 🔍 Generates fresh pairlist from exchange (VolumePairList + filters)
+2️⃣ 📥 Downloads historical data (customizable timeframe)
+3️⃣ 🧠 Trains ML models on EACH pair independently
+4️⃣ 📊 Ranks pairs by validation accuracy
+5️⃣ 🏆 Outputs top performers ready for trading!
+
+💪 Why This is Game-Changing:
+❌ Before: Trade random pairs, hope ML works
+✅ Now: Only trade pairs where ML actually performs well!
+📈 Results Format:
+
+🏆 TOP 20 PAIRS BY ML VALIDATION ACCURACY
+  1. BTC/USDT:USDT   Val=78.5%  Gap=3.8%   Score=0.845
+  2. ETH/USDT:USDT   Val=76.2%  Gap=4.1%   Score=0.823
+  3. SOL/USDT:USDT   Val=75.8%  Gap=3.2%   Score=0.819
+  ...
+🎮 One Command Does Everything:
+bashpython ml_pairlist_selector.py \
+    --config config.json \
+    --strategy AlexBandSniper \
+    --n-pairs 50
+🔥 Benefits:
+
+🎯 Higher Win Rates - Only trade pairs ML understands
+💰 Better Performance - Focus on pairs with proven accuracy
+⚡ Time Saver - Automated testing of 100+ pairs
+📊 Data-Driven - No guessing which pairs to trade
+
+🚀 What's Next:
+Running this weekly to refresh my pair list with the top 50 ML performers. This is how you stay ahead! 💪
+Who else wants to stop trading blind and start trading smart? 🧠💰
+
+Feel free to customize the emojis/icons to match your server's style! 🎉
+
+{Reactions}
+🚀 (3) 👏 (2) 🔥 (2)
+
+[01/05/2026 11:09] serialkiller15
+Pinned a message.
+
+
+[01/05/2026 11:16] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1457694357745434654/image.png?ex=69f33a29&is=69f1e8a9&hm=531e619ffa9b40bf4ef03187319b57ec354f47ba25ca45221b329a2f1ef4d6f6&
+
+{Reactions}
+🚀 (5)
+
+[01/05/2026 11:36] glad8769
+Where is it available?
+
+
+[01/05/2026 11:39] serialkiller15
+Let's finish final Test download 500 pairs takes some time🔥
+
+{Reactions}
+🔥 (3)
+
+[01/05/2026 11:40] glad8769
+Can the pair number be reduced or selected by some specific rules? I do not have so much power to train 500 pairs 🙈
+
+
+[01/05/2026 11:41] serialkiller15
+It's fully optimizable with parameters
+
+
+[01/05/2026 11:41] glad8769
+Cool! Thanks for making it!
+
+
+[01/05/2026 11:41] serialkiller15
+The goal is to get the best pairs for the strategy
+
+
+[01/05/2026 11:41] serialkiller15
+Ml training and so on will share when finished
+
+
+[01/05/2026 12:23] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1457711162065162458/image.png?ex=69f349d0&is=69f1f850&hm=0d5b847ed7db632117686dac21b90376286c606df5c80b93e63c14625728db6e&
+
+
+[01/05/2026 12:25] densky188
+Looking forward to it
+
+
+[01/05/2026 12:25] serialkiller15
+me to...
+
+
+[01/05/2026 12:26] glad8769
+You are making freqtrade fully automated 🎉
+
+
+[01/05/2026 12:26] glad8769
+You should push a PR 🫣😬
+
+
+[01/05/2026 12:26] serialkiller15
+i hate the fucking choosing right pairlists thats it after 2 bears yesterday i got this idea
+
+{Reactions}
+🙌 👌 👏
+
+[01/05/2026 13:21] serialkiller15
+almost done...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1457725624402575493/image.png?ex=69f35748&is=69f205c8&hm=dffc3f437583a9b7d4de8f762605df9e2108e5320c1188fef28fb2462dae6885&
+
+
+[01/05/2026 13:38] darkreaper0756
+😮
+
+
+[01/05/2026 13:38] darkreaper0756
+Open trade 551?
+
+
+[01/05/2026 13:41] serialkiller15
+it makes ml backtest on 551 pairs thats it!
+
+
+[01/05/2026 13:41] ywk3926
+This is for training trading pairs, select the top n performing pairs.
+
+
+[01/05/2026 13:41] ywk3926
+Is this tool suitable for the current strategy or for all strategies?
+
+
+[01/05/2026 13:42] serialkiller15
+step by step mate, first of all its for all ML Based Strategys, but next step will write one for all independed Strategies, because i hat that fucking selecting of different pairlists! thats the main idea after a few beers...
+
+
+[01/05/2026 16:24] serialkiller15
+@everyone 
+🚀 ML / Backtest Pairlist Optimizer (Freqtrade)
+
+I built a standalone pairlist optimizer that automatically finds the best tradable pairs for any Freqtrade strategy — ML or non-ML.
+
+🔍 What it does
+
+Generates a dynamic pairlist from your exchange filters
+Runs per-pair backtests (one coin at a time)
+Supports ML strategies (uses train/val accuracy)
+Supports non-ML strategies (uses profit, win rate & drawdown)
+Ranks pairs and exports a ready-to-use pairlist
+Has TEST MODE (exploration) and PROD MODE (strict filtering)
+Perfect for:
+finding better markets
+avoiding bad coins
+validating strategies before live trading
+
+⚙️ How it works (simple)
+ML strategies → ranked by validation accuracy & generalization
+Non-ML strategies → ranked by win rate, profit & drawdown
+Test mode → shows results even if they’re bad (research)
+Normal mode → only returns pairs that pass quality rules
+Optuna - it disables Optuna optimizing for Backtest
+
+🧪 Usage
+python user_data/pairlist/Alex_Pairlist_Selector.py \
+  --config user_data/pairlist/config-pairlist.json \
+  --strategy YourStrategyName \
+  --pairs-file user_data/pairlist/dynamic_pairs.json \
+  --n-pairs 50
+
+🧰 Arguments
+
+--config → Freqtrade config (with pairlist filters)
+--strategy → Strategy name (ML or non-ML)
+--pairs-file → Input/output dynamic pairlist JSON
+--n-pairs → Number of top pairs to return
+--no-download → Skip candle downloads
+--download-days → History length (default: 60)
+--test-mode → Research mode (no filtering, no crashes)
+
+✅ Output
+
+optimal_pairs.json → final ranked pairlist
+
+Clean logs showing why pairs passed or failed
+
+Safe handling of ML / non-ML / single-pair backtests
+
+If anyone wants to build smarter pairlists instead of guessing, this tool does the heavy lifting 🤖📊
+
+{Reactions}
+🔥 (3) 🚀 (3) 👍 (2)
+
+[01/05/2026 16:24] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1457771846173724744/Alex_Pairlist_Selector.py?ex=69f38254&is=69f230d4&hm=48d130457f2061bb903260da6bb11d5603351fc71fdb5f5da9a3eb4c940e3d21&
+
+{Reactions}
+🚀 (4)
+
+[01/05/2026 16:26] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1457772165985341534/config-pairlist.json?ex=69f382a0&is=69f23120&hm=08bdf4716b9e935c14793ba5c34c7588051c2b4073af2ee3843ee184c690b06f&
+
+{Reactions}
+🚀
+
+[01/05/2026 16:26] serialkiller15
+Now… i will enjoy that beer 🍻 or maybee more.
+
+{Reactions}
+👍
+
+[01/05/2026 16:27] dragongoattigercat
+beer and good food please
+
+
+[01/05/2026 16:33] serialkiller15
+i running 4 bots with optimazions, will post the results of the Pairlists here in the channel so not everybody have to run it!
+have enough power here so i can do more of them.
+Please test it with different Strategies (ML and non ML) it should work!
+best of it it makes a backtest on each coin, so it makes it eayser to use!
+i like the idea! hope you to guys!
+
+{Reactions}
+🙏 (2) 💯 (2)
+
+[01/05/2026 16:35] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1457774615165276396/image.png?ex=69f384e8&is=69f23368&hm=fd8f96a914f3597ab8d24e34684310c3e26a87afd65ffc67f727ab16af300955&
+
+{Reactions}
+🤯
+
+[01/05/2026 16:36] glad8769
+Which machine are you using @Alex Crypto King ?
+
+
+[01/05/2026 16:40] serialkiller15
+More if them 3 Servers 1 workstation and also some cloud servers
+
+{Reactions}
+👍
+
+[01/05/2026 16:40] serialkiller15
+Mostly dual xenons m..
+
+
+[01/05/2026 16:44] dragongoattigercat
+it should be separate machine from the machine which is running the trading bot?
+
+
+[01/05/2026 16:50] serialkiller15
+Must not be but would be better because of the models folder and so on maybee needs additional folders for the generator this is the first version we will improve it more but tomorrow will share pair list generated for bandsniper so no need to run it
+
+
+[01/05/2026 17:01] serialkiller15
+change this from 10 to none? was for testing!
+MAX_BACKTEST_PAIRS = None
+
+
+[01/05/2026 17:01] serialkiller15
+or make your values!
+
+
+[01/05/2026 18:28] serialkiller15
+so some improvements added
+
+python user_data/pairlist/Alex_Pairlist_Selector.py \
+    --config user_data/pairlist/config-pairlist.json \
+    --strategy AlexScalpMLAI \
+    --pairs-file user_data/pairlist/dynamic_pairs.json \
+    --n-pairs 20 \
+    --no-download \
+    --max-backtest-pairs 100
+
+so you can chose how much coins you want to backtest!
+
+
+[01/05/2026 18:28] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1457802956958339113/Alex_Pairlist_SelectorV2.py?ex=69f2f68d&is=69f1a50d&hm=49e2c0029dbc984db2d8e328725e9ef9485e9e9cb99e038fee95704f9cb71a6d&
+
+{Reactions}
+👍
+
+[01/06/2026 09:35] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1458031111232819334/image.png?ex=69f32249&is=69f1d0c9&hm=9cc9ff61e4e56ae9cc459929fff5ddd63a1a4825d0f48bfc531fd29c4b37c04c&
+
+{Reactions}
+🔥 (2) 🫡
+
+[01/06/2026 09:42] serialkiller15
+@everyone the first Pairlists! - AlexBandSniper!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1458032949592330281/V15_optimal_pairs.json?ex=69f32400&is=69f1d280&hm=1d97f248d6354dd6cfd32518c77bf26ba1a8c70b4989d31a184df2725fa43ce6&
+https://cdn.discordapp.com/attachments/1433333846329528411/1458032950074675263/V16_optimal_pairs.json?ex=69f32400&is=69f1d280&hm=80aa52c59d40b5632836563f849ce42a03f91eb10ec7380541958b1833edcdc4&
+
+
+[01/06/2026 10:01] serialkiller15
+more to come!
+
+{Reactions}
+❤️ (2) 👏 (3)
+
+[01/06/2026 13:32] miluu5979
+there is the same line in both files
+  "strategy": "AlexBandSniperV15MLAI"
+
+
+[01/06/2026 13:34] serialkiller15
+Yes but they are different I did not changed the name of the Strategy
+
+{Reactions}
+👍
+
+[01/06/2026 14:36] kot7979
+gotta to ask 1  question, I set in the config path to remote pairlist file:///ft_userdata/user_data/pairlist/active_ml_pairs.json but gotta error 2026-01-06 14:35:10,903 - freqtrade - ERROR - file:///ft_userdata/user_data/pairlist/active_ml_pairs.json does not exist.
+
+
+[01/06/2026 14:37] kot7979
+the file is located in the directory as specified
+
+
+[01/06/2026 14:37] kot7979
+{
+    "method": "RemotePairList",
+    "number_assets": 50,
+    "mode": "whitelist",
+    "pairlist_url": "file:///ft_userdata/user_data/pairlist/active_ml_pairs.json",
+    "refresh_period": 1800,
+    "keep_pairlist_on_failure": true,
+    "read_timeout": 60
+    }
+
+
+[01/06/2026 14:37] kot7979
+so what am I doing wrong  ? 🙂
+
+
+[01/06/2026 14:37] kot7979
+maby its stupid question
+
+
+[01/06/2026 16:05] divarak
+Check if "RemotePairList" is wrote correctly, seems strange, but had this error:
+ CRITICAL - Invalid configuration. Reason: 'RemotePairlist' is not one of ['StaticPairList', 'VolumePairList', 'PercentChangePairList', 'ProducerPairList',
+'RemotePairList', 'MarketCapPairList', 'AgeFilter', 'DelistFilter', 'FullTradesFilter', 'OffsetFilter', 'PerformanceFilter', 'PrecisionFilter', 'PriceFilter', 'RangeStabilityFilter', 'ShuffleFilter', 'SpreadFilter', 'VolatilityFilter']
+
+Failed validating 'enum' in schema['properties']['pairlists']['items']['properties']['method']:
+    {'description': 'Method used for generating the pairlist.',
+     'type': 'string',
+     'enum': ['StaticPairList',
+              'VolumePairList',
+              'PercentChangePairList',
+              'ProducerPairList',
+              'RemotePairList',
+              'MarketCapPairList',
+              'AgeFilter',
+              'DelistFilter',
+              'FullTradesFilter',
+              'OffsetFilter',
+              'PerformanceFilter',
+              'PrecisionFilter',
+              'PriceFilter',
+              'RangeStabilityFilter',
+              'ShuffleFilter',
+              'SpreadFilter',
+              'VolatilityFilter']}
+
+
+Copied from error log "RemotePairList" and the error dissipates.
+
+{Reactions}
+👍
+
+[01/06/2026 19:02] divarak
+Guys... in my config file:
+    "pairlists": [
+        {
+            "method": "RemotePairList",
+            "mode": "whitelist",
+            "number_assets": 200,
+            "refresh_period": 3600,
+            "pairlist_url": "file:///user_data/V16_optimal_pairs_bandsniper.json",
+        }
+    ],
+
+Am I doing something wrong? No trade after use file pairlist.
+
+
+[01/06/2026 19:23] serialkiller15
+i did not test this, why not to copy the pairlists in the config?
+
+
+[01/06/2026 19:23] serialkiller15
+when you start the strategy do you see the pairs are beeing loaded? because when you use the json? do you have deleted other contend, and only let the coins in?
+
+{Reactions}
+👍
+
+[01/06/2026 19:34] dragongoattigercat
+I tried to get the list for other strategy like GDK or AlexBattleTank but I got error on it. have you tried with these strategy yet? Thank you
+
+
+[01/06/2026 19:35] serialkiller15
+no only on badnsniper and divergence non ml strategy! which error you get from?
+
+
+[01/06/2026 19:36] dragongoattigercat
+Cannot convert float infinity to integer
+
+
+[01/06/2026 19:40] divarak
+No problem, will copy the pairlist. I thought It would be a workflow: use the Pairlist selector  to test pairs, create a  pairlist file, and then run the bot with that pairlist file.
+
+
+[01/06/2026 19:40] serialkiller15
+maybee yes can check it! but i think its the content of the file!
+
+{Reactions}
+👍
+
+[01/07/2026 13:57] serialkiller15
+@Everyone some adjustments
+✨ What You Got:
+Main Script:
+
+Alex_Pairlist_SelectorV2.py - The complete enhanced selector
+
+Evaluation Modes:
+
+🚀 Batch Backtest (default) - 3-5x FASTER!
+🔬 Individual Backtest (--individual) - Detailed analysis
+🤖 ML Training Mode - For ML strategies
+⚡ Standard Mode - Quick screening
+
+Control Flags:
+
+--fullbacktest - Full backtest mode
+--individual - Individual pair backtests
+--download-days - Data download period
+--backtest-days - Backtest period (NEW!)
+--n-pairs - Top pairs to select
+--max-backtest-pairs - Limit evaluation
+--test-mode - Keep all pairs
+
+Complete Documentation:
+
+📘 README.md - Main guide
+📊 BATCH_VS_INDIVIDUAL_QUICKREF.md - Mode decision guide
+📅 BACKTEST_DAYS_GUIDE.md - Time period control
+📚 MODE_COMPARISON_GUIDE.md - Detailed comparison
+📖 FULLBACKTEST_MODE_DOCUMENTATION.md - Technical docs
+
+{Reactions}
+👍 (4)
+
+[01/07/2026 17:45] dragongoattigercat
+can this version work with other ML strategy yet? like GDK? Thank you
+
+
+[01/07/2026 17:50] serialkiller15
+had no time to test
+
+
+[01/07/2026 17:50] serialkiller15
+did you try it out?
+
+
+[01/07/2026 17:51] dragongoattigercat
+yes, I just tried it with TankPro and got the error
+
+
+[01/07/2026 17:51] serialkiller15
+and which error ?
+
+
+[01/07/2026 17:51] dragongoattigercat
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1458518451252494370/image.png?ex=69f396a8&is=69f24528&hm=7c26c0d8ea0286fca31f6bd79c697a046b41224b37f1b64d709cc6b7149d2fd7&
+
+
+[01/07/2026 17:52] serialkiller15
+i think its an formating problem json/feather?
+
+
+[01/07/2026 17:52] serialkiller15
+it verifys the downloaded data ?
+
+
+[01/07/2026 17:53] dragongoattigercat
+download data in feather format
+
+
+[01/07/2026 17:54] dragongoattigercat
+I can try to re-download with json format to see if it can work
+
+
+[01/07/2026 17:54] serialkiller15
+maybee try with viewer coins like 10 only for testing bevore i go debugging!
+
+
+[01/07/2026 17:55] serialkiller15
+in the script there is feather and should work!
+
+
+[01/07/2026 17:59] serialkiller15
+but as i said problem with data because on PAIRS WITH..... it will count and check the availability of the coin data before it starts!
+
+
+[01/07/2026 18:05] serialkiller15
+ok let me check have also an error here
+
+
+[01/07/2026 18:06] dragongoattigercat
+I am trying with other flag to see if It can work
+
+
+[01/07/2026 18:10] serialkiller15
+you are right thanks! Version 1 works you can adjust it to use feather instead of json (search vor ohlvc)
+Version2 seams broken will check then!
+
+
+[01/07/2026 18:14] serialkiller15
+give me some minutes will fix it
+
+{Reactions}
+❤️
+
+[01/07/2026 18:14] dragongoattigercat
+take your time. we much appreciate your hard work
+
+
+[01/07/2026 18:30] serialkiller15
+fixed!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1458528337868619797/Alex_Pairlist_SelectorV2.py?ex=69f2f71d&is=69f1a59d&hm=b75744f80e66d49b229ec4de07b6ee0090c02a42249c6362db098f488964d37d&
+
+{Reactions}
+👍 ❤️
+
+[01/07/2026 18:31] serialkiller15
+also do this 
+  "dataformat_ohlcv": "feather", into the config-pairlist for security
+
+
+[01/07/2026 18:32] dragongoattigercat
+I will try it now
+
+
+[01/07/2026 18:32] serialkiller15
+tried it with gdk_transform
+
+
+[01/07/2026 18:32] serialkiller15
+but only the start and it uses the data thats fine!
+
+
+[01/07/2026 20:00] dragongoattigercat
+still got the error with GDK
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1458550894592262336/image.png?ex=69f30c1f&is=69f1ba9f&hm=ca0a28e863c4795f27f7674e2f8e554aec71d63735a32e9e53f3a7fc49f3fb2d&
+
+
+[01/12/2026 12:08] serialkiller15
+AlexBandSniperV15MLAI - Coinlist! Also works good on AlexDivergence
+    "BTC/USDT:USDT",
+    "ETH/USDT:USDT",
+    "SOL/USDT:USDT",
+    "BNB/USDT:USDT",
+    "XRP/USDT:USDT",
+    "ADA/USDT:USDT",
+    "AVAX/USDT:USDT",
+    "DOT/USDT:USDT",
+    "MATIC/USDT:USDT",
+    "LINK/USDT:USDT",
+    "ATOM/USDT:USDT",
+    "UNI/USDT:USDT",
+    "LTC/USDT:USDT",
+    "NEAR/USDT:USDT",
+    "APT/USDT:USDT",
+    "ARB/USDT:USDT",
+    "OP/USDT:USDT",
+    "INJ/USDT:USDT",
+    "TIA/USDT:USDT",
+    "SUI/USDT:USDT",
+    "SEI/USDT:USDT",
+    "FIL/USDT:USDT",
+    "ICP/USDT:USDT",
+    "DOGE/USDT:USDT",
+    "SHIB/USDT:USDT",
+    "PEPE/USDT:USDT",
+    "AR/USDT:USDT",
+    "AAVE/USDT:USDT",
+    "MKR/USDT:USDT",
+    "CRV/USDT:USDT",
+    "LDO/USDT:USDT",
+    "GRT/USDT:USDT",
+    "SAND/USDT:USDT",
+    "MANA/USDT:USDT",
+    "AXS/USDT:USDT",
+    "RUNE/USDT:USDT",
+    "FTM/USDT:USDT",
+    "ALGO/USDT:USDT",
+    "VET/USDT:USDT",
+    "HBAR/USDT:USDT",
+    "ETC/USDT:USDT",
+    "XLM/USDT:USDT",
+    "TRX/USDT:USDT",
+    "BCH/USDT:USDT",
+    "EOS/USDT:USDT",
+    "THETA/USDT:USDT",
+    "XTZ/USDT:USDT"
+
+{Reactions}
+👍 (5)
+
+[01/16/2026 03:44] densky188
+I encountered this error; is this normal?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1461566726733824058/20260116_114314.png?ex=69f378d6&is=69f22756&hm=12e97fcc974e8b634345e90f2292e1c902c8ed97031a1ef38c068e5c91002c04&
+
+
+[01/16/2026 06:17] serialkiller15
+Yes it's fine let it run
+
+{Reactions}
+👌
+
+[01/30/2026 07:25] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1466695865182978223/message.txt?ex=69f303f8&is=69f1b278&hm=9bc5332e61263e997375815de2b763d694f1ef541d80ec8263b013dbda0e8e01&
+
+{Reactions}
+👍 (2)
+
+[02/06/2026 20:02] erkankesemen6252
+Is there anyone who can fix this error? I haven't been able to fix it for days.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1433333846329528411/1469422939173687469/IMG_20260206_230134_315.jpg?ex=69f30c81&is=69f1bb01&hm=f44e2ac953393a2b32c3cac29663c4a1d0a8637bbef3959d13d342f31b1d51df&
+
+
+[02/06/2026 20:03] serialkiller15
+Can you please share the full log can check tomorrow thanks
+
+
+[02/07/2026 03:57] saamyar
+It clearly listed the pairs that has no leverage tiers available in your exchange. Simply remove those pairs and you will be fine.
+
+
+[02/17/2026 14:26] .7thdragon
+do not remove pairs
+remove just leverage_*.json files from data
+will be repopulated
+update first ccxt
+
+
+==============================================================
+Exported 99 message(s)
+==============================================================

@@ -1,0 +1,84 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🚀alexbattletankkillerv4
+==============================================================
+
+[07/03/2025 05:43] serialkiller15
+🚀 AlexBattleTankKillerV38 Trading Strategy
+🎯 Advanced Multi-Timeframe Crypto Strategy with Enhanced Market Intelligence
+📊 Core Features
+
+🕐 15-minute timeframe optimized for active trading
+🔄 Long & Short positions with dynamic leverage (1-20x)
+🎯 Murrey Math Levels (MML) for precision entry/exit points
+📈 Multiple signal types: Support bounces, breakouts, trend continuations
+💰 Smart DCA system with progressive sizing (max 3 orders)
+🛡️ Dynamic stop-loss based on ATR and time-in-trade
+
+🧠 Market Intelligence
+
+₿ BTC correlation filter - aligns with Bitcoin trends
+📊 Market breadth analysis - monitors 7+ major crypto pairs
+🏛️ Market regime detection - adapts to bull/bear/volatile conditions
+🔄 Re-entry system - catches missed opportunities intelligently
+
+⚙️ Risk Management
+
+🎚️ Position sizing: Max 5% portfolio per trade, 10 USDT max stake
+📉 Fixed 7% stop-loss with time-based loosening for development
+🎯 Smart exits: MML-based profit-taking at resistance levels
+🚫 Force exit protection - prevents premature closures
+
+Designed for consistent profits in volatile crypto markets! 🌊💎
+
+{Reactions}
+🔥
+
+[07/03/2025 05:49] serialkiller15
+Some Results on it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390206176326717521/1390207715598405753/image.png?ex=69f39614&is=69f24494&hm=3dad3f6d5a1a1ffc7a24fed76fff2129e0d3fa1048087bac1724ae0feb7dd0fd&
+
+{Reactions}
+💪
+
+[07/03/2025 05:51] serialkiller15
+@Beta-Tester here it comes.
+Use it on 15m Timeframe with my pairlist or your own
+You can do use Custom_Stoploss or Stoploss on Exchange
+have fun with this nice stuff!
+
+{Reactions}
+🔥 (2)
+
+[07/03/2025 05:51] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390206176326717521/1390208348997025892/AlexBattleTankKillerV4.py?ex=69f396ab&is=69f2452b&hm=b029fbc6b9368e3c676b13e4e3dc15ab65d0f76dc57f7964dd2accb187126e5e&
+
+
+[07/03/2025 06:11] serialkiller15
+Tests are being done with 30 Trades with 10 USDT
+Leverage is Standard in it with max 7x
+dont use other Leverage because it will kill the Stoploss
+
+
+[07/03/2025 09:38] maxgorbachevskiy
+Correction: 30 max trades
+
+{Reactions}
+👍
+
+[07/07/2025 18:45] serialkiller15
+@everyone i have to say i am stucked? need new ideas not only testers or people waiting for the next relese? any ideas?
+
+
+[01/25/2026 14:18] raul0909
+@Alex Crypto King
+
+
+==============================================================
+Exported 8 message(s)
+==============================================================

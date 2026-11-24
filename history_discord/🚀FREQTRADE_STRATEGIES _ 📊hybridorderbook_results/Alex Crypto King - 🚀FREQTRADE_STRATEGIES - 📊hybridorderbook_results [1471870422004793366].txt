@@ -1,0 +1,64 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 📊hybridorderbook_results
+==============================================================
+
+[02/13/2026 14:08] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1471870422004793366/1471870731506811063/image.png?ex=69f36270&is=69f210f0&hm=38a8d74128aa6b9ec1a9f4fec84ca63f9c10b4d09b173b4082a8c5eba61f0135&
+
+{Reactions}
+🚀
+
+[02/14/2026 08:59] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1471870422004793366/1472155231239409704/IMG_0454.png?ex=69f319e6&is=69f1c866&hm=346ef10450015bd070062147a3fe0cf7373a8b0f9458cfae607eb8d73357e794&
+
+{Reactions}
+🚀 🔥
+
+[02/26/2026 02:52] divarak
+ROI: Closed trades
+∙ -89.768 USDT (-0.64%) (-9.07 Σ%)
+ROI: All trades
+∙ -90.803 USDT (-0.65%) (-9.17 Σ%)
+Total Trade Count: 290
+Bot started: 2026-02-19 22:00:34
+First Trade opened: 6 days ago (2026-02-19 22:00:54)
+Latest Trade opened: 50 minutes ago (2026-02-26 02:00:51)
+Win / Loss: 252 / 37
+Winrate: 87.20%
+Expectancy (Ratio): -0.31 (-0.06)
+Avg. Duration: 2:33:54
+Best Performing: DOT/USDT:USDT: -3.06 USDT (-0.19%)
+Trading volume: 83953.978 USDT
+Profit factor: 0.52
+Max Drawdown: 10.73% (107.871 USDT)
+    from 2026-02-23 01:01:54 (14.877 USDT)
+    to 2026-02-25 21:37:01 (-92.995 USDT)
+Current Drawdown: 10.41% (104.645 USDT)
+    from 2026-02-23 01:01:54 (14.877 USDT)
+
+Daily Profit over the last 7 days:
+Day (count)      USDT              Profit %
+---------------  ------------  --  ----------
+2026-02-26 (7)   2.474 USDT     0  0.28%
+2026-02-25 (31)  -75.661 USDT   0  -7.77%
+2026-02-24 (51)  13.836 USDT    0  1.44%
+2026-02-23 (46)  -38.44 USDT    0  -3.85%
+2026-02-22 (63)  20.17 USDT     0  2.06%
+2026-02-21 (28)  11.555 USDT    0  1.19%
+2026-02-20 (60)  -24.653 USDT   0  -2.49%
+
+
+[02/26/2026 02:52] divarak
+not promising yet...
+
+
+==============================================================
+Exported 4 message(s)
+==============================================================

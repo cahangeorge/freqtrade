@@ -1,0 +1,3458 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 📊hafbmvvrplef-results
+==============================================================
+
+[09/25/2024 08:34] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288418379710857216/image.png?ex=69f3141f&is=69f1c29f&hm=92990c247d4ccb1410ac0479f594a6a907a88a8f88fe788e6a0a1274ea79bf15&
+
+
+[09/25/2024 10:24] giovannimauro
+Timerange?
+
+
+[09/25/2024 10:27] serialkiller15
+5M
+
+
+[09/25/2024 10:29] giovannimauro
+time range not timeframe, the period tested 🙂
+
+
+[09/25/2024 10:29] serialkiller15
+ah sry mate
+
+
+[09/25/2024 10:30] serialkiller15
+20240816-20240925
+
+
+[09/25/2024 11:11] ch1ck3n_t4c0s
+Please do take my advisement on backtesting and hyperopt, until I can successfully refactoring the vvrp to roll. To long of a window has the capability to spread or shrink the vvrp differently than it would be when running live.
+
+{Reactions}
+👍 (2)
+
+[09/25/2024 11:11] giovannimauro
+My backtest
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288457853291466845/image.png?ex=69f338e2&is=69f1e762&hm=5b9a22a47676204d109014f4e3e42ee1683afca3f77b33f5e0ddc7a2cb0c92a0&
+
+
+[09/25/2024 11:11] giovannimauro
+Sure! Thank you
+
+
+[09/25/2024 11:12] schtk
+Could I have the same daily profit in reality I would be very happy
+
+
+[09/25/2024 11:12] ch1ck3n_t4c0s
+Is that with the new stoploss and roi
+
+
+[09/25/2024 11:12] giovannimauro
+Less than 24 hour dryrun
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288458109521756263/image.png?ex=69f3391f&is=69f1e79f&hm=8d5a94516a26cfac07394be49cd653400f0f3688a69be3be429f3547ffaed763&
+
+{Reactions}
+🔥 💪
+
+[09/25/2024 11:12] giovannimauro
+Look here
+
+
+[09/25/2024 11:13] serialkiller15
+really nice mate!
+
+
+[09/25/2024 11:13] serialkiller15
+amazing!
+
+
+[09/25/2024 11:13] giovannimauro
+The backtest is max 5 trades with unlimited stake...
+
+
+[09/25/2024 11:13] ch1ck3n_t4c0s
+Long only?
+
+
+[09/25/2024 11:13] giovannimauro
+the unlimited stake make crazy gain when the balance growup... but is also MOOOORE risky
+
+
+[09/25/2024 11:13] giovannimauro
+long only, yes
+
+
+[09/25/2024 11:14] giovannimauro
+Wait  for fixes to activate shorts.
+
+
+[09/25/2024 11:14] ch1ck3n_t4c0s
+I have a different compounding idea.😎
+
+
+[09/25/2024 11:15] ch1ck3n_t4c0s
+I need to know where it's broken to fix lol
+
+
+[09/25/2024 11:15] giovannimauro
+ahahah! explain here!!! 🙂
+
+Anyway, unlimited is too risky, I use it for stres-testing
+
+
+[09/25/2024 11:15] serialkiller15
+its nice but also for mee to risky!
+
+
+[09/25/2024 11:15] ch1ck3n_t4c0s
+Yes leverage should be fixed stake...
+
+
+[09/25/2024 11:16] ximontan
+only long too,stake_amount 50
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288459051377885246/image.png?ex=69f33a00&is=69f1e880&hm=d68990a49436b32852ecdd1088a7370398a7ccd9ae1b4f7cf3ee69d42fbbd688&
+
+
+[09/25/2024 11:18] .7thdragon
+🤣 when it will fall will fail badly, but good news that bearish is still far away from now
+
+
+[09/25/2024 11:19] ximontan
+)))
+I dry it with big stake amount to all signal good and bad...
+
+
+[09/25/2024 11:21] ch1ck3n_t4c0s
+💡adjust_stake_amount fixed stake amount range in a window. Compound profits so set stake_amount to upper threshold. Let's say 200$ and 5 slots. If totalstakeamount / max open trades > 200: 
+Maxopen trades +=1 
+
+If totalstakeamount / max open trades < 150: 
+Maxopen trades -=1
+
+^^^ not actual code
+
+{Reactions}
+👆 (3) 🤣 👍
+
+[09/25/2024 11:22] ch1ck3n_t4c0s
+This will allow for some compounding in stake size and then reduce risk by opening up a slot or closing a slot if your gaining/losing money.
+
+
+[09/25/2024 11:22] ch1ck3n_t4c0s
+I did this... have to find it but it does work.
+
+
+[09/25/2024 11:27] .7thdragon
+i never saw posts from logs 🙂 or position issues screenshots, everything working smoothly for futures testers?
+
+
+[09/25/2024 11:34] ch1ck3n_t4c0s
+Anyone who's running it bi directionally I need some feedback back on shorts and transitions from market conditions
+
+{Reactions}
+👏
+
+[09/25/2024 11:35] .7thdragon
+personally i am still coding different issues, i never get it to run fully yet
+
+
+[09/25/2024 11:39] serialkiller15
+2024-09-25 13:34:35 WARNING freqtrade.strategy.interface - Unable to analyze candle (OHLCV) data for pair STRK/USDT:USDT: enter_long/buy column not set.
+
+{Reactions}
+😵‍💫
+
+[09/25/2024 11:39] serialkiller15
+5m timeframe, will try to fix it did someone had this error before?
+
+{Reactions}
+👎
+
+[09/25/2024 11:44] ximontan
+check all log, no this records, but it can be that I use haFbmVVRPlev_Spread_T
+
+
+[09/25/2024 11:44] ximontan
+but it's only sperad added as I undersand
+
+
+[09/25/2024 12:57] amiralbhar
+Which configuration and loss function do you use for hyperopt?
+
+
+[09/25/2024 13:21] ch1ck3n_t4c0s
+Is that during backtesting?
+
+
+[09/25/2024 13:22] serialkiller15
+no on dry run, i fixed it took the latest version here...
+
+
+[09/25/2024 13:43] ch1ck3n_t4c0s
+Yeah my bad my typos are usually something stooped like that. I'll just blame it on the new laptop.🤣
+
+{Reactions}
+👍
+
+[09/25/2024 14:09] branly76
+When i worked at Philips company we blamed the guard at the gate. He then threw it over the fence. All happy.
+
+{Reactions}
+🤣
+
+[09/25/2024 14:24] .7thdragon
+good catch with modified full send 9
+`            full_send9 = (
+                    (self.use8.value == True) &
+                    (dataframe['SR_Ratio_Smooth'].shift() == 0.8) &
+                    (dataframe['SR_Ratio_Smooth'] <= 0.8) &
+                    (dataframe['h2_move'] > dataframe['h0_move_mean']) & 
+                    (dataframe['ha_close'] > dataframe['dc_EWM']) &
+                    (dataframe['market_bias'] < self.fs1.value) &                       # ADDED!
+                    (dataframe['volume'] > 0)   # Make sure Volume is not 0
+            )`
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288506401156501625/image.png?ex=69f36619&is=69f21499&hm=63d98ffd64004c230189710175b28c33405f79324e8f602286b168efd383b78f&
+
+
+[09/25/2024 14:24] giovannimauro
+can you post it?
+
+
+[09/25/2024 14:40] giovannimauro
+Thank you!
+
+On my backtest make profit on bear market but not in bull where long are very strong
+
+
+[09/25/2024 15:16] andreis9311
+Hey @Ch1cK3N_t4c0s 
+I run with short and often have such staff 
+when it's ignore stoploss
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288519471107149936/image.png?ex=69f37245&is=69f220c5&hm=e164bcf62fc00feaca0f200078abf5ba11dbadebdf7acf1c623be06fa5338468&
+
+{Reactions}
+☝️
+
+[09/25/2024 15:20] andreis9311
+Guys, in your strategy, are you using ROI as part of your exit? It's autogenerated by hyperopt based on a default in strategy. So I ask because I’ve noticed that some traders use ROI primarily as a fail-safe or fallback mechanism essentially a way to exit a position if the prediction doesn't go as planned, rather than being the main strategy for profit-taking.
+
+
+[09/25/2024 15:22] .7thdragon
+ROI and trailing (FT trailing) is just a fail safe to an already good strategy. It must be optimized *after* u are confortable with entries and exits
+
+{Reactions}
+👍 (3)
+
+[09/25/2024 15:23] .7thdragon
+u might realize that u have better results without them 😉
+
+
+[09/25/2024 15:24] andreis9311
+Thanks @7thDragon! What I see on backtests for this strategy I have more profit without them 🙂 But it's very tricky staff especially when it's biased
+
+{Reactions}
+🤘
+
+[09/25/2024 15:31] sera131
+oh yea
+
+
+[09/25/2024 15:35] sera131
+will introduce it myself
+
+
+[09/25/2024 15:36] sera131
+will post results after last night reset in a second
+
+
+[09/25/2024 15:39] .7thdragon
+the only problem i think we do not have a reliable exit for that 🙂
+
+
+[09/25/2024 15:40] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288525430667739188/image.png?ex=69f377d2&is=69f22652&hm=e47da0891065a247cf698239ac98a0fe9da4886f53809db257ce2b224ef3825a&
+
+
+[09/25/2024 15:40] sera131
+longs & shorts not doing well, but i'm running non hyperopted versions atm
+
+
+[09/25/2024 15:40] sera131
+this is HAFBM nospread
+
+
+[09/25/2024 15:40] sera131
+the one below is HAFBM spread:
+
+
+[09/25/2024 15:41] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288525709349879818/image.png?ex=69f37814&is=69f22694&hm=0d914ceade121b15bb97a0d6140e3059a2ecd514d3e3b260dda4a74c7623de3f&
+
+
+[09/25/2024 15:41] sera131
+this one is longs only
+
+
+[09/25/2024 15:42] sera131
+I think we need to adjust some things for shorting
+
+
+[09/25/2024 15:42] ch1ck3n_t4c0s
+We will need to work on the short side of things it appears.
+
+
+[09/25/2024 15:42] sera131
+yes
+
+
+[09/25/2024 15:42] sera131
+I think longs are on spot atm
+
+
+[09/25/2024 15:43] ch1ck3n_t4c0s
+So would be nice to see the entry tag data for this entry
+
+
+[09/25/2024 15:43] ch1ck3n_t4c0s
+Believe a lot of it can be solved by market bias normalization.
+
+{Reactions}
+👍
+
+[09/25/2024 15:44] andreis9311
+Sorry, Sir.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288526465041956874/image.png?ex=69f378c8&is=69f22748&hm=2a186002666967f6bbc1689ea547c314e8cf101ee6ed83802bb9c5a16224f744&
+
+{Reactions}
+👍
+
+[09/25/2024 15:44] ch1ck3n_t4c0s
+I've tries a few flavors so far and I have not like the output.
+
+
+[09/25/2024 15:45] ch1ck3n_t4c0s
+I believe gio had also mentioned that entry as being a bit risky.
+
+
+[09/25/2024 15:47] sera131
+reliable exit is trailstoploss or roi
+
+{Reactions}
+👎
+
+[09/25/2024 15:47] .7thdragon
+we should all analyze the entries and exits, not profit starts, using same use0x cases and without optimization. on dry not bt
+
+
+[09/25/2024 15:49] ch1ck3n_t4c0s
+ROI: Closed trades
+∙ 278.321 USDT (1.42%) (2.78 Σ%)
+∙ 278.251 USD
+ROI: All trades
+∙ 176.614 USDT (0.85%) (1.77 Σ%)
+∙ 176.57 USD
+Total Trade Count: 14
+Bot started: 2024-09-20 21:28:52
+First Trade opened: 3 days ago (2024-09-21 18:52:05)
+Latest Trade opened: 8 hours ago (2024-09-25 07:11:47)
+Win / Loss: 9 / 2
+Winrate: 81.82%
+Expectancy (Ratio): 25.30 (1.37)
+Avg. Duration: 21:42:56
+Best Performing: ATOM/USDT: 4.96%
+Trading volume: 45927.712 USDT
+Profit factor: 8.53
+Max Drawdown: 0.33% (33.72 USDT)
+    from 2024-09-22 13:04:07 (106.209 USDT)
+    to 2024-09-23 01:04:22 (72.489 USDT)
+Spot edition no hyperopt Bitrue 5 slots
+
+
+[09/25/2024 17:45] andreis9311
+Full Send 3 - Masterpiece 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288557123781001288/image.png?ex=69f39556&is=69f243d6&hm=ccb7d5fa43b70048b7c02258b14aa2537fbf8f7953e4ec029a8877e89c1b7df3&
+
+{Reactions}
+💪 (3)
+
+[09/25/2024 17:50] serialkiller15
+absolute!!!! nice
+
+
+[09/25/2024 17:54] .7thdragon
+Full Send names are not quite helpful for fast debug, need enter and exit info tags in hyper correctly assigned and correlated (for proportions also)
+
+
+[09/25/2024 17:56] andreis9311
+@7thDragon are you talking to me? If anything, I must say I admire how beautiful it is 🙂
+
+
+[09/25/2024 17:57] .7thdragon
+no, to myself :D, i am renaming them
+is indeed super perfect
+
+
+[09/25/2024 17:57] andreis9311
+ahh! got it 🙂
+
+
+[09/25/2024 18:05] andreis9311
+@Ch1cK3N_t4c0s actually in the same situation with longs... How can I resolve this problem? Can you recommend something?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288562061277794354/image.png?ex=69f399ef&is=69f2486f&hm=f7a54b06175477321d1d4f0fe6884e3d7e7a4e2885b5f615e58b68f965c757e0&
+
+
+[09/25/2024 18:06] ch1ck3n_t4c0s
+They all have a different number lol
+
+
+[09/25/2024 18:09] ch1ck3n_t4c0s
+Waiting... the original time duration length was to be in the neighborhood of 1-2 days max for the spot. You do have some outliers here and there.
+
+
+[09/25/2024 18:13] andreis9311
+So is it expected behavior?
+
+
+[09/25/2024 18:14] ch1ck3n_t4c0s
+What asset and exchange
+
+
+[09/25/2024 18:15] .7thdragon
+are not ok for hyperopt or bt, need to be grouped by entry exit use cases
+
+
+[09/25/2024 18:15] andreis9311
+ZENT/USDT (on OKX ) futures
+
+
+[09/25/2024 18:16] ch1ck3n_t4c0s
+Never even heard of that lol
+
+
+[09/25/2024 18:17] andreis9311
+Haha=) usually I have a stop loss defined on the exchange, but not in this strategy.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288565072834203690/image.png?ex=69f39cbd&is=69f24b3d&hm=165e8b2cf45a933aecab3f5bedd3212005f2b95548a858967e84d2f8a4c00b04&
+
+
+[09/25/2024 18:20] ch1ck3n_t4c0s
+That should come out with a win in about 12hrs but hard to say w micro caps
+
+
+[09/25/2024 18:21] ch1ck3n_t4c0s
+Measure from that top... it fell over 11% in twelve hours.
+
+
+[09/25/2024 18:22] andreis9311
+I use filter like 5 million volume per day. It seems that I need to increase it. Also, I use pairs with larger market capitalizations. Thank you!
+
+
+[09/25/2024 18:22] ch1ck3n_t4c0s
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288566338121367624/cfc8bdb6-a756-4498-b47d-ad12d785d1c4.jpg?ex=69f2f52b&is=69f1a3ab&hm=0ef6efda6d2254172765cf81307dfa33b324e8453feacf47142409e4dfba1d71&
+
+
+[09/25/2024 18:25] ch1ck3n_t4c0s
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288566960258285649/fc511fb3-986e-4707-857b-76274c0e1618.jpg?ex=69f2f5bf&is=69f1a43f&hm=7594cf4453c3bbd96a01a0dedf5ac385a8632c4d6b10e3c63093abbb4263becf&
+
+
+[09/25/2024 18:25] ch1ck3n_t4c0s
+H2 move mean for that pair is probably right 4%ish
+
+{Reactions}
+🐻
+
+[09/25/2024 18:32] .7thdragon
+great sell
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288568811439788175/image.png?ex=69f2f779&is=69f1a5f9&hm=eb1fa7276a79f69d90ac12ec1b4019e51facd75a7cdcf6b9ae3af20c5cde4166&
+
+
+[09/25/2024 18:33] serialkiller15
+👍
+
+
+[09/25/2024 18:45] ch1ck3n_t4c0s
+See how all that volume came in just before the top
+
+
+[09/25/2024 18:46] ch1ck3n_t4c0s
+That is what are using vvrp for
+
+
+[09/25/2024 18:56] .7thdragon
+yes i know this patterns, thats why i really like it how u implemented it
+
+
+[09/25/2024 19:13] ch1ck3n_t4c0s
+Yes..  looked like Maybe trade exited early but sometimes volatility takes out the tsl a bit early.
+
+{Reactions}
+👍
+
+[09/25/2024 19:24] .7thdragon
+In my opinion was ok, i dunno know the left level support, but also looking on market bias (as u already mention) is better to take profit early
+
+
+[09/25/2024 19:28] .7thdragon
+ah is lower indeed
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288582942615932969/image.png?ex=69f304a2&is=69f1b322&hm=b526a968f1ea8637fbb62b87ffb1bd90ba961c67225223e031169a1654e9116b&
+
+
+[09/25/2024 19:31] ch1ck3n_t4c0s
+Yeah but you may not always retrace that far
+
+{Reactions}
+👍
+
+[09/25/2024 19:45] .7thdragon
+checking other timeframes eg 15m, levels are so important, exit was perfect
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288587320186114101/image.png?ex=69f308b5&is=69f1b735&hm=092078570d902b85e383cf4291c44d9990f9fdf35cac50d852664a257b71e626&
+
+{Reactions}
+🔥
+
+[09/25/2024 20:14] bigbroseur
+freqtrade hyperopt --hyperopt-loss OnlyProfitHyperOptLoss --spaces buy sell  trades --strategy haFbmVVRPlev_ST  --config user_data/config_backtesting.json  -e 200 -p `cat pairs34`  --timerange  20240801-   -j 5  --timeframe-detail 1m (spot short = false)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288594567339315321/image.png?ex=69f30f75&is=69f1bdf5&hm=d2c735ca2b021af76d00dac489fff373f5c577910aa9c03455a09cda60aeac6c&
+
+
+[09/25/2024 20:21] bigbroseur
+freqtrade backtesting --strategy haFbmVVRPlev_ST  --config user_data/config_backtesting.json  -p `cat pairs34`  --timerange  20240605-20240620    --timeframe-detail 1m (spot, bear period, 15 days)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288596193038831698/image.png?ex=69f310f9&is=69f1bf79&hm=0d96b86867c210e702acd5f4e9457f851d9e0752e1ccc54cbac827eb44db1eea&
+
+
+[09/25/2024 20:21] bigbroseur
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288596334638792714/image.png?ex=69f3111b&is=69f1bf9b&hm=e8b375f44851cc8867025336bb175341bb2698659530cadab494a0c0908d8b54&
+
+
+[09/25/2024 20:22] bigbroseur
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288596415152521287/image.png?ex=69f3112e&is=69f1bfae&hm=1a7bc3648f6802dd7a7b2afb8b6b4c7998284f974b0b5117f473432f1b79ea0f&
+
+
+[09/25/2024 20:22] bigbroseur
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288596571679752296/image.png?ex=69f31153&is=69f1bfd3&hm=856d83c7975a4f02f2eb6810ccc4dcd8c08fa983aa955f5fe1e59dbe666e5bb4&
+
+
+[09/25/2024 20:23] bigbroseur
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288596794095304785/image.png?ex=69f31188&is=69f1c008&hm=771c6ba2010c557c3d60a2021d50e85e2cdfe7aa0f1b94c44bae5757a937b928&
+
+
+[09/25/2024 20:28] bigbroseur
+freqtrade backtesting --strategy haFbmVVRPlev_ST  --config user_data/config_backtesting.json  -p `cat pairs34`  --timerange  20240801-20240901    --timeframe-detail 1m (spot, August 31 days)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288598040881664061/image.png?ex=69f312b1&is=69f1c131&hm=70f06b89497780ad681fb97aa216d6a3aab5c1672263ed9474aef9ca1e45f977&
+
+
+[09/25/2024 20:29] bigbroseur
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288598272415367241/image.png?ex=69f312e9&is=69f1c169&hm=5f3fe9a813eb56ff4209061d39e046e78bb2a1ec3e44cc1a1f2788ad81d14691&
+
+
+[09/25/2024 20:30] bigbroseur
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288598481136517120/image.png?ex=69f3131a&is=69f1c19a&hm=910fa5a2613db5c39cc0b92b0187b10b81fec044f85dd32fdfb4518b2aa78053&
+
+
+[09/25/2024 20:30] bigbroseur
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288598563600990299/image.png?ex=69f3132e&is=69f1c1ae&hm=a2684bc37ad6f18714e37afc90496ba94ed580ee677dbd280e4fb4a07376c704&
+
+
+[09/25/2024 20:31] bigbroseur
+Impressive and consistent... 🎩
+
+
+[09/25/2024 20:32] bigbroseur
+Let's try a dry
+
+{Reactions}
+👍 (3)
+
+[09/25/2024 20:35] alex_737071
+@Ch1cK3N_t4c0s Is the refactoring of the vvrp done in _ST version? Or is the vvrp accurate as it is in live?
+
+
+[09/25/2024 20:47] ch1ck3n_t4c0s
+I have not completed the vvrp refactoring or the market bias normalization
+
+
+[09/25/2024 20:47] ch1ck3n_t4c0s
+More so don't know how it's gonna act. Reason = it's new algo.
+
+
+[09/25/2024 20:49] alex_737071
+So when you say to long of a window may confuse it, what time range you think is ok to backtest on? Or just dont and dry run only?
+
+
+[09/25/2024 20:50] .7thdragon
+he mentioned already, 1-2 w
+
+
+[09/25/2024 20:50] alex_737071
+Cool.. Thanks! 🙂
+
+
+[09/25/2024 20:51] ch1ck3n_t4c0s
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288603784007778355/voice-message.ogg?ex=69f3180b&is=69f1c68b&hm=383c351fa0011ba034c6a81a1f24b5455afbac541c6eab01f843b0600c813d1b&
+
+
+[09/25/2024 20:54] alex_737071
+Thanks man, interesting insight, slowly getting an understanding of how it works!  🙂
+
+
+[09/25/2024 21:11] ximontan
+I think for live we don't need vvrp for all dataframe too, b/c we'll using already covered volume.
+Like in a picture.
+May be we just need last impulse, does it have any sense?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288608730941755482/image.png?ex=69f31ca6&is=69f1cb26&hm=fdc4f788ea74c0c0016549ae78c671c51cd2bdb4931ca709a9c18f3dac7fadb0&
+https://cdn.discordapp.com/attachments/1288418348400508938/1288608731277557842/image.png?ex=69f31ca6&is=69f1cb26&hm=af0b9555a60720d6eb815f304c7c759e649c70ac1230e3936ca5ab3039c06ba4&
+
+
+[09/25/2024 21:45] alex_737071
+`freqtrade backtesting -c live/haFbmVVRPlev_ST.json -v  --timerange 20240920- --max-open-trades 15  --timeframe-detail 1m`
+
+Not found a hyperopt that beats this out-of.-the-box 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288617318376800429/Screenshot_2024-09-25_at_23.43.13.png?ex=69f324a6&is=69f1d326&hm=e847dafbd0f912b26908d65d4673abb5c6b590ebd9d36c9450e63e7c4062ac82&
+
+
+[09/25/2024 22:40] sera131
+Long version only:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288631331131101245/image.png?ex=69f331b2&is=69f1e032&hm=55f66bc62fcc865b090a7da19bfdfbc3a9873ceb57dc227707dee37b07ada871&
+
+
+[09/25/2024 22:41] sera131
+long & shorts version:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288631518754766959/image.png?ex=69f331df&is=69f1e05f&hm=777cc9d88c7ed8c8cef2ddb8319cd8b3ed1c2790e72c6a5966eb8588c2a8f966&
+
+
+[09/25/2024 22:42] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288631762427187210/image.png?ex=69f33219&is=69f1e099&hm=d27bb8701acd0f75f64987e07014192484846735e96c9b9cf598a2554790bf47&
+
+
+[09/25/2024 23:35] sera131
+well, there are solutions.. but some just create more problems.
+
+There is code for trailing buy... so it does not buy while the candle is still dipping, and to only buy on a green candle or after a certain percentage of from initial signal. Example: signal pops, trailing buy pops.... and if the coin keeps dipping... it won't buy... but if it raises with a certain percentage... than it will long in it. There are still risks involved, even based on the percentage... can still create losses as it can be tricked.
+
+It's not really the best solution but if someone has good code for it, might be worth to try some testing for who is willing to work on the code
+
+
+[09/26/2024 01:43] sera131
+longs & shorts:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288677297171337327/image.png?ex=69f35c82&is=69f20b02&hm=0c25ea587c890f3a8b6c62acbdb575cad196b2db2c6284a8c0ea3c541d019ace&
+
+
+[09/26/2024 02:21] sera131
+closing in to 50% in 24hours
+
+
+[09/26/2024 02:21] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288686821819027497/image.png?ex=69f36560&is=69f213e0&hm=ce563db9ce2f993d5ab4f68823a7da5fe65c138d7a6ea77cb5798be006c4e555&
+
+{Reactions}
+💪
+
+[09/26/2024 06:10] giovannimauro
+Spread version, long only, 40 hours (less or more). 
+I can't wait to see how a good and refined short logic can make on this
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288744411118702654/image.png?ex=69f39b03&is=69f24983&hm=eb679e63c267511a3134bcbe2fa9c24f3c326756567f6c9a3646681fda5d2d4a&
+
+
+[09/26/2024 06:30] sera131
+and there is an issue with selling at loss stoploss.
+
+
+[09/26/2024 06:30] sera131
+i have a hard cap at -30%
+
+
+[09/26/2024 06:31] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288749857560989707/image.png?ex=69f2f755&is=69f1a5d5&hm=15e47d9580829e7e990fc3c6c01a987b8fbd8a1c1bd9c6120001b6fb6e4c950f&
+
+
+[09/26/2024 06:31] sera131
+but did touch the 50% mark xD
+
+
+[09/26/2024 06:32] sera131
+this is nospread
+
+
+[09/26/2024 06:32] sera131
+spread version:
+
+
+[09/26/2024 06:32] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288750121768452096/image.png?ex=69f2f794&is=69f1a614&hm=21b872eda14c079839ceac4bbf1c0e82b5602ff9de0b08a9aabe471998be1e44&
+
+
+[09/26/2024 06:34] sera131
+spread version was started later than nospread
+
+
+[09/26/2024 06:34] giovannimauro
+Spread don't make any  difference in strategy (if we don't have spread fluttuations) both in dry, and backtest. 
+This images show simply how the short logic is not ready, but I'm happy to see that long only version is not only alive, but profitable
+
+
+[09/26/2024 06:35] serialkiller15
+nice stuff what version are you using? thanks mate
+
+
+[09/26/2024 06:35] giovannimauro
+Considering also that if I well understood, you launched it a day after the no spread version, the profits are good also
+
+{Reactions}
+👍
+
+[09/26/2024 06:36] sera131
+of couse
+
+
+[09/26/2024 06:36] sera131
+course*
+
+
+[09/26/2024 06:36] giovannimauro
+This one @Alex Crypto King
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288751012856856608/haFbmVVRPlev_Spread_T.json?ex=69f2f869&is=69f1a6e9&hm=950519d043f4f9c1573e65a8846fdf3828bcfec77e4722315d4b0ea0d83dac19&
+https://cdn.discordapp.com/attachments/1288418348400508938/1288751013188341770/haFbmVVRPlev_Spread_T.py?ex=69f2f869&is=69f1a6e9&hm=2e293c752b67d8d8245750a5b17e24ac651ade77375f311da43fee87db3eb005&
+
+
+[09/26/2024 06:36] sera131
+i've started hyperopting the nospread version as i didnt have a hyperopt for it
+
+
+[09/26/2024 06:37] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288751253303853117/image.png?ex=69f2f8a2&is=69f1a722&hm=aa4ffd8cf6287921cc177d20d71316a099a5493d287e13c2333588524b714f77&
+
+
+[09/26/2024 06:37] giovannimauro
+Asa Hyperopt Iìm using the original one with just new parameters put by hand.... I tried to hyperopt it but with worst result ompared with this first one provided by @Ch1cK3N_t4c0s
+
+
+[09/26/2024 06:39] sera131
+i don't really understand why its missing selling at loss at -30% and allowed 3 coins to move over it...
+
+
+[09/26/2024 06:39] serialkiller15
+@Giovanni Mauro thanks mate! will try it out!
+
+
+[09/26/2024 06:39] giovannimauro
+Where you put this code? under custom exit?
+
+
+[09/26/2024 06:39] sera131
+its the hardstoploss
+
+
+[09/26/2024 06:39] sera131
+its freqtrade embeded
+
+
+[09/26/2024 06:40] giovannimauro
+ok
+
+
+[09/26/2024 06:40] giovannimauro
+try this
+
+
+[09/26/2024 06:40] sera131
+but i can just insert code into customexit
+
+
+[09/26/2024 06:40] giovannimauro
+if current_profit <= -0.99:  # Se la perdita è inferiore al -80%
+            logger.info(f'{trade.pair} Loss is greater than 85%. Exiting position.')
+            self.dp.send_msg(f'{trade.pair} Loss is greater than 85%. Exiting position.')
+            return True  # Chiudi la posizione
+
+{Reactions}
+👍
+
+[09/26/2024 06:40] giovannimauro
+change the value at -0.3
+
+
+[09/26/2024 06:40] sera131
+i should not have to though
+
+
+[09/26/2024 06:40] sera131
+ye
+
+
+[09/26/2024 06:40] sera131
+i have that part of the code btw xD i use it in tank lol
+
+
+[09/26/2024 06:40] giovannimauro
+I remember
+
+
+[09/26/2024 06:41] sera131
+going to sleep again, ill be back in 4 hours
+
+
+[09/26/2024 06:41] serialkiller15
+gn mate
+
+
+[09/26/2024 06:41] giovannimauro
+I use it as Hard stoploss.... because if  you use the freqtrade stoploss it would be ignored by the custom stoploss and by the confirm trade exit
+
+
+[09/26/2024 06:42] giovannimauro
+good sleep 🙂
+
+
+[09/26/2024 06:47] sera131
+omg you are right
+
+
+[09/26/2024 06:47] sera131
+forgot about the reasons...
+
+
+[09/26/2024 06:49] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288754226247503924/image.png?ex=69f2fb67&is=69f1a9e7&hm=48187ead8b390b17620022d97b1ec73d863d4610f4f049553e2da4db69f42f15&
+
+
+[09/26/2024 06:49] sera131
+now i go xD
+
+
+[09/26/2024 08:00] andreis9311
+GM!
+haFbmVVRPlev (Futures)
+
+15m timeframe. (Longs+Shorts) 
+
+hyperopt -e 1000 duration 1 month 
+
+Pairs: 
+market cap > 350_000_000 
+Volume > 5_000_000
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288772231828344862/image.png?ex=69f30c2c&is=69f1baac&hm=9e718f960a4315abae8d226382202a12cc9997ba782f358cc8161f401fcee516&
+
+
+[09/26/2024 08:01] andreis9311
+haFbmVVRPlev (Futures)
+5m timeframe (Longs+Shorts) 
+
+hyperopt -e 1000 duration 2 weeks
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288772364661821480/image.png?ex=69f30c4b&is=69f1bacb&hm=d344808e82566fd5296eeec9bf6ac000a7497fb638782597bee9f773b11d0234&
+
+
+[09/26/2024 08:01] andreis9311
+haFbmVVRPlev (Futures)
+5m timeframe 
+Live
+Only longs 
+hyperopt -e 1000 duration 2 weeks
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288772533612711976/image.png?ex=69f30c74&is=69f1baf4&hm=e1503a1211728b8a2af118beea9e2b7acf6fdeb4c428675934e69ad429a0a3b7&
+
+
+[09/26/2024 08:03] laupapp
+yes approx same with mine !
+
+
+[09/26/2024 08:04] andreis9311
+The one thing that scares me is that it can be -60 percents and more, so I think going more than 1 percent of the deposit per trade is crazy 🙂
+
+
+[09/26/2024 08:29] laupapp
+there are problems with shorts, especially with stoploss  🤯
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288779466386178101/image.png?ex=69f312e9&is=69f1c169&hm=5c2a56abb533919d671e803ce7b0856160ba8c077e2f2e054cf004a9a633488b&
+
+
+[09/26/2024 08:37] giovannimauro
+I think you have to make the custom stoploss logic inverted, making 2 sections, one for long one for short (?)
+
+
+[09/26/2024 08:42] andreis9311
+This is my custom_stoploss will test it today which should consider short positions too
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288782769778069595/message.txt?ex=69f315fc&is=69f1c47c&hm=337770b5a2c15cbacaf3ea1ed501e84e719829c6df263901ff08dce9ff0737f5&
+
+
+[09/26/2024 08:47] .7thdragon
+but anybody understand the logic problem? 🙂
+custom_stoploss should return always a negative value relatively to rate
+i already posted somewhere the fix but nobody reading 😦
+found it https://discord.com/channels/1238181199206154373/1288147662289506388/1288271742350921779
+
+
+[09/26/2024 08:51] andreis9311
+Sorry man, I must have missed this whole thing🥲
+
+{Reactions}
+👍
+
+[09/26/2024 08:53] giovannimauro
+Thank you!!!!
+And we have to make a double of it with sides or just replace?
+
+
+[09/26/2024 08:55] .7thdragon
+*this was an idea only!* i have a slightly modified version
+
+
+[09/26/2024 08:58] .7thdragon
+so is better replace the widths
+        SL1 = abs(SLT1 - SLT0)
+        SL2 = abs(SLT2 - SLT1)
+        SL3 = abs(SLT2 - SLT1)
+and then each returned value is for example
+return -SL2
+
+{Reactions}
+👍
+
+[09/26/2024 09:02] .7thdragon
+so this is my my version, if anybody found a logical flaw or any other issue please post your concern, but i do not want to complicate things
+
+
+[09/26/2024 09:04] .7thdragon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288788168199639100/message.txt?ex=69f31b03&is=69f1c983&hm=c55bd10027afa0436eef561aa2a734e5733ba44f840a99520368705d8966878f&
+
+{Reactions}
+👍 (3)
+
+[09/26/2024 09:06] recnyz
+Thanks for sharing
+
+{Reactions}
+❤️
+
+[09/26/2024 09:28] .7thdragon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288794368978714624/image.png?ex=69f320ca&is=69f1cf4a&hm=34ed5dc66b4e332e3cea0f6c782e1854e210a58dc575045cadd5b37845c8bd38&
+
+{Reactions}
+🔥 (6)
+
+[09/26/2024 10:44] sera131
+for shorts delete this:
+
+and bias < 0: from all lines
+
+{Reactions}
+👍
+
+[09/26/2024 10:45] sera131
+things are easy overlooked, don't be sad 😄
+
+{Reactions}
+🤣 (2)
+
+[09/26/2024 10:46] .7thdragon
+hmm very good point! should be reverted
+haha overlooked myself also 🙂
+
+{Reactions}
+🔥
+
+[09/26/2024 10:49] sera131
+This died because of mistakes
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288814699798073374/image.png?ex=69f333b9&is=69f1e239&hm=50f72c7d19e1aa1f920dc2971802640bebd665870b64ff7c046427ef0c9edf9a&
+
+
+[09/26/2024 10:49] sera131
+reworking hard stoploss and refiring
+
+
+[09/26/2024 10:50] sera131
+fucking RUNE
+
+
+[09/26/2024 10:51] sera131
+i think it was highest performence i've seen on mine in 24hours time
+
+
+[09/26/2024 10:51] .7thdragon
+yes i told in a post that for futures it will dump soon 🙂
+every detail matters
+
+
+[09/26/2024 10:53] sera131
+we need to add some failsafe exits
+
+
+[09/26/2024 10:56] .7thdragon
+i prefered this easy way
+ and ((bias < 0.5 and not trade.is_short) or (bias > 0.5 and trade.is_short)):
+bias should be considered
+
+
+[09/26/2024 11:08] ch1ck3n_t4c0s
+Max 20% risk per trade optimal for options or futures is 5-10% of account size.
+
+
+[09/26/2024 11:10] ch1ck3n_t4c0s
+Started a thread.
+
+
+[09/26/2024 11:14] sera131
+we will update the version with hard stop loss fixed.
+
+
+[09/26/2024 11:14] ch1ck3n_t4c0s
+Yes could several post your current strategy files here, so I can amalgamate them into one this evening.
+
+
+[09/26/2024 11:15] sera131
+I think its the same issue for all
+
+
+[09/26/2024 11:16] .7thdragon
+i think is better to have them by modules, as for example somebody wants to test hardstoplos, volatility pause, leverage or other flavors
+the main issue for me is that i could replace files once it is posted :/ discord not let me do this
+also threads are not manageable, moved, organized 🤪
+
+{Reactions}
+👍
+
+[09/26/2024 11:19] ch1ck3n_t4c0s
+Yes I'm working on an omni strat... where you just Toggle a few variables for the mode. Spot, futures, long only, short only, dca, etc...
+
+{Reactions}
+❤️ 🤩
+
+[09/26/2024 11:20] andreis9311
+Risking 20% per trade is extremely high I think, especially with Freqtrade, which can open up to 5 or 10 trades simultaneously. If you're risking 5-10% of your account size per trade, and all trades go against you, it could result in a significant drawdown, potentially 50-100% of your account. A more conservative approach is to risk 1-2% per trade to protect your capital, especially when managing multiple trades at once. But it's my personal opinion. I don't love to risk too much 🙂
+
+
+[09/26/2024 11:21] ch1ck3n_t4c0s
+I'm doing 33% a whack on coinbase rn.
+
+
+[09/26/2024 11:21] ch1ck3n_t4c0s
+Risk anyways
+
+
+[09/26/2024 11:24] .7thdragon
+the main implementation is ❤️ wotking perfect and should not be changed other things are just 🌼 
+@AndreiS 20%? why are you greedy for a winning both sides strategy ? 🙂
+ah is more risky on spot 😉
+
+
+[09/26/2024 11:27] andreis9311
+Yes, I mean that I usually prefer to risk no more than 1-2 percent of my deposit when trading. But it's just my personal preference. I'm not greedy; quite the opposite. I prefer less risk and less profit.
+
+{Reactions}
+👍
+
+[09/26/2024 11:47] sera131
+ye, we need to cleanup discord a bit.
+
+
+[09/26/2024 13:10] ch1ck3n_t4c0s
+Did you guys fix full send 8 entry logic?
+
+
+[09/26/2024 13:13] .7thdragon
+i use this and has overall positve gains for send 8, not found in dry tho
+`                    (dataframe['SR_Ratio_Smooth'].shift() == 1) &
+                    (dataframe['SR_Ratio_Smooth'] <= 1) &
+                    (dataframe['ha_close'] > dataframe['dc_EWM']) &
+                    (dataframe['volume'] > 0)   # Make sure Volume is not 0`
+
+{Reactions}
+❤️ 👍
+
+[09/26/2024 15:50] ch1ck3n_t4c0s
+VVRP BITRUE NO OPTIMIZATION
+ROI: Closed trades
+∙ 309.759 USDT (1.42%) (3.1 Σ%)
+∙ 310.069 USD
+ROI: All trades
+∙ 333.235 USDT (1.20%) (3.33 Σ%)
+∙ 333.568 USD
+Total Trade Count: 18
+Bot started: 2024-09-20 21:28:52
+First Trade opened: 4 days ago (2024-09-21 18:52:05)
+Latest Trade opened: 2 hours ago (2024-09-26 13:31:47)
+Win / Loss: 12 / 2
+Winrate: 85.71%
+Expectancy (Ratio): 22.13 (1.20)
+Avg. Duration: 20:32:40
+Best Performing: ATOM/USDT: 4.96%
+Trading volume: 54422.431 USDT
+Profit factor: 9.39
+Max Drawdown: 0.33% (33.72 USDT)
+    from 2024-09-22 13:04:07 (106.209 USDT)
+    to 2024-09-23 01:04:22 (72.489 USDT)
+
+{Reactions}
+👍
+
+[09/26/2024 15:51] ch1ck3n_t4c0s
+#Coinbase Live First edition hyperopt
+ROI: Closed trades
+∙ 396.972 USD (0.77%) (13.04 Σ%)
+∙ 396.972 USD
+ROI: All trades
+∙ 396.972 USD (0.77%) (13.04 Σ%)
+∙ 396.972 USD
+Total Trade Count: 48
+Bot started: 2024-08-09 00:28:48
+First Trade opened: a month ago (2024-08-09 01:05:57)
+Latest Trade opened: 16 hours ago (2024-09-25 23:19:12)
+Win / Loss: 34 / 14
+Winrate: 70.83%
+Expectancy (Ratio): 8.27 (0.35)
+Avg. Duration: 2 days, 20:27:05
+Best Performing: AIOZ/USD: 7.96%
+Trading volume: 86534.812 USD
+Profit factor: 2.19
+Max Drawdown: 8.12% (268.55 USD)
+    from 2024-09-14 12:47:27 (263.63 USD)
+    to 2024-09-18 20:17:58 (-4.92 USD)
+
+
+[09/26/2024 15:52] ch1ck3n_t4c0s
+KUCOIN nonvvrp hyperopt original 
+ROI: Closed trades
+∙ 1929.931 USDT (1.79%) (19.3 Σ%)
+∙ 1929.931 USD
+ROI: All trades
+∙ 1922.481 USDT (1.77%) (19.22 Σ%)
+∙ 1922.481 USD
+Total Trade Count: 112
+Bot started: 2024-09-02 00:14:02
+First Trade opened: 3 weeks ago (2024-09-04 00:17:09)
+Latest Trade opened: 16 hours ago (2024-09-25 23:43:17)
+Win / Loss: 87 / 24
+Winrate: 78.38%
+Expectancy (Ratio): 17.39 (0.65)
+Avg. Duration: 23:44:19
+Best Performing: TIA/USDT: 18.97%
+Trading volume: 211348.502 USDT
+Profit factor: 4.00
+Max Drawdown: 4.24% (462.234 USDT)
+    from 2024-09-15 07:17:52 (895.266 USDT)
+    to 2024-09-17 03:04:21 (433.032 USDT)
+
+Updated: Thu Sep 26 11:51:23 2024
+
+
+[09/26/2024 15:52] ch1ck3n_t4c0s
+Spot results
+
+{Reactions}
+👍
+
+[09/26/2024 15:54] ch1ck3n_t4c0s
+tsp0chicken dry run on kucoin
+ROI: Closed trades
+∙ 960.378 USDT (2.63%) (9.6 Σ%)
+∙ 957.126 USD
+ROI: All trades
+∙ 953.341 USDT (2.29%) (9.53 Σ%)
+∙ 950.113 USD
+Total Trade Count: 146
+Bot started: 2024-09-17 02:03:03
+First Trade opened: a week ago (2024-09-18 20:25:38)
+Latest Trade opened: an hour ago (2024-09-26 14:40:32)
+Win / Loss: 129 / 1
+Winrate: 99.23%
+Expectancy (Ratio): 7.39 (0.18)
+Avg. Duration: 1 day, 0:03:36
+Best Performing: WIF/USDT: 14.84%
+Trading volume: 78311.01 USDT
+Profit factor: 24.62
+Max Drawdown: 0.39% (40.653 USDT)
+    from 2024-09-22 00:26:18 (372.718 USDT)
+    to 2024-09-22 05:52:29 (332.065 USDT)
+
+
+[09/26/2024 16:50] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288905521868312680/image.png?ex=69f3884f&is=69f236cf&hm=b2348b67ca6ecbbec8e21fe82ee5453a57312a1397c258cd21f9dba36dcb2521&
+
+
+[09/26/2024 16:50] sera131
+above is hafbm with spread; very clean atm
+
+
+[09/26/2024 16:51] sera131
+the below has died due to not allowing stoploss exits, killing the strategy ultimetely:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288905873694916670/image.png?ex=69f388a3&is=69f23723&hm=be16deb65b2c3b6c0ae2de58879c8094fdd538e83475fed611f78a5cf12f5fb4&
+
+
+[09/26/2024 16:52] sera131
+yet again, reaching 50% profit in 24hours is crazy good; trend changes are not handled well
+
+
+[09/26/2024 16:53] giovannimauro
+ROI: Closed trades
+∙ 612.958 USDT (16.38%) (61.3 Σ%)
+∙ 612.604 USD
+ROI: All trades
+∙ 612.958 USDT (16.38%) (61.3 Σ%)
+∙ 612.604 USD
+Total Trade Count: 16
+Bot started: 2024-09-24 11:06:42
+First Trade opened: 2 days ago (2024-09-24 11:10:27)
+Latest Trade opened: an hour ago (2024-09-26 15:05:24)
+Win / Loss: 16 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 38.31 (100.00)
+Avg. Duration: 9:14:36
+Best Performing: REEF/USDT:USDT: 46.70%
+Trading volume: 80650.433 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from  (0 USDT)
+    to  (0 USDT)
+
+
+[09/26/2024 16:53] giovannimauro
+This Is mine with spread long only.
+
+
+[09/26/2024 16:54] sera131
+WHOAAA
+
+
+[09/26/2024 16:54] sera131
+you beat me xD
+
+
+[09/26/2024 16:54] .7thdragon
+overall is not ok for futures
+
+
+[09/26/2024 17:00] sera131
+details ?
+
+
+[09/26/2024 17:05] andreis9311
+😁 😁 😁 😁
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1288909284591009792/image.png?ex=69f38bd0&is=69f23a50&hm=ee262f0ea5b8f516deeb6a23fbc1f5ef4db52e726fb1f43fe17e309a5e2ac5a9&
+
+
+[09/26/2024 17:07] sera131
+there is still a lot of work to be done to it
+
+
+[09/26/2024 17:08] sera131
+@AndreiS are you having a fixed pairlist or volume? because what the hell is W/USDT? :))
+
+
+[09/26/2024 17:08] andreis9311
+it's wormhole 🙂 Mcap 781,582,166, volume 91,858,260 🙂
+
+
+[09/26/2024 17:09] sera131
+fixed pair list?
+
+
+[09/26/2024 17:10] andreis9311
+With filters 
+`    {
+      "method": "StaticPairList",
+      "number_assets": 80,
+      "sort_key": "quoteVolume",
+      "min_value": 5000000,
+      "refresh_period": 300
+    },
+    {
+      "method": "PerformanceFilter",
+      "minutes": 720,
+      "min_profit": -0.03
+    },
+    {
+      "method": "AgeFilter",
+      "min_days_listed": 14
+    },
+    {
+      "method": "RangeStabilityFilter",
+      "lookback_days": 3,
+      "min_rate_of_change": 0.03,
+      "refresh_period": 1800
+    },
+    {
+      "method": "VolatilityFilter",
+      "lookback_days": 3,
+      "min_volatility": 0.02,
+      "max_volatility": 0.75,
+      "refresh_period": 43200
+    },
+    {
+      "method": "ShuffleFilter"
+    }
+`
+
+{Reactions}
+👍
+
+[09/26/2024 17:30] giovannimauro
+It isnt the First time you Say this. Can you help us to understand the reason why you Say that??? We all know its not ready, but from my point of view, Is a very promising strat. 
+
+It could be Amazing to know your thoughts. 
+Thanx 😃
+
+
+[09/26/2024 17:37] .7thdragon
+Because everybody posts their super profit graphs but not other indepths analysis, induce false impression to readers, mostly new readers
+You also say that is promising start from... the start 😄
+In rest i personally also try different approaches and fixes but all is going down, slow testing, a lot of snippets (some from this forum) have errors. I do not have yet a direction path.
+And yes is the most interesting strategy applicable to all markets, love it
+
+{Reactions}
+👍 (3)
+
+[09/26/2024 17:54] giovannimauro
+Thank you! 
+Yes, Is a young strat and Need more testing and Dev... But I likes It 😃
+
+
+[09/26/2024 18:10] serialkiller15
+It's a fine good strategy but also we have to focus on 2 strategies max because many improvements github will be update... I will work in enprovments of my strategys also this one here
+
+
+[09/26/2024 18:35] serialkiller15
+And also we should think about male these groups only vor beta tester group... When finished make a channel for it what do you think about it
+
+
+[09/26/2024 18:52] sera131
+If we focus on alexai and hafbm for start is a very good way of doing. We have some other I'm researching on that are promising but better one at a time.
+
+I did mention it before, to keep people hyped, as there is a lot of work to do and we all contribute some way
+
+{Reactions}
+👍
+
+[09/26/2024 18:53] sera131
+It would be good to restrict this for new testers so that we focus testing on alexai first, since this was the main purpose I guess for the discord.
+
+
+[09/26/2024 18:57] serialkiller15
+Will fix that tomorrow an make this to groups for beta tester only
+
+{Reactions}
+❤️
+
+[09/26/2024 19:04] serialkiller15
+Have done it now only beta tester here
+
+{Reactions}
+👍
+
+[09/26/2024 19:15] ch1ck3n_t4c0s
+Tonight I will NOT pass out in my chair and get to my desk. Lol
+
+{Reactions}
+🥱 (2) 🤣 (2)
+
+[09/26/2024 20:30] sera131
+tonight i actually will go to sleep before 5:00 AM
+
+{Reactions}
+🤣 (4) 👻
+
+[09/26/2024 20:30] serialkiller15
+Good idea
+
+{Reactions}
+🍻 (4)
+
+[09/27/2024 16:00] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1289255245888880651/image.png?ex=69f37c83&is=69f22b03&hm=d61102905e4f6b64b235cbec120ba44fb1c13d8bd836469afd97194cf6400d48&
+
+{Reactions}
+🇱 🇫 🇬 🤟
+
+[09/28/2024 08:01] andreis9311
+Hey @upSera could you send please the latest version with fixes. Thanks!
+
+
+[09/28/2024 08:29] laupapp
+Something weird with this last long .... Any idea ?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1289504233133047819/image.png?ex=69f312e7&is=69f1c167&hm=f5007c15a88d367c20334729c4b2265ed35f042141b23a5aed8b69d504690f68&
+
+
+[09/28/2024 08:38] ximontan
+check log for BNX records like gerp, and may be there some records with errors to close it by stoploss...
+
+
+[09/28/2024 08:39] ximontan
+and back test it only for bnx, and is it reproduce this issue?
+
+
+[09/28/2024 08:41] laupapp
+in logs :
+`2024-09-28 10:39:37 INFO    freqtrade.wallets - Wallets synced.
+
+2024-09-28 10:39:37 INFO    haFbmVVRPlev - BNX/USDT:USDT trailing stop price is below 0
+
+2024-09-28 10:39:37 INFO    freqtrade.freqtradebot - User denied exit for BNX/USDT:USDT.
+
+2024-09-28 10:39:40 INFO    freqtrade.freqtradebot - Exit for XMR/USDT:USDT detected. Reason: trailing_stop_loss
+
+2024-09-28 10:39:41 INFO    freqtrade.wallets - Wallets synced.
+
+2024-09-28 10:39:41 INFO    haFbmVVRPlev - XMR/USDT:USDT trailing stop price is below 0
+
+2024-09-28 10:39:41 INFO    freqtrade.freqtradebot - User denied exit for XMR/USDT:USDT.
+
+2024-09-28 10:39:41 INFO    freqtrade.freqtradebot - Exit for BNX/USDT:USDT detected. Reason: trailing_stop_loss`
+
+
+[09/28/2024 09:05] ximontan
+do you see by code **trailing stop price is below 0**, it means it try exit try confirm_trade_exit but failed by **User denied exit for**, never see this before...
+try google it or someone know how to fix it
+
+
+[09/28/2024 09:22] serialkiller15
+I got this some times..
+
+
+[09/28/2024 09:27] giovannimauro
+Yes, confirm trade exit block exits in many situations. 
+Is a good thing if the strategy work good. It avoid to exit many potentially winning positions.
+
+{Reactions}
+💯
+
+[09/28/2024 09:27] giovannimauro
+But It can be also a bad thing if the strategy Is not good
+
+
+[09/28/2024 11:12] sera131
+this is normal if its < 0
+
+
+[09/28/2024 11:13] sera131
+there are 2 things that need to be added tho.
+
+
+[09/28/2024 11:13] sera131
+a custom exit with the fixed stoploss
+
+
+[09/28/2024 11:14] sera131
+and the version for it in confirm trade exit
+
+
+[09/28/2024 11:14] sera131
+i'm too hangover now and will go back to sleep
+
+
+[09/28/2024 13:23] .7thdragon
+this because FT will not allow to exit trade on trailing
+thats why you are "tricked" by super results
+@upSera provided a fix as the confirm_trade_exit is a copy paste from FT oldies to preserve trades and using hard conditions to not exit
+@Laurent D. u could remove confirm_trade_exit completly or put everywhere True
+
+{Reactions}
+👍
+
+[09/28/2024 15:41] ch1ck3n_t4c0s
+This is a spot protection and will need removed for leverage
+
+{Reactions}
+👌
+
+[09/28/2024 15:47] .7thdragon
+this old problem is that (for me at least is ambiguous since FT changed a lot of thing): why replaces trade.exit_reason to trailing when the trade has stoploss attribute already set 🤔 
+seen also this issue on more advanced/complex profiles like NFIX4 an NFIX5
+
+
+[09/28/2024 15:49] ximontan
+agree, one of the reason is trailing_stop_loss (like https://www.freqtrade.io/en/stable/strategy-callbacks/#trade-exit-sell-order-confirmation), 
+and in this strategy I didn't found trailing stop loss
+
+
+[09/29/2024 10:06] sera131
+For the period of dry testing done for Hafbm, the backtesting I've performed is 95-99% accurate.
+
+
+[09/29/2024 10:07] sera131
+the long version only, is losing compared to longs and shorts; gonna run a long hyperopt, 100k epochs maybe 😄
+
+
+[09/29/2024 10:08] sera131
+spread version is winning compared to nospread, although spread is not hyperoptable and I still don't know why
+
+
+[09/29/2024 10:44] ximontan
+you mean this version **haFbmVVRPlev_ST  **(where dataframe.loc[full_send8, 'enter_short'] = 0)? b/c I confused with a lot of different versions...
+
+
+[09/29/2024 10:50] ximontan
+I start compare haFbm and haFbmVVRP, create excel, optimize it by 3k epochs +/-, and haFbmVVRP now looks better
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1289902128479080478/image.png?ex=69f333f8&is=69f1e278&hm=11f0b8ce7bae5cac711e9330c39c286159f583153c267ed3a470398db8144d6f&
+
+
+[09/29/2024 10:53] .7thdragon
+only in dry (or even in live) you can see the real results, enters exits stoploss and protections, backtests are only an indicator, the results are deceiving
+
+
+[09/29/2024 11:01] ximontan
+in dry it's both good, by optimizing I try understand what range for optimizing would be better, like optimize it for strong down trend or optimize it for range...
+I afraid situation when everything is ok, then market go down, and bot wouldn't be ready for this.
+does it make any sens?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1289904842671788132/image.png?ex=69f3367f&is=69f1e4ff&hm=e2ecb70702b3c26a9f42d81c87a118e27ca8694de9b5fa791aa1776bc9df80eb&
+https://cdn.discordapp.com/attachments/1288418348400508938/1289904842919247915/image.png?ex=69f3367f&is=69f1e4ff&hm=67f6b2690c6a7797c73122a36d69a937585f18267553e6fb41cfbc918607a9cd&
+
+{Reactions}
+👍
+
+[09/29/2024 11:19] ch1ck3n_t4c0s
+Yes both need protections optimized....
+
+Is there a kucoin futures for ccxt... just wonder any way I could dry run to try so I can debug better.
+
+
+[09/29/2024 11:20] .7thdragon
+so is ok for spot, for current bullish market, and if u are pleased with the exits
+for futures my tests are going in the head, not found yet proper sustainable exits 🙂 (balanced shorts)
+
+{Reactions}
+👍
+
+[09/29/2024 11:21] ch1ck3n_t4c0s
+Spread is only current candle and not available in historical data. You could spoof it with open close price maybe
+
+{Reactions}
+👍 (2)
+
+[09/29/2024 11:27] anonymuis
+You could create a strategy for all three:
+First, define (by using indicators) if the current market is bull, bear or range based. You can give these ratings, like 1-10.
+
+Then create your strategy, but use 3 different weights for each indicator: a certain indicator can be very valuable in a range trade, but not when trading up or down.
+
+Then, calculate the results like this:
+(Value for current trend bull) * ( (SignalX * (bull weight of signalX)) + (same for signal Y) + (etc)) +
+( (value for current trend range) * (SignalX*(range weight of signal Y) etc...
+
+It's a lot of work, but makes it the most flexible in different situations.
+
+{Reactions}
+👍 (3)
+
+[09/29/2024 11:32] ximontan
+it's only for spot
+
+
+[09/29/2024 11:53] anonymuis
+Sure, but spot has bull and range too. For bear you could have a strategy to sell on a small up, or DCA or something.
+I've done it before with mega results on dry run. But didn't have time to complete it.
+
+
+[09/29/2024 12:02] sera131
+do you have code example to share?
+
+{Reactions}
+🔥
+
+[09/29/2024 12:02] sera131
+we can get inspired from it
+
+
+[09/29/2024 12:03] anonymuis
+Have to dig it up from years ago, so will take some time. But I'll see what I can do.
+
+{Reactions}
+👍 (3)
+
+[09/29/2024 18:25] branly76
+For the haFbmVVRPlev_Spread_T i did a hyper-opt over july, august and september.
+Run now dry, with max 5 trades, stake of 25usdt per trade and 30 bybit coins.
+Every week i will do a new hyper-opt over the last 3 months and keep track of the settings and result.
+Will post the results week by week.
+
+Thinking also about a test with hyper-opt over the last 6 months.
+
+
+[09/29/2024 20:31] ximontan
+Are you hyper otp all spaces **buy sell trades protection stoploss**? And how many epochs you did?
+
+
+[09/29/2024 20:32] branly76
+Epoch only 250. epoch 232 was the last one. Spaces buy + stoploss. This strat does not sells.
+
+{Reactions}
+👍
+
+[09/29/2024 20:34] branly76
+I also want to do some with more epochs, Did some but had not the feeling that the parameters differs much. First i want let say a stable version, with data over weeks. Then there is a base to improve.
+
+
+[09/29/2024 20:36] branly76
+A good strategy takes time, 2 months good results is fine. But you need over a much longer time.
+
+
+[09/30/2024 07:15] andreis9311
+Hey all! Can somebody share the haFbmVVRPlev_Spread_T version with fixes? Thanks!
+
+
+[09/30/2024 07:36] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1290215764703445022/haFbmVVRPlev_Spread_T.py?ex=69f30691&is=69f1b511&hm=a726d40f52372f76f84977bf6772125c30ad7b9f5cef9b5223437af040326e99&
+
+{Reactions}
+🤟 (4)
+
+[09/30/2024 11:27] giovannimauro
+ROI: Closed trades
+∙ 913.194 USDT (14.02%) (91.32 Σ%)
+∙ 912.81 USD
+ROI: All trades
+∙ 461.025 USDT (7.61%) (46.1 Σ%)
+∙ 460.831 USD
+Total Trade Count: 30
+Bot started: 2024-09-24 11:06:42
+First Trade opened: 6 days ago (2024-09-24 11:10:27)
+Latest Trade opened: an hour ago (2024-09-30 09:33:37)
+Win / Loss: 24 / 1
+Winrate: 96.00%
+Expectancy (Ratio): 36.53 (32.96)
+Avg. Duration: 11:28:51
+Best Performing: REEF/USDT:USDT: 46.70%
+Trading volume: 164776.758 USDT
+Profit factor: 824.94
+Max Drawdown: 0.07% (1.108 USDT)
+    from 2024-09-26 23:50:26 (703.314 USDT)
+    to 2024-09-27 01:45:51 (702.206 USDT)
+
+Always more in love with @Ch1cK3N_t4c0s strat!!! 
+
+As you can see I stopped to make profits in the weekend and big drawdown. 
+If the market had dropped a little more this weekend, I might have taken some liquidations, that's not good. 
+
+BUT!!!
+
+Considering the "only long" direction allowed by  me, the results are impressive yet. I'm alwayss over 0!!!!
+
+With some good short entries, the losses would have been smaller, as some long positions would have been replaced by short positions, perhaps winning ones... so I can almost think that I would have come out of the weekend in profit.
+
+But with imagination we don't go far.
+I look forward to the new version, which I am sure will take into account similar situations
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1290273696996655104/image.png?ex=69f33c85&is=69f1eb05&hm=0a6d4bc17cfbb432de2bd1f021ffe732e85b72908844c75a0799c79e67034d20&
+
+{Reactions}
+👍 (2)
+
+[09/30/2024 11:39] laupapp
+and i think you have problems with your exit already announced here : https://discord.com/channels/1238181199206154373/1288418348400508938/1289578112895680565
+
+
+[09/30/2024 11:44] .7thdragon
+yes, everybody needs to check logs also, not only hyperopts bt and graphs 🙂
+btw could be real problems also between dry and live, because of FT or ccxt
+
+
+[09/30/2024 11:45] giovannimauro
+I know. But i think we can find better way to manage loosing trades
+
+
+[09/30/2024 11:46] giovannimauro
+waiting for new features.... and see how it goes with new fixes
+
+
+[09/30/2024 11:49] .7thdragon
+i am not a fan of dca adjustements for daily trades, the real fix would be for checking support for longs and resistance for shorts, else exit
+
+
+[09/30/2024 12:02] giovannimauro
+this strategy don't make DCA
+
+
+[09/30/2024 12:02] giovannimauro
+the  futures version
+
+
+[09/30/2024 12:06] .7thdragon
+the code for adjusting by means is there, maybe some has enabled it:
+`    ### Custom Functions ###
+    def adjust_trade_position(self, trade: Trade, current_time: datetime,
+                              current_rate: float, current_profit: float,
+                              min_stake: Optional[float], max_stake: float,
+                              current_entry_rate: float, current_exit_rate: float,
+                              current_entry_profit: float, current_exit_profit: float,
+                              **kwargs) -> Optional[float]:`
+
+
+[09/30/2024 12:08] ximontan
+but as I understand we return negative value it means get first tp and second...
+
+
+[09/30/2024 12:18] .7thdragon
+https://www.freqtrade.io/en/stable/strategy-callbacks/#adjust-trade-position
+`adjust_trade_position() is called very frequently for the duration of a trade, so you must keep your implementation as performant as possible.`
+and i doubt that move_means reflect the fib lines
+`        if current_profit > (TP3 * 2.0) and trade.nr_of_successful_exits == 3:
+            # Take half of the profit at last fib%
+            return -(trade.stake_amount / 4)`
+but i could be wrong and not seen the hole picture
+
+
+[09/30/2024 12:30] .7thdragon
+yes you have right sorry, not dca, is only reduce, still i do not like adjustments in general (exceptions and conditions) as it generates a lot of trouble in FT
+
+
+[09/30/2024 12:45] ch1ck3n_t4c0s
+No dca in the leverage version
+
+{Reactions}
+👍
+
+[09/30/2024 12:52] ch1ck3n_t4c0s
+The move indicator uses the rolling  1/4  harmonic absolute peak to peak movement as the oscillator. We use the mean of the 1/4, 1/3, 1/2, and dominant cycle rolling move oscillators for trailing stops, stop losses, and roi. We are using historical data to calculate stoploss. It adjusts with volatility automatically and is individualized per pair.
+
+
+[09/30/2024 12:53] ch1ck3n_t4c0s
+It is a hard take profit point.
+
+
+[09/30/2024 12:57] .7thdragon
+yes i get it now, but is not fib as in comments 🙂
+anyway if this is the intent the max_entry_position_adjustment should be also take in consideration in space optimization or hard intended value (if bigger than default -1)
+
+
+[09/30/2024 12:58] ch1ck3n_t4c0s
+I think the comment was when I used to use fib multipliers for its calculation.
+
+{Reactions}
+👍
+
+[09/30/2024 12:58] ch1ck3n_t4c0s
+It's just a left over from ctrl+v
+
+{Reactions}
+🤣
+
+[09/30/2024 13:00] ch1ck3n_t4c0s
+Happens🤣
+
+
+[09/30/2024 13:01] .7thdragon
+Yes happens no worries ! But i readed the code more carefuly 😉
+What i want to say is that unfortunately those FT adjustments might not reflect the bt or hyper as we are seen it them as the results :(, only in dry or live
+
+
+[09/30/2024 14:28] branly76
+Did hyper-opt over 6 months data and 1000 epochs. It looks like the longer the period, the quicker a best set of parameters is found. Which sound logical to me. It took about 4 hours to run. This is for spot.
+
+{Reactions}
+👍 (3)
+
+[09/30/2024 14:28] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1290319426801111156/image.png?ex=69f3671c&is=69f2159c&hm=c6dc9dd5ce485551bb156e8f6616c278dd22b70dea98029c3ab5d79d115f2e94&
+
+{Reactions}
+👍 (2)
+
+[09/30/2024 15:12] .7thdragon
+i am curious then, do a hyperopt from march to august, and backtest of september
+then do a hyper only of august, and bt september,
+what will be bigger in gain?
+i bet last one ;), ftt is changed
+
+{Reactions}
+👍
+
+[09/30/2024 15:16] branly76
+I did from april to end september. No back test. I did in the weekend a hyper-opt over july and august and got very good result for backtest september. If september has the same market scenario as july and august, it sounds very logical. But no problem i can do this test. march-july for hyper and backtest august and/or september. OK, the hyper takes some time.
+
+
+[09/30/2024 15:17] branly76
+In a 6 months hyper you probably have bull, bear and ranging market. Probably less gain as in a shorter period, but also less DD.
+
+
+[09/30/2024 15:30] branly76
+If september has same market behaviour as august, only august hyper should be better, if september has different behaviour then august, the 6 months hyper should be be better. But time will tell us. It is for spot.
+
+
+[09/30/2024 15:36] amiralbhar
+Hello all,
+I would like to share an approach to hyperoptimize individual trading pairs while using the same strategy. Hyperoptimizing by pair makes sense to me because each crypto has its own specific patterns and behavior. After selecting a large number of pairs, I implemented a script to loop through and hyperoptimize each pair one by one. The results are then concatenated into a single JSON file, which can be directly integrated into the strategy file customized for this purpose.
+
+Advantages:
+- Hyperopt is faster (quick convergance)
+- No pairs are excluded due to their differences from the rest of the group.
+- There's no need to run multiple strategies per hyperopted pair.
+
+Points to Consider:
+- Similar to AI, overfitting can occur when using a short time range or certain loss functions.
+- The same time period is applied to all pairs.
+- May be select only some parameters to be optimized to avoid overfitting
+
+Improvements:
+- Automatically selecting the most representative time periods.
+
+For now, I’ve used the following parameters:
+--timerange=20240701-20240901 and --hyperopt-loss SharpeHyperOptLossDaily. My initial experiments show that entries are more delayed, as it waits for a better level to be reached. Backtesting the hyperopt period has shown an improved ROI x2.
+
+To make it easy to use, I have a python file to run with arguments
+
+
+[09/30/2024 15:37] amiralbhar
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1290336779597119669/image.png?ex=69f37745&is=69f225c5&hm=2a753b756fad85cc5306b590c66ba8eeed4b084ef88c7337d7464e076b4f4fa3&
+
+{Reactions}
+💯
+
+[09/30/2024 15:38] serialkiller15
+thats nice stuff mate! thanks for sharing!
+
+
+[09/30/2024 15:39] .7thdragon
+something is wrong, losers cannot be 3 weeks
+
+
+[09/30/2024 15:39] bigbroseur
+Good idea, but it doesn't show the tested pair
+
+
+[09/30/2024 15:39] ch1ck3n_t4c0s
+The strategy is primarily designed to be mostly self optimizing except for a few things such as entry and exit usage.
+
+
+[09/30/2024 15:40] ch1ck3n_t4c0s
+Additionally as I posted since the current design of the VRVP doesn't roll in backtesting testing much longer than 10 days straight is a waist of time.
+
+{Reactions}
+👍 💯 (2)
+
+[09/30/2024 15:42] amiralbhar
+What would be the reason ?
+
+{Reactions}
+☝️
+
+[09/30/2024 15:44] amiralbhar
+Well for now i'm just sharing the tool, don't know yet if it's relevant but good to have your opinions
+
+
+[09/30/2024 15:45] branly76
+Does this also mean that hyper-opt longer then 10 days is a waist?
+
+
+[09/30/2024 15:46] .7thdragon
+yes, it gives you an idea, but is not in reality accurate even closer
+
+
+[09/30/2024 15:49] ch1ck3n_t4c0s
+Correct.... you can do it in segments of 7-10 days if you want  or whatever the visible range of time is for your exchnage.
+
+
+[09/30/2024 15:50] ch1ck3n_t4c0s
+I'm working on refactoring the function to roll but not done yet.
+
+
+[09/30/2024 15:52] amiralbhar
+run_hyperopt_pp.py -h
+usage: run_hyperopt_pp.py [-h] --config CONFIG --output-dir OUTPUT_DIR --docker-command DOCKER_COMMAND
+example : python run_hyperopt_pp.py --config user_data/config.json --output-dir hyperopt_results/custom_folder --docker-command "docker compose -f docker-compose.yml run --rm freqtrade hyperopt --config user_data/config.json --strategy haFbmVVRPlev_pp --hyperopt-loss SortinoHyperOptLoss --timeframe 5m --spaces buy sell protection -e 400 --timerange=20240701-20240915" (note: After running the hyperopt, you need to uncomment the line 3438 (pairs = ["CRYPTO/USDT"]) . For any futher information let me know for thus who want to try it.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1290340565279572080/run_hyperopt_pp.py?ex=69f37acc&is=69f2294c&hm=f9888a876b55251fdc6dc818580fb2d4f909ee83ea5aec66703a32e63039e7db&
+https://cdn.discordapp.com/attachments/1288418348400508938/1290340565627568211/haFbmVVRPlev_pp.py?ex=69f37acc&is=69f2294c&hm=b89ed99db7aa6d76fd238675e390b72166bc32c60b52efb50b2622fef39f7562&
+
+{Reactions}
+👍
+
+[09/30/2024 19:54] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1290401486064324660/7thDragon_bt_20240930.txt?ex=69f30ac8&is=69f1b948&hm=0f5eb4dfe664a94580e10653770cde029ec1f5e39f22a7305652d7e28ac62948&
+
+
+[09/30/2024 20:05] .7thdragon
+Veeery interesting, really, i lost the bet 🙂 but i still think in reality will be totally opposite
+Thanks for trying out!
+
+
+[09/30/2024 20:18] branly76
+If i do a hyper over the month august and let suppose it is bearish i have the optimal settings for a bearish market situation. Now i back test for September, but September is bullish. I think for sure I do not have the best settings then. So the result does not has to be good. If I hyper-opt over a long period like 6 months, the settings are based on bullish, bearish and ranging. Probably not optimal for one of the 3 scenarios. So i have always some thoughts if i do hyper-opt over a short period and the output of back testing. Crypto market is so heavily manipulated. Today sun, tomorrow heavy rain.
+
+
+[10/01/2024 17:32] ximontan
+Today update config and upload to strategy (haFbmVVRPlev_ST), and delete old data, and half of the day have this warning. Ping to bybit good. 
+Does anybody stuck with this issue?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1290727947115958363/image.png?ex=69f39213&is=69f24093&hm=645405fd087fc4a82a9261afa14a63f05c925129b611bc701a26ce3495a5b6e0&
+
+
+[10/01/2024 17:36] serialkiller15
+Hey i was on a business trip was not abke to take a look on my bots
+
+
+[10/01/2024 18:10] branly76
+Had the same, change the spread calculation back to previous/original.
+
+
+[10/01/2024 18:38] branly76
+The check_entry_pause, if true the code below is not executed. So the entry_long column and some others are not created. The check_entry_pause uses the spread.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1290744696599089192/image.png?ex=69f2f8ec&is=69f1a76c&hm=b446e823f34d2f0fd356f532d157d3effa1ee53aefe611e55e69cbe0e1914fb0&
+
+{Reactions}
+👍
+
+[10/01/2024 18:41] .7thdragon
+Which one was the original? 🙂
+
+
+[10/01/2024 18:53] branly76
+The first giovanni posted.
+
+
+[10/01/2024 18:54] branly76
+Must be around 24/25 september.
+
+{Reactions}
+😀
+
+[10/01/2024 19:06] ximontan
+thanks! I should use my mind, I'm not carefully look in to the code
+
+
+[10/01/2024 19:16] .7thdragon
+this one, watching btc?
+`        if metadata['pair'] == 'BTC/USDT:USDT':
+            # Fetch bid and ask for the current pair (default to BTC/USDT)
+            bid, ask = self.get_bid_ask(metadata['pair'])
+        
+            # Calcolo spread e salvo sulla variabile spread
+            if bid is not None and ask is not None:
+                self.spread = (ask - bid) / ask * 100
+            else:
+                self.spread = 0.00015
+
+        dataframe['spread'] = self.spread `
+
+
+[10/01/2024 19:27] ximontan
+why not fill column spread in **populate_indicators**, 
+may be better not fill column, but just get ask/bid in **populate_entry_trend **and call **check_entry_pause** there, anyway we have only one value after all...
+
+{Reactions}
+👍
+
+[10/01/2024 19:28] ximontan
+I didn't find it too...
+
+{Reactions}
+☝️
+
+[10/01/2024 19:28] branly76
+This condition determines if the columns enter_long, etc are created.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1290757279695507496/image.png?ex=69f304a4&is=69f1b324&hm=c0d16dc3f0419a2754e868c296edea30be77fd34db9f84cec38a9baad01c6752&
+
+
+[10/01/2024 19:28] .7thdragon
+i use it this way of course
+i do not have trades today (just now longs), no errors, but i do not find the message pause 🙂
+
+{Reactions}
+👍
+
+[10/01/2024 19:30] branly76
+Maybe better if we put this condition in thefull_sendx calculation, then always the columns will be created.
+
+
+[10/01/2024 19:31] ximontan
+more column, it works more slowly, we just have one value and we can pass it to check_entry_pause
+
+
+[10/01/2024 19:32] branly76
+But these columns are needed for checking to open/close a trade, there is the message coming from.
+
+
+[10/01/2024 19:34] ximontan
+you are right, but in this case we can additionally ask for spread, b/c time go forward and spread can be changed compare when we call populate_indicators
+
+
+[10/01/2024 19:39] branly76
+You can anyway, brcause the spread is in the dataframe. Check the populate_indicators
+
+
+[10/01/2024 19:39] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1290759979674112102/image.png?ex=69f30728&is=69f1b5a8&hm=b1f2675eb5d59fcc73decf1ab77ca284767919788de36f8ac232e2fc15951ed9&
+
+
+[10/01/2024 19:51] .7thdragon
+on 5m is ok, >=15m might not
+
+
+[10/02/2024 07:49] andreis9311
+15m timeframe haFbmVVRPlev (futures) handling dip better than 5m
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1290943809353678879/image.png?ex=69f3099c&is=69f1b81c&hm=50f2693f5e1ada1ced7c8b911202e246d75dad7272ed52826534585e30b477a9&
+
+{Reactions}
+👍 (2) 🧐
+
+[10/02/2024 07:50] andreis9311
+5m timeframe haFbmVVRPlev
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1290943883810963510/image.png?ex=69f309ae&is=69f1b82e&hm=7e7cce719842fb407468470652b7c93b69dcf3baa310bf95f97963fa5a1ae124&
+
+
+[10/02/2024 08:45] .7thdragon
+Nice comparison, but maybe 1h is better 🙂 And so on, depending on cycles, profit rate and dip level 🙂
+
+{Reactions}
+👍
+
+[10/02/2024 08:45] andreis9311
+Haha, then we go to the 1-day timeframe and beyond=))) But good suggestion. I will try to make it right now. Will see how it goes and report in 1 week
+
+{Reactions}
+👍 (3)
+
+[10/02/2024 09:23] .7thdragon
+btw I discovered this way a better approach for opening orders, to have a balance between longs and shorts, meaning not overcome half of the max_open_trades 😉 even if in silent market the gain will be lower
+
+
+[10/02/2024 09:24] andreis9311
+You mean 1h timeframe?
+
+
+[10/02/2024 09:24] branly76
+Structural gain is the only good gain.
+
+
+[10/02/2024 09:25] branly76
+Other gain is the delution of the day.
+
+{Reactions}
+👍
+
+[10/02/2024 09:25] .7thdragon
+Structural loss is inevitable 🙂
+
+
+[10/02/2024 09:26] bigbroseur
+Is it possible to handle it with a multiple Time frame and shift to the best one in real time
+
+{Reactions}
+🤔 (2)
+
+[10/02/2024 09:28] andreis9311
+FT does not allow this. You can only use an informative timeframe that is larger than the main timeframe.
+
+
+[10/02/2024 09:30] branly76
+How do you know what is the best time frame. You trade only one. The other ones virtually ? And when to switch. I think a challenge for life. 😉
+
+{Reactions}
+💪
+
+[10/02/2024 09:36] amiralbhar
+Is needed to hyperopt again for the new timeframe ?
+
+{Reactions}
+🤣 (2) 👍
+
+[10/02/2024 09:37] andreis9311
+The one thing that really annoys me is 
+
+`2024-10-02 09:34:58,922 - freqtrade.strategy.interface - WARNING - Outdated history for pair TRX/USDT:USDT. Last tick is 49 minutes old`
+
+I don't understand how to solve it. I don't use Docker, no proxy. OKX API works well. UTC time on the server, etc. Maybe someone faced this before?
+
+
+[10/02/2024 09:37] andreis9311
+Of course
+
+
+[10/02/2024 09:38] .7thdragon
+you cannot handle the whole process, lower the pairs used
+if of course all the data is retrieved in time and and had no network glitch
+
+{Reactions}
+🤟
+
+[10/02/2024 09:43] branly76
+In the past i used Bitvavo as exchange (this one is allowed in the Netherlands, now are more). Got this very frequently, mainly in the late hours. Had never more then 20 instruments. My conclusion was sometimes for certain instruments no new data.
+
+
+[10/02/2024 09:43] andreis9311
+Thanks, I will try like 20 pairs
+
+
+[10/02/2024 09:44] branly76
+Not sure if the number 20 is holy, but anyway less instruments
+
+
+[10/02/2024 09:49] .7thdragon
+also look for processing time message which shows if overcomes 25% or 75% of the timeframe
+
+
+[10/02/2024 10:24] .7thdragon
+I do not know how to do this without hyper each tf :(, i mean complicates things a lot
+
+
+[10/02/2024 10:33] bigbroseur
+Yes, using information time frame to enable mt  and several virtual wallet, each for one tf. One of them, wallet/tf is live, other are dry but when cycle change then target the best wallet/tf profitable and switch to as live and put others as dry
+
+
+[10/02/2024 10:34] bigbroseur
+Principle is to switch from 1 wallet/tf to another
+
+
+[10/02/2024 10:35] bigbroseur
+and so on
+
+
+[10/02/2024 10:42] branly76
+The criteria for switching to another TF is very difficult. You look back for a while and then you have to decide on several parameters. Crypto is so volatile. I compare it if you are in a traffic jam and switch lanes, you are always in the wrong one.
+
+
+[10/02/2024 10:43] bigbroseur
+Virtual wallet tells you
+
+
+[10/02/2024 10:44] branly76
+The virtual tells you about the past.
+
+
+[10/02/2024 10:44] branly76
+I'm not against your idea.
+
+
+[10/02/2024 10:44] bigbroseur
+Yes good point but like any other
+
+
+[10/02/2024 10:44] bigbroseur
+I knpw
+
+
+[10/02/2024 10:44] bigbroseur
+I knwo
+
+
+[10/02/2024 10:44] branly76
+Yes 100% true.
+
+
+[10/02/2024 10:45] bigbroseur
+I know
+
+
+[10/02/2024 10:47] bigbroseur
+The idea behind is in fact we have to mix different starts and tf and switch on the best performer and performer is tf+strat+opti regarding market condition = bear, bull and nd (not defined)
+
+
+[10/02/2024 10:49] branly76
+Sure, but we never know if it is bear, bull or ranging for what time. If we would know then we do not need bots. It is bull, so we buy, it is bear so we sell. Maybe for ranging we would need.
+
+
+[10/02/2024 10:51] branly76
+Ok, above post is a little black - white.
+
+
+[10/02/2024 10:52] andreis9311
+Oh my, what a sexy start for the 1-hour timeframe. As I mentioned, I will report the results in 1 week. Let's just leave it alone. 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1290989846881501214/image.png?ex=69f3347c&is=69f1e2fc&hm=dd10c99efcbc265a38882d5bb3480f20a62c95bd74bd52066f8bb83786d6f138&
+
+
+[10/02/2024 10:52] bigbroseur
+Not sure, we have probability and stats to help us and have more accurate decision even it wil never 100%
+
+
+[10/02/2024 10:53] bigbroseur
+You are in 1h virtual/tf very good
+
+
+[10/02/2024 10:55] branly76
+If we hyper-opt, optuna or any other lib we need to do over a long time period to my opinion. All possible market scenarios/conditions should be in the time period.
+
+
+[10/02/2024 11:03] ch1ck3n_t4c0s
+I comment that out in the interface.py I believe
+
+
+[10/02/2024 11:06] .7thdragon
+but why? u will have innacurate history data
+
+
+[10/02/2024 11:09] ch1ck3n_t4c0s
+Usually when you have a full deck or on low volume pairs
+
+
+[10/02/2024 17:17] maxgorbachevskiy
+Which version it is? Regular or spread?
+
+
+[10/02/2024 18:31] andreis9311
+Regular.
+
+
+[10/03/2024 08:59] andreis9311
+5m timeframe haFbmVVRPlev futures ( dead )
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1291323635520503890/image.png?ex=69f319da&is=69f1c85a&hm=07e3209b312903330845d152612bc1dde50ca0b949f8f404ff35ddb4310bb5fc&
+
+
+[10/03/2024 08:59] andreis9311
+15m timeframe haFbmVVRPlev futures ( dead too)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1291323684287549460/image.png?ex=69f319e5&is=69f1c865&hm=3526708f16fe836043db91a296227e3954384aa5d80f645fa094b32ad020d8cd&
+
+
+[10/03/2024 08:59] andreis9311
+1h timeframe haFbmVVRPlev just not trading )
+
+
+[10/03/2024 09:03] ximontan
+same, haFbmVVRPlev_ST Futures 5m
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1291324636243431466/image.png?ex=69f31ac8&is=69f1c948&hm=f3049e7af5fd6843bf9fa78344735b695735d3cfcaca154613f9c5c9b77be55e&
+
+
+[10/03/2024 09:04] .7thdragon
+of course, i didnt bother to test it fully as it is as (maybe in your case goes to liquidation not  any stoplosses). the signals are good but needs a different approach for enters and exit protections. the drawdowns needs to be diminished by x10, gains grow by 3x. the hyperopt will not tell you that 🙂
+
+
+[10/03/2024 09:05] andreis9311
+No man, I have hard stoploss. Not liquidation. The problem that it still trying to long when market goes down
+
+
+[10/03/2024 09:07] andreis9311
+It just focuses on the price at the bottom without analyzing current market sentiment, but that's okay. I mean most of the strategies work as is 🙂
+
+{Reactions}
+😀
+
+[10/03/2024 09:12] andreis9311
+In my opinion, it goes against the market trend rather than following it. In the previous week, it mostly performed short trades because the price was at a local top. Now, it mostly goes long because the prices are low.
+
+
+[10/03/2024 09:45] .7thdragon
+So u do not have force exits? U have the confirm_exit always positive?
+
+
+[10/03/2024 09:46] andreis9311
+I have a force exit, which checks if the profit is less than the global stop loss, then we close the position.
+
+
+[10/03/2024 09:47] andreis9311
+i put it to `confirm_trade_exit`
+
+`if current_profit <= self.stoploss:
+            logger.info(f"{trade.pair} hard stoploss triggered at {current_profit:.2%}")
+            return True`
+
+
+[10/03/2024 09:50] andreis9311
+If we are talking about same stuff
+
+
+[10/03/2024 09:50] .7thdragon
+aha ok as the first condition as i mentioned also
+still, depends on the leverage, isolated liquidation could also happen if stoploss is too big causing also force_exit, https://www.freqtrade.io/en/stable/leverage/#understand-liquidation_buffer
+
+
+[10/03/2024 09:54] andreis9311
+I aim to close my positions when they reach a loss of around 25-30%. I've never experienced liquidation, and none of my trades have hit a target loss of -99 or anything similar. Everything has closed exactly at the stop loss target.
+
+{Reactions}
+👍
+
+[10/03/2024 09:56] .7thdragon
+then u use 1x :), for 10x is 3%
+
+
+[10/03/2024 10:44] ch1ck3n_t4c0s
+Dither
+
+
+[10/03/2024 10:50] ch1ck3n_t4c0s
+Dither is a noise-like signal that is added to a digital signal to reduce quantization errors. In other words, dither is a type of noise that is intentionally added to a digital signal to improve its quality.
+
+In digital signal processing, dither is used to reduce the effects of quantization, which is the process of converting a continuous signal into a discrete signal. When a continuous signal is quantized, the resulting discrete signal can suffer from quantization errors, which are small errors that occur when the signal is rounded to the nearest discrete value.
+
+Dither is added to the signal before it is quantized, and it has the effect of reducing the quantization errors. The dither signal is typically a random noise signal that is added to the original signal, and it is designed to be as small as possible while still being effective in reducing the quantization errors.
+
+There are several types of dither, including:
+
+1. **Uniform dither**: This type of dither adds a uniform noise signal to the original signal.
+2. **Non-uniform dither**: This type of dither adds a non-uniform noise signal to the original signal.
+3. **Triangle dither**: This type of dither adds a triangular noise signal to the original signal.
+4. **Sine dither**: This type of dither adds a sine wave noise signal to the original signal.
+
+Dither is commonly used in digital signal processing applications, such as:
+
+1. **Audio processing**: Dither is used to reduce the effects of quantization errors in audio signals, which can improve the overall sound quality.
+
+In the context of the Quinn-Fernandes algorithm, dither is used to reduce the effects of quantization errors in the calculation of the frequency and amplitude of the signal. By adding a small amount of noise to the signal, the algorithm can improve the accuracy of the calculations and reduce the effects of quantization errors.
+
+{Reactions}
+👍 (3)
+
+[10/03/2024 10:54] ch1ck3n_t4c0s
+Hysteresis is a phenomenon where a system's output depends not only on the current input but also on its past history. In other words, a system with hysteresis will remember its previous state and respond differently to the same input depending on its current state.
+
+In the context of the Quinn-Fernandes algorithm, hysteresis is used to prevent the algorithm from oscillating between two states. For example, if the algorithm is trying to determine whether the signal is increasing or decreasing, it may oscillate between these two states if the signal is changing rapidly. By introducing hysteresis, the algorithm can prevent this oscillation and provide a more stable output.
+
+There are several types of hysteresis, including:
+
+1. **Positive hysteresis**: This type of hysteresis causes the system to respond more strongly to an increase in input than to a decrease.
+2. **Negative hysteresis**: This type of hysteresis causes the system to respond more strongly to a decrease in input than to an increase.
+3. **Asymmetric hysteresis**: This type of hysteresis causes the system to respond differently to increases and decreases in input.
+4. **Symmetric hysteresis**: This type of hysteresis causes the system to respond equally to increases and decreases in input.
+
+In the context of the Quinn-Fernandes algorithm, hysteresis is used to prevent the algorithm from oscillating between two states. For example, if the algorithm is trying to determine whether the signal is increasing or decreasing, it may use a positive hysteresis to respond more strongly to an increase in input than to a decrease.
+
+In this example, the hysteresis function is used to calculate the hysteresis value based on the output of the algorithm. The hysteresis value is then used to determine the final output of the algorithm.
+
+Note that the implementation of hysteresis in the Quinn-Fernandes algorithm will depend on the specific requirements of the algorithm and the problem being solved.
+
+
+[10/03/2024 10:54] ch1ck3n_t4c0s
+# Define the hysteresis function
+def hysteresis(x, hysteresis_threshold):
+    if x > hysteresis_threshold:
+        return 1
+    elif x < -hysteresis_threshold:
+        return -1
+    else:
+        return 0
+
+# Define the Quinn-Fernandes algorithm function
+def quinn_fernandes_algorithm(src, nharm, frqtol):
+    # ...
+    # Calculate the hysteresis value
+    hysteresis_value = hysteresis(out, 0.1)
+    # ...
+
+
+[10/03/2024 10:56] ch1ck3n_t4c0s
+Basically we have good noise and bad noise in signals. We have to filter the bad and add the good, but which ones do we use🤔
+
+{Reactions}
+👍 (2)
+
+[10/03/2024 11:12] andreis9311
+No, I use 10x leverage.
+
+
+[10/03/2024 12:17] .7thdragon
+then in live will be liquidated
+
+
+[10/03/2024 12:18] andreis9311
+as you can see. No liquidation
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1291373711567491183/image.png?ex=69f3487d&is=69f1f6fd&hm=90f90a3c5f0492a60c4df000c2c491a48996033743d2c202f07914ca1cd1727d&
+
+
+[10/03/2024 12:18] andreis9311
+same for short
+
+
+[10/03/2024 12:19] andreis9311
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1291374068976844951/image.png?ex=69f348d2&is=69f1f752&hm=982bf144c53fddc2478fb8388cb5ae9df77ae8c832e59d4ff068002bf629faf1&
+
+
+[10/03/2024 12:20] .7thdragon
+i think is easy to ftt higher timeframes to have a bias decision confirmation
+
+
+[10/03/2024 12:21] .7thdragon
+FT is not always calculate liquidation correctly is written in the docs somewhere.
+but hope u re right 🙂
+
+
+[10/03/2024 12:23] andreis9311
+In any case, the check is working hard at the moment.  I have never fallen below the prescribed stop loss in the config
+
+
+[10/04/2024 16:43] .7thdragon
+i suppose i am on a good path
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1291802981829705748/image.png?ex=69f386c7&is=69f23547&hm=36696a90cc084566b168e2371628f15b0c84319e068da049b6f6364dc5dc2dd3&
+
+
+[10/04/2024 17:48] serialkiller15
+Nice let's take profit...
+
+
+[10/04/2024 19:10] ch1ck3n_t4c0s
+Nice!!!
+
+
+[10/04/2024 19:10] ch1ck3n_t4c0s
+What all changes have you made?
+
+
+[10/04/2024 19:15] .7thdragon
+Almost everything, except main lines and envelopes. The scope was to have less loosing than gaining, and to loose less when the trend change, still have a lot to check and debug. Leverage is the most problematic
+
+
+[10/04/2024 19:17] serialkiller15
+That's nice leverage is..... Also I changed sage if leverage
+
+
+[10/04/2024 19:22] .7thdragon
+the funny thing is that for speedup debugging  i used hyperopt only from top 5 volume  volatility pairs lol "BTC/USDT:USDT","ETH/USDT:USDT","1000PEPE/USDT:USDT","SUI/USDT:USDT","XRP/USDT:USDT"
+
+
+[10/04/2024 19:32] serialkiller15
+I think that's an absolute good aproach beacsue the coins are good and I also get different and better results with less coins on my strategies... To much coins less results on hyperopt and backtest
+
+
+[10/04/2024 19:36] .7thdragon
+I also mixed up the mean levels with envelopes for stoploss ladder and used all levels (not only tp2 and 3) by using trade.leverage
+            TP0 = current_candle['h2_move_mean'] * trade.leverage    # lowest
+            TP1 = current_candle['h1_move_mean'] * trade.leverage
+            TP2 = current_candle['h0_move_mean'] * trade.leverage
+            TP3 = current_candle['cycle_move_mean'] * trade.leverage # biggest
+
+
+[10/04/2024 20:19] serialkiller15
+@7thDragon nice aproach can you share your work that others can test it.. Looks realy promising.. Thanks
+
+
+[10/04/2024 20:22] .7thdragon
+not yet still testing for a while, also the code is a mess now
+
+
+[10/04/2024 20:22] serialkiller15
+Ok thanks let us know. ..
+
+
+[10/06/2024 10:21] ximontan
+haFbmVVRPlev_ST futures, long&short. In backtest max_open_trades 100 show better profit, in dry less. Now dry with same config but with 10 max_open_trades
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1292431619784839298/Screenshot_2024-10-06_120726.png?ex=69f32d3e&is=69f1dbbe&hm=889b6776b92c80baf0abdd0a389ffe56c6055086ce90ab2774e10e40f689be48&
+
+
+[10/06/2024 10:23] giovannimauro
+Short side dont work
+
+
+[10/06/2024 10:25] giovannimauro
+ROI: Closed trades
+∙ 258.46 USDT (129.16%) (25.85 Σ%)
+∙ 258.46 USD
+ROI: All trades
+∙ 332.934 USDT (52.91%) (33.29 Σ%)
+∙ 332.934 USD
+Total Trade Count: 3
+Bot started: 2024-10-04 12:43:56
+First Trade opened: a day ago (2024-10-04 12:44:32)
+Latest Trade opened: 10 hours ago (2024-10-06 00:20:29)
+Win / Loss: 1 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 258.46 (100.00)
+Avg. Duration: 20:30:57
+Best Performing: CELO/USDT:USDT: 129.16%
+Trading volume: 9293.862 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from  (0 USDT)
+    to  (0 USDT)
+
+
+[10/06/2024 10:25] giovannimauro
+Only long with some additional custom exit, weekend attempt
+
+
+[10/07/2024 23:07] sera131
+soon im back and will continue to work on it
+
+{Reactions}
+🔥
+
+[10/07/2024 23:07] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1292986645024346173/image.png?ex=69f337e6&is=69f1e666&hm=4a260717815ebad387338c433bb5d05d6bf6baf2ef7ac6503ff7d7bcdfc6ead3&
+
+
+[10/07/2024 23:07] sera131
+trying to implement it in hafbm version
+
+
+[10/08/2024 21:29] ximontan
+version haFbmVVRPlev_ST, max_open_trades": 10, hyper opt range 20240722-20240802,look good. Result
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1293324525454229615/image.png?ex=69f32113&is=69f1cf93&hm=1f0935f190641236da6b1628837916840976fa3249c0d6b53297f5ab795fc88e&
+https://cdn.discordapp.com/attachments/1288418348400508938/1293324525764612147/image.png?ex=69f32113&is=69f1cf93&hm=5c7de1f452a5ae9c20d4aa1c98f5385181648b49e9ee675e7666af5e7559c52b&
+
+
+[10/09/2024 17:27] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1293625800465059940/image.png?ex=69f390e9&is=69f23f69&hm=89d82ee9dc6aca99f1ab0337b76a46fb0d200a137e7792c6a1026fde3a1e8cb9&
+
+
+[10/09/2024 18:08] ximontan
+good investigation!
+winner 30m, as I see. 
+Did you write draw down?
+Did you test with detailed timeframe?
+
+
+[10/09/2024 18:18] branly76
+I was triggered by this piece of code
+
+
+[10/09/2024 18:18] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1293638787066363994/image.png?ex=69f39d01&is=69f24b81&hm=161b3a5a22d05a6f5c7bbabba95ac47dad9590a34582544ccdf254a49a7cb2ea&
+
+
+[10/09/2024 18:19] branly76
+the 1700 value, if you hyper-opt 1 months tf=30, the 1700 goes behind the 1 month of data.
+
+
+[10/09/2024 18:20] branly76
+I have all results in .txt files, i can post
+
+
+[10/09/2024 18:24] branly76
+BT not with detail
+
+
+[10/12/2024 11:14] maxgorbachevskiy
+Nice structured approach, thanks for the table example
+
+
+[10/12/2024 11:33] serialkiller15
+@Branly nice stuff thanks for sharing here!
+
+
+[10/12/2024 12:02] amiralbhar
+Very interesting ! How many time it takes to run all these sensibilities?
+
+
+[10/12/2024 12:03] branly76
+It took me about 7 hours, using 2 machines.
+
+
+[10/12/2024 13:05] ch1ck3n_t4c0s
+Yes optimally that should be set for the length of the df that you see live! So that it simulates that during backtesting/hyperopt
+
+
+[10/12/2024 13:06] branly76
+My main point was, i see people hyper-opt for a week or so, and then we look here back 1700 bars.
+
+{Reactions}
+👎
+
+[11/17/2024 19:01] xokaidos
+This is unbelievable...
+
+
+[11/17/2024 19:01] xokaidos
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1307782789709561909/image.png?ex=69f2fe62&is=69f1ace2&hm=6b234ef021dc61e783b78215adc4a375920c7e6c21c5951b9c2de62a0f5765b9&
+
+
+[11/17/2024 19:02] xokaidos
+This is hafbmvvrplef axmod version, without hyperopt and without fraqai...
+
+
+[11/17/2024 19:16] serialkiller15
+Nice @xok
+
+
+[11/17/2024 19:16] xokaidos
+I will wait a week or so and will start trading for real money... 😄
+
+
+[11/17/2024 19:17] serialkiller15
+Thanks for sharing and welcome here
+
+
+[11/17/2024 19:17] cheluxe
+I think one day is not enough time to make conclusions
+
+{Reactions}
+👍 (2)
+
+[11/17/2024 19:17] xokaidos
+This is insance, in a single day the bot work 12 trades with a cummulative return of 70%+
+
+
+[11/17/2024 19:17] serialkiller15
+I always do dry runs one minimum 1 or 2 weeks
+
+{Reactions}
+👍
+
+[11/17/2024 19:18] xokaidos
+True, but this one day performance is TOO GOOD...
+
+
+[11/17/2024 19:18] xokaidos
+Yes, I plan to watch it for a week...
+
+
+[11/17/2024 19:18] cheluxe
+Normally you would need one or two months if you want to adapt to diferent markets situations
+
+
+[11/17/2024 19:18] xokaidos
+I will start slowly with a small amount...
+
+
+[11/17/2024 19:19] serialkiller15
+Your choice
+
+
+[11/17/2024 19:19] serialkiller15
+Your money
+
+
+[11/17/2024 19:21] cheluxe
+I had one strategy that made me win 1300 dollars in a week and had -4000 in lossing orders in a week, due to a completely different market situation that i couldnt prevent. Obviously in dry run .. haha
+
+{Reactions}
+👍 (2) 🤣
+
+[11/17/2024 19:21] serialkiller15
+Multi strategy use for different market situations
+
+{Reactions}
+👍 (2)
+
+[11/17/2024 19:22] cheluxe
+Exactly
+
+
+[11/17/2024 19:23] cheluxe
+Which ammount of stake did you use per order?
+
+
+[11/17/2024 19:25] xokaidos
+I couldn't understand the question...
+
+
+[11/17/2024 19:25] xokaidos
+Do you mean how much I used?
+
+
+[11/17/2024 19:25] xokaidos
+If yes - I started with $1,000
+
+
+[11/17/2024 19:25] cheluxe
+The stake ammount used in each order
+
+
+[11/17/2024 19:25] serialkiller15
+Dryrun stake amount per order config. Json
+
+{Reactions}
+👍
+
+[11/17/2024 19:27] xokaidos
+and in a single day it has $1,747 now.. 😄
+
+
+[11/17/2024 19:27] xokaidos
+Ah, let me check for that...
+
+
+[11/17/2024 19:29] xokaidos
+I have not configured that, it seems I don't have any specific configuration for that in the config.json file...
+
+
+[11/17/2024 19:29] cheluxe
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1307789857850134638/Captura_desde_2024-11-17_20-29-49.png?ex=69f304f7&is=69f1b377&hm=136ff297d7ea70e0b5d8907564b4fbcdcbf16de6255faaee4fffad6a6e2c52bc&
+
+
+[11/17/2024 19:30] xokaidos
+I am missing "stake_amount"...
+
+
+[11/17/2024 19:30] cheluxe
+lol haha
+
+
+[11/17/2024 19:30] cheluxe
+Is it possible?
+
+
+[11/17/2024 19:30] xokaidos
+ah, sorry, it's set to "unlimited"...
+
+
+[11/17/2024 19:30] cheluxe
+Which value take by default?
+
+
+[11/17/2024 19:30] cheluxe
+Ooh okay
+
+
+[11/17/2024 19:30] serialkiller15
+So your results are clear mate 💡
+
+
+[11/17/2024 19:31] xokaidos
+sorry, it was in a different configuration and it was loaded ...
+
+
+[11/17/2024 19:31] serialkiller15
+No problem
+
+
+[11/17/2024 19:31] serialkiller15
+Will you do unlimited on live
+
+
+[11/17/2024 19:31] xokaidos
+max_open_trades are set to 6 and stake_amount ulimited...
+
+
+[11/17/2024 19:31] cheluxe
+That was a lot of money per order .. haha
+
+
+[11/17/2024 19:32] xokaidos
+Probably, but I will not risk $1,000 for that... 😄 I will start probably with $100
+
+{Reactions}
+👍
+
+[11/17/2024 19:33] xokaidos
+Also I see the minimal_roi is not set...
+
+
+[11/17/2024 19:33] xokaidos
+I manually forced the bot to exit after 40% and above... 😄
+
+
+[11/18/2024 10:31] .7thdragon
+where is this axmod version, and what is the mod about?
+founded nvm https://discord.com/channels/1238181199206154373/1284841955964096554/1302161337413144596
+
+{Reactions}
+👍
+
+[11/18/2024 12:36] huangyafei_90755
+This strategy has no stop-loss and is not recommended for live trading.
+
+
+[11/18/2024 12:37] huangyafei_90755
+The stop-loss is not effective.
+
+
+[11/18/2024 12:40] huangyafei_90755
+If the stop-loss function works properly, this strategy is excellent.
+
+
+[11/18/2024 12:42] .7thdragon
+if exit_reason == 'trailing_stop_loss' and trade.calc_profit_ratio(rate) < 0:
+            logger.info(f"{last_candle['date']} {trade.pair} trailing stop price is below 0")
+            # self.dp.send_msg(f'{trade.pair} trailing stop price is below 0')
+            return False
+stoploss is fixed at 0.3 but because custom_loss is moving the stoploss it will transform in trailing_stop_loss which with exit rule will be never stopped in loss, trade.calc_profit_ratio(rate) < 0:
+
+
+[11/18/2024 12:46] huangyafei_90755
+Hello, is there a revised version available?
+
+
+[11/18/2024 12:47] huangyafei_90755
+The stop-loss function can be implemented.
+
+
+[11/18/2024 12:54] xokaidos
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1308052682837069875/image.png?ex=69f350fe&is=69f1ff7e&hm=2ed69f9bc8786b4085b0ff33a3ae950ac636d40a165e92e4024ecab4cd489a82&
+
+
+[11/18/2024 12:54] xokaidos
+185% in about three days, this is unbelievable... 😮
+
+
+[11/18/2024 12:59] hirotakah7
+Where i can find this ?
+
+
+[11/18/2024 12:59] huangyafei_90755
+When the market is continuously rising, it repeatedly triggers short signals. This strategy performs better in a ranging market.
+
+
+[11/18/2024 13:00] huangyafei_90755
+https://discord.com/channels/1238181199206154373/1284841955964096554/1302161337413144596
+
+
+[11/18/2024 13:00] .7thdragon
+please do not post this hypes as is not a reliable strategy (as it is currently)
+show the open trades stoploss
+
+
+[11/18/2024 13:02] huangyafei_90755
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1308054633419378700/Screenshot_2024-11-18-21-01-51-194_com.android.chrome.jpg?ex=69f352cf&is=69f2014f&hm=bd6377c9b37203abfd243a15117b49f0aacbc6e0d5105824915361794fd53576&
+
+
+[11/18/2024 13:02] xokaidos
+Yes, you are right... But people different from each other.. I am the type of person who likes this kind of uncertainty...
+
+{Reactions}
+🫣
+
+[11/18/2024 13:02] cheluxe
+🤦
+
+
+[11/18/2024 13:03] huangyafei_90755
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1308055008977096754/Screenshot_2024-11-18-21-03-24-226_com.android.chrome.jpg?ex=69f35328&is=69f201a8&hm=764888e57db695dbf7f44f725e6a634d82d6a436f31a34129ef5efb2f9d10ff4&
+
+
+[11/18/2024 13:05] huangyafei_90755
+@7thDragon The TGDF strategy is relatively better.
+
+
+[11/18/2024 13:06] xokaidos
+I ran TGDF for about two days and it lost more than half...
+
+
+[11/18/2024 13:06] xokaidos
+In particular it lost 56%+, how is it "better"?...
+
+
+[11/18/2024 13:07] .7thdragon
+i never say it is better, we all test different versions
+
+
+[11/18/2024 13:08] xokaidos
+no, it's not you - feifei said TGDF is better...
+
+
+[11/18/2024 13:08] huangyafei_90755
+But I see that a lot of things are commented out. Which ones are useless?
+
+
+[11/18/2024 13:09] ximontan
+axmode 15m, 5m bad result delete it after several days
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1308056605002301521/image.png?ex=69f354a5&is=69f20325&hm=12b1282b13e2cc375fb86694771fc3e2847c695ffab696b56116caf4b934c0b2&
+
+
+[11/18/2024 13:13] huangyafei_90755
+Are there any better strategies to recommend, guys?
+
+
+[11/18/2024 20:02] serialkiller15
+I run TGDS since mid October no looses no changes no adaption nothing it runs... Look at the channel #🚀thegreatdivergencespot  I only did one hyperopt before start I personally prefer use different strategies on different market situation and yes when the market changes the Strategy will be useless
+
+
+[11/18/2024 20:03] serialkiller15
+Also I have a review version of tankai for spot at the moment but it's not final but a perfect win rate for longs....
+
+{Reactions}
+👏
+
+[11/18/2024 20:05] xokaidos
+Can you share the screenshot of the UI? What is the profit it generated?
+
+
+[11/18/2024 20:15] serialkiller15
+Yes but this is live and small amount I am not a risky guy but look at the win loss and tankai is at 100% at the moment
+
+
+[11/18/2024 20:16] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1308163844924903514/Screenshot_20241118_211408_Firefox.jpg?ex=69f30fc5&is=69f1be45&hm=c41785608e67971dcdc602ffa2ca2c9b85a763574578d46ff143663fd207f469&
+
+{Reactions}
+👍
+
+[11/18/2024 20:16] serialkiller15
+And the red ones does not say anything because it is running since mid Oktober as I told so please don't get in panic when trades are red....
+.
+
+{Reactions}
+👍
+
+[11/18/2024 20:17] xokaidos
+Yes, of course this is normal...
+
+
+[11/18/2024 20:17] serialkiller15
+And no mods done no updates no daily hyperopt or other thinks
+
+
+[11/18/2024 20:17] serialkiller15
+When a strategy runs on dry run I never adapt enythink if it runs good
+
+
+[11/18/2024 20:18] xokaidos
+Can you share the TGDS strat?... I see you're running it multiple times, what's the purpose?
+
+
+[11/18/2024 20:18] serialkiller15
+And tankai is a killer
+
+
+[11/18/2024 20:18] serialkiller15
+@xok already done in the channel
+
+
+[11/18/2024 20:19] serialkiller15
+https://discord.com/channels/1238181199206154373/1299025797746790520/1299026645734395914
+
+
+[11/18/2024 20:20] serialkiller15
+I run it in the post nothing changed yes there are some impacts or mods but I didn't do any mods on the post
+
+
+[11/18/2024 20:23] cheluxe
+Yes, NOTankAi is a beast if you know how to use it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1308165652611076119/Captura_desde_2024-11-18_21-21-42.png?ex=69f31174&is=69f1bff4&hm=b4c10b1fe0f4b2807c8772b8ccd28af81fe1d576129d05e8b0054685fe835e2c&
+
+
+[11/18/2024 20:23] cheluxe
+A good configuration for the adjustments is required
+
+
+[11/18/2024 20:24] serialkiller15
+I am talking about Tankai not NoTankai Sry another approach from chicken
+
+
+[11/18/2024 20:24] serialkiller15
+Spot longs only at the moment
+
+
+[11/18/2024 20:25] serialkiller15
+Yes NoTankai is also nice but for me too much changes need time to follow all them when it's finished and everythink maybee fixed I will give it a try
+
+
+[11/18/2024 20:26] xokaidos
+Are you doing live trading with $550k or is that $550 total?.. 😮
+
+
+[11/18/2024 20:26] cheluxe
+No no, the numbers behind the coma are decimals xD
+
+{Reactions}
+👑
+
+[11/18/2024 20:27] serialkiller15
+@Chelu so you also prefer spot long
+
+
+[11/18/2024 20:28] cheluxe
+But it was just a test for two days i am waiting for the 5th orders to get in positive and change the strategy
+
+
+[11/18/2024 20:28] xokaidos
+What are your plans, which strat are you prefering?
+
+
+[11/18/2024 20:29] serialkiller15
+Liquidation is not fine @Chelu
+
+
+[11/18/2024 20:29] cheluxe
+Oh okay, I misread it
+
+
+[11/18/2024 20:29] cheluxe
+Is that version uploaded?
+
+
+[11/18/2024 20:31] serialkiller15
+No
+
+
+[11/18/2024 20:31] serialkiller15
+Have to finish the tests but it will come
+
+
+[11/18/2024 20:31] cheluxe
+I know, but i am having it on purpose, is part of the configuration i am using
+
+
+[11/18/2024 20:31] serialkiller15
+Don't want to post any untested or unfinished strategies any more
+
+
+[11/18/2024 20:32] cheluxe
+thats why each order is 20 dollars
+
+
+[11/18/2024 20:32] serialkiller15
+That's fine
+
+
+[11/18/2024 20:32] serialkiller15
+So you use BINANCE on spot I see nice
+
+
+[11/18/2024 20:34] cheluxe
+It's not a preference; it's an obligation. XD
+
+
+[11/18/2024 20:34] serialkiller15
+Yes
+
+
+[11/18/2024 20:34] cheluxe
+I am still trying to get my palau id accepted on bybit
+
+
+[11/18/2024 20:34] cheluxe
+to start with futures
+
+
+[11/18/2024 20:34] xokaidos
+So it seems you're a professional traders here... 😄
+
+
+[11/18/2024 20:34] serialkiller15
+Ah ok I see it's difficult the changed many thinks
+
+
+[11/18/2024 20:35] cheluxe
+... not at all hahaha
+
+
+[11/18/2024 20:35] xokaidos
+I am doing this thing as a side project... 8-)
+
+
+[11/18/2024 20:35] serialkiller15
+I have one account and made apis for three sub accounts many months ago so they are still running
+
+
+[11/18/2024 20:36] cheluxe
+Yes, they blocked my account for ever saying the id was fake xD
+
+
+[11/18/2024 20:37] serialkiller15
+Really
+
+
+[11/18/2024 20:37] cheluxe
+But gate io accepted it without any problem
+
+
+[11/18/2024 20:38] xokaidos
+@Chelu What's your next plan, which strat are you goign to use instead of this NOTankAI?...
+
+
+[11/18/2024 20:38] cheluxe
+The problem is that you cant trade with futures without a level 2 vip pass. And you need to have a 120.000 dollares volume in 30 days for that hahaha they are crazy
+
+
+[11/18/2024 20:38] cheluxe
+NOTankai is the one i am goin to use
+
+
+[11/18/2024 20:39] xokaidos
+It's strange, I tried running it but it didn't start a single trade after about 2 or 3 days...
+
+
+[11/18/2024 20:39] xokaidos
+Are you using any specific version?
+
+
+[11/18/2024 20:40] cheluxe
+But i was using freqtrade just for 3 months, you shouldn't follow my decisions hahaha
+
+
+[11/18/2024 20:40] cheluxe
+Thats the AI version
+
+
+[11/18/2024 20:40] cheluxe
+I am using the default one
+
+
+[11/18/2024 20:40] xokaidos
+That means you're a honest and responsible person, thank you for that!... ❤️
+
+{Reactions}
+❤️
+
+[11/18/2024 20:40] cheluxe
+Freqai is not required
+
+
+[11/18/2024 20:41] serialkiller15
+Yep
+
+
+[11/18/2024 20:41] serialkiller15
+@xok mostly here are that that's why this community is for
+
+{Reactions}
+👍
+
+[11/18/2024 20:41] cheluxe
+I know is not the best but is the one i was configuring and testing during most of the time
+
+
+[11/18/2024 20:42] xokaidos
+Thank you too for creating such a wonderful community!... ❤️
+
+{Reactions}
+🔥 (2)
+
+[11/18/2024 20:43] serialkiller15
+Ooo thanks you are welcome if you need something let us know go ahead step by step
+
+
+[11/18/2024 20:43] xokaidos
+I want to live my life, without been a someone's hand-boy... 😄
+
+
+[11/18/2024 20:44] xokaidos
+I have a working knowledge in tech world, I am trying to get some useful strat to be able to invest and live life I want...
+
+
+[11/18/2024 20:46] serialkiller15
+Start small grow slow step by step example I bought BTC on 55k and sold on 90k and that was not the first time also altcoins I holded in spot strategies are good and nice but I use mixed strategies..
+
+{Reactions}
+👍 ❤️
+
+[11/18/2024 20:46] xokaidos
+Thank you for your advice... ❤️
+
+
+[11/18/2024 20:47] xokaidos
+I am also running Nostalgia For Infinity...  Have you heard about it?
+
+
+[11/18/2024 20:48] serialkiller15
+Yes I know it but I did not get many trades on it I have a github for all strategies I found since the past years
+
+
+[11/18/2024 20:49] xokaidos
+I saw your github, but there are some many strats I think the whole life won't be enough to test them all... 😄
+
+{Reactions}
+👍
+
+[11/18/2024 20:49] serialkiller15
+Yes thats why I collected them hehe time is money and life is to short for that so enjoy
+
+{Reactions}
+👍
+
+[11/18/2024 20:52] xokaidos
+@Chelu Can you share any advices with trading and all these? I started crypto stuff couple of months ago, want to reach capital as yours....
+
+
+[11/18/2024 20:54] serialkiller15
+@xok look at the channels I made  for
+
+
+[11/18/2024 20:54] serialkiller15
+Newbies and curses
+
+
+[11/18/2024 20:54] serialkiller15
+#📘learining-stuff
+
+
+[11/18/2024 20:54] serialkiller15
+This is the wrong channel Sry mate
+
+
+[11/18/2024 20:58] cheluxe
+I still need to make a lot more mistakes to learn and be able to give advice to others, haha.
+
+{Reactions}
+❤️ (3)
+
+[11/18/2024 21:02] cheluxe
+But you can learn really good things from people like Alex, 7thDragon and Ximontan. I learned a lot from them
+
+
+[11/18/2024 21:02] serialkiller15
+It needs time to know so many thinks I never will know everythink but go ahead step by step
+
+
+[11/18/2024 21:09] cheluxe
+Yes, you are right. That's why is so important to learn from other's experiences
+
+{Reactions}
+👍 (2)
+
+[11/18/2024 21:13] serialkiller15
+Good night and have fun here
+
+
+[11/18/2024 21:15] cheluxe
+Bona nit! 😄
+
+
+[11/18/2024 21:17] xaviertoor
+Boa noite!
+
+
+[12/13/2024 08:52] damian_ox9
+Hi, I just want to ask about the HaFbmVVRP_ST
+
+
+[12/13/2024 08:53] damian_ox9
+Can somone teach me the way to change the lev from x10 to x5
+
+
+[12/13/2024 08:53] damian_ox9
+?
+
+
+[12/13/2024 08:54] damian_ox9
+I changed like I'm used to do but when it run it still x10
+
+
+[12/13/2024 12:44] .7thdragon
+check def leverage function to return float like 5.0, not int, also usually when this function has errors it defaults to 1x
+
+{Reactions}
+🤩
+
+[05/19/2025 15:41] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1374049420248879104/image.png?ex=69f3783e&is=69f226be&hm=d116f8b4d625a74f226ae84b2e77fd680448d095e88c0b1a46a06ec9044474b4&
+
+{Reactions}
+👍
+
+[05/19/2025 15:51] ch1ck3n_t4c0s
+I have new rolling vvrp code not sure if I sent it to you or not lol
+
+
+[05/19/2025 16:18] serialkiller15
+No you didn't
+
+
+[05/19/2025 17:33] ch1ck3n_t4c0s
+Let me see if I have it available online...
+
+
+[05/19/2025 20:23] geze21
+@Alex Crypto King what version of this strategy and config you use?
+
+
+[05/19/2025 22:45] joaolool
+@Alex Crypto King 
+Here is a strategy that I am still testing
+I made some changes with the help of AI
+I believe it can help someone
+Sorry for the Portuguese language
+Still needs testing
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288418348400508938/1374156082406228088/SPOILER_config_old.json?ex=69f332d4&is=69f1e154&hm=b71ffb56cdb71e72ee35abe63ba7a07976fe2f33f3292608b9b1484c5d8fa356&
+https://cdn.discordapp.com/attachments/1288418348400508938/1374156083098030082/freqtrade_1_2.py?ex=69f332d4&is=69f1e154&hm=0b65cd87ec598ce26672ce819fa7c008bec5d183d2f0d6f5ae6c67ab88a944a5&
+https://cdn.discordapp.com/attachments/1288418348400508938/1374156083819581611/freqtrade_1_1.py?ex=69f332d4&is=69f1e154&hm=18fc5cfeabcf0b44ef7593bdfaac2dd67919fa698ed09021a09dd2377b16060e&
+https://cdn.discordapp.com/attachments/1288418348400508938/1374156084381614090/enhanced-strategy.py?ex=69f332d5&is=69f1e155&hm=0537375d3c7d377d7ed3c95905a3f6b348732fb0864c57ecb9d7ca08b56675f6&
+https://cdn.discordapp.com/attachments/1288418348400508938/1374156084956102676/haFbmVVRPlev_Enhanced.py?ex=69f332d5&is=69f1e155&hm=8835d1ae29c16c17e4056a8fb1639891ef2acba7aa82b21b4d81eea6f08dfadc&
+https://cdn.discordapp.com/attachments/1288418348400508938/1374156085619068929/backtested.txt?ex=69f332d5&is=69f1e155&hm=e47871f52c178d01862bcf7804246705f768f864e15908e8061926e4f2ae9514&
+
+
+[05/19/2025 22:47] joaolool
+I would like it too please
+@Alex Crypto King
+
+
+[05/20/2025 07:15] serialkiller15
+@joaolool thanks for sharing will take a look on it......
+
+
+[05/20/2025 07:19] serialkiller15
+i use the moded version i did a few months agoo  will see which one is the right version!
+
+
+==============================================================
+Exported 622 message(s)
+==============================================================

@@ -1,0 +1,448 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 📊darkprophetllm_results
+==============================================================
+
+[01/13/2026 19:35] serialkiller15
+Thanks for this nice stuff @DarkReaper and @7thDragon 
+Here we can share some results
+
+
+[01/13/2026 19:35] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1460718962714345472/image.png?ex=69f3064b&is=69f1b4cb&hm=a505d29cd7c658580a3e7d21dd84d1ece05d1f8840e9759c1b0d6f43efc32272&
+
+{Reactions}
+👍 (4) 🚀
+
+[01/14/2026 04:12] darkreaper0756
+Super!🍾
+
+
+[01/14/2026 04:34] ywk3926
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1460854562830417984/Screenshot_2026-01-14-12-34-09-58_948cd9899890cbd5c2798760b2b95377.jpg?ex=69f38495&is=69f23315&hm=c2f0777fc1f2d1e0f1266bc353793fd58b96a4c4c732e3f72054e326c51fb1bf&
+
+{Reactions}
+🚀
+
+[01/14/2026 04:35] ywk3926
+I just missed a wave of stretching 6 hours ago. Is LLM processing slow? Best time to enter?
+
+
+[01/14/2026 05:30] darkreaper0756
+I placed the coins randomly. It is good to place coins with different patterns to see which ones perform better
+
+
+[01/14/2026 10:45] xenigami
+gpt-oss-20b(Think-medium)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1460948039656280238/image.png?ex=69f332e3&is=69f1e163&hm=7209f4ac5f4c113f79d5efb946146befc914b864c7578ac93f3c962d6ee64756&
+
+
+[01/14/2026 10:48] 4v1234
+140 trades in less then 24 hours?
+
+
+[01/14/2026 10:50] xenigami
+yes~
+
+
+[01/14/2026 11:53] ywk3926
+Why can it be so much?🤔
+
+
+[01/14/2026 11:54] ywk3926
+ROI: Closed trades
+∙ 15.013 USDT (0.41%) (0.75 Σ%)
+∙ 15.005 USD
+ROI: All trades
+∙ 15.54 USDT (0.40%) (0.78 Σ%)
+∙ 15.531 USD
+Total Trade Count: 20
+Bot started: 2026-01-13 15:47:49
+First Trade opened: 19 hours ago (2026-01-13 16:21:23)
+Latest Trade opened: 4 minutes ago (2026-01-14 11:49:31)
+Win / Loss: 9 / 10
+Winrate: 47.37%
+Expectancy (Ratio): 0.79 (0.22)
+Avg. Duration: 5:49:27
+Best Performing: ETH/USDT:USDT: 5.151 USDT (1.32%)
+Trading volume: 7718.894 USDT
+Profit factor: 1.42
+Max Drawdown: 1.06% (21.546 USDT)
+    from 2026-01-14 05:18:08 (36.559 USDT)
+    to 2026-01-14 11:48:55 (15.013 USDT)
+Current Drawdown: 1.06% (21.546 USDT)
+    from 2026-01-14 05:18:08 (36.559 USDT)
+
+
+[01/14/2026 11:58] darkreaper0756
+What does the /daily show you?
+
+
+[01/14/2026 11:59] viking046433
+The tp ratio is good better tp than stoploss
+
+
+[01/14/2026 12:13] ywk3926
+I feel that my llm is too slow, 35 tokens per second.That's why my transaction volume is low.
+
+
+[01/14/2026 12:19] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1460971541415333979/Screenshot_2026-01-14_130206.png?ex=69f348c7&is=69f1f747&hm=8267f15b7f1415e2503bae20b6aaffb16074aec4b66d2e5d110aacb21e7601e3&
+https://cdn.discordapp.com/attachments/1460718838139060286/1460971541750743070/Screenshot_2026-01-14_131507.png?ex=69f348c7&is=69f1f747&hm=92dac2dc5c189c50ed7b6c35aafb6ad1df3dba2152f0db522b1e7f205b7920f0&
+
+
+[01/14/2026 12:58] branly76
+Is this a normal warning, not only me?
+2026-01-14 13:55:01,785 - DarkProphetLLMAIV3 - WARNING - LLM response is not valid JSON: LLM did not return a JSON object for ADA/USDT:USDT (entry). Using text fallback. Raw (first 1000):
+
+
+[01/14/2026 12:59] darkreaper0756
+With the latest files, you shouldn't have this problem anymore
+
+
+[01/14/2026 13:09] branly76
+I'm using DarkProphetLLMAIV3.py and LLMStrategyV1.py, posted yesterday. In darkreapercloud, i see just posted LLMStrategy.py as latest.
+
+
+[01/14/2026 13:15] darkreaper0756
+I just posted the latest version V2, but it is written in strategy V2
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1460985642585559235/Screenshot_2026-01-14_141408.png?ex=69f355e8&is=69f20468&hm=01b47a00984d62bc7b97159ff6b8d104439b8f53f17fffdb61fb0f7aad300321&
+
+
+[01/14/2026 13:15] branly76
+OK, but in combi with DarkProphetLLMAIV3.py ?
+
+
+[01/14/2026 13:16] darkreaper0756
+yes
+
+
+[01/14/2026 13:16] branly76
+Thanks
+
+{Reactions}
+👍
+
+[01/15/2026 03:44] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1461204475560853699/IMG_5279.jpg?ex=69f378f6&is=69f22776&hm=eefbea45dcd91f93bed2118bee8ccb68a90ebe6a7b5d1cdbeed42151e1349a31&
+
+{Reactions}
+🔥 (2) 👍
+
+[01/15/2026 07:58] xenigami
+gpt-oss-20b and Regime_Detection version?
+
+
+[01/15/2026 07:59] darkreaper0756
+Last posted here
+
+
+[01/15/2026 10:12] ywk3926
+ROI: Closed trades
+∙ -57.828 USDT (-0.68%) (-2.89 Σ%)
+∙ -57.808 USD
+ROI: All trades
+∙ -62.635 USDT (-0.66%) (-3.13 Σ%)
+∙ -62.614 USD
+Total Trade Count: 47
+Bot started: 2026-01-13 15:47:49
+First Trade opened: a day ago (2026-01-13 16:21:23)
+Latest Trade opened: 7 minutes ago (2026-01-15 10:04:22)
+Win / Loss: 18 / 24
+Winrate: 42.86%
+Expectancy (Ratio): -1.38 (-0.16)
+Avg. Duration: 5:08:30
+Best Performing: VVV/USDT:USDT: 19.168 USDT (4.79%)
+Trading volume: 33076.37 USDT
+Profit factor: 0.73
+Max Drawdown: 5.26% (107.021 USDT)
+    from 2026-01-14 05:18:08 (36.559 USDT)
+    to 2026-01-15 09:48:41 (-70.462 USDT)
+Current Drawdown: 4.63% (94.387 USDT)
+    from 2026-01-14 05:18:08 (36.559 USDT)
+
+
+[01/15/2026 10:13] ywk3926
+Profitable, rarely stop-loss, sell when losing.😂
+
+
+[01/16/2026 03:14] darkreaper0756
+You're not very lucky in 2026.😂
+
+
+[01/16/2026 04:10] darkreaper0756
+200$ stake 1x leverage
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1461573272062656674/IMG_5288.jpg?ex=69f37eee&is=69f22d6e&hm=7ed62fdae88b274aea0f0d28cd1098ae9708f3f03edd2915395f4722a533ef05&
+https://cdn.discordapp.com/attachments/1460718838139060286/1461573272314576967/IMG_5287.jpg?ex=69f37eee&is=69f22d6e&hm=745f2760c964cbfa24eaab370774846aee0677ecfed5b1d683b6285620547302&
+
+{Reactions}
+👍
+
+[01/16/2026 04:11] darkreaper0756
+there are many losses but the losses are very small and he exited the trade just before the Trend change
+
+
+[01/16/2026 09:25] giovannimauro
+It look very nice man
+
+
+[01/16/2026 09:26] ywk3926
+which prompt.py do you use?
+
+
+[01/16/2026 09:49] darkreaper0756
+Last
+
+
+[01/16/2026 09:50] darkreaper0756
+It matters a lot And what model you would use the temperature and the configuration of the model
+
+
+[01/16/2026 17:03] sera131
+0 temperature!!!!!
+
+{Reactions}
+😂
+
+[01/16/2026 17:03] sera131
+xD
+
+
+[01/16/2026 17:03] sera131
+i'm joking but yea... I wouldn't let them get too creative
+
+
+[01/16/2026 17:07] ywk3926
+I am testing the gpt-oss-120b model.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1461768844518363338/image.png?ex=69f38c52&is=69f23ad2&hm=2ba237573ecc43867f5dc105edb6c576c30c3fa15c8011c9c1f72e32408b58cf&
+
+{Reactions}
+🚀
+
+[01/17/2026 12:29] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1462061153071927398/Screenshot_2026-01-17_115024.png?ex=69f34b0e&is=69f1f98e&hm=49a3c1bcdbe1015b5f496dbffb11c6615be4a0909f3788b2850e4d6ab26cbae7&
+https://cdn.discordapp.com/attachments/1460718838139060286/1462061153768312988/Screenshot_2026-01-17_122259.png?ex=69f34b0e&is=69f1f98e&hm=917af503ab965333ed8987566a638954c179b1f83515bceeacaad3b8c81b7b18&
+https://cdn.discordapp.com/attachments/1460718838139060286/1462061154477019229/Screenshot_2026-01-17_123136.png?ex=69f34b0f&is=69f1f98f&hm=e9621c7f36d771638de1a1b001ec2ac27de10757374531e478117f285ad41593&
+https://cdn.discordapp.com/attachments/1460718838139060286/1462061154909163684/Screenshot_2026-01-17_132618.png?ex=69f34b0f&is=69f1f98f&hm=3accfee9a55a8e94b1187b96834ea46786b7eee657c90af8bc1146d05268e900&
+
+
+[01/17/2026 12:30] darkreaper0756
+HI! what is the reason for exiting Trade?
+
+
+[01/17/2026 12:32] darkreaper0756
+I only saw so much green when I was in high school😂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1462061976535568426/Screenshot_2026-01-17_133121.png?ex=69f34bd3&is=69f1fa53&hm=ca43668b24e93b954d567133c230614e5686d4d0f6327f2b9a72e7eaaad39bac&
+
+
+[01/17/2026 13:26] ywk3926
+The performance is not good , and I don't know where the problem lies. I have paused the test.😂
+
+
+[01/17/2026 13:26] ywk3926
+Profits have all been withdrawn.
+
+
+[01/17/2026 18:06] branly76
+From the 31 losses, 23 are due to Supertrend. !!!
+
+
+[01/19/2026 12:32] lukovicka
+how is it going after today's BTC dump?
+
+
+[01/19/2026 19:17] darkreaper0756
+My PC is dead, I'm waiting for the new nvme to arrive
+
+{Reactions}
+😥
+
+[01/19/2026 19:18] serialkiller15
+damn mate
+
+
+[01/19/2026 19:18] darkreaper0756
+Yea damn🥹
+
+
+[01/19/2026 19:19] 4v1234
+Hope no open trades in live ..... the worst feeling
+
+
+[01/19/2026 19:20] serialkiller15
+it can be closed on the exchange i had that months ago when my server died
+
+
+[01/19/2026 19:27] darkreaper0756
+The trades are not the problem, I lost the data on 2 nvme 2x2Tb and a Samsung 9100 Pro is dead.🥹
+
+
+[01/19/2026 19:28] darkreaper0756
+tomorrow I will try to recover the data from the other one
+
+
+[01/19/2026 19:49] dragongoattigercat
+I always use HDDs if the system is running 24x7.
+
+
+[01/19/2026 19:50] serialkiller15
+Backup? I habe two NAS for backups
+
+
+[01/19/2026 20:00] 4v1234
+This one hurts
+
+
+[01/19/2026 20:01] dragongoattigercat
+I get NAS to provide storage for proxmox farm
+
+
+[01/19/2026 21:12] serialkiller15
+That's nice but I prefer internal Discs for the need performance... But NAS is also nice
+
+
+[01/20/2026 21:36] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1463286211815669986/IMG_0260.png?ex=69f322bb&is=69f1d13b&hm=8a13c5fadd6e6c1ed5398431274e42355ac9d7c99b9edd5f5feb07330d4b2654&
+
+{Reactions}
+👍 (2)
+
+[01/21/2026 15:57] dragongoattigercat
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1463563232554909788/image.png?ex=69f37bfa&is=69f22a7a&hm=2afb4ae7a249a0dfb7f45d9e18da273733c2d6cf3abecab0b65421dcd746ad5c&
+
+{Reactions}
+🚀 (2) 🔥
+
+[01/21/2026 16:02] dragongoattigercat
+my GPU is weak so it can only run 2 coins so I set it as much as it can. LOL
+
+
+[01/31/2026 16:01] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1467187971206807594/Screenshot_2026-01-31_165844.png?ex=69f37cc7&is=69f22b47&hm=a635b5a64b32afca46fe4f032801050518499b3f574a47b3064318e32295dd6f&
+
+
+[01/31/2026 16:18] serialkiller15
+which modell are you using right now mate?
+
+
+[01/31/2026 16:19] .7thdragon
+4p only, cloud gpt 120b, testing different prompts directives
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1467192667464011786/image.png?ex=69f38127&is=69f22fa7&hm=dc51e8d5fd2336d0cd68ae24bdfb1b65756c3233a09da32ecde7c8a0df306fdc&
+
+{Reactions}
+🚀 (2)
+
+[01/31/2026 16:21] .7thdragon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1467193026970648609/image.png?ex=69f3817c&is=69f22ffc&hm=22751387e8b22cfba488a7008596ce6a822c57aee429e5a553693c5683181acb&
+
+
+[01/31/2026 17:12] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1467205837066997770/Screenshot_2026-01-31_181200.png?ex=69f38d6a&is=69f23bea&hm=0502fae5dc093c45a72f07dc74315eee370a6b0d0729ad55db7c4d289b16fa81&
+
+
+[01/31/2026 17:25] darkreaper0756
+gpt 20b offline
+
+
+[01/31/2026 17:37] glad8769
+which could are you using?
+
+
+[01/31/2026 17:50] serialkiller15
+Ollama local can do it as I know
+
+
+[01/31/2026 17:52] .7thdragon
+👀  code? the darkreaper posted, but separated the system prompts for entries and exits, still testing, waiting for end of month reversals
+
+{Reactions}
+👍
+
+[01/31/2026 22:39] glad8769
+sorry I meant "cloud" LOL
+
+
+[01/31/2026 22:39] glad8769
+you wrote "cloud gpt 120b"
+
+
+[01/31/2026 23:11] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1467296281494814873/Screenshot_2026-01-31_200055.png?ex=69f338e6&is=69f1e766&hm=fa1f1b8594338db6ccccc21c0c49e115d476353c262dcf24e70771fbe953bba0&
+
+{Reactions}
+❤️
+
+[02/01/2026 09:29] .7thdragon
+any provider that have it, openrouter cerebro grok etc
+i cannot use >20b locally 🙂
+
+
+[02/07/2026 11:22] branly76
+Adapted version seems to be ok in strong trending. For ranging and small up/down moves still work to do.
+
+
+[02/07/2026 11:22] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1460718838139060286/1469654604865081476/image.png?ex=69f33b82&is=69f1ea02&hm=361b3a74d29334d4be9f44c3b2d3b2000cc8f68de30ef942fb745b0aafb58a66&
+
+{Reactions}
+🔥 👏 🚀
+
+[02/09/2026 13:31] darkreaper0756
+Much more is possible, super result!✌️
+
+
+[02/19/2026 08:18] laupapp
+someone have good results with local LLM ?
+
+
+==============================================================
+Exported 77 message(s)
+==============================================================

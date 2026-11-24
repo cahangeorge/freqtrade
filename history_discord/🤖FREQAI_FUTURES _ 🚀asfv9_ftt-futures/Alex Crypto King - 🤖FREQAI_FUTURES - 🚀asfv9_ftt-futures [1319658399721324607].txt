@@ -1,0 +1,90 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖FREQAI_FUTURES / 🚀asfv9_ftt-futures
+==============================================================
+
+[12/20/2024 13:31] serialkiller15
+@everyone Here is an Version we did in Oktober based on my V9x Version with some Imputs from @Ch1cK3N_t4c0s 
+because of time i did not postet it here because its not finished and also needs some adjustments -> FUTURES VERSION
+
+
+[12/20/2024 13:32] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1319658399721324607/1319658582899294248/ASFV9_FTT_V2.json?ex=69f359d4&is=69f20854&hm=e0d9a4cef48ce62eb6a66190d4aff09380dbfc86400abba5b9ecf42f57414389&
+https://cdn.discordapp.com/attachments/1319658399721324607/1319658583255945328/ASFV9_FTT_V2.py?ex=69f359d4&is=69f20854&hm=43c120f9a8dc0f7ca9386158c2e87d576789e8db1f62bc2fc35126abbc802531&
+https://cdn.discordapp.com/attachments/1319658399721324607/1319658583918641204/ASFV9BT_FTT_V2.json?ex=69f359d4&is=69f20854&hm=bcf05b5e02a7910ed2867d8666fd86f589d5d2b3c2521d2f61c2e592caf67f3c&
+https://cdn.discordapp.com/attachments/1319658399721324607/1319658584300326953/ASFV9BT_FTT_V2.py?ex=69f359d4&is=69f20854&hm=d325b117b2e822c2962c2bc489e3e9e2eb0e4b350c5b8e81acbe2048e2fb0154&
+
+{Reactions}
+👍 (5) 🚀
+
+[12/20/2024 13:32] serialkiller15
+Pinned a message.
+
+
+[12/21/2024 07:35] avalon5227
+@Alex Crypto King bro, can i ask  the difference between 2 stra? futures?
+
+
+[12/21/2024 07:35] serialkiller15
+this one is for futures trading yes
+
+
+[12/21/2024 07:36] serialkiller15
+also there is a spot version #🚀asfv9_ftt-strategy
+
+
+[12/21/2024 07:36] avalon5227
+got it ~
+
+{Reactions}
+👍
+
+[12/21/2024 13:32] laupapp
+@Alex Crypto King  do you have dry run result ?
+
+
+[12/22/2024 09:59] serialkiller15
+@Laurent D. yes I have some will share later
+
+
+[12/22/2024 13:34] alex_737071
+Which Freqai model you guys using with this?
+
+
+[12/23/2024 11:59] serialkiller15
+Lstm mine posted here
+
+
+[12/23/2024 14:34] avalon5227
+@Alex Crypto King how to hyperopt ASFV9BT_FTT_V2, just like AlexV9Hyper?
+
+
+[12/23/2024 14:36] avalon5227
+i tried, always same result
+
+
+[12/23/2024 14:36] avalon5227
+like this..
+
+
+[12/23/2024 14:36] avalon5227
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1319658399721324607/1320761908248449034/fkenoum1.tvd.png?ex=69f368e1&is=69f21761&hm=5f1daa4367fa6b50b3c002c25401269c969a78bddd7aa803ed6bf2fb7c6cb21d&
+
+
+[12/23/2024 17:44] serialkiller15
+did you delete the json before ? the asfv9bt_ftt_v2.json?
+
+
+[12/23/2024 23:23] avalon5227
+no, if delete it, even have no good result...
+
+
+==============================================================
+Exported 17 message(s)
+==============================================================

@@ -1,0 +1,54 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🎯alexbandscalper
+==============================================================
+
+[03/11/2026 11:22] serialkiller15
+@everyone 
+🎯 AlexBandScalp Strategy
+🔍 What it does:
+Detects divergences across 10 indicators (RSI, MACD, Stoch, CCI, MFI, OBV, CMF, ROC, UO, AO) and catches reversals at Keltner Channel extremes
+📊 Timeframe:
+15m primary with 1h trend confirmation
+⚡ Entry Logic:
+
+Bullish/bearish divergence detection at pivot points
+Price must touch or pierce Keltner Channel bands
+4 signal tiers: HQ → E6 → E1 → E2 (prioritized by quality)
+Volume, volatility, RSI & ADX filters for signal quality
+
+🔄 Reversal Exits:
+Opposite divergence signal automatically closes the trade — no fighting the market
+📈 Multi-Timeframe:
+1h EMA50/EMA200 crossover + ADX trend strength for directional bias
+🛡️ Risk Management:
+
+ATR-based dynamic stoploss
+Progressive profit protection (2% locked at 4%+ profit)
+Adaptive leverage based on signal strength
+Cooldown & drawdown protections
+
+🎯 Core Philosophy:
+Catch the bounce at the bands, confirm with divergence, exit on reversal. Let the indicators agree before pulling the trigger.
+💰 Trading:
+100+ pairs on Bybit futures, both long & short
+🤖 Tech Stack:
+Freqtrade | TA-Lib | Causal pivot detection (no lookahead),
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1481243749496520735/1481250837690060893/image.png?ex=69f33b58&is=69f1e9d8&hm=5a37b358d8a6522d9d393de11ea60e7dbc8fd7681d6d438388d9bf581c44c47a&
+
+
+[03/11/2026 23:17] divarak
+Alex, this bot is still in development?
+
+
+[03/12/2026 07:22] serialkiller15
+Yes
+
+{Reactions}
+👍
+
+==============================================================
+Exported 3 message(s)
+==============================================================

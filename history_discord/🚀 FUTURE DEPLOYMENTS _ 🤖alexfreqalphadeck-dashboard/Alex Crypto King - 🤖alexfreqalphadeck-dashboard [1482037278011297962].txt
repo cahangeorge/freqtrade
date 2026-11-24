@@ -1,0 +1,470 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖alexfreqalphadeck-dashboard
+==============================================================
+
+[03/13/2026 15:33] serialkiller15 (pinned)
+🤖 AlexFreqAlphaDeck V1 Released! 🚀
+@everyone 
+Complete Dockerized trading dashboard for Freqtrade bots!
+
+✨ Features:
+📊 Multi-bot management & auto-discovery
+📈 Live portfolio analytics & trade history
+🔌 Data collector (Bybit, prices, snapshots)
+🗄️ Dual PostgreSQL databases (auto-setup)
+⚡️ React 18 frontend with WebSocket updates
+🔐 JWT auth & role-based access
+
+🚀 Quick Start:
+
+downlad and unpack
+cd AlexFreqAlphaDashboard
+./install.sh
+
+🌐 Access:
+
+• Dashboard: http://server:5000
+• API: http://server:8000/docs
+• Adminer: http://server:8090
+• Login: admin/admin
+
+🛠️ Stack: Docker, PostgreSQL, Redis, FastAPI, React
+
+📋 Requirements: Docker 20.10+, 4GB RAM, 20GB disk
+
+Made with 🤘 for the Freqtrade community!
+
+Questions? Drop them below! 👇
+
+
+[03/13/2026 15:36] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1482039657956114603/INSTALLATION_README.md?ex=69f376fd&is=69f2257d&hm=309760b29cc2a87d1eb9c5db8a6acb76ffae6000c2618275b041f0810b0989e9&
+
+
+[03/13/2026 15:36] serialkiller15
+Pinned a message.
+
+
+[03/13/2026 15:36] serialkiller15
+Pinned a message.
+
+
+[03/13/2026 15:40] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1482040624424161292/AlexFreqAlphaDeck.part01.rar?ex=69f377e3&is=69f22663&hm=18c7a6fb3e38cbc2415d62f0fef7b3e0694ea2143c982f62eb29c85d429a003d&
+
+
+[03/13/2026 15:40] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1482040704544014427/AlexFreqAlphaDeck.part02.rar?ex=69f377f6&is=69f22676&hm=8f845de9dc9834213ee9ec0b9d43f455bb5d7772773a61e9537f5388abd102c3&
+https://cdn.discordapp.com/attachments/1482037278011297962/1482040704883490838/AlexFreqAlphaDeck.part03.rar?ex=69f377f7&is=69f22677&hm=1b3a8ddf85583b3c90bf4531c929cea1cef3207225c59232c4b86b7278725c1c&
+https://cdn.discordapp.com/attachments/1482037278011297962/1482040705185747025/AlexFreqAlphaDeck.part04.rar?ex=69f377f7&is=69f22677&hm=d18dff2bc098e5982f6c82864e41082efb69b3334748cbd85d05e0b3801c4a78&
+https://cdn.discordapp.com/attachments/1482037278011297962/1482040705646989405/AlexFreqAlphaDeck.part05.rar?ex=69f377f7&is=69f22677&hm=d7d4fc3f7d6ba1df61dfabadfe6806f8bbef207c7887886adac5dc0f55b93aae&
+https://cdn.discordapp.com/attachments/1482037278011297962/1482040706036928602/AlexFreqAlphaDeck.part06.rar?ex=69f377f7&is=69f22677&hm=67d42b72b51ed607ae21a57157396ede00d736f30f797b58c7d608ac16d73532&
+
+
+[03/13/2026 15:42] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1482041261396332757/AlexFreqAlphaDeck.mp4?ex=69f3787b&is=69f226fb&hm=27f074a0f935d1291eb703fc299c48108e9ccc40cb730b647c652ca5b3d643b7&
+
+{Reactions}
+🔥 (3) 👍 (2)
+
+[03/13/2026 20:26] dragongoattigercat
+what did I do wrong?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1482112733951557802/image.png?ex=69f3124c&is=69f1c0cc&hm=69f646b955efde25b1701c78418cc69759650eb4b94b8ab94b621e26081df1d2&
+
+
+[03/13/2026 20:57] serialkiller15
+Check if all docker a running... I tested it three times at it worked on my side..
+
+
+[03/13/2026 20:58] serialkiller15
+Frontend IP and Port 5000
+
+
+[03/13/2026 20:59] dragongoattigercat
+the frontend keeps restarting, it said sh:vita: Permission denied
+
+
+[03/13/2026 21:00] dragongoattigercat
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1482121077604876349/image.png?ex=69f31a11&is=69f1c891&hm=d4932ca70d44578dea42cd6c9ee5573a69d6f1b48fccb7902587a28ec39dd9f6&
+
+
+[03/13/2026 21:00] serialkiller15
+Can you check the. Env file there is the user and password for the dB access should be dashboard
+
+
+[03/13/2026 21:01] serialkiller15
+Your try to login on adminer with the IP and Port and then dashboard user pw and db
+
+
+[03/13/2026 21:01] serialkiller15
+It seems a connection error to the db
+
+
+[03/13/2026 21:02] dragongoattigercat
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1482121684982038760/image.png?ex=69f31aa2&is=69f1c922&hm=ca3c38b1fdb2463ba1998b88b7228d4d0fa1bb044f3ca7bb48c54f8d06677eed&
+
+
+[03/13/2026 21:02] dragongoattigercat
+I leave them as default.
+
+
+[03/13/2026 21:02] serialkiller15
+That's fine
+
+
+[03/13/2026 21:03] serialkiller15
+Dashboard log...?
+
+
+[03/13/2026 21:04] dragongoattigercat
+cannot login with dashboard/dashboard
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1482122157092901105/image.png?ex=69f31b12&is=69f1c992&hm=f3070973a3690f6ba1d464aa315f904b14934319b3e9d76994b29582cfb91e1c&
+
+
+[03/13/2026 21:04] boooooon
+Check network in dev tools?
+
+
+[03/13/2026 21:05] boooooon
+And console logs
+
+
+[03/13/2026 21:05] serialkiller15
+Server the IP of the server
+
+
+[03/13/2026 21:05] serialkiller15
+Not Server postgres.. Ip
+
+
+[03/13/2026 21:06] boooooon
+And why you select mysql if you use postgres server? Is it correct?
+
+
+[03/13/2026 21:06] serialkiller15
+Yep
+
+{Reactions}
+👍
+
+[03/13/2026 21:07] dragongoattigercat
+IP not work as well
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1482122873878614077/image.png?ex=69f31bbd&is=69f1ca3d&hm=1b1086821977974a5189b99465ac0686bb84272e4307e0d6566b63a2fc93d67a&
+
+
+[03/13/2026 21:09] serialkiller15
+Postgres....
+
+
+[03/13/2026 21:09] serialkiller15
+Not mysql
+
+
+[03/13/2026 21:10] serialkiller15
+It's a postgres dB.. Not mysql
+
+
+[03/13/2026 21:12] serialkiller15
+@XamPer yours work?
+
+
+[03/13/2026 21:13] serialkiller15
+@x yours work
+
+
+[03/13/2026 21:13] boooooon
+I didn't test yet
+
+
+[03/14/2026 02:36] dragongoattigercat
+I can login the DB now. but could not get the dashboard up yet
+
+
+[03/14/2026 06:12] serialkiller15
+On the frontend check your logs you have an sh vote access denied that's the problem check the rights and settings to file system
+
+
+[03/14/2026 09:38] serialkiller15
+Fix for asyncron backtest, before the backtest was blocked!
+
+replace the file backend\src\services
+
+restart the backend!
+
+
+[03/14/2026 10:21] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1482322719990218968/strategy_lab.py?ex=69f32d1c&is=69f1db9c&hm=72812731d770de7b7e8e41e9667707a49af18e4d9b3dcf9a698d1238413a67ec&
+
+
+[03/16/2026 11:16] xf0x0f
+I have significantly expanded and hardened the dashboard since the last public revision. The platform now has a real first-time setup flow with a guided wizard, centralized runtime settings, improved mobile usability, multi-language foundations, persistent login behavior, Tailscale support, and much stronger installability for third parties. Core modules like Discovery, Strategy Lab, Finance Data, Pairlist, Alerts, and bot health/metrics were stabilized so the app behaves much more like a product and less like a prototype.
+On the infrastructure side, i removed hardcoded IP dependencies from active app paths, centralized API/database/path settings, improved CORS and host handling, added long-lived auth with token refresh, and made the frontend adapt automatically to LAN and Tailscale hosts. Discovery was improved so bots running in host networking can still be detected correctly, API URLs are built reliably, and bot health/metrics/historic snapshots are populated again.
+
+
+[03/16/2026 11:17] xf0x0f
+The Finance section was heavily upgraded. It now includes live Binance and Bybit orderbook views, responsive mobile layouts, clickable news headlines, stock watchlist management with add/remove support, sortable crypto and stock tables, and better settings/help text for external integrations like FRED and News API. Strategy Lab was improved with a visible strategy upload flow, and the setup/settings UI now explains what each important field does and where users obtain required API keys.
+The Freqtrade Bots area was reworked from a simple iframe embed into a dashboard-mediated bot UI flow with server-side login preparation, refresh fixes, and safer proxy-based embedding. We also repaired multiple stale frontend/backend integrations, old hardcoded endpoints, schema mismatches, and missing collectors so modules like Strategy Lab, Finance feeds, bot metrics, and historic views produce real data again.
+For product polish, we added the first proper i18n layer with German and English switching, improved mobile navigation so the app is usable on phones, and started replacing mixed-language UI text with centralized translations. Across all of this work, repeated smoke tests were run remotely to validate that the main app flows stayed healthy.
+
+{Reactions}
+🔥 (5) ✅
+
+[03/16/2026 15:49] xf0x0f
+only linux install is tested, windows you have to test yourself
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1483130157572165773/FreqAlphaDeck-community-slim-20260316.zip?ex=69f37a18&is=69f22898&hm=a71a232cc846d9328cf00d65e374a9f47ff9741311f07e22976acd3993e669d5&
+
+
+[03/17/2026 15:25] niksat24.
+@Alex Crypto King  & @xF0x0F Thank you both so much for all your hard work and efforts. In my opinion, this is the best Freqtrade community. 🙏
+
+
+[03/17/2026 15:26] serialkiller15
+thanks mate, realy appriciate it, but i have to say @xF0x0F made it perfect (style) and other stuff.....
+
+
+[03/17/2026 16:02] snokard.
+cant wait to have time and test all of the new things that have been uploaded last weeks
+
+{Reactions}
+🚀
+
+[03/17/2026 16:05] serialkiller15
+@TITAN try the dashboard i am in love with it....................so many work we did manualy in the path....
+working on a full optimazion stuff for it and other thinks, my db has realy good inputs of the bots, backtest and other stuff...........thats pretty cool but yes was many work to do and @xF0x0F made it perfect!
+
+{Reactions}
+❤️
+
+[03/17/2026 16:12] snokard.
+im full of work with my company and im also experimenting with polymarket automations, once i finish one of this 2 projects i will go back to freqtrade
+
+
+[03/17/2026 16:12] snokard.
+but yes i need to find time to test this
+
+
+[03/18/2026 15:11] lukovicka
+@Alex Crypto King @xF0x0F hey, do you have this error?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1483845237888651284/message.txt?ex=69f37111&is=69f21f91&hm=1c761f8ecce99bf0056dade76c11d290ce7a9f511150a1c866da34c77a635f1f&
+
+
+[03/18/2026 15:20] lukovicka
+There really isn't such a column in this table
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1483847514867236904/image.png?ex=69f37330&is=69f221b0&hm=dfa41e6b0a583919ec8d69eb01410f0ba7074c122c7084e46cdb843a88533bdc&
+
+
+[03/18/2026 15:59] lukovicka
+The "Freqtrade Bots" tab doesn't work - it's an endless loader
+
+
+[03/18/2026 16:01] serialkiller15
+yes you a right
+you can create it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1483857998697730210/image.png?ex=69f37cf3&is=69f22b73&hm=4341bef2c037a9eb8c746cb07833365012c6e134db7d3a001ebd50e2e100ba43&
+
+
+[03/18/2026 16:02] serialkiller15
+there is the adminer you can use it for!
+
+
+[03/18/2026 16:06] lukovicka
+I'd also like to understand why all the strategies have empty metrics and no trades. But on the dashboard I see profit and trades for each strategy in summary view.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1483859199149736016/image.png?ex=69f37e11&is=69f22c91&hm=c122ce6f09da99119de3822399917ed7f5e7c2aaa58e3bbb107880d0c2fbccc1&
+
+
+[03/18/2026 16:09] lukovicka
+```
+2026-03-18T16:09:09.048261740Z Binance collector error: relation "binance_orderbook" does not exist
+```
+
+
+[03/18/2026 16:15] serialkiller15
+there is also no binance_orderbook table i am trying to fix all the missing stuff..
+
+{Reactions}
+👍
+
+[03/18/2026 16:15] serialkiller15
+its a mix between my and the nother version...
+
+
+[03/18/2026 16:24] serialkiller15
+look in your tables if you have bot data in there? and also if the data-collector is writing the stuff in the tables?
+
+
+[03/18/2026 16:59] serialkiller15
+i will redeploy a updated version with all changes in the next days!
+
+
+[03/18/2026 21:29] serialkiller15 (pinned)
+@everyone
+some fixes and updates
+use install.sh 
+when finished, fill up login and fillup your data
+then restart the data-collector docker (to catch your api for the docker)
+missing some tables, 
+thats it!
+
+improvements welcome!
+
+{Reactions}
+🚀 (2)
+
+[03/18/2026 21:30] serialkiller15
+Pinned a message.
+
+
+[03/20/2026 22:30] dragongoattigercat
+which file should I configure to scan for bots which run on docker on a remote VM? I tried to modify the config/dahboard.yaml but it seems not to work yet.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1484680538412552434/image.png?ex=69f32f40&is=69f1ddc0&hm=f6893db7f9b9681ef6feb3d736b580919d82e3f50762f4ea572817c1528438b6&
+
+
+[03/21/2026 08:32] serialkiller15
+You can change everything in the settings..
+
+
+[03/21/2026 09:13] serialkiller15
+or add them manualy under discovery if they run on a different machine its the easyiest way, dont change any scripts in there because it may break the functionality, all settings are stored in the database..
+
+
+[03/22/2026 08:18] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1485190992490532914/Bildschirmfoto_2026-03-22_um_09.18.02.png?ex=69f31066&is=69f1bee6&hm=cd6245d42473fdeeb759082444c7fbd35ce6fda23cd36a327d75d860c6ac58a6&
+
+{Reactions}
+🚀
+
+[03/22/2026 08:26] serialkiller15
+Good Job looks nice 🙂
+
+
+[04/02/2026 16:41] dragongoattigercat
+Hi Mate, which file are you configure so the dashboard can scan for freqtrade bots? I can add bots manually but I am trying to configure so the dashboard can scan and add bots automatically.
+
+
+[04/02/2026 16:42] serialkiller15
+here
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1489304028969042020/image.png?ex=69f38676&is=69f234f6&hm=65f725ff8c8074125d1e989549b1ac550d1f6f363ecb1b5965eb36dea9ef494d&
+
+
+[04/02/2026 16:44] dragongoattigercat
+yes, I had it configure but It is not working. my bot can access via http://10.10.10.234:8081 for example.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1489304473049235537/image.png?ex=69f386e0&is=69f23560&hm=3532b668830b9a3658d732c78f6386cfafa8e3c533c938fe4217785b08578ed7&
+
+
+[04/02/2026 16:45] serialkiller15
+docker used bridge mode?
+
+
+[04/02/2026 16:46] dragongoattigercat
+yes, it is in bridge mode in portainer
+
+
+[04/02/2026 16:46] dragongoattigercat
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1489305074420158626/image.png?ex=69f3876f&is=69f235ef&hm=6fc03d0eb29aad580bace9454c2a67d52687f92b3130916772bd0ea8ef309f65&
+
+
+[04/02/2026 16:47] serialkiller15
+try the ip adress of the docker where the strategy runs or the portainer is on wich ip?
+
+
+[04/02/2026 16:47] serialkiller15
+it works i have 6 different servers running on it!
+
+
+[04/02/2026 16:55] dragongoattigercat
+it is not working for me. as you can see the strategy is running on 172.17.0.6. I added this IP into Discovery Setting but my dashboard could not detect it yet.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1489307368289341440/image.png?ex=69f38992&is=69f23812&hm=96fd16beb27b41c71316f6da3569a17ad317289b68785ff8762bdc8c67c6ca07&
+https://cdn.discordapp.com/attachments/1482037278011297962/1489307368692125786/image.png?ex=69f38992&is=69f23812&hm=24c95482ade1853bbb40eaa2af85c26d82566afe780869b0a386bb1670a8cad3&
+
+
+[04/02/2026 16:57] serialkiller15
+this is a network issue not from the dashboard it cames from check if all bots cann access via network each other...that will fix it, or alternativly add them manualy!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1489307752537788566/image.png?ex=69f389ee&is=69f2386e&hm=d4d3a8cbce158bea34d4462a74c8270bd0f0439e448170f98121c08520f4c1ee&
+
+{Reactions}
+🚀
+
+[04/02/2026 18:12] serialkiller15
+Fixed the IP/Adresses
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1489326568244510931/AlexFreqAlphaDashboardV2.1.rar?ex=69f39b74&is=69f249f4&hm=8a8b47e77795afd0b8f09d1142ace18f453a813eb819bfe9051d7edff1f2b23c&
+
+{Reactions}
+❤️
+
+[04/04/2026 08:56] serialkiller15
+working with some mods - Stock Screener!
+from the github project 
+fully integrated...
+https://github.com/lit26/finvizfinance
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1482037278011297962/1489911505637085194/image.png?ex=69f31938&is=69f1c7b8&hm=59f3811c994eb1e03be7b25a254960b62060ad9f0a2c53a83841169ebd9c42ae&
+
+{Embed}
+https://github.com/lit26/finvizfinance
+GitHub - lit26/finvizfinance: Finviz analysis python library.
+Finviz analysis python library. Contribute to lit26/finvizfinance development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/R53GyYz652Xx68bfcONTHtkStSrQ4cTPl8wbb5WHnMs/https/opengraph.githubassets.com/f0d263c774a45a902473e605941fb6d4fa48a7ab4ed41120e53255701dc58c53/lit26/finvizfinance
+
+{Reactions}
+🚀
+
+==============================================================
+Exported 76 message(s)
+==============================================================

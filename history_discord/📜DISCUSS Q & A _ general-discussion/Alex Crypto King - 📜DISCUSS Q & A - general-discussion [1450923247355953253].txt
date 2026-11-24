@@ -1,0 +1,596 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 📜DISCUSS Q & A / general-discussion
+==============================================================
+
+[12/18/2025 14:14] glad8769
+@evgenyy1981 like this one for backtesting close to the reality:
+
+https://github.com/nkaz001/hftbacktest
+
+{Embed}
+https://github.com/nkaz001/hftbacktest
+GitHub - nkaz001/hftbacktest: Free, open source, a high frequency t...
+Free, open source, a high frequency trading and market making backtesting and trading bot, which accounts for limit orders, queue positions, and latencies, utilizing full tick data for trades and o...
+https://images-ext-1.discordapp.net/external/dVjFA9iIySfaJ1MfXtC5eP5ChZnfjWKytJm9AF_I7t8/https/opengraph.githubassets.com/49e39c07b6be931a40c70b17526ea067153b2ecb9eeabb3ec01ba36b7fc9e6e7/nkaz001/hftbacktest
+
+
+[12/18/2025 14:17] glad8769
+It’s very “difficult” to generate backtest and so on, but probably very close to the reality
+
+https://hftbacktest.readthedocs.io/en/latest/tutorials/Pricing%20Framework.html
+
+
+[12/18/2025 14:20] glad8769
+This is what I am interested in lately: order book and order flow
+
+https://hftbacktest.readthedocs.io/en/latest/tutorials/Market%20Making%20with%20Alpha%20-%20Order%20Book%20Imbalance.html
+
+
+[12/18/2025 14:20] glad8769
+I read that the framework supports also binance and Bybit for now, which I guess are more than enough
+
+
+[12/18/2025 14:48] glad8769
+I do not have enough knowledge right now to understand how it could be used and run it
+
+
+[12/18/2025 14:55] glad8769
+Happy to discuss about it if somebody wants to explore it
+
+
+[12/18/2025 15:28] serialkiller15
+Thanks for sharing sounds interesting...
+
+
+[12/18/2025 15:29] glad8769
+There is also this solution which is even better I guess: https://github.com/roq-trading
+
+{Embed}
+https://github.com/roq-trading
+Roq Trading Solutions
+A toolkit for quant traders wanting full control of their own trading platform. Open, modular and built for ultra-low latency market making. - Roq Trading Solutions
+https://images-ext-1.discordapp.net/external/8qzyWu94jgs8_0WXyRrxvvu1l7SFMg_ISpdNPKwu2DI/%3Fs%3D280%26v%3D4/https/avatars.githubusercontent.com/u/37051738
+
+{Reactions}
+👍
+
+[12/18/2025 15:29] glad8769
+Well there are ton of them available
+
+
+[12/18/2025 15:29] anonymuis
+Very interesting! Would like to investigate if this can be used with freqtrade.
+
+
+[12/18/2025 15:29] glad8769
+The Roq actually goes really deep
+
+
+[12/18/2025 15:29] glad8769
+But both are very raw and you need deep knowledge
+
+
+[12/22/2025 16:35] bigbroseur
+It's time just before Christmas to give some feedback, even if some strategies need more time to confirm...
+means... probably need optimization but has already potential.
+I'm going to try to summarize all my dry  just before Christmas.
+Hope, there will be live for 2026...
+
+@Alex Crypto King  and team... Wondering is there any way to federate and optimize all this positive energy and work...
+
+Merry Christmas @Alex Crypto King and the whole team!!! 
+Regardless of the market conditions for cryptocurrencies...
+
+{Reactions}
+👍 (5)
+
+[12/22/2025 16:36] serialkiller15
+Thanks mate!
+
+{Reactions}
+👍
+
+[12/22/2025 16:36] serialkiller15
+I think we are on y good way here some nice ideas, some future improvments! and other stuff needs to be done!
+
+{Reactions}
+👍 (2)
+
+[01/03/2026 07:44] xf0x0f
+have you tried nofx?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1450923247355953253/1456915996840431646/Bildschirmfoto_2026-01-03_um_08.43.05.png?ex=69f30841&is=69f1b6c1&hm=25903255d0f0d7ad33369e51b20623210f29d64ff49fa1df1497cc83046670e9&
+
+
+[01/03/2026 08:15] bigbroseur
+not yet,  what ai engine(s) do u use?
+
+
+[01/03/2026 10:43] xf0x0f
+Just working with demo binance api and openai
+
+
+[01/03/2026 12:46] .7thdragon
+use it with caution it is full of bugs, but also
+there is a posibility to use also other providers or brokers (like openrouter.ai) which uses the same format as default ones (deepseek) by changing the api url
+i'd better do not set a default deepseek api key and set  in .env
+EXPERIENCE_IMPROVEMENT=false
+in mcs/config.go limit is 2000,  response is limited to 2k which is not enough both for more positions and reasoning, modify and recompile go
+in their oficial chinese telegram u find a lot of startup strats
+@Alex Crypto King might be a good idea to have a section here for this framework in... english not chinese 🙂
+
+{Reactions}
+🇷🇴
+
+[01/03/2026 13:08] .7thdragon
+all over ~300B parameters are good (paid or not), depends on the prompt builds and many parameters that matters for a specific strat
+
+{Reactions}
+👍
+
+[01/03/2026 13:19] bigbroseur
+learn chinese is mine 2029 new year resolution!
+
+{Reactions}
+🤣 (2)
+
+[01/04/2026 04:38] densky188
+I've been using it for a while, and I think it's still unstable, lacking effective strategies and a stable AI API. It would be great if there were a separate large language model specifically for financial markets.
+
+
+[01/04/2026 04:39] densky188
+你在未来会变得更好
+
+
+[01/04/2026 06:17] bigbroseur
+@daden 我希望如此 (I hope so)
+
+{Reactions}
+👍
+
+[01/07/2026 09:13] 4v1234
+Anyone aware of this ? Or I'm late with the info? @xF0x0F
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1450923247355953253/1458388155831943263/Screenshot_20260107_111125_Facebook.jpg?ex=69f31d4f&is=69f1cbcf&hm=dc6c2ea4736a0595139da363cea6286d3c5c074220883dd7b973fbf08080759a&
+
+{Reactions}
+🤯 🚀
+
+[01/07/2026 09:33] darkreaper0756
+Were download😂😂😂?
+
+
+[01/07/2026 10:02] 4v1234
+😀 we have Chinese people here, they can help  😉
+
+
+[01/07/2026 10:03] xf0x0f
+you have free resources? 😄
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1450923247355953253/1458400712139472947/Bildschirmfoto_2026-01-07_um_11.03.33.png?ex=69f32901&is=69f1d781&hm=e0594376d1f444c0fac3f4b8589dcec76a0e6645ecd0632e8cffa5a53492e688&
+
+{Reactions}
+🤣
+
+[01/07/2026 10:05] darkreaper0756
+Disk space have😂😂
+
+{Reactions}
+🤣
+
+[01/07/2026 10:06] 4v1234
+What is the price or ram now?
+
+
+[01/07/2026 10:06] darkreaper0756
+It will appear as soon as distilled 30b 60b parameter
+
+
+[01/07/2026 10:11] darkreaper0756
+96gb ddr5 g.skill 6400mhz 900€
+
+
+[01/07/2026 10:12] darkreaper0756
+I buy with 70€ on ebay kleinanzeigen in august🥹 complet 🆕
+
+{Reactions}
+👍
+
+[01/07/2026 10:14] darkreaper0756
+I was on my way back home. From my place to the guy I bought the RAM from, it was 160 km. I still had 30 km left to get home when the guy called me and told me he had another 96 GB RAM kit. I told him I would go to him the next morning. In the evening, up until 10 p.m., he messaged me that he had sold the memory. I’m so sorry about it. I feel like I’m dying🥹
+
+
+[01/07/2026 10:15] darkreaper0756
+I'll regret for the rest of my life that I didn't come back then😂
+
+{Reactions}
+🤣
+
+[01/07/2026 10:16] 4v1234
+Hahahah so now is better to invest in ram than btc 😀
+
+{Reactions}
+🤣 😂
+
+[01/07/2026 10:17] glad8769
+Perhaps post office? 😄
+
+
+[01/07/2026 10:17] serialkiller15
+i am so glad i buyed ram last year for my servers before the price change! but i am with you @DarkReaper
+
+
+[01/07/2026 10:19] 4v1234
+You have very powerful machine, as you post last night the info.....most of us work on gaming configurations. Soon we will ketch up....I hope 😀
+
+
+[01/07/2026 10:19] darkreaper0756
+He didn’t want to send it by post, that’s exactly why I went to him in person, and his younger brother was at home. I think he was around 13–14 years old. And after another guy called me…😒
+
+{Reactions}
+🤯
+
+[01/07/2026 10:25] darkreaper0756
+Try new thermal compound☺️
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1450923247355953253/1458406272922685652/IMG_5112.jpg?ex=69f32e2f&is=69f1dcaf&hm=9d5bb5b06e96c83f0c55228bb477fd225390a64ea079ab7040249059bc67cec7&
+
+
+[01/07/2026 11:47] ggoyito
+I've been seeing a lot of Mac studio movement of 512gb of unified memory that makes it the most "price-power" to run large LLMs, who would have thought it from Apple
+
+
+[01/07/2026 11:48] serialkiller15
+startet the local llms.... lets see how it does
+
+
+[01/07/2026 12:05] ggoyito
+Yes, remember guys, fine-tuning the models since they are still models that you now operate and they can still answer a question that "what color is the red sky".
+
+
+[01/07/2026 16:08] darkreaper0756
+freqtrade think😂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1450923247355953253/1458492564033507522/IMG_5119.jpg?ex=69f37e8c&is=69f22d0c&hm=263134e4094c6b0daa1574a2c9dc5ec0301e5ae93dc77809ff84c9bcb43a9b6c&
+https://cdn.discordapp.com/attachments/1450923247355953253/1458492564541014230/IMG_5120.jpg?ex=69f37e8c&is=69f22d0c&hm=224cba908bcde8b75133471e73c7c4ea6c6026bd79046f6b22eaaa8eee38fb0e&
+
+{Reactions}
+😂 (2)
+
+[01/14/2026 12:37] shirojinx00
+Does anyone do arbitrage trading?
+
+
+[01/16/2026 16:46] sera131
+I'm working on bringing a freqtrade AI rag agent for the telegram groups for the new comers / newbies to be able to ask away
+
+{Reactions}
+👍 (2)
+
+[01/16/2026 16:46] sera131
+if this community wants to participate to the data i'm feeding please let me know (it can be even strategies, code snippets but also documentation files) -> all the freqtrade docs are already loaded
+
+
+[01/16/2026 16:47] sera131
+I am running this locally on my jetson, I can share my workflow if anyone using n8n
+
+{Reactions}
+👍 (3)
+
+[01/16/2026 17:34] serialkiller15
+Thanks mate!
+
+
+[01/25/2026 14:42] saamyar
+So it needs to deposit 80USDT first, did you deposite ?
+
+
+[01/25/2026 14:44] darkreaper0756
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!SPAM!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+{Reactions}
+👏
+
+[01/25/2026 15:10] xenigami
+wtf
+
+
+[01/25/2026 15:19] shalossen
+scam, it will just steal your ids or credit cards numbers
+
+
+[01/25/2026 15:19] shalossen
+@Alex Crypto King you should prevent people with non admin priviledge to be able to @ everyone
+
+{Reactions}
+👍 (2)
+
+[01/27/2026 12:13] vasko123.
+Does anyone use Claude to correct strategy code?
+Any recommendations on which model to use?
+How do I write a proper PROMT?
+Or is Claude unable to handle the code?
+The free version makes errors and skips sections of code. How does the PRO version of Claude behave?
+
+
+[01/27/2026 12:14] snokard.
+i like codex
+
+{Reactions}
+👍
+
+[01/27/2026 12:14] snokard.
+more
+
+
+[01/27/2026 12:14] serialkiller15
+i use claude for a long time and its doing good at the last days yes but you always have to check for failures!
+
+{Reactions}
+👍
+
+[01/27/2026 12:14] serialkiller15
+codex is also nice yes
+
+
+[01/27/2026 12:15] snokard.
+i personally use gpt to create the codex prompts. letting it handle all the reasoning
+
+{Reactions}
+👍
+
+[01/27/2026 12:35] branly76
+I used vscode for several years, switched to windsurf as IDE(no shares). Cursor is also good, but more for teams. Windsurf is 99% vscode interface/UI. Now I can select what i want to use: Claude, GPT, SWE (you can switch between them). Depending on the version you pay more credits. It makes life much easier. OK pay monthly 16 euro for 500 credits. The main work is now design, specify and test.
+
+{Reactions}
+👍
+
+[01/27/2026 12:36] vasko123.
+The other day, I was fixing some minor errors in the AlexDivergenceV35_Fixed Repainting code.
+I asked Claude if he recognized this strategy. His answer surprised me: YES.
+
+Then Claude suggested creating a Confluence Score strategy based on version 35. On the free Claude, I got something working in a short time.
+But I didn't expect the strategy to work, and even on the first try. Five minutes later, the first profitable trade. Over 12 hours, there were about 170 trades. But the market reversed. The screenshot shows what happened. But it later turned out that not all the code was configured correctly. And there were many other flaws.
+
+{Reactions}
+👍
+
+[01/27/2026 12:36] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1450923247355953253/1465687007979114526/dc1c478651e2c09d.png?ex=69f34ce5&is=69f1fb65&hm=f8b501ce1cd3186c85ff411b8ec4cec7dbfaf9fdd803bee494ed158285185a63&
+
+{Reactions}
+👍
+
+[01/27/2026 12:39] branly76
+I want to code a new test script with which i can test LLM's and prompting based on historical data.
+1. As input I use a .csv file with 1 minute candles. The filename/location will be in a config file(.json)
+2. Only 1 instrument will be tested.
+3. As timeframe for the LLM's i will use 15 minute candles. These must be build from the 1 minute candles.
+4. This give me the possibility when a trade is running to check every minute for exiting the trade/position.
+5. Exit detection can be done on 1 minute candles or 15 minutes candles (switch)
+6. The entry detection will be based on the 15 minute bars
+7. Every trade entry and exit must be tracked and at the end be saved in a .csv file.
+8. Tracking trades same as now, json format. Last x trade results will be prompting as feedback for the LLM learning
+9. For tracking Instrument entry_date, exit_date, entry reason, exit reason
+10. Start with the test_gpttrader_simplified script and config file.
+
+
+[01/27/2026 12:40] branly76
+This txt gave me a complete test script and config file, based on a prompting.py done before.
+
+
+[02/20/2026 21:52] glad8769
+Hey @Alex Crypto King , just DM you regarding https://discord.com/channels/1238181199206154373/1474345946341965946/1474366684151287870 , Thanks!
+
+
+[02/23/2026 20:04] glad8769
+Hi, does it matter if I am running 3 strategies in parallel with a rate limit of 150 on binance? Does it affect badly the performances? Which is your experience on it? Thanks! CC @Alex Crypto King how do you run yours in dry to be sure that binance/bybit or whatever does not block the calls due to the rate limit?
+
+
+[02/23/2026 20:15] serialkiller15
+I work with subaccounts. But have about 15 bits running at the moment and mostly no problems at all
+
+
+[02/24/2026 08:26] glad8769
+I see, good to know. In my case all bots went in negative, that’s why I was wondering if this could affect the performance
+
+
+[02/25/2026 16:39] snokard.
+hey @Alex Crypto King i thought subscord was better for managing discord subscriptions. i guess you already know it but if you dont maybe its worth a look!
+
+
+[02/25/2026 17:18] serialkiller15
+Thanks no did nit know it will take a look thanks
+
+{Reactions}
+❤️
+
+[02/25/2026 17:53] xf0x0f
+Are you interested in such things?
+
+🧠 NexTrader ML Pipeline — Open Source Release
+
+Complete GPU-accelerated ML pipeline for crypto trading signals. LSTM + Transformer ensemble trained on Binance Futures data.
+
+What's inside:
+🔹 Multi-Timeframe feature engineering (5m/15m/1h/4h) → 164 features
+🔹 3-class prediction: LONG / SHORT / HOLD
+🔹 Data downloader (Binance public API, no key needed)
+🔹 Full training pipeline with Focal Loss + early stopping
+🔹 FastAPI inference server (ONNX Runtime, GPU or CPU)
+🔹 Example Freqtrade strategy integration
+
+Results (10 pairs × 365 days):
+• LONG F1: 0.74 | SHORT F1: 0.75
+• ~70% validation accuracy
+• 1.47M params, ~5 MB ONNX model
+• 50 min training on RTX 3090
+
+MIT License — do what you want with it. 🤙
+
+{Reactions}
+💯 (3) ❤️ (3)
+
+[02/25/2026 17:56] themarkx_
+I am interested
+
+
+[02/25/2026 17:56] themarkx_
+I have 5090 24GB may be we can train much faster
+
+
+[02/25/2026 19:28] serialkiller15
+Interesting..can also test..
+
+
+[02/25/2026 20:40] dragongoattigercat
+I have 3x3060 hope it can help too
+
+
+[02/25/2026 23:03] xf0x0f
+Ive been going back and forth with myself on whether to even put the next release of my ideas out there publicly
+
+
+[02/25/2026 23:07] xf0x0f
+Its not about that speed,… im retraining about once a week, but thanks
+
+
+[02/26/2026 09:14] snokard.
+is it yourpersonal project or something public?
+
+
+[03/04/2026 15:54] xf0x0f
+im looking for some guys that are using checkmk and use ios/macos. i need some beta testers for an app
+
+{Reactions}
+🚀
+
+[03/04/2026 15:55] serialkiller15
+apple ios omg sry mate no! hehe
+
+
+[03/04/2026 17:07] dragongoattigercat
+I have iphone 11 if that helps
+
+
+[03/05/2026 00:00] divarak
+Guys... about update freqtrade, should do it monthly, or wait when some strategy works?
+
+
+[03/05/2026 00:00] divarak
+does it affect the update when you have a strategy running for some time (a month for example)
+
+
+[03/05/2026 06:48] serialkiller15
+Hi mate I did not update running systems and versions only if it's realy needed..
+
+{Reactions}
+🫡
+
+[03/31/2026 19:34] dragongoattigercat
+Hi mate, does anyone use LXC Container in Proxmox. is it possible if we can increase the host's swap space from SSD?
+
+
+[03/31/2026 19:38] serialkiller15
+All my freqtrade and ollama and others run in there
+
+
+[03/31/2026 19:49] dragongoattigercat
+in my setup, I did the same to yours. I setup each LXC for one strategy. the problem is I got limit of RAM so I hope I can use SSD to increase swap space for LXC
+
+
+[03/31/2026 20:22] serialkiller15
+Ok I see you can also install a Debian server with docker and run all there that's also fine what are your ram settings for each lxc?
+
+
+[03/31/2026 20:39] xf0x0f
+U can use your hosts swap on an ssd for your lxc but you will remain much slower than on ram
+
+{Reactions}
+👍
+
+[03/31/2026 20:42] dragongoattigercat
+my host is only 16GB of RAM. but I have 500GB internal SSD. I use NAS to provide storage for VMs and LXC. so I dont use this SSD at all. each LXC I configure 4GB of RAM and 2G of swap. so I can only have max 4 LXC
+
+
+[03/31/2026 20:44] serialkiller15
+I personaly use docker because there I can use the memory needed for each container and also increase it not every strategy needs many ram.. Mostly ml and llm needs power
+
+
+[03/31/2026 20:51] dragongoattigercat
+I use docker for freqtrade as well. I install docker on each LXC to run freqtrade. I am not sure this is the right way?
+
+
+[03/31/2026 20:52] serialkiller15
+One lxc and one docker? Why you separate them? In docker or portainer you can limit the memory sice for each docker that's how I work for
+
+
+[03/31/2026 20:54] dragongoattigercat
+I doubt I have a wrong setup. I have a hard time to get all strategy to work in one VM via docker.
+
+
+[03/31/2026 20:56] dragongoattigercat
+if you have all strategy in one computer via docker, can you have each compose file for each strategy? or you have all in 1 compose file?
+
+
+[03/31/2026 20:56] serialkiller15
+Would be the easiest way you can inside portainer limit ram and cpu..
+
+
+[03/31/2026 20:58] serialkiller15
+No need you compose one docker and then you can duplicate them only configure another port and folder where the files are and also and data folder for all docker so you have one data folder only for all of them I have this over years and running about 100 docker on two servers can show you tomorrow my config so that work. Use portainer there you can do any think no need of docker compose.. Then anymore
+
+
+[03/31/2026 21:00] dragongoattigercat
+Thanks Alex. that will help me a lot. I doubt I have a wrong setup but I could not figure it out.
+
+
+[03/31/2026 21:01] serialkiller15
+You have a Proxmox that's a good base you can run Debian or use lxc containers...
+
+
+[03/31/2026 21:02] serialkiller15
+Write you tomorrow when I am on my pc..
+
+
+[03/31/2026 21:04] dragongoattigercat
+Thank you. I have 5 small PC which has 16G RAM each, core i5. so I created a cluster for them, use NAS to provide storage for the cluster so I dont worry about HDD fail
+
+
+[03/31/2026 21:04] serialkiller15
+Then docker with portainer is the solution for you
+
+
+[03/31/2026 21:06] dragongoattigercat
+yeah, I am looking forward to your information so I can correct my setup
+
+
+[04/14/2026 15:52] xenigami
+Do not run this. It is a Trojan horse that steals account information stored in your browser.
+https://www.reddit.com/r/TradingView/comments/1sgar9x/dont_download_the_free_tradingview_premium_on/?sort=new
+
+{Embed}
+r/TradingView
+https://www.reddit.com/r/TradingView/comments/1sgar9x/dont_download_the_free_tradingview_premium_on/?sort=new
+Don't download the free Tradingview Premium on GitHub_Source subred...
+I'm just posting this here so that when the unsuspecting broke trader is looking for Tradingview premium for free, they find…
+https://images-ext-1.discordapp.net/external/lPfOpdA395KgNLYinxvbaJuMx-ZuLbuI9x3X7wvo1vw/https/share.redd.it/preview/post/1sgar9x
+Reddit
+
+
+[04/14/2026 15:53] serialkiller15
+Yep absolute I warned about this the last time
+
+
+==============================================================
+Exported 107 message(s)
+==============================================================

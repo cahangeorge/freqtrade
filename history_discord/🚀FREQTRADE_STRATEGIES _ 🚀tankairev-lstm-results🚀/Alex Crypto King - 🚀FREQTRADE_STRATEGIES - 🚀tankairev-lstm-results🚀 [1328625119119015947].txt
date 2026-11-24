@@ -1,0 +1,312 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🚀tankairev-lstm-results🚀
+==============================================================
+
+[01/14/2025 19:00] serialkiller15
+Hi here some dry runs on my infrastructure.....
+Tankai with LSTM is mostly good but have some troubles with stoploss and other stuff
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328625119119015947/1328800833986367488/image.png?ex=69f2fdf6&is=69f1ac76&hm=9f4b5fe299fa719513d4407cf412ec6b52449d1d72437aeec7cce0b8c430f1b9&
+
+
+[01/14/2025 19:00] serialkiller15
+stay tuned, also do test on NotankAI_15 with lstm.....also need some tuning, we are on it.
+
+{Reactions}
+👍 (3)
+
+[01/16/2025 03:44] avalon5227
+this is mine, maybe catch the bull, so result looks very nice for now.
+
+
+[01/16/2025 03:45] avalon5227
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328625119119015947/1329295388670427178/kag1coq1.t1w.png?ex=69f3790d&is=69f2278d&hm=c11f0882ff28e5636a9681e64cbdc49b79d7e0c18b20d8475fb1e85bc1a6cd45&
+
+{Reactions}
+👍 (2)
+
+[01/16/2025 05:28] serialkiller15
+Nice any troubles with stoploss? Got some trades the get negative...
+
+
+[01/16/2025 08:15] avalon5227
+looks like it never stoploss=.=
+
+
+[01/16/2025 08:15] avalon5227
+always wait it for plus..then sell...
+
+
+[01/16/2025 08:19] avalon5227
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328625119119015947/1329364308790087690/cbmhov1m.yz2.png?ex=69f3107d&is=69f1befd&hm=894f3b37246595dea7569824d5c66499b7f00d3682a4ba15235fc582d4e93632&
+
+
+[01/16/2025 08:20] avalon5227
+but it still reset the stoploss...maybe mine params is not nice...
+
+
+[01/16/2025 08:23] serialkiller15
+Same here I am on it
+
+
+[01/16/2025 08:45] .7thdragon
+i wonder how realistic we can determine the maximum dd has it reached, usually should be lower than 4%
+
+
+[01/16/2025 09:12] avalon5227
+i think 4% maybe too conservative, for large amout maybe suitable
+
+
+[01/16/2025 09:12] avalon5227
+risk higher, profit higher
+
+
+[01/16/2025 09:13] serialkiller15
+@Avalon thanks for your input I have good results but not always the sl is the problem.
+
+
+[01/16/2025 10:01] avalon5227
+yes, last dryrun, all of trades are -10%+..  it is unstable, if catch bull market, run very well, if shift bear, it never stoploss, just waiting...
+
+
+[01/16/2025 16:24] avalon5227
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328625119119015947/1329486528233214125/3zunq05e.gbf.png?ex=69f38250&is=69f230d0&hm=a7b77b1663fc42736eaa485da8d03832e95bf6cb4f78e3dd03adb742a1b9081f&
+
+{Reactions}
+👍 (2)
+
+[01/16/2025 16:32] serialkiller15
+Interesting coin list
+
+
+[01/16/2025 16:37] avalon5227
+"pair_whitelist": [
+      "BTC/USDT:USDT",
+      "ETH/USDT:USDT",
+      "BNB/USDT:USDT",
+      "SOL/USDT:USDT",
+      "XRP/USDT:USDT",
+      "ADA/USDT:USDT",
+      "AVAX/USDT:USDT",
+      "DOT/USDT:USDT",
+      "MATIC/USDT:USDT",
+      "LINK/USDT:USDT",
+      "LTC/USDT:USDT",
+      "UNI/USDT:USDT",
+      "ATOM/USDT:USDT",
+      "ETC/USDT:USDT",
+      "FIL/USDT:USDT",
+      "NEAR/USDT:USDT",
+      "APT/USDT:USDT",
+      "OP/USDT:USDT",
+      "ARB/USDT:USDT",
+      "DOGE/USDT:USDT",
+      "TRX/USDT:USDT",
+      "TON/USDT:USDT",
+      "ICP/USDT:USDT",
+      "AAVE/USDT:USDT",
+      "MKR/USDT:USDT",
+      "GRT/USDT:USDT",
+      "ALGO/USDT:USDT",
+      "IMX/USDT:USDT",
+      "INJ/USDT:USDT",
+      "FTM/USDT:USDT",
+      "AXS/USDT:USDT", // Gaming/NFT
+      "SHIB/USDT:USDT", // Meme
+      "BLUR/USDT:USDT", // NFT
+      "SUI/USDT:USDT", // L1
+      "SEI/USDT:USDT" // New L1
+    ],
+
+
+[01/16/2025 16:37] serialkiller15
+@Avalon thanks for sharing
+
+
+[01/16/2025 16:38] serialkiller15
+You can also direct DM me if you want can't add you as a friend... 👍
+
+
+[01/16/2025 16:38] avalon5227
+you are welcome
+
+
+[01/16/2025 16:38] serialkiller15
+You also thanks for inputs
+
+
+[01/16/2025 16:39] avalon5227
+never mind
+
+
+[01/16/2025 16:39] avalon5227
+bro
+
+
+[01/18/2025 14:08] krampus248
+Hi there, I’m running the new version of TankAIRevival in dry mode with a 30m timeframe, and these are the results from the last 14 hours.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328625119119015947/1330176947749261343/Captura_de_pantalla_2025-01-18_110357.png?ex=69f36251&is=69f210d1&hm=df8669c5463d308cbb095d029cef67e4a83e2e2bf327bb9d2c5cb84e5dfa2405&
+
+
+[01/18/2025 15:36] serialkiller15
+Check the stop loss especially on coins like sol and others..
+I test now with 0.06.. As @7thDragon ...gives the impact
+
+{Reactions}
+❤️
+
+[01/18/2025 16:05] ch1ck3n_t4c0s
+You can also change the fft windows as it affects the stoploss move measurements 😎
+
+{Reactions}
+❤️
+
+[01/18/2025 16:05] serialkiller15
+Yep...
+
+
+[01/21/2025 05:12] avalon5227
+guys, are you still in dry mode? look at the dry run profit, it is really fomo...
+
+
+[01/21/2025 05:12] avalon5227
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328625119119015947/1331129332080574478/1h14nzdo.1ku.png?ex=69f38d8b&is=69f23c0b&hm=b79dea6f93a6b6660977695ca7b127010280a56fc799102262389888cc54a508&
+
+
+[01/21/2025 05:13] avalon5227
+ROI: Closed trades
+∙ 801.734 USDT (5.57%) (24.77 Σ%)
+∙ 5852.661 CNY
+ROI: All trades
+∙ 679.44 USDT (2.99%) (20.99 Σ%)
+∙ 4959.91 CNY
+Total Trade Count: 35
+Bot started: 2025-01-18 09:41:20
+First Trade opened: 2 days ago (2025-01-18 10:02:51)
+Latest Trade opened: 28 minutes ago (2025-01-21 04:44:28)
+Win / Loss: 28 / 1
+Winrate: 96.55%
+Expectancy (Ratio): 27.65 (959.07)
+Avg. Duration: 6:52:34
+Best Performing: LINK/USDT:USDT: 27.15%
+Trading volume: 93392.366 USDT
+Profit factor: 27814.08
+Max Drawdown: 0.00% (0 USDT)
+    from  (0 USDT)
+    to  (0 USDT)
+
+
+[01/21/2025 06:29] serialkiller15
+Good Morging, i run 2 in dry and 1 in live mode.. its working nice, but i will swith on a longer timeframe, now i use 5min, also do tests with 15m....
+
+
+[01/21/2025 06:48] avalon5227
+i use 15m
+
+
+[01/21/2025 13:28] xaviertoor
+Could anyone provide the dockerfile and docker-compose.yml?
+
+
+[01/21/2025 14:54] serialkiller15
+@Xaviertoor please check the #🐳installation channel this channel is for results thanks
+
+{Reactions}
+👍
+
+[01/21/2025 15:05] metinbarut._73694
+3 days live results with 15m interval
+
+
+[01/21/2025 15:05] metinbarut._73694
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328625119119015947/1331278433325551637/image.png?ex=69f36fa8&is=69f21e28&hm=f4cccec171ca39b71d092c15aee242601d1d4478cd9a547e26559bb1a8a66efe&
+
+
+[01/21/2025 15:05] serialkiller15
+Nice thanks for Sharing
+
+
+[01/29/2025 13:34] krampus248
+Hey, I've been testing TankAiRevival live on 15m with a GPU these past few days, but the results haven't been great. Any recommendations to improve it?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328625119119015947/1334154683429818368/Captura_de_pantalla_2025-01-29_094634.png?ex=69f35a5f&is=69f208df&hm=afeec7dbcf016ea2d46e656cb73571199f5a3112ed8fba79e7e1a4346681a975&
+
+
+[01/29/2025 14:09] ch1ck3n_t4c0s
+Change your windows.
+
+
+[01/29/2025 14:12] ch1ck3n_t4c0s
+The fft function is used to derive the optimal periods. As you decrease the timeframe you increase noise input to the fft so more Smoothing needs applied Ala bigger windows for the fft to see through the noise and find the correct periods. To low if a lower limit can inject more noise as well.  It's essentially a Bandpass filter.
+
+{Reactions}
+👍 (2)
+
+[10/03/2025 14:54] serialkiller15
+OLD BUT GOLD
+
+
+[10/03/2025 14:54] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328625119119015947/1423684706666545262/image.png?ex=69f36d34&is=69f21bb4&hm=b57983c4b9f56d9d3b86cfb8b739997fafb64bec06bca485d0cc1feb99c6b087&
+
+
+[10/03/2025 15:32] xalt8851
+💪🏻 where can i download it?
+
+
+[10/03/2025 15:32] serialkiller15
+here i the forum
+
+
+[10/03/2025 15:32] serialkiller15
+https://discord.com/channels/1238181199206154373/1328352857036034139/1328371475345969163
+
+{Reactions}
+🤝
+
+[10/03/2025 15:53] kugodybe
+Is that your little lstm child?
+
+
+[10/03/2025 15:54] serialkiller15
+yep
+
+
+[10/03/2025 15:56] kugodybe
+Lstm is the reason I know you. I started freqai with your lstm child
+
+
+[10/03/2025 15:57] kugodybe
+Thank you!
+
+
+[10/03/2025 15:57] serialkiller15
+have fun and enjoy
+
+
+==============================================================
+Exported 51 message(s)
+==============================================================

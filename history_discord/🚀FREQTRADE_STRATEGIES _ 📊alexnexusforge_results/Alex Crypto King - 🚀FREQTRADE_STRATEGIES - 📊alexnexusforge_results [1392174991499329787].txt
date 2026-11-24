@@ -1,0 +1,2148 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 📊alexnexusforge_results
+==============================================================
+
+[07/08/2025 16:06] serialkiller15
+@everyone i did hard work so i need results here
+
+{Reactions}
+👍 (3)
+
+[07/08/2025 17:03] serialkiller15
+BACKTEST
+
+
+[07/08/2025 17:03] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1392189409113145364/image.png?ex=69f38b6c&is=69f239ec&hm=bdc758241d9a145dba75585d864f154520c83b6e1506f2ae9548f06e680706d4&
+
+{Reactions}
+🔥 (2)
+
+[07/08/2025 17:03] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1392189452151160912/image.png?ex=69f38b77&is=69f239f7&hm=753ed997626c6654dbe041600984026255fd3a037cd63061d4cab4ea3cfc09c0&
+
+
+[07/08/2025 22:03] insomniahaze
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1392264875618730066/image.png?ex=69f328f5&is=69f1d775&hm=9b70f9ea9e1edeaa1e77fb4591cc5ead62bfcfe5ce41b11e1325d773e86e3804&
+https://cdn.discordapp.com/attachments/1392174991499329787/1392264876155473961/image.png?ex=69f328f5&is=69f1d775&hm=a132833254242c17dfad239a27fa17df6ea33d44c1623980e9be9de23fb3465f&
+
+
+[07/08/2025 22:03] insomniahaze
+"BTC/USDT:USDT",
+            "ETH/USDT:USDT",
+            "BNB/USDT:USDT",
+            "DOGE/USDT:USDT",
+            "ADA/USDT:USDT",
+            "AVAX/USDT:USDT",
+            "DOT/USDT:USDT",
+            "LINK/USDT:USDT",
+            "BCH/USDT:USDT",
+            "NEAR/USDT:USDT",
+            "LTC/USDT:USDT",
+            "UNI/USDT:USDT",
+            "1000PEPE/USDT:USDT",
+            "XLM/USDT:USDT",
+            "HBAR/USDT:USDT",
+            "ATOM/USDT:USDT",
+            "ARB/USDT:USDT",
+            "FIL/USDT:USDT",
+            "MKR/USDT:USDT",
+            "SUI/USDT:USDT",
+            "WIF/USDT:USDT",
+            "GRT/USDT:USDT",
+            "AR/USDT:USDT",
+            "1000BONK/USDT:USDT",
+            "1000FLOKI/USDT:USDT",
+            "LDO/USDT:USDT",
+            "ONDO/USDT:USDT",
+            "THETA/USDT:USDT",
+            "NOT/USDT:USDT",
+            "RUNE/USDT:USDT",
+            "AAVE/USDT:USDT",
+            "ALGO/USDT:USDT",
+            "PYTH/USDT:USDT",
+            "TIA/USDT:USDT",
+            "JUP/USDT:USDT",
+            "SEI/USDT:USDT",
+            "FLOW/USDT:USDT",
+            "AXS/USDT:USDT",
+            "EGLD/USDT:USDT",
+            "GALA/USDT:USDT",
+            "ENA/USDT:USDT",
+            "NEO/USDT:USDT",
+            "ORDI/USDT:USDT"
+
+
+[07/09/2025 00:50] huangyafei_90755
+I've been running this strategy in dry mode for 11 days, but the results aren't good. However, I found one signal in it that works particularly well—the breakout long signal. I'm going to extract this breakout long signal alone and run it to see how it performs.
+
+
+[07/09/2025 00:50] huangyafei_90755
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1392306959994192057/rn_image_picker_lib_temp_4ebc0a58-c200-40f9-b5ad-6ba1d6c2f978.jpg?ex=69f35027&is=69f1fea7&hm=589c401853187cab40bbb09a1e4b8f9563f7474ad53b87b0ae3e877bdcc8908a&
+
+
+[07/09/2025 04:21] serialkiller15
+@feifei please try the new version because I also changed some signals in thete
+
+
+[07/09/2025 04:35] serialkiller15
+Feel free to try other time frames
+
+
+[07/09/2025 12:15] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1392479222098034728/image.png?ex=69f347d5&is=69f1f655&hm=31abb8cf8ba30916561697e2d7f23e1f13aa9e2f8cb2ad935903cc99edf13638&
+
+
+[07/09/2025 12:15] serialkiller15
+since yesterday changed to timeframe 1h
+
+{Reactions}
+🚀 (2)
+
+[07/09/2025 12:15] serialkiller15
+signals are more better not so frequent
+
+{Reactions}
+👍 (3)
+
+[07/09/2025 12:28] serialkiller15
+@everyone my sugestion go on longer timeframes minimum 1h....or more
+
+
+[07/10/2025 07:13] serialkiller15
+@everyone also try on 5m i dont wanted was a failure but look running since yesterday on 5m tf
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1392765551096627221/image.png?ex=69f300ff&is=69f1af7f&hm=85542f9b877062f7db0be21c1370543d27481094d1b500190f5f5c38822a8e52&
+
+
+[07/10/2025 07:14] giovannimauro
+wow
+
+
+[07/10/2025 07:14] serialkiller15
+sometimes failures are good hehe will let it run...
+
+{Reactions}
+🤣 (2)
+
+[07/10/2025 07:15] viking046433
+You need to run it for atleast a month to see what it does
+
+
+[07/10/2025 07:16] giovannimauro
+we allways start from 1 day
+
+
+[07/10/2025 07:18] serialkiller15
+@ViKiNG absolute will let it run...
+
+{Reactions}
+🚀 (2) 🤞
+
+[07/11/2025 06:11] libebcnof
+1h looks beautiful
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1393112543689441281/image.png?ex=69f39b69&is=69f249e9&hm=4b267098f7c32eab42430b4eb25ee412ea4e1dec729dbc737c650948977d6986&
+
+
+[07/11/2025 06:12] serialkiller15
+yes this is also that what i suggest! 1h!
+
+
+[07/11/2025 06:13] libebcnof
+5m thought was gonna die but it recovered and going up too
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1393112928437403848/image.png?ex=69f39bc4&is=69f24a44&hm=9f68614a5f37b1a20cb0284fff01b6b32eb4b5f211cb08533c8b7248c4ed6610&
+
+
+[07/11/2025 06:14] viking046433
+This is why a Strat must be run for more than a month
+
+
+[07/11/2025 06:14] serialkiller15
+yes absolute
+
+
+[07/11/2025 06:14] viking046433
+You could be testing it on drawdown and think it’s shit
+
+
+[07/11/2025 06:58] laupapp
+{
+        "method": "VolumePairList",
+        "number_assets": 200,
+        "sort_key": "quoteVolume",
+        "min_value": 1000000,
+        "refresh_period": 90000,
+        },
+        { "method": "AgeFilter", "min_days_listed": 300 },
+        { "method": "FullTradesFilter" },
+        {
+          "method": "OffsetFilter",
+            "offset": 1,
+            "number_assets": 50 
+        }
+
+MOT = 20
+STAKE = 10
+TIMEFRAME = 1h
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1393124321471500288/image.png?ex=69f2fda1&is=69f1ac21&hm=3687528df331a88fda74757da14c0d6edf07771c394ef9156d4ffb315913bc25&
+
+
+[07/11/2025 07:09] maxgorbachevskiy
+BTC was down for a couple of years recently,what would yo do in this case?
+
+
+[07/11/2025 07:40] shalossen
+stake : 5
+max trades : 20
+running on hyperliquid, testing 4 timeframes
+this is the first day
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1393134727661092954/image.png?ex=69f30752&is=69f1b5d2&hm=b68e0ab33633a3077b4f67a209e7a3099e36443af98bf9911387e63641616410&
+
+
+[07/11/2025 07:42] maxgorbachevskiy
+Guys, it is to early to share your results "right here right now". BTC was all the way up. Your results are very good, as expected. 
+BUT Let's wait for market regime change (later today, tomorrow), then we see now it goes over time.
+
+{Reactions}
+👍 (2)
+
+[07/11/2025 07:43] shalossen
+yup you're right
+
+
+[07/11/2025 07:43] maxgorbachevskiy
+Currently it is like sitting in the train and pretending "wow, my body is so fast!".
+Step down from the train first
+
+{Reactions}
+💯 (2)
+
+[07/12/2025 05:51] boooooon
+results from yesterday evening
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1393469689832931438/image.png?ex=69f39687&is=69f24507&hm=f70dc6acfd51f02c5bf04dd299fc38ad769cccf9ada40a662927ec139cf4137c&
+
+
+[07/12/2025 07:07] libebcnof
+What's your TF? I caught a few stop losses around the same time and both 5m and 15m are now in negative pnl. But 1h survived and still proftable
+
+
+[07/12/2025 07:10] boooooon
+1h
+
+
+[07/12/2025 07:11] boooooon
+Maybe it's because I have market orders?
+
+
+[07/12/2025 08:18] libebcnof
+I too have market orders. No, the market made a turn and the strat couldn't handle it. RUNE is among my stop losses too.
+
+
+[07/12/2025 15:15] krampus248
+I'm also using the strategy for 1h, and the bearish movement broke it.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1393611661230735541/Captura_de_pantalla_2025-07-12_121231.png?ex=69f37200&is=69f22080&hm=784a4933729ef0d551bbb88484bcc3c0bbf722d81e435469e76e7e3ed3a931af&
+
+
+[07/12/2025 15:25] serialkiller15
+Yes it has but I have worked on it and let's do some tests..
+
+
+[07/15/2025 12:14] locd0140
+Is there a config.json file for AlexNexusForgeV7.py
+
+
+[07/15/2025 12:16] locd0140
+@Alex Crypto King I need a configuration file for AlexNexusForgeV7.py
+
+
+[07/15/2025 12:17] maxgorbachevskiy
+Choose your flavors yourself
+
+
+[07/15/2025 12:17] serialkiller15
+use your own one 1h timeframe pairlists your decision
+
+
+[07/15/2025 12:21] locd0140
+@Alex Crypto King I studied this strategy yesterday and found that some logic may require config assistance
+
+
+[07/15/2025 12:21] locd0140
+config.json
+
+
+[07/15/2025 12:25] serialkiller15
+https://discord.com/channels/1238181199206154373/1382334861871812678/1394655914442752020
+
+
+[07/16/2025 17:08] cutypie.
+forge result of the last 48h timeframe 1h
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1395089639496224961/image.png?ex=69f38c79&is=69f23af9&hm=8631286a184cfd0fb841d1ff8b5c994ad0e3700b930cf153b61cbeb677fdb0d3&
+
+{Reactions}
+🚀
+
+[07/17/2025 14:18] libebcnof
+1h
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1395409311563382895/image.png?ex=69f364b1&is=69f21331&hm=d62ffffeaa73a072e88bf1cbb01dc72852a3c174456ef3c2b26fbe6839facaab&
+
+
+[07/21/2025 14:59] pi_01328
+Seems that this strategy is better at uptrend instead of downtrend
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1396869220528033832/Screen_Shot_2025-07-21_at_10.58.21_PM.png?ex=69f36e56&is=69f21cd6&hm=95edcbcab8a9c40ce2daa4a76253ac7a3e6f722e203a859d5331fc17a2e2ba6f&
+https://cdn.discordapp.com/attachments/1392174991499329787/1396869220876423240/Screen_Shot_2025-07-21_at_10.58.55_PM.png?ex=69f36e56&is=69f21cd6&hm=ce2eabc3e8251226d41ff36d063c44bd9783a4ee5bdb784f2d2543ad55d52cbe&
+
+
+[07/22/2025 13:13] darkreaper0756
+Hi, Alex, run the strategy for some time. I can offer you SQL Database to see the transactions, if that helps you with something?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1397204845467013170/Screenshot_2025-07-22_160817.png?ex=69f35569&is=69f203e9&hm=7150636eca2aa0b664c47e9990ff897194c1e69236a7ef16df8face28fab232d&
+https://cdn.discordapp.com/attachments/1392174991499329787/1397204845752221696/Screenshot_2025-07-22_160825.png?ex=69f3556a&is=69f203ea&hm=78abc79a74d871843c4a05aa92fb4f7bd936618eb81fb36ecf23959829093d0f&
+https://cdn.discordapp.com/attachments/1392174991499329787/1397204846032978100/Screenshot_2025-07-22_160846.png?ex=69f3556a&is=69f203ea&hm=1c9de915a0b3de6440df3bd813d0dd9f91b51385ac26699e3ef167067e0562df&
+
+
+[07/22/2025 13:19] viking046433
+Disable buckup long signal
+
+
+[07/22/2025 13:20] viking046433
+It’s dragging
+
+
+[07/23/2025 20:23] serialkiller15
+For testing stoploss - 0.99
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1397675556794798274/Screenshot_20250723_215434_Firefox.jpg?ex=69f3118c&is=69f1c00c&hm=1695ffcf6a5b4fa1d4f4070cb4c51e875bf3e1ae98a345ed6d3b9d5c22a92989&
+
+
+[07/23/2025 20:24] serialkiller15
+And longs and also makes shorts nice..
+
+
+[07/23/2025 21:17] pi_01328
+I changed the stoploss from-15 to-25, makes it better. Will-99 be too aggressive?
+
+
+[07/23/2025 21:18] serialkiller15
+It's a test.... Let's give it a try
+
+{Reactions}
+👍
+
+[07/23/2025 21:19] pi_01328
+I do agree the stoploss should be lower than-0.15, current stoploss is too frequent
+
+
+[07/23/2025 21:19] serialkiller15
+Absolute
+
+
+[07/24/2025 06:21] migtaber_92822
+I put it in -8 and works , but now i have a order at -51%, there are a custom_stop_loss ???
+
+
+[07/24/2025 06:21] migtaber_92822
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1397826067305074728/image.png?ex=69f2f4f8&is=69f1a378&hm=23568ebb838c7ae4cb492030bae593e7f15f43be6d4ffdeeb66973142fe14329&
+
+
+[07/24/2025 06:22] migtaber_92822
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1397826172506738838/image.png?ex=69f2f511&is=69f1a391&hm=38c30b110c821c41d687dbcb323379930cf0060ecfb93ffeee4be4d6569ad8d0&
+
+
+[07/24/2025 06:29] erbosnio_17282
+It has to be adapted everyday, nothing fixed will work forever
+
+
+[07/24/2025 07:11] migtaber_92822
+But if I have a stop loss at -8%, how is it possible that I have an order at -51%?
+
+
+[07/24/2025 07:12] kyrylodudnyk
+Old order mb?
+
+
+[07/24/2025 07:13] migtaber_92822
+no....it has 1 day and the bot is on dry since 5 days ago
+
+
+[07/24/2025 07:15] kyrylodudnyk
+Did you start the bot with 8 percent stop loss initially? Or you changed it after this order was created?
+
+
+[07/24/2025 07:16] migtaber_92822
+i started it with 8%
+
+
+[07/24/2025 07:16] migtaber_92822
+Could it be because of the trailing stop?
+
+
+[07/24/2025 07:17] kyrylodudnyk
+So, I believe there is some custom stop loss logic
+
+Do you have use_custom_stoploss = true?
+
+
+[07/24/2025 07:25] migtaber_92822
+no...its to False now
+
+
+[07/24/2025 07:26] migtaber_92822
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1397842319293546558/image.png?ex=69f3041b&is=69f1b29b&hm=45331d22abe2f3947ac8b856c23da83dbf0a5d690e44ae0fd261c517e0b7c694&
+
+
+[07/24/2025 09:14] serialkiller15
+The stoploss is nit working need to be fixed but you can use it on stoploss exchange this works will fix after holidays
+
+
+[07/24/2025 09:20] serialkiller15
+If you use stoploss in exchange you also have to set to true in your config. Json
+
+
+[07/24/2025 16:38] kyle_yongqing
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1397981281823752302/image.png?ex=69f38586&is=69f23406&hm=ce9002e2a74d1f58185f98fcfc14ea7ca624c8cefdf5624d858eeded51add9a7&
+
+
+[07/24/2025 17:28] maxgorbachevskiy
+No need for backtesting screenshots.
+
+
+[07/24/2025 17:40] kyle_yongqing
+i see
+
+
+[07/24/2025 22:02] maxgorbachevskiy
+check your logs first. Most probably forced exit due to max holding time (48h)
+
+
+[07/25/2025 01:39] pi_01328
+The strategy is really not good at downtrend
+
+
+[07/25/2025 06:59] maxgorbachevskiy
+Detais of your analysis, and further suggestions?
+
+
+[07/25/2025 08:30] serialkiller15
+I also have good results on downtrend will post a version after my Holidays sl needs some adjustments
+
+{Reactions}
+👍 (5)
+
+[07/25/2025 17:41] serialkiller15
+Still running
+
+
+[07/25/2025 17:41] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1398359588968992788/Screenshot_20250725_194104_Firefox.jpg?ex=69f3945a&is=69f242da&hm=3ab4af6124ba715258ebf4f8a32f08b3ae062d9c7a102e52a5080200ff40d92b&
+
+{Reactions}
+🔥 (2)
+
+[07/25/2025 17:42] viking046433
+Geeze it's doing great
+
+
+[07/25/2025 17:42] viking046433
+What ver is that
+
+
+[07/25/2025 17:42] serialkiller15
+V8 with no stoploss.
+
+
+[07/25/2025 17:43] serialkiller15
+Need to make some good exits on it after holidays
+
+
+[07/25/2025 17:43] viking046433
+Not getting any stuck trades
+
+
+[07/25/2025 17:44] serialkiller15
+It's weekend check for a bear and enjoy
+
+
+[07/25/2025 17:45] serialkiller15
+That's live since yesterday
+
+
+[07/25/2025 17:45] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1398360575758700626/Screenshot_20250725_194512_Firefox.jpg?ex=69f39545&is=69f243c5&hm=a7c0e9b8e6af9d0e8d66f69d539895e8739111bae3086b985b0909aee7a1bda0&
+
+
+[07/25/2025 19:39] xalt8851
+Where i can download this strategy?
+
+
+[07/26/2025 00:02] pi_01328
+Why is our bot behaves so different?
+
+
+[07/26/2025 00:03] pi_01328
+I lost a lot of money for V8 1h timeframe during downtrend
+
+
+[07/26/2025 00:03] maxgorbachevskiy
+Because… 1) xxxx 2) xxxx 3) xxxx 4) xxxx
+
+
+[07/26/2025 00:03] maxgorbachevskiy
+😉
+
+
+[07/26/2025 00:04] maxgorbachevskiy
+Dry run, or real live trade?
+
+
+[07/26/2025 00:05] pi_01328
+Live trade of course
+
+
+[07/26/2025 00:09] maxgorbachevskiy
+“Live, Of course”?!
+Going live without extensive dry run first, is the rookiest mistake ever. Sorry man, absolutely your fault, read 101 manual first
+
+
+[07/26/2025 00:32] pi_01328
+Is this result totally on your whitelist in config file?
+
+
+[07/26/2025 02:55] ch1ck3n_t4c0s
+How long did you wait to see if it was profitable before throwing $ at it?
+
+
+[07/26/2025 02:56] pi_01328
+2-3 days
+
+{Reactions}
+❌ (3) 👎
+
+[07/26/2025 02:56] ch1ck3n_t4c0s
+Not very long.
+
+
+[07/26/2025 05:28] serialkiller15
+There is no V8 here so it must be V7.. I have a life Version running with 50usdt and it's only for playing I can handle it to loose this play money. But we have not reached the level to go live with that so it's your decision Sry
+
+{Reactions}
+💯
+
+[07/31/2025 11:58] shalossen
+timeframe 5m:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1400447570492526633/image.png?ex=69f343ef&is=69f1f26f&hm=42be124e2dd4588b34f93d78c202aee223ea76a408673afdb4355309f378419f&
+
+
+[07/31/2025 11:58] shalossen
+timeframe 15m:
+
+
+[07/31/2025 11:58] shalossen
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1400447654248316958/image.png?ex=69f34403&is=69f1f283&hm=9a42e0257506503362077e104554db3a7c8b925aad995c45396e1f686285ba6a&
+
+
+[07/31/2025 11:59] shalossen
+timeframe 1h :
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1400447743561957419/image.png?ex=69f34419&is=69f1f299&hm=f5c3fb6bea9b83cb491967add32c328751a8e83aff57c8415c56c1b9704dd77c&
+
+{Reactions}
+🚀 (2)
+
+[07/31/2025 11:59] shalossen
+timeframe 4h :
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1400447808301043762/image.png?ex=69f34428&is=69f1f2a8&hm=43b2a3e0ef9eb272ceabf136da6eacb7edce0a909d08ded593ab4f9daec415c5&
+
+{Reactions}
+✅ (4)
+
+[07/31/2025 12:00] viking046433
+Over exposed
+
+
+[07/31/2025 12:01] shalossen
+stake : 5
+max trades : 20
+running on hyperliquid, 100 USDC dry run
+
+
+[07/31/2025 12:01] viking046433
+Started wallet size? And % gains
+
+
+[07/31/2025 12:01] shalossen
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1400448379775090740/image.png?ex=69f344b0&is=69f1f330&hm=a064045298e91bcb4389a2a538f1a5ca95099db935bb26637c0cc8317db401af&
+
+
+[07/31/2025 12:14] viking046433
+Well if it keeps climbing 25% a month is not bad at all
+
+{Reactions}
+👍 (3)
+
+[08/02/2025 18:00] mmnbm_79378
+ROI: Closed trades
+∙ 37.536 USDT (0.53%) (1.89 Σ%)
+∙ 37.525 USD
+ROI: All trades
+∙ 37.536 USDT (0.53%) (1.89 Σ%)
+∙ 37.525 USD
+Total Trade Count: 25
+Bot started: 2025-07-28 17:55:38
+First Trade opened: 5 days ago (2025-07-28 17:57:30)
+Latest Trade opened: an hour ago (2025-08-02 16:02:05)
+Win / Loss: 22 / 3
+Winrate: 88.00%
+Expectancy (Ratio): 1.50 (0.04)
+Avg. Duration: 3:07:09
+Best Performing: TON/USDT:USDT: 60.765 USDT (3.76%)
+Trading volume: 51685.092 USDT
+Profit factor: 1.31
+Max Drawdown: 4.50% (90.406 USDT)
+    from 2025-07-29 16:50:46 (23.964 USDT)
+    to 2025-07-31 12:57:02 (-66.442 USDT)
+
+
+[08/04/2025 17:57] mmnbm_79378
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1401987404662833192/image.png?ex=69f39804&is=69f24684&hm=2191679feb79e18f51f1dd7c0adca79116062ef4c0f75df99dd20709281ad5e0&
+
+
+[08/04/2025 17:58] mmnbm_79378
+ROI: Closed trades
+∙ 76.668 USDT (0.89%) (3.86 Σ%)
+∙ 76.668 USD
+ROI: All trades
+∙ 76.668 USDT (0.89%) (3.86 Σ%)
+∙ 76.668 USD
+Total Trade Count: 28
+Bot started: 2025-07-28 17:55:38
+First Trade opened: 7 days ago (2025-07-28 17:57:30)
+Latest Trade opened: an hour ago (2025-08-04 16:02:14)
+Win / Loss: 25 / 3
+Winrate: 89.29%
+Expectancy (Ratio): 2.74 (0.07)
+Avg. Duration: 2:55:59
+Best Performing: TON/USDT:USDT: 80.204 USDT (3.97%)
+Trading volume: 60359.853 USDT
+Profit factor: 1.63
+Max Drawdown: 4.50% (90.406 USDT)
+    from 2025-07-29 16:50:46 (23.964 USDT)
+    to 2025-07-31 12:57:02 (-66.442 USDT)
+
+
+[08/04/2025 18:01] serialkiller15
+Nice live run have realy balls hehe
+
+{Reactions}
+🤣 (2)
+
+[08/04/2025 18:02] viking046433
+Ya hahah
+
+
+[08/04/2025 18:03] mmnbm_79378
+We must also thank the effort of the group leader for having such a good performance strategy.
+
+{Reactions}
+👍
+
+[08/04/2025 18:03] serialkiller15
+Thanks mate
+
+
+[08/04/2025 18:06] serialkiller15
+Is the stoploss working in your version I have so much versions here
+
+
+[08/04/2025 18:07] mmnbm_79378
+Effective
+
+
+[08/04/2025 18:08] serialkiller15
+Did you do some changes? Pair list or something else
+
+
+[08/04/2025 18:08] mmnbm_79378
+But my test at the 1-minute level is invalid.
+
+
+[08/04/2025 18:09] mmnbm_79378
+There should be a problem here   use_custom_stoploss = False
+
+
+[08/04/2025 18:10] mmnbm_79378
+I also tried to change it, but the position for adding to my position is relatively close, at 0.018, so I added to it. I changed the distance, but the effect was not ideal.
+
+
+[08/04/2025 18:12] mmnbm_79378
+Here I made changes def protections(self): prot = [{"method": "CooldownPeriod", "stop_duration_candles": self.cooldown_lookback.value}] if self.use_stop_protection.value: prot.append({ "method": "StoplossGuard", "lookback_period_candles": 72, "trade_limit": 2, "stop_duration_candles": self.stop_duration.value, "only_per_pair": False, }) return prot
+
+
+[08/04/2025 18:13] mmnbm_79378
+The pairing list has not changed.
+
+
+[08/04/2025 18:14] serialkiller15
+Ok nice results thanks for sharing
+
+
+[08/05/2025 06:25] viking046433
+I’m dry running it on 1h let’s see
+
+{Reactions}
+👍
+
+[08/05/2025 08:37] migtaber_92822
+Hi Alex, I made some changes to your logic, such as adding more long inputs, changing the trailing stop loss to my function, and changing the ROI fields. It works very well. The problem I have, and that I see in all the logic, is the cycle changes. For example, all my orders are long, but suddenly everything starts to go short... and there are a few orders doomed to die. I'll send you the logic later in case you want to take a look.
+
+
+[08/05/2025 08:39] serialkiller15
+Hi mate, yes you can write me a dm, we will handle it i also have that issue, but it dont have impacts on the entrys...is about recalculating!
+
+
+[08/05/2025 08:39] migtaber_92822
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1402209412311023677/image.png?ex=69f31547&is=69f1c3c7&hm=ff9a82caf0c52b944362d7c512734e9204004bcf2429aded60d6b729aace03a1&
+
+{Reactions}
+🚀 (5) 👍
+
+[08/07/2025 06:03] viking046433
+ROI: Closed trades
+∙ 6.905 USDT (0.91%) (3.49 Σ%)
+∙ 122.764 ZAR
+ROI: All trades
+∙ 4.613 USDT (0.74%) (2.33 Σ%)
+∙ 82.022 ZAR
+Total Trade Count: 106
+Bot started: 2025-08-05 05:53:22
+First Trade opened: 2 days ago (2025-08-05 05:57:41)
+Latest Trade opened: 3 hours ago (2025-08-07 02:06:05)
+Win / Loss: 92 / 10
+Winrate: 90.20%
+Expectancy (Ratio): 0.07 (0.05)
+Avg. Duration: 2:03:53
+Best Performing: B3/USDT:USDT: 1.564 USDT (16.88%)
+Trading volume: 8412.345 USDT
+Profit factor: 1.49
+Max Drawdown: 2.18% (4.386 USDT)
+    from 2025-08-05 10:30:33 (3.273 USDT)
+    to 2025-08-05 11:42:10 (-1.112 USDT)
+
+{Reactions}
+👍
+
+[08/07/2025 06:03] viking046433
+Volume pairs 80
+
+
+[08/07/2025 06:04] viking046433
+Daily Profit over the last 7 days:
+Day (count)      USDT         ZAR         Profit %
+---------------  -----------  ----------  ----------
+2025-08-07 (5)   -0.723 USDT  -12.86 ZAR  -0.35%
+2025-08-06 (44)  2.606 USDT   46.34 ZAR   1.28%
+2025-08-05 (53)  5.022 USDT   89.29 ZAR   2.54%
+2025-08-04 (0)   0 USDT       0.00 ZAR    0.00%
+2025-08-03 (0)   0 USDT       0.00 ZAR    0.00%
+2025-08-02 (0)   0 USDT       0.00 ZAR    0.00%
+2025-08-01 (0)   0 USDT       0.00 ZAR    0.00%
+
+
+[08/07/2025 06:04] mmnbm_79378
+Did you make any changes?
+
+
+[08/07/2025 06:04] viking046433
+No
+
+
+[08/07/2025 06:05] mmnbm_79378
+One hour level?
+
+
+[08/07/2025 06:05] viking046433
+Yes sir
+
+
+[08/07/2025 06:05] boooooon
+I have -4% for August 5, you have +2.5%)
+
+
+[08/07/2025 06:06] viking046433
+I use volume pairs 80
+
+{Reactions}
+🤔
+
+[08/07/2025 06:07] boooooon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1402895798093615204/image.png?ex=69f39a46&is=69f248c6&hm=343e222cc46fb489cefdef9ecca026251869587912d9ea1f8b999de92e4b39b9&
+
+
+[08/07/2025 06:07] viking046433
+Ver 7
+
+
+[08/07/2025 06:08] viking046433
+What is your total profit by now?
+
+
+[08/07/2025 06:08] boooooon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1402896187241009183/image.png?ex=69f39aa3&is=69f24923&hm=35031c5f163c4522a1e25cd316244f7c84925ffbe0625c8f1ac7385df2c8d5c1&
+
+
+[08/07/2025 06:08] boooooon
+yes
+
+
+[08/07/2025 06:08] mmnbm_79378
+ROI: Closed trades
+∙ -60.633 USDT (-0.48%) (-14.53 Σ%)
+∙ -60.633 USD
+ROI: All trades
+∙ -75.37 USDT (-0.55%) (-18.06 Σ%)
+∙ -75.37 USD
+Total Trade Count: 304
+Bot started: 2025-08-01 17:08:06
+First Trade opened: 5 days ago (2025-08-01 17:12:53)
+Latest Trade opened: a second ago (2025-08-07 06:08:47)
+Win / Loss: 228 / 71
+Winrate: 76.25%
+Expectancy (Ratio): -0.20 (-0.06)
+Avg. Duration: 3:26:06
+Best Performing: PUMP/USDT:USDT: 7.986 USDT (4.63%)
+Trading volume: 95088.312 USDT
+Profit factor: 0.76
+Max Drawdown: 21.93% (96.582 USDT)
+    from 2025-08-02 13:01:25 (23.19 USDT)
+    to 2025-08-06 03:27:05 (-73.392 USDT)
+
+{Reactions}
+👍
+
+[08/07/2025 06:09] viking046433
+Ooff not well
+
+
+[08/07/2025 06:10] boooooon
+but you did some changes in the strategy, right?
+
+
+[08/07/2025 06:10] mmnbm_79378
+Not tested
+
+
+[08/07/2025 06:16] sang_tm
+only 1% gain
+
+
+[08/07/2025 11:07] boooooon
+Can try with disabled short
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1402971330877325473/image.png?ex=69f337df&is=69f1e65f&hm=606466afbf52be3f10c85abb7cd99447ef6ba8f65da815091e4ad21f0f37c8bd&
+
+
+[08/07/2025 11:10] viking046433
+Yes shorts is a problem
+
+
+[08/07/2025 11:10] viking046433
+Short are always more risky
+
+
+[08/07/2025 11:24] serialkiller15
+yes true use_short = False
+
+
+[08/07/2025 22:29] shalossen
+4h
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1403142928825581709/image0.jpg?ex=69f32eef&is=69f1dd6f&hm=c2892fa3aea0e43e4936d8c45e83d43f5e16971769c8bb4ccfd164a2babd6410&
+
+{Reactions}
+🚀 (2)
+
+[08/08/2025 07:04] viking046433
+That’s good results
+
+
+[08/08/2025 07:25] giovannimauro
+Can you share strategy and config?
+
+
+[08/08/2025 07:40] mmnbm_79378
+ROI: Closed trades
+∙ 154.622 USDT (1.04%) (7.81 Σ%)
+∙ 154.622 USD
+ROI: All trades
+∙ 125.86 USDT (0.85%) (6.35 Σ%)
+∙ 125.86 USD
+Total Trade Count: 48
+Bot started: 2025-07-28 17:55:38
+First Trade opened: 10 days ago (2025-07-28 17:57:30)
+Latest Trade opened: 6 hours ago (2025-08-08 01:07:57)
+Win / Loss: 40 / 6
+Winrate: 86.96%
+Expectancy (Ratio): 3.36 (0.08)
+Avg. Duration: 2:43:45
+Best Performing: TON/USDT:USDT: 80.204 USDT (3.97%)
+Trading volume: 118246.056 USDT
+Profit factor: 1.63
+Max Drawdown: 4.96% (102.067 USDT)
+    from 2025-08-04 16:11:10 (76.668 USDT)
+    to 2025-08-06 11:53:07 (-25.399 USDT)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1403281821298327643/image.png?ex=69f30789&is=69f1b609&hm=4dcfecb3cb1960bd3d0f412bebf508df2378863bc62720e618ec3fad0ba5f849&
+
+
+[08/08/2025 07:45] darkreaper0756
+Timeframe?
+
+
+[08/08/2025 07:45] darkreaper0756
+StaticPairlist or VolumePairlist?
+
+
+[08/08/2025 07:50] mmnbm_79378
+Static
+
+
+[08/08/2025 19:13] shalossen
+The strategy is alexnexusforgev7, you should easily find it in the channel above. For my config file I'm not home currently so I can't send it to you. Stake amount is 5, starting amount is 100, max trades is 20. Trading on Hyperliquid with top 20 pairs.
+
+
+[08/08/2025 19:14] shalossen
+4h :
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1403456472125538465/Screenshot_20250808_211433_Telegram.jpg?ex=69f30171&is=69f1aff1&hm=bb76bad6fdfa502e230d5cb9ab0778b67bb1f07531bb00ae4fe5d23c23e28615&
+
+
+[08/08/2025 19:15] serialkiller15
+That's nice thanks for sharing
+
+
+[08/08/2025 19:15] shalossen
+1h :
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1403456707539239065/Screenshot_20250808_211516_Telegram.jpg?ex=69f301aa&is=69f1b02a&hm=cdcb1f5a3a587c2b98dc6cb959897ea7890cc17f54045969486ac3a143749fc3&
+
+
+[08/08/2025 19:16] shalossen
+It's you whom I should thanks lol
+
+
+[08/08/2025 19:16] shalossen
+15m :
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1403456946756911144/Screenshot_20250808_211637_Telegram.jpg?ex=69f301e3&is=69f1b063&hm=d144b08013ab561517465765fa94a50a6812f0c2c548c1ab930984922280030b&
+
+
+[08/08/2025 19:17] shalossen
+5m is -50%
+
+
+[08/08/2025 19:20] serialkiller15
+Min Timeframe 1h it's not build for smaller Time frames...
+
+
+[08/08/2025 19:21] serialkiller15
+But thanks for testing
+
+
+[08/08/2025 19:21] shalossen
+To complete it @Giovanni Mauro
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1403458172890648697/image0.jpg?ex=69f30307&is=69f1b187&hm=f560ae47344781eb6ac14c61c22646213c7c633340bee62c9ec1fff50592da16&
+
+
+[08/08/2025 19:22] mmnbm_79378
+The longer the cycle, the higher the winning rate.
+
+
+[08/08/2025 19:22] mmnbm_79378
+ROI: Closed trades
+∙ 257.364 USDT (1.20%) (13.05 Σ%)
+∙ 257.364 USD
+ROI: All trades
+∙ 159.235 USDT (0.79%) (8.07 Σ%)
+∙ 159.235 USD
+Total Trade Count: 73
+Bot started: 2025-07-28 17:55:38
+First Trade opened: 11 days ago (2025-07-28 17:57:30)
+Latest Trade opened: 35 minutes ago (2025-08-08 18:43:53)
+Win / Loss: 61 / 7
+Winrate: 89.71%
+Expectancy (Ratio): 3.78 (0.09)
+Avg. Duration: 2:48:53
+Best Performing: TON/USDT:USDT: 80.204 USDT (3.97%)
+Trading volume: 184707.193 USDT
+Profit factor: 1.83
+Max Drawdown: 4.98% (102.067 USDT)
+    from 2025-08-04 16:11:10 (76.668 USDT)
+    to 2025-08-06 11:53:07 (-25.399 USDT)
+
+{Reactions}
+🔥 (2) 🚀
+
+[08/08/2025 19:23] serialkiller15
+Nice...
+
+
+[08/08/2025 19:23] shalossen
+No problem, I will launch other dry runs on your other strategies on those 4 timeframes next week
+
+
+[08/08/2025 19:23] serialkiller15
+Thanks
+
+
+[08/08/2025 19:24] serialkiller15
+One tip take the alextankpro... First
+
+{Reactions}
+✅ (2)
+
+[08/09/2025 07:36] viking046433
+Daily Profit over the last 7 days:
+Day (count)      USDT         ZAR          Profit %
+---------------  -----------  -----------  ----------
+2025-08-09 (17)  3.307 USDT   58.72 ZAR    1.62%
+2025-08-08 (40)  5.282 USDT   93.80 ZAR    2.66%
+2025-08-07 (40)  -7.309 USDT  -129.81 ZAR  -3.56%
+2025-08-06 (44)  2.606 USDT   46.29 ZAR    1.28%
+2025-08-05 (53)  5.022 USDT   89.19 ZAR    2.54%
+2025-08-04 (0)   0 USDT       0.00 ZAR     0.00%
+2025-08-03 (0)   0 USDT       0.00 ZAR     0.00%
+
+
+[08/09/2025 07:36] viking046433
+1h timeframe
+
+
+[08/09/2025 07:37] viking046433
+Volume pairs 80
+
+
+[08/09/2025 14:26] mmnbm_79378
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1403746184203604059/image.png?ex=69f36682&is=69f21502&hm=205423fb4b1e4757615c1b6b49a97d8f0c4cc226100e91c8b9f1b033494511ab&
+
+{Reactions}
+👍 (3)
+
+[08/09/2025 14:36] serialkiller15
+Realy nice
+
+
+[08/09/2025 14:36] serialkiller15
+Good profit
+
+
+[08/09/2025 14:37] mmnbm_79378
+Yeah, that's right
+
+
+[08/09/2025 14:38] serialkiller15
+V8
+
+
+[08/09/2025 14:38] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1403749333450362941/IMG_20250809_163826_214.jpg?ex=69f36971&is=69f217f1&hm=62625250389a0fe963b4b0f2b913a4b160af95a550349521d2b3adf6397416e9&
+
+{Reactions}
+🚀 (3) 👏
+
+[08/09/2025 14:39] darkreaper0756
+with DCA?
+
+
+[08/09/2025 14:39] mmnbm_79378
+Going long has an advantage, but reversing can easily lead to losses
+
+
+[08/09/2025 14:42] mmnbm_79378
+V8 hasn't been released yet, has it
+
+
+[08/09/2025 15:18] serialkiller15
+No not released yet let it run and will post updates but I think V7 is already good
+
+
+[08/09/2025 15:42] mmnbm_79378
+good
+
+
+[08/09/2025 15:42] serialkiller15
+I am working on an Ai version.. Of it
+
+
+[08/09/2025 15:43] mmnbm_79378
+Looking forward to retesting together
+
+
+[08/09/2025 15:43] viking046433
+V8 is wow dude
+
+
+[08/09/2025 15:43] serialkiller15
+Thanks yes I think so will post it in Vip channel the next days
+
+{Reactions}
+👍
+
+[08/09/2025 15:44] mmnbm_79378
+Thank you to the group leader for your hard work and dedication
+
+{Reactions}
+👍
+
+[08/09/2025 15:44] serialkiller15
+Thanks mate
+
+
+[08/09/2025 15:44] viking046433
+Yes sir
+
+{Reactions}
+👍
+
+[08/09/2025 15:45] darkreaper0756
+What AI model use?
+
+
+[08/09/2025 15:45] serialkiller15
+Trying some freqai on Alex nexus but takes some time to implement and test.. V8 is finished...
+
+{Reactions}
+👍
+
+[08/09/2025 15:45] serialkiller15
+Freqai vs rl
+
+
+[08/09/2025 15:45] serialkiller15
+But alpha status
+
+
+[08/09/2025 15:46] serialkiller15
+Lstm xgboost...
+
+
+[08/09/2025 15:46] viking046433
+Awesome
+
+
+[08/11/2025 08:34] viking046433
+Volume pair list 80
+
+
+[08/11/2025 08:34] viking046433
+Daily Profit over the last 7 days:
+Day (count)      USDT         ZAR          Profit %
+---------------  -----------  -----------  ----------
+2025-08-11 (6)   0.42 USDT    7.44 ZAR     0.20%
+2025-08-10 (29)  1.362 USDT   24.14 ZAR    0.67%
+2025-08-09 (47)  0.228 USDT   4.03 ZAR     0.11%
+2025-08-08 (40)  5.282 USDT   93.59 ZAR    2.66%
+2025-08-07 (40)  -7.309 USDT  -129.52 ZAR  -3.56%
+2025-08-06 (44)  2.606 USDT   46.18 ZAR    1.28%
+2025-08-05 (53)  5.022 USDT   88.98 ZAR    2.54%
+
+{Reactions}
+🔥
+
+[08/11/2025 08:35] viking046433
+Not jobbing lekker
+
+
+[08/11/2025 08:35] viking046433
+ROI: Closed trades
+∙ 7.61 USDT (0.66%) (3.84 Σ%)
+∙ 134.854 ZAR
+ROI: All trades
+∙ 4.835 USDT (0.53%) (2.44 Σ%)
+∙ 85.683 ZAR
+Total Trade Count: 266
+Bot started: 2025-08-05 05:53:22
+First Trade opened: 6 days ago (2025-08-05 05:57:41)
+Latest Trade opened: 29 minutes ago (2025-08-11 08:05:08)
+Win / Loss: 231 / 28
+Winrate: 89.19%
+Expectancy (Ratio): 0.03 (0.02)
+Avg. Duration: 2:55:58
+Best Performing: NEIRO/USDT:USDT: 1.748 USDT (2.53%)
+Trading volume: 18803.8 USDT
+Profit factor: 1.18
+Max Drawdown: 4.52% (9.327 USDT)
+    from 2025-08-07 02:57:11 (8.171 USDT)
+    to 2025-08-07 18:35:16 (-1.156 USDT)
+
+{Reactions}
+🔥 (3)
+
+[08/11/2025 08:36] mmnbm_79378
+Was there no pullback today?
+
+
+[08/11/2025 08:37] viking046433
+BTC ran
+
+
+[08/11/2025 08:37] viking046433
+From last night I did not check now again
+
+
+[08/11/2025 08:38] mmnbm_79378
+An hour-long run?
+
+
+[08/11/2025 08:38] viking046433
+Not sure it gone from 117000 to 121000
+
+
+[08/11/2025 08:40] viking046433
+✳ Binanceusdm (dry): Exited BTC/USDT:USDT (#18)
+Profit: 3.02% (profit: 10.627 USDT / 188.411 ZAR)
+Exit Reason: trailing_stop_loss
+Direction: Long
+Amount: 0.003
+Open Rate: 117353.3 USDT
+Exit Rate: 121100 USDT
+Duration: 3 days, 2:13:14 (4453.2 min)
+
+{Reactions}
+👍
+
+[08/11/2025 08:40] mmnbm_79378
+Just one coin
+
+
+[08/11/2025 22:20] shalossen
+profits got cut in half for 4h, interesting
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1404590262000418926/image.png?ex=69f32cde&is=69f1db5e&hm=c44f53c783f47386d05bbabf53b4ab1d3abe27a58e7ed13bd26b94107daab33e&
+
+
+[08/11/2025 22:20] shalossen
+no issue for 1h :
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1404590374709887156/image.png?ex=69f32cf9&is=69f1db79&hm=20c551b76bea1227d2ddc414b1037ec3eb9441514d934e1fbb5d44b43bf13bfd&
+
+{Reactions}
+🔥
+
+[08/11/2025 22:40] snokard.
+4H looked so stable...
+
+
+[08/11/2025 23:02] shalossen
+yes lol I was a bit surprised
+
+{Reactions}
+😩
+
+[08/12/2025 07:29] serialkiller15
+hey guys some infos about v8 i have to spend more time into it, yesterday was a classical market change, horrible to handle it, let me fix it or integrate some more futures into it before posting here, stay tuned i am on it!
+
+{Reactions}
+👍 (6)
+
+[08/12/2025 08:18] branly76
+quality goes before speed.
+
+{Reactions}
+👍
+
+[08/12/2025 08:44] serialkiller15
+absolute right!
+
+
+[08/12/2025 15:28] evolver8862
+24h of dry run. Slightly modified and then hyperopted V7, selected static pair list
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1404848925352923207/image.png?ex=69f37504&is=69f22384&hm=edc6b0ab597db025e8ef00d50ab9c33168340bfb7534485d8b7db2ddc355ffd9&
+
+{Reactions}
+🚀
+
+[08/13/2025 13:25] viking046433
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1405180547684106280/IMG_1386.png?ex=69f3585d&is=69f206dd&hm=0096c98a20bc19a51d2024e7d914392ad9e58c49a9d84509ebd8fd83a53d322e&
+
+{Reactions}
+👍 (4)
+
+[08/15/2025 06:26] boooooon
+Hi guys. which timeframe shows more stable results? 1h vs 4h?
+
+
+[08/15/2025 06:26] darkreaper0756
+1h
+
+
+[08/15/2025 06:27] darkreaper0756
+For me…
+
+
+[08/15/2025 16:15] shalossen
+4h :
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1405948036584312842/image.png?ex=69f38025&is=69f22ea5&hm=ab243a43696e4104681f43499da11e1bad3b9153dda040d92cd8072e67df9ac7&
+
+
+[08/15/2025 16:15] shalossen
+it was stable for a time then it fell off
+
+
+[08/15/2025 16:16] shalossen
+1h
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1405948163533307924/image.png?ex=69f38043&is=69f22ec3&hm=a1e623eb5f9ca6845b2db25e09c3cfff927d913228bc6c6937544f5c869c6909&
+
+
+[08/15/2025 16:16] shalossen
+less stable but seems more profitable
+
+
+[08/15/2025 16:17] darkreaper0756
+Volume pairlist, 120pair 1h market order
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1405948487488770130/att.gE_PegICBKJgHhmrth66gU5WmWq8vQ1SB5X7r5idgyU.jpg?ex=69f38090&is=69f22f10&hm=8ce6e74878bae9887d6cba8cb91e6437d961824aecb3991b7689b5c1b183e3a4&
+
+
+[08/15/2025 16:19] neveerrk
+Did you modify the source code
+
+
+[08/15/2025 16:20] neveerrk
+I adjusted the parameters, but the strategy fails to accurately catch trend reversals. Could you share your version for reference?
+
+
+[08/16/2025 09:10] mmnbm_79378
+ROI: Closed trades
+∙ 113.746 USDT (1.01%) (1.14 Σ%)
+∙ 113.86 USD
+ROI: All trades
+∙ 88.719 USDT (0.51%) (0.89 Σ%)
+∙ 88.808 USD
+Total Trade Count: 40
+Bot started: 2025-08-15 15:30:05
+First Trade opened: 17 hours ago (2025-08-15 15:55:32)
+Latest Trade opened: 24 minutes ago (2025-08-16 08:45:46)
+Win / Loss: 26 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 4.37 (100.00)
+Avg. Duration: 3:08:52
+Best Performing: BANANA/USDT:USDT: 9.658 USDT (1.10%)
+Trading volume: 28751.089 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from 2025-08-15 17:06:33 (4.44 USDT)
+    to 2025-08-15 17:06:33 (4.44 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-08-16 07:45:47 (113.746 USDT)
+
+{Reactions}
+👍
+
+[08/16/2025 09:12] boooooon
+1h? Static pairlist?
+
+
+[08/16/2025 09:12] mmnbm_79378
+Yes
+
+
+[08/16/2025 09:16] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1406204985536020570/Screenshot_20250816_170918_Telegram.jpg?ex=69f31df2&is=69f1cc72&hm=6084f6ea22138b2cebc984452420f41d48f2f031ddf9a8c1fddabfedabdd7df4&
+
+
+[08/16/2025 09:17] sang_tm
+live trading ?
+
+
+[08/16/2025 09:17] neveerrk
+Yes
+
+
+[08/16/2025 09:17] mmnbm_79378
+v8?
+
+
+[08/16/2025 09:17] sang_tm
+good result bro
+
+
+[08/16/2025 09:17] neveerrk
+V7
+
+
+[08/16/2025 09:17] mmnbm_79378
+Ok
+
+
+[08/16/2025 09:18] sang_tm
+1h with static pairlist ?
+
+
+[08/16/2025 09:18] mmnbm_79378
+When the V7 strategy reverses, there will be losses. However, the basic trend will not trigger a stop-loss.
+
+{Reactions}
+👍 (3) ✅
+
+[08/16/2025 09:19] mmnbm_79378
+Let's all think together about how to solve this problem.
+
+
+[08/16/2025 09:19] neveerrk
+just made some minor adjustments and renamed it myself. V7 is already a great strategy—looking forward to Alex's V8 version
+
+
+[08/16/2025 09:19] viking046433
+I feel the v7 how it is managing DCA is not good enough
+
+
+[08/16/2025 09:19] neveerrk
+Yes mate
+
+{Reactions}
+👍
+
+[08/16/2025 09:20] sang_tm
+looks stable
+
+
+[08/16/2025 09:20] viking046433
+ROI: Closed trades
+∙ 3.797 USDT (0.38%) (1.92 Σ%)
+∙ 66.863 ZAR
+ROI: All trades
+∙ -0.826 USDT (0.25%) (-0.42 Σ%)
+∙ -14.547 ZAR
+Total Trade Count: 403
+Bot started: 2025-08-05 05:53:22
+First Trade opened: 11 days ago (2025-08-05 05:57:41)
+Latest Trade opened: 2 hours ago (2025-08-16 07:05:36)
+Win / Loss: 346 / 50
+Winrate: 87.37%
+Expectancy (Ratio): 0.01 (0.01)
+Avg. Duration: 3:15:14
+Best Performing: MOODENG/USDT:USDT: 2.335 USDT (3.19%)
+Trading volume: 29079.54 USDT
+Profit factor: 1.05
+Max Drawdown: 5.72% (12.241 USDT)
+    from 2025-08-13 14:09:36 (16.038 USDT)
+    to 2025-08-16 07:55:24 (3.797 USDT)
+
+{Reactions}
+👍 (2)
+
+[08/16/2025 09:24] sang_tm
+not so good, can your tell your current config ?
+
+
+[08/16/2025 09:27] neveerrk
+V7 struggles to exit during market reversals, worsening drawdowns – probably because its 1h signals aren't adaptive enough. Hope V8 can fix this! (But V7's still solid for trends
+
+{Reactions}
+👍
+
+[08/16/2025 09:28] neveerrk
+Limit Order
+
+{Reactions}
+👍
+
+[08/16/2025 09:29] sang_tm
+Agreed. But in your image, when it loses, it doesn't lose too much, which is acceptable
+
+
+[08/16/2025 09:29] viking046433
+Volume pairs 80 200$ wallet
+
+{Reactions}
+👍
+
+[08/16/2025 09:30] viking046433
+I feel the dca about. Must be decided by your config wallet amount not the strategy
+
+{Reactions}
+👍
+
+[08/16/2025 09:30] viking046433
+Amout*
+
+
+[08/16/2025 09:30] viking046433
+Amount
+
+
+[08/16/2025 09:31] viking046433
+It’s not handled the dca well
+
+
+[08/16/2025 09:31] viking046433
+I’m trying something different
+
+{Reactions}
+👍
+
+[08/16/2025 09:40] neveerrk
+Smaller position (10) + limit order
+
+
+[08/16/2025 09:40] neveerrk
+minimal_roi = {
+        "1": 0.128,     
+        "6": 0.116,    
+        "11": 0.104,     
+        "21": 0.83,    
+        "31": 0.066,   
+        "46": 0.046,    
+        "61": 0.034,  
+        "361": 0.005,
+        "421": -0.018   
+    }
+
+{Reactions}
+👍
+
+[08/16/2025 09:41] sang_tm
+max_open_trades: 10 ? can you tell me your stake_amount and starting balance ? thanks !
+
+
+[08/16/2025 09:42] neveerrk
+I relaxed the exit signal conditions, but they still never got triggered. Nothing else was changed
+
+
+[08/16/2025 09:44] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1406212078787756246/mmexport1755337469556.jpg?ex=69f3248d&is=69f1d30d&hm=7513c5bea1f992da6368c0adfb04ca4d3b7ccad6a48a2b51b26a556de1f5f6de&
+
+{Reactions}
+👍
+
+[08/16/2025 09:44] neveerrk
+1000u
+
+
+[08/16/2025 09:45] sang_tm
+Nice thank you
+
+
+[08/17/2025 13:58] boooooon
+hi. are you using limit orders for enter and exits? or market?
+
+
+[08/17/2025 14:29] serialkiller15
+market because of timeout issues
+
+
+[08/17/2025 14:30] mmnbm_79378
+ROI: Closed trades
+∙ 246.923 USDT (1.01%) (2.47 Σ%)
+∙ 247.17 USD
+ROI: All trades
+∙ 257.479 USDT (0.78%) (2.57 Σ%)
+∙ 257.737 USD
+Total Trade Count: 76
+Bot started: 2025-08-15 15:30:05
+First Trade opened: a day ago (2025-08-15 15:55:32)
+Latest Trade opened: 49 minutes ago (2025-08-17 13:40:52)
+Win / Loss: 56 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 4.41 (100.00)
+Avg. Duration: 8:04:23
+Best Performing: BANANA/USDT:USDT: 14.309 USDT (1.09%)
+Trading volume: 57782.483 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from 2025-08-15 17:06:33 (4.44 USDT)
+    to 2025-08-15 17:06:33 (4.44 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-08-17 10:35:34 (246.923 USDT)
+
+{Reactions}
+🔥 (4) 🚀
+
+[08/17/2025 14:31] snokard.
+I run into this problem a lot and still cant find how to solve it for exits... only solution is to switch to market right? But then you run into not properly timed entries/exits and some wins might end up being losses
+
+
+[08/17/2025 14:32] serialkiller15
+@mj i think you found the place to stay hehe
+
+
+[08/17/2025 14:33] mmnbm_79378
+If the trend I manually set doesn't suit me, I will stop it to prevent profit loss.
+
+
+[08/17/2025 14:35] neveerrk
+all limit orders
+
+
+[08/17/2025 14:37] neveerrk
+Alternatively, we could wait for Alex's V8 to see if it resolves the issue.
+
+
+[08/17/2025 14:40] serialkiller15
+it will yes
+
+
+[08/17/2025 14:40] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1406648999716454582/image.png?ex=69f369f7&is=69f21877&hm=d7dacf8a09a4f11c0c23cde2c856483904826db5fcb54fbc815484117310bb00&
+
+
+[08/17/2025 14:42] neveerrk
+ready to join your VIP club now haha
+
+{Reactions}
+🤣
+
+[08/17/2025 14:43] serialkiller15
+some fixes need to be done not finished yet
+
+
+[08/17/2025 14:43] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1406649740376019075/image.png?ex=69f36aa8&is=69f21928&hm=26c91e218971fedd4175de1f883731dbbce346d3376e422957eda948e1b95c27&
+
+{Reactions}
+👍
+
+[08/17/2025 14:46] neveerrk
+🫡
+
+
+[08/18/2025 01:48] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1406817040957964348/image0.jpg?ex=69f35db7&is=69f20c37&hm=b5a68c40a2060e8bd7ecef98fe85b5f632138375f57c42deb4c4f01bf40d7e59&
+
+
+[08/18/2025 01:49] neveerrk
+The stop-loss and exit signals didn't work, and I lost a lot of money
+
+
+[08/18/2025 01:50] neveerrk
+Damn
+
+
+[08/18/2025 01:51] ch1ck3n_t4c0s
+you shouldn't run anything live you hadn't tested thoroughly
+
+{Reactions}
+🚀
+
+[08/18/2025 01:51] neveerrk
+😫
+
+
+[08/18/2025 01:52] ch1ck3n_t4c0s
+or at least not with sized if your not prepared to loose it. results can very due to exchange differences, latency, hardware....
+
+
+[08/18/2025 01:53] neveerrk
+Right
+
+
+[08/18/2025 01:58] neveerrk
+I've decided to stop and wait for V8
+
+
+[08/25/2025 15:32] serialkiller15
+different versions, different pairlists it interesting how some pairlists do better then others....
+
+
+[08/25/2025 15:32] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1409561021080797276/image.png?ex=69f375ff&is=69f2247f&hm=15d7fc35d3a8189cba5be6437003c975b715b4155c7a06de3263f0b33568c92b&
+
+
+[08/26/2025 05:43] .oliver6
+Took 3 hours to backtest and I get this
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1409775315919700048/WechatIMG1657.jpg?ex=69f394d3&is=69f24353&hm=c2edcb0ffd6d9ee70027b71ff339a3f0d0a19499cc05d18d08bf8408f0e5427d&
+
+
+[08/26/2025 06:11] snokard.
+Probably its because of the pairs you use
+
+
+[08/26/2025 06:13] .oliver6
+I use mainstream coins mostly, top 20 mc for example
+
+
+[08/26/2025 07:34] neveerrk
+There is a future function so backtesting is useless. You need dry
+
+{Reactions}
+👍
+
+[08/31/2025 08:21] brewy_024
+This is result for past week. Using 18 top volume pairs and version is AlexNexusForgeV8AIGPU. Am i doing something wrong or there is more stable version to test?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1411627055824764998/image.png?ex=69f31124&is=69f1bfa4&hm=71ad4fb9be72d52ec108771cd2974fe7ca349ead66f4605dfe4c17245d527b4d&
+
+
+[08/31/2025 09:03] serialkiller15
+I have not tested this Version
+
+
+[08/31/2025 09:23] erbosnio_17282
+Me neither
+
+
+[08/31/2025 14:04] shalossen
+1h timeframe
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1411713336747229234/image.png?ex=69f3617f&is=69f20fff&hm=581e2f77aacb701b15fd66ff10a52d7ab571561ce49e02e842fc23a9bb42b7f0&
+
+
+[08/31/2025 14:05] shalossen
+4h timeframe
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1411713404900479098/image.png?ex=69f36190&is=69f21010&hm=9e29d725cf31738008bdc66033d42cd2463c46d1d257d45d498be0048b97fe29&
+
+
+[09/01/2025 04:58] xf0x0f
+now im in the race
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1411938299165016096/Bildschirmfoto_2025-09-01_um_06.57.57.png?ex=69f38a43&is=69f238c3&hm=6fcd0717f975822324ae01ddaa0b4d30e71772ce67783076317315a4f7a1c4e1&
+
+{Reactions}
+🚀 (3)
+
+[09/01/2025 08:39] xf0x0f
+wth?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1411993798371840041/Bildschirmfoto_2025-09-01_um_10.38.47.png?ex=69f31533&is=69f1c3b3&hm=42902e754972dd7ae40357071114fd18fe399f801e9ae2d809d275af2e0217ef&
+
+{Reactions}
+😩 (2)
+
+[09/01/2025 08:39] serialkiller15
+damn.
+
+
+[09/22/2025 21:48] bigbroseur
+HI Alex, 
+
+AlexNexusForgeV8AIV2_1h_hy0@bot.  dry results sine 1 month:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1419802673493966908/image.png?ex=69f32588&is=69f1d408&hm=10f25ca5083b45551360bdb043b493c4f3bbfb0193fbb0ef75bc40badcdff621&
+
+
+[09/22/2025 21:49] bigbroseur
+Statistics from DB:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1419802868160135288/image.png?ex=69f325b6&is=69f1d436&hm=058ad5dc67d3b03e11b4dd0373eac438e04da65bfe8712d287d232bb239e947e&
+
+
+[09/22/2025 22:39] divarak
+So, wins some bits,,, but it  "recovers" big time😢
+
+
+[10/20/2025 08:23] shalossen
+I forgot I had still my bots running. Here's the 4h timeframe for NEXUFORGEV7.
+
+{Reactions}
+🚀
+
+[10/20/2025 08:23] shalossen
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1429746899862163506/image0.jpg?ex=69f31190&is=69f1c010&hm=733034fe81322c85b8d26db798066eccad2be53d8ea2457d836751a7415a0363&
+
+
+[10/20/2025 08:25] shalossen
+Stake amount is 5, starting amount is 100, max trades is 20. Trading on Hyperliquid with top 20 pairs
+
+{Reactions}
+🔥
+
+[10/20/2025 08:25] shalossen
+A forgotten dryrun
+
+
+[10/23/2025 15:55] serialkiller15
+V8AIV.... in development, but does goood
+
+
+[10/23/2025 15:55] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1430947652530602134/image.png?ex=69f37b5a&is=69f229da&hm=020c6e35e2a825981678ff8b7339f3f8745ae09773e0e97583d0c7196d87d708&
+
+{Reactions}
+👍 (3)
+
+[10/23/2025 16:03] viking046433
+Not bad
+
+
+[10/23/2025 16:05] serialkiller15
+yes but in the past mostly short, will let it run how it handle the market like now and in the future...
+
+
+[10/23/2025 16:06] viking046433
+I see it did OK on the 10th October
+
+
+[10/23/2025 16:06] serialkiller15
+yes it did
+
+
+[10/23/2025 16:07] serialkiller15
+there where some losses yes but it returned then
+
+{Reactions}
+🚀
+
+[10/23/2025 16:09] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1430951255924019270/image.png?ex=69f37eb5&is=69f22d35&hm=7353e454f019b3ab59cbc2ee6c922c1a94d6bca546b2326aad19365469ab8c19&
+
+{Reactions}
+👏
+
+[10/24/2025 09:10] anton652
+How are you today? Shorted by -500? 😀
+
+
+[10/24/2025 09:18] serialkiller15
+nope
+
+
+[10/24/2025 09:18] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1431210149716037692/image.png?ex=69f31e52&is=69f1ccd2&hm=d051abc5e50588787f8aae3fa9becb5e4015dcbd1459e4fe705d52e90a17ff5b&
+
+{Reactions}
+😱
+
+[10/24/2025 09:19] anton652
+Post it soon, we're interested. 👀
+
+
+[10/24/2025 09:19] serialkiller15
+yes will do but there are indeed to many signals on the charts, needs to be fixed!
+
+
+[10/24/2025 09:23] anton652
+This is an endless process that breaks all working strategies. 💯
+
+
+[10/24/2025 09:24] anton652
+We need more versions to have something to compare with.
+
+
+[10/24/2025 09:26] xalt8851
+When can we help you with testing this version?😄
+
+
+[10/24/2025 09:30] serialkiller15
+yes but not support here at the moment i am busy with other strats
+
+
+[10/24/2025 09:30] serialkiller15
+https://discord.com/channels/1238181199206154373/1382334861871812678/1431213049364222015
+
+
+[11/03/2025 16:50] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1434947850948575383/image.png?ex=69f38853&is=69f236d3&hm=81cd2c5370937a3f992c1977c6d4bdab4017f49cc43fc69a1113bbdd0a37f460&
+
+{Reactions}
+👍 (3) 🚀 (3)
+
+[11/05/2025 13:46] abb8187
+Why isn't this strategy (AlexNexusForgeV8AIV2) making any trades all day? It seems to be constantly training.
+
+
+[11/05/2025 13:57] viking046433
+ABBA can you perhaps mark it here the strategy
+
+
+[11/05/2025 14:15] serialkiller15
+do a restart, sometimes it hangs i dont know why
+
+
+[11/05/2025 14:19] abb8187
+Repeated training 🥲
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1435634736189145221/image.png?ex=69f36509&is=69f21389&hm=6da3294558d345149d6a0dc0d961a319c3b2f497217f1698f26efbfb5654b8b9&
+https://cdn.discordapp.com/attachments/1392174991499329787/1435634736554053782/image.png?ex=69f36509&is=69f21389&hm=a7e32c6addf8da039a7c43e8ac405dd0789ba6245f3a9893bed0175a4f0c406f&
+
+
+[11/05/2025 14:20] abb8187
+I've restarted it many times.
+
+
+[11/05/2025 14:25] serialkiller15
+sry i have no time to take a look into it now
+
+
+[11/05/2025 14:25] serialkiller15
+i cannot handle everythink here in this community impacts welcome fixes also
+
+
+[11/05/2025 14:27] abb8187
+@Alex Crypto KingYeah, it's okay.
+
+
+[11/05/2025 18:00] dragongoattigercat
+you may get banned from exchange if you have so many bots access to the same exchange. then you bot could not get data from exchange and it keeps training on old data while it could not make any trade.
+
+{Reactions}
+👀
+
+[11/05/2025 18:31] divarak
+Could help set bots with different exchange rate limit?
+
+
+[11/05/2025 18:33] dragongoattigercat
+I use proxy for it
+
+{Reactions}
+🫡
+
+[11/06/2025 00:11] abb8187
+😂
+
+
+[11/23/2025 11:58] damian_ox9
+@Alex Crypto King have you ever get this error  ?
+- OP/USDT:USDT BLOCKING TRAILING STOP (Large loss): -6.77%
+2025-11-23 11:55:32 INFO    freqtrade.freqtradebot - User denied exit for OP/USDT:USDT.
+2025-11-23 11:55:32 INFO    freqtrade.freqtradebot - Exit for AEVO/USDT:USDT detected. Reason: trailing_stop_loss
+2025-11-23 11:55:33 INFO    freqtrade.wallets - Wallets synced.
+2025-11-23 11:55:33 WARNING AlexNexusForgeAIV10 - AEVO/USDT:USDT BLOCKING TRAILING STOP (Large loss): -6.52%
+2025-11-23 11:55:33 INFO    freqtrade.freqtradebot - User denied exit for AEVO/USDT:USDT.
+
+
+[11/23/2025 12:01] densky188
+Testing， Alex running it for over 24 hours and still haven't had a single trade.
+
+
+[03/07/2026 09:28] serialkiller15
+@everyone Results on AlexNexusForgeAIV2 - changed yesterday to V3
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1479772633032818849/image.png?ex=69f320a8&is=69f1cf28&hm=d320bb8f724d0354c31d5a4a335976dd7ba680118e475f65f5ccbd24d1a41f96&
+
+
+[03/08/2026 12:55] glad8769
+😭
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1480187266927165530/Screenshot_2026-03-08_at_13.55.14.png?ex=69f35150&is=69f1ffd0&hm=41f6bcb4578cd3948e34df2a063d98497c69dec159ec058032274b57f4e80b0e&
+
+
+[03/08/2026 15:00] lukovicka
+why it's on dry run, not in live?🙂
+
+
+[03/08/2026 15:42] bovejuan
+in a 1-hour timeframe?
+
+
+[03/08/2026 16:09] serialkiller15
+yep 1h!
+
+
+[03/08/2026 21:49] glad8769
+not sure @Alex Crypto King why I have totally opposite result 🙁
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1480321514099310612/image.png?ex=69f32598&is=69f1d418&hm=aa5c0c1d8ac8d6c9eb8f788f1e6c5da9257b5538dd979b87d831bc0d868dbe3f&
+
+
+[03/08/2026 21:49] glad8769
+yes, it is 1h
+
+
+[03/08/2026 21:49] glad8769
+I am using Alex's configuration with pairs and other stuff
+
+
+[03/09/2026 06:56] .oliver6
+I guess it's the difference between V3 and V2 - V2 are performing better?
+
+
+[03/09/2026 08:48] lukovicka
+```
+ROI: Closed trades
+∙ -18.588 USDT (-1.35%) (-4.65 Σ%)
+∙ -18.584 USD
+ROI: All trades
+∙ -20.406 USDT (-1.35%) (-5.1 Σ%)
+∙ -20.402 USD
+Total Trade Count: 77
+Bot started: 2026-03-08 08:49:17
+First Trade opened: 21 hours ago (2026-03-08 10:59:39)
+Latest Trade opened: 33 minutes ago (2026-03-09 08:13:51)
+Win / Loss: 42 / 28
+Winrate: 60.00%
+Expectancy (Ratio): -0.27 (-0.15)
+Avg. Duration: 1:40:48
+Best Performing: ETC/USDT:USDT: 1.972 USDT (4.95%)
+Trading volume: 14664.815 USDT
+Profit factor: 0.63
+Max Drawdown: 8.53% (35.557 USDT)
+    from 2026-03-09 02:21:21 (16.969 USDT)
+    to 2026-03-09 03:14:08 (-18.588 USDT)
+Current Drawdown: 8.53% (35.557 USDT)
+    from 2026-03-09 02:21:21 (16.969 USDT)
+
+Updated: Mon Mar  9 08:47:35 2026```
+
+
+[03/09/2026 14:41] vasko123.
+Most likely, until you backtest and hyperopt yourself, any strategy will be negative. A little while ago, I asked for help backtesting Kasuari_btc_template. I couldn't get it set up, even though it was a simple and old one with a bunch of different indicators. Every backtest after the changes resulted in a minus of 2-2.5%. This isn't a strategy for making money, but rather for understanding the code and logic, although the results are decent. Until I started figuring it out myself, the strategy worked with a SL of -0.99. There will be screenshots in another thread - https://discord.com/channels/1238181199206154373/1282010986899050567/1480577762690465905. The moral of the story is this: configure your own settings and test.
+
+
+[03/09/2026 14:59] serialkiller15
+Thanks mate
+
+{Reactions}
+👍
+
+[04/06/2026 09:32] vasko123.
+entries are often against the movement or at the peak
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1392174991499329787/1490645333007536218/89b46119a0228c53.png?ex=69f321a6&is=69f1d026&hm=1eae156d5c0c30ec18cba2ef839adb0714332ebba6f809a0f5222dff4631c0ff&
+
+
+==============================================================
+Exported 360 message(s)
+==============================================================

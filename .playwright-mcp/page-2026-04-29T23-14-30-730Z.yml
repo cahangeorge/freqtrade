@@ -1,0 +1,1443 @@
+- generic [ref=e2]:
+  - region
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+            - link "Sign in" [ref=e54] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Ffreqtrade%2Ffreqtrade
+            - link "Sign up" [ref=e55] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=freqtrade%2Ffreqtrade
+            - button "Appearance settings" [disabled] [ref=e58]:
+              - img
+  - main [ref=e62]:
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e66]:
+          - img [ref=e67]
+          - link "freqtrade" [ref=e70] [cursor=pointer]:
+            - /url: /freqtrade
+          - generic [ref=e71]: /
+          - strong [ref=e72]:
+            - link "freqtrade" [ref=e73] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade
+          - generic [ref=e74]: Public
+        - generic [ref=e75]:
+          - list:
+            - listitem [ref=e76]:
+              - link "Sponsor @xmatthias" [ref=e77] [cursor=pointer]:
+                - /url: /sponsors/xmatthias
+                - generic [ref=e79]:
+                  - img [ref=e80]
+                  - text: Sponsor
+            - listitem [ref=e82]:
+              - link "You must be signed in to change notification settings" [ref=e83] [cursor=pointer]:
+                - /url: /login?return_to=%2Ffreqtrade%2Ffreqtrade
+                - img [ref=e84]
+                - text: Notifications
+            - listitem [ref=e86]:
+              - link "Fork 10.3k" [ref=e87] [cursor=pointer]:
+                - /url: /login?return_to=%2Ffreqtrade%2Ffreqtrade
+                - img [ref=e88]
+                - text: Fork
+                - generic "10,328" [ref=e90]: 10.3k
+            - listitem [ref=e91]:
+              - link "You must be signed in to star a repository" [ref=e93] [cursor=pointer]:
+                - /url: /login?return_to=%2Ffreqtrade%2Ffreqtrade
+                - img [ref=e94]
+                - text: Star
+                - generic "49566 users starred this repository" [ref=e96]: 49.6k
+      - navigation "Repository" [ref=e97]:
+        - list [ref=e98]:
+          - listitem [ref=e99]:
+            - link "Code" [ref=e100] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade
+              - img [ref=e101]
+              - generic [ref=e103]: Code
+          - listitem [ref=e104]:
+            - link "Issues 25" [ref=e105] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/issues
+              - img [ref=e106]
+              - generic [ref=e109]: Issues
+              - generic "25" [ref=e110]
+          - listitem [ref=e111]:
+            - link "Pull requests 6" [ref=e112] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/pulls
+              - img [ref=e113]
+              - generic [ref=e115]: Pull requests
+              - generic "6" [ref=e116]
+          - listitem [ref=e117]:
+            - link "Actions" [ref=e118] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/actions
+              - img [ref=e119]
+              - generic [ref=e121]: Actions
+          - listitem [ref=e122]:
+            - link "Wiki" [ref=e123] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/wiki
+              - img [ref=e124]
+              - generic [ref=e126]: Wiki
+          - listitem [ref=e127]:
+            - link "Security and quality" [ref=e128] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/security
+              - img [ref=e129]
+              - generic [ref=e131]: Security and quality
+          - listitem [ref=e132]:
+            - link "Insights" [ref=e133] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/pulse
+              - img [ref=e134]
+              - generic [ref=e136]: Insights
+    - generic [ref=e149]:
+      - heading "freqtrade/freqtrade" [level=1] [ref=e151]
+      - generic [ref=e152]:
+        - generic [ref=e155]:
+          - generic [ref=e156]:
+            - generic [ref=e157]:
+              - button "develop branch" [ref=e159] [cursor=pointer]:
+                - generic [ref=e160]:
+                  - generic [ref=e162]:
+                    - img [ref=e164]
+                    - generic [ref=e167]: develop
+                  - generic:
+                    - img
+              - generic [ref=e168]:
+                - link "9 Branches" [ref=e169] [cursor=pointer]:
+                  - /url: /freqtrade/freqtrade/branches
+                  - generic [ref=e170]:
+                    - generic:
+                      - img
+                    - generic [ref=e172]:
+                      - strong [ref=e173]: "9"
+                      - text: Branches
+                - link "116 Tags" [ref=e174] [cursor=pointer]:
+                  - /url: /freqtrade/freqtrade/tags
+                  - generic [ref=e175]:
+                    - generic:
+                      - img
+                    - generic [ref=e177]:
+                      - strong [ref=e178]: "116"
+                      - text: Tags
+            - generic [ref=e179]:
+              - generic [ref=e183]:
+                - img [ref=e185]
+                - combobox "Go to file" [ref=e187]
+              - button "Code" [ref=e188] [cursor=pointer]:
+                - generic [ref=e189]:
+                  - generic:
+                    - img
+                  - generic [ref=e190]: Code
+                  - generic:
+                    - img
+          - generic [ref=e191]:
+            - generic [ref=e192]:
+              - heading "Folders and files" [level=2] [ref=e193]
+              - table "Folders and files" [ref=e194]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e195]:
+                  - 'row "Latest commit xmatthias commits by xmatthias fix: rate can be None in balance migration failure Commit dd970f2 · Apr 29, 20265 hours ago History 31,808 Commits" [ref=e196]':
+                    - 'cell "Latest commit xmatthias commits by xmatthias fix: rate can be None in balance migration failure Commit dd970f2 · Apr 29, 20265 hours ago History 31,808 Commits" [ref=e197]':
+                      - generic [ref=e198]:
+                        - heading "Latest commit" [level=2] [ref=e199]
+                        - generic [ref=e200]:
+                          - generic [ref=e202]:
+                            - link "xmatthias" [ref=e203] [cursor=pointer]:
+                              - /url: /xmatthias
+                              - img "xmatthias" [ref=e204]
+                            - link "commits by xmatthias" [ref=e205] [cursor=pointer]:
+                              - /url: /freqtrade/freqtrade/commits?author=xmatthias
+                              - text: xmatthias
+                          - generic [ref=e206]:
+                            - 'link "fix: rate can be None in balance migration" [ref=e209] [cursor=pointer]':
+                              - /url: /freqtrade/freqtrade/commit/dd970f2be12d4c47b9444d9ce7b869eefbd12869
+                            - button "failure" [ref=e210] [cursor=pointer]:
+                              - img [ref=e211]
+                        - generic [ref=e213]:
+                          - generic [ref=e215]:
+                            - link "Commit dd970f2" [ref=e216] [cursor=pointer]:
+                              - /url: /freqtrade/freqtrade/commit/dd970f2be12d4c47b9444d9ce7b869eefbd12869
+                              - text: dd970f2
+                            - text: ·
+                            - generic "Apr 29, 2026, 9:01 PM GMT+3" [ref=e217]: Apr 29, 20265 hours ago
+                          - generic [ref=e218]:
+                            - heading "History" [level=2] [ref=e219]
+                            - link "31,808 Commits" [ref=e220] [cursor=pointer]:
+                              - /url: /freqtrade/freqtrade/commits/develop/
+                              - generic [ref=e221]:
+                                - generic:
+                                  - img
+                                - generic [ref=e222]: 31,808 Commits
+                  - row ".devcontainer, (Directory) Update documentation to reflect ruff May 13, 20242 years ago" [ref=e223]:
+                    - cell ".devcontainer, (Directory)" [ref=e224]:
+                      - generic [ref=e225]:
+                        - img [ref=e226]
+                        - link ".devcontainer, (Directory)" [ref=e231] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/tree/develop/.devcontainer
+                          - text: .devcontainer
+                    - cell "Update documentation to reflect ruff" [ref=e232]:
+                      - link "Update documentation to reflect ruff" [ref=e235] [cursor=pointer]:
+                        - /url: /freqtrade/freqtrade/commit/33b95e27defaf1a953aed049a6f7a45c0540cf32
+                    - cell "May 13, 20242 years ago" [ref=e236]:
+                      - generic [ref=e237]: May 13, 20242 years ago
+                  - 'row ".github, (Directory) Merge pull request #13097 from freqtrade/dependabot/github_actions/de… Apr 27, 20263 days ago" [ref=e238]':
+                    - cell ".github, (Directory)" [ref=e239]:
+                      - generic [ref=e240]:
+                        - img [ref=e241]
+                        - link ".github, (Directory)" [ref=e246] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/tree/develop/.github
+                          - text: .github
+                    - 'cell "Merge pull request #13097 from freqtrade/dependabot/github_actions/de…" [ref=e247]':
+                      - generic [ref=e249]:
+                        - link "Merge pull request" [ref=e250] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/commit/3c84ac6d3f8b75c9d055a5b86fcdd17382b03e6a
+                        - link "#13097" [ref=e251] [cursor=pointer]:
+                          - /url: https://github.com/freqtrade/freqtrade/pull/13097
+                        - link "from freqtrade/dependabot/github_actions/de…" [ref=e252] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/commit/3c84ac6d3f8b75c9d055a5b86fcdd17382b03e6a
+                    - cell "Apr 27, 20263 days ago" [ref=e253]:
+                      - generic [ref=e254]: Apr 27, 20263 days ago
+                  - row ".vscode, (Directory) Add vscode extensions recommendation file May 13, 20242 years ago" [ref=e255]:
+                    - cell ".vscode, (Directory)" [ref=e256]:
+                      - generic [ref=e257]:
+                        - img [ref=e258]
+                        - link ".vscode, (Directory)" [ref=e263] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/tree/develop/.vscode
+                          - text: .vscode
+                    - cell "Add vscode extensions recommendation file" [ref=e264]:
+                      - link "Add vscode extensions recommendation file" [ref=e267] [cursor=pointer]:
+                        - /url: /freqtrade/freqtrade/commit/6a802f56247270b651301cf84ee1ba8e8cc6ce3b
+                    - cell "May 13, 20242 years ago" [ref=e268]:
+                      - generic [ref=e269]: May 13, 20242 years ago
+                  - 'row "build_helpers, (Directory) chore: fix double-space typos Apr 11, 20263 weeks ago" [ref=e270]':
+                    - cell "build_helpers, (Directory)" [ref=e271]:
+                      - generic [ref=e272]:
+                        - img [ref=e273]
+                        - link "build_helpers, (Directory)" [ref=e278] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/tree/develop/build_helpers
+                          - text: build_helpers
+                    - 'cell "chore: fix double-space typos" [ref=e279]':
+                      - 'link "chore: fix double-space typos" [ref=e282] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/e8501dfb7a5e91453418a1fb643b277cc15ad92a
+                    - cell "Apr 11, 20263 weeks ago" [ref=e283]:
+                      - generic [ref=e284]: Apr 11, 20263 weeks ago
+                  - 'row "config_examples, (Directory) chore: update sample configs with longer jwt_secret key Feb 10, 20262 months ago" [ref=e285]':
+                    - cell "config_examples, (Directory)" [ref=e286]:
+                      - generic [ref=e287]:
+                        - img [ref=e288]
+                        - link "config_examples, (Directory)" [ref=e293] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/tree/develop/config_examples
+                          - text: config_examples
+                    - 'cell "chore: update sample configs with longer jwt_secret key" [ref=e294]':
+                      - 'link "chore: update sample configs with longer jwt_secret key" [ref=e297] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/04d2ea87733bbb8ac3dce4909b1b0e40de452a87
+                    - cell "Feb 10, 20262 months ago" [ref=e298]:
+                      - generic [ref=e299]: Feb 10, 20262 months ago
+                  - 'row "docker, (Directory) chore: bump armhf image to 3.11.15 Apr 1, 202628 days ago" [ref=e300]':
+                    - cell "docker, (Directory)" [ref=e301]:
+                      - generic [ref=e302]:
+                        - img [ref=e303]
+                        - link "docker, (Directory)" [ref=e308] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/tree/develop/docker
+                          - text: docker
+                    - 'cell "chore: bump armhf image to 3.11.15" [ref=e309]':
+                      - 'link "chore: bump armhf image to 3.11.15" [ref=e312] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/d1b378ead6c2842d518a10b2398ee5c4c35d76b6
+                    - cell "Apr 1, 202628 days ago" [ref=e313]:
+                      - generic [ref=e314]: Apr 1, 202628 days ago
+                  - 'row "docs, (Directory) chore(deps): bump mike from 2.1.4 to 2.2.0 Apr 27, 20263 days ago" [ref=e315]':
+                    - cell "docs, (Directory)" [ref=e316]:
+                      - generic [ref=e317]:
+                        - img [ref=e318]
+                        - link "docs, (Directory)" [ref=e323] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/tree/develop/docs
+                          - text: docs
+                    - 'cell "chore(deps): bump mike from 2.1.4 to 2.2.0" [ref=e324]':
+                      - 'link "chore(deps): bump mike from 2.1.4 to 2.2.0" [ref=e327] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/a5cb6073110eb024c31da3fefbb3602fde9414cf
+                    - cell "Apr 27, 20263 days ago" [ref=e328]:
+                      - generic [ref=e329]: Apr 27, 20263 days ago
+                  - 'row "freqtrade, (Directory) fix: rate can be None in balance migration Apr 29, 20265 hours ago" [ref=e330]':
+                    - cell "freqtrade, (Directory)" [ref=e331]:
+                      - generic [ref=e332]:
+                        - img [ref=e333]
+                        - link "freqtrade, (Directory)" [ref=e338] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/tree/develop/freqtrade
+                          - text: freqtrade
+                    - 'cell "fix: rate can be None in balance migration" [ref=e339]':
+                      - 'link "fix: rate can be None in balance migration" [ref=e342] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/dd970f2be12d4c47b9444d9ce7b869eefbd12869
+                    - cell "Apr 29, 20265 hours ago" [ref=e343]:
+                      - generic [ref=e344]: Apr 29, 20265 hours ago
+                  - 'row "ft_client, (Directory) chore(deps): bump requests from 2.33.0 to 2.33.1 Apr 9, 20263 weeks ago" [ref=e345]':
+                    - cell "ft_client, (Directory)" [ref=e346]:
+                      - generic [ref=e347]:
+                        - img [ref=e348]
+                        - link "ft_client, (Directory)" [ref=e353] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/tree/develop/ft_client
+                          - text: ft_client
+                    - 'cell "chore(deps): bump requests from 2.33.0 to 2.33.1" [ref=e354]':
+                      - 'link "chore(deps): bump requests from 2.33.0 to 2.33.1" [ref=e357] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/55e4250bcd40d45da9c214a580da5068ccecd7a2
+                    - cell "Apr 9, 20263 weeks ago" [ref=e358]:
+                      - generic [ref=e359]: Apr 9, 20263 weeks ago
+                  - 'row "scripts, (Directory) refactor: Asyncio timeoutError update Jul 4, 20259 months ago" [ref=e360]':
+                    - cell "scripts, (Directory)" [ref=e361]:
+                      - generic [ref=e362]:
+                        - img [ref=e363]
+                        - link "scripts, (Directory)" [ref=e368] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/tree/develop/scripts
+                          - text: scripts
+                    - 'cell "refactor: Asyncio timeoutError update" [ref=e369]':
+                      - 'link "refactor: Asyncio timeoutError update" [ref=e372] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/79f0271720288fc50e2c381e6927646103ca6ec1
+                    - cell "Jul 4, 20259 months ago" [ref=e373]:
+                      - generic [ref=e374]: Jul 4, 20259 months ago
+                  - 'row "tests, (Directory) test: update test for unwatch_ohlcv adjustment Apr 28, 2026yesterday" [ref=e375]':
+                    - cell "tests, (Directory)" [ref=e376]:
+                      - generic [ref=e377]:
+                        - img [ref=e378]
+                        - link "tests, (Directory)" [ref=e383] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/tree/develop/tests
+                          - text: tests
+                    - 'cell "test: update test for unwatch_ohlcv adjustment" [ref=e384]':
+                      - 'link "test: update test for unwatch_ohlcv adjustment" [ref=e387] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/63819fa7e045c313dfcb14a2a22b524cd02cef7d
+                    - cell "Apr 28, 2026yesterday" [ref=e388]:
+                      - generic [ref=e389]: Apr 28, 2026yesterday
+                  - row "user_data, (Directory) changed to ast_comments, added tests for comments. Feb 17, 20233 years ago" [ref=e390]:
+                    - cell "user_data, (Directory)" [ref=e391]:
+                      - generic [ref=e392]:
+                        - img [ref=e393]
+                        - link "user_data, (Directory)" [ref=e398] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/tree/develop/user_data
+                          - text: user_data
+                    - cell "changed to ast_comments, added tests for comments." [ref=e399]:
+                      - link "changed to ast_comments, added tests for comments." [ref=e402] [cursor=pointer]:
+                        - /url: /freqtrade/freqtrade/commit/bcef00edeef1ea1e5611aef6d6d39eb31448195f
+                    - cell "Feb 17, 20233 years ago" [ref=e403]:
+                      - generic [ref=e404]: Feb 17, 20233 years ago
+                  - row ".coveragerc, (File) Update documentation for create-userdir util Nov 21, 20197 years ago" [ref=e405]:
+                    - cell ".coveragerc, (File)" [ref=e406]:
+                      - generic [ref=e407]:
+                        - img [ref=e408]
+                        - link ".coveragerc, (File)" [ref=e413] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/.coveragerc
+                          - text: .coveragerc
+                    - cell "Update documentation for create-userdir util" [ref=e414]:
+                      - link "Update documentation for create-userdir util" [ref=e417] [cursor=pointer]:
+                        - /url: /freqtrade/freqtrade/commit/ed1d4500996dd86516d29b7bf4e840610a71b5b7
+                    - cell "Nov 21, 20197 years ago" [ref=e418]:
+                      - generic [ref=e419]: Nov 21, 20197 years ago
+                  - 'row ".dockerignore, (File) chore: exclude .venv and userdata from dockerfiles Sep 2, 20257 months ago" [ref=e420]':
+                    - cell ".dockerignore, (File)" [ref=e421]:
+                      - generic [ref=e422]:
+                        - img [ref=e423]
+                        - link ".dockerignore, (File)" [ref=e428] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/.dockerignore
+                          - text: .dockerignore
+                    - 'cell "chore: exclude .venv and userdata from dockerfiles" [ref=e429]':
+                      - 'link "chore: exclude .venv and userdata from dockerfiles" [ref=e432] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/ba87f3e7d74ad6339fd0927ae9a8412a2113adbc
+                    - cell "Sep 2, 20257 months ago" [ref=e433]:
+                      - generic [ref=e434]: Sep 2, 20257 months ago
+                  - row ".gitattributes, (File) Merge branch 'develop' into pr/Antreasgr/4838 May 27, 20215 years ago" [ref=e435]:
+                    - cell ".gitattributes, (File)" [ref=e436]:
+                      - generic [ref=e437]:
+                        - img [ref=e438]
+                        - link ".gitattributes, (File)" [ref=e443] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/.gitattributes
+                          - text: .gitattributes
+                    - cell "Merge branch 'develop' into pr/Antreasgr/4838" [ref=e444]:
+                      - link "Merge branch 'develop' into pr/Antreasgr/4838" [ref=e447] [cursor=pointer]:
+                        - /url: /freqtrade/freqtrade/commit/a89364aa98da2fa8363fcf5b856563b9149e7e97
+                    - cell "May 27, 20215 years ago" [ref=e448]:
+                      - generic [ref=e449]: May 27, 20215 years ago
+                  - row ".gitignore, (File) Removed entry in gitignore Jul 4, 20242 years ago" [ref=e450]:
+                    - cell ".gitignore, (File)" [ref=e451]:
+                      - generic [ref=e452]:
+                        - img [ref=e453]
+                        - link ".gitignore, (File)" [ref=e458] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/.gitignore
+                          - text: .gitignore
+                    - cell "Removed entry in gitignore" [ref=e459]:
+                      - link "Removed entry in gitignore" [ref=e462] [cursor=pointer]:
+                        - /url: /freqtrade/freqtrade/commit/57118691d813c5b98e38dbeaf9eff1ee0019e65f
+                    - cell "Jul 4, 20242 years ago" [ref=e463]:
+                      - generic [ref=e464]: Jul 4, 20242 years ago
+                  - 'row ".pre-commit-config.yaml, (File) chore: update pre-commit hooks Apr 28, 20262 days ago" [ref=e465]':
+                    - cell ".pre-commit-config.yaml, (File)" [ref=e466]:
+                      - generic [ref=e467]:
+                        - img [ref=e468]
+                        - link ".pre-commit-config.yaml, (File)" [ref=e473] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/.pre-commit-config.yaml
+                          - text: .pre-commit-config.yaml
+                    - 'cell "chore: update pre-commit hooks" [ref=e474]':
+                      - 'link "chore: update pre-commit hooks" [ref=e477] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/afc00c5a2e88553d75b30b0a46481b055cfce4d0
+                    - cell "Apr 28, 20262 days ago" [ref=e478]:
+                      - generic [ref=e479]: Apr 28, 20262 days ago
+                  - row ".pylintrc, (File) Fix pre-commit indentation Apr 23, 20224 years ago" [ref=e480]:
+                    - cell ".pylintrc, (File)" [ref=e481]:
+                      - generic [ref=e482]:
+                        - img [ref=e483]
+                        - link ".pylintrc, (File)" [ref=e488] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/.pylintrc
+                          - text: .pylintrc
+                    - cell "Fix pre-commit indentation" [ref=e489]:
+                      - link "Fix pre-commit indentation" [ref=e492] [cursor=pointer]:
+                        - /url: /freqtrade/freqtrade/commit/1120392f39f5e0f9fde546592e2a7e0b330f9e25
+                    - cell "Apr 23, 20224 years ago" [ref=e493]:
+                      - generic [ref=e494]: Apr 23, 20224 years ago
+                  - row ".readthedocs.yml, (File) Remove custom build process May 16, 20242 years ago" [ref=e495]:
+                    - cell ".readthedocs.yml, (File)" [ref=e496]:
+                      - generic [ref=e497]:
+                        - img [ref=e498]
+                        - link ".readthedocs.yml, (File)" [ref=e503] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/.readthedocs.yml
+                          - text: .readthedocs.yml
+                    - cell "Remove custom build process" [ref=e504]:
+                      - link "Remove custom build process" [ref=e507] [cursor=pointer]:
+                        - /url: /freqtrade/freqtrade/commit/19d6ce54468491a08ce8b71f1a64c0898b7e9b63
+                    - cell "May 16, 20242 years ago" [ref=e508]:
+                      - generic [ref=e509]: May 16, 20242 years ago
+                  - 'row "CONTRIBUTING.md, (File) docs: improve contributing formatting Feb 24, 20262 months ago" [ref=e510]':
+                    - cell "CONTRIBUTING.md, (File)" [ref=e511]:
+                      - generic [ref=e512]:
+                        - img [ref=e513]
+                        - link "CONTRIBUTING.md, (File)" [ref=e518] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/CONTRIBUTING.md
+                          - text: CONTRIBUTING.md
+                    - 'cell "docs: improve contributing formatting" [ref=e519]':
+                      - 'link "docs: improve contributing formatting" [ref=e522] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/74d373e37d0c6cf8b6fedb3582cc2803acf5efeb
+                    - cell "Feb 24, 20262 months ago" [ref=e523]:
+                      - generic [ref=e524]: Feb 24, 20262 months ago
+                  - 'row "Dockerfile, (File) feat: update dockerfile base to python 3.14.3 Apr 1, 202628 days ago" [ref=e525]':
+                    - cell "Dockerfile, (File)" [ref=e526]:
+                      - generic [ref=e527]:
+                        - img [ref=e528]
+                        - link "Dockerfile, (File)" [ref=e533] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/Dockerfile
+                          - text: Dockerfile
+                    - 'cell "feat: update dockerfile base to python 3.14.3" [ref=e534]':
+                      - 'link "feat: update dockerfile base to python 3.14.3" [ref=e537] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/384e0c5e5a1e69d0c0d8d9b4a2c2971e44ed5735
+                    - cell "Apr 1, 202628 days ago" [ref=e538]:
+                      - generic [ref=e539]: Apr 1, 202628 days ago
+                  - row "LICENSE, (File) Initial commit May 18, 20179 years ago" [ref=e540]:
+                    - cell "LICENSE, (File)" [ref=e541]:
+                      - generic [ref=e542]:
+                        - img [ref=e543]
+                        - link "LICENSE, (File)" [ref=e548] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/LICENSE
+                          - text: LICENSE
+                    - cell "Initial commit" [ref=e549]:
+                      - link "Initial commit" [ref=e552] [cursor=pointer]:
+                        - /url: /freqtrade/freqtrade/commit/a09f29dc43d421ecaf1f5c00226ab9338458d2e1
+                    - cell "May 18, 20179 years ago" [ref=e553]:
+                      - generic [ref=e554]: May 18, 20179 years ago
+                  - row "MANIFEST.in, (File) exclude tests from build Dec 16, 20233 years ago" [ref=e555]:
+                    - cell "MANIFEST.in, (File)" [ref=e556]:
+                      - generic [ref=e557]:
+                        - img [ref=e558]
+                        - link "MANIFEST.in, (File)" [ref=e563] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/MANIFEST.in
+                          - text: MANIFEST.in
+                    - cell "exclude tests from build" [ref=e564]:
+                      - link "exclude tests from build" [ref=e567] [cursor=pointer]:
+                        - /url: /freqtrade/freqtrade/commit/1d701967b7377fb6f158ad53f1481eebd1b1edd5
+                    - cell "Dec 16, 20233 years ago" [ref=e568]:
+                      - generic [ref=e569]: Dec 16, 20233 years ago
+                  - 'row "README.md, (File) docs: align krakenfutures link in Readme.md Mar 22, 2026last month" [ref=e570]':
+                    - cell "README.md, (File)" [ref=e571]:
+                      - generic [ref=e572]:
+                        - img [ref=e573]
+                        - link "README.md, (File)" [ref=e578] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/README.md
+                          - text: README.md
+                    - 'cell "docs: align krakenfutures link in Readme.md" [ref=e579]':
+                      - 'link "docs: align krakenfutures link in Readme.md" [ref=e582] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/a831a6ee341a4fc4105ff12b4880b921f4043760
+                    - cell "Mar 22, 2026last month" [ref=e583]:
+                      - generic [ref=e584]: Mar 22, 2026last month
+                  - 'row "docker-compose.yml, (File) chore: Remove \"version\" field from compose file Jul 17, 20242 years ago" [ref=e585]':
+                    - cell "docker-compose.yml, (File)" [ref=e586]:
+                      - generic [ref=e587]:
+                        - img [ref=e588]
+                        - link "docker-compose.yml, (File)" [ref=e593] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/docker-compose.yml
+                          - text: docker-compose.yml
+                    - 'cell "chore: Remove \"version\" field from compose file" [ref=e594]':
+                      - 'link "chore: Remove \"version\" field from compose file" [ref=e597] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/2560090a684021147fd964f75378e0140a1d8b5e
+                    - cell "Jul 17, 20242 years ago" [ref=e598]:
+                      - generic [ref=e599]: Jul 17, 20242 years ago
+                  - row "freqtrade.service, (File) Fix pre-commit indentation Apr 23, 20224 years ago" [ref=e600]:
+                    - cell "freqtrade.service, (File)" [ref=e601]:
+                      - generic [ref=e602]:
+                        - img [ref=e603]
+                        - link "freqtrade.service, (File)" [ref=e608] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/freqtrade.service
+                          - text: freqtrade.service
+                    - cell "Fix pre-commit indentation" [ref=e609]:
+                      - link "Fix pre-commit indentation" [ref=e612] [cursor=pointer]:
+                        - /url: /freqtrade/freqtrade/commit/1120392f39f5e0f9fde546592e2a7e0b330f9e25
+                    - cell "Apr 23, 20224 years ago" [ref=e613]:
+                      - generic [ref=e614]: Apr 23, 20224 years ago
+                  - row "freqtrade.service.watchdog, (File) Fix pre-commit indentation Apr 23, 20224 years ago" [ref=e615]:
+                    - cell "freqtrade.service.watchdog, (File)" [ref=e616]:
+                      - generic [ref=e617]:
+                        - img [ref=e618]
+                        - link "freqtrade.service.watchdog, (File)" [ref=e623] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/freqtrade.service.watchdog
+                          - text: freqtrade.service.watchdog
+                    - cell "Fix pre-commit indentation" [ref=e624]:
+                      - link "Fix pre-commit indentation" [ref=e627] [cursor=pointer]:
+                        - /url: /freqtrade/freqtrade/commit/1120392f39f5e0f9fde546592e2a7e0b330f9e25
+                    - cell "Apr 23, 20224 years ago" [ref=e628]:
+                      - generic [ref=e629]: Apr 23, 20224 years ago
+                  - 'row "mkdocs.yml, (File) docs: combine installation guides Jan 25, 20263 months ago" [ref=e630]':
+                    - cell "mkdocs.yml, (File)" [ref=e631]:
+                      - generic [ref=e632]:
+                        - img [ref=e633]
+                        - link "mkdocs.yml, (File)" [ref=e638] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/mkdocs.yml
+                          - text: mkdocs.yml
+                    - 'cell "docs: combine installation guides" [ref=e639]':
+                      - 'link "docs: combine installation guides" [ref=e642] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/d28fce7ed8b5018f214c36a26f86172e641962eb
+                    - cell "Jan 25, 20263 months ago" [ref=e643]:
+                      - generic [ref=e644]: Jan 25, 20263 months ago
+                  - 'row "pyproject.toml, (File) Merge pull request #13048 from freqtrade/dependabot/pip/develop/panda… Apr 17, 20262 weeks ago" [ref=e645]':
+                    - cell "pyproject.toml, (File)" [ref=e646]:
+                      - generic [ref=e647]:
+                        - img [ref=e648]
+                        - link "pyproject.toml, (File)" [ref=e653] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/pyproject.toml
+                          - text: pyproject.toml
+                    - 'cell "Merge pull request #13048 from freqtrade/dependabot/pip/develop/panda…" [ref=e654]':
+                      - generic [ref=e656]:
+                        - link "Merge pull request" [ref=e657] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/commit/c1795c79f3fa8b762e98a7baee4daa5dd272e727
+                        - link "#13048" [ref=e658] [cursor=pointer]:
+                          - /url: https://github.com/freqtrade/freqtrade/pull/13048
+                        - link "from freqtrade/dependabot/pip/develop/panda…" [ref=e659] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/commit/c1795c79f3fa8b762e98a7baee4daa5dd272e727
+                    - cell "Apr 17, 20262 weeks ago" [ref=e660]:
+                      - generic [ref=e661]: Apr 17, 20262 weeks ago
+                  - 'row "requirements-dev.txt, (File) Merge pull request #13092 from freqtrade/dependabot/pip/develop/scipy… Apr 27, 20263 days ago" [ref=e662]':
+                    - cell "requirements-dev.txt, (File)" [ref=e663]:
+                      - generic [ref=e664]:
+                        - img [ref=e665]
+                        - link "requirements-dev.txt, (File)" [ref=e670] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/requirements-dev.txt
+                          - text: requirements-dev.txt
+                    - 'cell "Merge pull request #13092 from freqtrade/dependabot/pip/develop/scipy…" [ref=e671]':
+                      - generic [ref=e673]:
+                        - link "Merge pull request" [ref=e674] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/commit/24e40d3a7a893564b617026279cd8c86b6e176a9
+                        - link "#13092" [ref=e675] [cursor=pointer]:
+                          - /url: https://github.com/freqtrade/freqtrade/pull/13092
+                        - link "from freqtrade/dependabot/pip/develop/scipy…" [ref=e676] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/commit/24e40d3a7a893564b617026279cd8c86b6e176a9
+                    - cell "Apr 27, 20263 days ago" [ref=e677]:
+                      - generic [ref=e678]: Apr 27, 20263 days ago
+                  - 'row "requirements-freqai-rl.txt, (File) chore: precisely pin sb3_contrib Apr 27, 20263 days ago" [ref=e679]':
+                    - cell "requirements-freqai-rl.txt, (File)" [ref=e680]:
+                      - generic [ref=e681]:
+                        - img [ref=e682]
+                        - link "requirements-freqai-rl.txt, (File)" [ref=e687] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/requirements-freqai-rl.txt
+                          - text: requirements-freqai-rl.txt
+                    - 'cell "chore: precisely pin sb3_contrib" [ref=e688]':
+                      - 'link "chore: precisely pin sb3_contrib" [ref=e691] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/5b83dce052186b2cfe3a399618192c329e002818
+                    - cell "Apr 27, 20263 days ago" [ref=e692]:
+                      - generic [ref=e693]: Apr 27, 20263 days ago
+                  - 'row "requirements-freqai.txt, (File) chore(deps): bump xgboost from 3.1.3 to 3.2.0 Feb 23, 20262 months ago" [ref=e694]':
+                    - cell "requirements-freqai.txt, (File)" [ref=e695]:
+                      - generic [ref=e696]:
+                        - img [ref=e697]
+                        - link "requirements-freqai.txt, (File)" [ref=e702] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/requirements-freqai.txt
+                          - text: requirements-freqai.txt
+                    - 'cell "chore(deps): bump xgboost from 3.1.3 to 3.2.0" [ref=e703]':
+                      - 'link "chore(deps): bump xgboost from 3.1.3 to 3.2.0" [ref=e706] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/22c91137bb5c98bdbd80aeb4a21d913cb234ff95
+                    - cell "Feb 23, 20262 months ago" [ref=e707]:
+                      - generic [ref=e708]: Feb 23, 20262 months ago
+                  - 'row "requirements-hyperopt.txt, (File) chore(deps): bump filelock from 3.25.2 to 3.29.0 Apr 27, 20263 days ago" [ref=e709]':
+                    - cell "requirements-hyperopt.txt, (File)" [ref=e710]:
+                      - generic [ref=e711]:
+                        - img [ref=e712]
+                        - link "requirements-hyperopt.txt, (File)" [ref=e717] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/requirements-hyperopt.txt
+                          - text: requirements-hyperopt.txt
+                    - 'cell "chore(deps): bump filelock from 3.25.2 to 3.29.0" [ref=e718]':
+                      - 'link "chore(deps): bump filelock from 3.25.2 to 3.29.0" [ref=e721] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/5a8131caf6dd67730074854517178133722cb344
+                    - cell "Apr 27, 20263 days ago" [ref=e722]:
+                      - generic [ref=e723]: Apr 27, 20263 days ago
+                  - 'row "requirements-plot.txt, (File) chore(deps): bump plotly from 6.6.0 to 6.7.0 Apr 20, 2026last week" [ref=e724]':
+                    - cell "requirements-plot.txt, (File)" [ref=e725]:
+                      - generic [ref=e726]:
+                        - img [ref=e727]
+                        - link "requirements-plot.txt, (File)" [ref=e732] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/requirements-plot.txt
+                          - text: requirements-plot.txt
+                    - 'cell "chore(deps): bump plotly from 6.6.0 to 6.7.0" [ref=e733]':
+                      - 'link "chore(deps): bump plotly from 6.6.0 to 6.7.0" [ref=e736] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/b97f037472581280045ea1a07eadc1e86ab02e54
+                    - cell "Apr 20, 2026last week" [ref=e737]:
+                      - generic [ref=e738]: Apr 20, 2026last week
+                  - 'row "requirements.txt, (File) Merge pull request #13096 from freqtrade/dependabot/pip/develop/pydan… Apr 27, 20263 days ago" [ref=e739]':
+                    - cell "requirements.txt, (File)" [ref=e740]:
+                      - generic [ref=e741]:
+                        - img [ref=e742]
+                        - link "requirements.txt, (File)" [ref=e747] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/requirements.txt
+                          - text: requirements.txt
+                    - 'cell "Merge pull request #13096 from freqtrade/dependabot/pip/develop/pydan…" [ref=e748]':
+                      - generic [ref=e750]:
+                        - link "Merge pull request" [ref=e751] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/commit/0b13ddfc0aca1e3ed05e598c9ba48b6126c4c4c2
+                        - link "#13096" [ref=e752] [cursor=pointer]:
+                          - /url: https://github.com/freqtrade/freqtrade/pull/13096
+                        - link "from freqtrade/dependabot/pip/develop/pydan…" [ref=e753] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/commit/0b13ddfc0aca1e3ed05e598c9ba48b6126c4c4c2
+                    - cell "Apr 27, 20263 days ago" [ref=e754]:
+                      - generic [ref=e755]: Apr 27, 20263 days ago
+                  - 'row "setup.ps1, (File) feat: support 3.14 in setup scripts Apr 1, 202629 days ago" [ref=e756]':
+                    - cell "setup.ps1, (File)" [ref=e757]:
+                      - generic [ref=e758]:
+                        - img [ref=e759]
+                        - link "setup.ps1, (File)" [ref=e764] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/setup.ps1
+                          - text: setup.ps1
+                    - 'cell "feat: support 3.14 in setup scripts" [ref=e765]':
+                      - 'link "feat: support 3.14 in setup scripts" [ref=e768] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/8eb2edc0e247561ab824f8f4ab9a3dbf869c6365
+                    - cell "Apr 1, 202629 days ago" [ref=e769]:
+                      - generic [ref=e770]: Apr 1, 202629 days ago
+                  - 'row "setup.sh, (File) feat: support 3.14 in setup scripts Apr 1, 202629 days ago" [ref=e771]':
+                    - cell "setup.sh, (File)" [ref=e772]:
+                      - generic [ref=e773]:
+                        - img [ref=e774]
+                        - link "setup.sh, (File)" [ref=e779] [cursor=pointer]:
+                          - /url: /freqtrade/freqtrade/blob/develop/setup.sh
+                          - text: setup.sh
+                    - 'cell "feat: support 3.14 in setup scripts" [ref=e780]':
+                      - 'link "feat: support 3.14 in setup scripts" [ref=e783] [cursor=pointer]':
+                        - /url: /freqtrade/freqtrade/commit/8eb2edc0e247561ab824f8f4ab9a3dbf869c6365
+                    - cell "Apr 1, 202629 days ago" [ref=e784]:
+                      - generic [ref=e785]: Apr 1, 202629 days ago
+            - generic [ref=e787]:
+              - generic [ref=e788]:
+                - heading "Repository files navigation" [level=2] [ref=e789]
+                - navigation "Repository files" [ref=e790]:
+                  - list [ref=e791]:
+                    - listitem [ref=e792]:
+                      - link "README" [ref=e793] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e795]
+                        - generic [ref=e797]: README
+                    - listitem [ref=e798]:
+                      - link "Contributing" [ref=e799] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e801]
+                        - generic [ref=e803]: Contributing
+                    - listitem [ref=e804]:
+                      - link "License" [ref=e805] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e807]
+                        - generic [ref=e809]: License
+                - button "Outline" [ref=e810] [cursor=pointer]:
+                  - img [ref=e811]
+              - article [ref=e814]:
+                - generic [ref=e815]:
+                  - heading "freqtrade" [level=1] [ref=e816]:
+                    - link "freqtrade" [ref=e817] [cursor=pointer]:
+                      - /url: https://raw.githubusercontent.com/freqtrade/freqtrade/develop/docs/assets/freqtrade_poweredby.svg
+                      - img "freqtrade" [ref=e818]
+                  - link "Permalink:" [ref=e819] [cursor=pointer]:
+                    - /url: "#"
+                    - img [ref=e820]
+                - paragraph [ref=e822]:
+                  - link "Freqtrade CI" [ref=e823] [cursor=pointer]:
+                    - /url: https://github.com/freqtrade/freqtrade/actions/workflows/ci.yml
+                    - img "Freqtrade CI" [ref=e824]
+                  - link "DOI" [ref=e825] [cursor=pointer]:
+                    - /url: https://doi.org/10.21105/joss.04864
+                    - img "DOI" [ref=e826]
+                  - link "codecov" [ref=e827] [cursor=pointer]:
+                    - /url: https://codecov.io/gh/freqtrade/freqtrade
+                    - img "codecov" [ref=e828]
+                  - link "Documentation" [ref=e829] [cursor=pointer]:
+                    - /url: https://www.freqtrade.io
+                    - img "Documentation" [ref=e830]
+                  - link "Discord Server" [ref=e831] [cursor=pointer]:
+                    - /url: https://discord.gg/p7nuUNVfP7
+                    - img "Discord Server" [ref=e832]
+                - paragraph [ref=e833]: Freqtrade is a free and open source crypto trading bot written in Python. It is designed to support all major exchanges and be controlled via Telegram or webUI. It contains backtesting, plotting and money management tools as well as strategy optimization by machine learning.
+                - paragraph [ref=e834]:
+                  - link "freqtrade" [ref=e835] [cursor=pointer]:
+                    - /url: https://raw.githubusercontent.com/freqtrade/freqtrade/develop/docs/assets/freqtrade-screenshot.png
+                    - img "freqtrade" [ref=e836]
+                - generic [ref=e837]:
+                  - heading "Disclaimer" [level=2] [ref=e838]
+                  - 'link "Permalink: Disclaimer" [ref=e839] [cursor=pointer]':
+                    - /url: "#disclaimer"
+                    - img [ref=e840]
+                - paragraph [ref=e842]: This software is for educational purposes only. Do not risk money which you are afraid to lose. USE THE SOFTWARE AT YOUR OWN RISK. THE AUTHORS AND ALL AFFILIATES ASSUME NO RESPONSIBILITY FOR YOUR TRADING RESULTS.
+                - paragraph [ref=e843]: Always start by running a trading bot in Dry-Run and do not engage money before you understand how it works and what profit/loss you should expect.
+                - paragraph [ref=e844]: We strongly recommend you to have coding and Python knowledge. Do not hesitate to read the source code and understand the mechanism of this bot.
+                - generic [ref=e845]:
+                  - heading "Supported Exchange marketplaces" [level=2] [ref=e846]
+                  - 'link "Permalink: Supported Exchange marketplaces" [ref=e847] [cursor=pointer]':
+                    - /url: "#supported-exchange-marketplaces"
+                    - img [ref=e848]
+                - paragraph [ref=e850]:
+                  - text: Please read the
+                  - link "exchange-specific notes" [ref=e851] [cursor=pointer]:
+                    - /url: https://www.freqtrade.io/en/stable/exchanges/
+                  - text: to learn about special configurations that maybe needed for each exchange.
+                - generic [ref=e852]:
+                  - heading "Supported Spot Exchanges" [level=3] [ref=e853]
+                  - 'link "Permalink: Supported Spot Exchanges" [ref=e854] [cursor=pointer]':
+                    - /url: "#supported-spot-exchanges"
+                    - img [ref=e855]
+                - list [ref=e857]:
+                  - listitem [ref=e858]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e859]
+                    - link "Binance" [ref=e860] [cursor=pointer]:
+                      - /url: https://www.binance.com/
+                  - listitem [ref=e861]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e862]
+                    - link "BingX" [ref=e863] [cursor=pointer]:
+                      - /url: https://bingx.com/invite/0EM9RX
+                  - listitem [ref=e864]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e865]
+                    - link "Bitget" [ref=e866] [cursor=pointer]:
+                      - /url: https://www.bitget.com/
+                  - listitem [ref=e867]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e868]
+                    - link "Bitmart" [ref=e869] [cursor=pointer]:
+                      - /url: https://bitmart.com/
+                  - listitem [ref=e870]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e871]
+                    - link "Bybit" [ref=e872] [cursor=pointer]:
+                      - /url: https://bybit.com/
+                  - listitem [ref=e873]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e874]
+                    - link "Gate.io" [ref=e875] [cursor=pointer]:
+                      - /url: https://www.gate.io/ref/6266643
+                  - listitem [ref=e876]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e877]
+                    - link "HTX" [ref=e878] [cursor=pointer]:
+                      - /url: https://www.htx.com/
+                  - listitem [ref=e879]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e880]
+                    - link "Hyperliquid" [ref=e881] [cursor=pointer]:
+                      - /url: https://hyperliquid.xyz/
+                    - text: (A decentralized exchange, or DEX)
+                  - listitem [ref=e882]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e883]
+                    - link "Kraken" [ref=e884] [cursor=pointer]:
+                      - /url: https://kraken.com/
+                  - listitem [ref=e885]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e886]
+                    - link "OKX" [ref=e887] [cursor=pointer]:
+                      - /url: https://okx.com/
+                  - listitem [ref=e888]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e889]
+                    - link "MyOKX" [ref=e890] [cursor=pointer]:
+                      - /url: https://okx.com/
+                    - text: (OKX EEA)
+                  - listitem [ref=e891]:
+                    - checkbox "Incomplete task" [disabled] [ref=e892]
+                    - link "potentially many others" [ref=e893] [cursor=pointer]:
+                      - /url: https://github.com/ccxt/ccxt/
+                    - text: .
+                    - emphasis [ref=e894]: (We cannot guarantee they will work)
+                - generic [ref=e895]:
+                  - heading "Supported Futures Exchanges" [level=3] [ref=e896]
+                  - 'link "Permalink: Supported Futures Exchanges" [ref=e897] [cursor=pointer]':
+                    - /url: "#supported-futures-exchanges"
+                    - img [ref=e898]
+                - list [ref=e900]:
+                  - listitem [ref=e901]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e902]
+                    - link "Binance" [ref=e903] [cursor=pointer]:
+                      - /url: https://www.binance.com/
+                  - listitem [ref=e904]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e905]
+                    - link "Bitget" [ref=e906] [cursor=pointer]:
+                      - /url: https://www.bitget.com/
+                  - listitem [ref=e907]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e908]
+                    - link "Gate.io" [ref=e909] [cursor=pointer]:
+                      - /url: https://www.gate.io/ref/6266643
+                  - listitem [ref=e910]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e911]
+                    - link "Hyperliquid" [ref=e912] [cursor=pointer]:
+                      - /url: https://hyperliquid.xyz/
+                    - text: (A decentralized exchange, or DEX)
+                  - listitem [ref=e913]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e914]
+                    - link "OKX" [ref=e915] [cursor=pointer]:
+                      - /url: https://okx.com/
+                  - listitem [ref=e916]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e917]
+                    - link "Bybit" [ref=e918] [cursor=pointer]:
+                      - /url: https://bybit.com/
+                  - listitem [ref=e919]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e920]
+                    - link "Kraken" [ref=e921] [cursor=pointer]:
+                      - /url: https://www.kraken.com/features/futures
+                - paragraph [ref=e922]:
+                  - text: Please make sure to read the
+                  - link "exchange specific notes" [ref=e923] [cursor=pointer]:
+                    - /url: https://www.freqtrade.io/en/stable/exchanges/
+                  - text: ", as well as the"
+                  - link "trading with leverage" [ref=e924] [cursor=pointer]:
+                    - /url: https://www.freqtrade.io/en/stable/leverage/
+                  - text: documentation before diving in.
+                - generic [ref=e925]:
+                  - heading "Community tested" [level=3] [ref=e926]
+                  - 'link "Permalink: Community tested" [ref=e927] [cursor=pointer]':
+                    - /url: "#community-tested"
+                    - img [ref=e928]
+                - paragraph [ref=e930]: "Exchanges confirmed working by the community:"
+                - list [ref=e931]:
+                  - listitem [ref=e932]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e933]
+                    - link "Bitvavo" [ref=e934] [cursor=pointer]:
+                      - /url: https://bitvavo.com/
+                  - listitem [ref=e935]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e936]
+                    - link "Kucoin" [ref=e937] [cursor=pointer]:
+                      - /url: https://www.kucoin.com/
+                - generic [ref=e938]:
+                  - heading "Documentation" [level=2] [ref=e939]
+                  - 'link "Permalink: Documentation" [ref=e940] [cursor=pointer]':
+                    - /url: "#documentation"
+                    - img [ref=e941]
+                - paragraph [ref=e943]: We invite you to read the bot documentation to ensure you understand how the bot is working.
+                - paragraph [ref=e944]:
+                  - text: Please find the complete documentation on the
+                  - link "freqtrade website" [ref=e945] [cursor=pointer]:
+                    - /url: https://www.freqtrade.io
+                  - text: .
+                - generic [ref=e946]:
+                  - heading "Features" [level=2] [ref=e947]
+                  - 'link "Permalink: Features" [ref=e948] [cursor=pointer]':
+                    - /url: "#features"
+                    - img [ref=e949]
+                - list [ref=e951]:
+                  - listitem [ref=e952]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e953]
+                    - strong [ref=e954]: Based on Python 3.11+
+                    - text: ": For botting on any operating system - Windows, macOS and Linux."
+                  - listitem [ref=e955]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e956]
+                    - strong [ref=e957]: Persistence
+                    - text: ": Persistence is achieved through sqlite."
+                  - listitem [ref=e958]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e959]
+                    - strong [ref=e960]: Dry-run
+                    - text: ": Run the bot without paying money."
+                  - listitem [ref=e961]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e962]
+                    - strong [ref=e963]: Backtesting
+                    - text: ": Run a simulation of your buy/sell strategy."
+                  - listitem [ref=e964]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e965]
+                    - strong [ref=e966]: Strategy Optimization by machine learning
+                    - text: ": Use machine learning to optimize your buy/sell strategy parameters with real exchange data."
+                  - listitem [ref=e967]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e968]
+                    - strong [ref=e969]: Adaptive prediction modeling
+                    - text: ": Build a smart strategy with FreqAI that self-trains to the market via adaptive machine learning methods."
+                    - link "Learn more" [ref=e970] [cursor=pointer]:
+                      - /url: https://www.freqtrade.io/en/stable/freqai/
+                  - listitem [ref=e971]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e972]
+                    - strong [ref=e973]: Whitelist crypto-currencies
+                    - text: ": Select which crypto-currency you want to trade or use dynamic whitelists."
+                  - listitem [ref=e974]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e975]
+                    - strong [ref=e976]: Blacklist crypto-currencies
+                    - text: ": Select which crypto-currency you want to avoid."
+                  - listitem [ref=e977]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e978]
+                    - strong [ref=e979]: Builtin WebUI
+                    - text: ": Builtin web UI to manage your bot."
+                  - listitem [ref=e980]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e981]
+                    - strong [ref=e982]: Manageable via Telegram
+                    - text: ": Manage the bot with Telegram."
+                  - listitem [ref=e983]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e984]
+                    - strong [ref=e985]: Display profit/loss in fiat
+                    - text: ": Display your profit/loss in fiat currency."
+                  - listitem [ref=e986]:
+                    - checkbox "Completed task" [checked] [disabled] [ref=e987]
+                    - strong [ref=e988]: Performance status report
+                    - text: ": Provide a performance status of your current trades."
+                - generic [ref=e989]:
+                  - heading "Quick start" [level=2] [ref=e990]
+                  - 'link "Permalink: Quick start" [ref=e991] [cursor=pointer]':
+                    - /url: "#quick-start"
+                    - img [ref=e992]
+                - paragraph [ref=e994]:
+                  - text: Please refer to the
+                  - link "Docker Quickstart documentation" [ref=e995] [cursor=pointer]:
+                    - /url: https://www.freqtrade.io/en/stable/docker_quickstart/
+                  - text: on how to get started quickly.
+                - paragraph [ref=e996]:
+                  - text: For further (native) installation methods, please refer to the
+                  - link "Installation documentation page" [ref=e997] [cursor=pointer]:
+                    - /url: https://www.freqtrade.io/en/stable/installation/
+                  - text: .
+                - generic [ref=e998]:
+                  - heading "Basic Usage" [level=2] [ref=e999]
+                  - 'link "Permalink: Basic Usage" [ref=e1000] [cursor=pointer]':
+                    - /url: "#basic-usage"
+                    - img [ref=e1001]
+                - generic [ref=e1003]:
+                  - heading "Bot commands" [level=3] [ref=e1004]
+                  - 'link "Permalink: Bot commands" [ref=e1005] [cursor=pointer]':
+                    - /url: "#bot-commands"
+                    - img [ref=e1006]
+                - generic [ref=e1008]:
+                  - code [ref=e1010]: "usage: freqtrade [-h] [-V] {trade,create-userdir,new-config,show-config,new-strategy,download-data,convert-data,convert-trade-data,trades-to-ohlcv,list-data,backtesting,backtesting-show,backtesting-analysis,edge,hyperopt,hyperopt-list,hyperopt-show,list-exchanges,list-markets,list-pairs,list-strategies,list-hyperoptloss,list-freqaimodels,list-timeframes,show-trades,test-pairlist,convert-db,install-ui,plot-dataframe,plot-profit,webserver,strategy-updater,lookahead-analysis,recursive-analysis} ... Free, open source crypto trading bot positional arguments: {trade,create-userdir,new-config,show-config,new-strategy,download-data,convert-data,convert-trade-data,trades-to-ohlcv,list-data,backtesting,backtesting-show,backtesting-analysis,edge,hyperopt,hyperopt-list,hyperopt-show,list-exchanges,list-markets,list-pairs,list-strategies,list-hyperoptloss,list-freqaimodels,list-timeframes,show-trades,test-pairlist,convert-db,install-ui,plot-dataframe,plot-profit,webserver,strategy-updater,lookahead-analysis,recursive-analysis} trade Trade module. create-userdir Create user-data directory. new-config Create new config show-config Show resolved config new-strategy Create new strategy download-data Download backtesting data. convert-data Convert candle (OHLCV) data from one format to another. convert-trade-data Convert trade data from one format to another. trades-to-ohlcv Convert trade data to OHLCV data. list-data List downloaded data. backtesting Backtesting module. backtesting-show Show past Backtest results backtesting-analysis Backtest Analysis module. hyperopt Hyperopt module. hyperopt-list List Hyperopt results hyperopt-show Show details of Hyperopt results list-exchanges Print available exchanges. list-markets Print markets on exchange. list-pairs Print pairs on exchange. list-strategies Print available strategies. list-hyperoptloss Print available hyperopt loss functions. list-freqaimodels Print available freqAI models. list-timeframes Print available timeframes for the exchange. show-trades Show trades. test-pairlist Test your pairlist configuration. convert-db Migrate database to different system install-ui Install FreqUI plot-dataframe Plot candles with indicators. plot-profit Generate plot showing profits. webserver Webserver module. strategy-updater updates outdated strategy files to the current version lookahead-analysis Check for potential look ahead bias. recursive-analysis Check for potential recursive formula issue. options: -h, --help show this help message and exit -V, --version show program's version number and exit"
+                  - button "Copy" [ref=e1012] [cursor=pointer]:
+                    - img [ref=e1013]
+                - generic [ref=e1016]:
+                  - heading "Telegram RPC commands" [level=3] [ref=e1017]
+                  - 'link "Permalink: Telegram RPC commands" [ref=e1018] [cursor=pointer]':
+                    - /url: "#telegram-rpc-commands"
+                    - img [ref=e1019]
+                - paragraph [ref=e1021]:
+                  - text: Telegram is not mandatory. However, this is a great way to control your bot. More details and the full command list on the
+                  - link "documentation" [ref=e1022] [cursor=pointer]:
+                    - /url: https://www.freqtrade.io/en/stable/telegram-usage/
+                - list [ref=e1023]:
+                  - listitem [ref=e1024]:
+                    - code [ref=e1025]: /start
+                    - text: ": Starts the trader."
+                  - listitem [ref=e1026]:
+                    - code [ref=e1027]: /stop
+                    - text: ": Stops the trader."
+                  - listitem [ref=e1028]:
+                    - code [ref=e1029]: /stopentry
+                    - text: ": Stop entering new trades."
+                  - listitem [ref=e1030]:
+                    - code [ref=e1031]: /status <trade_id>|[table]
+                    - text: ": Lists all or specific open trades."
+                  - listitem [ref=e1032]:
+                    - code [ref=e1033]: /profit [<n>]
+                    - text: ": Lists cumulative profit from all finished trades, over the last n days."
+                  - listitem [ref=e1034]:
+                    - code [ref=e1035]: /profit_long [<n>]
+                    - text: ": Lists cumulative profit from all finished long trades, over the last n days."
+                  - listitem [ref=e1036]:
+                    - code [ref=e1037]: /profit_short [<n>]
+                    - text: ": Lists cumulative profit from all finished short trades, over the last n days."
+                  - listitem [ref=e1038]:
+                    - code [ref=e1039]: /forceexit <trade_id>|all
+                    - text: ": Instantly exits the given trade (Ignoring"
+                    - code [ref=e1040]: minimum_roi
+                    - text: ).
+                  - listitem [ref=e1041]:
+                    - code [ref=e1042]: /fx <trade_id>|all
+                    - text: ": Alias to"
+                    - code [ref=e1043]: /forceexit
+                  - listitem [ref=e1044]:
+                    - code [ref=e1045]: /performance
+                    - text: ": Show performance of each finished trade grouped by pair"
+                  - listitem [ref=e1046]:
+                    - code [ref=e1047]: /balance
+                    - text: ": Show account balance per currency."
+                  - listitem [ref=e1048]:
+                    - code [ref=e1049]: /daily <n>
+                    - text: ": Shows profit or loss per day, over the last n days."
+                  - listitem [ref=e1050]:
+                    - code [ref=e1051]: /help
+                    - text: ": Show help message."
+                  - listitem [ref=e1052]:
+                    - code [ref=e1053]: /version
+                    - text: ": Show version."
+                - generic [ref=e1054]:
+                  - heading "Development branches" [level=2] [ref=e1055]
+                  - 'link "Permalink: Development branches" [ref=e1056] [cursor=pointer]':
+                    - /url: "#development-branches"
+                    - img [ref=e1057]
+                - paragraph [ref=e1059]: "The project is currently setup in two main branches:"
+                - list [ref=e1060]:
+                  - listitem [ref=e1061]:
+                    - code [ref=e1062]: develop
+                    - text: "- This branch has often new features, but might also contain breaking changes. We try hard to keep this branch as stable as possible."
+                  - listitem [ref=e1063]:
+                    - code [ref=e1064]: stable
+                    - text: "- This branch contains the latest stable release. This branch is generally well tested."
+                  - listitem [ref=e1065]:
+                    - code [ref=e1066]: feat/*
+                    - text: "- These are feature branches, which are being worked on heavily. Please don't use these unless you want to test a specific feature."
+                - generic [ref=e1067]:
+                  - heading "Support" [level=2] [ref=e1068]
+                  - 'link "Permalink: Support" [ref=e1069] [cursor=pointer]':
+                    - /url: "#support"
+                    - img [ref=e1070]
+                - generic [ref=e1072]:
+                  - heading "Help / Discord" [level=3] [ref=e1073]
+                  - 'link "Permalink: Help / Discord" [ref=e1074] [cursor=pointer]':
+                    - /url: "#help--discord"
+                    - img [ref=e1075]
+                - paragraph [ref=e1077]:
+                  - text: For any questions not covered by the documentation or for further information about the bot, or to simply engage with like-minded individuals, we encourage you to join the Freqtrade
+                  - link "discord server" [ref=e1078] [cursor=pointer]:
+                    - /url: https://discord.gg/p7nuUNVfP7
+                  - text: .
+                - generic [ref=e1079]:
+                  - heading "Bugs / Issues" [level=3] [ref=e1080]:
+                    - link "Bugs / Issues" [ref=e1081] [cursor=pointer]:
+                      - /url: https://github.com/freqtrade/freqtrade/issues?q=is%3Aissue
+                  - 'link "Permalink: Bugs / Issues" [ref=e1082] [cursor=pointer]':
+                    - /url: "#bugs--issues"
+                    - img [ref=e1083]
+                - paragraph [ref=e1085]:
+                  - text: If you discover a bug in the bot, please
+                  - link "search the issue tracker" [ref=e1086] [cursor=pointer]:
+                    - /url: https://github.com/freqtrade/freqtrade/issues?q=is%3Aissue
+                  - text: first. If it hasn't been reported, please
+                  - link "create a new issue" [ref=e1087] [cursor=pointer]:
+                    - /url: https://github.com/freqtrade/freqtrade/issues/new/choose
+                  - text: and ensure you follow the template guide so that the team can assist you as quickly as possible.
+                - paragraph [ref=e1088]:
+                  - text: For every
+                  - link "issue" [ref=e1089] [cursor=pointer]:
+                    - /url: https://github.com/freqtrade/freqtrade/issues/new/choose
+                  - text: created, kindly follow up and mark satisfaction or reminder to close issue when equilibrium ground is reached.
+                - paragraph [ref=e1090]:
+                  - text: "--Maintain github's"
+                  - link "community policy" [ref=e1091] [cursor=pointer]:
+                    - /url: https://docs.github.com/en/site-policy/github-terms/github-community-code-of-conduct
+                  - text: "--"
+                - generic [ref=e1092]:
+                  - heading "Feature Requests" [level=3] [ref=e1093]:
+                    - link "Feature Requests" [ref=e1094] [cursor=pointer]:
+                      - /url: https://github.com/freqtrade/freqtrade/labels/enhancement
+                  - 'link "Permalink: Feature Requests" [ref=e1095] [cursor=pointer]':
+                    - /url: "#feature-requests"
+                    - img [ref=e1096]
+                - paragraph [ref=e1098]:
+                  - text: Have you a great idea to improve the bot you want to share? Please, first search if this feature was not
+                  - link "already discussed" [ref=e1099] [cursor=pointer]:
+                    - /url: https://github.com/freqtrade/freqtrade/labels/enhancement
+                  - text: . If it hasn't been requested, please
+                  - link "create a new request" [ref=e1100] [cursor=pointer]:
+                    - /url: https://github.com/freqtrade/freqtrade/issues/new/choose
+                  - text: and ensure you follow the template guide so that it does not get lost in the bug reports.
+                - generic [ref=e1101]:
+                  - heading "Pull Requests" [level=3] [ref=e1102]:
+                    - link "Pull Requests" [ref=e1103] [cursor=pointer]:
+                      - /url: https://github.com/freqtrade/freqtrade/pulls
+                  - 'link "Permalink: Pull Requests" [ref=e1104] [cursor=pointer]':
+                    - /url: "#pull-requests"
+                    - img [ref=e1105]
+                - paragraph [ref=e1107]: Feel like the bot is missing a feature? We welcome your pull requests!
+                - paragraph [ref=e1108]:
+                  - text: Please read the
+                  - link "Contributing document" [ref=e1109] [cursor=pointer]:
+                    - /url: https://github.com/freqtrade/freqtrade/blob/develop/CONTRIBUTING.md
+                  - text: to understand the requirements before sending your pull-requests.
+                - paragraph [ref=e1110]:
+                  - text: Coding is not a necessity to contribute - maybe start with improving the documentation? Issues labeled
+                  - link "good first issue" [ref=e1111] [cursor=pointer]:
+                    - /url: https://github.com/freqtrade/freqtrade/labels/good%20first%20issue
+                  - text: can be good first contributions, and will help get you familiar with the codebase.
+                - paragraph [ref=e1112]:
+                  - strong [ref=e1113]: Note
+                  - text: before starting any major new feature work,
+                  - emphasis [ref=e1114]: please open an issue describing what you are planning to do
+                  - text: or talk to us on
+                  - link "discord" [ref=e1115] [cursor=pointer]:
+                    - /url: https://discord.gg/p7nuUNVfP7
+                  - text: "(please use the #dev channel for this). This will ensure that interested parties can give valuable feedback on the feature, and let others know that you are working on it."
+                - paragraph [ref=e1116]:
+                  - strong [ref=e1117]: "Important:"
+                  - text: Always create your PR against the
+                  - code [ref=e1118]: develop
+                  - text: branch, not
+                  - code [ref=e1119]: stable
+                  - text: .
+                - generic [ref=e1120]:
+                  - heading "Requirements" [level=2] [ref=e1121]
+                  - 'link "Permalink: Requirements" [ref=e1122] [cursor=pointer]':
+                    - /url: "#requirements"
+                    - img [ref=e1123]
+                - generic [ref=e1125]:
+                  - heading "Up-to-date clock" [level=3] [ref=e1126]
+                  - 'link "Permalink: Up-to-date clock" [ref=e1127] [cursor=pointer]':
+                    - /url: "#up-to-date-clock"
+                    - img [ref=e1128]
+                - paragraph [ref=e1130]: The clock must be accurate, synchronized to a NTP server very frequently to avoid problems with communication to the exchanges.
+                - generic [ref=e1131]:
+                  - heading "Minimum hardware required" [level=3] [ref=e1132]
+                  - 'link "Permalink: Minimum hardware required" [ref=e1133] [cursor=pointer]':
+                    - /url: "#minimum-hardware-required"
+                    - img [ref=e1134]
+                - paragraph [ref=e1136]: "To run this bot we recommend you a cloud instance with a minimum of:"
+                - list [ref=e1137]:
+                  - listitem [ref=e1138]: "Minimal (advised) system requirements: 2GB RAM, 1GB disk space, 2vCPU"
+                - generic [ref=e1139]:
+                  - heading "Software requirements" [level=3] [ref=e1140]
+                  - 'link "Permalink: Software requirements" [ref=e1141] [cursor=pointer]':
+                    - /url: "#software-requirements"
+                    - img [ref=e1142]
+                - list [ref=e1144]:
+                  - listitem [ref=e1145]:
+                    - link "Python >= 3.11" [ref=e1146] [cursor=pointer]:
+                      - /url: http://docs.python-guide.org/en/latest/starting/installation/
+                  - listitem [ref=e1147]:
+                    - link "pip" [ref=e1148] [cursor=pointer]:
+                      - /url: https://pip.pypa.io/en/stable/installing/
+                  - listitem [ref=e1149]:
+                    - link "git" [ref=e1150] [cursor=pointer]:
+                      - /url: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+                  - listitem [ref=e1151]:
+                    - link "TA-Lib" [ref=e1152] [cursor=pointer]:
+                      - /url: https://ta-lib.github.io/ta-lib-python/
+                  - listitem [ref=e1153]:
+                    - link "virtualenv" [ref=e1154] [cursor=pointer]:
+                      - /url: https://virtualenv.pypa.io/en/stable/installation.html
+                    - text: (Recommended)
+                  - listitem [ref=e1155]:
+                    - link "Docker" [ref=e1156] [cursor=pointer]:
+                      - /url: https://www.docker.com/products/docker
+                    - text: (Recommended)
+        - generic [ref=e1160]:
+          - generic [ref=e1163]:
+            - heading "About" [level=2] [ref=e1164]
+            - paragraph [ref=e1165]: Free, open source crypto trading bot
+            - generic [ref=e1166]:
+              - img [ref=e1167]
+              - link "www.freqtrade.io" [ref=e1170] [cursor=pointer]:
+                - /url: https://www.freqtrade.io
+            - heading "Topics" [level=3] [ref=e1171]
+            - generic [ref=e1173]:
+              - link "python" [ref=e1174] [cursor=pointer]:
+                - /url: /topics/python
+              - link "bitcoin" [ref=e1175] [cursor=pointer]:
+                - /url: /topics/bitcoin
+              - link "telegram-bot" [ref=e1176] [cursor=pointer]:
+                - /url: /topics/telegram-bot
+              - link "trading-bot" [ref=e1177] [cursor=pointer]:
+                - /url: /topics/trading-bot
+              - link "cryptocurrency" [ref=e1178] [cursor=pointer]:
+                - /url: /topics/cryptocurrency
+              - link "cryptocurrencies" [ref=e1179] [cursor=pointer]:
+                - /url: /topics/cryptocurrencies
+              - link "trade" [ref=e1180] [cursor=pointer]:
+                - /url: /topics/trade
+              - link "algorithmic-trading" [ref=e1181] [cursor=pointer]:
+                - /url: /topics/algorithmic-trading
+              - link "freqtrade" [ref=e1182] [cursor=pointer]:
+                - /url: /topics/freqtrade
+            - heading "Resources" [level=3] [ref=e1183]
+            - link "Readme" [ref=e1185] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e1186]
+              - text: Readme
+            - heading "License" [level=3] [ref=e1188]
+            - link "GPL-3.0 license" [ref=e1190] [cursor=pointer]:
+              - /url: "#GPL-3.0-1-ov-file"
+              - img [ref=e1191]
+              - text: GPL-3.0 license
+            - heading "Contributing" [level=3] [ref=e1193]
+            - link "Contributing" [ref=e1195] [cursor=pointer]:
+              - /url: "#contributing-ov-file"
+              - img [ref=e1196]
+              - text: Contributing
+            - link "Activity" [ref=e1199] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/activity
+              - img [ref=e1200]
+              - text: Activity
+            - link "Custom properties" [ref=e1203] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/custom-properties
+              - img [ref=e1204]
+              - text: Custom properties
+            - heading "Stars" [level=3] [ref=e1206]
+            - link "49.6k stars" [ref=e1208] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/stargazers
+              - img [ref=e1209]
+              - strong [ref=e1211]: 49.6k
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e1212]
+            - link "737 watching" [ref=e1214] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/watchers
+              - img [ref=e1215]
+              - strong [ref=e1217]: "737"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e1218]
+            - link "10.3k forks" [ref=e1220] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/forks
+              - img [ref=e1221]
+              - strong [ref=e1223]: 10.3k
+              - text: forks
+            - link "Report repository" [ref=e1225] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Ffreqtrade%2Ffreqtrade&report=freqtrade+%28user%29
+          - generic [ref=e1227]:
+            - heading "Releases 111" [level=2] [ref=e1228]:
+              - link "Releases 111" [ref=e1229] [cursor=pointer]:
+                - /url: /freqtrade/freqtrade/releases
+                - text: Releases
+                - generic "111" [ref=e1230]
+            - link "2026.3 Latest Mar 30, 2026on Mar 30" [ref=e1231] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/releases/tag/2026.3
+              - img [ref=e1232]
+              - generic [ref=e1234]:
+                - generic [ref=e1235]:
+                  - generic [ref=e1236]: "2026.3"
+                  - 'generic "Label: Latest" [ref=e1237]': Latest
+                - generic [ref=e1238]: Mar 30, 2026on Mar 30
+            - link "+ 110 releases" [ref=e1240] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/releases
+          - generic [ref=e1242]:
+            - heading "Sponsor this project" [level=2] [ref=e1243]
+            - generic [ref=e1244]:
+              - link "@xmatthias" [ref=e1245] [cursor=pointer]:
+                - /url: /xmatthias
+                - img "@xmatthias" [ref=e1246]
+              - link "xmatthias Matthias" [ref=e1248] [cursor=pointer]:
+                - /url: /xmatthias
+                - strong [ref=e1249]: xmatthias
+                - text: Matthias
+            - link "Sponsor @xmatthias" [ref=e1250] [cursor=pointer]:
+              - /url: /sponsors/xmatthias
+              - generic [ref=e1252]:
+                - img [ref=e1253]
+                - text: Sponsor
+            - link "Learn more about GitHub Sponsors" [ref=e1256] [cursor=pointer]:
+              - /url: /sponsors
+          - generic [ref=e1258]:
+            - heading "Packages 2" [level=2] [ref=e1259]:
+              - link "Packages 2" [ref=e1260] [cursor=pointer]:
+                - /url: /orgs/freqtrade/packages?repo_name=freqtrade
+                - text: Packages
+                - generic "2" [ref=e1261]
+            - list [ref=e1262]:
+              - listitem [ref=e1263]:
+                - img [ref=e1265]
+                - link "freqtrade" [ref=e1267] [cursor=pointer]:
+                  - /url: /orgs/freqtrade/packages/container/package/freqtrade
+              - listitem [ref=e1268]:
+                - img [ref=e1270]
+                - link "freqtrade-devcontainer" [ref=e1272] [cursor=pointer]:
+                  - /url: /orgs/freqtrade/packages/container/package/freqtrade-devcontainer
+          - generic [ref=e1274]:
+            - heading "Used by 125" [level=2] [ref=e1275]:
+              - link "Used by 125" [ref=e1276] [cursor=pointer]:
+                - /url: /freqtrade/freqtrade/network/dependents
+                - text: Used by
+                - generic "125" [ref=e1277]
+            - link "@4tie @ma-pony @Wildstylez23 @nomadikai @protechtimenow @I-Onlabs @wurstgulasch @cyberjunky + 117" [ref=e1278] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/network/dependents
+              - list [ref=e1279]:
+                - listitem [ref=e1280]:
+                  - img "@4tie" [ref=e1281]
+                - listitem [ref=e1282]:
+                  - img "@ma-pony" [ref=e1283]
+                - listitem [ref=e1284]:
+                  - img "@Wildstylez23" [ref=e1285]
+                - listitem [ref=e1286]:
+                  - img "@nomadikai" [ref=e1287]
+                - listitem [ref=e1288]:
+                  - img "@protechtimenow" [ref=e1289]
+                - listitem [ref=e1290]:
+                  - img "@I-Onlabs" [ref=e1291]
+                - listitem [ref=e1292]:
+                  - img "@wurstgulasch" [ref=e1293]
+                - listitem [ref=e1294]:
+                  - img "@cyberjunky" [ref=e1295]
+              - generic [ref=e1296]: + 117
+          - generic [ref=e1298]:
+            - heading "Contributors 332" [level=2] [ref=e1299]:
+              - link "Contributors 332" [ref=e1300] [cursor=pointer]:
+                - /url: /freqtrade/freqtrade/graphs/contributors
+                - text: Contributors
+                - generic "332" [ref=e1301]
+            - list [ref=e1302]:
+              - listitem [ref=e1303]:
+                - link "@xmatthias" [ref=e1304] [cursor=pointer]:
+                  - /url: https://github.com/xmatthias
+                  - img "@xmatthias" [ref=e1305]
+              - listitem [ref=e1306]:
+                - link "@dependabot[bot]" [ref=e1307] [cursor=pointer]:
+                  - /url: https://github.com/apps/dependabot
+                  - img "@dependabot[bot]" [ref=e1308]
+              - listitem [ref=e1309]:
+                - link "@hroff-1902" [ref=e1310] [cursor=pointer]:
+                  - /url: https://github.com/hroff-1902
+                  - img "@hroff-1902" [ref=e1311]
+              - listitem [ref=e1312]:
+                - link "@robcaulk" [ref=e1313] [cursor=pointer]:
+                  - /url: https://github.com/robcaulk
+                  - img "@robcaulk" [ref=e1314]
+              - listitem [ref=e1315]:
+                - link "@samgermain" [ref=e1316] [cursor=pointer]:
+                  - /url: https://github.com/samgermain
+                  - img "@samgermain" [ref=e1317]
+              - listitem [ref=e1318]:
+                - link "@github-actions[bot]" [ref=e1319] [cursor=pointer]:
+                  - /url: https://github.com/apps/github-actions
+                  - img "@github-actions[bot]" [ref=e1320]
+              - listitem [ref=e1321]:
+                - link "@mishaker" [ref=e1322] [cursor=pointer]:
+                  - /url: https://github.com/mishaker
+                  - img "@mishaker" [ref=e1323]
+              - listitem [ref=e1324]:
+                - link "@pyup-bot" [ref=e1325] [cursor=pointer]:
+                  - /url: https://github.com/pyup-bot
+                  - img "@pyup-bot" [ref=e1326]
+              - listitem [ref=e1327]:
+                - link "@vertti" [ref=e1328] [cursor=pointer]:
+                  - /url: https://github.com/vertti
+                  - img "@vertti" [ref=e1329]
+              - listitem [ref=e1330]:
+                - link "@stash86" [ref=e1331] [cursor=pointer]:
+                  - /url: https://github.com/stash86
+                  - img "@stash86" [ref=e1332]
+              - listitem [ref=e1333]:
+                - link "@shusso" [ref=e1334] [cursor=pointer]:
+                  - /url: https://github.com/shusso
+                  - img "@shusso" [ref=e1335]
+              - listitem [ref=e1336]:
+                - link "@Axel-CH" [ref=e1337] [cursor=pointer]:
+                  - /url: https://github.com/Axel-CH
+                  - img "@Axel-CH" [ref=e1338]
+              - listitem [ref=e1339]:
+                - link "@dependabot-preview[bot]" [ref=e1340] [cursor=pointer]:
+                  - /url: https://github.com/apps/dependabot-preview
+                  - img "@dependabot-preview[bot]" [ref=e1341]
+              - listitem [ref=e1342]:
+                - link "@glonlas" [ref=e1343] [cursor=pointer]:
+                  - /url: https://github.com/glonlas
+                  - img "@glonlas" [ref=e1344]
+            - link "+ 318 contributors" [ref=e1346] [cursor=pointer]:
+              - /url: /freqtrade/freqtrade/graphs/contributors
+          - generic [ref=e1348]:
+            - heading "Languages" [level=2] [ref=e1349]
+            - list [ref=e1357]:
+              - listitem [ref=e1358]:
+                - link "Python 98.5%" [ref=e1359] [cursor=pointer]:
+                  - /url: /freqtrade/freqtrade/search?l=python
+                  - img [ref=e1360]
+                  - generic [ref=e1362]: Python
+                  - generic [ref=e1363]: 98.5%
+              - listitem [ref=e1364]:
+                - link "Jinja 0.7%" [ref=e1365] [cursor=pointer]:
+                  - /url: /freqtrade/freqtrade/search?l=jinja
+                  - img [ref=e1366]
+                  - generic [ref=e1368]: Jinja
+                  - generic [ref=e1369]: 0.7%
+              - listitem [ref=e1370]:
+                - link "PowerShell 0.3%" [ref=e1371] [cursor=pointer]:
+                  - /url: /freqtrade/freqtrade/search?l=powershell
+                  - img [ref=e1372]
+                  - generic [ref=e1374]: PowerShell
+                  - generic [ref=e1375]: 0.3%
+              - listitem [ref=e1376]:
+                - link "Jupyter Notebook 0.3%" [ref=e1377] [cursor=pointer]:
+                  - /url: /freqtrade/freqtrade/search?l=jupyter-notebook
+                  - img [ref=e1378]
+                  - generic [ref=e1380]: Jupyter Notebook
+                  - generic [ref=e1381]: 0.3%
+              - listitem [ref=e1382]:
+                - link "Shell 0.2%" [ref=e1383] [cursor=pointer]:
+                  - /url: /freqtrade/freqtrade/search?l=shell
+                  - img [ref=e1384]
+                  - generic [ref=e1386]: Shell
+                  - generic [ref=e1387]: 0.2%
+              - listitem [ref=e1388]:
+                - link "Dockerfile 0.0%" [ref=e1389] [cursor=pointer]:
+                  - /url: /freqtrade/freqtrade/search?l=dockerfile
+                  - img [ref=e1390]
+                  - generic [ref=e1392]: Dockerfile
+                  - generic [ref=e1393]: 0.0%
+  - contentinfo [ref=e1395]:
+    - heading "Footer" [level=2] [ref=e1396]
+    - generic [ref=e1397]:
+      - generic [ref=e1398]:
+        - link "GitHub Homepage" [ref=e1399] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e1400]
+        - generic [ref=e1402]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e1403]:
+        - heading "Footer navigation" [level=3] [ref=e1404]
+        - list "Footer navigation" [ref=e1405]:
+          - listitem [ref=e1406]:
+            - link "Terms" [ref=e1407] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e1408]:
+            - link "Privacy" [ref=e1409] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e1410]:
+            - link "Security" [ref=e1411] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e1412]:
+            - link "Status" [ref=e1413] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e1414]:
+            - link "Community" [ref=e1415] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e1416]:
+            - link "Docs" [ref=e1417] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e1418]:
+            - link "Contact" [ref=e1419] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e1420]:
+            - button "Manage cookies" [ref=e1422] [cursor=pointer]
+          - listitem [ref=e1423]:
+            - button "Do not share my personal information" [ref=e1425] [cursor=pointer]

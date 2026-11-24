@@ -1,0 +1,1470 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / code-snippets-other-strategies
+==============================================================
+
+[09/07/2024 18:38] sera131
+Recommended Binance-Proxy:
+https://github.com/nightshift2k/binance-proxy
+
+Recommended Kucoin-Proxy:
+https://github.com/mikekonan/freqtrade-proxy
+
+{Embed}
+https://github.com/nightshift2k/binance-proxy
+GitHub - nightshift2k/binance-proxy: A websocket proxy written in G...
+A websocket proxy written in GoLang, that caches the endpoints: klines, depth, ticker/24hr, and exchangeInfo. It resembles the Binance API behaviour. And has a primary usecase to eliminate ratelimi...
+https://images-ext-1.discordapp.net/external/39bHHpvUn72OoRtSPnMYYw6BfcUB0Xp4zkfQ5iJXZ4M/https/opengraph.githubassets.com/b870a94c10c72754009598696b58becc69d173b0b59446e6dda1a1b51f6425e2/nightshift2k/binance-proxy
+
+{Embed}
+https://github.com/mikekonan/freqtrade-proxy
+GitHub - mikekonan/exchange-proxy: exchange-proxy
+exchange-proxy. Contribute to mikekonan/exchange-proxy development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/NmK2SwznzC3352yB4hzQU-nhp56N4hZakrZ9MGZvKjs/https/opengraph.githubassets.com/74c9960bc39669a28d0b8e82dc0d99e40cd765900da68789177c1aa8d51807f2/mikekonan/exchange-proxy
+
+
+[09/07/2024 18:38] sera131
+Some more resources:
+https://github.com/hippocritical/FreqtradeHelpers
+
+{Embed}
+https://github.com/hippocritical/FreqtradeHelpers
+GitHub - hippocritical/FreqtradeHelpers: General collection of anyt...
+General collection of anything that I deemed cool or helpful - hippocritical/FreqtradeHelpers
+https://images-ext-1.discordapp.net/external/dIKXhVoVJRELormxElamvr_YMqzKLTAy7jH-jom165Y/https/opengraph.githubassets.com/42d578dccf0aa6b3c94c3dcbfaf1e3da9cd1dcf7b6fe5ef4ac1ab00ea1a6aec6/hippocritical/FreqtradeHelpers
+
+
+[09/07/2024 18:39] sera131
+🇹 🇪 ⭕🇩 🇴 🇷᚛᚜, [8/28/2024 4:55 PM]
+NewsScraper by @Leonardvdj when pairs get delisted:
+when a pair is announced to be delisted from the biggest exchange (Binance.com) you REALLY dont want to buy the dip - no matter on which exchange 
+https://github.com/leonardvdj/delist_util
+
+🇹 🇪 ⭕🇩 🇴 🇷᚛᚜, [8/28/2024 4:55 PM]
+Best way to find newly published strategies on github:
+https://github.com/search?q=path%3A*.py+language%3APython++content%3Aistrategy+NOT+content%3Aistrategy.istrategy&type=code&ref=advsearch
+
+🇹 🇪 ⭕🇩 🇴 🇷᚛᚜, [8/28/2024 4:55 PM]
+backtesting-pairlists:
+ready to go pairlists for each day/week/month (these are used as static pairlists for each monthly backtest!)
+https://github.com/hippocritical/pairlist_generator/ (edited)
+
+visual comparison of multiple strategies over extended periods
+chains multiple backtests after each other and make graphs of them
+https://github.com/hippocritical/Freqtrade_Backtest_Analysis (edited)
+
+{Embed}
+https://github.com/leonardvdj/delist_util
+GitHub - leonardvdj/delist_util
+Contribute to leonardvdj/delist_util development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/h9L3MC7FjT8bpEiyh2wVs9OXfqXF9dPdzOXbL02KGC8/https/opengraph.githubassets.com/ea4480b67c60b241a2d190543f6db3d172da033392e4b236bc7bf48376b1e3f8/leonardvdj/delist_util
+
+{Embed}
+https://github.com/search?q=path%3A*.py+language%3APython++content%3Aistrategy+NOT+content%3Aistrategy.istrategy&type=code&ref=advsearch
+Build software better, together
+GitHub is where people build software. More than 100 million people use GitHub to discover, fork, and contribute to over 420 million projects.
+https://images-ext-1.discordapp.net/external/zrnIBpWQXHOafgsWGuTZvhY0r8aEHF-xBeTOrB3xlJU/https/github.githubassets.com/assets/github-logo-55c5b9a1fe52.png
+
+{Embed}
+https://github.com/search?q=path%3A*.py+language%3APython++content%3Aistrategy+NOT+content%3Aistrategy.istrategy&type=code&ref=advsearch
+https://images-ext-1.discordapp.net/external/FRgfgb8oHhfnQvjHln3zixTf7gq7QoqGd3zUTHj8dYs/https/github.githubassets.com/assets/github-mark-57519b92ca4e.png
+
+{Embed}
+https://github.com/search?q=path%3A*.py+language%3APython++content%3Aistrategy+NOT+content%3Aistrategy.istrategy&type=code&ref=advsearch
+https://images-ext-1.discordapp.net/external/8FXhmVUPVyR2kElkdv_UGNnEDNM53oUrUfnhRGabHp8/https/github.githubassets.com/assets/github-octocat-13c86b8b336d.png
+
+{Embed}
+https://github.com/hippocritical/pairlist_generator/
+GitHub - hippocritical/pairlist_generator
+Contribute to hippocritical/pairlist_generator development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/4-XojpsuBu_KKFZD3tqFl_z94qF_d2ceVRvlmYgb_2U/https/opengraph.githubassets.com/7f25012b60ec7d57b52933e01593cde9b39ce3e42e0e8c9009bb20e4fe7e7d40/hippocritical/pairlist_generator
+
+{Embed}
+https://github.com/hippocritical/Freqtrade_Backtest_Analysis
+GitHub - hippocritical/Freqtrade_Backtest_Analysis
+Contribute to hippocritical/Freqtrade_Backtest_Analysis development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/jeBLMrfiMZCC9vazxPqnWD7pmshzJnAAsa2RrEnUygU/https/opengraph.githubassets.com/bf70efa08473864a4e51950dbf3ea00897c5c45d5dacab38eba775998dc4a514/hippocritical/Freqtrade_Backtest_Analysis
+
+
+[09/07/2024 19:45] serialkiller15
+Tha ks for sharing
+
+
+[09/07/2024 19:56] sera131
+will share more
+
+
+[09/07/2024 19:57] .7thdragon
+https://discord.gg/6USj5K66
+
+
+[09/07/2024 20:01] serialkiller15
+What's that @7thDragon ?
+
+
+[09/07/2024 20:03] serialkiller15
+Backtesring group will check
+
+
+[09/07/2024 20:10] .7thdragon
+the shares above are from this well known old discord group, some people might not know it
+
+{Reactions}
+👍
+
+[09/07/2024 20:14] serialkiller15
+Thanks for sharing
+
+{Reactions}
+👍
+
+[09/08/2024 00:34] sera131
+https://github.com/docugs/strategies-1/tree/refs/heads/master/binanceus
+
+{Embed}
+https://github.com/docugs/strategies-1/tree/refs/heads/master/binanceus
+strategies-1/binanceus at refs/heads/master · docugs/strategies-1
+Contribute to docugs/strategies-1 development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/jCewA-qMw2RFbnpRSck-fWHK_Bgbng_6Fk8KX8arnRc/https/opengraph.githubassets.com/791650eff7d8de6eb3c1ccf5bcec2388e70ff7a3415da66e3127ac9c5810a0c0/docugs/strategies-1
+
+
+[09/08/2024 00:40] sera131
+ANTIPUMP THING TO TEST
+        """
+        dataframe['pct_change'] = dataframe['close'].pct_change(periods=8)
+        dataframe['pct_change_int'] = ((dataframe['pct_change'] > 0.15).astype(int) | (dataframe['pct_change'] < -0.15).astype(int))
+
+        dataframe['pct_change_short'] = dataframe['close'].pct_change(periods=8)
+        dataframe['pct_change_int_short'] = ((dataframe['pct_change_short'] > 0.08).astype(int) | (dataframe['pct_change_short'] < -0.08).astype(int))
+
+        dataframe['ispumping'] = (
+         (dataframe['pct_change_int'].rolling(20).sum() >= 0.4)
+        ).astype('int')
+
+        dataframe['islongpumping'] = (
+         (dataframe['pct_change_int'].rolling(30).sum() >= 0.48)
+        ).astype('int')
+
+        dataframe['isshortpumping'] = (
+         (dataframe['pct_change_int_short'].rolling(10).sum() >= 0.10)
+        ).astype('int')
+
+        dataframe['recentispumping'] = (dataframe['ispumping'].rolling(300).max() > 0) | (dataframe['islongpumping'].rolling(300).max() > 0)# | (dataframe['isshortpumping'].rolling(300).max() > 0)
+        """
+        END ANTIPUMP
+
+
+[09/08/2024 07:56] laupapp
+For those who like videos :
+
+https://youtube.com/@dutchalgotrading?si=kfQfotqKaurWj1K6
+
+{Embed}
+https://youtube.com/@dutchalgotrading?si=kfQfotqKaurWj1K6
+Dutch Algotrading
+SEARCHING FOR BEST TRADING STRATEGY FOR LIFE CHANGING WEALTH!
+
+💰 Patreon community: https://www.patreon.com/dutchalgotrading
+☕️ For a One-time support donation, click here : https://ko-fi.com/dutchcryptodad
+🌐 website: http://www.dutchalgotrading.com
+
+All my output is available on my Patreon site FOR TOTAL TRANSPARENCY!
+
+With this channel I want ...
+https://images-ext-1.discordapp.net/external/gHnLbq0hvu2VbKPjn50BZpkaJa-TNECCHjdkOqXkjv0/https/yt3.googleusercontent.com/OmBVNp_KSiyLKKd3XJ0TEQdYoiDFlsfufPnTPxiV8emqDfT-vO5zEzzv7MFhECasqa5RxxtFUQ%3Ds900-c-k-c0x00ffffff-no-rj
+
+{Reactions}
+💩
+
+[09/08/2024 21:06] maxgorbachevskiy
+I don't like his content. Comments are moderated. Commenters who raise a voice about lookahead bias in presented strtegies are banned. The author does not follow good practices, therefore should be treated as NON-reliable source of information. Misleading! Avoid.
+
+{Reactions}
+👍 (3)
+
+[09/08/2024 21:07] andreis9311
+Totally share your view. He's mostly concentrated on backtest results rather than live/dry runs.
+
+
+[09/08/2024 21:13] laupapp
+I just watched the tutorial videos which aren't so bad. it's difficult to find quality videos on freqtrade
+
+
+[09/09/2024 02:45] branly76
+DA back tests existing strategies over a period of 3 years for different time frames. Every strategy gets a score. Based on this he makes a list of bests strategies according what he finds important. If a strategy is really good you know after, to my opinion, at least one year dry run or live run. Difference between dry and live is mainly filling.
+
+
+[09/09/2024 02:46] branly76
+He did dry run of 9 strategies over a period of 3-5 months.
+
+
+[09/09/2024 02:47] branly76
+This are the results.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1282532720735686668/image.png?ex=69f36b6c&is=69f219ec&hm=95dc0747bb2cd8b15249202d8353331f904cf751db751b0ac49b119ca5918927&
+
+{Reactions}
+👍
+
+[09/09/2024 03:38] serialkiller15
+Thanks for sharing i had running 3 of them on dryrun
+
+
+[09/09/2024 13:28] mortezapoudat
+here is the file from his patreon
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1282694064793452616/NFI5MOHO_WIP.py?ex=69f358f0&is=69f20770&hm=a09ccb6596e0aa26fffb364b6490cb7d2d6574acaf4d6ac92513ed4853c1905c&
+
+
+[09/09/2024 13:28] mortezapoudat
+if you could give better result and hyperopt, would be nice, I only have 2 core
+
+
+[09/09/2024 13:29] mortezapoudat
+@Alex Crypto King @Branly
+
+
+[09/09/2024 13:29] .7thdragon
+but X4 and X5 are way better and new, lot of options and hyperoptable also
+
+
+[09/09/2024 13:30] mortezapoudat
+what do you mean by X4 and X5?
+
+
+[09/09/2024 13:30] .7thdragon
+NostalgiaForInfinity
+https://github.com/iterativv/NostalgiaForInfinity
+
+
+[09/09/2024 13:31] mortezapoudat
+if you are talking with me, I still cat follow
+
+
+[09/09/2024 13:32] mortezapoudat
+ah, this one is another repo
+
+
+[09/09/2024 13:32] mortezapoudat
+I was referring to that table
+
+
+[09/09/2024 13:32] mortezapoudat
+this
+
+
+[09/09/2024 13:33] .7thdragon
+# 20210624
+# NostalgiaForInfinityV5
+this one is v old
+
+{Reactions}
+👍
+
+[09/09/2024 13:34] mortezapoudat
+you tested  X4 or X5?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1282695577993220146/image.png?ex=69f35a59&is=69f208d9&hm=e52a7a00956c675a003f8b6a29f9d73d63d7db77a0671a26d6c2ed4cf5903aa9&
+
+
+[09/09/2024 13:36] .7thdragon
+yes, nice results but as i told you have a lot of options inclusive dca/rebuys/grinding, different flavour options
+~ 1 trade per 2-3 days as average in my case
+X4 can be risky also. join their discord, there are more testers there
+X5 is quite resurce optimized, work on small cpus power
+
+
+[09/09/2024 13:37] mortezapoudat
+ok thanks for sharing
+
+{Reactions}
+👍
+
+[09/09/2024 13:38] serialkiller15
+Nostalgia X4 i was tested but not very successfull only a view small trades
+
+
+[09/09/2024 13:39] mortezapoudat
+I am going to run this, keep you posted
+
+{Reactions}
+👍
+
+[09/09/2024 13:56] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1282701188374200463/image.png?ex=69f35f92&is=69f20e12&hm=efdce64a92a5fb96e9038948609012f52699a0e87e42924f008a36c3aae25318&
+
+{Reactions}
+🤟
+
+[09/09/2024 13:57] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1282701296855678976/image.png?ex=69f35fac&is=69f20e2c&hm=fbeb2be61a5baeaefcc04d424d6ad843ced1e2247a5d369838543d5aed5b5afd&
+
+
+[09/09/2024 13:57] branly76
+These two in dry run at the moment.
+
+
+[09/09/2024 13:57] branly76
+NASOSv4 give a very low amount of trades, but seems ok.
+
+
+[09/09/2024 13:58] mortezapoudat
+this on looking good
+
+
+[09/09/2024 13:58] branly76
+Was is DA ranking very high, i think even number 1.
+
+
+[09/09/2024 13:59] mortezapoudat
+yup. 26.06 untill 27.08 is your dry run?
+
+
+[09/09/2024 14:00] branly76
+NASOSv4 started with one big loss and then slowly but steady went up
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1282702064794865744/image.png?ex=69f36063&is=69f20ee3&hm=f4d97b268a7fb987591ee58f4d6e03f05ab33bafed715b590aa70e08b0408b68&
+
+
+[09/09/2024 14:00] mortezapoudat
+how is the graph for other one?
+
+
+[09/09/2024 14:01] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1282702373503897640/image.png?ex=69f360ad&is=69f20f2d&hm=583150a4b022344cfcb3e1b7db9d1f97fcc9efb48dce52dca7ca987f91dbe0ff&
+
+{Reactions}
+👍 (2)
+
+[09/09/2024 14:04] branly76
+I run both for Bybit, Binance not allowed here, so has no use for me.
+
+
+[09/09/2024 14:04] branly76
+Only 25 pairs and max 3 open trades.
+
+{Reactions}
+👍
+
+[09/09/2024 14:05] branly76
+In back testing the less trades, the better results.
+
+
+[09/09/2024 14:06] laupapp
+These  SPOT markets strategies only make Long though and looks ok in a downtrend ?
+
+
+[09/09/2024 14:07] branly76
+Obelisk_Ichimoku_ZEMA_v1 I run on live account, but just for a couple of weeks, so too early.
+
+
+[09/09/2024 14:08] mortezapoudat
+I can not find NASOSv4 on his channel
+
+
+[09/09/2024 14:08] mortezapoudat
+😦
+
+
+[09/09/2024 14:09] branly76
+In down trend you have no trades. Normally this type of strategies wait for a bigger down movement and then open buy's.
+
+
+[09/09/2024 14:09] branly76
+If you have open buys and the trend goes more down you make losses.
+
+
+[09/09/2024 14:10] branly76
+DA channel ?
+
+
+[09/09/2024 14:10] mortezapoudat
+yes
+
+
+[09/09/2024 14:13] laupapp
+maybe check on : https://strat.ninja/strats.php
+
+
+[09/09/2024 14:14] mortezapoudat
+im on his patreon page. bought him a sandwich, so I should see everthing I think
+
+
+[09/09/2024 14:15] branly76
+Strange i try to upload, got error. Will do later again.
+
+
+[09/09/2024 14:15] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1282706025970929816/message.txt?ex=69f36414&is=69f21294&hm=b9db785763a106fb75590534a88190eaa846143a30071fd995eadcfbe27609ce&
+
+{Reactions}
+👍 (2)
+
+[09/11/2024 12:56] .7thdragon
+Started a thread.
+
+
+[09/14/2024 23:52] sera131
+there are many variations of NASOS, ewo based strategy. Its a good strategy in uptrend, i was live almost 1 year with Nasosv5, my personal version. But... it can lose big in downtrends.
+
+
+[09/14/2024 23:54] sera131
+I can say for sure, that if market falls more than once in a day, Nasos will fail and will generate huge losses as it buys on the first big dip. If more than 1 in a day.. its over. If downtrend continues and market dips again, its sell at loss or stuck with the trade until the token recovers.
+
+{Reactions}
+💯 (2)
+
+[09/15/2024 01:00] ch1ck3n_t4c0s
+def perform_fft(price_data, window_size=None):
+    if window_size is not None:
+        # Apply rolling window to smooth the data
+        price_data = price_data.rolling(window=window_size, center=True).mean().dropna()
+
+    normalized_data = (price_data - np.mean(price_data)) / np.std(price_data)
+    n = len(normalized_data)
+    fft_data = np.fft.fft(normalized_data)
+    freq = np.fft.fftfreq(n)
+    power = np.abs(fft_data) ** 2
+    power[np.isinf(power)] = 0
+    return freq, power
+
+{Reactions}
+💪 (3)
+
+[09/15/2024 10:58] ch1ck3n_t4c0s
+This is a simple yet powerful tool for dominant frequency lengths Ala J.M. Hurst. Hurst believed in cyclical motion with typically there being a dominant cycle, 1/2, 1/3, and 1/4 length cycle.
+
+
+[09/15/2024 11:00] ch1ck3n_t4c0s
+After performing the fft on the data frame one needs to apply some filtering to remove some of the smaller sub harmonics returned
+
+
+[09/15/2024 11:09] ch1ck3n_t4c0s
+if self.dp.runmode.value in ('dry_run'):
+            window_size = self.window_size.value  # Adjust this value as appropriate
+        else:
+            window_size = None
+
+        if len(dataframe) < self.window_size.value:
+            raise ValueError(f"Insufficient data points for FFT: {len(dataframe)}. Need at least {self.window_size.value} data points.")
+
+
+        # Perform FFT to identify cycles with a rolling window
+        freq, power = perform_fft(ha_df['ha_close'], window_size=self.window_size.value)
+
+        if len(freq) == 0 or len(power) == 0:
+            raise ValueError("FFT resulted in zero or invalid frequencies. Check the data or the FFT implementation.")
+
+        # Filter out the zero-frequency component and limit the frequency to below 500
+        positive_mask = (freq > 0) & (1 / freq < self.window_size.value)
+        positive_freqs = freq[positive_mask]
+        positive_power = power[positive_mask]
+
+        # Convert frequencies to periods
+        cycle_periods = 1 / positive_freqs
+
+        # Set a threshold to filter out insignificant cycles based on power
+        power_threshold = 0.01 * np.max(positive_power)
+        significant_indices = positive_power > power_threshold
+        significant_periods = cycle_periods[significant_indices]
+        significant_power = positive_power[significant_indices]
+
+        # Identify the dominant cycle
+        dominant_freq_index = np.argmax(significant_power)
+        dominant_freq = positive_freqs[dominant_freq_index]
+        cycle_period = int(np.abs(1 / dominant_freq)) if dominant_freq != 0 else np.inf
+
+        if cycle_period == np.inf:
+            raise ValueError("No dominant frequency found. Check the data or the method used.")
+
+{Reactions}
+💪
+
+[09/15/2024 11:10] ch1ck3n_t4c0s
+Enjoy😎
+
+
+[09/15/2024 11:19] ch1ck3n_t4c0s
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1284836060446195732/IMG_20240915_071922_722.jpg?ex=69f33ad3&is=69f1e953&hm=c870cc0d987d9b3c5651a5372b5a36fb156c9ddf720255f12600efdc83807873&
+
+{Reactions}
+💪
+
+[09/15/2024 11:21] ch1ck3n_t4c0s
+Spot strategy in development
+
+
+[09/15/2024 11:21] serialkiller15
+Nice thanks for sharing and welcome here
+
+{Reactions}
+👋 (2) 🍻
+
+[09/15/2024 16:38] ch1ck3n_t4c0s
+# Modify number of entries allowed based on stake size.
+
+        if (self.wallets.get_total_stake_amount() / self.config['max_open_trades']) > 700:
+
+            self.config['max_open_trades'] = self.config['max_open_trades'] + 1
+        if (self.wallets.get_total_stake_amount() / self.config['max_open_trades']) < 500:
+
+            self.config['max_open_trades'] = self.config['max_open_trades'] - 1
+
+
+[09/15/2024 16:39] ch1ck3n_t4c0s
+Values are there for example
+
+
+[09/15/2024 20:26] ch1ck3n_t4c0s
+Visual Volume Range Profile
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1284973730560348170/VVRP_Ind.py?ex=69f3124b&is=69f1c0cb&hm=e4d14bbc8baa6d39d11864bf2a4df4459d4891d1a69fb9155d31a5968639c6ed&
+
+
+[09/15/2024 22:28] sera131
+(!) I'm working on a BTC protection code however im having some issues and need some help fixing it. If someone is interested to take a look I would appreciate it:
+
+Currently it exits all positions, long or short and still allows bidirectional trading when it should be restricted as per below:
+
+This ideea behind it is this:
+
+If BTC drops in 1 candle a certain % in a candle or multiple candles, it will emergency exit long positions, will leave short positions open and will not allow longs for a number of minutes.
+
+similar for Pump: If btc pumps more than a certain % in a candle or multiple candles, it will emergency exit short positions, it will leave long positions open and will not allow shorts for a number of minutes.
+
+
+def custom_exit(self, pair: str, trade: 'Trade', current_time: 'datetime', current_rate: float, current_profit: float, **kwargs):
+        btc_pct_change = self.get_btc_price_change()
+
+        if btc_pct_change <= -0.4:
+            logger.info(f'BTC dropped more than 0.4% in a single candle. Exiting all long positions and disabling new longs.')
+            self.dp.send_msg(f'BTC dropped more than 1.5%. Exiting all long positions and disabling new longs.')
+            self.custom_long_allowed = False
+            return True  # Exit long position
+        elif btc_pct_change >= 0.4:
+            logger.info(f'BTC rose more than 0.4% in a single candle. Exiting all short positions and disabling new shorts.')
+            self.dp.send_msg(f'BTC rose more than 1.5%. Exiting all short positions and disabling new shorts.')
+            self.custom_short_allowed = False
+            return True  # Exit short position
+        else:
+            self.custom_long_allowed = True
+            self.custom_short_allowed = True
+
+        return False
+
+
+[09/17/2024 10:38] .7thdragon
+Started a thread.
+
+
+[09/17/2024 22:54] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1285735700141965394/message.txt?ex=69f334ee&is=69f1e36e&hm=c6b683b519ae7a27e48c64b4f25318a19350776a8e1cd0833b10768905708d55&
+
+
+[09/18/2024 21:57] inviting_moose_32088
+my script for looking a good pairlist.
+based on 1m hist. data. so, you need *-1m.json in exchange folder...
+
+change date:
+`start_date = '2024-09-01'
+end_date = '2024-09-15'`
+
+put script into /data/<exchangename>/ and run it.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1286083802321649685/message.txt?ex=69f327a0&is=69f1d620&hm=fdf76c63a01869ca6f4d1377a6f48a2f9a0b00e0adc9831d377da9f3b7521cb8&
+
+
+[09/19/2024 20:31] sera131
+I've finnally think I fixed this but still in testing. fingers crossed.
+
+
+[09/19/2024 20:32] sera131
+DYNAMIC PROFIT SCALING
+
+
+[09/19/2024 20:39] sera131
+ADJUST POSITION SIZE BASED ON TREND STRENGH:
+
+
+[09/21/2024 07:39] laupapp
+Someone have find ICT/SMC based strategy ?
+
+
+[09/21/2024 08:38] ximontan
+Check haFbm strategy there some usage of smartmoneyconcepts...
+
+{Reactions}
+🤩 (2)
+
+[09/21/2024 11:29] sera131
+is it a thread created here with it?
+
+
+[09/21/2024 11:33] ximontan
+no, I just found it like comment code https://discord.com/channels/1238181199206154373/1284842607632978032/1284845226774626395
+
+{Reactions}
+👍
+
+[09/21/2024 11:34] sera131
+thank you
+
+
+[09/21/2024 13:07] ch1ck3n_t4c0s
+I've dabbled with it a bit.
+
+
+[09/21/2024 13:07] ch1ck3n_t4c0s
+It's in haFbm but not actively being used yet. Working on my Vvrp integration today.
+
+
+[09/21/2024 16:51] laupapp
+I think it could be a good strategy in 1h + 15m but I’m a noob in python and Claude.ai not help me to make it work
+
+
+[09/22/2024 13:31] ch1ck3n_t4c0s
+I've been using chat.akash.network that had several models to choose from. Also free but currently no file upload like gpt.
+
+
+[09/24/2024 21:36] ch1ck3n_t4c0s
+def cod(indicators):
+    # change of direction
+    diffs = indicators.diff()
+    direction_change = np.sign(diffs).diff()
+    result = np.where(direction_change > 0, 1, np.where(direction_change < 0, -1, np.nan))
+    result = pd.Series(result, index=indicators.index)
+
+    return result
+
+{Reactions}
+😵‍💫
+
+[09/25/2024 09:26] andreis9311
+I don't know will it help to you but i created script that deploy the strat on specific server and schedule the hyperopt every two hours. Most of the parameters are placeholders so you can adapt this for your own purposes
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1288431446796669010/message.txt?ex=69f3204a&is=69f1ceca&hm=e9b23598fb46630d94460c3160f1e4887e63913a8cb3c8ab4f15104c36f4d14e&
+
+
+[09/25/2024 10:15] ammart90
+i'm thinking of creating a same for the live bot, how benefit did you find hyperopting every two hours ?
+
+
+[09/25/2024 14:50] andreis9311
+it's not a call to action, just example of usage 🙂
+
+
+[09/25/2024 15:16] .7thdragon
+maybe for 1m tf 🙂 just maybe
+
+{Reactions}
+😁 (2)
+
+[08/11/2025 18:20] xf0x0f
+hey there, im trying to complete a wizard for automatic hyperopting/backtesting with different scenarios, like different max open trades, pairlists, timeframes, and optimizations to maximize profit before starting dry runs for specific or all strategies i have. i'm not completely done yet, and i'm not sure if i'll ever finish... does anyone know of similar scripts?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1404529822260002968/Bildschirmfoto_2025-08-11_um_20.11.08.png?ex=69f39d54&is=69f24bd4&hm=01c2bd5944de2e7e09bca21b309dcc26637da02539903856a184d84f51269fc1&
+
+{Reactions}
+🔥 (2)
+
+[08/19/2025 07:13] snokard.
+still needs some work on it but someone might find it useful
+made it with codex, heres the strat description:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1407261183849005106/image.png?ex=69f3011b&is=69f1af9b&hm=d57e9e05bb4a2d407d6370b4d774b1346b347d73378b0eaa894d4ad539c735b2&
+https://cdn.discordapp.com/attachments/1282010986899050567/1407261184138416239/WickHunterV12.py?ex=69f3011b&is=69f1af9b&hm=850c04bdb1bca9dac200ab6768500754a47133500c622afda986afca41252b4e&
+
+{Reactions}
+👍 (3) 🚀
+
+[08/19/2025 07:17] neveerrk
+market ?
+
+
+[08/19/2025 07:17] snokard.
+the description of it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1407262286069891145/wickhunterv1.md?ex=69f30222&is=69f1b0a2&hm=8740dee4784ee7d41bac3dc07706144f5ff25ec84a744c690a82fe993a151394&
+
+
+[08/19/2025 07:18] snokard.
+i dont understand your question
+
+
+[08/19/2025 07:20] neveerrk
+Thx bro I'll give you feedback in a few days
+
+
+[08/19/2025 07:21] snokard.
+i havent even tried going dry run, i have some diferent strategies running on dry runs... this one will be the next i use.
+
+i just find the idea behind it to be a nice aproach
+
+{Reactions}
+👍
+
+[08/19/2025 07:27] serialkiller15
+Nice thanks for sharing will try it out
+
+
+[08/19/2025 08:13] snokard.
+will share more if they do good, i wanted to combine a simple s/r zones to this one to add confirmations
+
+{Reactions}
+👍 (2)
+
+[08/21/2025 12:37] snokard.
+Another one i started a dry run the other day... looking good at the moment.
+Cant share it here since its using as a confirmation a trend indicator in pinescript adapted but that code isnt mine.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1408067503892205630/image0.jpg?ex=69f34d0d&is=69f1fb8d&hm=f5567f64428c453b004ab08c0438295ce27d11178e9a1a449f9b012a3760e15c&
+
+
+[08/27/2025 14:43] viking046433
+How this goes
+
+
+[08/28/2025 08:55] snokard.
+Had to refine it as exits werent working correctly... started a new run on it
+
+
+[08/28/2025 08:56] snokard.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1410548597610647594/image0.jpg?ex=69f31940&is=69f1c7c0&hm=ad9e0f93e2f3805fb518b1e0cb3dfa69670bc4cc7b2912ca125446c18f8421ff&
+
+{Reactions}
+🔥
+
+[08/28/2025 08:56] snokard.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1410548602857721896/image0.jpg?ex=69f31941&is=69f1c7c1&hm=dec51d52f8df92719a02359af416bce1130acb49752186a5b46c7c13745e86a4&
+
+
+[08/28/2025 09:03] neveerrk
+Is there an optimized version? It looks good.
+
+
+[08/28/2025 10:37] snokard.
+Not yet, im on a trip and im really busy so i cant work on it...
+
+
+[08/28/2025 11:07] viking046433
+When you get time share the code with us
+
+
+[08/28/2025 11:25] snokard.
+As i said here it works using a trend indicator as a confirmation and the code isnt mine. But its using 1d candle ema with 15m for entries
+
+{Reactions}
+👍
+
+[09/05/2025 13:58] snokard.
+crashed hard, will readjust and update if goes well
+
+
+[10/15/2025 10:35] darkreaper0756
+Hi! , Do Hyperopt the rest of the parameters, but the parameters from ROI Modifications while the strategy runs in Dry while observing how fast or hard it exits the trades! Enjoy! 🚀
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1427968047322370108/DarkCloud.py?ex=69f33060&is=69f1dee0&hm=f38dc67c581cc9785ca3e8c52ef594698504ed0d654053ff93458271a211b083&
+https://cdn.discordapp.com/attachments/1282010986899050567/1427968047632617603/Screenshot_2025-10-15_122528.png?ex=69f33060&is=69f1dee0&hm=ee2558562bef55648f02b3f3c4d2222f2247f07f8702f18c5d36f5f2d126395b&
+https://cdn.discordapp.com/attachments/1282010986899050567/1427968047968292985/Screenshot_2025-10-15_122610.png?ex=69f33060&is=69f1dee0&hm=31b9bf7386796df658e5251327271547ae667e16bee1b421da75cadeb0ce1a29&
+https://cdn.discordapp.com/attachments/1282010986899050567/1427968048362553385/Screenshot_2025-10-15_122619.png?ex=69f33061&is=69f1dee1&hm=1cef5d68efe81e216be7b1ccc94066c8d4165fc0f846923405343a4b94068f30&
+https://cdn.discordapp.com/attachments/1282010986899050567/1427968048786313336/Screenshot_2025-10-15_122625.png?ex=69f33061&is=69f1dee1&hm=ff8835db395fb408b7a95ad9e686e7f2e116e6fd092ccc677d0dd436c8d4a3e5&
+
+{Reactions}
+🚀 (2) 🔥 👍 (2)
+
+[10/15/2025 10:47] serialkiller15
+Thanks for Sharing mate!
+
+{Reactions}
+🫡
+
+[10/15/2025 11:10] erbosnio_17282
+How many days of dryrun?
+
+
+[10/15/2025 11:11] erbosnio_17282
+Did you test it during the BTC downtrend?
+
+
+[10/15/2025 11:11] erbosnio_17282
+It looks good!
+
+
+[10/15/2025 11:18] darkreaper0756
+I used it live on Binance. It's ok. It only works on Long
+
+
+[10/15/2025 11:20] xf0x0f
+whats your hyperopt strategy? how often? which timerange etc.?
+
+
+[10/15/2025 11:25] darkreaper0756
+I hyperopt the rest of the parameters related to the indicators…How often do I notice that the average profit decreases…
+
+
+[10/15/2025 11:26] xf0x0f
+hmmm,..... have you automated this process?
+
+
+[10/15/2025 11:26] darkreaper0756
+No
+
+
+[10/15/2025 11:26] xf0x0f
+please build optuna around xD
+
+
+[10/15/2025 11:26] serialkiller15
+i am on it
+
+
+[10/15/2025 11:26] serialkiller15
+🙂
+
+{Reactions}
+🚀
+
+[10/15/2025 11:26] darkreaper0756
+many automations bring many problems😇
+
+{Reactions}
+😉
+
+[10/15/2025 11:27] serialkiller15
+not optuna hehe
+
+
+[10/15/2025 11:27] serialkiller15
+🙂
+
+
+[10/15/2025 11:29] darkreaper0756
+Alex, I'm waiting for the Alex DarkCloud versionV1.0😇
+
+{Reactions}
+😂
+
+[10/15/2025 11:30] serialkiller15
+hehe give me some time first i run hyperopt to see which parameters realy need optuna and then will do it but it will bit DarkReeperCloud hehe..
+
+
+[10/15/2025 11:30] serialkiller15
+DarkReaperCloud
+
+
+[10/15/2025 11:31] darkreaper0756
+✌️🥳
+
+
+[10/15/2025 11:31] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1427982237235679303/image.png?ex=69f33d97&is=69f1ec17&hm=40c466e46e5d8205d348d44c738f3f54a76eeec63777768210e79b5cd3570d38&
+
+
+[10/15/2025 11:32] darkreaper0756
+The ROI parameters are quite sensitive. I always adjusted them manually because the values ​​returned by hyperopt were either too high or too low.
+
+
+[10/15/2025 11:33] serialkiller15
+will not touch the roi only see buy and sell parameters and then dryrun to understand the signals, then optuna....
+
+
+[10/15/2025 11:33] serialkiller15
+optuna is not always necessary for all indicators...
+
+
+[10/15/2025 11:33] serialkiller15
+coin specific
+
+
+[10/15/2025 11:38] darkreaper0756
+I'm really curious if you have any ideas about upgrading✌️
+
+
+[10/15/2025 11:39] serialkiller15
+will take some time, let me see the signals first on my chart then will go true analyzing and then changing the strat! the base seems to bee god on hyperopt and backtest lets see on dry 
+i always look the signals on chart bevore make adjustments....
+
+
+[10/15/2025 11:41] darkreaper0756
+Look line 665    threshold
+
+
+[10/15/2025 11:42] darkreaper0756
+-value more trades
+
+
+[10/15/2025 11:42] serialkiller15
+yes i see the score system...
+
+{Reactions}
+👍
+
+[10/15/2025 11:43] erbosnio_17282
+I have not tested it yet, but i have analyzed it with AI and it tells me the following about some critical problems:
+
+Here’s a tight summary of the critical issues:
+
+Stop-loss math is wrong.
+Uses (current_rate - dynamic_sl) / current_rate, which can return ~0.98 (98% loss). Should be dynamic_sl / current_rate and then clip to sane bounds (e.g., 0.5%–10%).
+
+Fake multi-timeframe signals.
+The “5m/15m/30m…” trend fields are computed from the 1h series, not real informative TFs—making filters overly strict (especially with threshold=8). Either implement true informative pairs or rename/relax the logic.
+
+Invalid sell_trend_indicator default.
+Default is "trend_close_5m" but that value isn’t in the allowed categories—can break loading/optimizing. Align the default with the category list (or add the missing category).
+
+Duplicated Stochastic config/computation.
+A duplicated parameter and two STOCH calculations overwrite columns and add noise. Keep a single STOCH block and one parameter set.
+
+Leverage uses absolute ATR.
+Thresholds like atr > 1.0/1.5/2.0 don’t scale across coins. Normalize to ATR/close before comparing.
+
+Runtime/setup quirks.
+process_only_new_candles=False (slower) and a time.sleep(5) pause on startup; also inconsistent naming (“DarkReaper”). Set to True, remove the sleep, and clean names.
+
+
+[10/15/2025 11:43] serialkiller15
+first impression good work!
+
+
+[10/15/2025 11:43] serialkiller15
+ai is not always helpful mate hehe
+
+{Reactions}
+💯 👍
+
+[10/15/2025 11:43] serialkiller15
+but thanks
+
+
+[10/15/2025 11:44] sang_tm
+I see that you’re overriding the candle data, which is cheating in backtesting.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1427985417352777818/Screenshot_2025-10-15_at_18.42.52.png?ex=69f3408e&is=69f1ef0e&hm=dd5102a20753532af16b58ae9b9090b32c4d463017de30732ee8db799415376c&
+
+
+[10/15/2025 11:44] erbosnio_17282
+Sometimes yes, sometimes no... Take a look on what it tells
+
+
+[10/15/2025 11:44] darkreaper0756
+close in raw value
+
+{Reactions}
+👍
+
+[10/15/2025 11:46] serialkiller15
+@erbosnio i tried to adjust alex_divergence with claude.ai was not successfull every question was answered tree times different so its nice to understand and to optimize but dont trust it 100% but for checking code its absolute nice yes
+
+{Reactions}
+👍
+
+[10/15/2025 11:48] serialkiller15
+damn startet the strategy and first trade after 10sec?
+
+{Reactions}
+🚀
+
+[10/15/2025 11:49] erbosnio_17282
+Sure, this analysis is done with gpt 5 thinking, for this purpose of finding problems in the logic as a first review it works quite good, i have tested it several times, but with the last and more powerful model of gpt.
+
+
+[10/15/2025 11:51] erbosnio_17282
+For sure after this, it is needed to do a personal review, but in my tests, it finds lot os problems with very good performance!
+
+
+[10/15/2025 11:51] serialkiller15
+yes absolute mate i also do this with new strategies and other stuff it helps a lot!
+
+
+[10/15/2025 11:51] serialkiller15
+but human is better
+
+
+[10/15/2025 11:51] erbosnio_17282
+Fully agree
+
+
+[10/15/2025 11:51] serialkiller15
+claude.ai is learning from my projects and i have uploeaded them all then it can compare the signals of the different strategies thats realy helpfull
+
+
+[10/15/2025 11:52] darkreaper0756
+I am curious what GPT says
+
+
+[10/15/2025 11:52] erbosnio_17282
+It is helpful to focused on logic problems actually, after this, you need to work on it
+
+
+[10/15/2025 11:53] erbosnio_17282
+Stoploss problem is what i found the most critical, but i'm not at the computer now so i cannot check if it is true
+
+
+[10/15/2025 11:58] boooooon
+Ok. Recommendations from ClaudeAI Pro 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1427989020121759925/message.txt?ex=69f343e9&is=69f1f269&hm=eb635cd45b0a864fa20c1019c09bb3721ffe2a45bbfb3e67be71f864e1efa44b&
+
+
+[10/15/2025 12:02] erbosnio_17282
+I also have it... For these analysis, I would say the new gpt is better than Claude. I paid for claude, gpt and gemini 🤣 and compare all. Gemini is useless at all, but next week i guess they will deploy the 3.0, and the tests in internet looks amazing... Let's see.
+
+
+[10/15/2025 12:09] darkreaper0756
+Nice !
+
+
+[10/15/2025 12:09] xf0x0f
+what? ive hyperopted,.... running since 10min, hyperopt is loaded,... nothing is happening,...
+
+
+[10/15/2025 12:09] serialkiller15
+@x i already fix this improvements
+
+{Reactions}
+🚀
+
+[10/15/2025 12:10] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1427992072270512208/Bildschirmfoto_2025-10-15_um_14.10.25.png?ex=69f346c0&is=69f1f540&hm=05f4a6c67a05695bbebd223a42f5dcfff6ad9526fbe3c30a699dbe19f779026c&
+https://cdn.discordapp.com/attachments/1282010986899050567/1427992072799129601/Bildschirmfoto_2025-10-15_um_14.10.15.png?ex=69f346c0&is=69f1f540&hm=6a6e16294d4c004327caca0dc5e40269fd2ab5661f58de281503c3bdd65be0cb&
+
+
+[10/15/2025 12:11] darkreaper0756
+Shadow😂
+
+
+[10/15/2025 12:12] serialkiller15
+@DarkReaper now you won a own channel....
+
+{Reactions}
+🚀 (2)
+
+[10/15/2025 12:13] darkreaper0756
+Thanks Alex!🍾
+
+
+[10/15/2025 12:13] serialkiller15
+Thanks for your Work!
+
+
+[10/15/2025 12:25] .7thdragon
+just a peak on "recommendations", beware, Claude do not know how FT works indepth, also do not understand the full logic as the tokens are limited even for 50k code:
+3. Exit Logic Always Returns None
+Your custom_exit checks should_exit but never actually exits when conditions aren't met ini
+
+
+[10/15/2025 14:02] ch1ck3n_t4c0s
+It can read the docs in the installation folder.
+
+
+[10/15/2025 14:03] ch1ck3n_t4c0s
+Best thing is to have it make a plan as a checklist of design goals. It can test until it meets those goals.
+
+{Reactions}
+👍 (3)
+
+[10/16/2025 10:58] xf0x0f
+can you all please deliver some inspiring exit strategies for blocking nearby zero grinding trades opened 12 hours ago or more,... i dont want a time exit alone,... i want to do somehow better 🙂
+
+
+[10/16/2025 11:12] ch1ck3n_t4c0s
+Oh maybe performance based exits... also somethings just need time to cook
+
+
+[10/16/2025 15:51] ggoyito
+The exits of the BOT-OWSKY strategy are based on mathematical and statistical indicators, which makes the strategy loss-free, you can use them if you find them useful
+
+{Reactions}
+👏
+
+[10/16/2025 17:38] snokard.
+why not start by filtering pairs by volatility?
+
+{Reactions}
+👍
+
+[10/16/2025 17:40] snokard.
+but everything would be time related? i mean the time variable needs to be somewhere....
+
+
+[10/16/2025 17:40] snokard.
+maybe use bollinger distance getting thinner
+
+{Reactions}
+👍 👏
+
+[10/16/2025 17:40] snokard.
+or ADX
+
+
+[10/16/2025 17:41] snokard.
+df['flat_market'] = (
+    (df['adx'] < 20) &
+    (df['atr'] / df['close'] < 0.005) &
+    (df['bbw'] < 0.02)
+)
+
+
+[10/17/2025 09:41] snokard.
+
+
+{Forwarded Message}
+what do you think of adding a BTC performance protection where if BTC changes direction moving more than X% it closes trades? reason is that this shifts will make it hit multiple SL and they are so wide... also thought of reducing the hardstop SL but not quite sure about this
+Originally sent: 10/17/2025 09:13
+
+
+[10/17/2025 09:41] snokard.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1428679386210500608/message.txt?ex=69f323dd&is=69f1d25d&hm=f4340f35a2071f8f1c42ac82981f1f1946e20118d4cec20fbd81612a913b638b&
+
+{Reactions}
+👏 (2)
+
+[01/06/2026 16:37] darkreaper0756
+Hi, has anyone here used the supertrend indicator, I need some advice on how to calculate it correctly without lockahead bias, Thanks!🫡
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1458137312922964132/supertrend_exmple.txt?ex=69f38532&is=69f233b2&hm=fe42c3cd15c1f7b35b8a169abbe9b7a5755422fe5a19624f303647c81179e33e&
+
+
+[01/06/2026 17:03] serialkiller15
+long time ago let me check my archive..
+
+
+[01/06/2026 17:23] glad8769
+Found this
+
+https://github.com/freqtrade/freqtrade-strategies/blob/main/user_data/strategies/Supertrend.py
+
+{Embed}
+https://github.com/freqtrade/freqtrade-strategies/blob/main/user_data/strategies/Supertrend.py
+freqtrade-strategies/user_data/strategies/Supertrend.py at main · ...
+Free trading strategies for Freqtrade bot. Contribute to freqtrade/freqtrade-strategies development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/nTrR6cn7ASaj2vlerFW7M0Oktcoiih8t8sZdvM7u6Q4/https/opengraph.githubassets.com/24b7de55b1f3d4e4e87907f8ace6c2119656d3fe56e57c752ffce0adebd32dbc/freqtrade/freqtrade-strategies
+
+{Reactions}
+😱
+
+[01/06/2026 17:54] darkreaper0756
+Thanks man!
+
+{Reactions}
+👍
+
+[01/06/2026 18:43] glad8769
+Otherwise Ta-lib with 150+ indicators 
+
+https://github.com/TA-Lib/ta-lib-python
+
+{Embed}
+https://github.com/TA-Lib/ta-lib-python
+GitHub - TA-Lib/ta-lib-python: Python wrapper for TA-Lib (http://ta...
+Python wrapper for TA-Lib (http://ta-lib.org/). Contribute to TA-Lib/ta-lib-python development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/XMxtwq7xb3DgQyySMzrjWNS2W2B_14A0v1cSOnh41TM/https/opengraph.githubassets.com/a663d4c02121dc1e9e585eb22b85fd6bf6f344b14829599f4362822bf612b430/TA-Lib/ta-lib-python
+
+
+[01/06/2026 18:47] glad8769
+Perhaps already available in freqtrade - I am not 100% sure otherwise it needs to be installed manually
+
+{Reactions}
+👍 (2)
+
+[01/06/2026 18:52] darkreaper0756
+Hi yes, it is installed with the requirements
+
+
+[02/17/2026 22:37] .7thdragon
+⛑️ Some helpful tool for windows users
+https://github.com/7thDrag0n/ftmanager
+
+{Reactions}
+👍 (2) 🚀
+
+[02/17/2026 22:39] serialkiller15
+That's nice stuff thanks will think about to integrate it into the multibotdashboard so then it would be perfect good work
+
+{Reactions}
+👍
+
+[02/20/2026 07:03] vasko123.
+This is an old strategy.
+Any suggestions on what I did wrong?
+A backtest of 3-5 years with a loss.
+I tested and configured it only for BTC.
+After initially adjusting the hyperoptimization parameters, I hyperoptimized each indicator separately. I tried SharpeHyperOptLoss, BestHyperOptLoss, CalmarHyperOptLoss, LamboLoss, and JetLoss.
+Hyperoptimization doesn't fine-tune the strategy; I had to configure it visually to ensure the signals were at reversal points.
+The result is in the screenshot.
+But to be confident in the strategy, I need to backtest it at Avg 1.5%.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1474300526698172416/69a1356234c6ca63.png?ex=69f2fedc&is=69f1ad5c&hm=a0c972995855b2447280e0b62e77c7e63017b35caf548ee3cfd12b5932d2a40f&
+https://cdn.discordapp.com/attachments/1282010986899050567/1474300527301890082/9ccc806cd11733d1.png?ex=69f2fedc&is=69f1ad5c&hm=22c0bbdda0c171ed63c9c7df32fd6d9bb32adf8b4eecc7801da12ca07ecb012c&
+
+
+[02/20/2026 07:22] serialkiller15
+from my first look i would say in the chart the signals are realy good but the exits should be better at all! if you want you can share it here and will take a deeper look!
+
+{Reactions}
+👍
+
+[02/20/2026 07:54] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1474313267446022326/Kasuari_btc_template.py?ex=69f30aba&is=69f1b93a&hm=f92612c59d1c79b78b03b9139591f9fd278c977c0c631cba4ceecda1f313428c&
+
+{Reactions}
+👍
+
+[02/20/2026 08:57] serialkiller15
+LOOK here
+    lev = 10
+    roi = 0.0015
+
+    # ROI table:
+    #minimal_roi = {
+    #    "0": (roi * lev)
+    #}
+
+    minimal_roi = {
+        "0": 0.15,     # 15% - Only if it rockets immediately
+        "180": 0.10,   # 10% after 3 hours
+        "360": 0.05    # 5% after 6 hours
+    }
+
+its for testing only i will let it run! and make some adjustments!
+
+
+[02/21/2026 10:47] serialkiller15
+did some modifications!
+nice results strategy is available on payed Members
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1474719271270612992/image.png?ex=69f33359&is=69f1e1d9&hm=62d0c86948474f6d7bf6768d4aca1ac4003a4275a1fb5075b7e4750b84dd8fd4&
+
+
+[02/21/2026 11:27] xf0x0f
+iI totally understand that running this project costs real money and can’t be completely free , cause servers, tools, and time all add up.
+my only concern is that over time, the focus might shift too heavily toward donations, and as a result the broader community outside of that circle could start to fade away. i just hope the balance between open access and funding can stay healthy so the community keeps thriving for everyone
+
+
+[02/21/2026 11:30] serialkiller15
+absolute yes, all the free stuff will stay free, i did not deleted anythink. But in Case of further deployment and strategies, using llm, models, apis and other stuff needs to be payed thats it. And yes will always share free strategies and update them!
+
+
+[02/21/2026 12:19] vasko123.
+I feel a bit uneasy.
+It's not even about donations.
+I predict that not everyone who contributed to the community will be included in the closed section, but only those who made donations. I wouldn't rule out the possibility that your work will be sold somewhere.
+
+
+[02/21/2026 12:39] serialkiller15
+i hear you mate, but as i said there are costs that i pay by myself! i dont talk about the time i take for enhancing, making new strategies and other stuff! and if the work of all of us is beeing sold then we cannot change this!
+we have many members in here, and lets say about 20 members, the optimize, share ther work and strategies. But mostly members will stay free because the only consume the strategies the update and other stuff.
+
+But dont worry mate i will add some users into the Basic/Member Section they mostly in the past did good work and also enhanced strategie and other stuff.
+Some members already make a small donation (5/10USDT) i am fine with that!
+
+i dont want make money, only i want to fokus to good quality enhancmenet in the strategies we made together thats it.
+Hope you are all fine with that!
+
+
+[02/21/2026 12:59] vasko123.
+Unfortunately, some adjustments are still needed.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1474752357764960492/1a45cdb009b91a4e.png?ex=69f35229&is=69f200a9&hm=06a111446643efca3fb0d2dc6ffb8df69edb1bee1d7d24de245dec40a245a261&
+
+{Reactions}
+👍
+
+[02/21/2026 13:02] serialkiller15
+will make a channel for it thanks!
+
+
+[02/21/2026 13:02] anonymuis
+I kind of agree with Alex. There is a difference in sharing  products for free that only costed a lot of time and effort (and maybe some beers) and products that have costed real money by using tokens etc. and need to be maintained.
+
+The stuff people who have just joined get for free is massive (even though they don't get the quick-fix/free money maker they are looking for). They often don't realise this.
+
+In the end I think if you want to learn a lot (and even share your own findings), that should be free. If you want to jump ahead and get the bleeding edge maybe an easier profit in trading, then don't a cheapskate and respect the effect of some community members by paying a symbolic fee.
+
+Everybody is free to choose their own path. You could grow your own vegetables, but you can't be mad that groceries in the supermarket aren't free.
+
+{Reactions}
+👍
+
+[02/21/2026 13:10] vasko123.
+I just asked for help finishing an old, simple strategy. I also need advice on what's wrong with my indicator settings, as I can't pass the backtest.
+
+
+[02/21/2026 13:36] serialkiller15
+let me run it with my parilistselector
+
+
+[02/21/2026 14:00] serialkiller15
+my suggestions, set a stoploss=xxx
+also cut off leverage 10x is to much for it, i run it with leverage 5 and als on 0.15
+
+{Reactions}
+👍
+
+[02/22/2026 02:04] ggoyito
+30% on an exact day, brother, it's amazing. Congratulations 🎊
+
+
+[03/03/2026 18:32] .7thdragon
+⛑️  Less complex than claw 😄
+https://github.com/7thDrag0n/AutoEvolve
+
+{Embed}
+https://github.com/7thDrag0n/AutoEvolve
+GitHub - 7thDrag0n/AutoEvolve
+Contribute to 7thDrag0n/AutoEvolve development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/7Qss-10Czf4e5UVNT7Zle8hTsX6jI1BtUnk_PLOOYDM/https/opengraph.githubassets.com/06ff7ab5b137f4ca5fdf0bd70f130d290e9e244bfc4791cf5d7871ca47ef9468/7thDrag0n/AutoEvolve
+
+{Reactions}
+🚀 (3) 🔥 (2)
+
+[03/04/2026 10:22] serialkiller15
+i was running it for some days, as you can see in the entrys they have to bee disabled i will try to fix it!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1478699108209524736/image.png?ex=69f32d5c&is=69f1dbdc&hm=e968815c4cf8cdce50254bc5e5580f27ad27f684c25ebc15df9e4a2cc8d77f8c&
+
+{Reactions}
+👍
+
+[03/04/2026 13:45] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1478750116964859964/Alex_Kasuari.py?ex=69f35cdd&is=69f20b5d&hm=c5a7ce9b3727ce1d7d0eee3ebd48f7eb57312aafcf57c5ff84da56715e1a6e86&
+
+{Reactions}
+👍 (2)
+
+[03/04/2026 14:13] serialkiller15
+will start a backtest over 1 year and see the exits, then we can take a deeper look into the entrys/exits also hyperopting would bee great to do there and see the values for!
+
+
+[03/04/2026 14:20] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1478758945882640496/message.txt?ex=69f36516&is=69f21396&hm=5a81cad09602a06456a91614139957c66f5d2a3d5d47ffe260a909f554eb1fa6&
+
+
+[03/09/2026 14:47] vasko123.
+Kasuari_btc_template - SL -0.99 She will lose everything. Backtest -2.50%
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1480577762711441428/dfaff921b6284874.png?ex=69f36b7e&is=69f219fe&hm=17d376ff6e361636642430a686becf0e87b874e56112b7547ae47222488f7d16&
+
+
+[03/09/2026 14:49] vasko123.
+Alex_Kasuari - It's not stable. There was no time for a backtest.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1480578272608784485/c4f840d511d40095.png?ex=69f36bf8&is=69f21a78&hm=9236ebf8fc71cdeb73c1f2ef0e71c735b05de95b24a3f247c4c06dfc12623251&
+
+
+[03/09/2026 14:49] lukovicka
+nice. can you share?
+
+
+[03/09/2026 14:51] vasko123.
+A long time ago. Look a little higher. Both mine and Alex's.
+
+
+[03/09/2026 14:52] lukovicka
+can you send a code or a link?
+
+
+[03/09/2026 14:53] lukovicka
+you don't use stopl-loss?
+
+
+[03/09/2026 14:54] vasko123.
+three rows up
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1480579554182434938/4329115c6dfb21aa.png?ex=69f36d29&is=69f21ba9&hm=f2836e3702defa46ce36530c6f89bc1325960a82e6589b77b5fb1d07c4e032fb&
+
+{Reactions}
+👍 (2)
+
+[03/09/2026 14:57] vasko123.
+After much struggle, I passed the backtest. SL -0.23
+But I still have a lot of losses on one signal. I'll keep trying until I figure out what's wrong.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1480580336848207964/cb78e927288692d7.png?ex=69f36de4&is=69f21c64&hm=869041cc0338cf1760581945c9ef4fa3e8ee5f4065175ce482fb821dcb436f8e&
+
+{Reactions}
+👍
+
+[03/09/2026 17:26] serialkiller15
+thanks for sharing on my backtest i disabled the non profit signals like the l_m_3 for example there are many signals in there and i personaly think the not good ones need to be disabled thats it...
+
+
+[03/09/2026 21:45] serialkiller15
+i changed the parameters so hyperopt is working now..
+will do some test and then upload here
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1282010986899050567/1480682939783315558/image.png?ex=69f324b2&is=69f1d332&hm=764eb0de42b5e35bc8ccfc797dde6840381ac8f90070d9f9989bb6719f9f34d6&
+
+{Reactions}
+👍
+
+==============================================================
+Exported 226 message(s)
+==============================================================

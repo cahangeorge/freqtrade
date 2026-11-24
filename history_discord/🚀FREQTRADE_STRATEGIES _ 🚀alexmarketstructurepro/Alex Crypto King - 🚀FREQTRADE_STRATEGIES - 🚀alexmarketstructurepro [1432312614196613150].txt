@@ -1,0 +1,85 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🚀alexmarketstructurepro
+==============================================================
+
+[10/27/2025 11:02] serialkiller15
+📊 **AlexMarketStructurePro** 📊
+
+🔹 Smart Money Structure Detection System
+🔹 Break of Structure (BOS) + Trend Flip Reversals
+🔹 Triple TP System with Trailing Stops
+🔹 15min Timeframe | 5x Leverage | Futures
+
+💰 Entry Signals:
+  ✅ Bull/Bear Break (Structure Breaks)
+  ✅ Trend Flip Reversals (Smart Exits)
+
+🎯 Exit Strategy:
+  📍 TP1: 30% @ ~2.4% profit
+  📍 TP2: 30% @ ~3.2% profit  
+  📍 TP3: 40% @ ~4.0% profit
+  🛡️ Stoploss: -7%
+
+⚡ Status: LIVE on Bybit
+
+{Reactions}
+🚀 (5)
+
+[10/27/2025 13:45] serialkiller15
+@everyone try by yourself!
+
+{Reactions}
+🚀 (4)
+
+[10/27/2025 13:46] serialkiller15
+Pinned a message.
+
+
+[10/27/2025 14:00] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1432312614196613150/1432368407839375520/ALEXMARKETSTRUCTUREPROV4.py?ex=69f36088&is=69f20f08&hm=e69d435b02804478a156f5d6e38c0598635e312d542dff44444a757cd74d7258&
+
+{Reactions}
+🔥 (5)
+
+[10/27/2025 14:43] viking046433
+I'm running it 15m 5max open trades
+
+{Reactions}
+👍
+
+[10/27/2025 14:43] viking046433
+80 volume pairs no filters
+
+
+[10/27/2025 14:44] serialkiller15
+take a look if the tp1-tp3 stuff is working,
+
+
+[10/27/2025 14:44] serialkiller15
+maybee go back to only take tp1
+
+
+[10/27/2025 14:55] viking046433
+I saw that yes I'll check
+
+
+[10/27/2025 15:32] serialkiller15
+fixed using custom_exits, instead of the non working tp1-tp3 stuff
+
+
+[10/27/2025 15:32] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1432312614196613150/1432391627187425310/ALEXMARKETSTRUCTUREPROV5.py?ex=69f37628&is=69f224a8&hm=a4b00c3871327b27b4cbf030c2076b599a8b9094f15accf937e774049ec9dbc1&
+
+{Reactions}
+🚀 (2)
+
+==============================================================
+Exported 11 message(s)
+==============================================================

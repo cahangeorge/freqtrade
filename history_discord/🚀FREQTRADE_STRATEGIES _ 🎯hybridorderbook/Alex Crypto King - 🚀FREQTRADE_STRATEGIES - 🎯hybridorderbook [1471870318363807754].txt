@@ -1,0 +1,266 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🎯hybridorderbook
+==============================================================
+
+[02/13/2026 14:08] serialkiller15 (pinned)
+@everyone thanks to @xF0x0F and @DarkReaper for this excelent Work!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1471870318363807754/1471870655703154894/HybridOrderbookStrategy15m.py?ex=69f3625e&is=69f210de&hm=7a81166609a58b787d3e099eef1e6a250ebe564f2e68e4ea8f269d416fa2b72f&
+
+
+[02/13/2026 14:09] serialkiller15
+the Orderbook you will find here
+https://github.com/DarkReaper112/LiveOrderBook.git
+
+{Embed}
+https://github.com/DarkReaper112/LiveOrderBook.git
+GitHub - DarkReaper112/LiveOrderBook: Ion
+Ion. Contribute to DarkReaper112/LiveOrderBook development by creating an account on GitHub.
+
+{Reactions}
+🤘
+
+[02/13/2026 14:11] serialkiller15
+Pinned a message.
+
+
+[02/13/2026 16:15] dragongoattigercat
+do I need to install LiveOrderBook along with this bot?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1471870318363807754/1471902584406282393/image.png?ex=69f3801a&is=69f22e9a&hm=b5ed9ccf70310234f7c700627a03ba40d81d13a8bf2f54acfb606143b0eb865f&
+
+
+[02/13/2026 17:39] serialkiller15
+yes without order book it will not work
+
+
+[02/13/2026 18:24] dragongoattigercat
+I guess I have to install the freqtrade without docker to run along with LiveOrderBook?
+
+
+[02/13/2026 18:38] xf0x0f
+Doenst matter at all. You can deploy it directly into your docker or only bind mount the orderbook
+
+
+[02/13/2026 18:49] dragongoattigercat
+or maybe the table is missing some columns
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1471870318363807754/1471941490832969919/image.png?ex=69f2fb96&is=69f1aa16&hm=4b3a27574a688ce67975f360e87102d0b88845b20aa8bc03e00f3e09eec34bcf&
+
+
+[02/13/2026 18:53] xf0x0f
+im working with this orderbook https://t.me/freqtrade_strategies/22834/58007
+
+{Embed}
+https://t.me/freqtrade_strategies/22834/58007
+🇹 🇪 ⭕️ 🇩 🇴 🇷 in 🚀🚀Freqtrade Strategies...
+@Ionut2891 @alex15_08 
+
+If you are interested in what I mentioned above; I have obtained approval to share code with this work, thanks to @nino3thd .
+
+This is basic but you have a orderbook fetcher (it fetches USDT so check if you use same pairs or adapt the strategy)
+As it is I made it work for USDC just for my own testing while im still grabbi...
+https://images-ext-1.discordapp.net/external/cECMPzv1gOcZTnhXkq5pQA753bJ8eg97cNb3PkhXjS4/https/cdn1.telesco.pe/file/dk2vxFLT6Qrln4x2awwkNp07TMWyCX5MKlqtVLC_vSN3qKgMRLU8wG_aXcrBwXkNjkQS7UqOF_n9Rd6oXWWNQNH741ZB6kmP74zHd2xv7oNOjUwswnAxl7EobKmiID5ijFQ2m758eFXdwvi-wM9ABq4q1x5OIEziHDnX6r8SXJro1amUqDd-E8zVhD8oSX4S81Q4409CuMFn1oVqBjR06ekI3r0F1324mPmlriGaSQR3hmh47bUFw0k8IUCLDdyW46GH7KmB9JGBgu4lCNGaL02YoGSkSefTjQRxSCRgtXw-kdZ7l2lFuBiluXEDml5XkoSbVvJRNGQM--lw6_oUWA.jpg
+
+
+[02/13/2026 19:20] dragongoattigercat
+ERROR   HybridOrderbookStrategy15m - Error loading CVD for BTC/USDT:USDT: unable to open database file
+
+
+[02/13/2026 19:22] dragongoattigercat
+I am running freqtrade in docker, install .env under freqailstm folder, run the dashboard to create orderbook_cache.db in user_data. run them inside a proxmox container with root account.
+
+
+[02/13/2026 19:37] serialkiller15
+you have changed the line in the strategy to point to the db - orderbook?
+
+
+[02/13/2026 19:38] dragongoattigercat
+Yeah. It should be correct path to the db file.
+
+
+[02/13/2026 19:38] serialkiller15
+you also mounted it in the freqtrade bot? so you can access it mate
+
+
+[02/13/2026 19:42] dragongoattigercat
+In docker yaml file, I have it mount ./user_data:/freqtrade/user_data
+
+
+[02/13/2026 19:42] serialkiller15
+yep and not the db you need for! -> hybridorderbook db....
+
+
+[02/13/2026 19:43] dragongoattigercat
+Is it the orderbook_cache.db?
+
+
+[02/13/2026 19:43] serialkiller15
+yep exactly and also change the patch to point into it in the strategy restart and it will work
+
+
+[02/13/2026 19:44] dragongoattigercat
+In the strategy file. It is pointing to /freqtrade/user_data/orderbook_cache.db
+
+
+[02/13/2026 19:45] serialkiller15
+yes and is it in there in your docker i dont think so
+
+
+[02/13/2026 19:46] dragongoattigercat
+Let me reboot the LXC container to see if it works
+
+
+[02/13/2026 20:14] dragongoattigercat
+I got the same error. I tried to docker rm freqtrade but not working yet
+
+
+[02/13/2026 20:15] serialkiller15
+Mate please check your config you have not access to the dB
+
+
+[02/13/2026 20:15] dragongoattigercat
+is it possible to run dashboard.py with docker?
+
+
+[02/13/2026 20:29] dragongoattigercat
+I think I can access the .db file now but got another error
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1471870318363807754/1471966521772212446/image.png?ex=69f312e6&is=69f1c166&hm=4c44dc37f5e9850d54d89d9af4f492de4223e0ed859cb4de1418d8527cb1bed7&
+
+
+[02/14/2026 00:14] ywk3926
+I also encountered the same error, the table lacks the field buy_count.
+
+
+[02/14/2026 08:55] xf0x0f
+Youre using Rust OBv2?
+
+
+[02/14/2026 09:03] ywk3926
+this repo:
+https://github.com/DarkReaper112/LiveOrderBook.git
+
+{Embed}
+https://github.com/DarkReaper112/LiveOrderBook.git
+GitHub - DarkReaper112/LiveOrderBook: Ion
+Ion. Contribute to DarkReaper112/LiveOrderBook development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/gLmhz_oRakWHjXGDHP50hTCpOdzozyh3n42urfoYE2A/https/opengraph.githubassets.com/6db4a6a18ee6405d03e7cf0a292edbd4682365abc6f37d3012086ef883d7b631/DarkReaper112/LiveOrderBook
+
+
+[02/14/2026 09:07] xf0x0f
+This is the one im working with
+
+
+[02/14/2026 09:08] ywk3926
+Thank you, I'll test it again.
+
+
+[02/14/2026 09:39] darkreaper0756
+@xF0x0F What orderbook are you working with, the one from TRust or the one I made?
+
+
+[02/14/2026 10:05] xf0x0f
+The one i posted above from telegram
+
+{Reactions}
+👍 (2)
+
+[02/14/2026 10:05] xf0x0f
+It seems like alex is working with yours @DarkReaper
+
+
+[02/14/2026 10:06] serialkiller15
+yes will switch on your version later on!
+
+
+[02/14/2026 10:11] darkreaper0756
+Ah, okay. Now I understand
+
+
+[02/14/2026 10:30] darkreaper0756
+Orderbook is relevant on smaller timeframes. Like 1m
+
+{Reactions}
+👍
+
+[02/14/2026 10:30] darkreaper0756
+To make transactions quickly, bam bam
+
+
+[02/14/2026 14:45] ywk3926
+So should we test using Rust OBv2 combined with the HybridOrderbookStrategy15m.py strategy?😁
+
+
+[02/14/2026 15:04] serialkiller15
+Yep
+
+
+[02/14/2026 16:31] serialkiller15
+i will make a full updated docker file for it.
+config for the coins you use
+also you can change the exchange you use for.
+give me some time!
+
+{Reactions}
+😍 (2)
+
+[02/15/2026 18:53] bigbroseur
+@xF0x0F, @DarkReaper , @Alex Crypto King 
+Very impressive work and the dashboard is amazing 🔥 
+The freqtrade strat HybridOrderbook15m.py is not aligned with db cache schema.
+orderbook_cache.db doesn't contains 
+    •    ✔ buy_vol
+    •    ✔ sell_vol
+    •    ✔ trade_count
+    •    ❌ buy_count
+    •    ❌ sell_count
+    •    ❌ whale_buy_vol
+    •    ❌ whale_sell_vol
+    •    ❌ whale_delta
+Remove all ❌ column name in the strat to avoid errors and restart.
+No incidence in the strat logic cause never use as signals 
+(probably in prevision in next release..) 
+hth
+
+{Reactions}
+👍
+
+[02/15/2026 19:41] bigbroseur
+Forget the proposed fix, 
+it has other consequence cause checking existance of columns and otther.
+to be sure to fix  the best way is to create it in db and set to 0. 
+
+sqlite3 orderbook_cache.db
+
+ALTER TABLE trade_candles ADD COLUMN buy_count INTEGER DEFAULT 0;
+ALTER TABLE trade_candles ADD COLUMN sell_count INTEGER DEFAULT 0;
+ALTER TABLE trade_candles ADD COLUMN whale_buy_vol REAL DEFAULT 0;
+ALTER TABLE trade_candles ADD COLUMN whale_sell_vol REAL DEFAULT 0;
+ALTER TABLE trade_candles ADD COLUMN whale_delta REAL DEFAULT 0;
+
+Now runs fine.
+
+
+[02/15/2026 21:53] dragongoattigercat
+the table is not updated these columns, it keeps revert back to original table. Instead, I modify the query
+
+
+[02/15/2026 21:53] dragongoattigercat
+query = f"""
+                SELECT timestamp, delta, volume, buy_vol, sell_vol, 0.0 as whale_delta, 0 as buy_count, 0 as sell_count
+                FROM trade_candles
+                WHERE symbol = ?
+                ORDER BY timestamp DESC
+                LIMIT ?
+            """
+
+
+==============================================================
+Exported 44 message(s)
+==============================================================

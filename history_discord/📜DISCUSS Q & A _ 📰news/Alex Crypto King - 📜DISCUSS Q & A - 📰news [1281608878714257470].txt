@@ -1,0 +1,1847 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 📜DISCUSS Q & A / 📰news
+==============================================================
+
+[09/11/2024 16:07] serialkiller15
+prediction was long.... on 10 coins
+
+
+[09/11/2024 16:07] serialkiller15
+also on shorts
+
+
+[09/23/2024 14:47] serialkiller15 (pinned)
+Here i have build a Github Repo for freqtrade Strategies, will upload the strategies we postet here
+https://github.com/AlexCryptoKing/freqtrade
+
+{Embed}
+https://github.com/AlexCryptoKing/freqtrade
+GitHub - AlexCryptoKing/freqtrade: Here we have some good Strategie...
+Here we have some good Strategies for Freqtrade. Contribute to AlexCryptoKing/freqtrade development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/xz8zG3_wExfTc4eQc8VfR_j1CZoF_HNWSQcyZicHOSY/https/opengraph.githubassets.com/caf12f0f8a386baebaa8ec9df7ae2af6863b9d25222cc0e7755329429ef61fb0/AlexCryptoKing/freqtrade
+
+{Reactions}
+👍 (6) 👆 (2) 🦾 🚀 (2) ❤️
+
+[09/23/2024 14:47] serialkiller15
+Pinned a message.
+
+
+[09/27/2024 14:44] .7thdragon
+👍
+
+
+[10/03/2024 12:37] cyberjunky
+https://github.com/freqtrade/freqtrade/releases
+
+{Embed}
+https://github.com/freqtrade/freqtrade/releases
+Releases · freqtrade/freqtrade
+Free, open source crypto trading bot. Contribute to freqtrade/freqtrade development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/pDqWyncieEUmW1XWBcR-cbQzpCrVjky0QYqh8ffXv-U/https/repository-images.githubusercontent.com/91629816/d6659780-a0e1-11eb-8a38-933cd666cdeb
+
+{Reactions}
+👍 (3)
+
+[10/03/2024 12:38] cyberjunky
+Release 2024.9
+
+
+[10/03/2024 12:40] .7thdragon
+i would NOT using any of the new features on live for few months 🙂
+Bybit: Support Unified subaccounts.
+
+{Reactions}
+👍 (2)
+
+[10/04/2024 07:41] serialkiller15
+@everyone the mostly problems are with newer releases some stuff of strategys and optuna is not working as expected, so there is some change to do.
+in the new strategys that i will post in the next days there will be a prefered-Freqtrade Version to ron on it! Its difficult to handle all this updates of freqtrade. as @7thDragon said not every update is doing better on our stuff here!
+
+{Reactions}
+👍 (3)
+
+[10/04/2024 13:49] bigbroseur
+Get a stable stack as ref to work all on the same. Is it the idea?
+
+
+[10/04/2024 13:50] bigbroseur
+If yes then we need ft v and python v as ref stack
+
+
+[10/04/2024 14:32] serialkiller15
+Yes thats the main idea, i am working on V94 an aprovement ov the V90, also there is a AFSV9_FTT with good inputs, these two strategys wee need to compare, and after i finish the dry runs i will post it... also there is the hafbmvvrplev strategy that does nice, but i have to say i did not had time to look at it further....so i thinks its good that we all together work on different aproaches, in the and we can combine them....thanks!
+
+
+[10/04/2024 14:33] serialkiller15
+its importand that the base strategy is working good and stable, with or without optuna, with freqai or without, thats my main goal!
+
+{Reactions}
+👍 (2) 🤘
+
+[10/04/2024 14:33] .7thdragon
+spot or futures 🙂
+
+
+[10/04/2024 14:35] serialkiller15
+v90,v93,v94 is on futures now we can change it then for spot, the AFSV9_FTT is based on V90 with many changes and inputs from @Ch1cK3N_t4c0s and this is on SPOT!!!! did good job, but because market goes or is down, i will make an futures version on it, only time ist the problem hehe
+
+
+[10/04/2024 14:36] serialkiller15
+so everyone is welcome if want to do some beta tests, for the versions.....
+
+{Reactions}
+👍 (2)
+
+[10/04/2024 19:12] ch1ck3n_t4c0s
+We are loaded down with ideas! We need some help from ya'll to help polish of entries and exit signals guards. Teamwork makes the dream work.
+
+{Reactions}
+👍 (3)
+
+[10/04/2024 19:15] tl0627
+I would love to help, but I'm not an expert like you guys, but I can try
+
+
+[10/04/2024 19:19] serialkiller15
+Thanks @Ch1cK3N_t4c0s will post your nice strategy tomorrow than the community should test and give us impacts on it and whe can make the adaptions...
+
+{Reactions}
+❤️ (4)
+
+[10/04/2024 19:20] branly76
+I can do test work.
+
+
+[10/04/2024 19:25] serialkiller15
+Perfect thanks
+
+
+[10/04/2024 19:27] tl0627
+I can do test work as well
+
+
+[10/04/2024 19:56] serialkiller15
+Wait until tomorrow but it's beta not finished and entry habe to be modified... And other stuff
+
+
+[10/08/2024 07:00] xokaidos
+I can help with testing
+
+
+[10/08/2024 07:00] xokaidos
+I can setup multiple bots at the same time
+
+
+[10/08/2024 07:12] serialkiller15
+@xok welcome here show the channles and pick the strategys you want to test, thanks!
+
+
+[10/12/2024 10:57] serialkiller15 (pinned)
+📢 New FreqTrade Strategies Uploaded! 📢
+
+Hey @everyone! 🚀
+
+I've just uploaded a collection of FreqTrade strategies for both futures and spot trading! 📝 These strategies are mostly untested ⚠️, so please remember this is NOT financial advice! 💡
+
+📂 The strategies are currently unsorted, so feel free to dive in, test, and let me know your thoughts or results! 🧪🔍
+
+Check them out on GitHub:
+👉 [GitHub Link](https://github.com/AlexCryptoKing/freqtrade) 👈
+
+Its an collection of many Strategies i found over the past years!
+
+Thanks to everyone for joining and being part of this amazing community! 🙌💪 Your support is greatly appreciated! Let's continue growing and helping each other succeed. 🔥
+
+Best regards,
+Alex Crypto King 👑
+
+{Embed}
+https://github.com/AlexCryptoKing/freqtrade
+GitHub - AlexCryptoKing/freqtrade: Here we have some good Strategie...
+Here we have some good Strategies for Freqtrade. Contribute to AlexCryptoKing/freqtrade development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/hwwAr5-gvgccNoMc906KXus5-Qd8bMQxhZ-A9x9ml1I/https/opengraph.githubassets.com/20655f79c0ec2b14d7b350d1a09ea7f4d831e17b013007f55e85b73449e6fee6/AlexCryptoKing/freqtrade
+
+{Reactions}
+🔥 (6) 👍 (3)
+
+[10/12/2024 10:58] serialkiller15
+Pinned a message.
+
+
+[10/12/2024 10:58] xokaidos
+Thanks for sharing these...
+
+
+[10/12/2024 10:58] xokaidos
+I can dedicate a server for testing, like 16 CPUs and 32GB of ram...
+
+
+[10/12/2024 10:59] xokaidos
+I can grant you a root access to this server if you wish and we can setup a testing for different strategies.
+
+
+[10/12/2024 11:01] ._.emilio._.
+I could as well over here, Threadripper 7995wx (192 threads, @256gb ddr600 & 2 x rtx4090 - on24x7 )
+
+{Reactions}
+🔥 (3) 👍
+
+[10/12/2024 11:02] muhammadatifh
+Nice specs
+
+
+[10/12/2024 11:04] serialkiller15
+do your tests .....thanks for support will make an file where everybody can post the results, i am really busy the last weeks new job and other stuff. thanks!!
+
+
+[10/12/2024 11:05] ch1ck3n_t4c0s
+I have been super busy as well, life happens!
+
+
+[10/12/2024 11:07] serialkiller15
+yes thats it.......but will be better
+
+{Reactions}
+❤️ (3)
+
+[10/16/2024 11:39] .7thdragon
+prepare bots for longs, btc on the road to 90k
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1296075073635094528/image.png?ex=69f33f79&is=69f1edf9&hm=78e35ac0e084b4ea1f6b50390b581204cd11ead7c87d63a18dc59a71aa9e2cbb&
+
+
+[10/16/2024 12:41] ch1ck3n_t4c0s
+Uptober had begun.
+
+
+[10/16/2024 12:43] ch1ck3n_t4c0s
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1296091096216240289/65a9b8ee-6260-4e2e-a57e-a07f83cf28c8.jpg?ex=69f34e65&is=69f1fce5&hm=c694f8f091333b8978e7d27f72919f8c346592f2b74d9e796cc93fd8167d01b3&
+
+
+[10/16/2024 12:43] ch1ck3n_t4c0s
+We will retest this breakout... then parabolic.
+
+{Reactions}
+👍 (2)
+
+[10/16/2024 13:51] damian_ox9
+I have been working with the SMC strategy for a while but no success
+
+
+[10/16/2024 13:52] damian_ox9
+@Ch1cK3N_t4c0s do you have any idea on that
+
+
+[10/16/2024 15:03] ch1ck3n_t4c0s
+SmartMoneyConcepts by joshy Aldridge or whomever?
+
+
+[10/16/2024 15:42] serialkiller15
+@everyone do im some tests on a modification i made from Basic - TheGreatDivergenceSpot. I made a Futures Version of it with some Modifications, lets see after Dryrun....
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1296136286154788864/image.png?ex=69f3787b&is=69f226fb&hm=71cc959877dafec351bf3f0af02458f23712b0c549db03d9a83de3d84c3c79da&
+
+{Reactions}
+👍 (3)
+
+[10/16/2024 15:43] 0jessica0_
+Can i test it too?
+
+
+[10/16/2024 15:43] attique_80740
+Great
+
+
+[10/16/2024 15:43] serialkiller15
+let me finish dryrun first for a few days!
+
+
+[10/16/2024 15:44] 0jessica0_
+okkkk
+
+
+[10/16/2024 15:44] 0jessica0_
+I just started the dryrun for V9. After hyper the result is impressive
+
+
+[10/16/2024 18:06] damian_ox9
+yes
+
+
+[10/21/2024 21:18] serialkiller15
+@everyone did many modifications and running on dry since 2 days it looks promising...
+No Freqai - Based on V90....with many parameters for hyperopt...stay tuned will posed after 1-2 days!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1298032599318663289/image.png?ex=69f31e4f&is=69f1cccf&hm=86a35415bc0ddb9ba8bfee7cd15039eb3bcc9f765f56118a053edfbe93dfabf0&
+
+
+[10/21/2024 21:33] alex_737071
+How do you get v90 to run without FreqAI? When i set false in the config, FT send a log message saysing please enable FreqAI in your config to use this Strat.... What did i miss?
+
+
+[10/21/2024 21:34] alex_737071
+I been running the Hyper version, great in BT, but refusing to open trades in dry for some reason
+
+
+[10/21/2024 21:34] hirotakah7
+Use the updated files
+
+
+[10/21/2024 21:35] serialkiller15
+this version has some modifications, and its the backtested version no freqai, no lstm its for testing and it runs better without the lstm.....at the moment!
+
+
+[10/21/2024 21:35] serialkiller15
+if you want run freqtrade - look at #🚀strategie-descriptions
+
+
+[10/21/2024 21:37] serialkiller15
+or look here - https://discordapp.com/channels/1238181199206154373/1283028025620828210/1296519919952728096
+
+
+[10/21/2024 21:39] maxgorbachevskiy
+But... I see that cumulative profit is floating around zero, with negative net liquidation value? What "promising" do you mean here?
+
+
+[10/21/2024 21:40] serialkiller15
+that i am not finished here yes you are right and there are some mods to to on it....
+
+
+[10/21/2024 21:42] serialkiller15
+actualy i work on 3 different strategies..
+
+
+[10/21/2024 21:43] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1298038949025157182/image.png?ex=69f32439&is=69f1d2b9&hm=d8730efb0cdc34ba7ad8eaebebd741275063a56ff96a06b598732199f73aa349&
+
+
+[10/21/2024 21:44] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1298039194945585192/image.png?ex=69f32474&is=69f1d2f4&hm=6ce829742d2903b03f74b635178a81ad527a7b88e8eb1d514a2903b4615c4d6b&
+
+
+[11/02/2024 20:53] .7thdragon
+For an easy automated patch 😉
+https://discord.com/channels/1238181199206154373/1284586552760074323/1302372899008544820
+
+
+[06/02/2025 10:36] maxgorbachevskiy
+2025.5 release comes with Optuna. Release log:  
+— New callback plot_annotations() - to draw areas on your freqUI charts.
+— New callback custom_roi() for more control for individual ROI entries.
+**— Switch hyperopt from scikit-optimize to optuna (Except for advanced usecases, users should not notice much difference).**
+— Added early-stopping functionality to hyperopt.
+— Improved backtesting precision by simulating historic rate precision levels.
+— Backtesting now applies dataframe validations after `populate_indicators()`` aligned with dry/live modes.
+— Added "min/max duration" to backtesting metrics.
+— Fixed binance futures trades download.
+
+https://github.com/freqtrade/freqtrade/releases/tag/2025.5
+
+{Embed}
+https://github.com/freqtrade/freqtrade/releases/tag/2025.5
+Release 2025.5 · freqtrade/freqtrade
+Highlighted changes
+
+New callback plot_annotations() - to draw areas on your freqUI charts.
+New callback custom_roi() for more control for individual ROI entries.
+Switch hyperopt from scikit-optimi...
+https://images-ext-1.discordapp.net/external/X0zJW2CcIrjalP6TLbvHia75IQTmMTLhLOwcqgnQKzk/https/opengraph.githubassets.com/d8c13c95908b9081314877bab3a6ffb3951b79ddb9c10c07d8bda1c25c80858a/freqtrade/freqtrade/releases/tag/2025.5
+
+
+[06/02/2025 10:41] maxgorbachevskiy
+What Does the Switch from Scikit-Optimize to Optuna Mean?
+
+Hyperparameter optimization in Freqtrade involves tuning parameters (e.g., buy/sell thresholds, stop-loss, ROI) to maximize a trading strategy's performance, typically by minimizing a loss function (e.g., profit, Sharpe ratio). Previously, Freqtrade relied on scikit-optimize, a library that uses Bayesian optimization with algorithms like ExtraTreesRegressor to search for optimal parameters. The switch to Optuna, another hyperparameter optimization framework, means Freqtrade now uses Optuna’s algorithms and infrastructure for this task.
+
+The transition, as noted in a Freqtrade GitHub pull request, involves replacing scikit-optimize’s optimization logic with Optuna’s, including its samplers (e.g., NSGAIISampler, TPESampler) and study-based approach. This change affects how users configure and run hyperopt, as well as the performance and features available during optimization. Since Freqtrade’s 2021.4 release, users can define hyperopt parameters directly in the strategy, and this switch builds on that by leveraging Optuna’s more modern and flexible framework.
+
+Switching from scikit-optimize to Optuna in Freqtrade introduces a more modern, flexible, and feature-rich hyperparameter optimization framework. Benefits include better visualizations, pruning for faster runs, dynamic search spaces, and active development. However, it comes with a learning curve, potential dependency bloat, and the need to experiment with samplers for optimal results. Practically, users should leverage Optuna’s NSGAIISampler, pruning, and visualization tools while ensuring sufficient hardware and historical data. For further details, check Freqtrade’s documentation or Optuna’s official site.
+
+(с) ChatGPT
+
+
+[06/02/2025 10:42] serialkiller15
+interesting...
+
+
+[06/02/2025 10:42] serialkiller15
+its more flexible for tuning params and other stuff
+
+
+[06/02/2025 13:11] ch1ck3n_t4c0s
+They still fundamentally need to fix the rolling versus not rolling difference between live and backtest and dry run.
+
+
+[06/02/2025 13:12] ch1ck3n_t4c0s
+Because the dataframe is not calculated the same as in live
+
+
+[06/02/2025 14:49] serialkiller15
+yes absolute ...
+
+
+[09/08/2025 07:11] serialkiller15
+@everyone as we where playing with simpleoptuna, here some short review about the posibilities with OPTUNA!
+
+I allready integrated it in AlexBandSniper needs to test, but looks even better
+
+
+Here's the key difference between your previous SimpleOptuna and the full Optuna integration:
+SimpleOptuna (Before)
+
+Fake optimization: Just returned random values without actually running Optuna
+No real learning: Parameters didn't improve based on trade results
+Static parameters: Same settings for all pairs
+No persistence: Lost all "optimization" on restart
+Limited scope: Only optimized a few basic entry parameters
+
+Full Optuna Integration (Now)
+
+Real optimization: Actually runs Optuna trials and finds better parameters
+Performance-based learning: Uses actual trade profit/loss to optimize
+Per-pair optimization: Each trading pair gets its own optimized parameters
+Persistent storage: Saves optimization results to SQLite database
+Comprehensive scope: Optimizes both entry AND exit parameters
+Adaptive: Re-optimizes when performance declines
+Scheduled optimization: Runs daily optimization checks
+
+Practical Impact
+Before: Your strategy used the same hardcoded parameters for all pairs, with no real optimization happening.
+Now: Each pair (BTC/USDT, ETH/USDT, etc.) gets its own optimized parameters based on how that specific pair trades. For example:
+
+BTC might get optimized for longer holds with higher profit targets
+ETH might get optimized for quick scalps with tighter stops
+Each pair's exit strategy is tailored to its volatility and trading patterns
+
+Bottom Line
+You went from fake optimization to real machine learning that adapts your strategy to each pair's unique characteristics and improves over time based on actual trading performance.
+
+{Reactions}
+👏 (8) 🚀 (8) 💥
+
+[01/28/2026 21:17] serialkiller15
+@Everyone
+i am sure you heard about it 
+clawbot!!! 
+
+🤖 Just deployed Clawdbot - My Personal AI Trading Assistant!
+What is Clawdbot?
+🦞 Open-source AI agent that connects Claude/LLMs to messaging apps (Telegram, Discord, etc.)
+🛠️ Think of it as your own AI assistant that lives in your chat apps
+💬 Handles conversations, executes commands, and can integrate with tools/APIs
+My Setup:
+📦 Infrastructure: Proxmox LXC container (lightweight, efficient)
+🧠 AI Model: Qwen 2.5 32B running on remote GPU server via Ollama
+⚡ Performance: Sub-second responses (no more waiting!)
+💰 Cost: $0 - fully self-hosted, no API bills
+📱 Interface: Telegram bot 
+Why Clawdbot?
+✅ Full control over my AI - no rate limits, no censorship
+✅ Perfect for trading analysis - instant market insights 24/7
+✅ Can extend with custom plugins and integrations
+✅ Privacy - my data stays on my servers
+✅ Way cheaper than Claude/ChatGPT API long-term
+Built the entire stack from scratch - Docker/Ollama/Node.js/systemd. Local LLM + custom agent = ultimate flexibility! 🔥📈
+Tech Stack:
+
+Clawdbot (Node.js AI agent framework)
+Ollama (local LLM server with OpenAI-compatible API)
+Qwen 2.5 32B (7B params quantized model)
+Proxmox LXC (containerization)
+Telegram Bot API
+
+{Reactions}
+👍 (3) 🔥 (2)
+
+[01/28/2026 21:17] serialkiller15
+i run it now to check some of my strategies it does realy nice and no api costs at all! with ollama!
+
+{Reactions}
+❤️
+
+[01/29/2026 10:36] snokard.
+sounds amazing im currently using llama70B+openhands with qwencoder
+
+
+[01/30/2026 14:31] serialkiller15
+my new assistent lets see how it does!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1466802918614237422/image.png?ex=69f367ab&is=69f2162b&hm=9e921d49a6e5038db27804a6e658c9553c14a873c57be26f5c3b3d77e4793383&
+
+{Reactions}
+🔥 (4) 🤩 (3)
+
+[01/30/2026 18:45] serialkiller15
+@everyone this is amazing!
+My personal Assistant will monitor all my bots (i use local llm model dont worry)
+ang give me a summary and do other stuff:
+where has this been the last years
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1466866940889927955/image.png?ex=69f2fa8b&is=69f1a90b&hm=04303c1b2803c2f22a0ff57b587d8246ac6a6d023846f1198a81dedd14f18815&
+
+{Reactions}
+🔥
+
+[01/30/2026 18:46] snokard.
+this is something i had in mind for the strategy farm, have you tried giving it access to the logs and entry reasons to allow it to suggest modifications in the strategies?
+
+
+[01/30/2026 18:48] dragongoattigercat
+can you please share your setup as which model, any VM and app need to be install to get it work? Thank you and appreciated it
+
+
+[01/30/2026 18:50] serialkiller15
+@titan i gave him first access to one bot (dryrun) to make monitoring of it and give me 2x a review, i dont want to look into it.
+and yes this will be the next step.
+Also i made a folder (localy) with the most strategies we did. He is searching the code and will try to make aproments.
+Thats realy amazing what this small thing can do, compare strategys put them together and so on... stay tunded more to come!
+
+
+[01/30/2026 18:51] serialkiller15
+@Improvement 
+https://docs.openclaw.ai/ - see here
+but i will not give any support here for the openclaw, there is a big community in a discord see everything there!
+but its nice will see how it does!
+
+{Embed}
+https://docs.openclaw.ai/
+Index - OpenClaw
+https://images-ext-1.discordapp.net/external/Ms_5Q5bieS5UVpXwGy2i329ESEB8GgB_q1bbjeMogqY/%3Furl%3D%252F_mintlify%252Fapi%252Fog%253Ftitle%253DStart%252BHere%2526logoLight%253Dhttps%25253A%25252F%25252Fmintcdn.com%25252Fclawdhub%25252F4rYvG-uuZrMK_URE%25252Fassets%25252Fpixel-lobster.svg%25253Ffit%25253Dmax%252526auto%25253Dformat%252526n%25253D4rYvG-uuZrMK_URE%252526q%25253D85%252526s%25253Dda2032e9eac3b5d9bfe7eb96ca6a8a26%2526logoDark%253Dhttps%25253A%25252F%25252Fmintcdn.com%25252Fclawdhub%25252F4rYvG-uuZrMK_URE%25252Fassets%25252Fpixel-lobster.svg%25253Ffit%25253Dmax%252526auto%25253Dformat%252526n%25253D4rYvG-uuZrMK_URE%252526q%25253D85%252526s%25253Dda2032e9eac3b5d9bfe7eb96ca6a8a26%2526primaryColor%253D%252523FF5A36%2526backgroundLight%253D%252523ffffff%2526backgroundDark%253D%2525230a0d0d%26w%3D1200%26q%3D100/https/clawdhub.mintlify.app/mintlify-assets/_next/image
+
+
+[01/30/2026 18:52] snokard.
+amazing aproach! really similar that what i had in mind with the diference that since i dont have large amount of data my plan was to make it create its own strategies
+
+ofc not with clawdbot but using llama 70B with qwencoder.
+
+
+advances on my project are that yesterday i improved failure detection and patch suggestion + aplication. all selfdriven
+
+
+[01/30/2026 18:52] snokard.
+getting really close to have both sparks running 24/7 working!
+
+
+[01/30/2026 18:53] serialkiller15
+thats awesome mate!
+but for everyone before you start using OpenClaw check the security and keep it secure!!! Its nice but open for the hole world hehe not get hacked or something else!
+
+{Reactions}
+❤️
+
+[01/30/2026 18:54] serialkiller15
+https://discord.gg/kCBJY6rQ
+
+
+[01/30/2026 18:55] serialkiller15
+and look at this!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1466869380892725531/image.png?ex=69f2fcd1&is=69f1ab51&hm=a9781cba8804682fe4863385aa107406b70fa46741ac97454a9e3116be0b3ea4&
+
+{Reactions}
+🔥
+
+[01/30/2026 18:57] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1466869918078074910/image.png?ex=69f2fd51&is=69f1abd1&hm=9f4640c10b531c17a0f98c42e6123742b5b4d7bce0cf5b3f16db1181ddbd6dfe&
+
+{Reactions}
+🔥
+
+[01/30/2026 18:58] snokard.
+fcking fire! thats just the tool you needed to manage your 9999999999999 strategies
+
+
+[01/30/2026 18:58] serialkiller15
+thats the goal hehe! have about 50 bots running so so much time to look on them getting tired sometimes!
+
+{Reactions}
+🤣
+
+[01/30/2026 19:02] serialkiller15
+many potentiol here
+news breefing and other stuff
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1466871114209689905/image.png?ex=69f2fe6e&is=69f1acee&hm=6ac45925978692edb48b4df6a445d2f03bc0ee5d1d7241108d5a771fdbdbb751&
+
+{Reactions}
+🔥
+
+[01/30/2026 19:11] serialkiller15
+We should give him access to our channel! he could answer qustions and so on hehe
+
+
+[01/30/2026 19:15] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1466874477286658282/image.png?ex=69f30190&is=69f1b010&hm=11a6856c05b817805a55fb0654eaf29f463ac1b96b3d7c6a948b5ad01d832532&
+
+
+[01/30/2026 19:18] shalossen
+That's crazy wow
+
+
+[01/30/2026 19:20] shalossen
+You only told it to give you latest crypto news? Nothing else? Waw
+
+
+[01/30/2026 19:29] serialkiller15
+i have a api !
+he makes me a crone job for daly news crypto and politics
+this screenshot he monitors my bots! and give me daly summery, everythink can be designed he makes scripts for everythink localy so you can adjust it and change if needed!
+
+
+[01/30/2026 22:20] serialkiller15
+@everyone Time to play with my personal AI Assistant
+i made a new channel we can use for testing
+#🤖ask-alexopenclawbot 
+feel free! its still in learning! more to come here
+
+
+[01/30/2026 22:46] serialkiller15
+Switched to private channel needs to switch to a free Modell or I will get out of tokens will update... But it's really nice
+
+
+[01/31/2026 08:30] bigbroseur
+Why not to listen your Telegram with another botcaw that answer for simple request (bot to bot loop) and ask your confirmation if needed.
+
+
+[01/31/2026 08:45] serialkiller15
+i have already done this and made a free user, searching for a good opensource models thats it!
+
+
+[01/31/2026 09:05] serialkiller15
+@everyone some ideas, if i want to integrate the modell in discord, it works, but we need API Keys. So i will not pay them by myself?
+What do you think about upload about i dont know some dollars into it and use it togehter Lets discuss
+Community stays for free only if someone needed it i switched to private channel now! thanks!
+
+
+[01/31/2026 09:25] snokard.
+im open to do a small donation for it
+
+
+[01/31/2026 09:25] snokard.
+i dont think i will be using it but could be really beneficial for everyone here
+
+
+[01/31/2026 09:26] snokard.
+tokens arent that expensive if we get some people giving 10-20$ we have a nice budget
+
+
+[01/31/2026 10:22] serialkiller15
+Yes that's the idea
+
+{Reactions}
+❤️
+
+[01/31/2026 14:40] divarak
+Well, 10-20 usd is more than reasonable to me.
+
+
+[01/31/2026 14:41] serialkiller15
+i will handle it then give me some time! first of all we will use a free modell (running on a gpu server of me) more to come but first lets pickup some beer! who is with me
+
+{Reactions}
+👍 (3)
+
+[01/31/2026 14:42] snokard.
+tell us when you sort it out, i wont be using it but im happy to help this server if i can
+
+
+[01/31/2026 14:42] snokard.
+enjoy your beer
+
+
+[01/31/2026 14:43] snokard.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1467168341541130381/rn_image_picker_lib_temp_82856819-1ce6-4b7c-8f96-ed0784aafb4e.jpg?ex=69f36a7f&is=69f218ff&hm=0b30dfc29e65258bf83bbbf9c201d1f460b3171573a8522559201d054f106e1b&
+
+
+[01/31/2026 14:43] serialkiller15
+enjoy your coke!
+
+{Reactions}
+❤️
+
+[01/31/2026 14:44] snokard.
+beer comes after daily training session!
+
+
+[01/31/2026 14:44] snokard.
+never before
+
+
+[01/31/2026 14:44] 4v1234
+Use GPT and mask the cake with beer 🍺
+
+
+[01/31/2026 14:44] minhys
+I am happy to join & donate
+
+
+[01/31/2026 14:44] minhys
+I am happy to join & donate
+
+
+[01/31/2026 14:44] snokard.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1467168743887999026/rn_image_picker_lib_temp_3458db83-2624-442b-b473-23bfc41ab557.jpg?ex=69f36adf&is=69f2195f&hm=4a9a9f46bce9ee5fecae9dfbda63d4339de8f1018b88a7a14acc716fd62fc86a&
+
+{Reactions}
+🤣
+
+[01/31/2026 14:45] 4v1234
+There is saying
+
+
+[01/31/2026 14:45] 4v1234
+Selebrate the small success
+
+
+[01/31/2026 14:46] snokard.
+oh trust me last 15-30 minutes of training the beer ill get after it is what keeps me going
+
+{Reactions}
+💯 (2)
+
+[01/31/2026 16:22] shalossen
+There are some free good models on openrouter. 
+However, since I didnt test them on openclaw, I don't know if they're good enough for it to work correctly
+
+
+[01/31/2026 16:22] serialkiller15
+i am still on testing it! ollama....
+mostly the commands needs to be adjusted!
+
+{Reactions}
+🔥
+
+[02/05/2026 16:34] serialkiller15
+@everyone so i did it 
+@Alex ClowdBOT_Free works now for questions, running an free modell lets see how it does and if he can assist us! always
+
+{Reactions}
+👀 🔥 (4)
+
+[02/05/2026 16:34] Alex ClowdBOT_Free#5896
+Hey @AlexCryptoKing, awesome news! 🚀 Glad the agent is up and running. We’ll keep an eye on its performance with the free model. If you need any tweaks or additional help, just let us know—happy to help keep the momentum going!
+
+
+[02/05/2026 16:35] snokard.
+did you sort out the donations @Alex Crypto King
+
+
+[02/05/2026 16:37] serialkiller15
+this one runs on a free model at the time,
+yes i did will come later on, for users they want to use kimi or other stuff!
+
+{Reactions}
+❤️ (2)
+
+[02/05/2026 16:37] snokard.
+going to try it
+
+
+[02/05/2026 18:49] 4v1234
+I'm in
+
+
+[02/05/2026 20:09] serialkiller15
+I will handle the payment tomorrow ownclawd already did than users can use it the api like kimi or others... It's a funny think
+
+
+[02/12/2026 20:12] dragongoattigercat
+hi mate, does anyone try this ? https://story-site-tau.vercel.app/
+
+
+[02/13/2026 05:04] xf0x0f
+TBO Breakout like Bot
+
+the bot identifies trend breakouts using a multi-layered approach:
+
+1. trend cloud system (fast/slow EMAs) determines market direction - only trades with the trend
+2. dynamic support/resistance from pivot points detects when price breaks through key levels
+3. volume confirmation (dradian high probability method) - only enters when volume spikes >2.5x average
+4. signal scoring (0-8 points) - needs minimum 5 points to enter, combining trend + breakout + volume + momentum
+5. rsi filter prevents entries at extremes (longs need RSI 40-70, shorts 30-60)
+6. smart exits on trend reversals, momentum shifts, or when opposite breakout occurs
+trades 15 pairs on binance futures, 6 max positions, 15m timeframe
+
+essentially it waits for price to break support/resistance WITH strong volume confirmation AND trend alignment, then rides the breakout until momentum reverses. currently in dry run
+
+{Reactions}
+👍 🚀
+
+[02/13/2026 10:46] xf0x0f
+lets see how it goes
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1471819816288387144/Bildschirmfoto_2026-02-13_um_11.45.59.png?ex=69f33305&is=69f1e185&hm=aae42c803f2d1a462dabdeb355e6194b3fdc14f021bed506623189f0a0c7cf4c&
+
+{Reactions}
+👍
+
+[02/13/2026 18:40] xf0x0f
+looks promising
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1471939012389376244/Bildschirmfoto_2026-02-13_um_19.39.35.png?ex=69f2f947&is=69f1a7c7&hm=64f6b940528dda5ce4596382ade8dc45613011b2ce2439b3e3bb25110cc14d1c&
+
+{Reactions}
+🚀
+
+[02/13/2026 18:47] serialkiller15
+you gave him the commands you shared/posted that was all? thanks
+
+
+[02/13/2026 18:51] xf0x0f
+it was done by my trained model which has about 1000 local saved strats. it has big rag context,...  heres everything i explained to my model: https://www.thebettertraders.com/TBO
+
+{Embed}
+https://www.thebettertraders.com/TBO
+TBO Crypto Breakout Indicator for TradingView
+Boost your crypto trades with the TBO @ www.thebettertraders.com - the top TradingView trend-based indicator for $49/mo. Elevate your strategy now!
+https://images-ext-1.discordapp.net/external/yKscmJIAt8n8aFyGNQkZcpyWuNc6GepQT1YBS-o050Q/https/d11n7da8rpqbjy.cloudfront.net/thebettertraders/834505910857TBO_page-OG-image.jpg
+
+{Reactions}
+👍
+
+[02/14/2026 08:56] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1472154418031100008/IMG_0453.png?ex=69f31924&is=69f1c7a4&hm=409dc5407972fff0606680fe39bb52f8c63ad4f0b6dd955aa79e97ebdad7b12f&
+
+{Reactions}
+👍 (3)
+
+[02/14/2026 08:56] serialkiller15
+nice can you share the code? thanks mate!
+
+
+[02/14/2026 08:58] xf0x0f
+Still waiting for first shorts till i know if it works in correct in both market situations
+
+{Reactions}
+👍 (2)
+
+[02/14/2026 08:58] serialkiller15
+perfekt thanks for your work!
+
+
+[02/14/2026 18:57] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1472305886071357621/IMG_0463.png?ex=69f2fd75&is=69f1abf5&hm=f30e6e677268e820b1c521c2be4e57fc6c47424c256a94c08512a7c2e6bebb09&
+
+{Reactions}
+👍 (5)
+
+[02/17/2026 09:39] serialkiller15
+@everyone 
+check this up, i already checking it
+https://github.com/0xemmkty/QuantMuse
+
+{Embed}
+https://github.com/0xemmkty/QuantMuse
+GitHub - 0xemmkty/QuantMuse: A comprehensive quantitative trading s...
+A comprehensive quantitative trading system with AI-powered analysis, real-time data processing, and advanced risk management - 0xemmkty/QuantMuse
+https://images-ext-1.discordapp.net/external/jAPbhpr83jKBifBGNn-JO0bAtAdlD73SrhXIyvmsspg/https/opengraph.githubassets.com/d89d4ff01b6eab0fc9e4d21f8aa9ceaab22d6b703b999c41d9efefdf50ea6e6e/0xemmkty/QuantMuse
+
+{Reactions}
+👍
+
+[02/17/2026 09:39] serialkiller15
+also some stuff here
+https://github.com/nautechsystems/nautilus_trader
+
+{Embed}
+https://github.com/nautechsystems/nautilus_trader
+GitHub - nautechsystems/nautilus_trader: A high-performance algorit...
+A high-performance algorithmic trading platform and event-driven backtester - nautechsystems/nautilus_trader
+https://images-ext-1.discordapp.net/external/RglFRWZRPKvmSTptMXtBI8Iqx2q2YikihSx4dEJApto/https/repository-images.githubusercontent.com/138552196/e0c7ff3a-dc3f-42ad-97a3-8460ef632068
+
+
+[02/17/2026 09:40] serialkiller15
+also this
+https://github.com/hummingbot/hummingbot
+
+{Embed}
+https://github.com/hummingbot/hummingbot
+GitHub - hummingbot/hummingbot: Open source software that helps you...
+Open source software that helps you create and deploy high-frequency crypto trading bots - hummingbot/hummingbot
+https://images-ext-1.discordapp.net/external/v9YrS4j1tRy8emIARiOrD_Zx86UvK9XUrkcPCDAtpjQ/https/repository-images.githubusercontent.com/179163124/7fd92800-eb15-11ea-9c00-e48d8a17b594
+
+
+[02/26/2026 20:30] serialkiller15
+@everyone work in progress geht Financel Data - put it into the Dashboard
+also integrating Orderbook stuff into Dashboard
+based on Finviz Analytics
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1476677924575776959/image.png?ex=69f3133c&is=69f1c1bc&hm=ab869e95b7f007de23c6fe5f06a5c1e213098c5f69898e35a6c37c8d5b833b3c&
+
+{Reactions}
+👏 (2)
+
+[02/26/2026 21:01] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1476685727663259718/image.png?ex=69f31a80&is=69f1c900&hm=b2f8ad6b079293f0b51fc6de1b139d8a6153aa0e573c575ae882197bacb64dc7&
+
+
+[02/26/2026 21:02] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1476685954717585408/image.png?ex=69f31ab7&is=69f1c937&hm=f4c3de33d75a4434ead975434aabf555e049c150e143567d9a9c86ee932a8497&
+
+
+[02/26/2026 21:03] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1476686103926018089/image.png?ex=69f31ada&is=69f1c95a&hm=27b9c18785e01939ace0c8e1fb31d462e8972cc1eafd44764e309074aecedc66&
+
+
+[02/27/2026 13:43] serialkiller15
+@everyone
+it continues
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1476937842570559631/image.png?ex=69f35c8d&is=69f20b0d&hm=2f020ae87a07ccdd448a15cd5228305367710f35f9cba3182b0f7ce8893facb8&
+https://cdn.discordapp.com/attachments/1281608878714257470/1476937842927079475/image.png?ex=69f35c8d&is=69f20b0d&hm=9ac5145cc7da351ab1e162c82aae7b1e9b09d084b5c2cc45e94465b0e93050bb&
+https://cdn.discordapp.com/attachments/1281608878714257470/1476937843262885938/image.png?ex=69f35c8e&is=69f20b0e&hm=8536a0a599c066415dfef3d246f871ac3348457875331dd43adfe730c823ed26&
+https://cdn.discordapp.com/attachments/1281608878714257470/1476937843682312202/image.png?ex=69f35c8e&is=69f20b0e&hm=fd877b9e6b00639a38ea33bab308645094470fd81885c02225014fa4b2d2bbaf&
+https://cdn.discordapp.com/attachments/1281608878714257470/1476937844063998098/image.png?ex=69f35c8e&is=69f20b0e&hm=9f81117abcee5a9afb68e2acd291e38ef29d4d4cc6f1a27e870c1eff02fc5a62&
+https://cdn.discordapp.com/attachments/1281608878714257470/1476937844512784557/image.png?ex=69f35c8e&is=69f20b0e&hm=fd30f1b6a42650c53a1f22409454338d9411b78015226234b37bb76523bbaa1d&
+
+
+[02/27/2026 17:28] darkreaper0756
+a chart would be nice
+
+
+[02/27/2026 17:28] serialkiller15
+which chart? which data?
+
+
+[02/27/2026 17:28] darkreaper0756
+Whait
+
+
+[03/10/2026 17:29] serialkiller15
+Hey everyone! 👋
+
+I need to own up to something. I previously promised this community would stay free, and I broke that promise by introducing monthly fees. That was my mistake, and I'm truly sorry about that. 🤗
+
+Here's what I'm going to change:
+
+🆓 Back to Free — The community returns to 100% free access. No monthly fees anymore.
+
+💚 Donations Optional — If you want to support the server costs and tools, donations are welcome but never required. Pay what you want, when you want (or never – totally fine!).
+
+💰 Full Refunds — If you've already paid and want your money back, just DM me. No questions asked, no hard feelings. I'll sort it out ASAP.
+
+🎁 What your payments did — For those who did contribute: your payments went directly into topping up our API credits (OpenClaw, etc.) so we could run more tools for everyone. Thank you for that! 🙏
+
+📊 Channel Update — The "BASIC Members" channel will be renamed to "FUTURE DEPLOYMENTS ⚔️" and will be open to everyone. I'll keep deploying and optimizing the strategies there for the whole community.
+
+Thanks for your patience and understanding. You all are the best. ❤️
+
+{Reactions}
+🔥 🚀 👍
+
+[03/10/2026 17:41] themarkx_
+I have one suggestion: if anyone wants to do support he or she can do no pressure or any greed To do payment. Just support this community by own wish without expecting any vip treatmen.
+
+{Reactions}
+👍 🔥
+
+[03/10/2026 18:12] vasko123.
+We've all noticed that things have gotten very quiet here lately.
+I'm confident that if we share not only strategies but also the latest settings and recommendations (observing that a strategy works for you, while the community's strategy is losing during testing), the community will improve.
+
+
+[03/10/2026 18:13] serialkiller15
+Absolute yes..
+
+{Reactions}
+👍
+
+[03/10/2026 18:20] serialkiller15
+Mostly the best the last weeks is the ERCV2 #🎯alexecr
+
+
+[03/10/2026 18:20] serialkiller15
+Second place the GDK V5... They are doing good...
+
+
+[03/10/2026 18:21] alexandermoysa
+Hi Alex, are you working on spot strategies?
+
+
+[03/10/2026 18:22] serialkiller15
+Nope not at the moment.. But you can try some on spot
+
+
+[03/10/2026 18:48] serialkiller15
+Learn more: https://github.com/Limex-com/ziplime
+
+What is your next step? (To do this for real)
+
+This is how: 👇
+
+{Embed}
+https://github.com/Limex-com/ziplime
+GitHub - Limex-com/ziplime: ZipLime - Reinventing the Classic Backt...
+ZipLime - Reinventing the Classic Backtesting Experience of Zipline - Limex-com/ziplime
+https://images-ext-1.discordapp.net/external/TMFN4KFQLkgRCXljO8CcWAfQfTtZT1xW5DlA88T1FIM/https/opengraph.githubassets.com/bb380da4dbb1601a1002692d97e9319c924d36e328c3467df1466c08cfb19218/Limex-com/ziplime
+
+
+[03/10/2026 18:49] themarkx_
+Please share latest one
+
+
+[03/10/2026 18:49] serialkiller15
+Already opened the channels #🎯alexgkdtransform
+
+
+[03/10/2026 18:50] themarkx_
+I am taking about 53
+
+
+[03/10/2026 18:50] themarkx_
+Day (count)      USDT              Profit %
+---------------  ------------  --  ----------
+2026-03-10 (16)  20.002 USDT    0  2.49%
+2026-03-09 (34)  -54.828 USDT   0  -6.40%
+2026-03-08 (18)  -6.879 USDT    0  -0.80%
+2026-03-07 (16)  -38.124 USDT   0  -4.23%
+2026-03-06 (14)  -44.533 USDT   0  -4.71%
+2026-03-05 (10)  -2.629 USDT    0  -0.28%
+2026-03-04 (37)  -34.158 USDT   0  -3.48%
+
+
+[03/10/2026 18:50] themarkx_
+Here my results which you shared
+
+
+[03/10/2026 18:51] serialkiller15
+Ach ok I see
+
+
+[03/13/2026 15:25] glad8769
+No problem mate, I am happy to have contributed, keep my donation and hopefully that something big and profitable comes out 🙂
+
+{Reactions}
+👍
+
+[03/13/2026 15:26] serialkiller15
+thanks mate! realy aprichate the money is in the apis hihi
+
+{Reactions}
+🔥
+
+[03/13/2026 16:09] themarkx_
+If you need any other contributions please update. I am happy to contribute.
+Bcz i believe this community gives me so much value and I think nothing is free in this world.
+
+{Reactions}
+🔥 👍 (2)
+
+[03/13/2026 16:14] serialkiller15
+Everyone feel free to contribute, also improvements of ideas and other stuff. the money was spend for the needed apis and so.
+but i broke my personal rules i build the community for free so it will stay free... thanks
+
+{Reactions}
+❤️
+
+[03/13/2026 16:48] 4v1234
+Don't worry,  some are better then others in writing,  some of us can contribute for the api....the important aspect is to be involved with the work.
+
+
+[03/13/2026 16:54] serialkiller15
+hehe its gone for today (week) but good work done
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1482059210018787528/image.png?ex=69f38932&is=69f237b2&hm=9cb044810a3acd741dfe1bb14856049f3bdf99bf85b24750b7a6da0c1b2ee8a6&
+
+{Reactions}
+🤣
+
+[03/13/2026 16:56] 4v1234
+Tell him after 13 days he can continue 😀
+
+
+[03/13/2026 17:00] serialkiller15
+no problem i will not do some stuff on weekened so the weekly limit is reached! hehe!
+
+{Reactions}
+🤣
+
+[03/13/2026 17:19] serialkiller15
+i killed all models hehe i love it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1281608878714257470/1482065484030541945/image.png?ex=69f38f0a&is=69f23d8a&hm=135bc61a99545d5fbe1125185b69cda04aeea89b9283ff82710722453a3ff467&
+
+{Reactions}
+🤣
+
+[03/13/2026 18:25] 4v1234
+And we were believing in you 😀
+
+
+[03/13/2026 18:25] serialkiller15
+Let's believe in the community... Sound better
+
+{Reactions}
+❤️ (3)
+
+[03/16/2026 11:00] serialkiller15
+https://github.com/TraderAlice/OpenAlice
+
+{Embed}
+https://github.com/TraderAlice/OpenAlice
+GitHub - TraderAlice/OpenAlice: File-driven AI trading agent engine...
+File-driven AI trading agent engine for crypto and securities markets - TraderAlice/OpenAlice
+https://images-ext-1.discordapp.net/external/wSzRes2CwKwFWV35r-WRejYr4S4VH69qndIixqnSbCY/https/opengraph.githubassets.com/bb7b2ec0d3118e3f04b1225e18a91c3daeec8895c8988fda0963c9f016b22505/TraderAlice/OpenAlice
+
+{Reactions}
+🔥
+
+[04/23/2026 08:35] Alex ClowdBOT_Free#5896
+🪙 Crypto Briefing — Morning Thursday, April 23, 2026
+
+📊 Market Overview
+Total Cap: $2.68T 🔴 -0.55%
+BTC Dominance: 58.2% | ETH: 10.5%
+
+📈 Fear & Greed: 46/100 — 😐 Neutral
+
+💰 Top 10 by Market Cap
+
+🚀 Top 24h Movers
+
+🔥 Trending Coins
+  • SPK (Spark) — Rank #222
+  • CHIP (CHIP) — Rank #168
+  • PENGU (Pudgy Penguins) — Rank #100
+  • RAVE (RaveDAO) — Rank #140
+
+
+[04/23/2026 08:35] Alex ClowdBOT_Free#5896
+• BTC (Bitcoin) — Rank #1
+
+📰 News & Data Sources
+• CoinDesk: coindesk.com
+• Cointelegraph: cointelegraph.com
+• Decrypt: decrypt.co
+• Whale Alert: @whale_alert
+• CryptoQuant: @cryptoquant_com
+
+— Sources: CoinGecko, Alternative.me | Updated: 10:33 UTC
+
+
+[04/23/2026 18:03] Alex ClowdBOT_Free#5896
+🪙 Crypto Briefing — Evening Thursday, April 23, 2026
+
+📊 Market Overview
+Total Cap: $2.68T 🔴 -1.94%
+BTC Dominance: 58.2% | ETH: 10.4%
+
+📈 Fear & Greed: 46/100 — 😐 Neutral
+
+💰 Top 10 by Market Cap
+ 1. BTC   $77,775      🔴 -1.46%        ($1.56T)
+ 2. ETH   $2,310       🔴 -3.74%        ($278.7B)
+ 3. USDT  $1.00        🟢 +0.01%        ($188.9B)
+ 4. XRP   $1.44        🔴 -0.96%        ($88.4B)
+ 5. BNB   $634.11      🔴 -1.71%        ($85.5B)
+ 6. USDC  $0.9999      🟢 +0.00%        ($78.1B)
+ 7. SOL   $85.36       🔴 -2.99%        ($49.1B)
+ 8. TRX   $0.3291      🟢 +0.10%        ($31.2B)
+
+
+[04/23/2026 18:04] Alex ClowdBOT_Free#5896
+9. FIGR_HELOC $1.04        🟢 +1.00%        ($17.7B)
+10. DOGE  $0.0961      🔴 -1.30%        ($14.8B)
+
+🚀 Top 24h Movers
+Gainers:
+  🟢 FIGR_HELOC: +1.00% ($1.04)
+  🟢 TRX: +0.10% ($0.3291)
+  🟢 USDT: +0.01% ($1.00)
+Losers:
+  🔴 BNB: -1.71% ($634.11)
+  🔴 SOL: -2.99% ($85.36)
+  🔴 ETH: -3.74% ($2,310)
+
+🔥 Trending Coins
+  • CHIP (CHIP) — Rank #187
+  • MOVR (Moonriver) — Rank #651
+  • SPK (Spark) — Rank #236
+
+
+[04/23/2026 18:04] Alex ClowdBOT_Free#5896
+• PENGU (Pudgy Penguins) — Rank #100
+  • BTC (Bitcoin) — Rank #1
+
+📰 News & Data Sources
+• CoinDesk: coindesk.com
+• Cointelegraph: cointelegraph.com
+• Decrypt: decrypt.co
+• Whale Alert: @whale_alert
+• CryptoQuant: @cryptoquant_com
+
+— Sources: CoinGecko, Alternative.me | Updated: 20:00 UTC
+
+
+[04/24/2026 06:01] Alex ClowdBOT_Free#5896
+🪙 Crypto Briefing — Morning Friday, April 24, 2026
+
+📊 Market Overview
+Total Cap: $2.69T 🔴 -0.03%
+BTC Dominance: 58.1% | ETH: 10.4%
+
+📈 Fear & Greed: 39/100 — 😨 Fear
+
+💰 Top 10 by Market Cap
+ 1. BTC   $77,987      🔴 -0.05%        ($1.56T)
+ 2. ETH   $2,315       🔴 -1.44%        ($279.4B)
+ 3. USDT  $1.00        🟢 +0.00%        ($189.7B)
+ 4. XRP   $1.43        🟢 +0.99%        ($88.3B)
+ 5. BNB   $634.18      🔴 -0.47%        ($85.5B)
+ 6. USDC  $0.9998      🔴 -0.00%        ($78.0B)
+ 7. SOL   $85.71       🔴 -0.21%        ($49.3B)
+ 8. TRX   $0.3278      🔴 -0.11%        ($31.1B)
+
+
+[04/24/2026 06:02] Alex ClowdBOT_Free#5896
+9. FIGR_HELOC $1.03        🔴 -0.46%        ($17.6B)
+10. DOGE  $0.0972      🟢 +1.29%        ($15.0B)
+
+🚀 Top 24h Movers
+Gainers:
+  🟢 DOGE: +1.29% ($0.0972)
+  🟢 XRP: +0.99% ($1.43)
+  🟢 USDT: +0.00% ($1.00)
+Losers:
+  🔴 FIGR_HELOC: -0.46% ($1.03)
+  🔴 BNB: -0.47% ($634.18)
+  🔴 ETH: -1.44% ($2,315)
+
+🔥 Trending Coins
+  • THETA (Theta Network) — Rank #167
+  • STABLE (​​Stable) — Rank #82
+  • RAVE (RaveDAO) — Rank #159
+
+
+[04/24/2026 06:02] Alex ClowdBOT_Free#5896
+• PENGU (Pudgy Penguins) — Rank #100
+  • AAVE (Aave) — Rank #55
+
+📰 News & Data Sources
+• CoinDesk: coindesk.com
+• Cointelegraph: cointelegraph.com
+• Decrypt: decrypt.co
+• Whale Alert: @whale_alert
+• CryptoQuant: @cryptoquant_com
+
+— Sources: CoinGecko, Alternative.me | Updated: 08:00 UTC
+
+
+[04/24/2026 18:02] Alex ClowdBOT_Free#5896
+🪙 Crypto Briefing — Evening Friday, April 24, 2026
+
+📊 Market Overview
+Total Cap: $2.68T 🟢 +0.09%
+BTC Dominance: 58.1% | ETH: 10.5%
+
+📈 Fear & Greed: 39/100 — 😨 Fear
+
+💰 Top 10 by Market Cap
+ 1. BTC   $77,685      🔴 -0.12%        ($1.56T)
+ 2. ETH   $2,320       🟢 +0.41%        ($280.0B)
+ 3. USDT  $1.00        🔴 -0.01%        ($189.7B)
+ 4. XRP   $1.44        🟢 +0.37%        ($88.7B)
+ 5. BNB   $637.62      🟢 +0.55%        ($86.0B)
+ 6. USDC  $0.9998      🔴 -0.01%        ($77.8B)
+ 7. SOL   $86.50       🟢 +1.35%        ($49.8B)
+ 8. TRX   $0.3245      🔴 -1.43%        ($30.8B)
+
+
+[04/24/2026 18:02] Alex ClowdBOT_Free#5896
+9. FIGR_HELOC $1.03        🔴 -0.77%        ($17.6B)
+10. DOGE  $0.0982      🟢 +2.16%        ($15.1B)
+
+🚀 Top 24h Movers
+Gainers:
+  🟢 DOGE: +2.16% ($0.0982)
+  🟢 SOL: +1.35% ($86.50)
+  🟢 BNB: +0.55% ($637.62)
+Losers:
+  🔴 BTC: -0.12% ($77,685)
+  🔴 FIGR_HELOC: -0.77% ($1.03)
+  🔴 TRX: -1.43% ($0.3245)
+
+🔥 Trending Coins
+  • APE (ApeCoin) — Rank #203
+  • PENGU (Pudgy Penguins) — Rank #100
+  • CHIP (USD.AI) — Rank #194
+
+
+[04/24/2026 18:02] Alex ClowdBOT_Free#5896
+• RAVE (RaveDAO) — Rank #164
+  • KAT (Katana) — Rank #460
+
+📰 News & Data Sources
+• CoinDesk: coindesk.com
+• Cointelegraph: cointelegraph.com
+• Decrypt: decrypt.co
+• Whale Alert: @whale_alert
+• CryptoQuant: @cryptoquant_com
+
+— Sources: CoinGecko, Alternative.me | Updated: 20:00 UTC
+
+
+[04/25/2026 06:01] Alex ClowdBOT_Free#5896
+🪙 Crypto Briefing — Morning Saturday, April 25, 2026
+
+📊 Market Overview
+Total Cap: $2.67T 🔴 -0.47%
+BTC Dominance: 58.1% | ETH: 10.5%
+
+📈 Fear & Greed: 31/100 — 😨 Fear
+
+💰 Top 10 by Market Cap
+ 1. BTC   $77,527      🔴 -0.59%        ($1.55T)
+ 2. ETH   $2,316       🟢 +0.02%        ($279.5B)
+ 3. USDT  $1.00        🔴 -0.00%        ($189.7B)
+ 4. XRP   $1.43        🔴 -0.08%        ($88.4B)
+ 5. BNB   $636.95      🟢 +0.44%        ($85.9B)
+ 6. USDC  $0.9998      🟢 +0.00%        ($77.7B)
+ 7. SOL   $86.22       🟢 +0.59%        ($49.6B)
+ 8. TRX   $0.3239      🔴 -1.18%        ($30.7B)
+
+
+[04/25/2026 06:02] Alex ClowdBOT_Free#5896
+9. FIGR_HELOC $1.03        🔴 -0.55%        ($17.5B)
+10. DOGE  $0.0985      🟢 +1.27%        ($15.2B)
+
+🚀 Top 24h Movers
+Gainers:
+  🟢 DOGE: +1.27% ($0.0985)
+  🟢 SOL: +0.59% ($86.22)
+  🟢 BNB: +0.44% ($636.95)
+Losers:
+  🔴 FIGR_HELOC: -0.55% ($1.03)
+  🔴 BTC: -0.59% ($77,527)
+  🔴 TRX: -1.18% ($0.3239)
+
+🔥 Trending Coins
+  • APE (ApeCoin) — Rank #178
+  • TRADOOR (Tradoor) — Rank #919
+  • KAT (Katana) — Rank #441
+
+
+[04/25/2026 06:02] Alex ClowdBOT_Free#5896
+• GRASS (Grass) — Rank #176
+  • CHIP (USD.AI) — Rank #216
+
+📰 News & Data Sources
+• CoinDesk: coindesk.com
+• Cointelegraph: cointelegraph.com
+• Decrypt: decrypt.co
+• Whale Alert: @whale_alert
+• CryptoQuant: @cryptoquant_com
+
+— Sources: CoinGecko, Alternative.me | Updated: 08:00 UTC
+
+
+[04/25/2026 18:04] Alex ClowdBOT_Free#5896
+🪙 Crypto Briefing — Evening Saturday, April 25, 2026
+
+📊 Market Overview
+Total Cap: $2.66T 🔴 -0.51%
+BTC Dominance: 58.1% | ETH: 10.5%
+
+📈 Fear & Greed: 31/100 — 😨 Fear
+
+💰 Top 10 by Market Cap
+ 1. BTC   $77,266      🔴 -0.54%        ($1.55T)
+ 2. ETH   $2,310       🔴 -0.41%        ($278.8B)
+ 3. USDT  $1.00        🟢 +0.01%        ($189.8B)
+ 4. XRP   $1.42        🔴 -1.43%        ($87.6B)
+ 5. BNB   $627.87      🔴 -1.53%        ($84.6B)
+ 6. USDC  $0.9998      🟢 +0.00%        ($77.7B)
+ 7. SOL   $85.65       🔴 -0.96%        ($49.3B)
+ 8. TRX   $0.3242      🔴 -0.08%        ($30.7B)
+
+
+[04/25/2026 18:04] Alex ClowdBOT_Free#5896
+9. FIGR_HELOC $1.03        🟢 +0.35%        ($17.7B)
+10. DOGE  $0.0979      🔴 -0.15%        ($15.1B)
+
+🚀 Top 24h Movers
+Gainers:
+  🟢 FIGR_HELOC: +0.35% ($1.03)
+  🟢 USDT: +0.01% ($1.00)
+  🟢 USDC: +0.00% ($0.9998)
+Losers:
+  🔴 SOL: -0.96% ($85.65)
+  🔴 XRP: -1.43% ($1.42)
+  🔴 BNB: -1.53% ($627.87)
+
+🔥 Trending Coins
+  • ULTIMA (Ultima) — Rank #258
+  • PENGU (Pudgy Penguins) — Rank #100
+  • TRUMP (Official Trump) — Rank #94
+
+
+[04/25/2026 18:04] Alex ClowdBOT_Free#5896
+• HYPER (Hyperlane) — Rank #447
+  • BSB (Block Street) — Rank #221
+
+📰 News & Data Sources
+• CoinDesk: coindesk.com
+• Cointelegraph: cointelegraph.com
+• Decrypt: decrypt.co
+• Whale Alert: @whale_alert
+• CryptoQuant: @cryptoquant_com
+
+— Sources: CoinGecko, Alternative.me | Updated: 20:00 UTC
+
+
+[04/26/2026 06:01] Alex ClowdBOT_Free#5896
+🪙 Crypto Briefing — Morning Sunday, April 26, 2026
+
+📊 Market Overview
+Total Cap: $2.68T 🟢 +0.44%
+BTC Dominance: 58.2% | ETH: 10.5%
+
+📈 Fear & Greed: 33/100 — 😨 Fear
+
+💰 Top 10 by Market Cap
+ 1. BTC   $78,009      🟢 +0.62%        ($1.56T)
+ 2. ETH   $2,328       🟢 +0.53%        ($281.0B)
+ 3. USDT  $1.00        🔴 -0.01%        ($189.8B)
+ 4. XRP   $1.43        🔴 -0.45%        ($88.0B)
+ 5. BNB   $631.99      🔴 -0.77%        ($85.2B)
+ 6. USDC  $0.9998      🔴 -0.01%        ($77.7B)
+ 7. SOL   $86.44       🟢 +0.25%        ($49.8B)
+ 8. TRX   $0.3237      🔴 -0.07%        ($30.7B)
+
+
+[04/26/2026 06:01] Alex ClowdBOT_Free#5896
+9. FIGR_HELOC $1.02        🔴 -0.55%        ($17.5B)
+10. DOGE  $0.0983      🔴 -0.14%        ($15.1B)
+
+🚀 Top 24h Movers
+Gainers:
+  🟢 BTC: +0.62% ($78,009)
+  🟢 ETH: +0.53% ($2,328)
+  🟢 SOL: +0.25% ($86.44)
+Losers:
+  🔴 XRP: -0.45% ($1.43)
+  🔴 FIGR_HELOC: -0.55% ($1.02)
+  🔴 BNB: -0.77% ($631.99)
+
+🔥 Trending Coins
+  • PENGU (Pudgy Penguins) — Rank #99
+  • ASTEROID (Asteroid Shiba) — Rank #237
+  • RAVE (RaveDAO) — Rank #163
+
+
+[04/26/2026 06:02] Alex ClowdBOT_Free#5896
+• CHIP (USD.AI) — Rank #230
+  • BSB (Block Street) — Rank #232
+
+📰 News & Data Sources
+• CoinDesk: coindesk.com
+• Cointelegraph: cointelegraph.com
+• Decrypt: decrypt.co
+• Whale Alert: @whale_alert
+• CryptoQuant: @cryptoquant_com
+
+— Sources: CoinGecko, Alternative.me | Updated: 08:00 UTC
+
+
+[04/26/2026 18:02] Alex ClowdBOT_Free#5896
+🪙 Crypto Briefing — Evening Sunday, April 26, 2026
+
+📊 Market Overview
+Total Cap: $2.69T 🟢 +0.91%
+BTC Dominance: 58.1% | ETH: 10.5%
+
+📈 Fear & Greed: 33/100 — 😨 Fear
+
+💰 Top 10 by Market Cap
+ 1. BTC   $78,035      🟢 +0.99%        ($1.56T)
+ 2. ETH   $2,350       🟢 +1.72%        ($283.6B)
+ 3. USDT  $1.00        🔴 -0.01%        ($189.8B)
+ 4. XRP   $1.43        🟢 +0.35%        ($87.9B)
+ 5. BNB   $632.04      🟢 +0.66%        ($85.2B)
+ 6. USDC  $0.9998      🟢 +0.00%        ($77.7B)
+ 7. SOL   $86.55       🟢 +1.06%        ($49.8B)
+ 8. TRX   $0.3240      🔴 -0.07%        ($30.7B)
+
+
+[04/26/2026 18:02] Alex ClowdBOT_Free#5896
+9. FIGR_HELOC $1.02        🔴 -1.38%        ($17.4B)
+10. DOGE  $0.0989      🟢 +0.98%        ($15.2B)
+
+🚀 Top 24h Movers
+Gainers:
+  🟢 ETH: +1.72% ($2,350)
+  🟢 SOL: +1.06% ($86.55)
+  🟢 BTC: +0.99% ($78,035)
+Losers:
+  🔴 USDT: -0.01% ($1.00)
+  🔴 TRX: -0.07% ($0.3240)
+  🔴 FIGR_HELOC: -1.38% ($1.02)
+
+🔥 Trending Coins
+  • ZBT (ZEROBASE) — Rank #415
+  • ASTEROID (Asteroid Shiba) — Rank #249
+  • PENGU (Pudgy Penguins) — Rank #99
+
+
+[04/27/2026 06:01] Alex ClowdBOT_Free#5896
+🪙 Crypto Briefing — Morning Monday, April 27, 2026
+
+📊 Market Overview
+Total Cap: $2.68T 🔴 -0.18%
+BTC Dominance: 58.2% | ETH: 10.5%
+
+📈 Fear & Greed: 47/100 — 😐 Neutral
+
+💰 Top 10 by Market Cap
+ 1. BTC   $77,816      🔴 -0.25%        ($1.56T)
+ 2. ETH   $2,325       🔴 -0.13%        ($280.7B)
+ 3. USDT  $1.00        🟢 +0.00%        ($189.8B)
+ 4. XRP   $1.42        🔴 -0.38%        ($87.6B)
+ 5. BNB   $629.43      🔴 -0.39%        ($84.8B)
+ 6. USDC  $0.9999      🟢 +0.02%        ($77.8B)
+ 7. SOL   $85.95       🔴 -0.59%        ($49.5B)
+ 8. TRX   $0.3237      🟢 +0.01%        ($30.7B)
+
+
+[04/27/2026 06:02] Alex ClowdBOT_Free#5896
+9. FIGR_HELOC $1.02        —               ($17.4B)
+10. DOGE  $0.0984      🟢 +0.08%        ($15.1B)
+
+🚀 Top 24h Movers
+Gainers:
+  🟢 DOGE: +0.08% ($0.0984)
+  🟢 USDC: +0.02% ($0.9999)
+  🟢 TRX: +0.01% ($0.3237)
+Losers:
+  🔴 XRP: -0.38% ($1.42)
+  🔴 BNB: -0.39% ($629.43)
+  🔴 SOL: -0.59% ($85.95)
+
+🔥 Trending Coins
+  • XCN (Onyxcoin) — Rank #155
+  • PENGU (Pudgy Penguins) — Rank #90
+  • CHIP (USD.AI) — Rank #210
+
+
+[04/27/2026 06:02] Alex ClowdBOT_Free#5896
+• BTC (Bitcoin) — Rank #1
+  • LUNC (Terra Luna Classic) — Rank #135
+
+📰 News & Data Sources
+• CoinDesk: coindesk.com
+• Cointelegraph: cointelegraph.com
+• Decrypt: decrypt.co
+• Whale Alert: @whale_alert
+• CryptoQuant: @cryptoquant_com
+
+— Sources: CoinGecko, Alternative.me | Updated: 08:00 UTC
+
+
+[04/27/2026 18:02] Alex ClowdBOT_Free#5896
+🪙 Crypto Briefing — Evening Monday, April 27, 2026
+
+📊 Market Overview
+Total Cap: $2.65T 🔴 -1.56%
+BTC Dominance: 58.1% | ETH: 10.4%
+
+📈 Fear & Greed: 47/100 — 😐 Neutral
+
+💰 Top 10 by Market Cap
+ 1. BTC   $76,720      🔴 -1.68%        ($1.54T)
+ 2. ETH   $2,287       🔴 -2.66%        ($276.1B)
+ 3. USDT  $0.9999      🔴 -0.02%        ($189.7B)
+ 4. XRP   $1.39        🔴 -2.27%        ($85.9B)
+ 5. BNB   $623.39      🔴 -1.37%        ($84.0B)
+ 6. USDC  $0.9999      🔴 -0.00%        ($77.7B)
+ 7. SOL   $84.50       🔴 -2.37%        ($48.7B)
+ 8. TRX   $0.3255      🟢 +0.46%        ($30.9B)
+
+
+[04/27/2026 18:02] Alex ClowdBOT_Free#5896
+9. FIGR_HELOC $1.03        🟢 +1.61%        ($17.7B)
+10. DOGE  $0.0978      🔴 -1.08%        ($15.1B)
+
+🚀 Top 24h Movers
+Gainers:
+  🟢 FIGR_HELOC: +1.61% ($1.03)
+  🟢 TRX: +0.46% ($0.3255)
+Losers:
+  🔴 XRP: -2.27% ($1.39)
+  🔴 SOL: -2.37% ($84.50)
+  🔴 ETH: -2.66% ($2,287)
+
+🔥 Trending Coins
+  • PENGU (Pudgy Penguins) — Rank #88
+  • LUNC (Terra Luna Classic) — Rank #131
+  • ORCA (Orca) — Rank #279
+  • AAVE (Aave) — Rank #54
+
+
+[04/27/2026 18:02] Alex ClowdBOT_Free#5896
+• RAVE (RaveDAO) — Rank #172
+
+📰 News & Data Sources
+• CoinDesk: coindesk.com
+• Cointelegraph: cointelegraph.com
+• Decrypt: decrypt.co
+• Whale Alert: @whale_alert
+• CryptoQuant: @cryptoquant_com
+
+— Sources: CoinGecko, Alternative.me | Updated: 20:00 UTC
+
+
+[04/28/2026 06:01] Alex ClowdBOT_Free#5896
+🪙 Crypto Briefing — Morning Tuesday, April 28, 2026
+
+📊 Market Overview
+Total Cap: $2.65T 🔴 -1.07%
+BTC Dominance: 58.1% | ETH: 10.4%
+
+📈 Fear & Greed: 33/100 — 😨 Fear
+
+💰 Top 10 by Market Cap
+ 1. BTC   $76,948      🔴 -1.12%        ($1.54T)
+ 2. ETH   $2,289       🔴 -1.52%        ($276.3B)
+ 3. USDT  $0.9999      🔴 -0.03%        ($189.7B)
+ 4. XRP   $1.39        🔴 -1.88%        ($86.0B)
+ 5. BNB   $624.90      🔴 -0.70%        ($84.2B)
+ 6. USDC  $0.9998      🔴 -0.01%        ($77.6B)
+ 7. SOL   $84.15       🔴 -2.10%        ($48.4B)
+ 8. TRX   $0.3243      🟢 +0.19%        ($30.7B)
+
+
+[04/28/2026 06:01] Alex ClowdBOT_Free#5896
+9. FIGR_HELOC $1.03        🟢 +1.24%        ($17.6B)
+10. DOGE  $0.1002      🟢 +1.87%        ($15.4B)
+
+🚀 Top 24h Movers
+Gainers:
+  🟢 DOGE: +1.87% ($0.1002)
+  🟢 FIGR_HELOC: +1.24% ($1.03)
+  🟢 TRX: +0.19% ($0.3243)
+Losers:
+  🔴 ETH: -1.52% ($2,289)
+  🔴 XRP: -1.88% ($1.39)
+  🔴 SOL: -2.10% ($84.15)
+
+🔥 Trending Coins
+  • LUNC (Terra Luna Classic) — Rank #122
+  • PENGU (Pudgy Penguins) — Rank #89
+  • PI (Pi Network) — Rank #46
+
+
+[04/28/2026 06:02] Alex ClowdBOT_Free#5896
+• CHIP (USD.AI) — Rank #221
+  • RAVE (RaveDAO) — Rank #170
+
+📰 News & Data Sources
+• CoinDesk: coindesk.com
+• Cointelegraph: cointelegraph.com
+• Decrypt: decrypt.co
+• Whale Alert: @whale_alert
+• CryptoQuant: @cryptoquant_com
+
+— Sources: CoinGecko, Alternative.me | Updated: 08:00 UTC
+
+
+[04/28/2026 18:02] Alex ClowdBOT_Free#5896
+🪙 Crypto Briefing — Evening Tuesday, April 28, 2026
+
+📊 Market Overview
+Total Cap: $2.63T 🔴 -0.50%
+BTC Dominance: 57.9% | ETH: 10.5%
+
+📈 Fear & Greed: 33/100 — 😨 Fear
+
+💰 Top 10 by Market Cap
+ 1. BTC   $76,174      🔴 -0.69%        ($1.52T)
+ 2. ETH   $2,290       🟢 +0.13%        ($276.3B)
+ 3. USDT  $0.9998      🔴 -0.01%        ($189.7B)
+ 4. XRP   $1.38        🔴 -1.05%        ($85.0B)
+ 5. BNB   $623.56      🟢 +0.06%        ($84.0B)
+ 6. USDC  $0.9999      🔴 -0.00%        ($77.5B)
+ 7. SOL   $83.61       🔴 -1.01%        ($48.1B)
+ 8. TRX   $0.3238      🔴 -0.51%        ($30.7B)
+
+
+[04/28/2026 18:02] Alex ClowdBOT_Free#5896
+9. FIGR_HELOC $1.04        🟢 +0.46%        ($17.9B)
+10. DOGE  $0.0993      🟢 +1.62%        ($15.3B)
+
+🚀 Top 24h Movers
+Gainers:
+  🟢 DOGE: +1.62% ($0.0993)
+  🟢 FIGR_HELOC: +0.46% ($1.04)
+  🟢 ETH: +0.13% ($2,290)
+Losers:
+  🔴 BTC: -0.69% ($76,174)
+  🔴 SOL: -1.01% ($83.61)
+  🔴 XRP: -1.05% ($1.38)
+
+🔥 Trending Coins
+  • PROS (Pharos) — Rank #230
+  • PI (Pi Network) — Rank #46
+  • MON (Monad) — Rank #130
+
+
+[04/28/2026 18:02] Alex ClowdBOT_Free#5896
+• TAO (Bittensor) — Rank #37
+  • PENGU (Pudgy Penguins) — Rank #87
+
+📰 News & Data Sources
+• CoinDesk: coindesk.com
+• Cointelegraph: cointelegraph.com
+• Decrypt: decrypt.co
+• Whale Alert: @whale_alert
+• CryptoQuant: @cryptoquant_com
+
+— Sources: CoinGecko, Alternative.me | Updated: 20:00 UTC
+
+
+[04/29/2026 06:01] Alex ClowdBOT_Free#5896
+🪙 Crypto Briefing — Morning Wednesday, April 29, 2026
+
+📊 Market Overview
+Total Cap: $2.66T 🟢 +0.49%
+BTC Dominance: 58.1% | ETH: 10.6%
+
+📈 Fear & Greed: 26/100 — 😨 Fear
+
+💰 Top 10 by Market Cap
+ 1. BTC   $77,261      🟢 +0.41%        ($1.55T)
+ 2. ETH   $2,328       🟢 +1.70%        ($281.1B)
+ 3. USDT  $0.9998      🔴 -0.01%        ($189.7B)
+ 4. XRP   $1.40        🟢 +0.14%        ($86.1B)
+ 5. BNB   $627.39      🟢 +0.40%        ($84.6B)
+ 6. USDC  $0.9999      🟢 +0.01%        ($77.5B)
+ 7. SOL   $84.84       🟢 +0.64%        ($48.9B)
+ 8. TRX   $0.3221      🔴 -0.67%        ($30.5B)
+
+
+[04/29/2026 06:02] Alex ClowdBOT_Free#5896
+9. FIGR_HELOC $1.04        🟢 +0.97%        ($17.9B)
+10. DOGE  $0.1022      🟢 +2.12%        ($15.7B)
+
+🚀 Top 24h Movers
+Gainers:
+  🟢 DOGE: +2.12% ($0.1022)
+  🟢 ETH: +1.70% ($2,328)
+  🟢 FIGR_HELOC: +0.97% ($1.04)
+Losers:
+  🔴 USDT: -0.01% ($0.9998)
+  🔴 TRX: -0.67% ($0.3221)
+
+🔥 Trending Coins
+  • BLEND (Fluent) — Rank #565
+  • PROS (Pharos) — Rank #250
+  • PUMP (Pump.fun) — Rank #85
+  • PI (Pi Network) — Rank #45
+
+
+[04/29/2026 06:02] Alex ClowdBOT_Free#5896
+• ORCA (Orca) — Rank #305
+
+📰 News & Data Sources
+• CoinDesk: coindesk.com
+• Cointelegraph: cointelegraph.com
+• Decrypt: decrypt.co
+• Whale Alert: @whale_alert
+• CryptoQuant: @cryptoquant_com
+
+— Sources: CoinGecko, Alternative.me | Updated: 08:00 UTC
+
+
+[04/29/2026 18:02] Alex ClowdBOT_Free#5896
+🪙 Crypto Briefing — Evening Wednesday, April 29, 2026
+
+📊 Market Overview
+Total Cap: $2.62T 🔴 -0.41%
+BTC Dominance: 58.0% | ETH: 10.5%
+
+📈 Fear & Greed: 26/100 — 😨 Fear
+
+💰 Top 10 by Market Cap
+ 1. BTC   $75,951      🔴 -0.29%        ($1.52T)
+ 2. ETH   $2,272       🔴 -0.78%        ($274.3B)
+ 3. USDT  $0.9996      🔴 -0.02%        ($189.6B)
+ 4. XRP   $1.36        🔴 -0.98%        ($84.1B)
+ 5. BNB   $618.81      🔴 -0.76%        ($83.4B)
+ 6. USDC  $0.9998      🔴 -0.00%        ($77.3B)
+ 7. SOL   $82.98       🔴 -0.73%        ($47.8B)
+ 8. TRX   $0.3234      🔴 -0.11%        ($30.6B)
+
+
+[04/29/2026 18:03] Alex ClowdBOT_Free#5896
+9. FIGR_HELOC $1.03        🔴 -0.72%        ($17.8B)
+10. DOGE  $0.1035      🟢 +4.25%        ($16.0B)
+
+🚀 Top 24h Movers
+Gainers:
+  🟢 DOGE: +4.25% ($0.1035)
+Losers:
+  🔴 BNB: -0.76% ($618.81)
+  🔴 ETH: -0.78% ($2,272)
+  🔴 XRP: -0.98% ($1.36)
+
+🔥 Trending Coins
+  • AI (Gensyn) — Rank #414
+  • ULTIMA (Ultima) — Rank #273
+  • PROS (Pharos) — Rank #265
+  • BLEND (Fluent) — Rank #655
+  • PI (Pi Network) — Rank #45
+
+
+==============================================================
+Exported 215 message(s)
+==============================================================

@@ -1,0 +1,237 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🎯alexecr
+==============================================================
+
+[02/20/2026 11:43] serialkiller15 (pinned)
+ECRV2 — Strategy Overview (VIP) 🤘☠️
+
+ECRV2 (Enhanced Crash‑Resistant V2) is a 5m futures strategy built around a crash‑resistant / recovery style approach. It combines indicator-based entries with risk controls + ATR-based exits, and includes Martingale DCA for LONGs (SHORT DCA is disabled by default for safety).
+
+Key Benefits ✅
+
+• LONG + SHORT enabled: V2 adds proper short entries/exits.
+• ATR-based TP/SL (smart + symmetric): take‑profit and stop levels are derived from ATR at entry, working for both longs and shorts.
+• Recovery / DCA engine (LONG only): can add up to 3 safety orders (max 4 entries total) to improve average entry during drawdowns.
+• Hard exposure cap: prevents runaway DCA by limiting total exposure (max multiplier).
+• Trailing stop enabled: helps lock profit when moves continue.
+• Fast timeframe (5m): reacts quickly to volatility and mean reversion swings.
+
+Entry Logic (high level) 🎯
+
+• LONG: oversold + lower Bollinger area + MACD confirmation + volume check.
+• SHORT: overbought + upper Bollinger area + MACD confirmation + volume check.
+
+Risk / Reality Check ⚠️
+
+ECRV2 is not a “set and forget” strategy — it’s a DCA/martingale-style system and must be used with care:
+
+• use sensible leverage + stake sizing
+• understand that DCA increases exposure during drawdowns
+• always start with DRY‑RUN / backtests
+
+
+[02/20/2026 11:43] serialkiller15
+Pinned a message.
+
+
+[02/20/2026 11:43] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474370665816784908/1474370938903462009/ECRV2.py?ex=69f34070&is=69f1eef0&hm=14c371ee23b13035433ffef4896274c19dbb9dc18d1e10a3179efbb0dd194f45&
+
+
+[02/21/2026 23:03] glad8769
+@Alex Crypto King could you please share some configuration, like the pairs that you used as well as the leverage that you found comfortable to go with? Thanks!
+
+
+[02/25/2026 07:40] serialkiller15
+Pairlist: as always i always use the same pairlists mostly
+    "BTC/USDT:USDT",
+    "ETH/USDT:USDT",
+    "SOL/USDT:USDT",
+    "BNB/USDT:USDT",
+    "XRP/USDT:USDT",
+    "ADA/USDT:USDT",
+    "AVAX/USDT:USDT",
+    "DOT/USDT:USDT",
+    "MATIC/USDT:USDT",
+    "LINK/USDT:USDT",
+    "ATOM/USDT:USDT",
+    "UNI/USDT:USDT",
+    "LTC/USDT:USDT",
+    "NEAR/USDT:USDT",
+    "APT/USDT:USDT",
+    "ARB/USDT:USDT",
+    "OP/USDT:USDT",
+    "INJ/USDT:USDT",
+    "TIA/USDT:USDT",
+    "SUI/USDT:USDT",
+    "SEI/USDT:USDT",
+    "FIL/USDT:USDT",
+    "ICP/USDT:USDT",
+    "DOGE/USDT:USDT",
+    "SHIB/USDT:USDT",
+    "PEPE/USDT:USDT",
+    "AR/USDT:USDT",
+    "AAVE/USDT:USDT",
+    "MKR/USDT:USDT",
+    "CRV/USDT:USDT",
+    "LDO/USDT:USDT",
+    "GRT/USDT:USDT",
+    "SAND/USDT:USDT",
+    "MANA/USDT:USDT",
+    "AXS/USDT:USDT",
+    "RUNE/USDT:USDT",
+    "FTM/USDT:USDT",
+    "ALGO/USDT:USDT",
+    "VET/USDT:USDT",
+    "HBAR/USDT:USDT",
+    "ETC/USDT:USDT",
+    "XLM/USDT:USDT",
+    "TRX/USDT:USDT",
+    "BCH/USDT:USDT",
+    "EOS/USDT:USDT",
+    "THETA/USDT:USDT",
+    "XTZ/USDT:USDT"
+
+Lev: -> 1x
+
+
+[02/25/2026 07:50] glad8769
+funny that I have a totally different outcome 🙁
+
+
+[02/25/2026 08:06] serialkiller15
+thats crypto welcome to crypto
+
+
+[04/23/2026 08:17] serialkiller15 (pinned)
+@everyonei was busy the last days but here is ECRV3 if someone want to try it, but i must say ECRV2 already does a good job
+
+📊 ECRV31 vs ECRV2 — Strategy Update Summary 🤘
+
+🏗️ What's New in V31:
+✅ Entry logic unchanged — same mean-reversion signals
+🔥 Exit system completely rewritten!
+
+🎯 Major Exit Changes:
+• Reversal exits enabled (use_exit_signal = True) — was disabled in V2
+• Removed fixed ATR TP/SL → replaced by zone-based profit peak trailing
+• 4 profit zones with adaptive ATR trailing stops
+• Added RSI overbought/oversold exits (68/32 with profit gate)
+• Added BB middleband cross exits — "mean reversion done"
+• Micro-trail for small profits (< 1% zone)
+
+🔧 Risk Fixes:
+🐛 Short SL bug FIXED! V2 had broken short stoploss calculation
+• trailing_stop config removed → custom zone logic replaces it
+• ROI table disabled → everything handled by custom_exit
+
+📈 Philosophy Shift:
+V2 = Fixed ATR targets + emergency exits
+V31 = Profit-preserving adaptive trailing that scales with trade performance
+
+🤖 Full rewrite of exit engine while keeping proven entry & DCA logic!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474370665816784908/1496787084399214686/ECRV31.py?ex=69f31019&is=69f1be99&hm=5fab0d12c23ac0deadd62be7bb969aa07d2f2e6eeaa969f993233fc8471943de&
+
+{Reactions}
+👍 (4) 🔥 🚀
+
+[04/23/2026 08:17] serialkiller15
+Pinned a message.
+
+
+[04/27/2026 23:14] divarak
+@Alex Crypto King , it is possible to set leverage  > 1x on this strategy?
+
+
+[04/28/2026 06:36] serialkiller15
+yes mine always runs on 1x leverage...
+
+
+[04/28/2026 09:54] divarak
+Could you please tell me where to modify it? Can't understand which line is🙏🏻🤦‍♂️
+
+
+[04/28/2026 09:55] serialkiller15
+it should be standard on 1x?
+
+
+[04/28/2026 09:55] divarak
+I want to test 10x
+
+
+[04/28/2026 09:55] serialkiller15
+ach i see let me check !
+
+
+[04/28/2026 09:56] divarak
+Yes, 1x is standard.. Just want to push it a bit 😁
+
+
+[04/28/2026 09:59] serialkiller15
+Just add this method inside the ECRV31 class:
+
+    def leverage(
+        self,
+        pair: str,
+        current_time: datetime,
+        current_rate: float,
+        proposed_leverage: float,
+        max_leverage: float,
+        entry_tag: Optional[str],
+        side: str,
+        **kwargs,
+    ) -> float:
+        return 10.0
+
+Where to put it: Right after use_exit_signal = True (around line 42).
+
+───
+
+That's it mate — returns 10x fixed leverage for every trade. Freqtrade will cap it at the exchange max if 10x isn't available on that pair.
+
+⚠️ Warning with ECR + 10x: Martingale DCA + 10x leverage = liquidation risk is real. Your -0.12 stoploss becomes -120% at 10x, so make sure your DCA levels and stoploss are adjusted or you'll get rekt fast. 🤘
+
+{Reactions}
+🫡
+
+[04/28/2026 10:02] serialkiller15
+or like this
+Now add this method anywhere inside the class:
+
+    def leverage(
+        self,
+        pair: str,
+        current_time: datetime,
+        current_rate: float,
+        proposed_leverage: float,
+        max_leverage: float,
+        entry_tag: Optional[str],
+        side: str,
+        **kwargs,
+    ) -> float:
+        return min(self.leverage_value, max_leverage)
+
+───
+
+Done! ✅ Just change this one line at the top of the strategy:
+
+leverage_value = 10.0  # ← CONFIGURE LEVERAGE HERE
+
+• 10.0 = 10x leverage
+• 5.0 = 5x leverage
+• 1.0 = 1x leverage (back to original)
+
+The min() makes sure you don't request more than the exchange allows for that pair.
+
+{Reactions}
+👏
+
+==============================================================
+Exported 18 message(s)
+==============================================================

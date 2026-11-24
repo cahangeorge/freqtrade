@@ -1,0 +1,329 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 📊alexkasuari_results
+==============================================================
+
+[02/20/2026 14:42] serialkiller15
+will post results here, started the strategy today in the morning so needs time for it!
+
+
+[02/21/2026 10:47] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474384502863171742/1474719063161704659/image.png?ex=69f33327&is=69f1e1a7&hm=357766f416c467d63718a03e35197f1bf2188b2a7eae3b62b10b64984e8e66ce&
+
+
+[02/21/2026 13:03] themarkx_
+any pairlist suggestion
+
+
+[02/21/2026 16:33] themarkx_
+ID L/S    Pair           Since       Profit (USDT)
+--------  -------------  ----------  ---------------
+1 S 10x   SOL/USDT:USDT  2 h ago     -2.76% (-1.50)
+2 S 10x   BNB/USDT:USDT  2 h ago     12.62% (6.79)
+3 S 10x   XRP/USDT:USDT  2 h ago     3.33% (1.81)
+4 S 10x   BCH/USDT:USDT  2 h ago     10.90% (5.93)
+5 S 10x   NEO/USDT:USDT  46 min ago  9.12% (4.96)
+6 L 10x   ARB/USDT:USDT  16 min ago  -6.02% (-3.28)
+7 L 10x   TRU/USDT:USDT  16 min ago  -4.98% (-2.71)
+8 L 10x   BB/USDT:USDT   1 min ago   -2.67% (-1.45)
+--------  -------------  ----------  ---------------
+Total                                10.54
+
+
+[02/22/2026 07:31] themarkx_
+Day (count)      USDT               Profit %
+---------------  -------------  --  ----------
+2026-02-22 (25)  -258.966 USDT   0  -23.31%
+2026-02-21 (7)   19.56 USDT      0  1.79%
+2026-02-20 (0)   0 USDT          0  0.00%
+2026-02-19 (0)   0 USDT          0  0.00%
+2026-02-18 (0)   0 USDT          0  0.00%
+2026-02-17 (0)   0 USDT          0  0.00%
+2026-02-16 (0)   0 USDT          0  0.00%
+
+
+[02/22/2026 10:08] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474384502863171742/1475071824458158282/image.png?ex=69f32a30&is=69f1d8b0&hm=f728cc8a7d8827af6bdb68dfcc4b89d2eeee32fb33685ab52606498432825fc1&
+
+
+[02/22/2026 10:09] themarkx_
+How I use the same pairlist still this much difference in result
+
+
+[02/22/2026 10:11] serialkiller15
+TF 15m?
+
+
+[02/22/2026 10:11] themarkx_
+Yes
+
+
+[02/22/2026 10:12] themarkx_
+Everything is as it is
+
+
+[02/22/2026 10:12] serialkiller15
+interesting, but i must say i see some red trades but they recovers..
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474384502863171742/1475072724899594271/image.png?ex=69f32b07&is=69f1d987&hm=ebf2f2e0e3063f383cc19f1c6d9c213282b3aa4409a3f1663b95bf80dbbb1edf&
+
+
+[02/22/2026 10:12] themarkx_
+Does leverage is 10
+
+
+[02/22/2026 10:13] themarkx_
+Bcz my all trade are in 10X
+
+
+[02/22/2026 10:13] themarkx_
+ROI: Closed trades
+∙ -252.214 USDT (-13.11%) (-23.16 Σ%)
+∙ 0 
+ROI: All trades
+∙ -237.433 USDT (-8.17%) (-21.8 Σ%)
+Total Trade Count: 55
+Bot started: 2026-02-21 13:24:22
+First Trade opened: 20 hours ago (2026-02-21 14:01:09)
+Latest Trade opened: 30 minutes ago (2026-02-22 09:41:37)
+Win / Loss: 10 / 27
+Winrate: 27.03%
+Expectancy (Ratio): -6.82 (-0.62)
+Avg. Duration: 5:21:44
+Best Performing: BCH/USDT:USDT: 8.295 USDT (15.25%)
+Trading volume: 45303.3 USDT
+Profit factor: 0.15
+Max Drawdown: 25.49% (283.289 USDT)
+    from 2026-02-21 20:40:12 (22.276 USDT)
+    to 2026-02-22 09:06:24 (-261.013 USDT)
+
+
+[02/22/2026 10:13] themarkx_
+Performance:
+1.  BCH/USDT:USDT 8.295 USDT (15.25%) (1)
+2.  1000RATS/USDT:USDT 6.05 USDT (11.04%) (1)
+3.  BNB/USDT:USDT 5.721 USDT (10.62%) (1)
+4.  NEO/USDT:USDT 5.544 USDT (10.18%) (1)
+5.  BICO/USDT:USDT 3.059 USDT (5.56%) (1)
+6.  SOL/USDT:USDT 2.756 USDT (5.06%) (1)
+7.  XRP/USDT:USDT 2.717 USDT (4.99%) (1)
+8.  1000PEPE/USDT:USDT 2.258 USDT (5.05%) (1)
+9.  BLUR/USDT:USDT 2.096 USDT (5.09%) (1)
+10.  ORDI/USDT:USDT -3.885 USDT (-20.48%) (1)
+11.  ARB/USDT:USDT -6.431 USDT (-6.63%) (2)
+12.  CRV/USDT:USDT -8.052 USDT (-18.01%) (1)
+13.  PEOPLE/USDT:USDT -10.588 USDT (-20.58%) (1)
+14.  ENA/USDT:USDT -10.663 USDT (-20.73%) (1)
+15.  GRT/USDT:USDT -10.757 USDT (-20.91%) (1)
+16.  ETC/USDT:USDT -10.86 USDT (-20.88%) (1)
+17.  BIGTIME/USDT:USDT -10.994 USDT (-21.13%) (1)
+18.  GMT/USDT:USDT -11.107 USDT (-20.14%) (1)
+19.  BOME/USDT:USDT -11.18 USDT (-21.73%) (1)
+20.  ACE/USDT:USDT -11.209 USDT (-20.37%) (1)
+21.  ARKM/USDT:USDT -11.244 USDT (-21.62%) (1)
+22.  HOOK/USDT:USDT -11.519 USDT (-20.94%) (1)
+23.  LDO/USDT:USDT -11.543 USDT (-20.94%) (1)
+24.  TRU/USDT:USDT -11.63 USDT (-21.35%) (1)
+25.  1000BONK/USDT:USDT -11.772 USDT (-21.35%) (1)
+26.  METIS/USDT:USDT -12.733 USDT (-23.26%) (1)
+27.  FIL/USDT:USDT -13.029 USDT (-23.63%) (1)
+28.  VET/USDT:USDT -13.083 USDT (-23.61%) (1)
+29.  GALA/USDT:USDT -18.737 USDT (-19.00%) (2)
+30.  MEME/USDT:USDT -22.97 USDT (-21.43%) (2)
+31.  DYDX/USDT:USDT -23.118 USDT (-20.94%) (2)
+32.  BB/USDT:USDT -23.604 USDT (-22.17%) (2)
+
+
+[02/22/2026 10:13] serialkiller15
+no i cutted it of to 5x, will go on 3x. 10x will not be handeble with the stoploss!
+mostly other Strategies i have postet in the member group are running with low leverage!
+
+
+[02/22/2026 10:14] themarkx_
+That's why let me cut down leverage.
+
+But after cutting leverage still need some modifications in exit part
+
+
+[02/22/2026 10:15] serialkiller15
+absolute yes, i will go in further, but the changes of the minimal_roi is working good at the moment, and the exits also need som further adjustments!
+
+
+[02/22/2026 10:16] themarkx_
+Let's try that pull back exit system which is in alexbandsniper
+
+
+[02/22/2026 10:16] themarkx_
+Optuna version
+
+
+[02/22/2026 10:16] serialkiller15
+good idea!
+
+
+[02/24/2026 12:31] glad8769
+Whitelist with 90 pairs: ['1INCH/USDT:USDT', 'AAVE/USDT:USDT', 'ACH/USDT:USDT', 'ADA/USDT:USDT', 'AGLD/USDT:USDT', 'ALGO/USDT:USDT', 'ANKR/USDT:USDT', 'API3/USDT:USDT', 'APT/USDT:USDT', 'ARB/USDT:USDT', 'ATOM/USDT:USDT', 'AVAX/USDT:USDT', 'AXS/USDT:USDT', 'BAND/USDT:USDT', 'BTC/USDT:USDT', 'CELO/USDT:USDT', 'CELR/USDT:USDT', 'CHZ/USDT:USDT', 'COMP/USDT:USDT', 'COTI/USDT:USDT', 'CRV/USDT:USDT', 'CTSI/USDT:USDT', 'DASH/USDT:USDT', 'DOT/USDT:USDT', 'DYDX/USDT:USDT', 'EGLD/USDT:USDT', 'ENJ/USDT:USDT', 'ENS/USDT:USDT', 'ETC/USDT:USDT', 'ETH/USDT:USDT', 'FET/USDT:USDT', 'FIL/USDT:USDT', 'FLOW/USDT:USDT', 'GALA/USDT:USDT', 'GMX/USDT:USDT', 'GRT/USDT:USDT', 'HBAR/USDT:USDT', 'ICP/USDT:USDT', 'IMX/USDT:USDT', 'INJ/USDT:USDT', 'IOTA/USDT:USDT', 'IOTX/USDT:USDT', 'JTO/USDT:USDT', 'JUP/USDT:USDT', 'KAVA/USDT:USDT', 'KSM/USDT:USDT', 'LDO/USDT:USDT', 'LINK/USDT:USDT', 'LTC/USDT:USDT', 'MASK/USDT:USDT', 'MINA/USDT:USDT', 'MTL/USDT:USDT', 'NEAR/USDT:USDT', 'NEO/USDT:USDT', 'OGN/USDT:USDT', 'ONE/USDT:USDT', 'OP/USDT:USDT', 'PENDLE/USDT:USDT', 'PYTH/USDT:USDT', 'QTUM/USDT:USDT', 'RENDER/USDT:USDT', 'RLC/USDT:USDT', 'ROSE/USDT:USDT', 'RSR/USDT:USDT', 'RUNE/USDT:USDT', 'SAND/USDT:USDT', 'SEI/USDT:USDT', 'SKL/USDT:USDT', 'SNX/USDT:USDT', 'SOL/USDT:USDT', 'SSV/USDT:USDT', 'STORJ/USDT:USDT', 'STRK/USDT:USDT', 'STX/USDT:USDT', 'SUI/USDT:USDT', 'SUSHI/USDT:USDT', 'THETA/USDT:USDT', 'TIA/USDT:USDT', 'TRX/USDT:USDT', 'UNI/USDT:USDT', 'VET/USDT:USDT', 'WOO/USDT:USDT', 'XLM/USDT:USDT', 'XMR/USDT:USDT', 'XRP/USDT:USDT', 'XTZ/USDT:USDT', 'YFI/USDT:USDT', 'ZEC/USDT:USDT', 'ZIL/USDT:USDT', 'ZRX/USDT:USDT']
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474384502863171742/1475832624131084490/image.png?ex=69f34bbd&is=69f1fa3d&hm=79631cfcaa74f7add3a7d7c8971a00d216ab6daab3375d056f85fda2aa0da17a&
+
+
+[02/24/2026 12:39] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474384502863171742/1475834479183663165/image.png?ex=69f34d77&is=69f1fbf7&hm=9654e03f18d1bee61e3e70145c0e997385dacb49250b8e9297c35c2ed2d281cb&
+
+
+[02/25/2026 23:21] glad8769
+ok now we have the same "last" shape :/
+
+
+[02/28/2026 20:58] divarak
+Day (count)      USDT           USD          Profit %
+---------------  -------------  -----------  ----------
+2026-02-28 (48)  -282.213 USDT  -282.21 USD  -29.12%
+2026-02-27 (44)  -23.84 USDT    -23.84 USD   -2.40%
+2026-02-26 (0)   0 USDT         0.00 USD     0.00%
+2026-02-25 (0)   0 USDT         0.00 USD     0.00%
+2026-02-24 (0)   0 USDT         0.00 USD     0.00%
+2026-02-23 (0)   0 USDT         0.00 USD     0.00%
+2026-02-22 (0)   0 USDT         0.00 USD     0.00%
+
+
+ROI: Closed trades
+∙ -306.053 USDT (-6.85%) (-30.91 Σ%)
+∙ -306.053 USD
+ROI: All trades
+∙ -311.885 USDT (-6.88%) (-31.5 Σ%)
+∙ -311.885 USD
+Total Trade Count: 94
+Bot started: 2026-02-26 21:45:38
+First Trade opened: a day ago (2026-02-26 22:38:13)
+Latest Trade opened: 19 minutes ago (2026-02-28 20:38:21)
+Win / Loss: 41 / 51
+Winrate: 44.57%
+Expectancy (Ratio): -3.33 (-0.33)
+Avg. Duration: 5:17:41
+Best Performing: BAT/USDT:USDT: 14.033 USDT (14.16%)
+Trading volume: 83063.292 USDT
+Profit factor: 0.40
+Max Drawdown: 35.16% (367.393 USDT)
+    from 2026-02-27 11:38:31 (54.972 USDT)
+    to 2026-02-28 12:27:22 (-312.42 USDT)
+Current Drawdown: 34.55% (361.025 USDT)
+    from 2026-02-27 11:38:31 (54.972 USDT)
+
+{Reactions}
+😢
+
+[03/10/2026 18:58] vasko123.
+I didn't think anyone would be interested in this old strategy. I took it from here for mental training - https://botacademy.ddns.net/2024/05/02/st-kasuari-btc/
+I managed to fine-tune it a bit through testing, but I continue hyper-optimizing every day, as there are so many settings. I've selected pairs. And I hyper-optimize each parameter separately. Claude is paid for advice and analysis. I rejected any changes to the strategy's logic. The backtest results are on the screenshot. But this is just the beginning of hyper-optimization with LamboLoss4. lev = 10
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474384502863171742/1481003391219142891/e797e13287a6984e.png?ex=69f2fda4&is=69f1ac24&hm=80c621a4c888214935162c329e787efbac51b5078750cb847967a9e3d65a8270&
+
+{Embed}
+stash86
+https://botacademy.ddns.net/2024/05/02/st-kasuari-btc/
+ST – Kasuari BTC
+
+
+[03/10/2026 19:02] serialkiller15
+That looks good I also try to handle the hypoeropting stuff.. But as you said many parameters in there..
+
+
+[03/10/2026 19:04] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474384502863171742/1481004945661497568/LamboLoss4.py?ex=69f2ff16&is=69f1ad96&hm=4a35b1374d40ebc039967b08e7be8b31f73fa5c51bc0b0e0cc29709cd0fc4062&
+
+
+[03/10/2026 19:06] vasko123.
+Here's the latest hyperopt. You're already doing so much for the community.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474384502863171742/1481005466745311342/Kasuari_btc_template.json?ex=69f2ff93&is=69f1ae13&hm=c8966e43ba9cc1dcecf33509e2bb37060aa8a86723836ecd50c701c9a4886e9c&
+
+
+[03/10/2026 19:07] vasko123.
+"pair_whitelist": [
+            "KAVA/USDT:USDT",
+            "BLUR/USDT:USDT",
+            "AZTEC/USDT:USDT",
+            "ESP/USDT:USDT",
+            "ICP/USDT:USDT",
+            "ZORA/USDT:USDT",
+            "AWE/USDT:USDT",
+            "FOGO/USDT:USDT",
+            "EIGEN/USDT:USDT",
+            "GAS/USDT:USDT",
+            "PIEVERSE/USDT:USDT",
+            "GLM/USDT:USDT",
+            "COMP/USDT:USDT",
+            "BERA/USDT:USDT",
+            "FARTCOIN/USDT:USDT",
+            "SKR/USDT:USDT",
+            "TWT/USDT:USDT",
+            "ZK/USDT:USDT",
+            "FF/USDT:USDT",
+            "SENT/USDT:USDT",
+            "OP/USDT:USDT",
+            "2Z/USDT:USDT",
+            "BARD/USDT:USDT",
+            "ETHFI/USDT:USDT",
+            "LIT/USDT:USDT",
+            "H/USDT:USDT",
+            "STABLE/USDT:USDT",
+            "KITE/USDT:USDT",
+            "TRUMP/USDT:USDT",
+            "ENA/USDT:USDT",
+            "ASTER/USDT:USDT",
+            "WLFI/USDT:USDT",
+            "DOGE/USDT:USDT",
+            "ADA/USDT:USDT",
+            "BTC/USDT:USDT"
+        ],
+
+
+[03/10/2026 19:07] serialkiller15
+In the Multibotashboard I already implemented hyperopt and other stuff so not more manual work thanks for sharing will check tomorrow
+
+
+[03/10/2026 19:08] serialkiller15
+Interesting pair list..
+
+
+[03/10/2026 19:09] vasko123.
+These were good for profit. But once I finish hyper-optimizing, I'll look for a new list.
+
+
+[03/10/2026 19:14] vasko123.
+Entry signals. But many entry signals lead to immediate exits. We're working on this.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474384502863171742/1481007285957558272/ebb3ea2064cb3753.png?ex=69f30144&is=69f1afc4&hm=1750134e036718fcbe77b22319e2cd736b008b78e69f254d2820fd1bab030106&
+
+
+[03/10/2026 19:58] glad8769
+what does the multibotdashboard do? Does it run automatically the hyperopt? I wonder if hyperfitting the strategy every day / 4h would help to be profitable. I have not enough power to run it, but perhaps is it something that you are alredy doing?
+
+
+[03/10/2026 20:02] serialkiller15
+It does many thinks hyperopt backtest watching running bots and another stuff an will also implement automatic stuff... But needs to be finished will release the next days and wait for improvements and ideas..
+
+{Reactions}
+❤️
+
+==============================================================
+Exported 36 message(s)
+==============================================================

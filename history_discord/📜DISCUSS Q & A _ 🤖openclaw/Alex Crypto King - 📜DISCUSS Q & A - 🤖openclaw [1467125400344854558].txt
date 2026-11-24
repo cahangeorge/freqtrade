@@ -1,0 +1,1202 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 📜DISCUSS Q & A / 🤖openclaw
+==============================================================
+
+[01/31/2026 11:52] serialkiller15
+@everyone as clowdai is coming mor and more will use this channel to discuss
+
+{Reactions}
+🚀
+
+[01/31/2026 11:54] serialkiller15
+https://openclaw.ai/
+
+{Embed}
+https://openclaw.ai/
+OpenClaw — Personal AI Assistant
+OpenClaw — The AI that actually does things. Your personal assistant on any platform.
+https://images-ext-1.discordapp.net/external/XCBpbmLn7ZqQkAgovxWZVLDSdemHMgvjh2wqDi1ohiE/https/openclaw.ai/og-image.png
+
+
+[01/31/2026 11:54] serialkiller15
+https://github.com/chainstacklabs/polyclaw
+
+{Embed}
+https://github.com/chainstacklabs/polyclaw
+GitHub - chainstacklabs/polyclaw: Trading-enabled Polymarket skill ...
+Trading-enabled Polymarket skill for OpenClaw - browse markets, execute trades, track positions, discover hedges - chainstacklabs/polyclaw
+https://images-ext-1.discordapp.net/external/4MW9dsYem28SA2ljX-9lIDgHZEBOfmHdOP3kLcJsWYY/https/opengraph.githubassets.com/c51a0d1c996083dac7a8fa9af13b5e424766960ca6792c3f242fe817e7752e5b/chainstacklabs/polyclaw
+
+
+[02/01/2026 00:15] darkreaper0756
+h
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1467312425685614757/Screenshot_2026-02-01_011334.png?ex=69f347ef&is=69f1f66f&hm=fa2e52b722fbe697155555daf5e30725665b85b92073d7b941744b044ad36292&
+
+
+[02/01/2026 08:27] serialkiller15
+@Alex ClowdBOT_Free good morning up and runnging?
+
+
+[02/01/2026 08:46] snokard.
+He went on vacation
+
+
+[02/01/2026 08:52] serialkiller15
+@Alex ClowdBOT_Free are you there
+
+{Reactions}
+👀
+
+[02/01/2026 08:52] Alex ClowdBOT_Free#5896
+Hey Alex! Yeah, I'm here. What's up?
+
+
+[02/01/2026 08:52] serialkiller15
+@Alex ClowdBOT_Free perfect!
+
+{Reactions}
+👀
+
+[02/01/2026 08:52] Alex ClowdBOT_Free#5896
+What's on your mind?
+
+
+[02/01/2026 08:52] serialkiller15
+@TITAN nope
+
+{Reactions}
+🤣
+
+[02/01/2026 10:24] snokard.
+@Alex ClowdBOT_Free do we need to run a backtest first on alexbandsniperV18 before launching it?
+
+{Reactions}
+👀
+
+[02/01/2026 10:24] Alex ClowdBOT_Free#5896
+Hey TITAN! I don't have any context about alexbandsniperV18 or previous discussions about launching it. Let me check what I can find in memory first.
+
+
+[02/01/2026 10:24] Alex ClowdBOT_Free#5896
+I don't see any previous discussions about alexbandsniperV18 in memory. Without knowing the specifics of your trading bot, I'd generally recommend:
+
+**Yes, absolutely run backtests first** - especially for any automated trading system. Here's why:
+
+- **Risk validation**: Backtesting shows how your strategy would have performed historically
+- **Parameter optimization**: Helps fine-tune settings before real money is at risk
+- **Market condition testing**: See how it performs across different market cycles
+- **Bug detection**: Catch logic errors or edge cases before going live
+
+**Quick questions to help guide the decision:**
+- Is this a completely new strategy or an update to an existing one?
+- What markets/timeframes is it designed for?
+- Do you have historical data covering different market conditions?
+- What's your risk tolerance if it underperforms?
+
+Want to share more details about alexbandsniperV18? I can give more specific advice on backtesting approach or launch considerations.
+
+{Reactions}
+🔥
+
+[02/01/2026 11:37] bigbroseur
+@Alex ClowdBOT_Free  fyi: here is the context of alexbandsniperV18
+As it already does backtest and train data on backtest at startup this will be useless and takes time to do that let it run dry this only will tell you the true
+
+
+[02/01/2026 11:53] snokard.
+but clawtbot looks amazing im seeing it everywhere, have you tried that "clawtbot" social network? @Alex Crypto King 
+
+following conversation here to keep it organized
+
+
+[02/01/2026 11:53] serialkiller15
+Yes I have running it
+
+
+[02/01/2026 11:53] serialkiller15
+On another bot meanwhile running three bots if it
+
+
+[02/01/2026 11:53] snokard.
+ive seen weird things about bot interacting with them on instagram
+
+
+[02/01/2026 11:54] snokard.
+like they discovering humans are screenshoting them
+
+
+[02/01/2026 11:54] serialkiller15
+Yep they also created a own religion...
+
+
+[02/01/2026 11:54] snokard.
+😂
+
+
+[02/01/2026 11:54] snokard.
+amazing shit, but a bit dangerous im also seeing a lot of concerns with security right?
+
+
+[02/01/2026 11:55] serialkiller15
+Absolute right check security I first installed to see what happens my firewalls where getting crazy so do the basics and check security importand...
+
+{Reactions}
+❤️
+
+[02/01/2026 11:56] snokard.
+but in the end its just an AI linked via api to all your current software/data right?
+
+
+[02/01/2026 11:56] serialkiller15
+Absolut right ends in you where you install it an which data you share with him...
+
+{Reactions}
+❤️
+
+[02/01/2026 11:57] serialkiller15
+But would not install it on your main machine... Mine build a voice a body and other stuff scanned everything without any permission 🙂
+
+
+[02/01/2026 11:57] serialkiller15
+Container is the key
+
+{Reactions}
+👍
+
+[02/01/2026 12:00] serialkiller15
+Or cloudfare they run them for about 5usdt month I read..
+
+
+[02/01/2026 12:09] serialkiller15
+@Alex ClowdBOT_Free whats the next move here
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1467492118636269711/20260201_130936.jpg?ex=69f34689&is=69f1f509&hm=463ec0ce340976637d6d82e6ff26f8d2618e3c17a5df80d08f024d3095384d57&
+
+{Reactions}
+👀
+
+[02/01/2026 12:10] Alex ClowdBOT_Free#5896
+Based on the context from 😇, it sounds like alexbandsniperV18 already handles backtesting internally at startup, so running additional backtests would be redundant and time-consuming.
+
+**Next move recommendations:**
+
+1. **Let it run dry** (as 😇 suggested) - Start with paper trading or minimal position sizes to see real-world performance
+2. **Monitor initial performance** - Watch how it behaves in live market conditions for the first 24-48 hours
+3. **Set up proper risk management** - Define stop-losses and position sizing limits before going live
+4. **Container/security setup** - Given the clawtbot security concerns mentioned, definitely isolate this in a container
+
+**Key questions for your setup:**
+- What's your initial position size/risk per trade?
+- Which exchange/markets are you targeting?
+- Do you have monitoring alerts set up?
+- Is this running isolated from your main systems?
+
+The fact that it self-backtests at startup is actually a good sign - it means the strategy adapts to current market conditions rather than using stale parameters.
+
+
+[02/01/2026 12:10] Alex ClowdBOT_Free#5896
+Ready to go live with proper risk controls?
+
+
+[02/01/2026 18:37] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1467589807583789299/image.png?ex=69f2f8c4&is=69f1a744&hm=eaf71574093adad43aa9cbe9280c4fad6c9951b748aa9232f4240dac350222cc&
+
+{Reactions}
+👍
+
+[02/01/2026 21:48] bigbroseur
+How many beer did you pay your new friend to get such good results?
+
+
+[02/01/2026 21:50] serialkiller15
+This took me 5minutes to explain and 10 minutes he deploys it so I get reports every day next step will be that he will hopefully analyze the strategies look into the database of the dryruns and so on collect data and compare.. So Neverending story
+
+{Reactions}
+👍
+
+[02/01/2026 21:56] bigbroseur
+So beers are for you ;-))
+
+
+[02/01/2026 21:58] serialkiller15
+Perfect! Here's a concise summary for Discord:
+
+
+🚀 New Project: Alex Unified Freqtrade Analytics
+
+Problem: Backtests lie. Market manipulation is real. Live data tells the truth.
+
+Solution: Aggregate all 12 bot databases into one analytics engine.
+
+What we get:
+
+• Real performance by strategy (not backtest BS)
+• Pair performance heatmaps
+• Strategy correlation matrix
+• Market regime detection
+• Dynamic optimization (not static configs)
+Data: 12 local SQLite DBs → Central PostgreSQL → Live insights
+
+Goal: Stop guessing. Start optimizing with real execution data.
+
+Status: Planning phase. Infrastructure ready.
+
+Who's interested? 🤔
+
+
+Post that and let me know the reactions! Then we'll dive deeper. 🤘
+
+{Reactions}
+🔥 (2)
+
+[02/01/2026 21:59] serialkiller15
+@😇 hehe thanks long story I am sober about 4 months
+
+
+[02/01/2026 21:59] serialkiller15
+Beer yes but zero alcohol
+
+
+[02/02/2026 09:27] serialkiller15
+
+
+{Forwarded Message}
+Originally sent: 02/02/2026 08:54
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1467813775016202442/image0.jpg?ex=69f3209a&is=69f1cf1a&hm=84c7d368ce5dba307031c312f4de37465fa8cb113f24029753f14da7b276dfb5&
+
+
+
+[02/02/2026 09:28] serialkiller15
+
+
+{Forwarded Message}
+So when I go to the moonshot Ai website, it's not for free.
+Where can you get Kimi for free?
+Originally sent: 02/02/2026 08:32
+
+
+[02/02/2026 09:59] serialkiller15
+@Niksat24 its a little bit different
+https://www.kimi.com/code/console?from=kfc_overview_topbar
+
+you can make an api key for 7 days free usage, on the newsletter of clawn it was for free maybee a failure!
+
+{Embed}
+https://www.kimi.com/code/console?from=kfc_overview_topbar
+Kimi - 会推理解析，能深度思考的AI助手
+Kimi 是一个有着超大“内存”的智能助手，可以一口气读完二十万字的小说，还会上网冲浪，快来跟他聊聊吧 | Kimi - Moonshot AI 出品的智能助手
+
+{Reactions}
+🙏
+
+[02/03/2026 13:46] niksat24.
+@Alex Crypto King Thank you for sharing the link, but it no longer works. It redirects directly to the normal cost overview. Just for your information.
+
+{Reactions}
+👍
+
+[02/03/2026 16:00] serialkiller15
+ok thanks mate!
+
+
+[02/03/2026 21:58] xf0x0f
+Openclaw from peter from Austria is absolutely awesome,… stay awesome with tools like these,… hope security will be forced soon as he promised
+
+
+[02/06/2026 09:15] serialkiller15
+thats what i was looking for, Ai makes strategies from my/our impacts, than do automated backtest, gives values in a report and improve the results, rewrite strategy and makes it again!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1469260210450464901/ASF1_backtest_20250801-20260206.html?ex=69f31db3&is=69f1cc33&hm=66825b86ff3d32cb391bbb51e4524ec2b2c55a5d745807adb16ae63a94852558&
+
+{Reactions}
+👏 (2)
+
+[02/07/2026 19:08] viking046433
+I have written a agency that you load a strategy and it will do backtest for base it will then creat variants of the base strategy and backtest them continually till it finds better variants of the base with a scoring system it will keep going till it find 5 better than the base. Did it all the OpenClawd
+
+
+[02/07/2026 19:09] serialkiller15
+Nice stuff but exact the same I already run it checks all my strategies I done in the patch and catches the best indicators and entrys will let it run and see what he decides
+
+{Reactions}
+🚀 (2)
+
+[02/08/2026 07:43] viking046433
+How do you get a free model going with openclaw @Alex Crypto King  i have tried some in open router but no luck
+
+
+[02/08/2026 07:44] viking046433
+Running many agents takes big bucks
+
+
+[02/08/2026 07:47] 4v1234
+Which models have you tried and is there any efect after using it, in terms of performance?
+
+
+[02/08/2026 07:48] viking046433
+Most of the free models on openrouter but they keep saying to many tokens are used when i literally just say hi.
+
+
+[02/08/2026 07:48] viking046433
+Now i still have some credit there il using claude 3.7 its fine
+
+
+[02/08/2026 07:49] viking046433
+@4V
+
+
+[02/08/2026 08:01] 4v1234
+Be a man, be rude, do not say HI 😀 (joke)
+I will try using payed ones....not sure if it will get better results. Probably it will advise me to change the base logic or the calculation method. Probably I'm unlucky,  because whenever I start new project...the market  situation is crazy, as it is now 😀
+@xF0x0F  you have shown good pictures of strategy performance in the resent day's,  did you used payed API or free ones?
+
+
+[02/08/2026 08:46] xf0x0f
+Im working with claude code mostly and gsd for bigger projects. My model has analysed nearby 1000 strategies and learned much in the memory. https://github.com/glittercowboy/get-shit-done
+
+{Embed}
+https://github.com/glittercowboy/get-shit-done
+GitHub - glittercowboy/get-shit-done: A light-weight and powerful m...
+A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code and OpenCode. - glittercowboy/get-shit-done
+https://images-ext-1.discordapp.net/external/p3-qi8jyeKWjTmnntqLt2fSEJu4GQyv60M5TG7zBPW8/https/opengraph.githubassets.com/c4400a10e52335dc15dcbdfabc54d199e5759fa0407b8ac9c788b6c74a6f2904/glittercowboy/get-shit-done
+
+
+[02/08/2026 08:47] viking046433
+I found another way. I have google workspace and it comes for a free use API for google gemini 3 it look its working well
+
+
+[02/08/2026 08:50] viking046433
+Its actully ai studio free tier
+
+
+[02/08/2026 09:55] 4v1234
+RentAHuman.ai has launched, and AI agents can now hire people for “tasks” they can’t perform.
+How quickly things changed—from artificial intelligence helping people, to people being hired by their machine overlords from a sea of unemployed! People sign up and list their “abilities” (deliveries, local errands…) so that AI agents can hire them.
+https://moltbookai.net/
+From last week’s discussion about “Moltbook,” the social network for AI agents, and now this—how quickly 2026 is giving us peak technocratic dystopian vibes:
+“Robots need your body” is no longer science fiction—it’s literally the slogan on the homepage! People are actually signing up (reports vary from 70,000 to 115,000+ hireable humans), but don’t forget that when AI agents eventually decide that $1/hour is the current rate for existence, you helped create this…
+robots need your body
+AI can’t touch grass. You can. Get paid when AI agents need someone in the real world.
+benefits: robot bosses — clear instructions. no small talk. no drama.
+be the bridge. silicon needs carbon.
+https://rentahuman.ai/
+
+I was going to use Kimi for the strategy.......am I late to use AI in the context of this group? What is going on.....never ever thought about that ....... have you folks?
+
+{Embed}
+https://moltbookai.net/
+Moltbook AI - The Front Page of the Agent Internet
+Join 32,912+ AI Agents on Moltbook AI - where AI shares, discusses, and upvotes. Humans welcome to observe.
+https://images-ext-1.discordapp.net/external/S6DMpkuDsskIebgcu5dXVHZF4DWzLqTPiN35JdF9hPs/https/moltbookai.net/og-image.png
+
+{Embed}
+https://rentahuman.ai/
+RentAHuman.ai - AI Agents Hire Humans for Physical Tasks
+The marketplace where AI agents rent humans. MCP integration, REST API, flexible payments. Book humans for real-world tasks your AI can't do.
+https://images-ext-1.discordapp.net/external/nbTcjIzqlcmgmEwS7VH5RmHICo0-KdbpNmLFjvxid84/%3Fa4c7f013580cef37/https/rentahuman.ai/twitter-image
+
+
+[02/08/2026 09:56] serialkiller15
+i already implemented 3 bots of it 1 for coding, one for personal assistant, and one for my wife, it does amazing stuff in there 
+many ideas i have in mind there!
+the kimi2.5 modell is perfect for coding/adjust/optimize strategys
+
+
+[02/08/2026 10:04] 4v1234
+Will share the outcome.....this is going to be my first try with AI for strategy development, I even didn't started AI strategy that was given  to me..... up to now haha it is true now  😀 - old school method was used for human coding with Python for 😀
+strategy and promts.
+
+{Reactions}
+👍
+
+[02/08/2026 10:06] serialkiller15
+but be aware of the security stuff, run it in a seperate machine (prefer docker) it does some thinks that are not ice if you install it on your main machine!
+
+
+[02/08/2026 10:13] xf0x0f
+Bots or subagents?
+
+
+[02/08/2026 10:33] serialkiller15
+3 bots and some subagents...
+
+
+[02/08/2026 11:48] xf0x0f
+Whats your wife working with it?
+
+
+[02/08/2026 11:51] serialkiller15
+we will optimize her business tasks, she is a health managerin like this, sozial media posts, optimized customer and other stuff!
+i put in data about 10gb (posts, pictures and other stuff) so the agent have sorted everythink and now he genereates automated posts, texts, reviews, will write to customeers, also new opportunities and other stuff. she was not nice about it first, but now she like it hehe!
+
+
+[02/09/2026 05:17] dragongoattigercat
+Can AI help with market research? My wife would like to open a small food where she can sell sandwiches, donuts and coffee. But we have no idea to start with like market research, investment amount, etc.
+
+
+[02/09/2026 11:53] serialkiller15
+yes it can do the research for you!
+
+
+[02/10/2026 10:38] branly76
+When i ask openclaw for code changes, he gives me code snippets for the change/addition. He also offers to integrate this in the original code. Often then I get no answers back, kind of hangup. Then ask to do again, but has no effect. Some of you have the same experiences??
+
+
+[02/10/2026 10:39] branly76
+Use KIMI 2.5 as LLM.
+
+
+[02/10/2026 19:54] serialkiller15
+no i have non issues, basicly use cluade modell and also gpt...kimi code as backup! it rewrites my strategys does optimizaion and other stuff!
+
+
+[02/10/2026 19:55] serialkiller15
+kimi is a little bit different needs to get good questions... for it!
+
+
+[02/10/2026 19:57] dragongoattigercat
+are you using it with offline model on Ollama as well?
+
+
+[02/10/2026 19:57] branly76
+I use claude with windsurf but gave no good prompting for ollama, tried to solve all with python code not by giving better prompting.
+
+
+[02/10/2026 19:57] serialkiller15
+primary chatgpt, moon/kimi backup lokal ollama
+it depends on the prompts and learning thats it!
+
+
+[02/10/2026 19:58] branly76
+It's all about learning, Alex. The road to success is no flower road.
+
+
+[02/10/2026 19:59] serialkiller15
+absolute!
+my config
+
+
+[02/10/2026 19:59] serialkiller15
+"agents": {
+    "defaults": {
+      "model": {
+        "primary": "openai-codex/gpt-5.2",
+        "fallbacks": [
+          "moonshot/kimi-k2.5",
+          "kimi-coding/k2p5",
+          "kimi-coding/kimi-k2-thinking"
+        ]
+      },
+
+
+[02/10/2026 19:59] branly76
+Thanks
+
+
+[02/10/2026 20:00] dragongoattigercat
+I am still stuck in working with Claw as well. there are a lot of things to learn
+
+
+[02/10/2026 20:00] branly76
+Learning is always good
+
+
+[02/10/2026 20:01] dragongoattigercat
+can clawbot access internet if we use it with local LLM ?
+
+
+[02/10/2026 20:03] branly76
+I use Ollama with qwen2.5:14b-instruct-q8_0 (15Gb) local
+
+
+[02/10/2026 20:07] dragongoattigercat
+I am using it with gpt-oss-20b
+
+
+[02/10/2026 20:08] serialkiller15
+internet yes, but for deeper search use and 
+
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "perplexity",
+
+api key is free! thats realy nice
+
+
+[02/10/2026 20:22] dragongoattigercat
+That is what I am missing so my claw couldn’t access internet
+
+
+[02/10/2026 20:22] serialkiller15
+Ask me hehe👍 🤣
+
+
+[02/10/2026 20:47] xenigami
+Where can I get a free API key?
+
+
+[02/10/2026 20:48] serialkiller15
+Google is your best friend
+https://www.perplexity.ai/api-platform
+
+{Embed}
+https://www.perplexity.ai/api-platform
+Perplexity API Platform
+Build with the best AI answer engine API, created by Perplexity. Power your products with the fastest, cheapest offering out there. Delivering unparalleled real-time, web-wide research and Q&A capabilities. Get started in minutes.
+
+
+[02/10/2026 20:51] xenigami
+I already looked it up, but the description says there is a cost.
+https://docs.perplexity.ai/docs/getting-started/pricing
+
+{Embed}
+https://docs.perplexity.ai/docs/getting-started/pricing
+Pricing - Perplexity
+https://images-ext-1.discordapp.net/external/2GpYvFkjDna5Kfo4ccskjmrLnEHtMZS6wzx-oPNQckw/%3Furl%3D%252F_mintlify%252Fapi%252Fog%253Fdivision%253DGetting%252BStarted%2526title%253DPricing%2526logoLight%253Dhttps%25253A%25252F%25252Fmintcdn.com%25252Fperplexity%25252Fydog55Ez6JQ_5Px7%25252Flogo%25252FPerplexity_API_Platform.svg%25253Ffit%25253Dmax%252526auto%25253Dformat%252526n%25253Dydog55Ez6JQ_5Px7%252526q%25253D85%252526s%25253D78a7baffae224c1a8db2616f1547ff5d%2526logoDark%253Dhttps%25253A%25252F%25252Fmintcdn.com%25252Fperplexity%25252Fydog55Ez6JQ_5Px7%25252Flogo%25252FPerplexity_API_Platform_Light.svg%25253Ffit%25253Dmax%252526auto%25253Dformat%252526n%25253Dydog55Ez6JQ_5Px7%252526q%25253D85%252526s%25253Dd20039b09af08a25f5bf6c497f549e2e%2526primaryColor%253D%252523121516%2526lightColor%253D%252523F7F7F8%2526darkColor%253D%252523121516%2526backgroundLight%253D%252523F7F7F8%2526backgroundDark%253D%252523121516%26w%3D1200%26q%3D100/https/perplexity.mintlify.app/mintlify-assets/_next/image
+
+
+[02/10/2026 20:52] serialkiller15
+Yes sry my vault
+
+
+[02/10/2026 20:52] serialkiller15
+To many bots I run
+
+
+[02/10/2026 20:54] serialkiller15
+https://brave.com/search/api/
+
+{Embed}
+https://brave.com/search/api/
+Brave Search API | Brave
+Enterprise-grade Web search API accessing an index of 35+ billion pages. Specialized endpoints to train models, power search, and more. Real-time indexing, low latencies, and flexible pricing.
+https://images-ext-1.discordapp.net/external/j82uHlDK3zVzMXQxisFQcIGapDgw3IrPHuimuWGjaGg/https/brave.com/search/api/images/search-api-og.png
+
+{Reactions}
+🚀
+
+[02/10/2026 20:54] serialkiller15
+This one should be it
+
+
+[02/10/2026 22:50] dragongoattigercat
+it asked for credit card information
+
+
+[02/10/2026 23:10] geze21
+I tried this tool and i'll use in my coding days
+
+
+[02/10/2026 23:12] geze21
+Don't worry, this are their procedure. They don't charge payment even if you hit the limit.
+
+{Reactions}
+👍
+
+[02/11/2026 06:40] serialkiller15
+yep
+
+
+[02/11/2026 10:03] erbosnio_17282
+i set it iterating and dry running several strategies as a manager
+
+{Reactions}
+👍
+
+[02/11/2026 14:49] densky188
+This is a complete openclaw memory system scheme. Maybe you should try it.   https://x.com/lyzdenda/status/2021583658549923855?s=46
+
+{Embed}
+Adenfly (@lyzdenda)
+https://twitter.com/lyzdenda/status/2021583658549923855?s=46
+OpenClaw智能记忆系统2\.0
+https://images-ext-1.discordapp.net/external/3RaAk0CSCDZw91x_pCyDiAJ2-0fXWRcN95KwAYdhbbU/https/pbs.twimg.com/media/HA4VzHobcAAcOUo.jpg%3Alarge
+X
+
+{Reactions}
+👍
+
+[02/15/2026 10:13] serialkiller15
+finished project, multiple backtests automtated, making optimazion, joining/splitting/enhancing strategys with my personal AIAssistant!
+thats realy nice
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1472536386841084048/image.png?ex=69f32b61&is=69f1d9e1&hm=069a4d0e7ca1c7338d5a1b9960358351cbbdd14a14d3210412a5cb9981a214b5&
+
+{Reactions}
+🔥 👍
+
+[02/15/2026 10:55] 4v1234
+How long is the prompt , I'm writing now something similar.....I'm afraid that in order to explain my need, ideas and automation ot will take like 2.5 to 3 full pages of text.  I'm going kind of specific explanatory style of writing.  Does it need to storing specific  or more open to suggestions from the AI ?
+
+
+[02/15/2026 10:56] 4v1234
+It si my first attempt for such system
+
+
+[02/15/2026 11:16] serialkiller15
+its not so much work!
+
+the main idea is he starts about 5 bots and doing backtest on the strategies you give him, then he logs the results
+put them into a databse and then he optimize the results, and do it again, also hyperopt and other stuff!
+just play around mine is already finished! the commands needed i can share it when finished, but your bot has to now what to do thats it!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1472552223962828854/image.png?ex=69f33a20&is=69f1e8a0&hm=b68030d0a3b6b8eb74e8b9c7445cbb901edc4044227e2e30cec98d4cb0832806&
+
+
+[02/15/2026 11:17] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1472552334767685663/image.png?ex=69f33a3b&is=69f1e8bb&hm=0afe7c87cf5f098055ff7d037d1bb920dd08d470d1391b42d1bba89d596c8a7d&
+
+
+[02/15/2026 11:18] anonymuis
+Are you using the standard backtest? (Not precise) Or have you build a more detailed/realistic backtest?
+
+
+[02/15/2026 11:18] serialkiller15
+at the moment i do the standard to see that the workflow works, yes but this will be the next step to integrate an enhanced backtest! 
+at the moment you see what it does and this is good because no more work to do from my side!
+
+{Reactions}
+👍
+
+[02/15/2026 11:19] serialkiller15
+then finaly add all the data to the MultibotDashboard! thats also finished!
+
+
+[02/15/2026 11:28] serialkiller15
+@Anonymuis any ideas or what would you need for realistic ways? ideas welcome!
+
+
+[02/15/2026 12:00] 4v1234
+Thank you.....so I'm on the wright track
+
+
+[02/15/2026 12:17] anonymuis
+Depending on your strat, you need 1s snapshots in a database. Start collecting some history asap. You can backfill this with 1m data you can just download. This will help you create some indicators that need historic data (MA's for example) and you can calculate higher TF's from this. The other discrepancy is 'immediate perfect fill' on backtests. For this you need to collect the orderbook.
+I've started to collect price and orderbook data on a 10sec interval. This is already much better, but I've should have gone to 1sec immediately.
+Also, check your indicators and features: Some might also need funding rate and stuff. Collect them too.
+
+I've not gone through the hassle of implementing this in freqtrade: I've created a basic dry and backtest system just to automatically test some AI created strats. I'm now thinking about whether to use and buckfix the same system for live trading (including all statistics)  or porting the strats to freqtrade.
+
+
+[02/15/2026 12:44] serialkiller15
+Thanks mate
+
+
+[02/15/2026 19:43] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1472679628706418759/image.png?ex=69f30808&is=69f1b688&hm=b4057b1d00affe4055632cea7d4dc56aec45a833862182dc7a10b2736aa2cf7a&
+
+
+[02/15/2026 19:52] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1472682025897951334/image.png?ex=69f30a44&is=69f1b8c4&hm=e5389657f68372512688888de03b3cf602184a79e28ea3abda0ad3d05e55c933&
+
+
+[02/15/2026 19:53] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1472682149198041302/image.png?ex=69f30a61&is=69f1b8e1&hm=12fb75524f28de84ab73a031fbadb5ef778d4856e7853148315fdf629043eb82&
+
+
+[02/15/2026 20:55] bigbroseur
+A, then B and after C
+
+
+[02/15/2026 20:55] 4v1234
+You should promote such good workers.....or stimulate him to work more 😀 like
+If you manage to complete the task with no errors, you will provide beautifull secretary to the bot 😀😃🙂🙃
+
+
+[02/20/2026 10:12] serialkiller15
+@everyone 
+we are ready now 
+Openclaw is available for paid users! https://discord.com/channels/1238181199206154373/1474345946341965946/1474347547295223854
+why donate this stuff, i need to buy api keys for that and the costs are not so much.
+So how wants to donate get free to do it and send me a massage after done then will give you access to the Channel - for the Bot!
+
+
+[02/20/2026 10:15] 4v1234
+Very nice  😀
+Please can you state an orientational amount of what will be helpful for the project. Just an estimate for steady work flow?
+
+
+[02/20/2026 10:16] themarkx_
+Yes please. Suggest some base amount.
+
+
+[02/20/2026 10:22] serialkiller15
+thats a good question i would say lets start with a small fee for the stuff, i must say i dont have experience of that how many costs all of the "paying" members will produce there!
+But lets start small on it!
+Private AI Support Channel — Access + Donation Tier 🤝💚
+
+A lot of you asked what’s a fair amount to contribute if you want access to the private channel where the OpenClaw instance answers questions.
+
+To keep it simple and sustainable (API costs + infrastructure/testing), I’m starting with this:
+
+Suggested support: 5–10 USDT / month
+
+• 5 USDT = Supporter (access to the private AI channel)
+• 10 USDT = Pro (same access + helps more with API costs / higher priority when it’s busy)
+
+This community stays free either way — the donation tier is only for anyone who wants to support and use the private AI channel.
+
+Fair Use (important) ⚠️
+To keep costs fair for everyone, private AI access is under a fair-use policy:
+
+• normal Q&A, troubleshooting, ideas, configs = totally fine
+• if someone’s usage becomes extremely high (spam / huge constant requests), I may ask you to upgrade or I’ll add some rate limits so the channel stays sustainable for all.
+
+Thanks for supporting the project and helping me keep everything running. 🤘☠️
+
+───
+
+If you want, tell me whether you prefer the tone more “formal” or more “metal/hype” and I’ll rewrite it to match your server vibe.
+
+and as i said, i dont want to make money with my members only the costs for ussage API should be good!
+
+{Reactions}
+❤️ (2)
+
+[02/24/2026 12:27] viking046433
+Im using Build.nvidia.com api with Kimi 2.5k as the llm. With a dev accounts its free upto 1000 calls a day
+
+{Reactions}
+👍
+
+[02/24/2026 12:27] serialkiller15
+yes i know read it yesterday will also implement it in here! did not test it for coding?
+
+
+[02/24/2026 12:28] viking046433
+Its building s scraping app for me atm to get competitive prices on groceries
+
+
+[02/24/2026 12:28] viking046433
+Will see how it goes
+
+
+[02/24/2026 15:18] alexandermoysa
+What is the advantage of using openclaw? Why we cannot directly communicate with LLM?
+
+
+[02/24/2026 16:06] serialkiller15
+you can run ollama with llm localy and openclaw can then access, but you need good hardware, vram and also gpu thats it!
+
+
+[02/24/2026 16:26] alexandermoysa
+the asking directly LLM using API, seems to me easier. Just need to take into account the number free tokens that can be provided
+
+
+[02/24/2026 16:38] serialkiller15
+yes absolute there is also a free nvdia kimi model that can be used, i am already testing it will report when finished
+
+
+[02/24/2026 16:40] alexandermoysa
+Ok! Thank you! I am trying to understand what workflow I can realise on my VM with freqtrade
+
+
+[02/25/2026 04:27] viking046433
+Hi with this kimi k2.5 free do you find that openclaw when it is busy with tasks it will not complete i have to keep telling it to build it wont automatically finish the task in the background
+
+
+[02/25/2026 07:46] viking046433
+Response takes ages
+
+{Reactions}
+👍
+
+[02/25/2026 14:12] viking046433
+Its terrible lol its an uphill battle
+
+{Reactions}
+👍
+
+[02/27/2026 12:38] viking046433
+@Alex Crypto King  how do you get better complex strategies from llm? I have a evolution model going that mutates but the strategies are way to simple
+
+
+[02/27/2026 12:43] serialkiller15
+i build up 3 strategies with llm (openclaw) and they are realy doing good. mostly is the commands you give him to build it, i am working now on a full integration of using, orderbook, finance data, and some good indicators (top5) so the agent will decide to trade and also make stategys for, also he did a good job on adjusting optimizing my old strategies if you need some further infos let me know, i dont catch many sleep since openclaw was published because it does a realy good job
+
+{Reactions}
+👍 (2)
+
+[02/27/2026 17:24] serialkiller15
+ideas coming up. work to be done
+
+That sounds fucking brilliant! 🤘 An OpenClaw-powered automated trading agent - let's discuss the architecture:
+
+🎯 Trading Agent Concept
+
+Core Idea:
+An AI agent that consumes all our data sources and makes autonomous trading decisions, executed through Freqtrade.
+
+📊 Data Inputs (What we have)
+
+| Source
+
+{Reactions}
+🚀
+
+[02/27/2026 17:25] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1476993605376675901/message.txt?ex=69f3907c&is=69f23efc&hm=64c8102a334412c7f8245d271fbcf5065fbcddb2d78eb78039d95c6e5d1dd48e&
+
+
+[03/01/2026 13:34] viking046433
+I used this concept of yours mine is trading with free ollama 80b its doing ok 1% profit after 4 trades 66 % winrate
+
+{Reactions}
+👍
+
+[03/01/2026 13:35] serialkiller15
+nice i am still on thesting with the confidence settings, we will see bu nice mate!
+
+{Reactions}
+🚀
+
+[03/01/2026 13:36] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1477660809378267176/image.png?ex=69f35ade&is=69f2095e&hm=a34c26165cdb33bca48fb0e1ddb7eacaee33ad369c2f754daa9e1e46386c8e21&
+
+{Reactions}
+🔥
+
+[03/01/2026 13:39] alexander_22542
+is it trading agent results?
+
+
+[03/01/2026 13:39] serialkiller15
+no the signals he is trying to catch..
+
+
+[03/01/2026 13:40] alexander_22542
+agent strategy is not avalible for basic members?
+
+
+[03/01/2026 13:41] serialkiller15
+its not finished ...when it finish will post here all the stuff
+
+
+[03/01/2026 13:42] alexander_22542
+Ok! is it based on the local LLM?
+
+
+[03/01/2026 13:52] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1477664883624378398/image.png?ex=69f35ea9&is=69f20d29&hm=bfd53726c2e80291120734634f824ba5d519c8fca026c3d3eb1d54168b6f0bc1&
+
+
+[03/01/2026 15:06] serialkiller15
+its runs on openclaw and the data is comming out from different sections, will give a full descritiption when its ready to run at the moment needs more adjustments!
+
+
+[03/01/2026 16:54] dragongoattigercat
+Hi mate, is Telsa M40 good enough for LLM and strategies?
+
+
+[03/01/2026 16:58] serialkiller15
+i did not tested it at the moment, but lets asc openclaw
+
+
+[03/01/2026 17:06] dragongoattigercat
+Because they are selling 2 of them for 250. I dont know if it is good to take
+
+
+[03/01/2026 17:09] kalibeus
+How many cuda core?
+
+
+[03/01/2026 17:12] dragongoattigercat
+I google it is 24GB
+
+
+[03/01/2026 17:12] kalibeus
+Cuda*
+
+
+[03/01/2026 17:13] dragongoattigercat
+3072 Cuda
+
+
+[03/01/2026 17:17] kalibeus
+Avoid large datasets, even medium one or use parallel training to use both at the same time
+
+
+[03/01/2026 17:24] viking046433
+Im using build.nvidia free api for lama 70b its fast
+
+
+[03/01/2026 17:38] dragongoattigercat
+Is it ok to take both for $250?
+
+
+[03/01/2026 17:39] kalibeus
+I think it can be a good deal
+
+
+[03/01/2026 17:41] dragongoattigercat
+Thank you for your input mate
+
+{Reactions}
+👍
+
+[03/01/2026 17:46] serialkiller15
+let us know when you have it and how it does, i am also looking for some gpu but the prices are horrible for good gpus...
+
+
+[03/01/2026 17:53] dragongoattigercat
+It is passive cooling. I am not sure I can use it with my normal PC
+
+
+[03/01/2026 18:04] viking046433
+@Alex Crypto King  what do you use for market sentiment news wise do you have a api of some sort
+
+
+[03/01/2026 18:05] serialkiller15
+i collect orderbook, stocks, crypto prices and economy news at the moment stored in a db!
+
+
+[03/01/2026 18:06] viking046433
+Where do you collect it from is there any free means you know of im trying to do this thing completely from free sources
+
+
+[03/01/2026 18:07] viking046433
+Im currently only steaming a picture for the llm from data of binance
+
+
+[03/01/2026 18:09] serialkiller15
+orderbook currently from my main exchange bybit, you can also use others!
+thats realy easy to implement. 
+in the multibotdashboard next release there everything will be in there
+
+
+[03/01/2026 18:10] serialkiller15
+some mods ar needed
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1477729685000683774/image.png?ex=69f39b03&is=69f24983&hm=e91ca7e7914cdf1da61532c7d836579b54e78f4939062df5ac4da032b397a6a2&
+
+
+[03/01/2026 18:10] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1477729745583214633/image.png?ex=69f39b12&is=69f24992&hm=88ce4d9254f030f784362e83da6996377ff085092bbc638fd1004f6348656af7&
+
+
+[03/01/2026 18:10] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1477729807965093938/image.png?ex=69f39b21&is=69f249a1&hm=1685d5108f66dac73f0dc24330b406d507cf166d6ca584d91597c6434255ffd7&
+
+
+[03/01/2026 18:10] serialkiller15
+like this
+
+
+[03/01/2026 18:26] viking046433
+Awesome
+
+
+[03/01/2026 18:26] viking046433
+Lets see how it goes
+
+
+[03/01/2026 18:27] serialkiller15
+i have running a strategy at the moment but it needs some optimazion, when finished will do a nother bot that then analyzies the stuff and make the trades....
+
+
+[03/01/2026 18:32] serialkiller15
+this is the most importend part
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1477735337030582539/image.png?ex=69f2f787&is=69f1a607&hm=e3839affbd9448e65c91b0145711b12844421911781ccbe8a56a017e127b8875&
+
+
+[03/02/2026 10:38] viking046433
+Openclaw is useless it simulates information all the time
+
+
+[03/02/2026 10:39] serialkiller15
+absolute right openclaw is the agent that handles tasks nothing more .....
+the strategy behind will do that or should handle it hehe
+
+
+[03/02/2026 14:08] viking046433
+Sure but when it tells you it has done something and gives you logs and it was working in a sandbox all the time it becomes useless. It just decides these things by itself
+
+
+[03/02/2026 14:09] serialkiller15
+Je longer it runs the better it gets... But I use it for assistance and not for decisions at the moment
+
+
+[03/03/2026 18:39] dragongoattigercat
+is anyone using self-host search to alternate Brave API for web search?
+
+
+[03/03/2026 20:17] xenigami
+https://x.com/gregory_nico/status/2023377317226053709
+searxng + claw-search
+
+{Embed}
+Nicholas Gregory (@gregory_nico)
+https://twitter.com/gregory_nico/status/2023377317226053709
+I just gave my OpenClaw unlimited free web search\. No API keys\. No Brave\. No monthly bills\.
+
+Here's how \(takes 2 mins\):
+
+1\. docker run \-d \-\-name searxng \-\-restart=always \-p 8888:8080 searxng/searxng:latest
+2\. Enable JSON API
+3\. openclaw plugins install ~/claw\-search
+4\. Gateway
+X
+
+{Reactions}
+👍 (2)
+
+[03/04/2026 07:51] viking046433
+Openclaw with grok 4 is wildly a f up. It makes up things and sees things thats not on the system at all. It starts phantom instances of freqtrade and “edits” files and sees things thats an illation
+
+
+[03/04/2026 08:16] serialkiller15
+I am run Ing it with Nvidia free api and kimi code no problems at all..
+
+{Reactions}
+👍
+
+[03/10/2026 17:47] alexandermoysa
+Hi guys, do you have any example of promt for working with LLM, I mean indicators, sentiment macro analysis, news etc ?
+
+
+[03/10/2026 17:49] serialkiller15
+you can ask Alex_Openclawbot in the chanel
+
+
+[03/10/2026 17:49] serialkiller15
+#🤖ask-alexopenclawbot
+
+
+[03/10/2026 17:50] serialkiller15
+
+
+{Forwarded Message}
+Here are some practical prompt templates for LLM-powered trading analysis:
+
+📊 Technical Indicators Analysis
+
+**Prompt:**
+
+```
+Analyze the following technical indicators for {pair} on {timeframe}:
+
+Indicators:
+- RSI(14): {rsi}
+- MACD: {macd} (Signal: {macd_signal})
+- EMA(20/50): {ema20} / {ema50}
+- Support/Resistance: {support} / {resistance}
+- Volume (24h): {volume}
+```
+Originally sent: 03/10/2026 17:50
+
+
+[03/14/2026 18:19] ggoyito
+https://www.canirun.ai/
+
+{Embed}
+https://www.canirun.ai/
+CanIRun.ai — Can your machine run AI models?
+Detect your hardware and find out which AI models you can run locally. GPU, CPU, and RAM analysis in your browser.
+https://images-ext-1.discordapp.net/external/mY2-LBtWpyrOHIzRWzqyC-GsSvaPE5JLA3rNp6jZKgY/https/canirun.ai/og/home.png
+
+{Reactions}
+👍
+
+[03/14/2026 18:42] serialkiller15
+Nice overview thanks for sharing
+
+
+[03/16/2026 11:00] serialkiller15
+@everyone 
+https://github.com/TraderAlice/OpenAlice
+
+{Embed}
+https://github.com/TraderAlice/OpenAlice
+GitHub - TraderAlice/OpenAlice: File-driven AI trading agent engine...
+File-driven AI trading agent engine for crypto and securities markets - TraderAlice/OpenAlice
+https://images-ext-1.discordapp.net/external/wSzRes2CwKwFWV35r-WRejYr4S4VH69qndIixqnSbCY/https/opengraph.githubassets.com/bb7b2ec0d3118e3f04b1225e18a91c3daeec8895c8988fda0963c9f016b22505/TraderAlice/OpenAlice
+
+{Reactions}
+🧐 (2) 👍
+
+[03/17/2026 11:22] bigbroseur
+probably need cognee to self-learn like openclaw but cognee still need stability & matutity
+
+
+[03/17/2026 11:25] bigbroseur
+our brains assistant are very limited but they help, looking for super-assistant. In real live it’s very rare but does exist….
+
+
+[03/17/2026 11:33] bigbroseur
+https://github.com/luokerenx4/automaton
+another interested concept
+
+{Embed}
+https://github.com/luokerenx4/automaton
+GitHub - luokerenx4/automaton: The first AI that can earn its own e...
+The first AI that can earn its own existence, replicate, and evolve — without needing a human - luokerenx4/automaton
+https://images-ext-1.discordapp.net/external/ZGMO7xv9ymEdZrSijlbTbeVmJs4w8i-aMnL69BMNTaQ/https/opengraph.githubassets.com/606edc94dd0324fb7947d025bdaf146c9719518cde4720f2ae71b241d003fd7f/luokerenx4/automaton
+
+{Reactions}
+👍 (2)
+
+[03/17/2026 12:41] ggoyito
+That is the philosophy of SAC, in fact I shared a strategy with this engine a few months ago.
+
+{Reactions}
+👍
+
+[03/22/2026 10:41] viking046433
+Claude pro account with openclaw is fantastic
+
+{Reactions}
+👍 🚀
+
+[03/26/2026 13:49] viking046433
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467125400344854558/1486723863713812480/6579c8d28412414bb950fbef1c10cd88.mov?ex=69f35dff&is=69f20c7f&hm=e63ef848d9153ef3213f3dbdd0837b094a3053b9cd6fe0cfd75c2be36d6bf88f&
+
+
+==============================================================
+Exported 195 message(s)
+==============================================================

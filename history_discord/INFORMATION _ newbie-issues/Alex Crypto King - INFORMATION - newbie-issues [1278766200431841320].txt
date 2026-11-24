@@ -1,0 +1,3050 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: INFORMATION / newbie-issues
+==============================================================
+
+[08/29/2024 18:41] highlander926
+these two changes are OK to run on spot market ?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1278786621411430491/sdfsdfdsfsd.png?ex=69f2f999&is=69f1a819&hm=e8ee3939dd80397b95a29da404bc5ec17b2f7d37008c1ae4ce35f2577911846e&
+
+
+[08/29/2024 19:27] serialkiller15
+You also hafe to change config. Json config the lines with Features...
+
+
+[08/29/2024 19:41] highlander926
+yes it is done
+i hope this time it make trade
+
+
+[08/29/2024 19:41] highlander926
+no luck with V4 strategy
+
+
+[08/29/2024 20:19] serialkiller15
+I didnt test it on spot make backtests then you will see
+
+
+[08/29/2024 20:37] andreis9311
+Hey @Alex Crypto King I encountered a new issue during the hyperopt. Have you encountered this before? Will be very appreciate of your help!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1278815759925121035/message.txt?ex=69f314bc&is=69f1c33c&hm=394edd62dc6c497cc67456ec2e88a344ae24fd6d96f9859203e65bf055725c0b&
+
+
+[08/30/2024 04:51] serialkiller15
+@AndreiS with Version you use for and the command vor it thanks
+
+
+[08/30/2024 05:17] dodwmd
+Started a thread.
+
+
+[08/30/2024 09:49] highlander926
+V6 strategy works on spot with these changes
+
+
+[08/30/2024 09:56] serialkiller15
+Perfect
+
+
+[09/02/2024 14:42] blackwolf1637
+I think im missing something. I have been trying to setup the V8. I fooflowed the installation steps then:
+
+freqtrade hyperopt with V8Hyper (ok) (+4000 trades)
+ freqtrade backtesting with V8Hyper (ok)
+copy V8Hyper.json params to V8.json
+remove models folders
+freqtrade trade --startegy V8 --config config-torch.json:
+    - loads hyperopt params;
+    - starts to download-data;
+    - trains model;
+    
+but still i see no signals on the freqtrade charts.
+
+ if i run the V8 strategy without freqai enabled then i see a bunch of signals on charts
+
+
+[09/02/2024 22:04] firebase_manu
+I tried many things but I always have the same issue when running hyperopt. This is the error:
+2024-09-02 21:57:41,779 - freqtrade - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/root/freqtrade/freqtrade/main.py", line 45, in main
+    return_code = args["func"](args)
+                  ^^^^^^^^^^^^^^^^^^
+  File "/root/freqtrade/freqtrade/commands/optimize_commands.py", line 109, in start_hyperopt
+    hyperopt.start()
+  File "/root/freqtrade/freqtrade/optimize/hyperopt.py", line 607, in start
+    self.prepare_hyperopt_data()
+  File "/root/freqtrade/freqtrade/optimize/hyperopt.py", line 514, in prepare_hyperopt_data
+    preprocessed = self.advise_and_trim(data)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/freqtrade/freqtrade/optimize/hyperopt.py", line 498, in advise_and_trim
+    self.min_date, self.max_date = get_timerange(trimmed)
+                                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/freqtrade/freqtrade/data/history/history_utils.py", line 551, in get_timerange
+    min(timeranges, key=operator.itemgetter(0))[0],
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: min() iterable argument is empty
+
+
+I used this command to download the data:
+freqtrade download-data -c user_data/config.json --timerange 20240601- --timeframe 15m 30m 1h 2h 4h 1d --erase
+The data is visible in the directory so it has been loaded without errors.
+
+Then I run for example this command and reveice the error written above:
+freqtrade hyperopt --hyperopt-loss OnlyProfitHyperOptLoss --spaces buy sell roi stoploss trailing trades --config user_data/config.json --strategy AlexStrategyFinalV8Hyper --timerange=20240820-20240830 --epochs 200
+
+Anyone has an idea what I am doing wrong?
+
+
+[09/02/2024 22:09] laupapp
+Yes download-data with same timerange of your hyperopt.
+
+
+[09/02/2024 22:23] firebase_manu
+Just tried only with BTC and ETH to speed things up for debugging with the same timerange in download-data and hyperopt but the same error occurs.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1280292010036826203/image.png?ex=69f32d99&is=69f1dc19&hm=ff40d1407cfc28b2f223bce6406bfbf832fe03b69c43b640dff6067405a5175b&
+https://cdn.discordapp.com/attachments/1278766200431841320/1280292010389143602/image.png?ex=69f32d99&is=69f1dc19&hm=5807037a10c173825366f1ecba111710c19791ec3308e82f9f6b3cce0b36fb8b&
+
+
+[09/02/2024 22:27] .7thdragon
+somehow u changed the default feather format, which is the fastest and reliable option, should not be json
+
+
+[09/02/2024 22:39] firebase_manu
+Is set in the config which Alex added to git. But also tried with feather right now. Exactly the same issue.
+
+
+[09/02/2024 22:42] .7thdragon
+use only these in configs, dunno why he choose json as is bad format. both for download, hyperopt or any other action
+  "dataformat_ohlcv": "feather",
+  "dataformat_trades": "feather",
+
+
+[09/02/2024 22:48] firebase_manu
+Will use it from now on. Thanks.
+
+I also found in the config, that the "train_period_days" is 120. So I downloaded testdata starting from January this year. Now hyperopt is working with --timerange=20240820-20240830
+
+{Reactions}
+👍 (2)
+
+[09/03/2024 11:23] ximontan
+Hi all, found trailing_stop is true
+and concerning this article https://brookmiles.github.io/freqtrade-stuff/2021/04/12/backtesting-traps/
+I was test it with --timeframe-detail 1m, witch close to reality
+and it still profitable, but not so. Add two images with detailed 1m and without.
+Now question: dose anybody dry it for a month or so?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1280488254117908602/Screenshot_from_2024-09-03_14-16-15.png?ex=69f33b9e&is=69f1ea1e&hm=d88aa3072896ce56ee1fddf397b5361fa7c0457ab56a7c289790a441e4b02160&
+https://cdn.discordapp.com/attachments/1278766200431841320/1280488254558306304/Screenshot_from_2024-09-03_14-21-25.png?ex=69f33b9e&is=69f1ea1e&hm=d235d022bf1ad03c5948dac9bf6898a940c070ac5e9e252982e5aa07f65cce72&
+
+{Embed}
+https://brookmiles.github.io/freqtrade-stuff/2021/04/12/backtesting-traps/
+Backtesting Traps
+Backtesting is important to understand the performance and behaviour of your strategy, but there are a number of issues which can result in a backtest producing much better results than are likely once the strategy is run live (or dry-run).
+
+
+[09/03/2024 11:26] .7thdragon
+yes u r right, forgot about it, anyway u could use lower tf than the current, non necesarly 1m which is a pain, personally i will recheck it
+
+{Reactions}
+👍
+
+[09/03/2024 11:40] laupapp
+@Alex Crypto King Do you have news for dryrun in 1h ? My 15m is not really profitable at the moment
+
+
+[09/03/2024 11:49] giovannimauro
+Alex it's working on a V8.1 15 minutes based I think
+
+
+[09/03/2024 11:49] serialkiller15
+yes i am but its tricky
+
+
+[09/03/2024 11:49] giovannimauro
+15m it's a good timeframe I think, just to find the  right rithm
+
+
+[09/03/2024 11:51] serialkiller15
+@Laurent D.  mine with 15min also was not profitable...
+
+
+[09/03/2024 11:53] laupapp
+I try to work on a 1h confirmation with ```inf_tf``` but hard to merge data
+
+
+[09/03/2024 12:20] serialkiller15
+what do you want to merge?
+
+
+[09/03/2024 12:24] laupapp
+informative columns and dataframe with merge_informative_pair
+
+
+[09/03/2024 12:24] serialkiller15
+ah ok i see
+
+
+[09/03/2024 14:55] cakurang
+Where i can found models folder?
+
+
+[09/03/2024 14:56] cakurang
+Is it on user_data?
+
+
+[09/03/2024 14:57] .7thdragon
+/user_data/models/[identifier_specified_in_config_section_freqai]
+
+
+[09/03/2024 14:58] cakurang
+I have a new set up, is it auto generated when freqai started?
+
+
+[09/03/2024 14:59] laupapp
+yes
+
+
+[09/03/2024 14:59] cakurang
+In installation manual, I have to delete it
+
+
+[09/03/2024 14:59] .7thdragon
+yes, if you follow the installation guides
+
+
+[09/03/2024 15:00] .7thdragon
+yes, the pecified [identifier] folder can be deleted but then it will start training again when you run the bot
+
+
+[09/03/2024 15:00] cakurang
+Ahh, I see
+
+
+[09/03/2024 15:00] cakurang
+Thanks
+
+
+[09/03/2024 15:01] .7thdragon
+if left it there and did not touch the config or strategy then it will be used, as it was previous generated
+if you did modify config on some specified freqai values or modify the strategy, then without deleting it you might get errors
+
+
+[09/03/2024 15:07] cakurang
+Ok, thanks for the advice
+
+{Reactions}
+👍
+
+[09/03/2024 16:27] brewy_024
+I have tried to hyperopt and backtest V8 now and it breaks like there is no data. I have checked an multiple times redownloaded data. Anyone with same problem?
+
+
+[09/03/2024 16:27] brewy_024
+2024-09-03 18:21:51,575 - freqtrade.data.converter.converter - WARNING - BTC/USDT:USDT has no data left after adjusting for startup candles, skipping.
+2024-09-03 18:21:51,576 - freqtrade.data.converter.converter - WARNING - ETH/USDT:USDT has no data left after adjusting for startup candles, skipping.
+2024-09-03 18:21:51,577 - freqtrade.data.converter.converter - WARNING - LTC/USDT:USDT has no data left after adjusting for startup candles, skipping.
+2024-09-03 18:21:51,578 - freqtrade.data.converter.converter - WARNING - BNB/USDT:USDT has no data left after adjusting for startup candles, skipping.
+2024-09-03 18:21:51,579 - freqtrade.data.converter.converter - WARNING - XRP/USDT:USDT has no data left after adjusting for startup candles, skipping.
+2024-09-03 18:21:51,580 - freqtrade.data.converter.converter - WARNING - ADA/USDT:USDT has no data left after adjusting for startup candles, skipping.
+2024-09-03 18:21:51,581 - freqtrade.data.converter.converter - WARNING - DOT/USDT:USDT has no data left after adjusting for startup candles, skipping.
+2024-09-03 18:21:51,582 - freqtrade.data.converter.converter - WARNING - SOL/USDT:USDT has no data left after adjusting for startup candles, skipping.
+2024-09-03 18:21:51,583 - freqtrade.data.converter.converter - WARNING - LINK/USDT:USDT has no data left after adjusting for startup candles, skipping.
+2024-09-03 18:21:51,584 - freqtrade.data.converter.converter - WARNING - AVAX/USDT:USDT has no data left after adjusting for startup candles, skipping.
+2024-09-03 18:21:51,584 - freqtrade - ERROR - No data left after adjusting for startup candles.
+
+
+[09/03/2024 16:29] .7thdragon
+read the threads or search them first
+https://discord.com/channels/1238181199206154373/1278766200431841320/1280296843816992850
+
+{Reactions}
+👍
+
+[09/03/2024 18:28] ammart90
+Hello @Alex Crypto King Thanks alot for your work, 
+Asking about the section of TensorFlow, are those modifications really needed ? 
+https://github.com/AlexCryptoKing/freqailstm/tree/main/tensorflow#quick-start---tensorflow
+
+{Embed}
+https://github.com/AlexCryptoKing/freqailstm/tree/main/tensorflow
+freqailstm/tensorflow at main · AlexCryptoKing/freqailstm
+Contribute to AlexCryptoKing/freqailstm development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/0igu4Y9k3AqTRIdI_rsQ4kM5kCnGSaDYZaYswUyslbU/https/opengraph.githubassets.com/6f1af2e4d462c4d5b9e37adbdd30d7e9148ab5a5c6883193abd54208632e5624/AlexCryptoKing/freqailstm
+
+
+[09/03/2024 18:28] serialkiller15
+hi welcome to my community, no they are not needed!, if you need help i am here!
+
+
+[09/03/2024 18:29] ammart90
+Thanks a lot
+
+
+[09/03/2024 18:29] ammart90
+i'm trying to modify your strategy for Spot
+
+
+[09/03/2024 18:29] serialkiller15
+you are WELCOME!
+
+
+[09/03/2024 18:29] serialkiller15
+there is a tread wait
+
+
+[09/03/2024 18:29] ammart90
+how do you think the results will be
+
+
+[09/03/2024 18:29] ammart90
+ok
+
+
+[09/03/2024 18:30] serialkiller15
+use the search function, one of my members changed it and use it on spot!
+
+
+[09/03/2024 18:30] serialkiller15
+make backtest hyperopt then you will see, but first please red the #🛠support
+
+
+[09/03/2024 18:30] serialkiller15
+any questions? write here
+
+
+[09/03/2024 18:31] ammart90
+appreciated
+
+
+[09/03/2024 18:31] ammart90
+❤️
+
+
+[09/03/2024 19:13] cakurang
+Best timerange for hyperopt, can help me?
+
+
+[09/03/2024 20:07] serialkiller15
+@CakUrang  i use mostly 1 week with 1000 Epos
+
+
+[09/03/2024 20:23] ammart90
+sorry to bother, but for some reason i'm getting this error during backtest : 
+
+
+2024-09-04 00:22:38,822 - freqtrade - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/home/ammar/freqtrade/freqtrade/main.py", line 43, in main
+    return_code = args["func"](args)
+  File "/home/ammar/freqtrade/freqtrade/commands/optimize_commands.py", line 60, in start_backtesting
+    backtesting.start()
+  File "/home/ammar/freqtrade/freqtrade/optimize/backtesting.py", line 1614, in start
+    min_date, max_date = self.backtest_one_strategy(strat, data, timerange)
+  File "/home/ammar/freqtrade/freqtrade/optimize/backtesting.py", line 1524, in backtest_one_strategy
+    preprocessed = self.strategy.advise_all_indicators(data)
+  File "/home/ammar/freqtrade/freqtrade/strategy/interface.py", line 1586, in advise_all_indicators
+    return {
+  File "/home/ammar/freqtrade/freqtrade/strategy/interface.py", line 1587, in <dictcomp>
+    pair: self.advise_indicators(pair_data.copy(), {"pair": pair}).copy()
+  File "/home/ammar/freqtrade/freqtrade/strategy/interface.py", line 1645, in advise_indicators
+    return self.populate_indicators(dataframe, metadata)
+  File "/home/ammar/freqtrade/user_data/strategies/AlexStrategyFinalV8.py", line 240, in populate_indicators
+    dataframe = self.freqai.start(dataframe, metadata, self)
+  File "/home/ammar/freqtrade/freqtrade/freqai/freqai_interface.py", line 161, in start
+    dk = self.start_backtesting(dataframe, metadata, self.dk, strategy)
+  File "/home/ammar/freqtrade/freqtrade/freqai/freqai_interface.py", line 387, in start_backtesting
+    self.backtesting_fit_live_predictions(dk)
+  File "/home/ammar/freqtrade/freqtrade/freqai/freqai_interface.py", line 891, in backtesting_fit_live_predictions
+    dk.full_df.at[index, f"{label}_mean"] = self.dk.data["labels_mean"][
+KeyError: '&-target'
+
+
+[09/03/2024 20:24] andreis9311
+clean up the user_data/models and retrain or change freqai.identifier for retrain
+
+{Reactions}
+👍
+
+[09/03/2024 20:25] ammart90
+it worked, thanks
+
+
+[09/03/2024 20:26] serialkiller15
+That's good
+
+
+[09/03/2024 21:29] mortezapoudat
+I am not sure if its a right place to ask my question, I am trying really hard to catch up with you guys, so sorry if the question is not relevant here.
+
+why in V8 the S weighted value are not getting assigend?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1280640770730233866/image.png?ex=69f320e8&is=69f1cf68&hm=831c991a906f3d1d98145a990fdbab21c3032c7e943f9134be0233fcef571324&
+
+
+[09/03/2024 21:32] mortezapoudat
+Also here only w values are used. does it have a reason? I mean in V8 hyperopt is not even calculating s values
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1280641504368394240/image.png?ex=69f32197&is=69f1d017&hm=6eee7b0456f891e249788bd0141c8f0166ec09f3c942e2c95a7f8a792c3abcbb&
+
+
+[09/03/2024 21:32] mortezapoudat
+{
+  "strategy_name": "AlexStrategyFinalV8Hyper",
+  "params": {
+    "buy": {
+      "threshold_buy": -0.6464964509440132,
+      "w0": 0.9183668779004984,
+      "w1": 0.21730882485137032,
+      "w2": 0.46715907595909434,
+      "w3": 0.04705339066848781,
+      "w4": 0.917218002218176,
+      "w5": 0.42830997059693343,
+      "w6": 0.34318706816602423,
+      "w7": 0.15808877495690868,
+      "w8": 0.06377465460370381
+    },
+    "sell": {
+      "threshold_sell": 0.12335772105986775
+    },
+    "protection": {},
+    "roi": {
+      "0": 0.603,
+      "404": 0.191,
+      "847": 0.048,
+      "1009": 0
+    },
+    "stoploss": {
+      "stoploss": -0.285
+    },
+    "trailing": {
+      "trailing_stop": true,
+      "trailing_stop_positive": 0.055,
+      "trailing_stop_positive_offset": 0.121,
+      "trailing_only_offset_is_reached": true
+    },
+    "max_open_trades": {
+      "max_open_trades": 3
+    }
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2024-09-03 11:55:50.608423+00:00"
+}
+
+this is my hyperopt result
+
+
+[09/04/2024 05:32] serialkiller15
+gm, the S values are not beeing used on Version 8, i am working on Version 81 to fix that!
+
+{Reactions}
+👍 (2)
+
+[09/04/2024 10:25] ammart90
+Hello @Alex Crypto King , after following the installation guide with Spot, i'm getting the following results with backtesting, i think something is wrong in my test 
+
+hyperopt with SharpeHyperOptLossDaily
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1280836135890980904/image.png?ex=69f32e1b&is=69f1dc9b&hm=d96aaaddd27b3f32d03a8b75b552115bf5dc518d287b6e998f44fcfa22fad46b&
+
+
+[09/04/2024 11:01] serialkiller15
+please post the hol backtesting results thanks
+
+
+[09/04/2024 11:31] ammart90
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1280852776187854931/message.txt?ex=69f33d9a&is=69f1ec1a&hm=76bb7bcda95e7b0bbf4438592b084edb2bf9ff0965fa16d755f5b246c37e3bf4&
+
+
+[09/04/2024 11:58] serialkiller15
+and your hyperopted values?
+
+
+[09/04/2024 12:21] ammart90
+{
+  "strategy_name": "AlexStrategyFinalV8Hyper",
+  "params": {
+    "buy": {
+      "threshold_buy": 0.34318098468815506,
+      "w0": 0.35558881331469167,
+      "w1": 0.3060384735385005,
+      "w2": 0.0902718219412444,
+      "w3": 0.9253331311427927,
+      "w4": 0.31189892521766854,
+      "w5": 0.46131226687074767,
+      "w6": 0.4009073935813482,
+      "w7": 0.46178577997467574,
+      "w8": 0.4614236211495393
+    },
+    "sell": {
+      "threshold_sell": 0.9768842063798637
+    },
+    "protection": {},
+    "roi": {
+      "0": 0.29700000000000004,
+      "313": 0.133,
+      "586": 0.061,
+      "1469": 0
+    },
+    "stoploss": {
+      "stoploss": -0.02
+    },
+    "trailing": {
+      "trailing_stop": true,
+      "trailing_stop_positive": 0.01,
+      "trailing_stop_positive_offset": 0.03,
+      "trailing_only_offset_is_reached": true
+    },
+    "max_open_trades": {
+      "max_open_trades": 4
+    }
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2024-09-04 10:55:15.221144+00:00"
+}
+
+
+[09/04/2024 12:22] .7thdragon
+hope that everbody hyperopt for example 
+20240810-20240920
+and back test for 
+20240820 to 20240904
+and not the same period 🙂
+
+{Reactions}
+👍 (2)
+
+[09/04/2024 12:50] andreis9311
+Usually, I hyperOpt last week and backtest last month.
+
+
+[09/04/2024 12:53] .7thdragon
+it is your flavor, feeling, tests and resources. personally i see each 1w possible changes in the trend so hyperopt 1-4weeks (-1w), bt last week
+
+
+[09/04/2024 12:54] andreis9311
+You mean like
+
+hyperopt from 4 week ago till now -1 week
+and backtest last week?
+
+{Reactions}
+👍
+
+[09/04/2024 12:55] .7thdragon
+is nonsense for testing what you say two posts above :). so for production no need for backtesting, only hyperopt last 1-4w
+but for testing purposes meaning to see if you have had good results in the past (1w) needs to hyperopt
+1-4w (-1w) and then backtest last week too see how it was performing.
+
+{Reactions}
+👍
+
+[09/04/2024 12:55] andreis9311
+make sense now. thanks
+
+
+[09/05/2024 09:02] ammart90
+i'm retrying from scratch but training is not being done even after i cleared all model folder
+so hyperopt and backtesting are being done immediately
+
+
+[09/05/2024 09:03] andreis9311
+docker run --rm -v ./user_data:/freqtrade/user_data \
+      -it freqtrade_image backtesting \
+      --timerange=$BACKTEST_RANGE \
+      --strategy $STRATEGY \
+      --timeframe-detail 1m \
+      --cache=none \
+      --config $CONFIG_FILE \
+      --config $CONFIG_FILE_LOCAL
+
+I always use the "cache=none" flag to ensure that I run from scratch every time.
+
+{Reactions}
+👍
+
+[09/05/2024 09:11] ammart90
+still the same
+
+
+[09/05/2024 09:14] ammart90
+is it because of this ?
+
+freqtrade.data.converter.converter - WARNING - NOT/USDT has no data left after adjusting for startup candles, skipping
+
+
+[09/05/2024 09:15] dodwmd
+you need to download-data much further than you backtest..
+
+{Reactions}
+👍
+
+[09/05/2024 09:15] ximontan
+try set range bigger
+
+{Reactions}
+👍
+
+[09/05/2024 09:16] dodwmd
+i always download since the start of the year.. but usually only backtest 1 month..
+
+{Reactions}
+💪
+
+[09/05/2024 10:28] noreligion_03835
+@Alex Crypto King hello! I'm newbie in freqtrade and faced with issue when trying install via "Quick Start with docker" (Win11):
+
+=> ERROR [5/8] RUN mkdir -p /freqtrade/user_data/strategies /freqtrade/user_data/freqaimodels   && cp co  0.2s
+------
+[5/8] RUN mkdir -p /freqtrade/user_data/strategies /freqtrade/user_data/freqaimodels   && cp config-example.json /freqtrade/user_data/config-torch.json   && cp ExampleLSTMStrategy.py /freqtrade/user_data/strategies/   && cp torch/BasePyTorchModel.py /freqtrade/freqtrade/freqai/base_models/   && cp torch/PyTorchLSTMModel.py /freqtrade/freqtrade/freqai/torch/   && cp torch/PyTorchModelTrainer.py /freqtrade/freqtrade/freqai/torch/   && cp torch/PyTorchLSTMRegressor.py /freqtrade/user_data/freqaimodels/:
+0.209 cp: cannot stat 'config-example.json': No such file or directory
+
+
+freqtrade dir is in C:\Temp\bot
+
+Could you please explain how to fix this issue?
+
+
+[09/05/2024 12:01] serialkiller15
+i am confused? you run docker on windows fine, show me the files you have in your docker its c:\temp\bot?
+
+
+[09/05/2024 12:39] noreligion_03835
+@Alex Crypto King I'm sorry for confusing... 
+I've been remove all about freqdata and reinstall via docker-destop (win11).
+for now I change folder for freqtrade:
+C:\freqtrade>tree
+Folder PATH listing
+Volume serial number is 1CA0-AC76
+
+`C:\freqtrade>
+C:.
+├───freqailstm
+│   ├───tensorflow
+│   ├───torch
+│   └───V8
+│       └───1HOUR
+└───ft_userdata
+    └───user_data
+        ├───backtest_results
+        ├───data
+        │   └───binance
+        ├───freqaimodels
+        ├───hyperopts
+        ├───hyperopt_results
+        ├───logs
+        ├───notebooks
+        ├───plot
+        └───strategies`
+
+
+`
+**C:\freqtrade>dir /b /s ft_userdata**
+C:\freqtrade\ft_userdata\docker-compose.yml
+C:\freqtrade\ft_userdata\user_data
+C:\freqtrade\ft_userdata\user_data\backtest_results
+C:\freqtrade\ft_userdata\user_data\config.json
+C:\freqtrade\ft_userdata\user_data\data
+C:\freqtrade\ft_userdata\user_data\freqaimodels
+C:\freqtrade\ft_userdata\user_data\hyperopts
+C:\freqtrade\ft_userdata\user_data\hyperopt_results
+C:\freqtrade\ft_userdata\user_data\logs
+C:\freqtrade\ft_userdata\user_data\notebooks
+C:\freqtrade\ft_userdata\user_data\plot
+C:\freqtrade\ft_userdata\user_data\strategies
+C:\freqtrade\ft_userdata\user_data\tradesv3.sqlite
+C:\freqtrade\ft_userdata\user_data\tradesv3.sqlite-shm
+C:\freqtrade\ft_userdata\user_data\tradesv3.sqlite-wal
+C:\freqtrade\ft_userdata\user_data\data\binance
+C:\freqtrade\ft_userdata\user_data\hyperopts\sample_hyperopt_loss.py
+C:\freqtrade\ft_userdata\user_data\logs\freqtrade.log
+C:\freqtrade\ft_userdata\user_data\notebooks\strategy_analysis_example.ipynb
+C:\freqtrade\ft_userdata\user_data\strategies\sample_strategy.py`
+
+
+[09/05/2024 13:16] serialkiller15
+in this case copy the files manually to the folder like [5/8] RUN mkdir -p /freqtrade/user_data/strategies /freqtrade/user_data/freqaimodels   && cp config-example.json /freqtrade/user_data/config-torch.json   && cp ExampleLSTMStrategy.py /freqtrade/user_data/strategies/   && cp torch/BasePyTorchModel.py /freqtrade/freqtrade/freqai/base_models/   && cp torch/PyTorchLSTMModel.py /freqtrade/freqtrade/freqai/torch/   && cp torch/PyTorchModelTrainer.py /freqtrade/freqtrade/freqai/torch/   && cp torch/PyTorchLSTMRegressor.py /freqtrade/user_data/freqaimodels/: into your windows folders!
+
+
+[09/05/2024 13:24] ammart90
+i'm still not able to train 😦
+
+
+[09/05/2024 13:26] serialkiller15
+after cooping restart the docker and look at the logfile
+
+
+[09/05/2024 13:26] ammart90
+i'm not using docker, direct insallation on WSL for windows
+
+
+[09/05/2024 13:27] ammart90
+results coming directly for backtest and hyperopt
+
+
+[09/05/2024 13:27] ammart90
+model folder is empty
+
+
+[09/05/2024 13:28] serialkiller15
+you first wrote you use docker? now its windows?
+
+
+[09/05/2024 13:29] serialkiller15
+so please check if all files are in the right folders, check the readme file thanks
+
+
+[09/05/2024 17:40] noreligion_03835
+@Alex Crypto King  okay, but in git repo I cant find "config-example.json "
+
+
+[09/05/2024 17:56] serialkiller15
+https://github.com/AlexCryptoKing/freqailstm - config-torch_example i have to adjust the docker file
+
+{Embed}
+https://github.com/AlexCryptoKing/freqailstm
+GitHub - AlexCryptoKing/freqailstm
+Contribute to AlexCryptoKing/freqailstm development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/0igu4Y9k3AqTRIdI_rsQ4kM5kCnGSaDYZaYswUyslbU/https/opengraph.githubassets.com/6f1af2e4d462c4d5b9e37adbdd30d7e9148ab5a5c6883193abd54208632e5624/AlexCryptoKing/freqailstm
+
+
+[09/05/2024 18:13] serialkiller15
+@noreligion sry i updated the commands
+cp torch/BasePyTorchModel.py <freqtrade dir>/freqtrade/freqai/base_models/
+cp torch/PyTorchLSTMModel.py <freqtrade dir >/freqtrade/freqai/torch/
+cp torch/PyTorchModelTrainer.py <freqtrade dir>/freqtrade/freqai/torch/
+cp torch/PyTorchLSTMRegressor.py <freqtrade dir>/user_data/freqaimodels/
+cp config-torch_example.json <freqtrade dir>/user_data/config.json
+cp V8/1HOUR/AlexStrategyFinalV8.json <freqtrade dir>/user_data/strategies/
+cp V8/1HOUR/AlexStrategyFinalV8.py <freqtrade dir>/user_data/strategies/
+cp V8/1HOUR/AlexStrategyFinalV8Hyper.json <freqtrade dir>/user_data/strategies/
+cp V8/1HOUR/AlexStrategyFinalV8Hyper.py <freqtrade dir>/user_data/strategies/
+cp V8/1HOUR/config-torch.json <freqtrade dir>/user_data/
+
+
+[09/06/2024 16:36] chelosino
+Does anyone know what could be causing this behaviour in V8? I redownloadead all the candles 2 months all timeframes and still got this kind of log
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1281654376003407982/message.txt?ex=69f38527&is=69f233a7&hm=b03e48a1ee59b6e7ed5255b26cdffcb7c16a56efa652466a9e005947a484421c&
+
+
+[09/06/2024 17:12] .7thdragon
+https://discord.com/channels/1238181199206154373/1278766200431841320/1280624432301346927
+
+
+[09/06/2024 17:38] chelosino
+Hmm didn't work.. is not the same error tho.. I'm having empty candles
+
+
+[09/06/2024 17:39] .7thdragon
+https://discord.com/channels/1238181199206154373/1278766200431841320/1280292960663113830
+
+
+[09/06/2024 17:39] chelosino
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1281670109554937976/Screenshot_20240906_133848_RVNC_Viewer.jpg?ex=69f393ce&is=69f2424e&hm=4f9dc4ee5ffba028e9a8dfccdf40c764df49393c5a6fc7f061128259c2bf91c2&
+https://cdn.discordapp.com/attachments/1278766200431841320/1281670109894545428/Screenshot_20240906_133832_RVNC_Viewer.jpg?ex=69f393ce&is=69f2424e&hm=03908befefafbe557f35749b9cc930467b7091a1c00057ea46a5aa520c16729f&
+
+
+[09/06/2024 17:40] chelosino
+Config is set as feather. And used the same config for data-download..
+
+
+[09/06/2024 17:40] chelosino
+Let me clean install freqt and see how it goes
+
+
+[09/06/2024 17:41] .7thdragon
+the error is clear u dont have data for 1h 2h 4h
+
+
+[09/06/2024 17:42] .7thdragon
+if non freq is used, use download first
+
+
+[09/06/2024 20:13] ammart90
+Hello,
+
+i'm getting this error, is it normal ?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1281708996062871683/message.txt?ex=69f30f45&is=69f1bdc5&hm=f4063cf31d9960fdea9bce05e00b4c379b7e16653eaefd341aeaed0a0e9776e4&
+
+
+[09/06/2024 21:26] .7thdragon
+for sure is a cuda error, not ever encountered, try reboot your machine
+
+{Reactions}
+👍
+
+[09/07/2024 20:59] ximontan
+Hi, I test by periods,
+all periods +/- good, unless one from 2024.02.01 - 2024.02.08,
+I was hyperopt from 20231224-20240201, then test 20240201-20240208 and it was -13%.
+try hyperopt from 20231001-20240401 same result.
+in test get all time short b/c market in hyperopt is short, but it changed like in image, 
+I don't know how to fix this.  Does anyone have some idea?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1282082915702014033/image.png?ex=69f31a03&is=69f1c883&hm=0b975c5d25ee7a0b2f052777d67767f3ebd46d2ca1036728f120d6fac320db71&
+https://cdn.discordapp.com/attachments/1278766200431841320/1282082915995619328/image.png?ex=69f31a03&is=69f1c883&hm=6cf2e8ae7e45a1f8a86b903e138836e1c356497d5b2abb4cfbf071d33eca1955&
+
+
+[09/07/2024 21:49] .7thdragon
+nice share, maybe this is one of the shit happen situations and -13 is quite ok... maybe it would be an idea to add 1d to timeframes?
+
+
+[09/08/2024 14:05] ximontan
+with 1d time frame not better, and I was add DCA from hypocitical strategy, and some additional labels, but it big dropdown...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1282340926450040912/image.png?ex=69f3618d&is=69f2100d&hm=f7d7cb81e9081d76b0e8d82f5e07574f9cc88dcd4a5183542a03fd91e02b768c&
+
+{Reactions}
+😥
+
+[09/08/2024 19:27] inviting_moose_32088
+guys, I have a question: how to optimize AlexV8 strategy to 1-5m timeframes?
+
+
+[09/08/2024 19:29] inviting_moose_32088
+and second question:
+
+for binance I want to use 'spot', not 'futures'.
+is it real? because when I set 'trading_mode = spot', freqtrade require to set 'can_short = False' in strategy... what I do incorrect?
+
+
+[09/08/2024 19:56] ximontan
+set timeframe 5m in AlexStrategyFinalV8Hyper.py and optimize, then in AlexStrategyFinalV8.py set 5m too, backtest
+
+
+[09/08/2024 19:57] ximontan
+right and use pairs like ETH/USDT, not ETH/USDT:USDT
+
+
+[09/08/2024 20:21] inviting_moose_32088
+so, if i understand correct, sequence is:
+1) download data from market;
+2) exec hyperopt AlexStrategyFinalV8Hyper.py
+3) exec backtest AlexStrategyFinalV8.py.
+
+but how set up parameters from hyperopt (optimized parameters) to AlexStrategyFinalV8.py strategy after optimization?
+
+
+[09/08/2024 20:29] ximontan
+rename AlexStrategyFinalV8Hyper.json to AlexStrategyFinalV8.json, and inside file  "strategy_name": "AlexStrategyFinalV8" ...
+
+
+[09/08/2024 21:17] maxgorbachevskiy
+Guys, please help me understand / interpret this chart. I see signals on every candle. And numbers are matching close value ov every candle. What this all mean?
+
+
+[09/08/2024 21:17] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1282449803854217257/image.png?ex=69f31e34&is=69f1ccb4&hm=0d205c268aff5f6bc4943451dd66b08a842befebcc5005f02828d754bf40cd3b&
+
+
+[09/08/2024 21:48] .7thdragon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1282457622800498784/image.png?ex=69f3257c&is=69f1d3fc&hm=63f73756dc149f1c39c9fffbb0be91908d9f0f56e929bff118856eed95ac41bc&
+
+
+[09/08/2024 21:51] maxgorbachevskiy
+No, I mean different question: what these numbers "entry" and "exit" mean? why they match "candle close" calue?
+Shold I ever look at them?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1282458378718675124/image.png?ex=69f32630&is=69f1d4b0&hm=c7c5bb6e0db9769e95c56d827b9930befc9a31c45d2b0410e09f3a8f5a52794c&
+
+
+[09/08/2024 21:52] maxgorbachevskiy
+Also, if you see my chart, signals are printed on every candle. Is it a plotting bug?
+
+
+[09/08/2024 22:06] .7thdragon
+Aaa i do not look on this 🙂 yes possible plotting issue. Normally should be clear entries and exits as they are (also in enter_tag dataframe column)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1282462146554232875/image.png?ex=69f329b2&is=69f1d832&hm=f79e7f282759a6e72055f8cd14c9a4a950c8bac8b968c16a0e183280d6eadad6&
+
+
+[09/09/2024 06:27] inviting_moose_32088
+guys, where to find solution?
+dry-run at 1m timeframe generate errors:
+
+2024-09-09 06:26:03,492 - freqtrade.exchange.exchange - INFO - Failed to reuse watch BNB/USDT, 1m, False, 1725863160000, 0, 2024-09-09T06:26:00, 1970-01-01T00:00:00
+
+
+[09/09/2024 06:28] serialkiller15
+1m timeframe will not work with freqai I would say
+
+
+[09/09/2024 06:29] inviting_moose_32088
+oh.....
+
+
+[09/09/2024 06:29] serialkiller15
+Try with max 10 coins
+
+
+[09/09/2024 06:29] inviting_moose_32088
+thank you for real quick reply!
+
+I'll try 5min...
+
+
+[09/09/2024 06:29] serialkiller15
+Maybee better then mate
+
+
+[09/09/2024 06:29] serialkiller15
+Mostly yes but weekend is free time hehe
+
+
+[09/09/2024 06:47] serialkiller15
+But why you have  this date here 1970? - guys, where to find solution?
+dry-run at 1m timeframe generate errors:
+
+2024-09-09 06:26:03,492 - freqtrade.exchange.exchange - INFO - Failed to reuse watch BNB/USDT, 1m, False, 1725863160000, 0, 2024-09-09T06:26:00, 1970-01-01T00:00:00
+
+
+[09/09/2024 14:18] inviting_moose_32088
+IDK...
+
+
+[09/09/2024 14:27] serialkiller15
+check your time settings in docker or environment?
+
+
+[09/09/2024 15:27] ammart90
+quick question, if look ahead bias analysis was negative, does that mean that the strategy is not biased ?
+
+
+[09/09/2024 15:27] ammart90
+the performance for dry run is not as the backtest at all
+
+
+[09/09/2024 15:31] unkn0wnme
+It could be false-negative
+
+
+[09/09/2024 15:34] ammart90
+is there a way to detect the look ahead other than the analysis ?
+
+
+[09/09/2024 15:36] unkn0wnme
+Check out this repository for examples of lookahead bias strategies
+https://github.com/freqtrade/freqtrade-strategies/tree/main/user_data/strategies/lookahead_bias
+
+{Embed}
+https://github.com/freqtrade/freqtrade-strategies/tree/main/user_data/strategies/lookahead_bias
+freqtrade-strategies/user_data/strategies/lookahead_bias at main · ...
+Free trading strategies for Freqtrade bot. Contribute to freqtrade/freqtrade-strategies development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/gsp4GPrtLVA2dL82N5Qot7C6vdNTnygQ_No-tcBFTlQ/https/opengraph.githubassets.com/a6812602225643960284212b2d9ae0ae020e136ce60356952cc717740c38dc41/freqtrade/freqtrade-strategies
+
+{Reactions}
+👍
+
+[09/09/2024 15:37] unkn0wnme
+There is also an .md file that indicates which particular piece of code is responsible for the lookahead bias
+
+{Reactions}
+👍
+
+[09/09/2024 17:00] inviting_moose_32088
+timedate is correct in guest OS.
+issue with 1970* related with misconfig in config file.
+it was my environment issue. thanks!
+
+
+[09/09/2024 17:10] serialkiller15
+ok then its fine
+
+
+[09/09/2024 18:06] inviting_moose_32088
+btw, this issue (with wrong date, 1970)  occured when is no historical trade data for pair (new coins etc..)
+
+
+[09/10/2024 13:21] inviting_moose_32088
+@Alex Crypto King IDK why but  backtesting has no trades....
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1283054856462143509/image.png?ex=69f35773&is=69f205f3&hm=5b3c5124bc15fb7eca0201cbe1c62a64f767fa4cfa5dd354096e73080295c054&
+
+
+[09/10/2024 13:22] inviting_moose_32088
+what I do wrong?
+
+
+[09/10/2024 13:25] inviting_moose_32088
+I guess need to use v9 now?)
+@Alex Crypto King
+
+
+[09/10/2024 13:26] serialkiller15
+yes please use v9 because of many changes it will be hard to make support for V8
+
+
+[09/10/2024 13:26] inviting_moose_32088
+okay, I'll back with feedback soon
+
+
+[09/10/2024 13:27] serialkiller15
+thanks mate, use the new channels for it because we are growing!
+
+
+[09/10/2024 19:45] inviting_moose_32088
+@Alex Crypto King another question: 
+do I need to delete models/torch-lstm12/*  after hyperopt and before executing backtest?
+
+
+[09/10/2024 20:27] ximontan
+yes
+
+{Reactions}
+🕊️
+
+[09/11/2024 07:25] maxgorbachevskiy
+No trades at all, after 12 hours of dry-run of V9 (no trailingstop). What do I do wrong in my config? 
+Here's my config, and my process: data download → hyperopt/backtest → adjust strategy json → (delete old models from "models") → start run with 37 pairs. 
+Previous v8 had a similar problem, was working only partially, two specific pairs (GEM and DOGS) were buying-selling (like hell) but others were silent. 
+Please advice?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1283327581743222795/config.json?ex=69f303f2&is=69f1b272&hm=a29f6059265ab9e7e7d2fc34598f7bfb510eb7799fd628953ac2c347535fa8cb&
+https://cdn.discordapp.com/attachments/1278766200431841320/1283327582103797853/dry1_AlexStrategyFinalV9.json?ex=69f303f2&is=69f1b272&hm=3f2e65596de2d6648a2747764ce8941c2e652f85ea362a69889e87fdbef1ba41&
+
+
+[09/11/2024 07:28] maxgorbachevskiy
+dockerlog has no issues - state "RUNNING", model keeps training and inferencing at regular intervals
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1283328338974474271/dockerlog.png?ex=69f304a7&is=69f1b327&hm=da6a1670111db1d7814b0e10ab8219774a4fdf75c40a4fd1eef4c7bf2a6200b5&
+
+
+[09/11/2024 07:31] serialkiller15
+there is an problem with the r2 indicator, remove it from here and try again 
+original line 
+dataframe['T'] = dataframe['S'] * dataframe['R'] * dataframe['R2'] * dataframe['V'] * dataframe['V2']
+new line
+dataframe['T'] = dataframe['S'] * dataframe['R'] * dataframe['V'] * dataframe['V2']
+
+
+[09/11/2024 07:31] serialkiller15
+i am on it!
+
+
+[09/11/2024 07:31] serialkiller15
+the r2 need some time ma_100 to make good signals but i am not happy with that working on V91
+
+
+[09/11/2024 07:32] serialkiller15
+but on my 2 dryruns i have good trades
+
+
+[09/11/2024 07:39] maxgorbachevskiy
+ok trying now (changed, reboot). BUT I believe my problem is somewhere else (since i had these problems with v8 also). Looks like buy/sell criteria do not pass some limiting criteria...
+Maybe smbody can check my configs?
+
+
+[09/11/2024 07:40] serialkiller15
+yes you can write me directly if you want maxg
+
+
+[09/13/2024 17:04] alex_737071
+Anyone else gets 'No data found. Terminating.' when trying backtesting? I have downloaded the data, other Strats testing fine on the same pairs and timeframe....
+
+
+[09/13/2024 21:41] ximontan
+show full log
+
+
+[09/13/2024 22:34] alex_737071
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1284281190941196359/log.rtf?ex=69f33050&is=69f1ded0&hm=2cfdca4616f89873526eeb06d10706e98d561031bc546390bdd6ce47108aad81&
+
+
+[09/14/2024 08:36] ximontan
+Seems you have no needed data, https://www.freqtrade.io/en/2024.8/leverage/#unavailable-funding-rates
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1284432625901244416/image.png?ex=69f31499&is=69f1c319&hm=7c85701ebeea7e695aaff95d774c9913dbab3650726ba9a8964f56cec349ebdd&
+
+{Embed}
+https://www.freqtrade.io/en/2024.8/leverage/
+Short / Leverage - Freqtrade
+Freqtrade is a free and open source crypto trading bot written in Python, designed to support all major exchanges and be controlled via Telegram or builtin Web UI
+
+
+[09/14/2024 08:42] serialkiller15
+my example @Alex 
+freqtrade  download-data -c user_data/config-torch.json --timerange 20240701-20240906 --timeframe 15m 30m 1h 2h 4h 8h 1d
+
+
+[09/14/2024 09:09] .7thdragon
+Use this way 20240701-
+
+
+[09/14/2024 09:10] .7thdragon
+It will download till now
+
+
+[09/14/2024 09:12] serialkiller15
+yes better hehe
+
+
+[09/14/2024 09:16] alex_737071
+Thank you guys! I have the data dowloaded already as per you example in the docs. But the fix for me here was @Ximontan point, the Funding rates. adding futures_funding_rate: 0 to the config fixes it. 🙂
+
+
+[09/15/2024 19:01] chryses4371
+Hi all, I've a little problem during the docker starting phase
+I created a docker-compose, then downloaded the data till today and copy all relevant files from V9 folder to the right ones.
+
+
+[09/15/2024 19:02] chryses4371
+I don't have build the local images, maybe is here the error?
+The docker start but I have this error
+2024-09-15 18:56:53,945 - freqtrade.resolvers.iresolver - WARNING - Could not import /freqtrade/user_data/freqaimodels/PyTorchLSTMRegressor.py due to 'No module named 'freqtrade.freqai.torch.PyTorchLSTMModel''
+2024-09-15 18:56:54,314 - matplotlib.font_manager - INFO - generated new fontManager
+2024-09-15 18:56:54,526 - freqtrade - ERROR - Impossible to load FreqaiModel 'PyTorchLSTMRegressor'. This class does not exist or contains Python code errors.
+
+
+[09/15/2024 19:02] chryses4371
+and if I inspect the docker the torch module is installed
+
+
+[09/15/2024 19:03] serialkiller15
+You dont have the py file ok the freqai models folder check it
+
+
+[09/15/2024 19:04] serialkiller15
+Copy it into it and restr docker
+
+
+[09/15/2024 19:04] serialkiller15
+Restart docker
+
+
+[09/15/2024 19:04] chryses4371
+the file and folder structure seems ok to me, wait I can make some screenshot
+
+
+[09/15/2024 19:05] serialkiller15
+Folder freqaimodels
+
+
+[09/15/2024 19:05] chryses4371
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1284953349661397062/image.png?ex=69f2ff4f&is=69f1adcf&hm=fa6eb599eacf5b57a3d9cffab7cc28faaec377ecab4416962fb8cecc21651787&
+https://cdn.discordapp.com/attachments/1278766200431841320/1284953350059593739/image.png?ex=69f2ff4f&is=69f1adcf&hm=686768bca6e1756dcbce00afec798de9d90fd0da5953a9f7f3ffcb087187ca8e&
+https://cdn.discordapp.com/attachments/1278766200431841320/1284953350403788951/image.png?ex=69f2ff50&is=69f1add0&hm=2abc046ad5d63dc93406606518fb186ee987c3928c0fe490f3e8f01e73f090e8&
+
+
+[09/15/2024 19:08] chryses4371
+at first I made hard-links so I though was this, then I copy it and check the permission, all ok
+
+
+[09/15/2024 21:14] chryses4371
+@Alex Crypto King 
+The problem can be connected to this error?
+`No module named 'freqtrade.freqai.torch.PyTorchLSTMModel`
+In fact
+`ftuser@0cbe1171b934:/freqtrade$ python
+Python 3.12.5 (main, Aug 13 2024, 01:30:38) [GCC 12.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+> from freqtrade.freqai.torch import PyTorchLSTMModel
+> Traceback (most recent call last):
+>   File "<stdin>", line 1, in <module>
+> ImportError: cannot import name 'PyTorchLSTMModel' from 'freqtrade.freqai.torch' (/freqtrade/freqtrade/freqai/torch/__init__.py)
+> >>>`
+
+
+[09/15/2024 22:39] sera131
+I always build my custom dockerfile for it... as some strategies depend on modules that are not supported yet in the base freqtrade image.
+
+
+[09/15/2024 22:41] sera131
+example of my docker compose:
+
+
+[09/15/2024 22:42] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1285007869095317504/docker-compose.yml?ex=69f33216&is=69f1e096&hm=ef68ae1c04291f4aab0c8394881a00d2af6fdf799603c7b1da04d9087ba70745&
+
+
+[09/15/2024 22:43] sera131
+example of custom dockerfile that installs are freqai requirements, torch (no matter your specs) and other modules that are usually required:
+
+
+[09/15/2024 22:44] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1285008266396700743/Dockerfile?ex=69f33275&is=69f1e0f5&hm=a3ad0092c683251a73c85a7c9877e6d975991cdba7f9bc4d807b854f1adc8c61&
+
+
+[09/16/2024 02:55] ch1ck3n_t4c0s
+I do not run docker ever Linux or WSL
+
+
+[09/16/2024 09:10] alex_737071
+Hey Guys, whats the Difference between the normal and Hyper? Like the V90 or v90Hyper?
+
+
+[09/16/2024 09:57] serialkiller15
+Hyper Version is for hyperopt and the normal with freqai enabled
+
+
+[09/16/2024 10:06] alex_737071
+That makes sence! I been hyperopting all night on the wrong one then! Why the need for the two?
+
+
+[09/16/2024 10:44] serialkiller15
+Because of freqai I wrote you..... In hyperopt Version there is no freqai... No learning for future candles...
+
+
+[09/16/2024 19:17] chryses4371
+Thank you so much Sera for your reply. I'm not so expert with docker, I use the basic commands, and normally I don't build dockerfiles, only in rare occasion, precisely because I'm not so expert. My machine is based on OMV and I use the native package to manage docker files, I already have 3 freqtrade running in 3 different docker-compose configurations and all ok. My worry is that I'm not so able to manage a dockerfile, with update and so on, now I use Watchtower that help me to keep all update.
+I peeked into your dockerfile, and I saw that it calls up requirements.txt but I couldn't find the file and it's not present in git either, which unlike the dockerfile in the torch directory is called up, in fact if I try to build the dockerfile, I get error
+`#10 [python-deps 7/9] COPY --chown=ftuser:ftuser requirements.txt /freqtrade/
+#10 ERROR: failed to calculate checksum of ref e7f118aa-cb52-4f48-a3e3-99b0a2278627::vkofp97c3pnj7r6nua3op5msp: "/requirements.txt": not found`
+Still not working, but Alex was right, he saw a path problem, in fact on the git it clearly says
+`cp torch/BasePyTorchModel.py <freqtrade dir>/freqtrade/freqai/base_models/
+cp torch/PyTorchLSTMModel.py <freqtrade dir >/freqtrade/freqai/torch/
+cp torch/PyTorchModelTrainer.py <freqtrade dir>/freqtrade/freqai/torch/
+cp torch/PyTorchLSTMRegressor.py <freqtrade dir>/user_data/freqaimodels/`
+so the freqai folder goes into the freqtrade root in a folder named freqtrade, I didn't see that right away.
+Now I just have to figure out why in docker I can't get it to work, but now that I write, I have an idea, if it works I'll post the solution
+
+
+[09/16/2024 19:20] serialkiller15
+@Chryses if you need Further help write me directly
+
+
+[09/16/2024 20:05] chryses4371
+@Alex Crypto King 
+Sure, but I found a solution
+Just override the files from torch, for instance this's mine volumes inside the docker-compose file
+`    volumes:
+      - "${DOCKER_APPDATA}/freqtrade/user_data:/freqtrade/user_data"
+      - "${DOCKER_APPDATA}/freqtrade/user_data/freqailstm/torch/BasePyTorchModel.py:/freqtrade/freqtrade/freqai/base_models/BasePyTorchModel.py"
+      - "${DOCKER_APPDATA}/freqtrade/user_data/freqailstm/torch/PyTorchLSTMModel.py:/freqtrade/freqtrade/freqai/torch/PyTorchLSTMModel.py"
+      - "${DOCKER_APPDATA}/freqtrade/user_data/freqailstm/torch/PyTorchModelTrainer.py:/freqtrade/freqtrade/freqai/torch/PyTorchModelTrainer.py"`
+Where `${DOCKER_APPDATA}/freqtrade/user_data` is my personal path where I store the files
+Now I only have to understand if is working and better understand the configuration, seems that it use the cpu instead the gpu
+
+
+[09/16/2024 21:44] sera131
+Oh, it means you are pulling the image directly.
+
+The way I configure my freqtrade is by having a gitpull of the entire stable distribution of freqtrade, afterwards running the script available on their site for installation.
+
+After this, if you follow the right steps, you will have your folder -> pulling the git will create a freqtrade folder within your folder.
+
+In that freatrade folder, you will have downloaded all requirements files (base image) and the script should also have them installed within your virtual env. However, from the moment forward, in that freatrade folder, you will find the user_data folder. By default you don't have the strategies folder created so you need to create it manually or run freatrade ones from console (no docker) and gets auto created.
+
+ In the user_data folder, you will  need to place the config. The freaimodel in freqaimodels and the rest as per the instructions given by Alex howto.
+
+Replace your docker file and docker compose with mine (might have to delete traefik and other parts from it.) and should be able to run.
+
+I might have time to create a clean version without my modules and add-ons, so let me know if you didn't get it solved yet.
+
+
+[09/16/2024 21:49] sera131
+running on AMD or Nvidia?
+
+
+[09/17/2024 17:30] chryses4371
+Thanks for your explanation
+
+
+[09/17/2024 17:30] chryses4371
+Nvidia and on docker I've
+`    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: all
+            capabilities: [gpu]`
+
+
+[09/17/2024 19:18] serialkiller15
+Nice
+
+
+[09/17/2024 21:45] sera131
+did you figure it out to make it work?
+
+
+[09/18/2024 16:21] chryses4371
+yep, is working with the override, but like I said seems that is working with cpu and not with gpu
+
+
+[09/18/2024 18:54] chryses4371
+Btw, do you have any advice for a starting configuration? staticpairlist or other? Is first time for me on futures so I don't know exactly how is better to start
+
+
+[09/18/2024 18:58] .7thdragon
+freqtrade new-config --config user_data/config.json, it will guide you
+
+
+[09/18/2024 19:08] chryses4371
+well, basic config ok, I mean to optimize the white and black list actually I think I loaded a lot of pairs
+
+
+[09/18/2024 19:17] .7thdragon
+freqtrade test-pairlist --config user_data/strategies/config_with_volumelist_futures.json --exchange binance --quote USDT --print-json
+u can extract what pairs u want based on different handlers, no need for blacklist
+https://www.freqtrade.io/en/stable/plugins/#volumepairlist-advanced-mode
+
+
+[09/18/2024 21:25] sera131
+on futures I use static pair list with the pairs i consider that are not doing crazy swings... have liquidity enough etc; I do not go volume pair list on futures with anything.
+
+For spot, volume works but you need some good anti-pump mechanics / exits or barriers so you don't buy into a  pumped token.
+
+
+[09/18/2024 21:27] sera131
+filters in config are important, such as spread, volatility filter etc. this will help even more filter the bads but obviously, doesnt mean 100% protected.
+
+
+[09/18/2024 21:28] sera131
+Alex's pair list for futures is good enough to start with.. maybe some are bad but you can make your own list in time
+
+
+[09/18/2024 21:28] sera131
+also, you can do remote pairlists but maybe later on when a lot more familiar with everything
+
+
+[09/19/2024 17:38] alex_737071
+Anyone seen this error? Any idea whats up? I dont think its connected to the Strat, its a freqtrade error.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1286381037072416800/Screenshot_2024-09-19_at_19.38.09.png?ex=69f393b3&is=69f24233&hm=2f64ff408060921b2045b0ccacf1ed4d587ac25e76ee9cbcb32c18d257b7235f&
+
+
+[09/19/2024 17:47] ch1ck3n_t4c0s
+Looks like the api for the gui.
+
+
+[09/19/2024 17:48] alex_737071
+Thats what i though, but cant figure out why... its still trading and GUI working, but i dont like error messages!
+
+
+[09/19/2024 17:49] alex_737071
+I wish freqtrade was in Ruby, my Python is very basic! 🙂
+
+
+[09/19/2024 19:56] chryses4371
+Hi, sure is a good starting point, thanks!
+
+{Reactions}
+👍
+
+[09/19/2024 20:18] sera131
+i can share some examples maybe for spot trading.. for futures i'm testing multiple configs atm. Would that help you?
+
+
+[09/19/2024 20:26] chryses4371
+Sure, if you want, I want to use futures but I think I'm using a little long list, like more than 120 pairs
+
+
+[09/19/2024 20:37] sera131
+well spot and futures... not necesarly different from many pov
+
+
+[09/19/2024 20:37] sera131
+will revert, need to open third server
+
+
+[09/19/2024 20:57] sera131
+an example:
+
+
+[09/19/2024 20:57] sera131
+"pair_blacklist": [
+            "(KCS)/.*",
+            "(BNB)/.*",
+            ".*(3|3L|3S|UP|DOWN)/.*",
+            "(AUD|EUR|GBP|CHF|CAD|JPY)/.*",
+            "(BUSD|USDT|TUSD|USDC|CUSDT|DAI|USDN|CUSD)/.*",
+            "(ACM|AFA|ALA|ALL|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LEG|LOCK-1|NAVI|NMR|NOV|OG|PFL|PORTO|PSG|ROUSH|STV|TH|TRA|UCH|UFC|YBO)/.*",
+            "(MEM|AMPL|BOBA|OMG|XYM|POLX|CARR|SKEY|KLV|TLOS|KRL)/.*",
+            "XEC/USDT"
+    ],
+  },
+
+  "pairlists": [
+                {
+"method": "VolumePairList",
+"number_assets": 100,
+"sort_key": "quoteVolume",
+                        "min_value": 35000,
+"refresh_period": 1800
+},
+        {"method": "AgeFilter", "min_days_listed": 160},
+        {"method": "PriceFilter", "low_price_ratio": 0.01, "min_price": 0.00000010},
+        {"method": "SpreadFilter", "max_spread_ratio": 0.01},
+        {
+            "method": "RangeStabilityFilter",
+            "lookback_days": 3,
+            "min_rate_of_change": 0.01,
+            "max_rate_of_change": 0.4,
+            "refresh_period": 1440
+        }
+    ],
+
+
+[09/19/2024 20:57] sera131
+its more important to have a strong blacklist than the perfect whitelist 😄
+
+
+[09/19/2024 20:59] sera131
+from those 120 pairs, chose the ones that are actually strong projects.
+
+
+[09/19/2024 21:13] chryses4371
+lol, thank I'll take a look and I'm going to take my cue from this excerpt from the configuration
+
+
+[09/19/2024 21:30] chryses4371
+do you have any advice for nvidia? I don't know why is not working for this
+`ftuser@ad7abca7f1fc:/freqtrade$ nvidia-smi
+NVIDIA-SMI couldn't find libnvidia-ml.so library in your system. Please make sure that the NVIDIA Display Driver is properly installed and present in your system.
+Please also try adding directory that contains libnvidia-ml.so to your system PATH.`
+Maybe the docker image?
+
+
+[09/19/2024 21:34] sera131
+i'm on AMD so can't really say but thats the first time in 3-4 years I see this error
+
+
+[09/19/2024 21:35] sera131
+is it a error?
+
+
+[09/19/2024 21:37] sera131
+try export PATH=$PATH:/path/to/nvidia/driver
+
+
+[09/19/2024 21:37] sera131
+search for library:
+
+locate libnvidia-ml.so
+
+
+[09/19/2024 21:37] alex_737071
+Is it in Docker? Might be stupid but have you intaslled nvidia-container-toolkit
+
+
+[09/19/2024 21:40] sera131
+its not stupid at all, something related to driver/SMI is missing
+
+
+[09/19/2024 21:40] sera131
+maybe someone has a dockerfile configured for nvidia
+
+
+[09/19/2024 21:42] alex_737071
+Try `sudo find /usr -name "libnvidia-ml.so"` then  `export LD_LIBRARY_PATH=/path/to/nvidia/driver:$LD_LIBRARY_PATH` maybe?
+
+{Reactions}
+👆
+
+[09/19/2024 21:43] sera131
+share the docker image
+
+
+[09/20/2024 07:00] chryses4371
+what doesn't make much sense for now is that I already have other dockers that use gpu when needed, and I have no problems whatsoever with them, surely I'm doing something wrong myself, here is the docker-compose
+`services:
+  freqtrade:
+    image: freqtradeorg/freqtrade:stable_freqaitorch
+    # image: freqtradeorg/freqtrade:develop_freqairl
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: all
+            capabilities: [gpu]
+
+    healthcheck:
+        test: "curl --fail http://localhost:8080 || exit 1"
+        interval: 30s
+        timeout: 10s
+        retries: 5
+    restart: unless-stopped
+    container_name: freqtradeAI-Test-Gate.io
+    volumes:
+      - "${DOCKER_APPDATA}/freqtrade/user_data:/freqtrade/user_data"
+      - "${DOCKER_APPDATA}/freqtrade/user_data/freqailstm/torch/BasePyTorchModel.py:/freqtrade/freqtrade/freqai/base_models/BasePyTorchModel.py"
+      - "${DOCKER_APPDATA}/freqtrade/user_data/freqailstm/torch/PyTorchLSTMModel.py:/freqtrade/freqtrade/freqai/torch/PyTorchLSTMModel.py"
+      - "${DOCKER_APPDATA}/freqtrade/user_data/freqailstm/torch/PyTorchModelTrainer.py:/freqtrade/freqtrade/freqai/torch/PyTorchModelTrainer.py"
+    ports:
+      - "8090:8080"
+
+    command: >
+      trade
+      --logfile /freqtrade/user_data/logs/freqtradeAI-Test-Gateio.log
+      --db-url sqlite:////freqtrade/user_data/freqtradeAI-Test-Gateio.sqlite
+      --config /freqtrade/user_data/gateio-AlexStrategyFinalV9-dryrun.json
+      --freqaimodel PyTorchLSTMRegressor
+      --strategy-path /freqtrade/user_data/freqailstm/V9 -s AlexStrategyFinalV9`
+
+So it seems strange to me that I have to find and export the corresponding path to the library or similar solutions, it should work out-of-the-box But I don't see my error
+
+
+[09/20/2024 07:10] serialkiller15
+hey you want tu use cuda? or am i wrong here?
+
+
+[09/20/2024 07:15] chryses4371
+yep cuda
+
+
+[09/20/2024 07:15] serialkiller15
+ok so you have to use this progressor here its cuda enabled https://discordapp.com/channels/1238181199206154373/1280061618549559319/1280062992695951383
+
+
+[09/20/2024 07:20] chryses4371
+ah ok, so by default is cpu and if I change the progressor I can use gpu, did I get it right?
+
+
+[09/20/2024 07:23] serialkiller15
+absolute we have implemented device gpu and other stuff in the lstm-regressor for cuda!
+
+
+[09/20/2024 07:29] chryses4371
+@Alex Crypto King maybe not related but
+Now I try to make the lstm-regressor changes
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1286590050796044288/message.txt?ex=69f304db&is=69f1b35b&hm=ddd06f0ebcf59bc4354894937ecc4cebdd69fd1999db4e9cb32199954e100868&
+
+
+[09/20/2024 07:30] serialkiller15
+did you use this one here
+
+
+[09/20/2024 07:30] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1286590391533174794/message.txt?ex=69f3052d&is=69f1b3ad&hm=b972bc83cd37afec529a957f3c597a4fa19a95bf4d56504ba743ae080664e2a5&
+
+
+[09/20/2024 07:31] serialkiller15
+and also deleted all existing models before strarting? training?
+
+
+[09/21/2024 11:50] chryses4371
+I think it's best to solve one problem at a time, the first and currently "biggest" problem is that it doesn't see nvidia drivers, so running `nvidia-smi` inside the docker returns error. Is a `NVIDIA GeForce GTX 1650` card compatible with freqai?
+
+
+[09/21/2024 11:54] inviting_moose_32088
+just look at 'nvidia enterprice AI' drivers for your card
+
+
+[09/21/2024 11:57] chryses4371
+Isn't it enough that I can use the cuda features?
+
+
+[09/21/2024 12:04] inviting_moose_32088
+no.
+https://developer.nvidia.com/cuda-downloads
+
+{Embed}
+https://developer.nvidia.com/cuda-downloads
+CUDA Toolkit 12.1 Downloads
+Get the latest feature updates to NVIDIA's proprietary compute stack.
+https://images-ext-1.discordapp.net/external/eJ9ORhLaeL2a1Ow0kSsafzv6CR6Q6GerP0pa_LHfnWk/https/developer.download.nvidia.com/images/og-default.jpg
+
+
+[09/21/2024 12:06] chryses4371
+ok, I already have cuda toolkit, see what `nvidia-smi` return from another docker
+`nvidia-smi
+Sat Sep 21 11:48:59 2024
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.28.03              Driver Version: 560.28.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce GTX 1650        Off |   00000000:01:00.0 Off |                  N/A |
+|  0%   37C    P8             N/A /   75W |       1MiB /   4096MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+`
+
+
+[09/21/2024 12:07] chryses4371
+but is not working inside this docker
+
+
+[09/21/2024 12:59] inviting_moose_32088
+in Ukraine we have good phrarse, which describes this situation:
+"The dog shitted, the geese farted" is used in situations when nothing can be done.
+
+
+[09/21/2024 14:51] inviting_moose_32088
+guys... I need understand 'futures' market:
+
+on spot I need to buy cheaper and sell more expencive. 
+
+how about futures? I dont understand..
+
+
+[09/21/2024 14:52] inviting_moose_32088
+with this misunderstanding I can't test Alex's strategy... but I have a lot of resource for it...
+
+
+[09/21/2024 14:53] serialkiller15
+Features you can do both longs and Shorts with different coins you dont to have them
+
+
+[09/21/2024 14:56] inviting_moose_32088
+on spot I have only longs, is it true?
+if 'yes', I have another question: what does mean 'shorts'?
+
+
+[09/21/2024 14:57] inviting_moose_32088
+language barrier is freaking out
+
+
+[09/21/2024 15:01] anonymuis
+Futures are different in 4 ways:
+1) you don't own the coin you buy. You just buy a 'contract' with a promise you will sell them 'soon'.
+2) you can get a long contract I'm which you buy first, with a promise to sell later. Or a short contract in which you sell first (go negative) but have to buy back later.
+3) you can do leverage: if you have 10 dollar and you buy a coin long with 1 a price of 1 dollar. With a leverage of 1, you could buy 10 long contracts. But with a leverage of 10x,  you could buy 100 coins. But, if the price drops 10% (as in the price goes to 0,9, you own 100 coins, so you have a loss of 10 dollar=you total amount, your contract is being ended and your money is liquidates (you lose it).
+4) if you hold a contacts for a long time, you have to pay a small fee of even receive a small fee. It depends if the contract price is higher or lower than the price of the real coin. But don't bother this for a while. It makes the concept of futures q bit more complicated.
+
+{Reactions}
+👍
+
+[09/21/2024 15:03] anonymuis
+On spot you can only do 'long' (buy first), you don't have to sell your coin (could keep it untill infinity) and you can transfer your coin to another wallet or exchange.
+
+You can't do all these things with a running contract: you HAVE to fulfill the promise to sell on a long contract.
+
+
+[09/21/2024 15:04] inviting_moose_32088
+okay...
+If i will not run contract?
+
+
+[09/21/2024 15:06] anonymuis
+Short = a contract on which you sell first, and have to buy back later.
+
+If a coin has a price of 1,00 and you think it will go down, you can 'go short': you start a short contract. You basically 'hire a coin from someone else and sell it for the price of 1,00'.
+
+If the price goes down to 0,90 and you buy back the coin, you can end the contract, give the hired coin back and keep the profit of 0,10.
+
+
+[09/21/2024 15:07] anonymuis
+I know it's logical to think of it as buying and selling coins, but those are actually contract without even owning a coin:
+You just make promises to buy or sell it again on a later date and you really have to.
+
+
+[09/21/2024 15:07] anonymuis
+I don't really understand your question?
+
+
+[09/21/2024 15:08] inviting_moose_32088
+dont worry about last question!
+explanetion above is awesome!
+thank you!
+
+part with ''I know it's logical to think of it as buying and selling coins, but those are actually contract without even owning a coin:
+You just make promises to buy or sell it again on a later date and you really have to." answer all questions!
+
+{Reactions}
+👍
+
+[09/21/2024 15:20] anonymuis
+Just to put some more info in your spinning head:
+The price of a future can be a little bit higher or lower than the corresponding coin. If a lot of people think the price wil go up, they will all go long and the price of future contracts can go more up than the coin itself.
+
+This gives 2 opportunities to traders:
+1) you could buy the coin on spot and go short (sell) on the contract: Now it doesn't bother if the price of the coin goes up or down. Of you lose 10% on spot, you will profit 10% on short. But of the price of the coin and the future are getting back together, you could sell both (and go neutral again) and you could have a really small profit from the price difference on which you started. This could be good strategy, because it doesn't impose risks on price movement.
+
+2) Also (and this was point 4 of above) every X hours (mostly every 4 hours). The exchanges looks at the price of the coin, the futures and all long and short contracts:
+If the price of the future is higher that the coin, all people with active long contracts have to pay a very small amount to all people with short contracts.
+So, the effect is; every 4 hours people are being rewarded for starting short contracts if the futures price is higher than the coin. This makes the price of the futures go down again, so it keeps more in line of the price of the coin. This is the reason that a future is almost always pretty much the same price as the coin.
+
+But again, IT IS NO COIN! A contract is nothing. It's pure price speculation on the price of another object.
+Still, there are MILLIONS put in future contracts. Many of those are loosing and many are winning a bit. It's fun to think of it that way: a lot of people putting money on contracts buying 'nothing', but only the obligation to sell 'nothing' on a later date! Even a comedian can't come up with such a joke.
+
+{Reactions}
+👍
+
+[09/21/2024 15:23] anonymuis
+But... The best part of futures are three things:
+1) on spot you can't profit on a price going down. On a futures contract goingg short, you can! So any price movement you predict right means profit.
+2) you can use leverage to exponentially grow your profit (but also you loss, so it's much more risky with leverage)
+3) the fees the exchange takes are mich lower. They really want you to make a lot, fast trades on futures.
+
+{Reactions}
+👍
+
+[09/21/2024 15:23] inviting_moose_32088
+thank you for explanation!
+I'll try in futures a little later with Alexv9 strat.
+
+
+[09/21/2024 16:22] faiad5222
+Kindly have any one sample for bingx.json  config as spot ?
+
+
+[09/21/2024 16:24] chryses4371
+lol, good point of view, but in this case I can do something, I can find the solution because if is not working for me but for others is working, this means that I miss some.
+Btw, seems that the freqai don't have access to nvidia, I don't know why, not yet, and I don't know where I've to look to try to solve, maybe is why I don't build anything and I use the freqai image instead?
+
+
+[09/23/2024 16:06] attique_80740
+Hi, i'm just trying to run the code using docker but it fails while runing ```docker build -f torch/Dockerfile  -t freqai .```  it downloads the data but after that it fails
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1287807370172567653/image.png?ex=69f37e13&is=69f22c93&hm=eb45bc332bd31029e8fb3ae69b0fb6b61fb3058c36cb96f119e8ae25d95668ea&
+
+
+[09/23/2024 16:10] serialkiller15
+hea mate, i updated the github repo for that, use the setup_alexfreqailstm.sh i made today!
+
+
+[09/23/2024 16:11] serialkiller15
+after that is finished can go on docker compose up.....
+
+
+[09/23/2024 16:12] attique_80740
+Looks good, Thanks
+
+
+[09/23/2024 16:12] serialkiller15
+no prob have fun, any questions we are here to fix that!
+
+
+[09/23/2024 16:18] priezz
+Hi Alex. Is it intentional that the complete  `user_data` is now in github? Btw, why don't you put your work in progress into git branches (v91, v911, v92)? It would be much easier to track the changes there than to look for updates in Discord.
+
+{Reactions}
+💯
+
+[09/23/2024 16:20] serialkiller15
+hi @priezz i done this today because its easyer to make the docker up and running with all necessary stuff, there is the V90 on github, if you run another strategy you only have to put the files in the strategie folder thats it....
+
+
+[09/23/2024 16:20] serialkiller15
+yes thanks for the input will do that, but very busy with handling stuff!
+
+
+[09/23/2024 16:24] serialkiller15
+will need some admins in the future, mostly i do coding and testing here
+
+
+[09/23/2024 16:29] priezz
+Once user_data is already populated by freqtrade install script during the container build, it could be better just to copy the contents to the attached volume on the first container run (together with your strategy files, so a user just runs docker to start testing).
+
+
+[09/23/2024 16:30] serialkiller15
+yes mate but sry, i have many thinks to do if you want you can fix the dockerfile thanks mate!!!
+
+
+[09/23/2024 16:31] serialkiller15
+or the alex....sh script, it was a short time i did that
+
+
+[09/23/2024 16:31] serialkiller15
+any aproach very welcome here!
+
+
+[09/23/2024 16:31] priezz
+It is a proposal of a different approach. I can do it, yep
+
+{Reactions}
+💯
+
+[09/23/2024 16:31] serialkiller15
+that would be nice thanks! and welcome here!
+
+
+[09/24/2024 13:06] attique_80740
+@Alex Crypto King I have tried with setup_alexfreqailstm.sh but it throws error like this
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1288124296694333450/WhatsApp_Image_2024-09-24_at_18.03.38_01a0343d.jpg?ex=69f353bc&is=69f2023c&hm=087116124cc814e75bd22b6f41fd5e2f6171b27e56b3b326134c61542018d7a0&
+
+
+[09/24/2024 13:12] serialkiller15
+will take a look... give me a view minutes
+
+
+[09/24/2024 13:38] serialkiller15
+no problems here on my test environment
+
+
+[09/24/2024 13:38] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1288132497879863346/image.png?ex=69f35b5f&is=69f209df&hm=29eb02a6f2332133d063502800ccd407d98c19e6510706a6b2d16b7a2d25addc&
+
+
+[09/24/2024 14:13] .deodex
+Hi everyone! I am new here, in FreqAI (before I have used simple Freqtrade). Coding knowledge is elementary, from where should I start to learn FreqAI? Is there any guide, videos, or handful documentaries?
+
+
+[09/24/2024 14:13] .deodex
+Please guys help, very interested
+
+
+[09/24/2024 14:34] serialkiller15
+Hi welcome here, best way take a look here
+
+
+[09/24/2024 14:34] serialkiller15
+https://www.freqtrade.io/en/stable/
+https://www.freqtrade.io/en/stable/freqai/
+
+{Embed}
+https://www.freqtrade.io/en/stable/
+Freqtrade
+Freqtrade is a free and open source crypto trading bot written in Python, designed to support all major exchanges and be controlled via Telegram or builtin Web UI
+
+{Embed}
+https://www.freqtrade.io/en/stable/freqai/
+Introduction - Freqtrade
+Freqtrade is a free and open source crypto trading bot written in Python, designed to support all major exchanges and be controlled via Telegram or builtin Web UI
+
+{Reactions}
+👍
+
+[09/24/2024 14:34] serialkiller15
+and then use my github repo!
+
+{Reactions}
+👍
+
+[09/24/2024 21:49] alex_737071
+Hey @everyone ... Slightly off topic question, but does anyone know how freqUI works in depth. What im trying to do is have a single URL for all my BOTS, which i currently have but i have to add each Bot indvidually. Ii would like  a URL where all the BOTs appear, without having to log into each indvidually, and remove each. I was thinking to have a default page that you go to first, that runs some JS to lookup a config file, submit some POST requests to log each bot in from the config and then redirect you to the BOT master page. But, i cant figure out how to submit each BOT Auth request....
+
+
+[09/24/2024 21:53] .7thdragon
+use in client api that request is allowed to came from server:
+    "CORS_origins": ["http://server:49007"]
+
+
+[09/24/2024 21:54] alex_737071
+I have that, and i have it on my own domain... bots.mydomain.com... But what i want is the Bots auto loaded
+
+
+[09/24/2024 21:56] alex_737071
+Like meta coded; Hit webserver on port 80, HTML Page calls some JS that looks up a config file for the IP, user, and pass of BOT that should be displayed, then loads thoses BOTS and opens the page.
+
+
+[09/24/2024 21:57] .7thdragon
+use a script that iterates for each server 0x with
+freqtrade-client --config server0x_api_client.json reload_config
+
+
+[09/24/2024 21:58] .7thdragon
+the json should be the same but inside with destination changed
+for server use the interface ip or 0.0.0.0 not recommended, for client, url dest
+
+
+[09/24/2024 22:02] alex_737071
+SO then which of the configs itiraded over is the master port?
+
+
+[09/24/2024 22:03] alex_737071
+Interface_ip is set to server id, and the CORS is set to my domain URL
+
+
+[09/24/2024 22:03] .7thdragon
+use maybe a reverse proxy 🙂 cannot use the same port
+
+
+[09/24/2024 22:05] alex_737071
+Currently i have ipfw rules that reditect all traffic on 80 to port 9000, there i have a bot running, All my other BOTs have mydomain.com in the CORS police, so thats all working. So from my BOT on port 9000, can i use freqtrade-client to change them?
+
+
+[09/24/2024 22:11] alex_737071
+This is how it is at the moment, but i had to manually add each BOT. If i share bots.mydomain.com link with someone, there will see nothing on that link. what i want to do is build an interim page, that if visitted from a 3rd party computer, would auto log into all the bots listed in a config file.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1288261466193002571/Screenshot_2024-09-25_at_00.08.43.png?ex=69f32abc&is=69f1d93c&hm=02e60286c7b5ad2cd2b9ebb053a412eac2560fc21e772b830d2b9379230c3dbe&
+
+
+[09/24/2024 22:11] .7thdragon
+didnt checked exactly how the requests are made, but all the client bots should have the cors of the server, so if you connect to the server try to add new bot. so not sure who connects to what. if login needs a direct connection then u might need a reverse proxy on that port
+
+
+[09/25/2024 19:16] jasonflash2024
+Hi Guys, I am new and would like to dry run and test the strategies. From where I can get the startegy files and how does the channel work in general?
+
+
+[09/25/2024 19:27] ximontan
+Hi, https://discord.com/channels/1238181199206154373/1280030420834062419/1280030598198726727
+
+
+[09/25/2024 19:28] ximontan
+and it work like a chat) write some questions, test/dry results...
+
+
+[09/26/2024 14:47] jasonflash2024
+thank you
+
+
+[09/26/2024 15:08] sera131
+I use a similar solution for websocket, binance proxy
+
+
+[09/28/2024 08:47] jasonflash2024
+Hi Guys, are there already optimal values from hyperopt? I assume many have already done the hyperopt or must everyone do it on its own?
+
+
+[09/28/2024 09:03] bigbroseur
+Usually it's shared with the strat file but because hyperopt is based on bakctesting with static pairs list, you can create your own if you believe that your pairs list would be very different or also if you use different exchange.
+
+
+[09/28/2024 09:06] jasonflash2024
+ok thank you
+
+
+[09/28/2024 09:16] bigbroseur
+For completeness, some strategies have hyperopt parameters in the strat file itself (this is the most common), others have a .json file and some do not need hyperopt (very rare) because they manage the optimization themselves in real time (I am not talking about AI which is another subject).
+
+
+[09/28/2024 09:23] bigbroseur
+When they manage the optimization themselves, you have often in the strat the roi list empty, stoploss and trailing disabled, sometime max-open-trades = -1 means it's manage also # of trades with the amount of your wallet or DCA able to manage several trades with the same asset.
+
+
+[09/28/2024 13:50] .7thdragon
+max-open-trades = -1 means "unlimited", this leads to weird results
+the order of parameters override is:
+command -> json -> strategy -> defaults
+so everything you need to set for your strategy is better use in strat, and do not forget about that when playing around
+i recommend use generic values in strat (or not at all) but provide them as a recommendation only in comments, for example roi which is usually specific only for limited periods of the market for a specific strategy
+
+
+[09/28/2024 19:28] jasonflash2024
+Do you guys usually follow some guidelines when picking  pairs to trade in the same strategy?  The reason i am asking is I have done a correlation calculation from 2017 -2023 for ETH & BTC and it has a very positive and strong relationship of 0.92 which means the hyperopt results for both should be identical. Does it even make sense to use one strategy with one bot for multiple pairs which don't have even any correlation? Hyperopt wont be even optimal but rather an average of pairs which could go different directions... I have the feeling it might make more sense to have one bot for only one pair trading at a time
+
+{Reactions}
+👍
+
+[09/28/2024 19:34] jasonflash2024
+here is a website where its also calculated https://www.blockchaincenter.net/en/crypto-correlation-tool/?timeframe=365days&asset1=ETH&asset2=BTC#correlationtable  If for example BTC, XRP and DOGE are in the same pair list the results will be distorted.
+
+{Reactions}
+👍 (2) 💯
+
+[09/28/2024 19:47] .7thdragon
+Myself no, good strategies in general should be agnostic. But of couse for some pairs could gain more in less time or viceversa. But it is important to have volume.
+
+{Reactions}
+👍
+
+[09/28/2024 21:09] ximontan
+good idea, depend on specific strategy, 
+for example we hyper opt atr len and this len should be specific for each pair.
+B/c all pairs specific and use it's own structure.
+However it's redundant spend so match resources. Like 100 bots)
+Any way to solve this need run dry and run one multi pairs bot...
+
+{Reactions}
+👍
+
+[10/08/2024 19:23] ammart90
+a noob question, how can i determine which hyperopt loss function best suits for each space ?
+or should i hyperopt all spaces together using functions and choosing best results ?
+
+
+[10/08/2024 19:32] serialkiller15
+It depends on your strategy you use you can Splitt hyperopt only with buy and then only sell but as I told depends on the complex of your strategy make your decissions and tests on the strategy you use.
+
+
+[10/09/2024 20:26] cheluxe
+Hi! Does anyone know why I have this error? I live in Spain, but i didnt see any restriction for bybit in my country.
+
+Could not place buy order due to PermissionDenied. Message: bybit {"retCode":10024,"retMsg":"Compliance rules triggered","result":{"config":{"endpointExec":"RESTRICTED_PROMPT_TOAST","endpointArgs":{}}},"retExtInfo":{},"time":1728505424676}
+
+
+[10/09/2024 20:34] bigbroseur
+Hi, if you try with futures. I would recommand totry spot first to see if works technically, then try futures. Restriction on futures is normally for all EU countries
+
+
+[10/09/2024 20:55] cheluxe
+Thanks for your advice! Actually, I’ve been using spot strategies for a while now, and they’ve been working well. But I wanted to try out futures for the next step. That’s when I ran into this issue. I wasn’t aware of any restrictions for Bybit in Spain 😦
+
+
+[10/09/2024 21:27] ximontan
+Hi, are you in dry mode?
+can you show your config
+
+
+[10/09/2024 21:28] cheluxe
+Its live mode
+
+
+[10/10/2024 06:54] ximontan
+then it can be problem with api key permission...
+
+
+[10/10/2024 06:55] serialkiller15
+Yes check you Api settings there you have to enable future trading
+
+
+[10/10/2024 07:40] cheluxe
+After checking, it turns out the issue is related to service restrictions here in Spain. Bybit is available, but futures contracts have been restricted since February 2023. So that's why I’m unable to place futures orders now. I'll have to stick to spot trading for the time being! ☹️ Thanks for your help, though!
+
+
+[10/10/2024 07:43] bigbroseur
+Welcome in EU or spot only crypto market
+
+{Reactions}
+🥲
+
+[10/10/2024 15:35] cheluxe
+I'm encountering an issue with some strategies where they seem unable to detect most of the buy signals for an order, and this happens with the majority of the pairs I’m using in my strategy (currently 115 static pairs from the Alex configuration). The buy only gets executed when there are multiple signals in a row. I’m not sure if this could be due to my VPS, the Binance API (which is the exchange I use), or something within Freqtrade itself. Has anyone experienced something similar or know what might be causing this?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1293960116097253428/Captura_desde_2024-10-10_17-16-37.png?ex=69f376c4&is=69f22544&hm=04e10cfacae4595bbbe508eaf0f7ba061b2ca126f0ea23db7928072238fbc6dd&
+
+
+[10/10/2024 16:23] serialkiller15
+Wich Strategy are you using at the moment? From this Chart
+
+
+[10/10/2024 16:24] cheluxe
+NOTankAi_15 spot
+
+
+[10/10/2024 16:25] serialkiller15
+Ok i see have not but it's on my Todo List
+
+
+[10/10/2024 16:34] cheluxe
+It's a very safe strategy. I've been using it for a week now, and so far, the winrate has been 100%. With a stake amount of $100 and 10 max open trades, it has executed over 50 orders. Definitely worth checking out!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1293975011174125598/NOTankAi_15.py?ex=69f384a3&is=69f23323&hm=635be5f2567e6dbca29dfb78ae7ba6f8f4ebbf8b143f6816484091fe26ded93b&
+
+
+[10/10/2024 16:35] cheluxe
+No hyperopt needed
+
+
+[10/10/2024 16:35] serialkiller15
+Thanks for sharing will take a look on it with Modell you use for freqai?
+
+{Reactions}
+👍
+
+[10/10/2024 16:36] cheluxe
+PyTorchLSTMRegressor, the ones needed for your strategy
+
+
+[10/10/2024 16:36] attique_80740
+@Chelu Thanks for sharing strategy please provide the config file, model to are backtesting with.
+
+
+[10/10/2024 16:36] serialkiller15
+Nice
+
+
+[10/10/2024 16:37] cheluxe
+i have been testing it too, good results too
+
+
+[10/10/2024 16:37] serialkiller15
+I will make a new channel for it so we can discuss it there give Me a min
+
+{Reactions}
+👍 (4)
+
+[10/10/2024 16:38] ximontan
+ask about it @Ch1cK3N_t4c0s as I understand he is create it
+
+
+[10/10/2024 16:38] serialkiller15
+https://discord.com/channels/1238181199206154373/1293975854539477094
+
+
+[10/10/2024 16:38] .7thdragon
+can be used with any, i am also testing it with RL, but can be used also with LightGBMRegressor BUT by default it does not use FreqAI, needs training enabled
+
+
+[10/10/2024 16:39] serialkiller15
+Thanks for sharing and clarification.
+
+
+[10/10/2024 16:39] cheluxe
+I use it whithout freqai
+
+
+[10/10/2024 16:39] serialkiller15
+Perfekt thanks
+
+
+[10/10/2024 16:39] serialkiller15
+Channel create
+
+
+[10/10/2024 16:40] serialkiller15
+Created
+
+
+[10/10/2024 16:40] ximontan
+I dry it too, not bad
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1293976387589505057/image.png?ex=69f385eb&is=69f2346b&hm=e0b2cab1499622e91014d3f43d36ebc6cb8a7b071ef54cbafb14bb2093230fdb&
+
+{Reactions}
+🤣
+
+[10/10/2024 16:40] .7thdragon
+then you have a different version as the default one has errors
+i use now one with AI one with not, to check the differences, both on futures
+
+
+[10/10/2024 16:41] .7thdragon
+not sure how u test it, my exits are ok, also have a safe stoploss @-0.3
+
+
+[10/10/2024 16:42] serialkiller15
+Will do when I have time hehe
+
+
+[10/10/2024 16:42] cheluxe
+I use Alex config file, from his repo. the only diference is the stake amount and the max open trades i said before
+
+{Reactions}
+👍
+
+[10/10/2024 16:45] cheluxe
+With futures is a really bad strategy, it only works well with spot
+
+
+[10/10/2024 16:46] ximontan
+I'm not optimize it b/c it's lookahead (populate_indicators call argrelextrema) 
+and stoploss leave default -0.99
+I'll check with -0.3...
+
+{Reactions}
+👍
+
+[10/10/2024 16:48] .7thdragon
+not true, the strategy (murrey) is made for both directions
+
+
+[10/10/2024 16:48] cheluxe
+At least the results i had. Maybe i needed to change some parameters
+
+
+[10/10/2024 16:48] .7thdragon
+still, by default does not use freqai :), this will be a plus
+
+
+[10/10/2024 16:49] cheluxe
+I will send my dry run results later with and without futures
+
+
+[10/10/2024 16:49] xokaidos
+Where did you get this strategy from?
+
+
+[10/10/2024 16:50] ximontan
+as I remember it's come from quick adapter 3 https://discord.com/channels/972414672584183828/1115262734485962763/1119212426093666304
+
+
+[10/10/2024 16:53] cheluxe
+If I remember correctly, someone shared the link to the strategy from strat.ninja a few weeks ago in #member-spot-strategy
+
+
+[10/10/2024 16:54] cheluxe
+He share two dry runs too, testing the strategy during one month with and without futures
+
+
+[10/10/2024 16:56] cheluxe
+hahaha it was you @Ximontan
+
+{Reactions}
+🤣 😀
+
+[10/10/2024 16:57] cheluxe
+Thanks a lot for it
+
+
+[10/10/2024 17:11] serialkiller15
+Thanks for sharing let's go testing....
+
+
+[10/10/2024 17:13] cheluxe
+No problem mate! 😄
+
+
+[10/10/2024 17:13] serialkiller15
+I got some nice strategys from @Ch1cK3N_t4c0s  will share after tests
+
+{Reactions}
+👍
+
+[10/10/2024 17:14] cheluxe
+That would be great, thanks a lot!
+
+
+[10/10/2024 18:28] animeshbarai2006
+excited
+
+
+[10/11/2024 08:48] 491030360
+The strategy backtest results are good, but I noticed that many feature parameters were defined without calling "self.freqai.start", so the AI model probably isn't being used. Is there another version for freqai?
+
+
+[10/11/2024 08:49] cheluxe
+I never used it with freqai
+
+
+[10/11/2024 08:49] cheluxe
+Actually i didn't know it could xD
+
+
+[10/11/2024 08:57] 491030360
+I see that it is very consistent with the ideas of the QuickAdapter series. In the code you shared, the local minimum and maximum indicators are calculated using traditional methods, without using AI for prediction. However, the code includes features for prediction, those starting with "%-". In the QuickAdapter series, xgboost is used for prediction to find local minimums and maximums.So I'm wondering if there is a version of the code that uses AI for prediction.If I use the code you shared, I will remove the unnecessary indicators.
+
+
+[10/11/2024 08:59] 491030360
+I removed those unnecessary indicators because they would bring computational burden. I am currently doing hyperparameter optimization and want to give it a try; perhaps it can bring some profits.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1294222934503718913/image.png?ex=69f31a09&is=69f1c889&hm=fe17549c4405053e7d5466672274f4291459c85a8362f5761df62b77e2b28cbf&
+
+
+[10/11/2024 09:01] cheluxe
+Do you have 32 cpu cores?? OMG
+
+
+[10/11/2024 09:02] 491030360
+There are still 4 RTX 4090 graphics cards.
+
+😋
+
+{Reactions}
+💪
+
+[10/11/2024 09:02] cheluxe
+Wich configuration did you use for hyperopt commnad? ProfitDrawDownHyperOptLoss?
+
+
+[10/11/2024 09:02] 491030360
+yeah
+
+
+[10/11/2024 09:03] cheluxe
+Guau ... 😦
+
+
+[10/11/2024 09:03] 491030360
+https://strat.ninja/overview.php?strategy=Fengzi_v2
+This strategy looks good, but it is not open-source.
+
+😩
+
+{Embed}
+https://strat.ninja/overview.php?strategy=Fengzi_v2
+Fengzi_v2 - Strategy - Freqtrade Strategy Ninja
+Backtesting Strategy: Fengzi_v2, Display average Performance! Download - Total Profit - Freqtrade Strategy Ninja
+
+
+[10/11/2024 09:04] cheluxe
+Crazy stats
+
+
+[10/11/2024 09:07] cheluxe
+If it's not too much to ask, could you share the modified version of the strategy without the unnecessary indicators? I'd love to run some tests as well and see how it performs. Thanks 🙏
+
+
+[10/11/2024 09:08] animeshbarai2006
+me too🙏
+
+
+[10/11/2024 09:09] 491030360
+Backtesting and hyperparameter optimization are recommended to use --timeframe-detail; otherwise, you might be misled by the data.
+Perhaps it's just the backtesting results; it's hard to say how it will perform in actual operation.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1294225262518472796/image.png?ex=69f31c34&is=69f1cab4&hm=04abd533979fdfff3749abd123513f663f98cf494d89ca6a71373a502b545d13&
+
+
+[10/11/2024 09:09] cheluxe
+omg i just realized, 300 epochs in 15 min xD i almost needed 8 hours for the same epochs xDD
+
+
+[10/11/2024 09:14] serialkiller15
+@EVERYONE please be so kind and use the channles for the discussions on it because its not easy for newbies or new members to handle the informations! thanks!
+
+
+[10/11/2024 09:15] serialkiller15
+#notankai-spot
+
+
+[10/11/2024 09:16] cheluxe
+You dont think thouse functions are usefull? Adjust_trade_position helped me to not lose some trades.
+
+
+[10/11/2024 09:16] cheluxe
+Sorry, you are right Alex 🙏
+
+
+[10/11/2024 09:18] serialkiller15
+no Problem
+
+
+[10/12/2024 08:49] cheluxe
+Anyone knows why my bot cancel so many orders? Do i need an specific configuration in the json to improve the comunication with the exchange?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1294582754830319636/WhatsApp_Image_2024-10-12_at_10.46.31.jpeg?ex=69f317a4&is=69f1c624&hm=5fe9fec5aa1bb4c42545532cd623a7c000d435671ba01bb0e111670d73c8d100&
+
+
+[10/12/2024 09:13] amiralbhar
+it is related to the following config file option may be : "unfilledtimeout": {
+        "exit_timeout_count": xxx,
+        "unit": "minutes"
+    },
+
+
+[10/12/2024 09:15] cheluxe
+Yes, i know. In 10 min it cancells the order, depends on the time of the configuration. But i think 10 min is time enough to get an answer from the exchange, at least it normally do with other trades.
+
+  "unfilledtimeout": {
+    "entry": 10,
+    "exit": 10,
+    "exit_timeout_count": 0,
+    "unit": "minutes"
+  },
+
+
+[10/12/2024 09:17] cheluxe
+I think is something about this part of the configuration.
+
+  "entry_pricing": {
+    "price_side": "same",
+    "use_order_book": true,
+    "order_book_top": 1,
+    "price_last_balance": 0,
+    "check_depth_of_market": {
+      "enabled": false,
+      "bids_to_ask_delta": 1
+    }
+  },
+  "exit_pricing": {
+    "price_side": "same",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+
+
+[10/12/2024 09:23] amiralbhar
+Weird indeed, the market has reached the entry price threshold and it did not trigger the order ?
+
+
+[10/12/2024 09:26] cheluxe
+Yes, and it happens more often than it should. Around 1 out of every 4 orders placed by the strategy. 😕
+
+
+[10/21/2024 20:18] maxgorbachevskiy
+When running more than a certain amount of bots (8+ strategies, approx 30 same coins in each) I start getting this error. This error goes away after a certain timeout, then comes back again. Anyone experienced that? Is there a wsy to fix this? Or the only way to fix is to limit number of running bots?
+> `freqtrade.rpc.fiat_convert - ERROR - Error in _find_price: {'status': {'error_code': 429, 'error_message': "You've exceeded the Rate Limit. Please visit https://www.coingecko.com/en/api/pricing to subscribe to our API plans for higher rate limits."}}`
+
+
+[10/21/2024 20:25] maxgorbachevskiy
+And sometimes I get this error, then the bot restarts:
+> `sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)`
+
+
+[10/21/2024 20:48] branly76
+For every exchange there is a max amount of data you can download in a certain time. Probably you go over that amount.
+
+
+[10/21/2024 20:59] .7thdragon
+in main config u need something like this, of course need to create an api key there
+    "coingecko": {
+        "api_key": "CG-xxxxxxxxxxxxxx",
+        "is_demo": true,
+    },
+
+
+[10/22/2024 02:47] korenhskoh
+Same here especially at night . But what I did is that after change to longer second of the process_throttles_secs in config file or change another ip address if u using vpn it looks ok
+
+
+[10/22/2024 02:50] korenhskoh
+Oh really ? we can add on our api key of coingecko in config?
+
+
+[10/22/2024 07:39] maxgorbachevskiy
+Guys, I just discovered that my hyperopt timestamp is different from the machine clock. Details based on a real example:
+– My hyperopt environment is a separate Docker image.
+– My actual time is 20:02:21 (UTC timezone + 2 hours)
+–  My environment timezone is set correctly to this time ("python time" returns  20:02:21). 
+– My log prints 20:02:21
+– JSON printout states 18:02:21 (default UTC timezone in Docker) in the last line (export_time) 
+
+All my setting are set "correctly" to 20:02:21(UTC+2) so I don't understand why I see UTC in the print-out. 
+
+This gives me an idea that: maybe my problem with bad performing hyperopt (it is always around 0% or even negative) is because of skewed time at hyperopt. Maybe the script takes incorrect time and porocesses candles incorrectly,  thus leadding to incorrect hyperopt decisions?   In this case I have to understand how to fix timezone problem.
+
+What time is in your printouts? Does it match your actual time? or it is UTC? Is it only me, or everyone?
+
+
+[10/22/2024 07:39] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1298189001005600768/image.png?ex=69f30739&is=69f1b5b9&hm=856a3039b8abb930807df7429312a0489a2bca31b491b838940c9f1470555e57&
+
+
+[10/22/2024 08:01] serialkiller15
+did you have made an ENV-for your timezone
+
+
+[10/22/2024 08:06] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1298195801104715826/image.png?ex=69f30d8e&is=69f1bc0e&hm=f2431f72fb08909a9708ccf3fe599cb69aaf154ad6909bcbe190a3f652e5e2d1&
+
+
+[10/22/2024 08:11] ximontan
+I have same +N, but in export time it all time +00:00 in different PS,
+may be problem with old hyperopt results try delete it from folder (hyperopt_result)
+
+
+[10/22/2024 08:15] ximontan
+can you make printscreen what result you have in hyper opt and in backtesting
+
+
+[10/22/2024 08:16] maxgorbachevskiy
+Yes, TZ=Europe/Amsterdam. 
+Yes, I wipe all old hyperopts before starting a new one.
+
+
+[10/22/2024 08:19] maxgorbachevskiy
+This is an example of hyperopt. Back testing is same bad. 
+My point of concern is that “everyone else” have good hyperopts (like +15..30%) using the same settings, pairs, timeframe.
+
+
+[10/22/2024 08:20] ximontan
+what time range you use?
+
+
+[10/22/2024 08:23] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1298199973061595156/image.png?ex=69f31170&is=69f1bff0&hm=70179c0523f3656ca1c0a619b0df297484c59c381afa5d726e258880388a6978&
+
+
+[10/22/2024 08:27] maxgorbachevskiy
+I don’t remember this specific timeframe, but i checked it multiple times with different friends, int he past three weeks. Timeranges were like 2 months, 1 month, 3 weeks, etc…
+
+
+[10/22/2024 08:36] ximontan
+strange do the same last time, found notice that it (VVRP) should be test with less timerange https://discord.com/channels/1238181199206154373/1288147662289506388/1288213250143682622
+and I use SharpeHyperOptLossDaily
+I don't remember why I didn't dry haFbmVVRPlev,
+I dry haFbmVVRPlev_ST, may be it more profitalbe in backtesting...
+
+
+[10/22/2024 08:46] maxgorbachevskiy
+Btw it is not only about haFbmVVRPlev, but about any strat. So it is a general behavior of my FT
+
+
+[10/31/2024 14:21] alex_737071
+OK, i need a bit of help from you pros. I have BOT running in Docker with a good config for the haFbmVVRPlev strat... But, i stupidally ran hyperopt in the same directory and its overwritten the config, so as soon as i restart the bot i will loose it... I know i can get some config info from telegram, like ROI & Stoploss, but i cant get the Buy & Sell params from the running bot... I been thru logs ect but i cant be sure, i have lots running and getting them confused! Is there a way to get the exact params from a python console in a running docker container, not just read the config file, but find out the exact params its running?
+
+
+[10/31/2024 15:13] serialkiller15
+You could see it in the log file which parameters where loaded when you started it...
+
+
+[11/02/2024 21:28] bigbroseur
+@Alex if your old config was generated by hyperopt before, then you can request to regenerate it. 
+freqtrade hyperopt-show --hyperopt-filename strategy_strategy_name_date_hours.fthypt -n#
+where #= Epoch number
+
+
+[11/03/2024 16:18] youssefmgerges
+@7thDragon hey 7thdragon, i know this might be a newbie question but when running your strategy it says no module named 'ta'
+
+
+[11/03/2024 16:30] .7thdragon
+people usually read docs/info? 🙂
+
+{Reactions}
+😁 (2)
+
+[11/03/2024 16:36] serialkiller15
+@YMG TRADES everythink is described in the post of @7thDragon read carefully pop install ta then restart the Docker have fun
+
+
+[11/10/2024 15:33] tl0627
+Hey guys, which exchange are you using for live trading futures strategies with freqtrade, bybit removed standard accounts only Uta accounts, binance got this silly bnfcr and none of this is supported in freqtrade, I don't know what to do
+
+
+[11/10/2024 16:22] .7thdragon
+freqtrade/ccxt supports now (recent 2 versions already) universal account on bybit
+
+
+[11/10/2024 18:03] serialkiller15
+@xoma i made an subaccount and it worked don't upgrade that account it works in my account for many months
+
+
+[11/10/2024 18:03] serialkiller15
+Bybit
+
+
+[11/12/2024 05:35] animeshbarai2006
+can anyone help me in resolving the issue i am not able to access the webui of freqtrade .the docker is running in background and in vscode it is connected to the container still not able to access the web ui.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1305767834877562931/Screenshot_2024-11-12_110146.png?ex=69f392cf&is=69f2414f&hm=442cbc9674c9110464dfe010c48cecba7c11602a69c8bab27456cbf4a982b42a&
+https://cdn.discordapp.com/attachments/1278766200431841320/1305767835334873089/Screenshot_2024-11-12_110246.png?ex=69f392cf&is=69f2414f&hm=78201ff65ea3980cd0c097b83d7d87693cc542fb2a457cb6d3347fff9edd9f4a&
+https://cdn.discordapp.com/attachments/1278766200431841320/1305767835628470273/Screenshot_2024-11-12_110323.png?ex=69f392d0&is=69f24150&hm=45f37335cf3d7c9c0043315e0c8f07799b32f3a7ab0e5fafaeabede8df18b775&
+
+
+[11/12/2024 05:36] serialkiller15
+morning @Animesh Barai yes try 127.0.0.0:9000?
+
+
+[11/12/2024 05:36] animeshbarai2006
+yes did that
+
+
+[11/12/2024 05:36] serialkiller15
+or your network config from docker? its on bridge mode?
+
+
+[11/12/2024 05:37] animeshbarai2006
+morning to you also
+
+
+[11/12/2024 05:37] serialkiller15
+welcome mate
+
+
+[11/12/2024 05:37] animeshbarai2006
+no idea about bridge mode listening it for the first time
+
+
+[11/12/2024 05:37] serialkiller15
+show me a screenshot of your docker config?
+
+
+[11/12/2024 05:37] animeshbarai2006
+ok wait
+
+
+[11/12/2024 05:38] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1305768612644130826/image.png?ex=69f39389&is=69f24209&hm=08e2b1755fec2033565c4810c22e2bf53d6343c02353333c1e7970ea6395a8c5&
+
+
+[11/12/2024 05:38] animeshbarai2006
+can you exlpain me little where can i find this docker config
+
+
+[11/12/2024 05:39] serialkiller15
+you are running a docker? on your pc or where?
+
+
+[11/12/2024 05:39] animeshbarai2006
+pc
+
+
+[11/12/2024 05:39] serialkiller15
+ok you have portainer on it? so you can access the dockers?
+
+
+[11/12/2024 05:39] serialkiller15
+or how do you manage them manualy
+
+
+[11/12/2024 05:40] animeshbarai2006
+this one???
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1305769053499035688/Screenshot_2024-11-12_110949.png?ex=69f393f2&is=69f24272&hm=3dee30f43c534157b150c98242fd638e2970b4639c31dd721f5152c5bfc01ee0&
+
+
+[11/12/2024 05:40] animeshbarai2006
+i have just followered the installation guiide and watch some youtube vides
+
+
+[11/12/2024 05:40] serialkiller15
+ok i see go do view configuration
+
+
+[11/12/2024 05:41] animeshbarai2006
+---
+services:
+  freqtrade:
+    image: alexfreqai:latest
+    # image: freqtradeorg/freqtrade:develop
+    # Use plotting image
+    # image: freqtradeorg/freqtrade:develop_plot
+    # # Enable GPU Image and GPU Resources (only relevant for freqAI)
+    # # Make sure to uncomment the whole deploy section
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+    # Build step - only needed when additional dependencies are needed
+    # build:
+    #   context: .
+    #   dockerfile: "./docker/Dockerfile.custom"
+    restart: unless-stopped
+    container_name: freqtrade
+    volumes:
+      - "./user_data:/freqtrade/user_data"
+     
+    # Expose api on port 8080 (localhost only)
+    # Please read the https://www.freqtrade.io/en/stable/rest-api/ documentation
+    # for more information.
+    ports:
+      - "127.0.0.1:8080:8080"
+    # Default command used when running `docker compose up`
+    command: >
+      trade
+      --logfile /freqtrade/user_data/logs/freqtrade.log
+      --db-url sqlite:////freqtrade/user_data/tradesv3.sqlite
+      --config /freqtrade/user_data/config-torch.json
+      --strategy AlexStrategyFinalV9
+
+{Embed}
+https://www.freqtrade.io/en/stable/rest-api/
+REST API - Freqtrade
+Freqtrade is a free and open source crypto trading bot written in Python, designed to support all major exchanges and be controlled via Telegram or builtin Web UI
+
+
+[11/12/2024 05:41] animeshbarai2006
+sorry not was able to take screenshot in hurry
+
+
+[11/12/2024 05:43] animeshbarai2006
+even 8080 not working
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1305769837737414667/Screenshot_2024-11-12_111248.png?ex=69f394ad&is=69f2432d&hm=6da30551591b9a025032c4811a95a97840c8bdad1e7f086f520eaeba2ad74331&
+
+
+[11/12/2024 05:43] serialkiller15
+ok please try the following change the line where 127.0.0.1:8080:8080 to -  - "0.0.0.0:8080:8080" and do docker compose again
+
+
+[11/12/2024 05:43] serialkiller15
+yes thats the problem
+
+
+[11/12/2024 05:43] serialkiller15
+it depeneds on your docker configuration!
+
+
+[11/12/2024 05:43] animeshbarai2006
+ok let me try
+
+
+[11/12/2024 05:43] serialkiller15
+ok i will grab some coffee
+
+
+[11/12/2024 05:44] animeshbarai2006
+i see sorry i didn't know enough about docker just watch installation for only freqtrade
+
+
+[11/12/2024 05:44] animeshbarai2006
+thank you @Alex Crypto King
+
+
+[11/12/2024 05:46] serialkiller15
+dont wry many years ago also did not now this thinks, so lets grow and learn!
+
+{Reactions}
+👍
+
+[11/12/2024 05:56] animeshbarai2006
+@Alex Crypto King can you tell me little what i did wrong?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1305773106870358077/Screenshot_2024-11-12_112448.png?ex=69f397b8&is=69f24638&hm=5a77caff46b3e5e12bd1bc6573d6c46fcbe69ba6378bc7864fa486bfc2cd05f6&
+https://cdn.discordapp.com/attachments/1278766200431841320/1305773107348246528/Screenshot_2024-11-12_112523.png?ex=69f397b8&is=69f24638&hm=7b22dc0409a715fc9e61048e1e60304ec31a666652f19574939a7b69164668a4&
+
+
+[11/12/2024 05:57] animeshbarai2006
+let me restart my system and try again then i will update next
+
+
+[11/12/2024 06:05] animeshbarai2006
+same issue but i notice something unsual as the image run sometime and then showing restarting freqently still but acess the web ui
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1305775540250345482/Screenshot_2024-11-12_113312.png?ex=69f399fc&is=69f2487c&hm=eeb586aa8a50d1db158d991cc9a603a4aa298b495e6d9f44a104ef9681db41b7&
+https://cdn.discordapp.com/attachments/1278766200431841320/1305775540644347904/Screenshot_2024-11-12_113334.png?ex=69f399fd&is=69f2487d&hm=1b9ba15a1a58d5f2ff0ddb9a5382408c3afef2254b46dcbbac2aec9f723c084a&
+https://cdn.discordapp.com/attachments/1278766200431841320/1305775540921434133/Screenshot_2024-11-12_113438.png?ex=69f399fd&is=69f2487d&hm=051bb6e64b4928d0ea808b7915cc0560478084b59212ce5d9a382025d00288ed&
+
+
+[11/12/2024 06:09] serialkiller15
+you only can access the docker on the ip port he is listening? its on your network config mate
+
+
+[11/12/2024 06:10] animeshbarai2006
+i am trying it from here but still same issues
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1305776712973549598/Screenshot_2024-11-12_114005.png?ex=69f39b14&is=69f24994&hm=0e7e06a1a486f11d2daf3ce28d734956add91f25d42c8ecbe6202c1f3d472be1&
+
+
+[11/12/2024 06:11] animeshbarai2006
+AuthenticationError. Message: binance requires "apiKey" credential
+2036-01-01 00:00:00 
+freqtrade exited with code 2
+
+after this line the image starts restarting
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1305777044994392107/Screenshot_2024-11-12_114113.png?ex=69f39b63&is=69f249e3&hm=b7b7892696dfa2565886ee33cb61fbc6aef60f3a0d5576fe8bc60209b68d7152&
+
+
+[11/12/2024 06:12] animeshbarai2006
+i have not included any license key of any exchange as i want to use it for dry run and learn more about it before putting money.
+
+
+[11/12/2024 06:12] animeshbarai2006
+as a college student i can't afford to lose money.
+
+
+[11/12/2024 06:20] animeshbarai2006
+i turn the dry run option  true  in config-torch.json files in user_data but still after docker compose down and up when i click on the link from docker it show the same result
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1305779317569093682/Screenshot_2024-11-12_114820.png?ex=69f2f4c1&is=69f1a341&hm=796cd22cff81d6cc62687a78952afbc6eee3cc53c17ae02b462bde9542306915&
+https://cdn.discordapp.com/attachments/1278766200431841320/1305779317841854475/Screenshot_2024-11-12_114841.png?ex=69f2f4c1&is=69f1a341&hm=eba1191e9ef63d9716bf28892816809bd333796233fe7e71439b100df15c1378&
+
+
+[11/12/2024 06:31] serialkiller15
+if you dont see this in your log file after start
+
+
+[11/12/2024 06:31] animeshbarai2006
+@Alex Crypto King thank you for the help you gave it is finally accessible in the web. i will start learning and hope to do some contribution in future
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1305782033393385525/Screenshot_2024-11-12_120031.png?ex=69f2f749&is=69f1a5c9&hm=d9ab8697aed335219b56b219403d8dbb46f92f08805bf84f34f9a43e207ae6f3&
+
+
+[11/12/2024 06:31] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1305782039831777310/image.png?ex=69f2f74a&is=69f1a5ca&hm=ec0c068d55795a89af59c833e04c2955bd8226a4c6f9379f09a3f4aa1fbe4bdd&
+
+{Reactions}
+👍
+
+[11/12/2024 06:31] serialkiller15
+then please check it!
+
+
+[11/12/2024 06:31] serialkiller15
+ah ok!!!
+
+
+[11/12/2024 06:31] animeshbarai2006
+again thanks a lot
+
+
+[11/12/2024 06:32] serialkiller15
+so you have to login create the bot
+
+{Reactions}
+👍
+
+[11/12/2024 06:32] serialkiller15
+welcome mate!
+
+{Reactions}
+👍
+
+[11/12/2024 06:32] serialkiller15
+for starting mate i would use the #🚀thegreatdivergencespot  !!!
+
+
+[11/12/2024 06:33] animeshbarai2006
+should i directly download them in userdata the file and json or there is other process to follow???
+
+
+[11/12/2024 06:33] serialkiller15
+please check the #🐳installation channel everythink is discribed there!!! happy learning i have to check strategies
+
+{Reactions}
+👍
+
+[11/14/2024 17:46] andremoliv
+
+
+{Stickers}
+https://cdn.discordapp.com/stickers/816086581509095424.json
+
+
+[11/14/2024 17:46] andremoliv
+can anyone help?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1306676750410846228/message.txt?ex=69f3958e&is=69f2440e&hm=49af113793ee6048716ae8afeb42f49717b5ce6159978bce3a79566863f7a01b&
+
+
+[11/14/2024 17:48] cheluxe
+I think there is no config-example.json to copy
+
+
+[11/14/2024 18:43] andremoliv
+Tks i will try to solve
+
+
+[11/29/2024 05:29] animeshbarai2006
+yeh guys i am having a issue installing the new tankai-revival, previously was running the TGDY futures and it was running at last time few days ago, today when i turn on docker desktop and configured everything for tankai-revival, was not able to access the webui and logs were showing old trades when i cleaned everything and reinstalled by watching #🐳installation last one of notankai and remaned everything accordinly ; now the new issue is the log is showing the error but manually i have no error in the file system please go through the below reference
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1311927090097950750/Screenshot_2024-11-29_105304.png?ex=69f39190&is=69f24010&hm=bb650fbc21d2c6432184efbccef412e11b14509d74c12dc4c009993bb6c4fa75&
+https://cdn.discordapp.com/attachments/1278766200431841320/1311927090362454076/Screenshot_2024-11-29_105318.png?ex=69f39190&is=69f24010&hm=a5fff7cfbe3d49ca3d142d84a420a44439e48d94ed839e7a5655972e271ce5f8&
+https://cdn.discordapp.com/attachments/1278766200431841320/1311927090668634122/error.txt?ex=69f39190&is=69f24010&hm=e64206d49cbcef42c9b24d69e0709608df86f5b2a527d2333dcfa4a7e4249445&
+https://cdn.discordapp.com/attachments/1278766200431841320/1311927091155042334/Screenshot_2024-11-29_105832.png?ex=69f39190&is=69f24010&hm=944522faa032ddb5518b15b0df817ddf1532e6f4acd3fba149e1d5209772b650&
+
+
+[11/29/2024 22:18] serialkiller15
+freqtrade/user_data/config_NOTankAi_15.json" not found! Ple
+
+{Reactions}
+👍
+
+[11/29/2024 22:19] serialkiller15
+This is the Error you get inside the Docker..... Repeated
+
+{Reactions}
+👍
+
+[11/29/2024 22:21] serialkiller15
+The path of your docker are wrong you have to Fix that
+
+{Reactions}
+👍
+
+[01/12/2025 15:19] animeshbarai2006
+@Alex Crypto King hey, i have message you personally in discord regarding some queries for notankai , please look them once whenever you get time
+
+
+[01/12/2025 15:20] serialkiller15
+@Animesh Barai wipl take a look then thanks
+
+{Reactions}
+👍
+
+[06/18/2025 11:48] serialkiller15 (pinned)
+Standard empty config-torch.json file
+needs your api for your account (bybit, binance or others)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1384862258634428477/message.txt?ex=69f3417b&is=69f1effb&hm=74c51632b52aa3b6ac9c417c8571b2fec029dfb82f83517147fa4c6b3da1dccb&
+
+
+[06/18/2025 11:48] serialkiller15
+Pinned a message.
+
+
+[06/18/2025 11:49] mmnbm_79378
+OK. Thank you very much
+
+
+[09/03/2025 03:07] .oliver6
+hi quick question
+can freqtrade open multiple orders on single pair? like dca or something
+
+
+[09/03/2025 03:25] him1564rese
+Adjust position
+
+
+[09/03/2025 13:27] Deleted User
+yooo sup guys im absolute beginner on freqtrade, one question is that do all of u guys use freqtrade with docker? or are there alternatives to it?
+
+{Reactions}
+👍
+
+[09/03/2025 13:28] serialkiller15
+you can also run it on your lokal machine if you want, i prefer docker, because of performance and other stuff...
+
+{Reactions}
+💯 (2)
+
+[09/03/2025 13:29] Deleted User
+thankss alex
+
+{Reactions}
+👍
+
+[09/06/2025 03:43] Deleted User
+mannn i couldnt get the docker set up...  having some problem with the windows virtual machine platform feature😮‍💨
+
+
+[09/09/2025 12:13] him1564rese
+i have an issue. thanks for help >
+if i run over 3 instance in server, 
+
+freqtrade.exchange.common - WARNING - _async_get_candle_history() returned exception: "binance 418 I'm a teapot {"code":-1003,"msg":"Way too many requests; IP(xxx.xxx.xxx.xxx) 
+banned until 1757419969775. Please use the websocket for live updates to avoid bans."}". Retrying still for 4 times.
+
+use proxy?
+
+
+[09/09/2025 12:17] serialkiller15
+proxy would be helpfull, or dont make so many requests on it.......
+
+
+[09/09/2025 12:26] him1564rese
+thx alex
+
+{Reactions}
+👍
+
+[09/23/2025 03:46] .oliver6
+
+
+{Forwarded Message}
+Hi I have a question
+Does freqtrade allow to set a global stoploss, like setting a max drawdown limitation on total balance? When the total balance down a certain percentage(10%), closes all positions and stop any new tradings for a time period
+Originally sent: 09/22/2025 09:35
+
+
+[09/23/2025 03:46] .oliver6
+Looks like this is a newbie issue🤦 Does anyone know about this? Please help me out🙏 thank you
+
+
+[09/23/2025 03:50] xf0x0f
+yes, you can use a maxdrawdown in protection section on your strategy
+
+
+[09/23/2025 03:50] xf0x0f
+https://www.freqtrade.io/en/2020.12/includes/protections/#maxdrawdown
+
+
+[09/23/2025 03:51] xf0x0f
+for this there will be no new trades opened
+
+
+[09/23/2025 03:53] xf0x0f
+but you can use it like that for exit:
+
+
+[09/23/2025 03:56] xf0x0f
+ai made it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766200431841320/1419895240256393297/message.txt?ex=69f37bbd&is=69f22a3d&hm=4ddcb2dc7eeb78b35be5a19c4e71614268593ddab007f400fba2fda8dd76354e&
+
+
+[09/23/2025 03:56] xf0x0f
+double check and test for your useage
+
+
+[09/23/2025 03:57] .oliver6
+Thank you!
+
+
+[09/23/2025 04:02] xf0x0f
+its like youre triggering exit with max drawdown function/protection
+
+
+[09/23/2025 04:18] .oliver6
+yes exactly - the key issue is how to calculate the closed + open loss in a certain time of period
+
+
+[09/26/2025 17:04] dragongoattigercat
+Hello Mate,
+
+
+[09/26/2025 17:05] dragongoattigercat
+I am newbie today. I just join the community. can you please guide me which strategy should I start with? I follow the github and install V9 but since I saw other strategies as well. Thank you
+
+
+[09/26/2025 17:06] serialkiller15
+Hi welcome here, AlexBandsniperOptuna or GDK_transform...
+
+
+[09/26/2025 17:10] dragongoattigercat
+Thanks Alex, I saw you have GKD_TRANSFORMV54_ML.py. with my current setup with V9. How can I run this strategy?
+
+
+[10/15/2025 10:11] .oliver6
+When I run a strategy with no stoploss, the backtest is very good, but when I set a stoploss, the result become worse than before
+
+
+[10/15/2025 10:12] .oliver6
+Is this because of some sort of bias?
+
+
+[10/15/2025 10:24] snokard.
+if lev is low enough and you use little margin it might never "hit" but its a very dangerous approach
+
+
+[10/15/2025 18:10] .7thdragon
+the left open trades are never closed and are not computed in final results but only liquidations if using futures
+
+
+==============================================================
+Exported 516 message(s)
+==============================================================

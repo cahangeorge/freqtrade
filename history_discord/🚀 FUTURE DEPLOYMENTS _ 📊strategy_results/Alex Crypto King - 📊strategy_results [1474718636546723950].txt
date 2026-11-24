@@ -1,0 +1,780 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 📊strategy_results
+==============================================================
+
+[02/21/2026 10:46] serialkiller15
+@BASIC-Members 
+some results!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474718636546723950/1474718879484870769/image.png?ex=69f332fb&is=69f1e17b&hm=1b04c38ac650ad8384e72d54d9a626da734a0833bc676e864dd915cb9594734f&
+
+
+[02/24/2026 12:38] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474718636546723950/1475834373398986925/image.png?ex=69f34d5e&is=69f1fbde&hm=a957c5a017683d7f0603022737db5e06163d3795d28f02518701eeacd9d1f592&
+
+
+[02/24/2026 20:39] glad8769
+Would it be possible to share the configurations, such as pairs, entry timeout, entry type (limit or market) and so on. That would be very helpful to compare with mine, because mine it's in loss :/
+
+{Reactions}
+👍
+
+[03/31/2026 12:35] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474718636546723950/1488517054133964841/image.png?ex=69f34c89&is=69f1fb09&hm=50afc7a5b3b7de7cd874381e8732ec37e3f3c427e44c97ce2de2a9a772069a1d&
+
+{Reactions}
+👍
+
+[04/23/2026 18:47] Alex ClowdBOT_Free#5896
+📊 Freqtrade EVENING report — snapshot 2026-04-23 20:45 (CET)
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (running bots)
+• Total PnL: $1352.19 (+5.57%)
+• Capital: start $24294.37 → current $25646.55 (Δ +1352.19)
+• Bots: 27 running (0 LIVE / 27 DRY)
+
+🤖 Bot status
+🟢 AlexNexusForgeV8AIV6-9020 (DRY) | PnL $+613.55 (+61.42%) | trades 2669 | open 1 | win 65.4%
+🟢 AlexNexusForgeV8AIV7-9020 (DRY) | PnL $+604.65 (+60.53%) | trades 2678 | open 1 | win 65.2%
+🟢 ECRV31-9060 (DRY) | PnL $+204.66 (+10.24%) | trades 639 | open 9 | win 80.0%
+🟢 AlexBandSniperV648-9050 (DRY) | PnL $+102.32 (+10.40%) | trades 699 | open 20 | win 90.0%
+🟢 AlexBandSniperV6441-9100 (DRY) | PnL $+100.22 (+4.03%) | trades 195 | open 21 | win 87.9%
+🟢 AlexBandSniperV64-9050 (DRY) | PnL $+88.73 (+8.87%) | trades 657 | open 0 | win 89.7%
+🟢 AlexSignalForgeV3-9020 (DRY) | PnL $+35.53 (+3.55%) | trades 307 | open 20 | win 62.0%
+🟢 Bot-9140 (DRY) | PnL $+24.26 (+2.43%) | trades 518 | open 7 | win 47.0%
+
+
+[04/23/2026 18:47] Alex ClowdBOT_Free#5896
+🟢 Alex_GKD_FisherTransformV57_ML-9140 (DRY) | PnL $+23.60 (+2.36%) | trades 518 | open 3 | win 46.6%
+🟢 VisionLLMV3_Ollama-9030 (DRY) | PnL $+14.91 (+2.99%) | trades 89 | open 5 | win 77.4%
+🟢 AlexGKD_FisherTransformV61_ML-9150 (DRY) | PnL $+5.05 (+5.64%) | trades 256 | open 4 | win 52.8%
+🟢 AlexBandSniperV646-9110 (DRY) | PnL $+4.61 (+0.47%) | trades 191 | open 6 | win 89.2%
+🟢 ECRV4-9010 (DRY) | PnL $+2.17 (+0.54%) | trades 32 | open 10 | win 95.5%
+🟢 Alex_NinjaV9-9070 (DRY) | PnL $+1.47 (+0.74%) | trades 2073 | open 7 | win 85.0%
+🟢 Bot-9070 (DRY) | PnL $+1.47 (+0.74%) | trades 2073 | open 7 | win 85.0%
+🟢 AlexBandSniperV73-9010 (DRY) | PnL $+1.37 (+0.14%) | trades 8 | open 5 | win 100.0%
+🟢 AlexBandSniperV6431-9030 (DRY) | PnL $+1.21 (+0.12%) | trades 18 | open 10 | win 87.5%
+🟢 VisionLLMV3_Ollama-9040 (DRY) | PnL $-0.76 (-0.88%) | trades 9 | open 2 | win 42.9%
+🟢 AlexBandSniperV649-9120 (DRY) | PnL $-1.26 (-0.13%) | trades 31 | open 8 | win 87.0%
+🟢 AlexBandSniperV64-9130 (DRY) | PnL $-4.44 (-0.44%) | trades 4 | open 0 | win 75.0%
+🟢 Bot-9130 (DRY) | PnL $-4.44 (-0.44%) | trades 4 | open 0 | win 75.0%
+🟢 AlexNinjaV11-9040 (DRY) | PnL $-12.48 (-1.25%) | trades 39 | open 20 | win 73.7%
+🟢 AlexSignalForgeV51-9080 (DRY) | PnL $-46.81 (-4.69%) | trades 346 | open 19 | win 59.9%
+🟢 Bot-9080 (DRY) | PnL $-47.34 (-4.74%) | trades 344 | open 19 | win 59.7%
+🟢 AlexBandSniperV6431-9120 (DRY) | PnL $-72.28 (-7.26%) | trades 481 | open 10 | win 47.8%
+
+
+[04/23/2026 18:47] Alex ClowdBOT_Free#5896
+🟢 Alex_NinjaV10-9040 (DRY) | PnL $-122.05 (-12.22%) | trades 398 | open 9 | win 81.8%
+🟢 NinjaAI_V4-9000 (DRY) | PnL $-165.73 (-41.48%) | trades 851 | open 4 | win 80.5%
+
+Highlights
+• Best: AlexNexusForgeV8AIV6-9020 +61.42% ($+613.55)
+• Worst: NinjaAI_V4-9000 -41.48% ($-165.73)
+
+
+[04/23/2026 18:49] Alex ClowdBOT_Free#5896
+📊 Freqtrade EVENING report — snapshot 2026-04-23 20:47 (CET)
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (running bots)
+• Total PnL: $1352.19 (+5.57%)
+• Capital: start $24294.37 → current $25646.55 (Δ +1352.19)
+• Bots: 27 running (0 LIVE / 27 DRY)
+
+🤖 Bot status
+🟢 AlexNexusForgeV8AIV6-9020 (DRY) | PnL $+613.55 (+61.42%) | trades 2669 | open 1 | win 65.4%
+🟢 AlexNexusForgeV8AIV7-9020 (DRY) | PnL $+604.65 (+60.53%) | trades 2678 | open 1 | win 65.2%
+🟢 ECRV31-9060 (DRY) | PnL $+204.66 (+10.24%) | trades 639 | open 9 | win 80.0%
+🟢 AlexBandSniperV648-9050 (DRY) | PnL $+102.32 (+10.40%) | trades 699 | open 20 | win 90.0%
+🟢 AlexBandSniperV6441-9100 (DRY) | PnL $+100.22 (+4.03%) | trades 195 | open 21 | win 87.9%
+🟢 AlexBandSniperV64-9050 (DRY) | PnL $+88.73 (+8.87%) | trades 657 | open 0 | win 89.7%
+🟢 AlexSignalForgeV3-9020 (DRY) | PnL $+35.53 (+3.55%) | trades 307 | open 20 | win 62.0%
+🟢 Bot-9140 (DRY) | PnL $+24.26 (+2.43%) | trades 518 | open 7 | win 47.0%
+
+
+[04/23/2026 18:49] Alex ClowdBOT_Free#5896
+🟢 Alex_GKD_FisherTransformV57_ML-9140 (DRY) | PnL $+23.60 (+2.36%) | trades 518 | open 3 | win 46.6%
+🟢 VisionLLMV3_Ollama-9030 (DRY) | PnL $+14.91 (+2.99%) | trades 89 | open 5 | win 77.4%
+🟢 AlexGKD_FisherTransformV61_ML-9150 (DRY) | PnL $+5.05 (+5.64%) | trades 256 | open 4 | win 52.8%
+🟢 AlexBandSniperV646-9110 (DRY) | PnL $+4.61 (+0.47%) | trades 191 | open 6 | win 89.2%
+🟢 ECRV4-9010 (DRY) | PnL $+2.17 (+0.54%) | trades 32 | open 10 | win 95.5%
+🟢 Alex_NinjaV9-9070 (DRY) | PnL $+1.47 (+0.74%) | trades 2073 | open 7 | win 85.0%
+🟢 Bot-9070 (DRY) | PnL $+1.47 (+0.74%) | trades 2073 | open 7 | win 85.0%
+🟢 AlexBandSniperV73-9010 (DRY) | PnL $+1.37 (+0.14%) | trades 8 | open 5 | win 100.0%
+🟢 AlexBandSniperV6431-9030 (DRY) | PnL $+1.21 (+0.12%) | trades 18 | open 10 | win 87.5%
+🟢 VisionLLMV3_Ollama-9040 (DRY) | PnL $-0.76 (-0.88%) | trades 9 | open 2 | win 42.9%
+🟢 AlexBandSniperV649-9120 (DRY) | PnL $-1.26 (-0.13%) | trades 31 | open 8 | win 87.0%
+🟢 AlexBandSniperV64-9130 (DRY) | PnL $-4.44 (-0.44%) | trades 4 | open 0 | win 75.0%
+🟢 Bot-9130 (DRY) | PnL $-4.44 (-0.44%) | trades 4 | open 0 | win 75.0%
+🟢 AlexNinjaV11-9040 (DRY) | PnL $-12.48 (-1.25%) | trades 39 | open 20 | win 73.7%
+🟢 AlexSignalForgeV51-9080 (DRY) | PnL $-46.81 (-4.69%) | trades 346 | open 19 | win 59.9%
+🟢 Bot-9080 (DRY) | PnL $-47.34 (-4.74%) | trades 344 | open 19 | win 59.7%
+🟢 AlexBandSniperV6431-9120 (DRY) | PnL $-72.28 (-7.26%) | trades 481 | open 10 | win 47.8%
+
+
+[04/23/2026 18:49] Alex ClowdBOT_Free#5896
+🟢 Alex_NinjaV10-9040 (DRY) | PnL $-122.05 (-12.22%) | trades 398 | open 9 | win 81.8%
+🟢 NinjaAI_V4-9000 (DRY) | PnL $-165.73 (-41.48%) | trades 851 | open 4 | win 80.5%
+
+Highlights
+• Best: AlexNexusForgeV8AIV6-9020 +61.42% ($+613.55)
+• Worst: NinjaAI_V4-9000 -41.48% ($-165.73)
+
+
+[04/23/2026 18:50] Alex ClowdBOT_Free#5896
+📊 Freqtrade EVENING report — 2026-04-23 20:49 CET
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (27 bots)
+• Total PnL: $1352.20 (+5.57%)
+• Capital: $24293.71 → $25645.91
+• Bots: 0 LIVE / 27 DRY
+
+🤖 Top Bots:
+🟢 AlexNexusForgeV8AIV6-9020 | PnL $+613.55 | trades 2669 | win 65.4%
+🟢 AlexNexusForgeV8AIV7-9020 | PnL $+604.65 | trades 2678 | win 65.2%
+🟢 ECRV31-9060 | PnL $+204.66 | trades 639 | win 80.0%
+🟢 AlexBandSniperV648-9050 | PnL $+102.32 | trades 699 | win 90.0%
+🟢 AlexBandSniperV6441-9100 | PnL $+100.23 | trades 195 | win 88.0%
+
+🔴 Worst: NinjaAI_V4-9000 | PnL $-165.73 | win 80.5%
+
+
+[04/23/2026 18:50] Alex ClowdBOT_Free#5896
+— Updated: 20:49 CET | 🤖 OpenClaw Bot
+
+
+[04/24/2026 05:16] Alex ClowdBOT_Free#5896
+📊 Freqtrade MORNING report — snapshot 2026-04-24 07:15 (CET)
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (running bots)
+• Total PnL: $1368.08 (+5.65%)
+• Capital: start $24231.09 → current $25599.17 (Δ +1368.08)
+• Bots: 27 running (0 LIVE / 27 DRY)
+
+🤖 Bot status
+🟢 AlexNexusForgeV8AIV6-9020 (DRY) | PnL $+613.55 (+61.42%) | trades 2669 | open 1 | win 65.4%
+🟢 AlexNexusForgeV8AIV7-9020 (DRY) | PnL $+601.65 (+60.16%) | trades 2680 | open 0 | win 65.2%
+🟢 ECRV31-9060 (DRY) | PnL $+207.55 (+10.39%) | trades 691 | open 17 | win 79.8%
+🟢 AlexBandSniperV6441-9100 (DRY) | PnL $+103.02 (+4.18%) | trades 217 | open 26 | win 88.0%
+🟢 AlexBandSniperV648-9050 (DRY) | PnL $+90.62 (+9.32%) | trades 706 | open 14 | win 89.6%
+🟢 AlexBandSniperV64-9050 (DRY) | PnL $+88.73 (+8.87%) | trades 657 | open 0 | win 89.7%
+🟢 AlexSignalForgeV3-9020 (DRY) | PnL $+39.40 (+3.94%) | trades 319 | open 20 | win 61.9%
+🟢 Alex_GKD_FisherTransformV57_ML-9140 (DRY) | PnL $+23.79 (+2.38%) | trades 526 | open 2 | win 46.6%
+
+
+[04/24/2026 05:16] Alex ClowdBOT_Free#5896
+🟢 Bot-9140 (DRY) | PnL $+23.76 (+2.38%) | trades 526 | open 3 | win 46.5%
+🟢 VisionLLMV3_Ollama-9030 (DRY) | PnL $+14.91 (+2.99%) | trades 89 | open 5 | win 77.4%
+🟢 AlexBandSniperV646-9110 (DRY) | PnL $+7.26 (+0.74%) | trades 196 | open 9 | win 89.3%
+🟢 AlexBandSniperV6431-9030 (DRY) | PnL $+6.31 (+0.64%) | trades 34 | open 10 | win 87.5%
+🟢 AlexGKD_FisherTransformV61_ML-9150 (DRY) | PnL $+4.89 (+5.50%) | trades 256 | open 3 | win 52.6%
+🟢 AlexBandSniperV73-9010 (DRY) | PnL $+2.56 (+0.26%) | trades 23 | open 13 | win 100.0%
+🟢 ECRV4-9010 (DRY) | PnL $+2.25 (+0.57%) | trades 95 | open 20 | win 74.7%
+🟢 Alex_NinjaV9-9070 (DRY) | PnL $+1.99 (+1.01%) | trades 2076 | open 5 | win 85.1%
+🟢 Bot-9070 (DRY) | PnL $+1.68 (+0.85%) | trades 2076 | open 6 | win 85.1%
+🟢 AlexBandSniperV649-9120 (DRY) | PnL $+0.68 (+0.07%) | trades 45 | open 14 | win 90.3%
+🟢 VisionLLMV3_Ollama-9040 (DRY) | PnL $-0.76 (-0.88%) | trades 9 | open 2 | win 42.9%
+🟢 AlexBandSniperV64-9130 (DRY) | PnL $-4.44 (-0.44%) | trades 4 | open 0 | win 75.0%
+🟢 Bot-9130 (DRY) | PnL $-4.44 (-0.44%) | trades 4 | open 0 | win 75.0%
+🟢 AlexNinjaV11-9040 (DRY) | PnL $-5.18 (-0.52%) | trades 72 | open 20 | win 86.5%
+🟢 AlexSignalForgeV51-9080 (DRY) | PnL $-47.69 (-4.79%) | trades 393 | open 19 | win 59.9%
+🟢 Bot-9080 (DRY) | PnL $-47.69 (-4.79%) | trades 393 | open 19 | win 59.9%
+🟢 AlexBandSniperV6431-9120 (DRY) | PnL $-72.28 (-7.26%) | trades 481 | open 10 | win 47.8%
+
+{Reactions}
+🚀
+
+[04/24/2026 05:16] Alex ClowdBOT_Free#5896
+🟢 Alex_NinjaV10-9040 (DRY) | PnL $-122.05 (-12.22%) | trades 398 | open 9 | win 81.8%
+🟢 NinjaAI_V4-9000 (DRY) | PnL $-161.99 (-40.66%) | trades 864 | open 9 | win 80.3%
+
+Highlights
+• Best: AlexNexusForgeV8AIV6-9020 +61.42% ($+613.55)
+• Worst: NinjaAI_V4-9000 -40.66% ($-161.99)
+
+
+[04/24/2026 05:24] nerazurri0420
+How long has the ECRV31-9060 (DRY) strategy been running? @Alex Crypto King
+
+
+[04/24/2026 05:29] darkreaper0756
+Forge is still a good strategy🍾💶
+
+
+[04/24/2026 09:22] serialkiller15
+Signal Forge v4 is better then V5
+Ecr I switched from v2 to v31 also run on another bot not here need to adjust the settings for the reports
+
+{Reactions}
+🚀
+
+[04/24/2026 18:16] Alex ClowdBOT_Free#5896
+📊 Freqtrade EVENING report — snapshot 2026-04-24 20:15 (CET)
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (running bots)
+• Total PnL: $739.44 (+3.65%)
+• Capital: start $20241.52 → current $20980.96 (Δ +739.44)
+• Bots: 23 running (0 LIVE / 23 DRY)
+
+🤖 Bot status
+🟢 AlexNexusForgeV8AIV7-9020 (DRY) | PnL $+599.52 (+59.95%) | trades 2687 | open 0 | win 65.0%
+🟢 ECRV31-9060 (DRY) | PnL $+211.28 (+10.57%) | trades 735 | open 9 | win 79.6%
+🟢 AlexBandSniperV6441-9100 (DRY) | PnL $+47.90 (+1.94%) | trades 236 | open 23 | win 85.0%
+🟢 AlexBandSniperV648-9050 (DRY) | PnL $+45.16 (+4.61%) | trades 719 | open 14 | win 88.4%
+🟢 AlexSignalForgeV3-9020 (DRY) | PnL $+42.60 (+4.27%) | trades 342 | open 20 | win 62.1%
+🟢 Alex_GKD_FisherTransformV57_ML-9140 (DRY) | PnL $+24.04 (+2.40%) | trades 539 | open 7 | win 46.6%
+🟢 Bot-9140 (DRY) | PnL $+23.98 (+2.40%) | trades 539 | open 8 | win 46.5%
+🟢 VisionLLMV3_Ollama-9030 (DRY) | PnL $+15.05 (+3.01%) | trades 90 | open 5 | win 77.7%
+
+
+[04/24/2026 18:17] Alex ClowdBOT_Free#5896
+🟢 ECRV4-9010 (DRY) | PnL $+4.87 (+1.22%) | trades 173 | open 9 | win 72.6%
+🟢 AlexGKD_FisherTransformV61_ML-9150 (DRY) | PnL $+3.22 (+3.62%) | trades 262 | open 4 | win 51.9%
+🟢 AlexBandSniperV646-9110 (DRY) | PnL $+3.17 (+0.32%) | trades 202 | open 6 | win 88.8%
+🟢 AlexBandSniperV6431-9030 (DRY) | PnL $+2.52 (+0.26%) | trades 48 | open 12 | win 86.1%
+🟢 Alex_NinjaV9-9070 (DRY) | PnL $+1.80 (+0.90%) | trades 2085 | open 7 | win 85.1%
+🟢 Bot-9070 (DRY) | PnL $+1.80 (+0.90%) | trades 2085 | open 7 | win 85.1%
+🟢 AlexBandSniperV73-9010 (DRY) | PnL $+1.27 (+0.13%) | trades 48 | open 11 | win 81.1%
+🟢 AlexNinjaV11-9040 (DRY) | PnL $-0.05 (-0.01%) | trades 123 | open 20 | win 89.3%
+🟢 VisionLLMV3_Ollama-9040 (DRY) | PnL $-0.76 (-0.88%) | trades 9 | open 2 | win 42.9%
+🟢 AlexBandSniperV64-9130 (DRY) | PnL $-4.44 (-0.44%) | trades 4 | open 0 | win 75.0%
+🟢 Bot-9130 (DRY) | PnL $-4.44 (-0.44%) | trades 4 | open 0 | win 75.0%
+🟢 AlexBandSniperV649-9120 (DRY) | PnL $-12.40 (-1.25%) | trades 55 | open 11 | win 79.5%
+🟢 Bot-9080 (DRY) | PnL $-52.03 (-5.23%) | trades 459 | open 19 | win 58.9%
+🟢 AlexSignalForgeV51-9080 (DRY) | PnL $-54.48 (-5.46%) | trades 469 | open 19 | win 58.4%
+🟢 NinjaAI_V4-9000 (DRY) | PnL $-160.13 (-40.39%) | trades 882 | open 12 | win 80.5%
+
+Highlights
+
+
+[04/24/2026 18:17] Alex ClowdBOT_Free#5896
+• Best: AlexNexusForgeV8AIV7-9020 +59.95% ($+599.52)
+• Worst: NinjaAI_V4-9000 -40.39% ($-160.13)
+
+
+[04/25/2026 05:16] Alex ClowdBOT_Free#5896
+📊 Freqtrade MORNING report — snapshot 2026-04-25 07:15 (CET)
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (running bots)
+• Total PnL: $638.25 (+3.15%)
+• Capital: start $20268.41 → current $20906.67 (Δ +638.25)
+• Bots: 23 running (0 LIVE / 23 DRY)
+
+🤖 Bot status
+🟢 AlexNexusForgeV8AIV7-9020 (DRY) | PnL $+597.76 (+59.78%) | trades 2693 | open 0 | win 65.0%
+🟢 ECRV31-9060 (DRY) | PnL $+213.72 (+10.70%) | trades 768 | open 13 | win 79.9%
+🟢 AlexSignalForgeV3-9020 (DRY) | PnL $+45.57 (+4.56%) | trades 354 | open 20 | win 61.4%
+🟢 AlexBandSniperV6441-9100 (DRY) | PnL $+34.97 (+1.42%) | trades 249 | open 23 | win 84.5%
+🟢 Alex_GKD_FisherTransformV57_ML-9140 (DRY) | PnL $+25.56 (+2.56%) | trades 544 | open 6 | win 46.6%
+🟢 Bot-9140 (DRY) | PnL $+25.56 (+2.56%) | trades 544 | open 6 | win 46.6%
+🟢 VisionLLMV3_Ollama-9030 (DRY) | PnL $+15.05 (+3.01%) | trades 90 | open 5 | win 77.7%
+🟢 AlexNinjaV11-9040 (DRY) | PnL $+9.75 (+0.98%) | trades 157 | open 20 | win 91.2%
+
+
+[04/25/2026 05:17] Alex ClowdBOT_Free#5896
+🟢 ECRV4-9010 (DRY) | PnL $+6.10 (+1.53%) | trades 231 | open 15 | win 70.8%
+🟢 AlexBandSniperV646-9110 (DRY) | PnL $+5.20 (+0.53%) | trades 214 | open 14 | win 89.0%
+🟢 AlexGKD_FisherTransformV61_ML-9150 (DRY) | PnL $+3.36 (+3.79%) | trades 264 | open 4 | win 51.9%
+🟢 Alex_NinjaV9-9070 (DRY) | PnL $+2.34 (+1.17%) | trades 2089 | open 4 | win 85.1%
+🟢 Bot-9070 (DRY) | PnL $+2.34 (+1.17%) | trades 2089 | open 4 | win 85.1%
+🟢 AlexBandSniperV648-9050 (DRY) | PnL $+1.34 (+0.13%) | trades 14 | open 12 | win 100.0%
+🟢 VisionLLMV3_Ollama-9040 (DRY) | PnL $-0.76 (-0.88%) | trades 9 | open 2 | win 42.9%
+🟢 AlexBandSniperV64-9130 (DRY) | PnL $-4.44 (-0.44%) | trades 6 | open 2 | win 75.0%
+🟢 Bot-9130 (DRY) | PnL $-4.44 (-0.44%) | trades 6 | open 2 | win 75.0%
+🟢 AlexBandSniperV649-9120 (DRY) | PnL $-17.03 (-1.71%) | trades 65 | open 12 | win 79.2%
+🟢 AlexBandSniperV6431-9030 (DRY) | PnL $-18.26 (-1.85%) | trades 54 | open 7 | win 80.8%
+🟢 AlexBandSniperV73-9010 (DRY) | PnL $-27.57 (-2.79%) | trades 59 | open 8 | win 74.5%
+🟢 AlexSignalForgeV51-9080 (DRY) | PnL $-56.42 (-5.65%) | trades 527 | open 19 | win 58.9%
+🟢 Bot-9080 (DRY) | PnL $-56.42 (-5.65%) | trades 527 | open 19 | win 58.9%
+🟢 NinjaAI_V4-9000 (DRY) | PnL $-165.00 (-41.49%) | trades 892 | open 11 | win 80.4%
+
+Highlights
+
+
+[04/25/2026 05:17] Alex ClowdBOT_Free#5896
+• Best: AlexNexusForgeV8AIV7-9020 +59.78% ($+597.76)
+• Worst: NinjaAI_V4-9000 -41.49% ($-165.00)
+
+
+[04/25/2026 08:32] viking046433
+@Alex ClowdBOT_Free  tell me a bit more about Vision
+
+
+[04/25/2026 08:42] serialkiller15
+.. It's your work different versions..
+
+
+[04/25/2026 08:42] serialkiller15
+@Alex ClowdBOT_Free give us a short summary if the different Vision Strategy we are running
+
+
+[04/25/2026 08:59] serialkiller15
+**Smart Features:**
+• **DCA** — adds 50% stake at -1.5% and -3% drawdown (max 2)
+• **Dynamic stoploss** — LLM sets per-trade SL price
+• **Learning memory** — records every trade, extracts lessons via LLM, builds pair-specific knowledge
+• **Portfolio awareness** — LLM knows your balance, exposure, win rate, and adjusts sizing
+
+**Infrastructure:**
+• Ollama server at 
+• Model: `qwen2.5:7b`
+• **Max 5 open trades** — quality over quantity
+
+**Status:** V3 is the latest, evolved from V1 (OpenRouter/cloud) → V2 (Ollama/local) → **V3 (profit-focused exits + tiered ROI)**.
+
+Want me to check the backtest results or latest trades for it? ☠️
+
+
+[04/25/2026 09:01] viking046433
+I wonder its its the llm ? i use R1 and its a reasoning model and its finding the the support and resistance zones very well
+
+
+[04/25/2026 09:01] viking046433
+But could also be exits mine has a almost 90% winrate
+
+
+[04/25/2026 09:02] serialkiller15
+I changed to ollama so needs some adjustment but did not had time to fix that
+
+
+[04/25/2026 09:02] viking046433
+Something to look at i think i will use another model with exactly my  version and see what happens
+
+
+[04/25/2026 09:06] viking046433
+@Alex Crypto King  the real exit should actually be the next support zone or resistance zone. Because its trading from zone to zone and if it rejects the zone it will hit stop loss. But if not it will run to the next zone thats how the market move on most big pairs
+
+
+[04/25/2026 18:16] Alex ClowdBOT_Free#5896
+📊 Freqtrade EVENING report — snapshot 2026-04-25 20:15 (CET)
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (running bots)
+• Total PnL: $593.89 (+2.93%)
+• Capital: start $20250.63 → current $20844.52 (Δ +593.89)
+• Bots: 23 running (0 LIVE / 23 DRY)
+
+🤖 Bot status
+🟢 AlexNexusForgeV8AIV7-9020 (DRY) | PnL $+597.25 (+59.71%) | trades 2697 | open 1 | win 64.9%
+🟢 ECRV31-9060 (DRY) | PnL $+210.10 (+10.53%) | trades 812 | open 23 | win 79.3%
+🟢 AlexSignalForgeV3-9020 (DRY) | PnL $+40.92 (+4.10%) | trades 388 | open 20 | win 59.8%
+🟢 Alex_GKD_FisherTransformV57_ML-9140 (DRY) | PnL $+24.49 (+2.45%) | trades 547 | open 3 | win 46.1%
+🟢 Bot-9140 (DRY) | PnL $+24.49 (+2.45%) | trades 547 | open 3 | win 46.1%
+🟢 VisionLLMV3_Ollama-9030 (DRY) | PnL $+15.05 (+3.02%) | trades 90 | open 5 | win 77.7%
+🟢 AlexBandSniperV6441-9100 (DRY) | PnL $+12.94 (+0.52%) | trades 258 | open 11 | win 82.6%
+🟢 AlexBandSniperV646-9110 (DRY) | PnL $+10.97 (+1.11%) | trades 218 | open 5 | win 89.7%
+
+
+[04/25/2026 18:17] Alex ClowdBOT_Free#5896
+🟢 AlexBandSniperV648-9050 (DRY) | PnL $+7.53 (+0.76%) | trades 31 | open 7 | win 95.8%
+🟢 ECRV4-9010 (DRY) | PnL $+4.04 (+1.02%) | trades 291 | open 20 | win 70.5%
+🟢 AlexGKD_FisherTransformV61_ML-9150 (DRY) | PnL $+3.36 (+3.81%) | trades 264 | open 4 | win 51.9%
+🟢 AlexNinjaV11-9040 (DRY) | PnL $+1.26 (+0.13%) | trades 191 | open 20 | win 88.9%
+🟢 VisionLLMV3_Ollama-9040 (DRY) | PnL $-0.76 (-0.88%) | trades 9 | open 2 | win 42.9%
+🟢 Alex_NinjaV9-9070 (DRY) | PnL $-0.80 (-0.40%) | trades 2094 | open 2 | win 85.1%
+🟢 Bot-9070 (DRY) | PnL $-0.80 (-0.40%) | trades 2094 | open 2 | win 85.1%
+🟢 AlexBandSniperV64-9130 (DRY) | PnL $-11.68 (-1.17%) | trades 6 | open 0 | win 66.7%
+🟢 Bot-9130 (DRY) | PnL $-11.68 (-1.17%) | trades 6 | open 0 | win 66.7%
+🟢 AlexBandSniperV6431-9030 (DRY) | PnL $-13.87 (-1.41%) | trades 64 | open 7 | win 79.0%
+🟢 AlexBandSniperV649-9120 (DRY) | PnL $-17.12 (-1.72%) | trades 80 | open 5 | win 78.7%
+🟢 AlexBandSniperV73-9010 (DRY) | PnL $-32.03 (-3.25%) | trades 72 | open 10 | win 77.4%
+🟢 Bot-9080 (DRY) | PnL $-54.19 (-5.49%) | trades 603 | open 19 | win 58.9%
+🟢 AlexSignalForgeV51-9080 (DRY) | PnL $-54.69 (-5.53%) | trades 604 | open 19 | win 58.8%
+🟢 NinjaAI_V4-9000 (DRY) | PnL $-160.90 (-40.37%) | trades 907 | open 9 | win 80.5%
+
+Highlights
+
+
+[04/25/2026 18:17] Alex ClowdBOT_Free#5896
+• Best: AlexNexusForgeV8AIV7-9020 +59.71% ($+597.25)
+• Worst: NinjaAI_V4-9000 -40.37% ($-160.90)
+
+
+[04/26/2026 05:16] Alex ClowdBOT_Free#5896
+📊 Freqtrade MORNING report — snapshot 2026-04-26 07:15 (CET)
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (running bots)
+• Total PnL: $553.71 (+2.74%)
+• Capital: start $20245.07 → current $20798.78 (Δ +553.71)
+• Bots: 23 running (0 LIVE / 23 DRY)
+
+🤖 Bot status
+🟢 AlexNexusForgeV8AIV7-9020 (DRY) | PnL $+596.27 (+59.60%) | trades 2699 | open 2 | win 64.9%
+🟢 ECRV31-9060 (DRY) | PnL $+212.29 (+10.64%) | trades 843 | open 21 | win 79.3%
+🟢 AlexSignalForgeV3-9020 (DRY) | PnL $+42.18 (+4.21%) | trades 394 | open 20 | win 59.6%
+🟢 Alex_GKD_FisherTransformV57_ML-9140 (DRY) | PnL $+24.26 (+2.43%) | trades 552 | open 6 | win 46.1%
+🟢 Bot-9140 (DRY) | PnL $+24.26 (+2.43%) | trades 551 | open 5 | win 46.1%
+🟢 VisionLLMV3_Ollama-9030 (DRY) | PnL $+15.05 (+3.01%) | trades 90 | open 5 | win 77.7%
+🟢 AlexBandSniperV648-9050 (DRY) | PnL $+11.70 (+1.19%) | trades 48 | open 20 | win 96.4%
+🟢 AlexBandSniperV646-9110 (DRY) | PnL $+10.97 (+1.12%) | trades 225 | open 12 | win 89.7%
+
+
+[04/26/2026 05:17] Alex ClowdBOT_Free#5896
+🟢 ECRV4-9010 (DRY) | PnL $+4.52 (+1.14%) | trades 335 | open 13 | win 68.9%
+🟢 AlexGKD_FisherTransformV61_ML-9150 (DRY) | PnL $+3.20 (+3.63%) | trades 265 | open 4 | win 51.7%
+🟢 VisionLLMV3_Ollama-9040 (DRY) | PnL $-0.76 (-0.88%) | trades 9 | open 2 | win 42.9%
+🟢 Alex_NinjaV9-9070 (DRY) | PnL $-0.80 (-0.40%) | trades 2098 | open 6 | win 85.1%
+🟢 Bot-9070 (DRY) | PnL $-0.80 (-0.40%) | trades 2098 | open 6 | win 85.1%
+🟢 AlexBandSniperV6441-9100 (DRY) | PnL $-3.03 (-0.12%) | trades 263 | open 7 | win 81.2%
+🟢 AlexNinjaV11-9040 (DRY) | PnL $-4.91 (-0.49%) | trades 213 | open 20 | win 86.5%
+🟢 AlexBandSniperV64-9130 (DRY) | PnL $-11.68 (-1.17%) | trades 7 | open 1 | win 66.7%
+🟢 Bot-9130 (DRY) | PnL $-11.68 (-1.17%) | trades 7 | open 1 | win 66.7%
+🟢 AlexBandSniperV6431-9030 (DRY) | PnL $-13.31 (-1.37%) | trades 76 | open 12 | win 78.1%
+🟢 AlexBandSniperV649-9120 (DRY) | PnL $-21.75 (-2.18%) | trades 88 | open 4 | win 73.8%
+🟢 AlexBandSniperV73-9010 (DRY) | PnL $-35.33 (-3.57%) | trades 77 | open 7 | win 77.1%
+🟢 AlexSignalForgeV51-9080 (DRY) | PnL $-61.64 (-6.22%) | trades 639 | open 18 | win 58.0%
+🟢 Bot-9080 (DRY) | PnL $-62.80 (-6.32%) | trades 635 | open 19 | win 57.6%
+🟢 NinjaAI_V4-9000 (DRY) | PnL $-162.48 (-41.12%) | trades 920 | open 10 | win 80.7%
+
+Highlights
+
+
+[04/26/2026 05:17] Alex ClowdBOT_Free#5896
+• Best: AlexNexusForgeV8AIV7-9020 +59.60% ($+596.27)
+• Worst: NinjaAI_V4-9000 -41.12% ($-162.48)
+
+
+[04/26/2026 18:16] Alex ClowdBOT_Free#5896
+📊 Freqtrade EVENING report — snapshot 2026-04-26 20:15 (CET)
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (running bots)
+• Total PnL: $510.38 (+2.11%)
+• Capital: start $24230.91 → current $24741.29 (Δ +510.38)
+• Bots: 24 running (0 LIVE / 24 DRY)
+
+🤖 Bot status
+🟢 AlexNexusForgeV8AIV7-9020 (DRY) | PnL $+596.99 (+59.70%) | trades 2706 | open 0 | win 64.9%
+🟢 ECRV31-9060 (DRY) | PnL $+210.56 (+10.55%) | trades 880 | open 19 | win 78.3%
+🟢 AlexSignalForgeV3-9020 (DRY) | PnL $+46.99 (+1.88%) | trades 423 | open 28 | win 59.8%
+🟢 Alex_GKD_FisherTransformV57_ML-9140 (DRY) | PnL $+24.42 (+2.44%) | trades 555 | open 3 | win 46.2%
+🟢 Bot-9140 (DRY) | PnL $+24.42 (+2.44%) | trades 555 | open 3 | win 46.2%
+🟢 VisionLLMV3_Ollama-9030 (DRY) | PnL $+15.20 (+3.04%) | trades 91 | open 5 | win 77.9%
+🟢 AlexNinjaV11-9040 (DRY) | PnL $+9.45 (+0.95%) | trades 261 | open 20 | win 86.7%
+🟢 AlexBandSniperV646-9110 (DRY) | PnL $+7.71 (+0.78%) | trades 230 | open 8 | win 89.6%
+
+
+[04/26/2026 18:17] Alex ClowdBOT_Free#5896
+🟢 AlexBandSniperV648-9050 (DRY) | PnL $+7.18 (+0.74%) | trades 55 | open 20 | win 94.3%
+🟢 AlexGKD_FisherTransformV61_ML-9150 (DRY) | PnL $+4.20 (+4.72%) | trades 265 | open 3 | win 51.9%
+🟢 Alex_NinjaV9-9070 (DRY) | PnL $+3.25 (+1.64%) | trades 2104 | open 3 | win 85.1%
+🟢 Bot-9070 (DRY) | PnL $+3.25 (+1.64%) | trades 2104 | open 3 | win 85.1%
+🟢 AlexBandSniperV651-9050 (DRY) | PnL $+0.00 (+0.00%) | trades 7 | open 7 | win 0.0%
+🟢 ECRV4-9010 (DRY) | PnL $+0.00 (+0.00%) | trades 5 | open 5 | win 0.0%
+🟢 VisionLLMV3_Ollama-9040 (DRY) | PnL $-0.54 (-0.62%) | trades 10 | open 2 | win 50.0%
+🟢 AlexBandSniperV6431-9030 (DRY) | PnL $-18.00 (-1.84%) | trades 92 | open 17 | win 77.3%
+🟢 AlexBandSniperV64-9130 (DRY) | PnL $-19.24 (-1.92%) | trades 7 | open 0 | win 57.1%
+🟢 Bot-9130 (DRY) | PnL $-19.24 (-1.92%) | trades 7 | open 0 | win 57.1%
+🟢 AlexBandSniperV6441-9100 (DRY) | PnL $-19.76 (-0.80%) | trades 286 | open 22 | win 80.3%
+🟢 AlexBandSniperV649-9120 (DRY) | PnL $-21.86 (-2.20%) | trades 105 | open 14 | win 73.6%
+🟢 AlexBandSniperV73-9010 (DRY) | PnL $-28.18 (-2.85%) | trades 88 | open 8 | win 80.0%
+🟢 AlexSignalForgeV51-9080 (DRY) | PnL $-72.72 (-7.29%) | trades 708 | open 18 | win 57.0%
+🟢 Bot-9080 (DRY) | PnL $-72.72 (-7.29%) | trades 708 | open 18 | win 57.0%
+🟢 NinjaAI_V4-9000 (DRY) | PnL $-170.97 (-43.03%) | trades 942 | open 12 | win 80.3%
+
+
+[04/26/2026 18:17] Alex ClowdBOT_Free#5896
+Highlights
+• Best: AlexNexusForgeV8AIV7-9020 +59.70% ($+596.99)
+• Worst: NinjaAI_V4-9000 -43.03% ($-170.97)
+
+
+[04/27/2026 05:16] Alex ClowdBOT_Free#5896
+📊 Freqtrade MORNING report — snapshot 2026-04-27 07:15 (CET)
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (running bots)
+• Total PnL: $478.70 (+1.98%)
+• Capital: start $24193.06 → current $24671.76 (Δ +478.70)
+• Bots: 24 running (0 LIVE / 24 DRY)
+
+🤖 Bot status
+🟢 AlexNexusForgeV8AIV7-9020 (DRY) | PnL $+597.90 (+59.78%) | trades 2713 | open 1 | win 64.8%
+🟢 ECRV31-9060 (DRY) | PnL $+211.71 (+10.61%) | trades 909 | open 18 | win 78.2%
+🟢 AlexSignalForgeV3-9020 (DRY) | PnL $+45.44 (+1.82%) | trades 497 | open 50 | win 58.2%
+🟢 Bot-9140 (DRY) | PnL $+24.90 (+2.49%) | trades 559 | open 4 | win 46.5%
+🟢 Alex_GKD_FisherTransformV57_ML-9140 (DRY) | PnL $+24.89 (+2.49%) | trades 559 | open 3 | win 46.4%
+🟢 VisionLLMV3_Ollama-9030 (DRY) | PnL $+16.23 (+3.25%) | trades 92 | open 5 | win 78.2%
+🟢 AlexNinjaV11-9040 (DRY) | PnL $+13.79 (+1.39%) | trades 308 | open 20 | win 86.8%
+🟢 AlexBandSniperV646-9110 (DRY) | PnL $+13.46 (+1.38%) | trades 248 | open 17 | win 90.0%
+
+
+[04/27/2026 05:17] Alex ClowdBOT_Free#5896
+🟢 AlexBandSniperV648-9050 (DRY) | PnL $+7.18 (+0.74%) | trades 55 | open 20 | win 94.3%
+🟢 AlexGKD_FisherTransformV61_ML-9150 (DRY) | PnL $+4.20 (+4.69%) | trades 265 | open 3 | win 51.9%
+🟢 Alex_NinjaV9-9070 (DRY) | PnL $+4.16 (+2.08%) | trades 2108 | open 1 | win 85.0%
+🟢 Bot-9070 (DRY) | PnL $+4.16 (+2.08%) | trades 2108 | open 1 | win 85.0%
+🟢 AlexBandSniperV651-9050 (DRY) | PnL $+3.47 (+0.14%) | trades 50 | open 36 | win 92.9%
+🟢 ECRV4-9010 (DRY) | PnL $+1.97 (+0.50%) | trades 28 | open 18 | win 100.0%
+🟢 VisionLLMV3_Ollama-9040 (DRY) | PnL $-0.38 (-0.44%) | trades 11 | open 2 | win 55.6%
+🟢 AlexBandSniperV6431-9030 (DRY) | PnL $-15.53 (-1.59%) | trades 101 | open 11 | win 76.7%
+🟢 AlexBandSniperV64-9130 (DRY) | PnL $-19.24 (-1.92%) | trades 7 | open 0 | win 57.1%
+🟢 Bot-9130 (DRY) | PnL $-19.24 (-1.92%) | trades 7 | open 0 | win 57.1%
+🟢 AlexBandSniperV649-9120 (DRY) | PnL $-25.75 (-2.60%) | trades 124 | open 16 | win 73.2%
+🟢 AlexBandSniperV73-9010 (DRY) | PnL $-37.19 (-3.75%) | trades 94 | open 4 | win 78.9%
+🟢 AlexBandSniperV6441-9100 (DRY) | PnL $-47.80 (-1.92%) | trades 302 | open 23 | win 78.8%
+🟢 AlexSignalForgeV51-9080 (DRY) | PnL $-76.86 (-7.73%) | trades 775 | open 17 | win 56.2%
+🟢 Bot-9080 (DRY) | PnL $-77.34 (-7.76%) | trades 774 | open 18 | win 56.1%
+🟢 NinjaAI_V4-9000 (DRY) | PnL $-175.46 (-44.13%) | trades 942 | open 6 | win 80.2%
+
+
+[04/27/2026 05:17] Alex ClowdBOT_Free#5896
+Highlights
+• Best: AlexNexusForgeV8AIV7-9020 +59.78% ($+597.90)
+• Worst: NinjaAI_V4-9000 -44.13% ($-175.46)
+
+
+[04/27/2026 18:16] Alex ClowdBOT_Free#5896
+📊 Freqtrade EVENING report — snapshot 2026-04-27 20:15 (CET)
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (running bots)
+• Total PnL: $589.07 (+2.42%)
+• Capital: start $24350.86 → current $24939.94 (Δ +589.07)
+• Bots: 25 running (0 LIVE / 25 DRY)
+
+🤖 Bot status
+🟢 AlexNexusForgeV8AIV7-9020 (DRY) | PnL $+597.03 (+59.62%) | trades 2735 | open 20 | win 64.8%
+🟢 ECRV31-9060 (DRY) | PnL $+214.34 (+10.74%) | trades 958 | open 17 | win 78.3%
+🟢 AlexBandSniperV651-9050 (DRY) | PnL $+50.62 (+2.02%) | trades 43 | open 0 | win 97.7%
+🟢 AlexSignalForgeV3-9020 (DRY) | PnL $+45.95 (+1.85%) | trades 563 | open 47 | win 56.0%
+🟢 Alex_GKD_FisherTransformV57_ML-9140 (DRY) | PnL $+24.73 (+2.47%) | trades 562 | open 3 | win 46.1%
+🟢 Bot-9140 (DRY) | PnL $+24.73 (+2.47%) | trades 560 | open 1 | win 46.1%
+🟢 AlexBandSniperV646-9110 (DRY) | PnL $+20.64 (+2.09%) | trades 249 | open 7 | win 90.1%
+🟢 VisionLLMV3_Ollama-9030 (DRY) | PnL $+16.23 (+3.26%) | trades 92 | open 5 | win 78.2%
+
+
+[04/27/2026 18:17] Alex ClowdBOT_Free#5896
+🟢 ECRV4-9010 (DRY) | PnL $+7.43 (+1.90%) | trades 48 | open 19 | win 93.1%
+🟢 AlexBandSniperV73-9010 (DRY) | PnL $+5.93 (+0.60%) | trades 35 | open 18 | win 76.5%
+🟢 Alex_NinjaV9-9070 (DRY) | PnL $+4.22 (+2.11%) | trades 2110 | open 2 | win 85.1%
+🟢 AlexGKD_FisherTransformV61_ML-9150 (DRY) | PnL $+4.20 (+4.78%) | trades 265 | open 3 | win 51.9%
+🟢 Bot-9070 (DRY) | PnL $+4.16 (+2.08%) | trades 2108 | open 1 | win 85.0%
+🟢 AlexBandSniperV6441-9100 (DRY) | PnL $+2.29 (+0.09%) | trades 33 | open 17 | win 87.5%
+🟢 AlexBandSniperV4-9080 (DRY) | PnL $+0.00 (+0.00%) | trades 0 | open 0 | win 0.0%
+🟢 AlexBandSniperV6431-9030 (DRY) | PnL $+0.00 (+0.00%) | trades 10 | open 10 | win 0.0%
+🟢 VisionLLMV3_Ollama-9040 (DRY) | PnL $-0.38 (-0.44%) | trades 11 | open 2 | win 55.6%
+🟢 VisionLLMV4_Ollama-9040 (DRY) | PnL $-1.20 (-1.40%) | trades 13 | open 3 | win 50.0%
+🟢 AlexBandSniperV64-9130 (DRY) | PnL $-19.00 (-1.90%) | trades 8 | open 0 | win 62.5%
+🟢 Bot-9130 (DRY) | PnL $-19.00 (-1.90%) | trades 8 | open 0 | win 62.5%
+🟢 AlexBandSniperV649-9120 (DRY) | PnL $-23.04 (-2.32%) | trades 128 | open 8 | win 75.0%
+🟢 AlexNinjaV11-9040 (DRY) | PnL $-36.06 (-3.62%) | trades 366 | open 20 | win 82.7%
+🟢 Bot-9080 (DRY) | PnL $-76.05 (-7.74%) | trades 781 | open 18 | win 56.4%
+🟢 AlexSignalForgeV51-9080 (DRY) | PnL $-82.08 (-8.30%) | trades 785 | open 18 | win 56.1%
+🟢 NinjaAI_V4-9000 (DRY) | PnL $-176.63 (-43.84%) | trades 953 | open 8 | win 80.2%
+
+
+[04/27/2026 18:17] Alex ClowdBOT_Free#5896
+Highlights
+• Best: AlexNexusForgeV8AIV7-9020 +59.62% ($+597.03)
+• Worst: NinjaAI_V4-9000 -43.84% ($-176.63)
+
+
+[04/28/2026 05:16] Alex ClowdBOT_Free#5896
+📊 Freqtrade MORNING report — snapshot 2026-04-28 07:15 (CET)
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (running bots)
+• Total PnL: $560.75 (+2.31%)
+• Capital: start $24312.37 → current $24873.12 (Δ +560.75)
+• Bots: 25 running (0 LIVE / 25 DRY)
+
+🤖 Bot status
+🟢 AlexNexusForgeV8AIV7-9020 (DRY) | PnL $+602.36 (+60.21%) | trades 2738 | open 2 | win 64.9%
+🟢 ECRV31-9060 (DRY) | PnL $+215.27 (+10.78%) | trades 983 | open 15 | win 78.1%
+🟢 AlexBandSniperV651-9050 (DRY) | PnL $+53.96 (+2.16%) | trades 46 | open 1 | win 97.8%
+🟢 AlexSignalForgeV3-9020 (DRY) | PnL $+44.71 (+1.80%) | trades 577 | open 50 | win 55.6%
+🟢 Alex_GKD_FisherTransformV57_ML-9140 (DRY) | PnL $+24.84 (+2.48%) | trades 570 | open 7 | win 46.2%
+🟢 Bot-9140 (DRY) | PnL $+24.84 (+2.48%) | trades 568 | open 5 | win 46.2%
+🟢 AlexBandSniperV646-9110 (DRY) | PnL $+22.49 (+2.28%) | trades 254 | open 11 | win 90.1%
+🟢 VisionLLMV3_Ollama-9030 (DRY) | PnL $+16.23 (+3.26%) | trades 92 | open 5 | win 78.2%
+
+
+[04/28/2026 05:17] Alex ClowdBOT_Free#5896
+🟢 ECRV4-9010 (DRY) | PnL $+5.48 (+1.38%) | trades 57 | open 18 | win 76.9%
+🟢 Alex_NinjaV9-9070 (DRY) | PnL $+4.35 (+2.18%) | trades 2113 | open 4 | win 85.1%
+🟢 AlexGKD_FisherTransformV61_ML-9150 (DRY) | PnL $+4.20 (+4.77%) | trades 265 | open 3 | win 51.9%
+🟢 Bot-9070 (DRY) | PnL $+4.16 (+2.08%) | trades 2108 | open 1 | win 85.0%
+🟢 AlexBandSniperV6441-9100 (DRY) | PnL $+3.65 (+0.15%) | trades 48 | open 20 | win 78.6%
+🟢 AlexBandSniperV4-9080 (DRY) | PnL $+0.00 (+0.00%) | trades 0 | open 0 | win 0.0%
+🟢 VisionLLMV3_Ollama-9040 (DRY) | PnL $-0.38 (-0.44%) | trades 11 | open 2 | win 55.6%
+🟢 VisionLLMV4_Ollama-9040 (DRY) | PnL $-1.20 (-1.40%) | trades 13 | open 3 | win 50.0%
+🟢 AlexBandSniperV6431-9030 (DRY) | PnL $-4.47 (-0.45%) | trades 20 | open 13 | win 71.4%
+🟢 AlexBandSniperV73-9010 (DRY) | PnL $-11.98 (-1.20%) | trades 46 | open 8 | win 52.6%
+🟢 AlexBandSniperV64-9130 (DRY) | PnL $-19.00 (-1.90%) | trades 8 | open 0 | win 62.5%
+🟢 Bot-9130 (DRY) | PnL $-19.00 (-1.90%) | trades 8 | open 0 | win 62.5%
+🟢 AlexBandSniperV649-9120 (DRY) | PnL $-22.95 (-2.32%) | trades 136 | open 12 | win 74.2%
+🟢 AlexNinjaV11-9040 (DRY) | PnL $-46.53 (-4.69%) | trades 391 | open 20 | win 82.2%
+🟢 Bot-9080 (DRY) | PnL $-76.05 (-7.74%) | trades 781 | open 18 | win 56.4%
+🟢 AlexSignalForgeV51-9080 (DRY) | PnL $-82.08 (-8.30%) | trades 785 | open 18 | win 56.1%
+🟢 NinjaAI_V4-9000 (DRY) | PnL $-182.17 (-45.71%) | trades 970 | open 13 | win 80.0%
+
+
+[04/28/2026 05:17] Alex ClowdBOT_Free#5896
+Highlights
+• Best: AlexNexusForgeV8AIV7-9020 +60.21% ($+602.36)
+• Worst: NinjaAI_V4-9000 -45.71% ($-182.17)
+
+
+[04/28/2026 18:16] Alex ClowdBOT_Free#5896
+📊 Freqtrade EVENING report — snapshot 2026-04-28 20:15 (CET)
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (running bots)
+• Total PnL: $1052.66 (+2.76%)
+• Capital: start $38085.67 → current $39138.33 (Δ +1052.66)
+• Bots: 30 running (0 LIVE / 30 DRY)
+
+🤖 Bot status
+🟢 AlexNexusForgeV8AIV7-9020 (DRY) | PnL $+606.53 (+60.63%) | trades 2753 | open 12 | win 64.9%
+🟢 ECRV32-9060 (DRY) | PnL $+213.41 (+10.67%) | trades 1038 | open 5 | win 74.6%
+🟢 ECRV31-9060 (DRY) | PnL $+210.42 (+10.52%) | trades 1018 | open 0 | win 74.8%
+🟢 AlexBandSniperV654-9050 (DRY) | PnL $+67.94 (+2.72%) | trades 108 | open 30 | win 94.9%
+🟢 AlexBandSniperV651-9050 (DRY) | PnL $+55.14 (+2.21%) | trades 50 | open 0 | win 98.0%
+🟢 AlexBandSniperV646-9110 (DRY) | PnL $+38.22 (+3.90%) | trades 268 | open 13 | win 90.6%
+🟢 AlexSignalForgeV3-9020 (DRY) | PnL $+35.15 (+1.41%) | trades 629 | open 50 | win 53.9%
+🟢 Bot-9140 (DRY) | PnL $+24.34 (+2.43%) | trades 575 | open 9 | win 45.9%
+
+
+[04/28/2026 18:17] Alex ClowdBOT_Free#5896
+🟢 Alex_GKD_FisherTransformV57_ML-9140 (DRY) | PnL $+23.67 (+2.37%) | trades 575 | open 4 | win 45.9%
+🟢 VisionLLMV3_Ollama-9030 (DRY) | PnL $+16.23 (+3.26%) | trades 92 | open 5 | win 78.2%
+🟢 AlexBandSniperV655-9100 (DRY) | PnL $+15.92 (+0.64%) | trades 84 | open 7 | win 83.1%
+🟢 AlexNinjaV12-9040 (DRY) | PnL $+9.55 (+0.95%) | trades 21 | open 11 | win 100.0%
+🟢 ECRV4-9010 (DRY) | PnL $+5.96 (+1.50%) | trades 66 | open 19 | win 76.6%
+🟢 AlexBandSniperV6441-9100 (DRY) | PnL $+4.86 (+0.20%) | trades 84 | open 24 | win 80.0%
+🟢 AlexGKD_FisherTransformV61_ML-9150 (DRY) | PnL $+3.69 (+4.16%) | trades 265 | open 2 | win 51.7%
+🟢 AlexBandSniperV73-9010 (DRY) | PnL $+3.67 (+0.37%) | trades 16 | open 3 | win 92.3%
+🟢 Alex_NinjaV9-9070 (DRY) | PnL $+3.54 (+1.77%) | trades 2117 | open 3 | win 85.0%
+🟢 AlexBandSniperV8-9120 (DRY) | PnL $+1.89 (+0.19%) | trades 22 | open 13 | win 88.9%
+🟢 GKD_FisherTransformV41_ML-9150 (DRY) | PnL $+0.01 (+0.00%) | trades 5 | open 3 | win 50.0%
+🟢 AlexBandSniperV4-9080 (DRY) | PnL $+0.00 (+0.00%) | trades 0 | open 0 | win 0.0%
+🟢 AlexBandSniperV9-9130 (DRY) | PnL $+0.00 (+0.00%) | trades 2 | open 2 | win 0.0%
+🟢 GKD_FisherTransformV8_ML-9140 (DRY) | PnL $+0.00 (+0.00%) | trades 0 | open 0 | win 0.0%
+🟢 VisionLLMV4_Ollama-9040 (DRY) | PnL $-1.95 (-2.27%) | trades 14 | open 3 | win 45.5%
+🟢 AlexBandSniperV6431-9030 (DRY) | PnL $-2.03 (-0.21%) | trades 46 | open 15 | win 77.4%
+🟢 AlexBandSniperV655-9000 (DRY) | PnL $-5.52 (-0.22%) | trades 59 | open 38 | win 76.2%
+
+
+[04/28/2026 18:17] Alex ClowdBOT_Free#5896
+🟢 AlexBandSniperV64-9130 (DRY) | PnL $-19.00 (-1.90%) | trades 8 | open 0 | win 62.5%
+🟢 Bot-9130 (DRY) | PnL $-19.00 (-1.90%) | trades 8 | open 0 | win 62.5%
+🟢 AlexBandSniperV649-9120 (DRY) | PnL $-24.42 (-2.46%) | trades 141 | open 13 | win 73.4%
+🟢 AlexNinjaV11-9040 (DRY) | PnL $-39.67 (-3.99%) | trades 405 | open 20 | win 82.9%
+🟢 NinjaAI_V4-9000 (DRY) | PnL $-175.91 (-44.19%) | trades 990 | open 14 | win 80.4%
+
+Highlights
+• Best: AlexNexusForgeV8AIV7-9020 +60.63% ($+606.53)
+• Worst: NinjaAI_V4-9000 -44.19% ($-175.91)
+
+
+[04/29/2026 05:16] Alex ClowdBOT_Free#5896
+📊 Freqtrade MORNING report — snapshot 2026-04-29 07:15 (CET)
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (running bots)
+• Total PnL: $1045.62 (+2.75%)
+• Capital: start $37994.76 → current $39040.38 (Δ +1045.62)
+• Bots: 30 running (0 LIVE / 30 DRY)
+
+🤖 Bot status
+🟢 AlexNexusForgeV8AIV7-9020 (DRY) | PnL $+624.35 (+62.62%) | trades 2770 | open 8 | win 65.1%
+🟢 ECRV32-9060 (DRY) | PnL $+217.00 (+10.89%) | trades 1067 | open 18 | win 74.9%
+🟢 ECRV31-9060 (DRY) | PnL $+210.42 (+10.52%) | trades 1018 | open 0 | win 74.8%
+🟢 AlexBandSniperV654-9050 (DRY) | PnL $+72.08 (+2.90%) | trades 137 | open 23 | win 90.3%
+🟢 AlexBandSniperV651-9050 (DRY) | PnL $+55.14 (+2.21%) | trades 50 | open 0 | win 98.0%
+🟢 AlexBandSniperV646-9110 (DRY) | PnL $+42.73 (+4.38%) | trades 277 | open 16 | win 90.8%
+🟢 AlexSignalForgeV3-9020 (DRY) | PnL $+36.82 (+1.47%) | trades 664 | open 50 | win 54.6%
+🟢 Bot-9140 (DRY) | PnL $+24.34 (+2.43%) | trades 575 | open 9 | win 45.9%
+
+
+[04/29/2026 05:17] Alex ClowdBOT_Free#5896
+🟢 Alex_GKD_FisherTransformV57_ML-9140 (DRY) | PnL $+23.67 (+2.37%) | trades 575 | open 4 | win 45.9%
+🟢 VisionLLMV3_Ollama-9030 (DRY) | PnL $+16.23 (+3.24%) | trades 92 | open 5 | win 78.2%
+🟢 AlexNinjaV12-9040 (DRY) | PnL $+15.19 (+1.52%) | trades 63 | open 20 | win 95.3%
+🟢 ECRV4-9010 (DRY) | PnL $+6.54 (+1.65%) | trades 76 | open 19 | win 70.2%
+🟢 AlexBandSniperV6441-9100 (DRY) | PnL $+4.86 (+0.20%) | trades 84 | open 24 | win 80.0%
+🟢 AlexGKD_FisherTransformV61_ML-9150 (DRY) | PnL $+3.69 (+4.16%) | trades 265 | open 2 | win 51.7%
+🟢 Alex_NinjaV9-9070 (DRY) | PnL $+3.56 (+1.78%) | trades 2118 | open 2 | win 85.1%
+🟢 AlexBandSniperV9-9130 (DRY) | PnL $+3.37 (+0.34%) | trades 5 | open 4 | win 100.0%
+🟢 AlexBandSniperV655-9100 (DRY) | PnL $+2.36 (+0.09%) | trades 117 | open 28 | win 83.2%
+🟢 AlexBandSniperV4-9080 (DRY) | PnL $+0.00 (+0.00%) | trades 0 | open 0 | win 0.0%
+🟢 GKD_FisherTransformV8_ML-9140 (DRY) | PnL $+0.00 (+0.00%) | trades 0 | open 0 | win 0.0%
+🟢 GKD_FisherTransformV41_ML-9150 (DRY) | PnL $-0.26 (-0.01%) | trades 7 | open 1 | win 16.7%
+🟢 VisionLLMV4_Ollama-9040 (DRY) | PnL $-1.95 (-2.25%) | trades 14 | open 3 | win 45.5%
+🟢 AlexBandSniperV73-9010 (DRY) | PnL $-4.74 (-0.48%) | trades 25 | open 6 | win 79.0%
+🟢 AlexBandSniperV6431-9030 (DRY) | PnL $-5.17 (-0.53%) | trades 55 | open 12 | win 76.7%
+🟢 AlexBandSniperV8-9120 (DRY) | PnL $-8.08 (-0.82%) | trades 42 | open 13 | win 75.9%
+🟢 AlexBandSniperV655-9000 (DRY) | PnL $-13.97 (-0.57%) | trades 124 | open 41 | win 78.3%
+
+
+[04/29/2026 05:17] Alex ClowdBOT_Free#5896
+🟢 AlexBandSniperV64-9130 (DRY) | PnL $-19.00 (-1.90%) | trades 8 | open 0 | win 62.5%
+🟢 Bot-9130 (DRY) | PnL $-19.00 (-1.90%) | trades 8 | open 0 | win 62.5%
+🟢 AlexBandSniperV649-9120 (DRY) | PnL $-24.42 (-2.46%) | trades 141 | open 13 | win 73.4%
+🟢 AlexNinjaV11-9040 (DRY) | PnL $-39.67 (-3.99%) | trades 405 | open 20 | win 82.9%
+🟢 NinjaAI_V4-9000 (DRY) | PnL $-180.46 (-46.02%) | trades 997 | open 11 | win 80.2%
+
+Highlights
+• Best: AlexNexusForgeV8AIV7-9020 +62.62% ($+624.35)
+• Worst: NinjaAI_V4-9000 -46.02% ($-180.46)
+
+
+[04/29/2026 18:16] Alex ClowdBOT_Free#5896
+📊 Freqtrade EVENING report — snapshot 2026-04-29 20:15 (CET)
+DB: 192.168.0.210:5432 OK
+
+📈 Performance overview (running bots)
+• Total PnL: $775.06 (+2.83%)
+• Capital: start $27403.23 → current $28178.29 (Δ +775.06)
+• Bots: 21 running (0 LIVE / 21 DRY)
+
+🤖 Bot status
+🟢 AlexNexusForgeV8AIV7-9020 (DRY) | PnL $+634.63 (+64.62%) | trades 2801 | open 20 | win 65.3%
+🟢 ECRV32-9060 (DRY) | PnL $+177.14 (+8.97%) | trades 1130 | open 37 | win 74.8%
+🟢 AlexBandSniperV654-9050 (DRY) | PnL $+89.41 (+3.60%) | trades 190 | open 10 | win 90.6%
+🟢 AlexBandSniperV646-9110 (DRY) | PnL $+49.42 (+5.05%) | trades 278 | open 5 | win 91.2%
+🟢 AlexSignalForgeV3-9020 (DRY) | PnL $+37.00 (+1.48%) | trades 745 | open 49 | win 54.2%
+🟢 AlexBandSniperV655-9000 (DRY) | PnL $+23.35 (+0.96%) | trades 88 | open 27 | win 73.8%
+🟢 VisionLLMV3_Ollama-9030 (DRY) | PnL $+16.82 (+3.39%) | trades 95 | open 5 | win 77.8%
+🟢 AlexBandSniperV655-9100 (DRY) | PnL $+10.53 (+0.42%) | trades 128 | open 1 | win 84.2%
+
+
+[04/29/2026 18:16] Alex ClowdBOT_Free#5896
+🟢 ECRV4-9010 (DRY) | PnL $+8.63 (+2.24%) | trades 98 | open 19 | win 70.9%
+🟢 Alex_NinjaV9-9070 (DRY) | PnL $+2.71 (+1.35%) | trades 2121 | open 0 | win 85.0%
+🟢 AlexBandSniperV9-9130 (DRY) | PnL $+2.31 (+0.23%) | trades 25 | open 13 | win 91.7%
+🟢 AlexBandSniperV127MLAIM-9120 (DRY) | PnL $+0.00 (+0.00%) | trades 0 | open 0 | win 0.0%
+🟢 AlexBandSniperV4-9080 (DRY) | PnL $+0.00 (+0.00%) | trades 0 | open 0 | win 0.0%
+🟢 GKD_FisherTransformV8_ML-9140 (DRY) | PnL $+0.00 (+0.00%) | trades 0 | open 0 | win 0.0%
+🟢 GKD_FisherTransformV41_ML-9150 (DRY) | PnL $-0.36 (-0.01%) | trades 7 | open 0 | win 14.3%
+🟢 VisionLLMV4_Ollama-9040 (DRY) | PnL $-3.25 (-3.76%) | trades 17 | open 1 | win 43.8%
+🟢 AlexBandSniperV6431-9030 (DRY) | PnL $-10.89 (-1.09%) | trades 61 | open 3 | win 79.3%
+🟢 AlexBandSniperV8-9120 (DRY) | PnL $-11.97 (-1.22%) | trades 62 | open 11 | win 76.5%
+🟢 AlexBandSniperV73-9010 (DRY) | PnL $-18.40 (-1.85%) | trades 29 | open 2 | win 77.8%
+🟢 AlexNinjaV12-9040 (DRY) | PnL $-50.96 (-5.09%) | trades 91 | open 5 | win 72.1%
+🟢 NinjaAI_V4-9000 (DRY) | PnL $-181.06 (-45.27%) | trades 1008 | open 0 | win 80.1%
+
+Highlights
+• Best: AlexNexusForgeV8AIV7-9020 +64.62% ($+634.63)
+• Worst: NinjaAI_V4-9000 -45.27% ($-181.06)
+
+
+==============================================================
+Exported 59 message(s)
+==============================================================

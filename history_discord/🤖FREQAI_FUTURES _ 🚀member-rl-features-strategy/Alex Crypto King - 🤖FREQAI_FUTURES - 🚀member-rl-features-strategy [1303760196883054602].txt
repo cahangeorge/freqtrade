@@ -1,0 +1,35 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖FREQAI_FUTURES / 🚀member-rl-features-strategy
+==============================================================
+
+[11/06/2024 16:38] serialkiller15
+@Ternura thanks will take a look on it @everyone
+
+
+[11/06/2024 16:38] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1303760196883054602/1303760491889430670/RL.py?ex=69f38593&is=69f23413&hm=fa162b8d01303bfe648dcddaba489215b837d7f81c2fbf8e24db3ae87ea6dbd0&
+
+
+[11/15/2024 07:56] woshishazi0151
+Do you have any ideas for designing a reward function? The system's default reward function does not perform well
+
+
+[11/15/2024 11:02] .7thdragon
+just small idea and might not perform well at all after months, just because it is trade based
+the idea is that with a strategy that is performing steady over months and not hyperoptimized, even with default rl will start growing if you adapt the correct reward values for your strategy expectations. the real problem is the strat itself
+
+
+[11/18/2024 02:46] woshishazi0151
+
+
+{Stickers}
+https://cdn.discordapp.com/stickers/816086882823831613.json
+
+
+==============================================================
+Exported 5 message(s)
+==============================================================

@@ -1,0 +1,820 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖FREQAI_FUTURES / 📊beta-results
+==============================================================
+
+[09/16/2024 13:43] serialkiller15
+@Beta-Tester here are the results of my dry-run
+since yesterday - V91 but with entry/exit from V90.....
+Hyperopt
+
+
+[09/16/2024 13:43] serialkiller15
+{
+  "strategy_name": "AlexStrategyFinalV92",
+  "params": {
+    "stoploss": {
+      "stoploss": -0.08
+    },
+    "trailing": {
+      "trailing_stop": false,
+      "trailing_stop_positive": null,
+      "trailing_stop_positive_offset": 0.0,
+      "trailing_only_offset_is_reached": false
+    },
+    "max_open_trades": {
+      "max_open_trades": 10
+    },
+    "buy": {
+      "predicted_R2_factor": 0.20697,
+      "predicted_R_factor": 1.38358,
+      "predicted_S_factor": 0.24653,
+      "predicted_V2_factor": 0.99187,
+      "predicted_V_factor": 0.40892,
+      "threshold_buy": -0.06,
+      "w0": 0.09954,
+      "w1": 0.32451,
+      "w2": 0.22822,
+      "w3": 0.88748,
+      "w4": 0.49293,
+      "w5": 0.11158,
+      "w6": 0.40982,
+      "w7": 0.79521,
+      "w8": 0.25846
+    },
+    "sell": {
+      "threshold_sell": 0.98
+    },
+    "protection": {},
+    "roi": {
+      "0": 0.268,
+      "122": 0.09,
+      "456": 0.032,
+      "1732": 0
+    }
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2024-09-15 14:45:03.714761+00:00"
+}
+
+
+[09/16/2024 13:44] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285234902819934382/image.png?ex=69f35cc7&is=69f20b47&hm=11a0b053d7d105b3c9efaa7ec136c1e56bbeb79d59d135a249860fd576e12abd&
+
+{Reactions}
+🔥
+
+[09/16/2024 14:00] maxgorbachevskiy
+wow, 200+ trades within a day, like a machine gun. How many pairs / max_trades ? 
+With only 50% of win/lose it is profitable — looks ... hmmm..   interesting.
+
+
+[09/16/2024 14:00] serialkiller15
+yes i am doing many tests, i have about 122 coins here
+
+
+[09/16/2024 14:01] serialkiller15
+but have to fix the exit logic there
+
+
+[09/16/2024 14:01] ximontan
+Here is mine, and I add DCA
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285239104887459850/image.png?ex=69f360b1&is=69f20f31&hm=5179c118fce72465ba4f45603a392aee7f1b394efb0464e903256398d8048fcf&
+https://cdn.discordapp.com/attachments/1284854556119007272/1285239105114079303/AlexStrategyFinalV91_d1.json?ex=69f360b1&is=69f20f31&hm=7ea6c92dcd81c00a86499846aec078255089978b81479c7c841ae48e9288ddff&
+
+
+[09/16/2024 14:02] maxgorbachevskiy
+my v91 ExpectancyHyperoptLoss is dead, I have to re-start from scratch ))
+
+
+[09/16/2024 14:02] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285239386698678284/image.png?ex=69f360f4&is=69f20f74&hm=bb8e46e3c52c490766e0e8b114eef7dff61eedc8bd5e957fc09579bfcedd7147&
+
+
+[09/16/2024 14:03] maxgorbachevskiy
+Interesting. How do you use DCA?  – for cases of trades goiing negative, to win back the trade?
+
+
+[09/16/2024 14:04] serialkiller15
+@Ximontan i used the hyperopt from you posted yesterday!
+
+
+[09/16/2024 14:04] ximontan
+right
+
+
+[09/16/2024 14:05] serialkiller15
+@Ximontan dca you added in strategy? sry was offline for a few hours, to much water here...
+
+
+[09/16/2024 14:05] serialkiller15
+overloatet everythink
+
+
+[09/16/2024 14:06] maxgorbachevskiy
+I was thinking about  DCA too. Can you please share it for testing? Just about to start new dryruns, and I would be happy to test.
+
+
+[09/16/2024 14:07] serialkiller15
+yes that would be nice !
+
+
+[09/16/2024 14:07] ximontan
+yes, I check that I write and with DCA, it how better result
+
+
+[09/16/2024 14:08] maxgorbachevskiy
+or maybe share specific snippet, so that we caopy-paste it to our files
+
+
+[09/16/2024 14:08] ximontan
+in default V91 at the bottom, just uncomment it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285240843032199168/image.png?ex=69f3624f&is=69f210cf&hm=1a603497dbbbe1792f7c41f92bc41fefc0db6fb5e0931af097b7fbb1fd04f425&
+
+{Reactions}
+🔥
+
+[09/16/2024 14:08] serialkiller15
+a yes that was it thanks mate!
+
+
+[09/16/2024 14:08] ximontan
+any time
+
+
+[09/16/2024 14:09] serialkiller15
+will try it on another dryrun so i can compare! also i think the entry/exits from V90 are better, but @Ximontan have you problems with exits=
+
+
+[09/16/2024 14:10] serialkiller15
+mayee my fault i have 1001 long exits -
+
+
+[09/16/2024 14:10] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285241367978577981/image.png?ex=69f362cc&is=69f2114c&hm=cde759b316cdaf8158a6bc91aa6ec36cae9fc76f3b14f1bf92476ae0919ddaea&
+
+
+[09/16/2024 14:10] ximontan
+wow,  I have only shorts...
+
+
+[09/16/2024 14:11] maxgorbachevskiy
+Please share your results after some period, even if negative. Mine were good. on the first day, then went down
+
+{Reactions}
+👍 (2)
+
+[09/16/2024 14:12] serialkiller15
+i also have only shorts since yesterday....
+
+
+[09/16/2024 14:12] ximontan
+we have different hyperopt, may be different period of optimization or different pairs
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285242034872909865/image.png?ex=69f3636b&is=69f211eb&hm=6ded2331f1d2b0d75a424e2822503e076eaea9ec11ac38ed4311ac8e8f4a2c92&
+
+
+[09/16/2024 14:13] serialkiller15
+but in this case i think its about the tresholds.....
+
+{Reactions}
+👍
+
+[09/16/2024 14:13] serialkiller15
+i will rethink this and maybee find a better way for longs/shorts...
+
+
+[09/16/2024 14:13] serialkiller15
+but we are on the right way!!
+
+
+[09/16/2024 14:14] ximontan
+absolutelly!
+
+
+[09/16/2024 14:14] serialkiller15
+Thanks for your amazing support!
+
+
+[09/16/2024 14:14] ximontan
+Thank you too!
+
+
+[09/16/2024 14:24] maxgorbachevskiy
+Everyone )) Well... I have a couple of longs, of them are still negative (not sold yet). So better only shorts, than thorts+longs ))
+
+
+[09/16/2024 14:30] ximontan
+Really I don't know,
+it depends how we heperopt, if short history - it will get short, and reverse, 
+For example it get short for me, but it could be good if it get long some time, like in image.
+And it means we need some trategy for heperopt, like previouslly sad every day or on market change...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285246455514271788/image.png?ex=69f36789&is=69f21609&hm=fccc2f377e29d2a7930f9694abe33abf9d4e373b4cd4b2f822bba7a4f311a954&
+
+{Reactions}
+👍 (2)
+
+[09/16/2024 14:38] serialkiller15
+i did another aproach on V92 but was with not good results, so i will forget it...
+
+
+[09/16/2024 14:38] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285248529807314995/image.png?ex=69f36978&is=69f217f8&hm=d68daf384f16ac576b133e4f26d2de5c14f198d852e2a860f7989ad5567c6810&
+
+
+[09/16/2024 14:43] ximontan
+what is approach? that we will not repeat it in future
+
+
+[09/16/2024 14:43] serialkiller15
+one moment
+
+
+[09/16/2024 14:44] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285250033867948184/message.txt?ex=69f36ade&is=69f2195e&hm=2f3a6c63d628d242cf536bc37ae3e4165e1bdce36bccfe332f45cfaef1e6a581&
+
+{Reactions}
+👍
+
+[09/16/2024 14:44] sera131
+@Alex Crypto King my verrsion is still only shorts, i don't think its right
+
+
+[09/16/2024 14:54] serialkiller15
+@upSera try the v91 #🚧beta-testing
+
+
+[09/16/2024 14:58] .7thdragon
+update, only 6 trades since yesterday with my hyper for 30 open trades, not well, but i optimized only 2 days ago, not as i intended daily
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285253417148747829/image.png?ex=69f36e05&is=69f21c85&hm=4b2432acdde85fa4739bb661e2a3741899127314faddac2e89b346a440bdac23&
+
+{Reactions}
+🥴 (2)
+
+[09/16/2024 17:23] serialkiller15
+still in profit here on modified entrys ...
+
+
+[09/16/2024 17:23] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285290003467075624/image.png?ex=69f39018&is=69f23e98&hm=f7564d91bb7d699d7385c3846f45db716dc83fc18f8b1d9a229ff1f47a63cf99&
+
+
+[09/16/2024 17:23] serialkiller15
+but mostly short on 1h timeframe, will try 15m timeframe on dryrun
+
+
+[09/17/2024 07:01] ximontan
+V91, with enter/exit from V90 with DCA results
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285495819323314189/image.png?ex=69f2fe46&is=69f1acc6&hm=fc3f9e079373ebde4ef98d4825e2b7e436991509e3bc6ae064bb281c6e33b9ab&
+
+
+[09/17/2024 07:02] serialkiller15
+hmmm ...
+
+
+[09/17/2024 08:49] .7thdragon
+Still surviving 🙂 optimized now. Optimistic 🙂, not so often trades
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285523017904160841/image.png?ex=69f3179b&is=69f1c61b&hm=db4a89595936de7854c0a44ee7afd955ba763f22ed650f86fa059fcf0f575c72&
+
+
+[09/17/2024 09:23] serialkiller15
+thanks i am on way with hyperoptimazion, did not changed some stuff in strategy but with the new method i get better results for it! Will Post then!
+
+
+[09/17/2024 15:36] sera131
+Started (NON Hyperopted version) last night.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285625465326796883/image.png?ex=69f37704&is=69f22584&hm=af5b61d2fe6a4cb80a397e50dd70cb8f032a9e9731b56ba352d16e45add9ac96&
+
+{Reactions}
+👍 (2)
+
+[09/17/2024 15:37] sera131
+doing both long / shorts as it should be; Currently running on binance dry testing, 5 open trades, no DCA
+
+
+[09/17/2024 15:38] sera131
+however margin is set to 1x, thinking to raise to 5x
+
+
+[09/17/2024 21:23] ximontan
+V91, with enter/exit from V90 with DCA results. Negative results and I'll finish this today...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285712878661271613/image.png?ex=69f31fad&is=69f1ce2d&hm=05665e367c39418d59485bb72903992053127bf14f05b8f9af9936d42a695293&
+
+
+[09/17/2024 21:28] alex_737071
+@Ximontan How did you add DCA?
+
+
+[09/17/2024 21:30] ximontan
+at the end of the file you have commented code start with:
+# #--------------------------------------
+    overbuy_factor = 1.295 #2
+...
+
+# #--------------------------------------
+uncomment it
+
+
+[09/17/2024 21:30] alex_737071
+Oh cool! Missed that! Thanks! 🙂
+
+
+[09/17/2024 21:43] sera131
+there are multiple code available for DCA; can even be built to be fixed; will share multiple DCA code when i get home tomorrow
+
+
+[09/17/2024 21:47] ximontan
+agree with you, I get first DCA that show me good result, it would great test different version of it
+
+
+[09/17/2024 21:47] alex_737071
+Is there a beta git branch's we can use to share code maybe?
+
+
+[09/17/2024 21:48] sera131
+usually futures and DCA generate good results with big wallets but can also generate heavy losses
+
+
+[09/17/2024 21:49] sera131
+main issue i find with DCA is that its not necesarly sustainable in time due to big swings or multiple drops/pumps
+
+
+[09/17/2024 21:49] sera131
+for spot works a lot better
+
+
+[09/17/2024 21:49] sera131
+although, same risky stuff
+
+
+[09/17/2024 21:50] ximontan
+right, but in dry it's failed...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1285719454239559700/image.png?ex=69f325cd&is=69f1d44d&hm=a6604b0ff82833e2b5a8c2df77790a0dbb218be0536607ad38ad3dae41304e28&
+
+
+[09/17/2024 21:52] .7thdragon
+🤣  almost over 100% drawdown
+guys those DCA are martingale with locked positions for years, i even not think to it
+
+
+[09/17/2024 21:53] sera131
+ye that's crazy..
+
+
+[09/17/2024 21:56] sera131
+what leverage did you run?
+
+
+[09/17/2024 21:57] ximontan
+it's dynamic from upper posts, in general it get 10 or 5
+
+
+[09/17/2024 21:58] sera131
+ok, i wonder why my version ddoes only 1x leverage xD
+
+
+[09/17/2024 21:58] sera131
+its set to 10.0 and dynamic 5
+
+
+[09/17/2024 21:59] .7thdragon
+did u used my fix for leverage function?
+is here:
+https://discord.com/channels/1238181199206154373/1283459314618470513/1284078009577377803
+
+
+[09/17/2024 21:59] sera131
+-.- oh
+
+
+[09/17/2024 21:59] sera131
+no
+
+
+[09/17/2024 22:01] sera131
+checking
+
+
+[09/17/2024 22:01] alex_737071
+Whats your fix man? I commented out the function and return 10, but is there a fix?
+
+
+[09/17/2024 22:01] sera131
+replacing code and will reload config/strat.
+
+
+[09/17/2024 22:02] .7thdragon
+is atr based. but if you return 10 it will fail 🙂 should be float 10.0
+
+
+[09/17/2024 22:03] alex_737071
+Yea, i return ` return self.leverage_value` technically, but you get what i mean 🙂
+
+
+[09/17/2024 22:04] .7thdragon
+if leverage_value is 10.0 is ok
+
+
+[09/17/2024 22:05] alex_737071
+Yea, can you share the atr based function?
+
+
+[09/17/2024 22:05] sera131
+its upper a bit in the link replied to me
+
+{Reactions}
+👍
+
+[09/17/2024 22:05] alex_737071
+Cool, sorry, missed that!
+
+{Reactions}
+💪
+
+[09/18/2024 06:23] serialkiller15
+Good Morning guys, today i will make a Test/Hyperopt/Backtest Day......
+Will Post different Results with different Settings at all....
+
+{Reactions}
+👍
+
+[09/19/2024 12:20] alex_737071
+Having fun on a 30min timeframe without any Hyperopt 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1286300971504500816/Screenshot_2024-09-19_at_14.19.57.png?ex=69f34921&is=69f1f7a1&hm=550abc3a59b7c5c1907c05eabb16f67f37c4f9674a68f30ba19748b52738c463&
+
+{Reactions}
+👍
+
+[09/19/2024 12:51] serialkiller15
+nice with Version you use.
+
+
+[09/19/2024 13:01] alex_737071
+V91 out of the box. Trying now to Hyper just for Stoploss because i think if it was tighter it would be better 🙂
+
+
+[09/19/2024 13:05] ch1ck3n_t4c0s
+What form of exit is it primarily using?
+
+
+[09/19/2024 13:06] alex_737071
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1286312548412686367/Screenshot_2024-09-19_at_15.06.29.png?ex=69f353ea&is=69f2026a&hm=0932e9919c7becbca7030c773a831299b49a91935e3909347fb96ac50d5c325f&
+
+
+[09/19/2024 13:07] ch1ck3n_t4c0s
+Avg duration?
+
+
+[09/19/2024 13:08] alex_737071
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1286312954597212191/Screenshot_2024-09-19_at_15.08.02.png?ex=69f3544a&is=69f202ca&hm=169b0f2a161eeae2c2f6a0a6136e3be1e84ab73975cafe7064ef2efbe5053165&
+
+
+[09/19/2024 13:09] ch1ck3n_t4c0s
+So leverage scalps?
+
+
+[09/19/2024 13:09] alex_737071
+Seems so...
+
+
+[09/19/2024 13:09] ch1ck3n_t4c0s
+10x?
+
+
+[09/19/2024 13:09] alex_737071
+Yea, 10x at the moment, i want to use the ATR leverage code to make that dynamic, and tighten up the SL and it migh be nice 🙂
+
+
+[09/22/2024 11:17] ximontan
+AlexStrategyFinalV9.0, hyper opt 20240801-20240921, not bad
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1287372204505432179/image.png?ex=69f33a4b&is=69f1e8cb&hm=c6bd047173ac0c10af83a1ee766b7c4e9488aec7c21e2e24d11c73c0194b22c4&
+
+{Reactions}
+🔥
+
+[09/22/2024 11:18] serialkiller15
+Nice mate with parameters did you hyperopt in one step or splitten them?
+
+
+[09/22/2024 11:21] ximontan
+now in one step, use ** --spaces buy sell roi**, tomorrow I'll do one more time hyperopt. Previous time I split it first I optimize buy, and then sell and roi, but this approach is similar and didn't get some big profit...
+
+
+[09/22/2024 11:21] serialkiller15
+Thanks for sharing so you use fixed sl
+
+
+[09/22/2024 11:25] ximontan
+yes, it's -0.305 (30%), and with 10 leverage it would be 3%
+
+
+[09/22/2024 11:26] serialkiller15
+Nice thanks
+
+
+[09/25/2024 12:14] ximontan
+today result AlexStrategyFinalV9.0
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1288473827789115422/image.png?ex=69f347c3&is=69f1f643&hm=1bb10807d3578666037b1efbee3321a3a46cef2042b84cd61425bfbfdbeea6ff&
+
+{Reactions}
+🔥
+
+[09/25/2024 13:40] serialkiller15
+yes not bad i did a optuna version on v9!
+
+{Reactions}
+🔥 (2)
+
+[09/25/2024 13:41] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1288495697343025173/image.png?ex=69f35c21&is=69f20aa1&hm=f3a7fecbf47882f77410dd0b3575172ac25252637375166fec41e75112312477&
+
+
+[09/26/2024 11:31] maxgorbachevskiy
+Guys, I have a rather strange insight..  I stopped my three **RED** OLD bots (v91) one week ago (I had no time to play with FT and I just shut down the machine to save energy costs).
+Just launched them, and what I see – all of them turned very **GREEN**!
+And the profits%% are nice
+
+
+[09/26/2024 11:32] maxgorbachevskiy
+Do you think there's any insight / ideas in this?
+
+
+[09/26/2024 11:32] .7thdragon
+... and you used of course in live 🤣
+
+
+[09/26/2024 11:33] maxgorbachevskiy
+Believe me or not, i did that once in my life. I forgot about one shitcoin for two monthes. When I logged in again, I saw an astonishing 6400% profit, which was 2500€ approx
+
+{Reactions}
+🤣 (2)
+
+[09/26/2024 11:33] serialkiller15
+Nice
+
+
+[09/26/2024 11:35] maxgorbachevskiy
+Then I ruined it all,  because I then invested heavily and got liquidated ))))))
+
+
+[09/26/2024 11:36] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1288826444151263314/Screenshot_2024-09-26_at_13.31.22.png?ex=69f33ea9&is=69f1ed29&hm=d7017de0f796b7cdc18eb134167226a6267cf46144c643d686d9eec58a52b15b&
+https://cdn.discordapp.com/attachments/1284854556119007272/1288826444486676493/Screenshot_2024-09-26_at_13.31.28.png?ex=69f33ea9&is=69f1ed29&hm=b24263425570331d42daf369269ced4112dfe1ecd392fa7b028a39294a8da99d&
+https://cdn.discordapp.com/attachments/1284854556119007272/1288826444755107852/Screenshot_2024-09-26_at_13.31.33.png?ex=69f33ea9&is=69f1ed29&hm=cc1ce2fbc7d66290f3fe99e98ab577104884b449b58892094982f4418f06c86e&
+
+
+[09/26/2024 11:36] maxgorbachevskiy
+What do you think about this?
+
+
+[09/26/2024 11:37] maxgorbachevskiy
+Looks like we need to let AI buy coins and keep them instead of selling ))
+
+
+[09/26/2024 11:38] .7thdragon
+it is a bullrun weather outside, will keep for a period, then prepare for more shorts, i do not know how/when AI will see this
+
+
+[09/26/2024 11:39] maxgorbachevskiy
+Its 19sept — 26sept, flat week
+
+
+[09/26/2024 11:43] maxgorbachevskiy
+(1) Dryrun longs+shorts – losses, (2) HODL
+
+
+[09/26/2024 11:43] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1288828208619327540/image.png?ex=69f3404e&is=69f1eece&hm=6085130e594b4e5029cb8c2a8d4205b6786b58b80d1b1bfc9dcefd201c3a8c21&
+
+{Reactions}
+👍
+
+[09/26/2024 12:18] priezz
+So you want an "investment AI", not "trading AI" )))
+
+{Reactions}
+💯
+
+[09/27/2024 08:59] giovannimauro
+Yes, DCA in futures is a bit too much risky
+
+
+[09/27/2024 10:48] bigbroseur
+@Alex Crypto King
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1289176930696036394/v90-optuna-26-Sept.pdf?ex=69f33394&is=69f1e214&hm=2d5b61441cd3dff20d194b59419b267b76e85461be136b6e055376e9f425a3b8&
+
+
+[09/27/2024 10:53] maxgorbachevskiy
+Why do you think that this concept is better?
+
+> It’s better to do -e 200 several time with small spaces combination than big one -e
+> 1000 with a lot of combination, then keep .json file start
+> Strat to benefit from the previous optimizations:
+> 1. Hyper -spaces stoploss trades -e 200
+> 2. Hyper -spaces stoploss trades -e 200
+>  (again keeping .json Strat generated from the previous hyperopt to refine)
+> 3. Hyper -spaces roi -e 200
+> 4. Hyper -spaces buy sell - e 200
+
+
+[09/27/2024 10:57] bigbroseur
+I guess you get benefit of previous optimization with small combination. 
+Small simple steps to find your way is better than one big complex jump
+
+
+[09/27/2024 10:58] maxgorbachevskiy
+It seems strange to me. Hyperopt starts with a random combination of numbers, then imroves in the vicinity of those params. So if first 100-200 epochs are not good, the rest will not imrove greatly
+(as far as I understand how hyperopt works)
+
+
+[09/27/2024 11:02] bigbroseur
+Agree, then you are fixed at first 200 epochs and hyper uses one random number@start to create several combination, it's better to challenge with several different starts number.
+
+{Reactions}
+💯
+
+[09/27/2024 11:12] priezz
+Like running e.g. 100 hyperopts and then choosing the best
+
+
+[09/27/2024 11:57] bigbroseur
+If you remove the .json strat at each iteration yes, but if you don't, you have a cumulatif .json strat so choosing the best is not the same process.
+
+
+[09/27/2024 12:43] priezz
+I meant removing, so the starting point would be really random. I have doubts however regarding separate spaces optimization. E.g. with a wrong position entry params a number of open trades will (could) be very different from the one with a good buy params. So a standalone optimization of trades does not make much sense for me. Same is in different extent applicable to other spaces. So IMO only multi-dimensional optimization would work. The question is how to search for the proper set. I don't know yet which approach is used in hyperopt, but TPE sampling looks to be applicable. I am not happy with it in the current optuna script though, so looking for a way to improve.
+
+
+[09/27/2024 12:49] bigbroseur
+Yep, if you remove the .json each retry I will probably converge to the target but you have to compare each .json results and make your own assumption  than while by accumulating the optimizations you avoid this work of assumption.
+
+
+[09/27/2024 12:56] priezz
+Not a big deal to compare. It can all be automated.
+
+
+[09/27/2024 13:01] priezz
+I just fear that the initial (random) set of params can affect the final result. If it does then the approach with doing multiple independent hyperopts should be preferred. To be clarified how it works
+
+
+[09/27/2024 13:10] bigbroseur
+HYperopt use several combinations of backtesting configuration and backtesting is not accurate comparing  dry that in fact i prefer to "invest" in dry even if it's time consuming... Each time you make a change you have to re-dry for 2 to 3 weeks
+
+
+[09/27/2024 13:12] priezz
+Yeah, I don't like that the backtesting strategy differs as well. The results are not fair in a full sense
+
+
+[09/27/2024 13:15] bigbroseur
+Agree, Dry is the only way to be confident about the behavior of a strategy whatever the market conditions (ideally a representative dry should have a bear and bull period) which complicates things a little.
+
+
+[09/27/2024 13:15] priezz
+Dry is the only way to be confident about the behavior of a strategy **in the past** )))
+
+
+[09/27/2024 13:16] bigbroseur
+Good point
+
+
+[09/27/2024 13:16] bigbroseur
+Does AI can help to make the past more accurate for the futur
+
+
+[09/27/2024 17:55] serialkiller15
+hey i am back from my business trip i found the failure please look at this.....
+
+
+[09/27/2024 17:55] serialkiller15
+https://discordapp.com/channels/1238181199206154373/1288738777468112948/1289282537000272014
+
+
+[09/28/2024 07:15] ximontan
+result AlexStrategyFinalV9.0 (optimized once in two days), seems I need switch to v93...
+Does anybody have similar result?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1289485656493658152/image.png?ex=69f30199&is=69f1b019&hm=71d350b689f026e2beba7dedfb3866c8fc30d89eb88530acb89c31b7c806e744&
+
+
+[09/28/2024 07:23] serialkiller15
+https://discord.com/channels/1238181199206154373/1288738777468112948/1289482138835746906
+
+
+[09/28/2024 09:24] bigbroseur
+Still watting the end of optuna process with AlexStrategyFinalV9.0...
+@Alex Crypto King  Does it still make sense to work on it or better switch on v93?
+
+
+[09/28/2024 12:53] serialkiller15
+I am still testing adapted v931 because 93 got some bugs i there stop v90 now please will handle it
+
+{Reactions}
+👍 (2)
+
+[09/30/2024 06:09] serialkiller15
+Good Morning here are the Resulsts vor v931 Optuna, its running with Optuna and does a good job,
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1290193869111296044/image.png?ex=69f39aed&is=69f2496d&hm=be0598db581d5fe8a75f53315ba27eb8c1a7c5b5080316e1386d8d5d54a50fa1&
+
+{Reactions}
+👍 (2)
+
+[09/30/2024 11:52] bigbroseur
+@Alex Crypto King 
+Just finished this morning v90-optuna with good results:
+it stopped and display the last backtest.
+How can be sure it is the best of all bakctests. Is there a way to ckeck or lists all best tests.
+If it's the best results, now I have to run a dry to check ?
+Spot version finished also but with negative results ;-((
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1290280135894892618/image.png?ex=69f34284&is=69f1f104&hm=bada4a9e4391ed3013704e4926e230b2412c705c0f832b3ffac8998ec592934f&
+
+
+[09/30/2024 11:57] .7thdragon
+something is weird, needs to capture this kind of output format of backtesting:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1290281297498996749/image.png?ex=69f34399&is=69f1f219&hm=ea9d891df2e2ce520d3c12d3f95466bc7f686fb6ac8745466dd7b050ece4160b&
+
+
+[09/30/2024 12:01] .7thdragon
+testing only with BT93 (not freqai) and optuna, having good feeling about it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1284854556119007272/1290282319155822695/image.png?ex=69f3448d&is=69f1f30d&hm=a8f2317f33742404811fb4f6e805f9dba380fb85f5f2107410684ee0e61f7f31&
+
+
+[09/30/2024 12:01] serialkiller15
+you get not so good results, i have done some modifications done and my backtest results are better would say, lets talk about it!
+
+
+[09/30/2024 12:02] serialkiller15
+i mean your backtests!
+
+
+==============================================================
+Exported 149 message(s)
+==============================================================

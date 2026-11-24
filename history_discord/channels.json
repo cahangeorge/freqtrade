@@ -1,0 +1,572 @@
+[
+  [
+    "1474364087960866906",
+    "\ud83d\udcf0news",
+    "\ud83d\udcf0news"
+  ],
+  [
+    "1238181199877373965",
+    "Sprachkan\u00e4le / Allgemein",
+    "Sprachkan\u00e4le _ Allgemein"
+  ],
+  [
+    "1289103406274973769",
+    "INFORMATION / \u2753faqs",
+    "INFORMATION _ \u2753faqs"
+  ],
+  [
+    "1289103296253919254",
+    "INFORMATION / \u2757disclamer",
+    "INFORMATION _ \u2757disclamer"
+  ],
+  [
+    "1416042108317339648",
+    "INFORMATION / \ud83c\udf89fun-channel",
+    "INFORMATION _ \ud83c\udf89fun-channel"
+  ],
+  [
+    "1289112409415352360",
+    "INFORMATION / \ud83d\udc33installation",
+    "INFORMATION _ \ud83d\udc33installation"
+  ],
+  [
+    "1289103225084969021",
+    "INFORMATION / \ud83d\udc49getting-started",
+    "INFORMATION _ \ud83d\udc49getting-started"
+  ],
+  [
+    "1289103496007782464",
+    "INFORMATION / \ud83d\udcd8learining-stuff",
+    "INFORMATION _ \ud83d\udcd8learining-stuff"
+  ],
+  [
+    "1289103356299706370",
+    "INFORMATION / \ud83d\udcdccommunity-rules",
+    "INFORMATION _ \ud83d\udcdccommunity-rules"
+  ],
+  [
+    "1289133957719523380",
+    "INFORMATION / \ud83d\udcf0news",
+    "INFORMATION _ \ud83d\udcf0news"
+  ],
+  [
+    "1474345946341965946",
+    "INFORMATION / \ud83e\udd1d\ud83d\udc9adonate",
+    "INFORMATION _ \ud83e\udd1d\ud83d\udc9adonate"
+  ],
+  [
+    "1238181199877373964",
+    "INFORMATION / \ud83d\ude0egeneral",
+    "INFORMATION _ \ud83d\ude0egeneral"
+  ],
+  [
+    "1297175575370141748",
+    "INFORMATION / \ud83d\ude80strategie-descriptions",
+    "INFORMATION _ \ud83d\ude80strategie-descriptions"
+  ],
+  [
+    "1278766200431841320",
+    "INFORMATION / newbie-issues",
+    "INFORMATION _ newbie-issues"
+  ],
+  [
+    "1281608878714257470",
+    "\ud83d\udcdcDISCUSS Q & A / \ud83d\udcf0news",
+    "\ud83d\udcdcDISCUSS Q & A _ \ud83d\udcf0news"
+  ],
+  [
+    "1466919399423475910",
+    "\ud83d\udcdcDISCUSS Q & A / \ud83e\udd16ask-alexopenclawbot",
+    "\ud83d\udcdcDISCUSS Q & A _ \ud83e\udd16ask-alexopenclawbot"
+  ],
+  [
+    "1467125400344854558",
+    "\ud83d\udcdcDISCUSS Q & A / \ud83e\udd16openclaw",
+    "\ud83d\udcdcDISCUSS Q & A _ \ud83e\udd16openclaw"
+  ],
+  [
+    "1294615198111371304",
+    "\ud83d\udcdcDISCUSS Q & A / discussion-strategies-github",
+    "\ud83d\udcdcDISCUSS Q & A _ discussion-strategies-github"
+  ],
+  [
+    "1280109279487197226",
+    "\ud83d\udcdcDISCUSS Q & A / feature-requests",
+    "\ud83d\udcdcDISCUSS Q & A _ feature-requests"
+  ],
+  [
+    "1280078852634185749",
+    "\ud83d\udcdcDISCUSS Q & A / feature-updates",
+    "\ud83d\udcdcDISCUSS Q & A _ feature-updates"
+  ],
+  [
+    "1450923247355953253",
+    "\ud83d\udcdcDISCUSS Q & A / general-discussion",
+    "\ud83d\udcdcDISCUSS Q & A _ general-discussion"
+  ],
+  [
+    "1411972432503242833",
+    "\ud83d\udcdcDISCUSS Q & A / live_testing-environment",
+    "\ud83d\udcdcDISCUSS Q & A _ live_testing-environment"
+  ],
+  [
+    "1433333846329528411",
+    "\ud83d\udcdcDISCUSS Q & A / pairlists",
+    "\ud83d\udcdcDISCUSS Q & A _ pairlists"
+  ],
+  [
+    "1278766285861294161",
+    "\ud83d\udcdcDISCUSS Q & A / troubleshooting-bugs",
+    "\ud83d\udcdcDISCUSS Q & A _ troubleshooting-bugs"
+  ],
+  [
+    "1304860205565087795",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83c\udfafalexbandsniper",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83c\udfafalexbandsniper"
+  ],
+  [
+    "1414530394216333352",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83c\udfafalexbandsniper_optuna",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83c\udfafalexbandsniper_optuna"
+  ],
+  [
+    "1426924881081274378",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83c\udfafalexdivergence",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83c\udfafalexdivergence"
+  ],
+  [
+    "1462729450956390477",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83c\udfafalexdivergence_optuna",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83c\udfafalexdivergence_optuna"
+  ],
+  [
+    "1427992301577437365",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83c\udfafdarkreapercloud",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83c\udfafdarkreapercloud"
+  ],
+  [
+    "1420726474566144040",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83c\udfafgkd_transform_optuna",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83c\udfafgkd_transform_optuna"
+  ],
+  [
+    "1465739008758775883",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83c\udfafhmmregime",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83c\udfafhmmregime"
+  ],
+  [
+    "1471870318363807754",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83c\udfafhybridorderbook",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83c\udfafhybridorderbook"
+  ],
+  [
+    "1471871100194652203",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83c\udfafimperator",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83c\udfafimperator"
+  ],
+  [
+    "1458433612251660391",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83c\udfafnofxreasoning_engine",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83c\udfafnofxreasoning_engine"
+  ],
+  [
+    "1467120020181090405",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccaalex_ninjaai_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccaalex_ninjaai_results"
+  ],
+  [
+    "1420774658147487785",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccaalexbandsniper_optuna_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccaalexbandsniper_optuna_results"
+  ],
+  [
+    "1412403703234826293",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccaalexbandsniper_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccaalexbandsniper_results"
+  ],
+  [
+    "1380880173846499398",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccaalexbattletankkiller_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccaalexbattletankkiller_results"
+  ],
+  [
+    "1390209233085272145",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccaalexbattletankkillerhurstv4_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccaalexbattletankkillerhurstv4_results"
+  ],
+  [
+    "1390209330770350160",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccaalexbattletankkillerv4_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccaalexbattletankkillerv4_results"
+  ],
+  [
+    "1462730919440810122",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccaalexdivergence_optuna_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccaalexdivergence_optuna_results"
+  ],
+  [
+    "1426925775684112526",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccaalexdivergence_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccaalexdivergence_results"
+  ],
+  [
+    "1392174991499329787",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccaalexnexusforge_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccaalexnexusforge_results"
+  ],
+  [
+    "1432364978110730350",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccaalexsmarketstructurepro_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccaalexsmarketstructurepro_results"
+  ],
+  [
+    "1432346621022310553",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccaalexsmartmoney_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccaalexsmartmoney_results"
+  ],
+  [
+    "1460718838139060286",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccadarkprophetllm_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccadarkprophetllm_results"
+  ],
+  [
+    "1431399852444483655",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccagkd_transform_optuna_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccagkd_transform_optuna_results"
+  ],
+  [
+    "1288418348400508938",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccahafbmvvrplef-results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccahafbmvvrplef-results"
+  ],
+  [
+    "1465740225039831221",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccahmmregime_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccahmmregime_results"
+  ],
+  [
+    "1471870422004793366",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccahybridorderbook_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccahybridorderbook_results"
+  ],
+  [
+    "1471871323851460719",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccaimperaturresults_results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccaimperaturresults_results"
+  ],
+  [
+    "1465712488757854411",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\udccanotankai-results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\udccanotankai-results"
+  ],
+  [
+    "1430470914369130717",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83e\udd16multibot-dashboard",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83e\udd16multibot-dashboard"
+  ],
+  [
+    "1467119775388799038",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83e\udd77alex_ninjaai",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83e\udd77alex_ninjaai"
+  ],
+  [
+    "1412382448536387717",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\ude80alexbandsniper_rl",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\ude80alexbandsniper_rl"
+  ],
+  [
+    "1380096628471369748",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\ude80alexbattletankkiller",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\ude80alexbattletankkiller"
+  ],
+  [
+    "1390023643203108884",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\ude80alexbattletankkillerhurstv4",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\ude80alexbattletankkillerhurstv4"
+  ],
+  [
+    "1390206176326717521",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\ude80alexbattletankkillerv4",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\ude80alexbattletankkillerv4"
+  ],
+  [
+    "1374312760413786163",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\ude80alexbattletankpro",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\ude80alexbattletankpro"
+  ],
+  [
+    "1432312614196613150",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\ude80alexmarketstructurepro",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\ude80alexmarketstructurepro"
+  ],
+  [
+    "1382334861871812678",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\ude80alexnexusforge",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\ude80alexnexusforge"
+  ],
+  [
+    "1386752292467769454",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\ude80alexstarmark",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\ude80alexstarmark"
+  ],
+  [
+    "1288147662289506388",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\ude80hafbmvvrplev-strategy",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\ude80hafbmvvrplev-strategy"
+  ],
+  [
+    "1302276651941625929",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\ude80notankai",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\ude80notankai"
+  ],
+  [
+    "1310887576659558432",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\ude80tankai-revival\ud83d\ude80",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\ude80tankai-revival\ud83d\ude80"
+  ],
+  [
+    "1328625119119015947",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\ude80tankairev-lstm-results\ud83d\ude80",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\ude80tankairev-lstm-results\ud83d\ude80"
+  ],
+  [
+    "1328352857036034139",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / \ud83d\ude80tankairev-lstm\ud83d\ude80",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ \ud83d\ude80tankairev-lstm\ud83d\ude80"
+  ],
+  [
+    "1282010986899050567",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / code-snippets-other-strategies",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ code-snippets-other-strategies"
+  ],
+  [
+    "1284841955964096554",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / member-features-strategy",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ member-features-strategy"
+  ],
+  [
+    "1284842607632978032",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / member-spot-strategy",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ member-spot-strategy"
+  ],
+  [
+    "1372215916380688426",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / strategy-stuff",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ strategy-stuff"
+  ],
+  [
+    "1279787768406474752",
+    "\ud83d\ude80FREQTRADE_STRATEGIES / testing-results",
+    "\ud83d\ude80FREQTRADE_STRATEGIES _ testing-results"
+  ],
+  [
+    "1474383724312264798",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83c\udfafalex_kasuari",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83c\udfafalex_kasuari"
+  ],
+  [
+    "1481243749496520735",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83c\udfafalexbandscalper",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83c\udfafalexbandscalper"
+  ],
+  [
+    "1474370665816784908",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83c\udfafalexecr",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83c\udfafalexecr"
+  ],
+  [
+    "1474371138581958879",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83c\udfafalexgkdtransform",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83c\udfafalexgkdtransform"
+  ],
+  [
+    "1474366960769695856",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83c\udfafalexsignalforge",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83c\udfafalexsignalforge"
+  ],
+  [
+    "1481243822389465231",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83d\udccaalexbandscalper_results",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83d\udccaalexbandscalper_results"
+  ],
+  [
+    "1474370751162482688",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83d\udccaalexecr_results",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83d\udccaalexecr_results"
+  ],
+  [
+    "1474372934142398485",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83d\udccaalexgkdtransform_results",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83d\udccaalexgkdtransform_results"
+  ],
+  [
+    "1474384502863171742",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83d\udccaalexkasuari_results",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83d\udccaalexkasuari_results"
+  ],
+  [
+    "1474382070372634664",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83d\udccaalexninja_results",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83d\udccaalexninja_results"
+  ],
+  [
+    "1474367064323002380",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83d\udccaalexsignalforge_results",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83d\udccaalexsignalforge_results"
+  ],
+  [
+    "1474718636546723950",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83d\udccastrategy_results",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83d\udccastrategy_results"
+  ],
+  [
+    "1474363856569499658",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83d\udcf0news",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83d\udcf0news"
+  ],
+  [
+    "1474366018808713407",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83e\udd16alex-multibot-dashboard",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83e\udd16alex-multibot-dashboard"
+  ],
+  [
+    "1482037278011297962",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83e\udd16alexfreqalphadeck-dashboard",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83e\udd16alexfreqalphadeck-dashboard"
+  ],
+  [
+    "1474381949002059818",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83e\udd77alex_ninjaai",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83e\udd77alex_ninjaai"
+  ],
+  [
+    "1474372824499093707",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS / \ud83e\udde0ideas-discussions",
+    "\ud83d\ude80 FUTURE DEPLOYMENTS _ \ud83e\udde0ideas-discussions"
+  ],
+  [
+    "1285996661205631117",
+    "\ud83e\udd16FREQAI_FUTURES / \u26a0v91-optuna-bugs",
+    "\ud83e\udd16FREQAI_FUTURES _ \u26a0v91-optuna-bugs"
+  ],
+  [
+    "1283031043019898922",
+    "\ud83e\udd16FREQAI_FUTURES / \ud83d\udcc8v9-results",
+    "\ud83e\udd16FREQAI_FUTURES _ \ud83d\udcc8v9-results"
+  ],
+  [
+    "1285993245096017960",
+    "\ud83e\udd16FREQAI_FUTURES / \ud83d\udcc8v91-optuna-results",
+    "\ud83e\udd16FREQAI_FUTURES _ \ud83d\udcc8v91-optuna-results"
+  ],
+  [
+    "1284854556119007272",
+    "\ud83e\udd16FREQAI_FUTURES / \ud83d\udccabeta-results",
+    "\ud83e\udd16FREQAI_FUTURES _ \ud83d\udccabeta-results"
+  ],
+  [
+    "1287789098639167558",
+    "\ud83e\udd16FREQAI_FUTURES / \ud83d\udcf0news-freqai",
+    "\ud83e\udd16FREQAI_FUTURES _ \ud83d\udcf0news-freqai"
+  ],
+  [
+    "1319658399721324607",
+    "\ud83e\udd16FREQAI_FUTURES / \ud83d\ude80asfv9_ftt-futures",
+    "\ud83e\udd16FREQAI_FUTURES _ \ud83d\ude80asfv9_ftt-futures"
+  ],
+  [
+    "1303760196883054602",
+    "\ud83e\udd16FREQAI_FUTURES / \ud83d\ude80member-rl-features-strategy",
+    "\ud83e\udd16FREQAI_FUTURES _ \ud83d\ude80member-rl-features-strategy"
+  ],
+  [
+    "1283053114383143033",
+    "\ud83e\udd16FREQAI_FUTURES / \ud83d\ude80v9-bugs",
+    "\ud83e\udd16FREQAI_FUTURES _ \ud83d\ude80v9-bugs"
+  ],
+  [
+    "1283028025620828210",
+    "\ud83e\udd16FREQAI_FUTURES / \ud83d\ude80v9-strategy",
+    "\ud83e\udd16FREQAI_FUTURES _ \ud83d\ude80v9-strategy"
+  ],
+  [
+    "1286241944304877578",
+    "\ud83e\udd16FREQAI_FUTURES / \ud83d\ude80v90-optuna",
+    "\ud83e\udd16FREQAI_FUTURES _ \ud83d\ude80v90-optuna"
+  ],
+  [
+    "1285962815508713613",
+    "\ud83e\udd16FREQAI_FUTURES / \ud83d\ude80v91-optuna",
+    "\ud83e\udd16FREQAI_FUTURES _ \ud83d\ude80v91-optuna"
+  ],
+  [
+    "1288738777468112948",
+    "\ud83e\udd16FREQAI_FUTURES / \ud83d\ude80v93-optuna",
+    "\ud83e\udd16FREQAI_FUTURES _ \ud83d\ude80v93-optuna"
+  ],
+  [
+    "1283459314618470513",
+    "\ud83e\udd16FREQAI_FUTURES / \ud83d\udea7beta-testing",
+    "\ud83e\udd16FREQAI_FUTURES _ \ud83d\udea7beta-testing"
+  ],
+  [
+    "1280030420834062419",
+    "\ud83e\udd16FREQAI_FUTURES / \ud83d\udee0support",
+    "\ud83e\udd16FREQAI_FUTURES _ \ud83d\udee0support"
+  ],
+  [
+    "1280061618549559319",
+    "\ud83e\udd16FREQAI_FUTURES / lstm-regressor",
+    "\ud83e\udd16FREQAI_FUTURES _ lstm-regressor"
+  ],
+  [
+    "1291301926000005130",
+    "FREQAI_SPOT / \ud83d\udcf0news-freqai-spot",
+    "FREQAI_SPOT _ \ud83d\udcf0news-freqai-spot"
+  ],
+  [
+    "1291301809922510876",
+    "FREQAI_SPOT / \ud83d\ude80asfv9_ftt-strategy",
+    "FREQAI_SPOT _ \ud83d\ude80asfv9_ftt-strategy"
+  ],
+  [
+    "1299025797746790520",
+    "FREQAI_SPOT / \ud83d\ude80thegreatdivergencespot",
+    "FREQAI_SPOT _ \ud83d\ude80thegreatdivergencespot"
+  ],
+  [
+    "1293975854539477094",
+    "FREQAI_SPOT / notankai-spot",
+    "FREQAI_SPOT _ notankai-spot"
+  ],
+  [
+    "1372119921558945812",
+    "#Archiv# / \ud83d\ude80zaratustra",
+    "#Archiv# _ \ud83d\ude80zaratustra"
+  ],
+  [
+    "1278639012340432949",
+    "#Archiv# / alex-lstm-v6",
+    "#Archiv# _ alex-lstm-v6"
+  ],
+  [
+    "1283029637370478623",
+    "#Archiv# / alex-lstm-v8",
+    "#Archiv# _ alex-lstm-v8"
+  ],
+  [
+    "1403761246452580424",
+    "#Archiv# / alexnexusforge_v8",
+    "#Archiv# _ alexnexusforge_v8"
+  ],
+  [
+    "1240193972194906133",
+    "Tradingview / tradingview-faqs",
+    "Tradingview _ tradingview-faqs"
+  ],
+  [
+    "1238368105248456735",
+    "Tradingview / tradingview-strategy-live",
+    "Tradingview _ tradingview-strategy-live"
+  ]
+]

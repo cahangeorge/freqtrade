@@ -1,0 +1,238 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 📜DISCUSS Q & A / live_testing-environment
+==============================================================
+
+[09/02/2025 07:39] xf0x0f
+just dropping some notes on my next hardware upgrade. been on proxmox ve since 2018/19, running all sorts of stuff for daily use and testing, like zoneminder, PBS, adguard, docspell, 3x k3s, checkmk, wazuh, routeros, freqtrade (about 6 bots), some home automation, and a docker stack with things like portainer, jellyfin, uptimekuma, qbittorrent, nginxproxymanager, etc. mix of lxc and vms.
+for the heavy backtesting & hyperopt, i usually use a mac studio & macbook pro (apple silicon) – just faster for that. but now its time to upgrade the home server (currently 7 year old HP gen9 server xeon e5-2673v3, 128gb ram). want to run way more bots  and automate more backtesting.
+originally, i was planning to build it around an ASRockRack B650D4U3-2L2Q/BCM (https://amzn.to/45VvX3r) – that’s also why i went with the big chassis. but honestly, that board alone already costs more than the whole Minisforum including cpu, gpu & cooler. performance should also be decent, so i’m gonna test the BD795i SE now and maybe swap out for something else later if needed.
+hardware already ordered (all affiliate links):
+Minisforum BD795i SE
+https://amzn.to/3JB7fy5
+(skipped HX3D cuz no adaptable 2230 slot for 2x SATA – 2x SATA just isn’t enough for me)
+2230 to 2x SATA adapter
+https://amzn.to/4ngPL8J
+2x 48GB Corsair Vengeance DDR5 5200MHz
+https://amzn.to/47p7o1s
+2x 512GB NvME SN850 (reused from old HP)
+https://amzn.to/3UVzZ6V
+Sagittarius 8-bay chassis
+https://s.click.aliexpress.com/e/_oBrwNKT
+4x 8TB Seagate Exos 7E10
+https://amzn.to/3JIv8DI
+Nvidia Quadro K2200 from the old HP (may swap out soon)
+https://amzn.to/45Yth59
+so yeah, let’s see how it goes!
+what hardware/stuff are you using in your homelab?
+
+{Embed}
+https://amzn.to/45VvX3r
+AsRock Rack B650D4U-2L2T/BCM Micro-ATX Server Motherboard Single So...
+Micro-ATX (24,4 x 24,4 cm) unterstützt AMD Ryzen 7000 Series Prozessoren, 4 DIMM-Steckplätze (2DPC), unterstützt DDR5 ECC/Non-ECC UDIMM 1 PCIe5.0 x16, 1 PCIe5.0 x4, 1 PCIe4.0 x1, unterstützt 1 M.2 (PCIe) e5.0 4 x 2 RJ45 (10 GbE) von Broadcom BCM57416, 2 RJ45 (1 GbE) von Intel® i210, 4 SATA, 6 Gb/...
+https://images-ext-1.discordapp.net/external/NRzuWvY0FKRD8R7PeHHoMVha97rNjlZC8KmWrJhO4kg/https/m.media-amazon.com/images/I/51Wo-RPnH5L.jpg_BO30%2C255%2C255%2C255_UF900%2C850_SR1910%2C1000%2C0%2CC_QL100_.jpg
+
+{Embed}
+https://amzn.to/3JB7fy5
+MINIS FORUM BD795i SE Mini ITX Motherboard, AMD Ryzen 9 7945HX, 16 ...
+CPU ：
+Processor ：AMD Ryzen 9 7945HX
+ Total Cores ：16
+Total Threads ：32
+ Frequency ：2.5 GHz
+ Max Turbo Frequency ：5.4 GHz
+TDP ：100W
+Turbo Power ：120W
+GPU ：
+Graphics Cards ：AMD Radeon 610M
+ GPU Memory Config ：N/A
+ TDP(GPU) ：N/A
+Memory ：
+Memery Type ：DDR5 (SO-DIMM х 2)
+ Optional SKU DDR Capacity ：N/...
+https://images-ext-1.discordapp.net/external/ZA8MD84ZtjJ2UpY7NwH78TIs255M_3CegP-Dyv2eFSk/https/m.media-amazon.com/images/I/41-46xsNSpL.jpg_BO30%2C255%2C255%2C255_UF900%2C850_SR1910%2C1000%2C0%2CC_PIRIOFOURANDHALF-medium%2CBottomLeft%2C30%2C-20_ZJPHNwYW4gZm9yZWdyb3VuZD0iIzU2NTk1OSIgZm9udD0iQW1hem9uRW1iZXIgNTAiID40ODwvc3Bhbj4%3D%2C500%2C900%2C420%2C420%2C0%2C0_QL100_.jpg
+
+{Embed}
+https://amzn.to/4ngPL8J
+NFHK NGFF Key A+E PCI Express auf SATA 3.0 6Gbps Dual Ports Adapter...
+NGFF Key A+E PCI Express auf SATA 3.0 6Gbps Dual Ports Adapter Konverter Festplattenverlängerungskarte JMB582 
+Es verfügt über zwei SATA3.0-Schnittstellen, die als Systemfestplatte an eine SSD-Solid-State-Festplatte angeschlossen werden können, und unterstützt Übertragungsraten von 6,0 Gbit/s, 3,...
+https://images-ext-1.discordapp.net/external/wyMZYtTjUmqCk7LtXxy8REaTG-tg7F9ToQnAJxH-on8/https/m.media-amazon.com/images/I/41029gKt2qL.jpg_BO30%2C255%2C255%2C255_UF900%2C850_SR1910%2C1000%2C0%2CC_PIRIOFOUR-medium%2CBottomLeft%2C30%2C-20_ZJPHNwYW4gZm9yZWdyb3VuZD0iIzU2NTk1OSIgZm9udD0iQW1hem9uRW1iZXIgNTAiID42Nzwvc3Bhbj4%3D%2C500%2C900%2C420%2C420%2C0%2C0_QL100_.jpg
+
+{Embed}
+https://amzn.to/47p7o1s
+CORSAIR Vengeance SODIMM DDR5 RAM 96GB (2x48GB) 5200MHz CL44-44-44-...
+Rüsten Sie Ihren DDR5-Gaming-oder Performance-Laptop mit den bahnbrechenden DDR5 SODIMM-Speichermodulen der CORSAIR VENGEANCE SERIES auf. VENGEANCE SODIMM sind mit zahlreichen Laptops und Kompakt-PCs mit Intel- und AMD-Prozessor kompatibel und ermöglichen ein Upgrade Ihres bestehenden Arbeitsspei...
+https://images-ext-1.discordapp.net/external/qiSw-XpyFO4gDyNYnWnqbXXXLn4HXPFuKS5S_lC96FE/https/m.media-amazon.com/images/I/41n2Mn88R2L.jpg_BO30%2C255%2C255%2C255_UF900%2C850_SR1910%2C1000%2C0%2CC_PIRIOFOURANDHALF-medium%2CBottomLeft%2C30%2C-20_ZJPHNwYW4gZm9yZWdyb3VuZD0iIzU2NTk1OSIgZm9udD0iQW1hem9uRW1iZXIgNTAiID4yLjI4Mjwvc3Bhbj4%3D%2C500%2C900%2C420%2C420%2C0%2C0_QL100_.jpg
+
+{Embed}
+https://amzn.to/3UVzZ6V
+Samsung 980 PRO NVMe M.2 SSD, 500 GB, PCIe 4.0, 6.900 MB/s Lesen, 5...
+Erreichen Sie ein hohes Power-Level: Entfesseln Sie die ganze Power der Samsung SSD 980 PRO – und bringen Sie die Leistung Ihres Rechners auf ein hohes Niveau. Dank der PCIe Schnittstelle der 4. Generation kann die 980 PRO die doppelte Datentransferrate im Vergleich zu NVMe™ SSDs mit PCIe 3.0 Sch...
+https://images-ext-1.discordapp.net/external/-BH33zUFJbjEn5RCzcOyxxgg-m7nKlUR4TcXbw1Mu64/https/m.media-amazon.com/images/I/31feONuxmPL.jpg_BO30%2C255%2C255%2C255_UF900%2C850_SR1910%2C1000%2C0%2CC_PIRIOFIVE-medium%2CBottomLeft%2C30%2C-20_ZJPHNwYW4gZm9yZWdyb3VuZD0iIzU2NTk1OSIgZm9udD0iQW1hem9uRW1iZXIgNTAiID4zNi42MDc8L3NwYW4%2B%2C500%2C900%2C420%2C420%2C0%2C0_QL100_.jpg
+
+{Reactions}
+👍 (4)
+
+[09/04/2025 18:36] darkreaper0756
+Hi
+
+
+[09/04/2025 18:36] mmnbm_79378
+🚀
+
+
+[09/04/2025 18:38] darkreaper0756
+Does anyone have an rtx 3090 ti or rtx 4090 or rtx 5090?
+
+
+[09/04/2025 18:40] darkreaper0756
+I want to run an AI model in FreqAI and I want to find out if the current implementation has poor performance due to my implementation or hardware…
+
+
+[09/04/2025 18:44] darkreaper0756
+Or some enthusiast level H series gpu😂
+
+
+[09/04/2025 18:45] xf0x0f
+?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1411972432503242833/1413233564035846204/IMG_2152.jpg?ex=69f2fa92&is=69f1a912&hm=c9917a1598f501a6aceaf4528841c203199b9b1639678ceeb3f9f56cd1c8137c&
+
+{Reactions}
+🚀
+
+[09/04/2025 18:46] darkreaper0756
+What iTesla modeln s it
+
+
+[09/04/2025 18:47] darkreaper0756
+?
+
+
+[09/04/2025 18:53] xaviertoor
+Here one rx 9070 xt and 4060 ti 16GB
+
+
+[09/04/2025 19:15] erbosnio_17282
+I need to look for something similar, my old pc is 24/7 at 100% cpu with only one strat 🤣
+
+
+[09/04/2025 19:44] xf0x0f
+how much you need?
+
+
+[09/04/2025 19:45] xf0x0f
+youre familiar with linux? linux bash?
+
+
+[11/17/2025 13:47] 4v1234
+Questions regarding Freqtrade core: does anyone found a way to change codes in Freqtrade to eliminate price difference between exchange ( Bybit in my case) and UI ? This seams to be real pain on live traiding. Even with a working strategy the result are damaged by this price difference.
+
+
+[11/18/2025 21:21] xf0x0f
+sry, im not working in bybit universe,... cant help you there
+
+
+[11/18/2025 21:23] 4v1234
+Which one you use for live?
+
+
+[11/18/2025 21:28] xf0x0f
+Binance only
+
+
+[11/18/2025 21:31] 4v1234
+There is still small gap for MICA regulations on bybit.  Are you from Europe? If yes how do you trade USDT under MICA on Binance?
+
+
+[11/18/2025 21:33] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1411972432503242833/1440454897681039430/Bildschirmfoto_2025-11-18_um_22.33.10.png?ex=69f321e9&is=69f1d069&hm=cbd5ff8ac15b69af8eed6c05358a62bd0d98607888d6ad73b1dfa4e431a6aed2&
+
+
+[11/18/2025 21:35] xf0x0f
+Jump from level to level until the final boss appears 😉
+
+
+[11/18/2025 21:36] 4v1234
+Many thanks I will deep in to it and check
+
+{Reactions}
+👍
+
+[11/18/2025 21:37] xf0x0f
+how you get to bybit futures in europe? 😄
+
+
+[11/18/2025 21:38] 4v1234
+Only new accounts have to trade USDC, old ones - you do USDT until they get you 😀😃🙂🙃
+
+
+[11/18/2025 21:38] xf0x0f
+xD
+
+
+[11/18/2025 21:38] xf0x0f
+I file my annual tax return with the tax office 😉
+
+
+[11/18/2025 21:41] 4v1234
+Here the accountants are really way behind of crypto assets.  The regulations are still not in full force......so no one is shure how to handle the situation.
+
+
+[11/18/2025 21:45] xf0x0f
+in my country the situtation is really clear after 2025,...
+
+
+[11/18/2025 21:58] 4v1234
+It must be west country 😀 everything is late, messy and dark on the East side 😀😃🙂🙃😊
+
+
+[01/25/2026 14:19] raul0909
+@Alex Crypto King
+
+
+[02/20/2026 05:51] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1411972432503242833/1474282172004171928/IMG_0496.jpg?ex=69f39684&is=69f24504&hm=9ee4e669bee179ec94a8aaabe752a046e66eefee1a8c03c733d7a6acdccad95c&
+
+{Reactions}
+🚀
+
+[02/20/2026 05:51] xf0x0f
+Last experiment with a gtx4060,… will replaced by 3090 soon
+
+
+[02/20/2026 18:40] glad8769
+Wooooow
+
+
+[02/20/2026 18:48] serialkiller15
+Wich models are you testing I have nice values and results with local ollama and got and ither models
+
+
+[02/21/2026 08:13] xf0x0f
+I built a local agent fleet where openclaw spawns isolated sub-agents that talk to a self-hosted sglang inference server running a proper 32B+ model (like qwen 2.5 coder 32B) on a 3090 gpu agents get tool access (file I/O, web, RAG via chromadb) and work autonomously on strategy building, migration, analysis, or trading decisions. The 7B model on the 4060ti was too dumb for reliable tool-use, but a 3090 with 24GB VRAM can run 32B AWQ models at ~50 tok/s via sglang with continuous batching - fast enough for multi-agent orchestration without cloud API costs, and the RAG knowledge base (10K+ freqtrade chunks and strategies) stays fully local.
+
+{Reactions}
+👍 (2)
+
+[02/21/2026 08:24] serialkiller15
+Nice
+
+
+[02/21/2026 08:26] xf0x0f
+Go test ollama against sglang,… performs amazing
+
+{Reactions}
+❤️
+
+==============================================================
+Exported 36 message(s)
+==============================================================

@@ -1,0 +1,878 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 📊alex_ninjaai_results
+==============================================================
+
+[01/31/2026 11:32] serialkiller15
+@everyone
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1467120311328702602/image.png?ex=69f33dc3&is=69f1ec43&hm=7cd9e08bc30a14405485e5f445a22c042016907bb60989cf97a2192d3af3adae&
+
+{Reactions}
+🔥 (2) 🚀
+
+[01/31/2026 11:47] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1467124201574895712/image.png?ex=69f34163&is=69f1efe3&hm=1e80616cb910df553b58673d222578e0f515eeb32125f5dcfc2b97bfcfdd0ab5&
+
+{Reactions}
+🚀
+
+[01/31/2026 13:07] ywk3926
+this channel name should be alex_ninjaai_results,right?😆
+
+
+[01/31/2026 13:07] serialkiller15
+yes thanks my fingers where to fast!
+
+
+[01/31/2026 14:42] ywk3926
+Trend trading is very good
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1467168146854248451/image.png?ex=69f36a50&is=69f218d0&hm=7470815dbb676afd512a25df1232526c18d41c45378f2156f979b69c03161626&
+
+
+[01/31/2026 14:43] serialkiller15
+yes it is but needs to be fixed longs...
+
+
+[02/02/2026 05:38] ywk3926
+ROI: Closed trades
+∙ 13.28 USDT (2.53%) (0.66 Σ%)
+∙ 13.266 USD
+ROI: All trades
+∙ 22.886 USDT (2.57%) (1.14 Σ%)
+∙ 22.862 USD
+Total Trade Count: 155
+Bot started: 2026-01-31 13:19:44
+First Trade opened: a day ago (2026-01-31 13:41:50)
+Latest Trade opened: 20 minutes ago (2026-02-02 05:17:42)
+Win / Loss: 123 / 26
+Winrate: 82.55%
+Expectancy (Ratio): 0.09 (0.01)
+Avg. Duration: 3:05:13
+Best Performing: DASH/USDT:USDT: 12.13 USDT (8.50%)
+Trading volume: 59716.46 USDT
+Profit factor: 1.05
+Max Drawdown: 9.26% (196.393 USDT)
+    from 2026-01-31 20:32:27 (121.277 USDT)
+    to 2026-02-01 13:29:42 (-75.116 USDT)
+Current Drawdown: 5.09% (107.997 USDT)
+    from 2026-01-31 20:32:27 (121.277 USDT)
+
+
+[02/02/2026 06:09] ohbad1330
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1467763852199334133/Screenshot_2026-02-02_at_13.09.21.png?ex=69f39adc&is=69f2495c&hm=654167cf0461751dc1c6b9a4f910471283bc6311f3e339235f9cc7b5662a48e5&
+
+{Reactions}
+🚀 (3)
+
+[02/02/2026 18:00] mmnbm_79378
+Is it a 15-minute cycle?
+
+
+[02/02/2026 20:50] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1467985554053271633/IMG_0381.png?ex=69f317d5&is=69f1c655&hm=5754bf0e3332dbf1295dd0eea40386fc1586e681daf0786d62d11ba33164ff11&
+
+
+[02/04/2026 11:54] boooooon
+```
+ROI: Closed trades
+∙ -17.748 USDT (1.70%) (-4.44 Σ%)
+∙ -17.726 USD
+ROI: All trades
+∙ -22.916 USDT (1.51%) (-5.73 Σ%)
+∙ -22.888 USD
+Total Trade Count: 166
+Bot started: 2026-01-31 16:26:13
+First Trade opened: 3 days ago (2026-01-31 16:39:15)
+Latest Trade opened: an hour ago (2026-02-04 10:31:28)
+Win / Loss: 113 / 37
+Winrate: 75.33%
+Expectancy (Ratio): -0.12 (-0.03)
+Avg. Duration: 5:15:24
+Best Performing: ZEC/USDT:USDT: 6.247 USDT (1.75%)
+Trading volume: 30333.48 USDT
+Profit factor: 0.87
+Max Drawdown: 12.90% (55.158 USDT)
+    from 2026-01-31 21:16:19 (27.599 USDT)
+    to 2026-02-02 15:22:04 (-27.559 USDT)
+Current Drawdown: 10.60% (45.346 USDT)
+    from 2026-01-31 21:16:19 (27.599 USDT)
+```
+
+
+[02/05/2026 09:05] vasko123.
+Recovered.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1468895334200508590/d3c75e4c93c38c54.png?ex=69f31b62&is=69f1c9e2&hm=3826e7278de1119245fc9aad327b2575f7112f23d7a297152a38e8952be0ec9c&
+
+{Reactions}
+👍
+
+[02/05/2026 09:12] vasko123.
+Disadvantage: could have come out with a plus of 5-7%, and freed up the slot for another pair.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1468896963100672114/d7e44042d77eb324.png?ex=69f31ce6&is=69f1cb66&hm=fbb694f537e1e45982b1ffc228049d82a75d83a6ba4e7bd359ef7bad463980ec&
+
+
+[02/05/2026 10:55] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1468922984721940480/image.png?ex=69f33522&is=69f1e3a2&hm=762825ba8c52d995f013c6b15a2c76fc00af88bfdcdd7b179bbede7720808999&
+
+{Reactions}
+👍 (2)
+
+[02/05/2026 11:08] lukovicka
+This is weird. I'm using your code and your pairlist, but our results are very different.
+```
+ROI: Closed trades
+∙ -21.095 USDT (1.66%) (-5.27 Σ%)
+∙ -21.052 USD
+ROI: All trades
+∙ -15.53 USDT (1.79%) (-3.88 Σ%)
+∙ -15.498 USD
+Total Trade Count: 206
+Bot started: 2026-01-31 16:26:13
+First Trade opened: 4 days ago (2026-01-31 16:39:15)
+Latest Trade opened: 29 minutes ago (2026-02-05 10:31:30)
+Win / Loss: 151 / 46
+Winrate: 76.65%
+Expectancy (Ratio): -0.11 (-0.03)
+Avg. Duration: 5:27:24
+Best Performing: ZEC/USDT:USDT: 6.247 USDT (1.75%)
+Trading volume: 39249.173 USDT
+Profit factor: 0.88
+Max Drawdown: 17.21% (73.57 USDT)
+    from 2026-01-31 21:16:19 (27.599 USDT)
+    to 2026-02-04 16:40:15 (-45.971 USDT)
+Current Drawdown: 11.39% (48.694 USDT)
+    from 2026-01-31 21:16:19 (27.599 USDT)
+```
+
+
+[02/05/2026 11:09] serialkiller15
+stake amount?
+
+
+[02/05/2026 11:10] lukovicka
+```
+Mode: Dry-run
+Exchange: bybit
+Market:  futures
+Stake per trade: 20 USDT
+Max open Trades: 20
+Minimum ROI: {'0': 0.08, '30': 0.06, '60': 0.05, '90': 0.04, '120': 0.03, '180': 0.02, '240': 0.015, '360': 0.01, '480': 0.005, '600': 0}
+Entry strategy: 
+{"price_side": "other", "use_order_book": true, "order_book_top": 1, "price_last_balance": 0.0, "check_depth_of_market": {"enabled": false, "bids_to_ask_delta": 1}}
+Exit strategy: 
+{"price_side": "other", "use_order_book": true, "order_book_top": 1}
+Stoploss: -0.1
+Position adjustment: On
+Max enter position adjustment: -1
+Timeframe: 15m
+Strategy: Alex_NinjaAI_V5
+Current state: running
+```
+
+
+[02/05/2026 11:10] serialkiller15
+interesting and Timeframe i have 15m
+
+
+[02/05/2026 11:11] lukovicka
+Are you using a GPU or a CPU?
+
+
+[02/05/2026 11:11] serialkiller15
+no run it on cpu only and it does good at the last days!
+
+
+[02/05/2026 11:12] lukovicka
+Then I don't understand. Here is a list of pairs 🤔 
+https://discord.com/channels/1238181199206154373/1433333846329528411/1466695865446961325
+
+
+[02/05/2026 11:13] 4v1234
+Interesting, is it the 255 kb file or the 259kb file, from which one are your results? @Alex Crypto King
+
+
+[02/05/2026 11:23] serialkiller15
+i use the Version of 7thDragon!
+
+
+[02/05/2026 11:23] serialkiller15
+https://discord.com/channels/1238181199206154373/1467119775388799038/1467964579148599541
+
+
+[02/05/2026 11:24] lukovicka
+Now everything is clear. I used your original version🙂
+
+
+[02/05/2026 11:25] 4v1234
+Thank you......after HMMR test finished I will dive in too.
+
+
+[02/05/2026 11:26] 4v1234
+Please If you switch the versions, please make a comparison with the one you are using,
+
+{Reactions}
+👍
+
+[02/05/2026 16:07] ohbad1330
+mine also recover 😅
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1469001417699365042/Screenshot_2026-02-05_at_23.06.56.png?ex=69f37e2e&is=69f22cae&hm=2ac3c4458fffc8a37c57fef77c729cfd649d6e3399aeb18c494d3985a53032af&
+
+{Reactions}
+👍
+
+[02/05/2026 16:30] serialkiller15
+@Alex ClowdBOT_Free nice results what do you think
+
+{Reactions}
+👀
+
+[02/05/2026 16:31] Alex ClowdBOT_Free#5896
+⚠️ 🧩 Assistant<|channel|>functions.file Read: `IDENTITY.md` failed: Tool assistant<|channel|>functions.file_read not found
+
+
+[02/05/2026 16:31] serialkiller15
+@Alex ClowdBOT_Free can you assist us with optimizing strategies?
+
+{Reactions}
+👀
+
+[02/05/2026 16:31] Alex ClowdBOT_Free#5896
+Hey Alex! Sure thing—I’m here to help you optimize your crypto strategies. To get started, could you share a bit more about what you’re working on? For example:
+
+1. **What assets or markets** are you focused on (e.g., Bitcoin, altcoins, DeFi protocols)?
+2. **What tools or platforms** are you currently using (e.g., trading bots, backtesting software, data feeds)?
+3. **What specific goals** are you trying to achieve (e.g., higher Sharpe ratio, lower transaction costs, improved execution speed)?
+4. **What constraints** do you have (e.g., budget limits, risk tolerance, latency constraints)?
+
+Once I have a clearer picture, I can suggest specific algorithm tweaks, data‑handling optimizations, or tooling improvements that might give you a performance edge.
+
+{Reactions}
+🔥
+
+[02/05/2026 20:55] dragongoattigercat
+Metric
+Value
+ROI closed trades    91.081 USDT (2.29%)
+ROI all trades    167.145 USDT (4.27%)
+Total Trade count    51
+Bot started    2026-02-03 16:40:49 (UTC)
+First Trade opened    2026-02-03 18:00:47 (UTC)
+Latest Trade opened    2026-02-05 17:31:09 (UTC)
+Win / Loss    38 / 6
+Winrate    86.364%
+Expectancy (ratio)    2.07 (0.13)' })
+Avg. Duration    4:52:51
+Best performing    XTZ/USDT:USDT: 1.66%
+Trading volume    38272.56 USDT
+Profit factor    1.92
+Max Drawdown    8.35% (83.497 USDT) from 2026-02-03 20:31:26 to 2026-02-04 14:59:06
+Current Drawdown    N/A (N/A) since 2026-02-05 17:18:19
+
+
+[02/05/2026 21:48] dragongoattigercat
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1469087368068730900/image.png?ex=69f3257a&is=69f1d3fa&hm=7a6b75bee2122d856f456866544766824d7292707023acc03f5c423785ac8479&
+
+{Reactions}
+💸 👍
+
+[02/05/2026 21:59] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1469090119255457874/1a3eef506b1fd8f0.png?ex=69f3280a&is=69f1d68a&hm=2dc3e55046652a3c131847f15a62b3f800140783a44b0673c5e562c906c0aaa9&
+
+{Reactions}
+🚀
+
+[02/05/2026 23:03] ggoyito
+Damm, nice performance
+
+
+[02/06/2026 00:29] 4v1234
+This looks like AI images.......
+
+
+[02/06/2026 01:12] ohbad1330
+comeback is real
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1469138568105431211/Screenshot_2026-02-06_at_08.11.51.png?ex=69f35529&is=69f203a9&hm=c1a0e88335e6a6fb1c61843de5e13fef56a7fb699081652a40aac1a92c45b2c2&
+
+
+[02/06/2026 06:36] vasko123.
+here comes the drawdown.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1469220218114146304/47b97fc2745ef7d1.png?ex=69f2f874&is=69f1a6f4&hm=3288327f10116810d905ed79e283e592b695f938669ca36e4c3c4b6d96e88d70&
+
+
+[02/06/2026 07:07] serialkiller15
+lets see what happens! market is sidetrend and maybee goes to long will see!
+
+
+[02/06/2026 09:58] ywk3926
+ROI: Closed trades
+∙ 63.106 USDT (2.46%) (3.16 Σ%)
+∙ 63.036 USD
+ROI: All trades
+∙ -7.663 USDT (2.20%) (-0.38 Σ%)
+∙ -7.655 USD
+Total Trade Count: 412
+Bot started: 2026-01-31 13:19:44
+First Trade opened: 5 days ago (2026-01-31 13:41:50)
+Latest Trade opened: 47 minutes ago (2026-02-06 09:10:55)
+Win / Loss: 319 / 74
+Winrate: 81.17%
+Expectancy (Ratio): 0.16 (0.01)
+Avg. Duration: 3:53:58
+Best Performing: DASH/USDT:USDT: 22.282 USDT (6.14%)
+Trading volume: 212517.531 USDT
+Profit factor: 1.08
+Max Drawdown: 21.83% (463.014 USDT)
+    from 2026-01-31 20:32:27 (121.277 USDT)
+    to 2026-02-04 15:36:05 (-341.738 USDT)
+Current Drawdown: 2.74% (58.17 USDT)
+    from 2026-01-31 20:32:27 (121.277 USDT)
+
+
+[02/06/2026 09:58] serialkiller15
+Market switches to long now, but no longs are coming i am on it to fix this!
+
+{Reactions}
+🔥 (3)
+
+[02/06/2026 10:00] vasko123.
+Yes, all the entries are short and I have them too.
+
+
+[02/06/2026 13:40] xf0x0f
+Mine does no entries since 06:06 today
+
+{Reactions}
+👍
+
+[02/06/2026 13:43] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1469327711292887259/IMG_0400.png?ex=69f35c91&is=69f20b11&hm=a7a6f2cb258592180b22019118d11886793f58054d03f13e4be1f1a9ad22c24b&
+
+
+[02/06/2026 14:58] vasko123.
+An hour ago, all entries were short.
+
+
+[02/06/2026 18:59] serialkiller15
+AlexNinaV6
+Longs are coming!
+we will see
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1469407196105150576/image.png?ex=69f2fdd7&is=69f1ac57&hm=cb920a65209d72fe9ee3fc8e9d3d3556176cfa6b397a985cb54242ddce290b75&
+
+{Reactions}
+👍 (2)
+
+[02/06/2026 19:11] dragongoattigercat
+I set 60G storage for this VM and it got full after 4 days. LOL. it is money maker and storage eater
+
+
+[02/06/2026 19:12] serialkiller15
+yes its on my list to improve that, old data needs to be cleand up
+
+{Reactions}
+👍
+
+[02/07/2026 15:34] serialkiller15
+it recoverys very well! AlexNinjaV6
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1469717946178736271/image.png?ex=69f37680&is=69f22500&hm=7b3c4b98379b49e298564d75a683d665147ebae2381a7c21c8b4fce106b720c0&
+
+{Reactions}
+🔥
+
+[02/07/2026 17:32] liam_77636
+Is this the upgraded version? Its DCA is absolutely terrifying—scaling in while holding losing positions leads to massive losses once the stop-loss is triggered.
+
+
+[02/07/2026 18:56] serialkiller15
+Yes updated but not finished
+
+
+[02/07/2026 18:56] serialkiller15
+Only signals adapted ling/short
+
+
+[02/09/2026 12:06] ohbad1330
+ninja v5 is really good so far, but it's takes a lot of disk space
+
+
+[02/09/2026 12:20] 4v1234
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1470393815784362212/image.png?ex=69f348f4&is=69f1f774&hm=5d883a7d905a0d9d80a655e6399a30682856c58092de60670fc5729283ea6cf6&
+
+
+[02/09/2026 12:20] 4v1234
+Made some small changes,  and restarted last night
+
+
+[02/09/2026 13:29] vasko123.
+This is terrible. How can I fix this? How can I specify the path in the strategy and move this database to another drive?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1470411174746001605/f4feffe89387b744.png?ex=69f3591e&is=69f2079e&hm=a956b9f5beec23759f0583a5dc0adf8b07f5f0624647097748d0851731e18036&
+
+
+[02/09/2026 14:35] xf0x0f
+Brrrrr,…. Go get linux 😜
+
+
+[02/09/2026 14:42] serialkiller15
+@vasko123 i know about that as i have enough space here did not take a llook on it its on my todolist
+
+you must rewrite here inside the strategy
+
+                self.model_dir = Path(f"user_data/strategies/back_test/ml_models/{strategy_part}/{pair_part}")
+            else:
+                self.model_dir = Path(f"user_data/strategies/back_test/ml_models/{self._safe_strategy_name}")
+
+stop bot set another patch and move the data then start that should bee it for now!
+
+
+[02/09/2026 16:09] dragongoattigercat
+what should I rewrite for this part to solve the storage eater issue? Thank you Alex
+
+
+[02/09/2026 16:10] serialkiller15
+The path? If possible to move the models to another disk?
+
+
+[02/09/2026 16:34] dragongoattigercat
+I only have 1 partition and using docker for the bot. is it possible to overwrite the old or unused data?
+
+
+[02/11/2026 21:12] vasko123.
+v9
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1471252604192555232/0de1bbb45be9d1a2.png?ex=69f31d03&is=69f1cb83&hm=b3feb4916e3780c05431dcb8976191ecd730e3c816748b0059385541da14f07e&
+
+
+[02/11/2026 21:13] vasko123.
+v5
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1471252745016053948/902fed28318980c6.png?ex=69f31d24&is=69f1cba4&hm=e47479a73757f6c9d542c139a708572ca74a8f4b9842c41aa508ebfa088e90c8&
+
+
+[02/11/2026 21:13] vasko123.
+= 0
+
+
+[02/11/2026 22:51] ywk3926
+v9
+
+
+[02/11/2026 22:51] ywk3926
+ROI: Closed trades
+∙ -249.427 USDT (-3.06%) (-12.47 Σ%)
+∙ -249.268 USD
+ROI: All trades
+∙ -281.091 USDT (-2.72%) (-14.05 Σ%)
+∙ -280.912 USD
+Total Trade Count: 74
+Bot started: 2026-02-11 06:49:53
+First Trade opened: 16 hours ago (2026-02-11 07:07:09)
+Latest Trade opened: 34 minutes ago (2026-02-11 22:17:50)
+Win / Loss: 24 / 30
+Winrate: 44.44%
+Expectancy (Ratio): -4.62 (-0.39)
+Avg. Duration: 3:46:02
+Best Performing: ROSE/USDT:USDT: 4.496 USDT (4.07%)
+Trading volume: 39509.914 USDT
+Profit factor: 0.30
+Max Drawdown: 12.76% (256.115 USDT)
+    from 2026-02-11 13:36:37 (6.688 USDT)
+    to 2026-02-11 22:17:46 (-249.427 USDT)
+Current Drawdown: 12.76% (256.115 USDT)
+    from 2026-02-11 13:36:37 (6.688 USDT)
+
+{Reactions}
+😢
+
+[02/12/2026 10:41] snokard.
+v9 
+ doing good for the moment
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1471456139886723092/image.png?ex=69f331d2&is=69f1e052&hm=cc73b19ecb2f1996ce1904017cdeea5746c6b91a8cd519987196e4baa2d7e6d5&
+
+{Reactions}
+👍
+
+[02/12/2026 11:00] ywk3926
+Can you share the trading pairs you use?
+
+
+[02/12/2026 15:48] lukovicka
+```
+Day (count)      USDT          USD         Profit %
+---------------  ------------  ----------  ----------
+2026-02-12 (64)  5.621 USDT    5.62 USD    1.65%
+2026-02-11 (94)  -59.888 USDT  -59.87 USD  -14.92%
+2026-02-10 (1)   1.33 USDT     1.33 USD    0.33%
+```
+
+
+[02/12/2026 16:04] vasko123.
+v9 
+ doing good for the moment 🙂 😉 🙁
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1471537367193092208/69939aef7bd0be07.png?ex=69f37d78&is=69f22bf8&hm=58153818917558b186072b0a9066e33e1ad880bb2cca998e2729238c141ee8bf&
+
+
+[02/12/2026 16:31] xf0x0f
+mines doing good as well
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1471544192693174406/Bildschirmfoto_2026-02-12_um_17.31.02.png?ex=69f383d3&is=69f23253&hm=fb52be03de64ec89794254e10684765924a69b56060a3aeaf785559b5967c3e0&
+
+{Reactions}
+👍
+
+[02/12/2026 16:38] lukovicka
+v5?
+
+
+[02/12/2026 16:39] snokard.
+almost lol
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1471546165987246222/image.png?ex=69f385a9&is=69f23429&hm=ecab95c0ce8fa1ca68e9561638b53efc9c746209e4240d7493a01d9cbe90354f&
+
+
+[02/12/2026 16:39] snokard.
+what a nice colapse, almost poetic...
+
+
+[02/12/2026 16:40] snokard.
+🤣  i think its cause im using %based trades instead of fixed amounts, and runs out of funds to open more trades... how are you people running it?
+
+
+[02/12/2026 16:41] dragongoattigercat
+I do fit amount and both versions are getting loss a lot
+
+
+[02/12/2026 16:42] dragongoattigercat
+V5, it was +10% yesterday and now it is -6%
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1471547031582675024/image.png?ex=69f38678&is=69f234f8&hm=ec2f3def3b422e9872649561193ba02810ff211f53a9d303e6575ae9dc63f365&
+
+
+[02/12/2026 16:42] snokard.
+i think also markets arent at its best moment to do anything...
+
+
+[02/12/2026 16:43] dragongoattigercat
+and V9, it was -10% and now it is -17%
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1471547281567256598/image.png?ex=69f386b3&is=69f23533&hm=8c2d6998adb220aedb1a47b8fcf4a5294ec13636ab64d7ee8c01b26878df4c9f&
+
+
+[02/12/2026 16:43] dragongoattigercat
+I think it is because the market was dumping now
+
+
+[02/14/2026 16:48] serialkiller15
+V9
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1472273247289737216/image.png?ex=69f387cf&is=69f2364f&hm=be20413edea08ebe1f65a814925306c9247258239ab4e85d27a020fd24b5abad&
+
+{Reactions}
+🔥
+
+[02/14/2026 16:48] snokard.
+looking really good now
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1472273382945980561/image.png?ex=69f387f0&is=69f23670&hm=354cf7512ad27a730f6fa8adfbbf2acbd8aa3d7028d50f348693d4e6aea008e0&
+
+
+[02/14/2026 16:51] serialkiller15
+yep it recoverys good from my side, yes sometimes some losses! but let it run...
+
+{Reactions}
+🔥
+
+[02/14/2026 16:54] lukovicka
+How come you have such a profit and I have losses?
+```
+ROI: Closed trades
+∙ -23.609 USDT (0.62%) (-5.9 Σ%)
+∙ -23.602 USD
+ROI: All trades
+∙ -23.329 USDT (0.61%) (-5.83 Σ%)
+∙ -23.322 USD
+Total Trade Count: 293
+Bot started: 2026-02-10 20:22:48
+First Trade opened: 3 days ago (2026-02-10 20:32:26)
+Latest Trade opened: a minute ago (2026-02-14 16:46:23)
+Win / Loss: 231 / 55
+Winrate: 80.77%
+Expectancy (Ratio): -0.08 (-0.03)
+Avg. Duration: 4:22:06
+Best Performing: FIL/USDT:USDT: 3.367 USDT (2.23%)
+Trading volume: 37714.944 USDT
+Profit factor: 0.82
+Max Drawdown: 19.28% (79.578 USDT)
+    from 2026-02-11 07:54:03 (12.712 USDT)
+    to 2026-02-13 05:59:35 (-66.867 USDT)
+Current Drawdown: 8.80% (36.321 USDT)
+    from 2026-02-11 07:54:03 (12.712 USDT)
+```
+
+```
+Day (count)      USDT          USD         Profit %
+---------------  ------------  ----------  ----------
+2026-02-14 (59)  20.763 USDT   20.76 USD   5.84%
+2026-02-13 (54)  18.713 USDT   18.71 USD   5.55%
+2026-02-12 (78)  -4.527 USDT   -4.53 USD   -1.33%
+2026-02-11 (94)  -59.888 USDT  -59.87 USD  -14.92%
+2026-02-10 (1)   1.33 USDT     1.33 USD    0.33%
+```
+
+
+[02/14/2026 16:55] lukovicka
+v9 was published on February 10th, but your graph shows results from January 22nd?
+
+
+[02/14/2026 17:07] serialkiller15
+yes this is because i run old versions before this is development, i did not run it completle new.
+
+
+[02/14/2026 17:14] ywk3926
+ROI: Closed trades
+∙ -219.428 USDT (0.58%) (-10.97 Σ%)
+∙ -219.335 USD
+ROI: All trades
+∙ -213.158 USDT (0.61%) (-10.66 Σ%)
+∙ -213.067 USD
+Total Trade Count: 319
+Bot started: 2026-02-11 06:49:53
+First Trade opened: 3 days ago (2026-02-11 07:07:09)
+Latest Trade opened: 57 minutes ago (2026-02-14 16:18:04)
+Win / Loss: 252 / 60
+Winrate: 80.77%
+Expectancy (Ratio): -0.70 (-0.07)
+Avg. Duration: 4:17:33
+Best Performing: ROSE/USDT:USDT: 10.001 USDT (3.50%)
+Trading volume: 134786.219 USDT
+Profit factor: 0.64
+Max Drawdown: 18.92% (379.663 USDT)
+    from 2026-02-11 13:36:37 (6.688 USDT)
+    to 2026-02-12 16:29:11 (-372.975 USDT)
+Current Drawdown: 11.27% (226.116 USDT)
+    from 2026-02-11 13:36:37 (6.688 USDT)
+
+
+[02/14/2026 17:15] ywk3926
+My v9 is also recovering, but it's still suffering huge losses.
+
+
+[02/14/2026 17:17] ywk3926
+I use the same trading pairs as https://discord.com/channels/1238181199206154373/1433333846329528411/1466695865446961325
+
+
+[02/14/2026 18:39] lukovicka
++
+
+
+[02/14/2026 18:53] vasko123.
+After some minor changes, I'm testing it again.
+It's working for now.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1472304846987202641/32a15ba842cf9375.png?ex=69f2fc7d&is=69f1aafd&hm=e524095edd33a14d4c155e27d14e8b8e72482a67d09fb3332f520beaa0ad8019&
+
+
+[02/14/2026 18:55] serialkiller15
+Nice what did you change
+
+
+[02/14/2026 18:55] vasko123.
+v5 - After some minor changes, I'm continuing the test.
+It's working for now.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1472305212437037309/d5cd73f9cd9e6c2f.png?ex=69f2fcd4&is=69f1ab54&hm=59514177f2f90971e7946653386c7a0593b5c023cc306d1bc17a71de39ca7462&
+
+
+[02/14/2026 18:57] serialkiller15
+Nice
+
+
+[02/14/2026 18:59] xf0x0f
+ROI: Closed trades
+∙ 301.975 USDT (0.70%) (5.88 Σ%)
+ROI: All trades
+∙ 520.17 USDT (0.89%) (10.12 Σ%)
+Total Trade Count: 283
+Bot started: 2026-01-30 08:41:20
+First Trade opened: 15 days ago (2026-01-30 08:44:19)
+Latest Trade opened: 2 hours ago (2026-02-14 16:16:43)
+Win / Loss: 191 / 82
+Winrate: 69.96%
+Expectancy (Ratio): 1.11 (0.04)
+Avg. Duration: 2:43:34
+Best Performing: ADA/USDT:USDT: 127.616 USDT (2.60%)
+Trading volume: 904564.262 USDT
+Profit factor: 1.14
+Max Drawdown: 14.54% (802.889 USDT)
+    from 2026-02-02 02:14:10 (382.658 USDT)
+    to 2026-02-04 15:36:07 (-420.231 USDT)
+Current Drawdown: 1.46% (80.683 USDT)
+    from 2026-02-02 02:14:10 (382.658 USDT)
+
+Updated: Sat Feb 14 19:59:07 2026
+
+
+[02/14/2026 18:59] serialkiller15
+maybee share the strategys i can review them (my AI assistant) hehe thanks
+
+
+[02/14/2026 19:00] vasko123.
+Claude pointed out incompatible parameters.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1472306535018401873/b7a89b78004f3195.png?ex=69f2fe10&is=69f1ac90&hm=88dcc490f165dfc94b4cb0b5b15504ef84d749449c5266870c9cfa08af257d97&
+
+
+[02/14/2026 23:49] liam_77636
+This trend strategy performs extremely well in a one-sided trending market, but it leads to sustained losses once the market turns sideways — especially DCA-style losses from averaging into positions. I’ve never dared to run it on a live account.
+
+
+[02/15/2026 05:00] vasko123.
+v5, with a balance of 200, three purchases totaling 130.
+Something needs to be done about this.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1472457519476641996/photo_2026-02-15_06-51-02.jpg?ex=69f38aad&is=69f2392d&hm=7646b8648f5d60d186728bbfc3e37a9d26231008e74fa2e979d2ede1c887b1c9&
+
+{Reactions}
+👍
+
+[02/16/2026 17:20] erkankesemen6252
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1473006184738066567/SAVE_20260216_202029.jpg?ex=69f38f69&is=69f23de9&hm=e8108e955d33067bb50952caa2613bd94106eef1d286b69550d3080a4013aa8f&
+
+
+[02/16/2026 19:53] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1473044759143649351/6e5f6063dc597980.png?ex=69f30a96&is=69f1b916&hm=7d36bdae3b60f2354b519f91ee2af1f2ce31c2b97feec6379c398a8c3ac4f7c0&
+
+
+[02/16/2026 20:34] serialkiller15
+Perfekt
+
+
+[02/17/2026 12:19] .7thdragon
+i think some fixes needed, i attached my version, volume based pairs, 10mot
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1473292872790048879/image.png?ex=69f348e9&is=69f1f769&hm=307dba5e3bffa5d0b7fbc3a4c3feb5925f8fdcc574a9e00f1455510f0c689a03&
+https://cdn.discordapp.com/attachments/1467120020181090405/1473292873305821236/Alex_NinjaV9.py?ex=69f348e9&is=69f1f769&hm=1a8288f4334abf7b99b7de037207ec1156c0c2e8c9512b016a5f5c77997bc7b1&
+
+{Reactions}
+👍
+
+[02/20/2026 06:17] vasko123.
+Version9 7thDragon. I don't understand how you did it?
+Not a single roi_ 60m - 240m
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1474288761612406838/bc2a5573fe61de4a.png?ex=69f39ca7&is=69f24b27&hm=61f9860d5732a0bd596ad343fbc844e09c01a5f771f8d44f2fac4a583f6af47d&
+
+
+[02/20/2026 06:20] vasko123.
+Version5 7thDragon. Returned to zero
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1474289627639582760/54104fe712affc18.png?ex=69f2f4b6&is=69f1a336&hm=b6ac9597132ee2a8fc08ed27ee420cd30032e91962e272872ac56d8e2b2b0882&
+
+
+[02/20/2026 06:22] vasko123.
+Version 5 from 4V - works only in short.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1474290205304291348/40248b14482aed80.png?ex=69f2f53f&is=69f1a3bf&hm=b075baae9488989040df9d0465e3ec7a8f3f005cb57dfd435bdfafe1ca9fdb03&
+
+
+[02/20/2026 06:27] vasko123.
+Version 7 with parameter changes from claude. See above.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1474291303272550520/bf3e44e5d48a1bea.png?ex=69f2f645&is=69f1a4c5&hm=b55b2b97df03238e080f2a81c9f98c06f8b4cbb5880a2b247496ec9ffa24966e&
+
+
+[02/20/2026 10:24] .7thdragon
+needs my patch for FT
+https://discord.com/channels/1238181199206154373/1284586552760074323
+https://github.com/7thDrag0n/freqtrade_patch_dl_open_positions
+
+{Embed}
+https://github.com/7thDrag0n/freqtrade_patch_dl_open_positions
+GitHub - 7thDrag0n/freqtrade_patch_dl_open_positions
+Contribute to 7thDrag0n/freqtrade_patch_dl_open_positions development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/gWXVGzcpBXQ4vF_-IDV9SKC7kHpAcmDIbmourHrTk9A/https/opengraph.githubassets.com/41d900e875bae501fe8864c0725c3bfa715569c6ac0649f9720f6abd85423750/7thDrag0n/freqtrade_patch_dl_open_positions
+
+{Reactions}
+👍
+
+[04/19/2026 06:36] yyzq93
+v9，Don't waste time
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467120020181090405/1495312155979944068/image.png?ex=69f2f877&is=69f1a6f7&hm=109e277ef7cb7709b56a13f862d46bae2c3e3f8d2787a49f59c2f820f68bfc51&
+
+{Reactions}
+👍
+
+==============================================================
+Exported 110 message(s)
+==============================================================

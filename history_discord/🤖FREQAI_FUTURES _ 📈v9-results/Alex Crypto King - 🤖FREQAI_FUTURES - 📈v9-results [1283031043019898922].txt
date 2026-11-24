@@ -1,0 +1,701 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖FREQAI_FUTURES / 📈v9-results
+==============================================================
+
+[09/10/2024 13:29] serialkiller15
+Use this Channel to report your results!
+
+
+[09/10/2024 13:53] serialkiller15
+dryrun since 8am today on 15min timeframe
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1283062768320380938/image.png?ex=69f35ed2&is=69f20d52&hm=e80dde70e1c4276b881e8b5a8f240f0acd513b95a42871fd1a60ff66d337a427&
+
+{Reactions}
+🔥 🙌 (2)
+
+[09/10/2024 14:17] serialkiller15
+its interessting because i keeped the 1h timeframe in the config_validation file on 1h and in config.json and strategy to 15m
+
+
+[09/10/2024 18:35] ammart90
+Hello @Alex Crypto King i did the same steps for V8 on the newly V8 trailing, but with Spot, short=false, leverage=1
+hyperopt and backtest but the straregy did not perform any buy/sell trades, any clue ?
+
+
+[09/10/2024 19:03] serialkiller15
+Did not test it on spot
+
+
+[09/10/2024 19:06] inviting_moose_32088
+the same as @AmarT
+
+
+[09/10/2024 19:27] ammart90
+did u test without trailing ?
+
+
+[09/10/2024 19:30] inviting_moose_32088
+no, but try after finish last hyperopt 🙂
+
+
+[09/10/2024 20:51] mortezapoudat
+Backtest of august. hyper from 0601-0801
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1283167919819194511/message.txt?ex=69f31800&is=69f1c680&hm=8eef8b47ed35d53489e07ba43784d8a756bd7792340cd7cf35db6d55b90a208d&
+
+{Reactions}
+👍 (2)
+
+[09/11/2024 12:56] laupapp
+@Alex Crypto King Dry run on 15m already ON ? do you have results ? My VM is down for the moment ...
+
+
+[09/11/2024 13:21] serialkiller15
+hi yes i have some give me a sec
+
+
+[09/11/2024 13:21] serialkiller15
+65Wins/6 LOSSES
+
+
+[09/11/2024 13:21] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1283417157107187772/image.png?ex=69f3575e&is=69f205de&hm=95625d161721171144b5cd9a292cf5d25a0a6a7a8c925b6d25e1acd4a10e5d37&
+
+{Reactions}
+👍
+
+[09/11/2024 13:21] andreis9311
+Only shorts?
+
+
+[09/11/2024 13:24] serialkiller15
+yes this is the f.....@target
+
+
+[09/11/2024 13:25] serialkiller15
+this is with modifcations on target.....
+
+
+[09/11/2024 13:25] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1283418091325493330/image.png?ex=69f3583d&is=69f206bd&hm=d5a5bb4efa21b63490b44af1241db8bd41703e0d225f8f3491f0f987f726d71e&
+
+{Reactions}
+🙏
+
+[09/11/2024 13:25] serialkiller15
+also seems to fixed not doing trade on every candle.... was a long night hehe
+
+
+[09/11/2024 13:29] ammart90
+can you please check the spot 😦
+
+
+[09/11/2024 13:30] serialkiller15
+let me finish this first budy
+
+
+[09/11/2024 13:48] branly76
+Guys do not push Alex. Let him do the job in all the time he needs. Pushing gives more/other errors/bugs.
+
+{Reactions}
+👍 (3)
+
+[09/11/2024 13:55] serialkiller15
+yes thanks! step by step but it looks promising
+
+
+[09/11/2024 13:56] andreis9311
+Can you share what is the values now you are using for freqai?
+
+
+[09/11/2024 13:58] serialkiller15
+i switched to prediciton of V R and so on...
+
+
+[09/11/2024 13:58] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1283426362144850033/image.png?ex=69f35ff1&is=69f20e71&hm=0f4d74426a6ee31f6f041134dcbfec1b6dc6f18ea389aeebe87fc94ea2523e32&
+
+
+[09/11/2024 14:25] ximontan
+1h
+hyperopt: 20240601-20240709
+Backtested 20240709 - 20240809
+hardcode stoploss =  -0.1
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1283433295945662566/1.txt?ex=69f36666&is=69f214e6&hm=c2fa9cbac3809abaadd99a2ccb798648655fa4801f357a816d12dc7a190a9c74&
+
+
+[09/11/2024 14:31] serialkiller15
+hm interesting
+
+
+[09/11/2024 14:43] maxgorbachevskiy
+why -0.1 is hardcore? – It is 10%, right? Hardcore is -0.01 )))
+
+{Reactions}
+🤣
+
+[09/11/2024 14:45] ximontan
+right it 10%
+
+
+[09/11/2024 14:45] .7thdragon
+it is a start, a good aproaches for the current market for months is 0.04 or 0.08
+0.01 is indeed hardcore
+
+
+[09/11/2024 14:47] brewy_024
+Yesterday i started V9, but it didn't open any trades so far. I have now cleared models folder, checked all parameters and config and started it again and i noticed that while training over 50% of data is dropped due to NaNs. Is that something we should be worried about and that can possibly cause bot not to open any trades?
+
+
+[09/11/2024 14:47] maxgorbachevskiy
+BTW You can define your stoploss limits by adding the following pieces of code
+ONLY to hyperopt !!!!
+Then hyperopt will fnd the optimal stoploss for your strategy within these boundaries
+
+
+[09/11/2024 14:47] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1283438690273726537/image.png?ex=69f36b6c&is=69f219ec&hm=a69b520ce55b8298d4887968d94aad7309a771d780bf3e66919f55f3fa261b4b&
+
+
+[09/11/2024 14:47] maxgorbachevskiy
+Add **to hyperopt** file
+`from freqtrade.optimize.space import Categorical, Dimension, Integer, SKDecimal `
+ and
+`    class HyperOpt:
+        # Define a custom stoploss space.
+        def stoploss_space():
+            return [SKDecimal(-0.09, -0.01, decimals=3, name='stoploss')]`
+
+
+[09/11/2024 14:48] ximontan
+super, I'll test this approach
+
+
+[09/11/2024 14:48] .7thdragon
+hmm nice idea Max. still, is not working for me, out of the range results, weird
+
+
+[09/11/2024 14:49] maxgorbachevskiy
+same problem with me. This morning Alex was hellping me with this. I am trying to identify the reason of the problem now. Looks like it is because of hyperopted values in strategy json. Will text later here.
+
+
+[09/11/2024 14:52] brewy_024
+Oh i see. I have hyperopted again now, did backtest and changed strategy tf to 15m since i got better results than from 1h. We'll see if it starts opening trades now. Let me know when you get any further insigthts. Thanks
+
+
+[09/11/2024 16:01] serialkiller15
+guys please have look at this
+
+
+[09/11/2024 16:01] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1283457413625679882/image.png?ex=69f37cdc&is=69f22b5c&hm=577be345bb35b8f7146de927fe7608fdc98cdbfeb32fb73681a9d91fe3b345ad&
+
+
+[09/11/2024 16:01] serialkiller15
+precition said go long and it does?
+
+
+[09/11/2024 16:02] serialkiller15
+same here
+
+
+[09/11/2024 16:02] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1283457670296113243/image.png?ex=69f37d1a&is=69f22b9a&hm=538b71c71bc6cc88a2054c059cf405f917ecc726ceb6255382d05387a31d4f81&
+
+{Reactions}
+💪
+
+[09/11/2024 16:45] giovannimauro
+Lets see in some futures candles 😃
+
+
+[09/11/2024 16:52] serialkiller15
+This are Future candles?
+
+
+[09/11/2024 17:43] maxgorbachevskiy
+show me your json with strategy parameters plz? (efter hyperopt)
+
+
+[09/11/2024 17:48] brewy_024
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1283484313693982810/message.txt?ex=69f395ea&is=69f2446a&hm=16d978f2236c94c8b67680760d0e34da0a689d96aa891ef3d6eece14c14da8f9&
+
+{Reactions}
+👍
+
+[09/11/2024 23:53] maxgorbachevskiy
+I spent a large day trying to trace a problem with "no trades".  I used my hyperopted values and tried to find a working tweak – and I found one!  My discoveries:
+— when `"max_open_trades": -1` is set in strategy config json — i have no trades.    
+— when I change the value `threshold_buy` from mine (negative  -0.930...) to value of Alex (+0.186862.., seee screenshot) **AND** change `"max_open_trades": ` to anything above 0 — it **starts doing trades!**
+— Me and @Brewy, both of us hyperopted with `"max_open_trades": -1 `  (unlimited orders) **— this looks suspicious!**
+
+My questions to all:
+1) Did you ever try hyperopt with `"max_open_trades": -1`?  Are there trades in  **dry-run** in this case? 
+> ** 🧐  My guess is that hyperopt with `"max_open_trades": -1` leads to extremely bad threshold_buy / threshold_sell values that block any trades. **
+What is your experience?
+2) is it okay to have negative a threshold_buy / threshold_sell? Do you ever get negative values? It feels to me that both numbers should be positive? Please check my and Brewy values. Do they look okay?
+
+Please give me your thoughts!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1283576233216577587/Screenshot_2024-09-12_at_01.08.07.png?ex=69f342c5&is=69f1f145&hm=09d7e8219312d1aa86a2636ffe4f67901e0e914f0fb8d44ea402aae997bbd14f&
+
+{Reactions}
+👀
+
+[09/11/2024 23:55] .7thdragon
+"max_open_trades": -1 means unlimited orders
+using space "trades" in hyperopt this will be replaced in json, giving the opportunity to have a small optimal number of simultaneous trades
+
+
+[09/11/2024 23:58] .7thdragon
+thresholds (from one system to another) should be similar/close when having same pairs and same optimized timerange
+
+
+[09/12/2024 05:49] brewy_024
+After i changed to 15m yesterday bot opened some trades. All trades are longs, but that is ok considering current market trend. 
+When max_open_trades is -1, strategy will use parameter from config file and i don’t think that is a problem.
+However treshold_buy and treshold_sell values can be both positive and negative, but in my experience so far, if they are too far from each other (like it is a case with our latest hyperopt values) all trades will be same direction.
+
+
+[09/12/2024 06:26] maxgorbachevskiy
+At least for me max_open_trades = -1 was definitely the stopper of new trades. I tested on/off several times. 
+Yes, the log says that it loads a value from config json.
+But my experience is that every time i changed from -1 to +1 in strategy json (without changing anything else), it really started trading (and follow the parameter from config json)
+
+
+[09/12/2024 06:51] anonymuis
+Did you set a small budget? Unlimited open trades with a small budget can sometimes lead to trades below the minimum amount. Then there will be no valid trades.
+
+
+[09/12/2024 07:15] maxgorbachevskiy
+No, budget settings seem to be big enough 
+`    "dry_run_wallet": 1000,
+    "max_open_trades": 40,
+    "stake_amount": 10,
+    "tradable_balance_ratio": 0.5,`
+
+{Reactions}
+👍
+
+[09/14/2024 10:17] inviting_moose_32088
+guys.... I dont know what I find but: just try on hyperopt:
+`"max_open_trades": 2
+"dry_run_wallet": 100
+"stake_amount": 45`
+its about spot and 15 minutes timeframe, but..
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1284457914429472799/C5CF8697-EFC6-45AA-A5D9-4D7177B7CE77.png?ex=69f32c26&is=69f1daa6&hm=6aaf4b07fd2b797df37960180d523616b6878711b44e5f6be408f1fc38365704&
+
+
+[09/14/2024 10:18] inviting_moose_32088
+its test hyperopt, after finishing I start another one with more epoches
+
+
+[09/14/2024 10:18] inviting_moose_32088
+magic with lower value of 'open trades'..
+
+
+[09/14/2024 10:20] serialkiller15
+nice, thanks for sharing!
+
+
+[09/14/2024 10:44] ximontan
+Yeah, magic for me too, before I thought that some features should restrict wrong signals, may be we implement this in future....
+
+
+[09/14/2024 10:46] serialkiller15
+i am also handling with max_open_trades..
+
+
+[09/14/2024 10:47] .7thdragon
+My imppression is opposite like Max said(open trades around 30), i will share the dry results and might be amazing. The idea is of safety and almostt no swings.
+
+{Reactions}
+😁
+
+[09/14/2024 10:53] maxgorbachevskiy
+Slow and steady wins the race!
+At LIVE run, you don't want to risk your $100 account  with $45-like trades (30%+ of the total wallet). One bad trade will liquidate the whole wallet.  
+Large amount of smaller (%% relative to wallet size) trades is better.
+
+
+[09/14/2024 10:54] serialkiller15
+yes absolute, my way trying different variations, small stake amount and more trades...
+
+
+[09/14/2024 10:56] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1284467739431403622/image.png?ex=69f3354d&is=69f1e3cd&hm=b29060001e7639f4815529c06d566d1fd633d8a5cfc72c6d12384675b462b24a&
+
+
+[09/14/2024 10:57] maxgorbachevskiy
+Currenttly max trades is limited to 20. Will try to  increase number of trades. But for a live wallet 50 silultaneous mistaken red trades (in case ai strategy makes a mistake, all of a suddenn) is ..... ooouuuffffffff
+
+
+[09/14/2024 10:58] serialkiller15
+@MaxG is this V91?
+
+
+[09/14/2024 10:58] maxgorbachevskiy
+yes, 91 + custom hyperopt (check my post from yesterday in beta channel)
+
+
+[09/14/2024 10:59] serialkiller15
+thanks was on a business trip yesterday did not have so much time thanks mate!
+
+
+[09/14/2024 11:00] maxgorbachevskiy
+it is a current update after 40 hours dryrun
+
+
+[09/14/2024 11:12] serialkiller15
+So you usr Max trades 20 30? And drake amount
+
+
+[09/14/2024 11:12] serialkiller15
+Stake
+
+
+[09/14/2024 11:17] maxgorbachevskiy
+First hyperopted with `maxtrades = 30`, then for dryrun i lowered this number down to 20.
+Also,  wallet settings are 
+>  `  "dry_run_wallet": 1000,
+>     "max_open_trades": XXXX,
+>     "stake_amount": 10,
+>     "tradable_balance_ratio": 0.5, `
+Not saying that this is the proper way, but the results of dryrun are promising, so far.
+
+
+[09/14/2024 11:50] .7thdragon
+10 . the most lower value possible for 5x and 10x
+
+
+[09/16/2024 20:27] andreis9311
+How is it going? Any results guys?
+
+
+[10/18/2024 02:24] 0jessica0_
+Hi, I have already dry run it for one night. I change the code shift(1) to shift(0). Maybe I did something wrong. here is the result. Anyone gets similar results?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1296660087888281632/image.png?ex=69f3660f&is=69f2148f&hm=8169c682f2b9f73b634aac5094a04bc0e29eba33fdb259ebde15eefd2400f3ee&
+
+
+[10/18/2024 05:14] woshishazi0151
+from 1016
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1296703002916425860/image.png?ex=69f38e07&is=69f23c87&hm=ff6ef64236f7898ab5c2a54834b0b0997cc7f10a56807a27d8d744d4a77a5d2f&
+
+
+[10/18/2024 08:21] ximontan
+1 night run, dry with default config. AlexStrategyFinalV90Hyper (https://discord.com/channels/1238181199206154373/1283028025620828210/1296519919952728096)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1296750056065470565/image.png?ex=69f31119&is=69f1bf99&hm=9517d9b89b6ad89758705747eb0cc8833ff2d72428c31294bc41a5f5552db55b&
+https://cdn.discordapp.com/attachments/1283031043019898922/1296750056321450014/image.png?ex=69f31119&is=69f1bf99&hm=52a5a4bb7c92bd22edef7d8729a4bd7c9b20be360fb25a012c17e24854c4e388&
+
+
+[10/18/2024 10:57] maxgorbachevskiy
+Same results
+
+
+[10/18/2024 12:53] hirotakah7
+Same results
+
+
+[10/18/2024 12:58] ximontan
+after hyperopt, AlexStrategyFinalV90Hyper 1h, looks better!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1296819744305053786/image.png?ex=69f35200&is=69f20080&hm=5393b37d3a0be68bccc35708ccc9871576b6229f2f2c93286dd3465acf109a02&
+https://cdn.discordapp.com/attachments/1283031043019898922/1296819744703516762/image.png?ex=69f35200&is=69f20080&hm=59aebf8befad1cea963fdb617fb63d08a263a5d5858261dee58f58be25250d33&
+
+
+[10/18/2024 12:58] ch1ck3n_t4c0s
+ROI: Closed trades
+∙ 212.874 USDT (0.50%) (2.13 Σ%)
+∙ 212.874 USD
+ROI: All trades
+∙ 210.318 USDT (0.47%) (2.1 Σ%)
+∙ 210.318 USD
+Total Trade Count: 45
+Bot started: 2024-09-27 23:38:07
+First Trade opened: 5 days ago (2024-10-13 01:38:34)
+Latest Trade opened: 9 hours ago (2024-10-18 03:00:19)
+Win / Loss: 25 / 18
+Winrate: 58.14%
+Expectancy (Ratio): 4.95 (0.64)
+Avg. Duration: 7:58:51
+Best Performing: INJ/USDT: 8.59%
+Trading volume: 88781.618 USDT
+Profit factor: 2.53
+Max Drawdown: 0.83% (85.255 USDT)
+    from 2024-10-17 10:00:19 (290.713 USDT)
+    to 2024-10-18 02:15:38 (205.457 USDT)
+
+Updated: Fri Oct 18 08:58:44 2024
+
+{Reactions}
+👍
+
+[10/18/2024 12:59] ximontan
+what version AlexStrategy ?
+and what is the timeframe?
+
+
+[10/18/2024 13:01] ch1ck3n_t4c0s
+V90 spot V2
+
+
+[10/18/2024 13:02] ch1ck3n_t4c0s
+15m
+
+
+[10/18/2024 13:02] ch1ck3n_t4c0s
+It seems to really like Injective
+
+
+[10/18/2024 13:03] ximontan
+what means Injective?
+
+
+[10/18/2024 13:14] xenigami
+Could you please share the hyperopt command values? I've been working on hyperopt all day today and I'm not getting any satisfactory values.
+
+
+[10/18/2024 13:15] ximontan
+freqtrade hyperopt --strategy AlexStrategyFinalV90Hyper --timeframe-detail 5m --hyperopt-loss SharpeHyperOptLossDaily --spaces buy sell roi stoploss -e 10000 -j 12 -c user_data/config-torch-def.json --timerange=20240801-20241017
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1296823963745255505/AlexStrategyFinalV90Hyper.json?ex=69f355ee&is=69f2046e&hm=6ade11ab73e76d653daea7865d24e6b56dda1ade46aa1546c40ff09f00cc4364&
+
+{Reactions}
+👍
+
+[10/18/2024 13:17] 0jessica0_
+did you change your interval from 1h to shorter period?
+
+
+[10/18/2024 13:18] ximontan
+no it's 1h
+
+
+[10/18/2024 13:19] 0jessica0_
+the one Alex shared yesterday?
+
+
+[10/18/2024 13:19] ximontan
+yes this https://discord.com/channels/1238181199206154373/1283028025620828210/1296520066870935643
+
+
+[10/18/2024 13:19] 0jessica0_
+cool
+
+
+[10/18/2024 13:20] xenigami
+thank you
+
+
+[10/18/2024 13:20] ximontan
+but I little bit doubt about trailing_stop, let's see how it works in dry...
+b/c I all time disable it
+
+
+[10/18/2024 13:20] 0jessica0_
+I used it to run last night, the result is quite bad. I am going to enable the freqai
+
+
+[10/18/2024 13:21] 0jessica0_
+There is no difference
+
+
+[10/18/2024 13:21] 0jessica0_
+I tried last night and for trailing_stop on and off
+
+
+[10/18/2024 13:21] ximontan
+can you show your result?
+
+
+[10/18/2024 13:21] 0jessica0_
+I think I did
+
+
+[10/18/2024 13:21] 0jessica0_
+one sec
+
+
+[10/18/2024 13:21] 0jessica0_
+here
+
+
+[10/18/2024 13:23] ximontan
+is it after hyper opt?
+
+
+[10/18/2024 13:23] 0jessica0_
+one of them is with trailing stop, another one is without. I forgot which. But I change the stoploss to 3% rather than 30%. I thought if the correct rate is high, I can just stop loss the wrong one, and earn the right one
+
+
+[10/18/2024 13:23] 0jessica0_
+Yes, I used the data from July - Sep
+
+
+[10/18/2024 13:25] ximontan
+I forget, I was set startup_candle_count = 1000
+
+
+[10/18/2024 13:26] 0jessica0_
+That parts have no change to the result
+
+
+[10/18/2024 13:38] xenigami
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1296829764396384389/Screenshot_20241018_223725_Chrome.jpg?ex=69f35b55&is=69f209d5&hm=5bd9bf8d68da41c9730a89fe4e2deaa9953835ba01c4d2bc2ded5a3b72b0dbec&
+
+
+[10/18/2024 13:40] xenigami
+I'm doing a dry run after working on hyperopt today. I'll try again with the values that Ximontan told me.
+
+
+[10/20/2024 20:11] hirotakah7
+Backtested this one 90% Shorts signals
+
+
+[10/20/2024 20:25] ximontan
+same for me
+
+
+[10/20/2024 21:55] hirotakah7
+Also 2 bots same hyperopts one with freqai enabled and one without freqai @Ximontan you getting same results on both ?
+
+
+[10/21/2024 09:12] ximontan
+yes, in 15m and 1h
+but all time it starts good for some time
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1297850095798321183/image.png?ex=69f31d17&is=69f1cb97&hm=b54616f177abedc9471b86b6a391ca4ccd0ad33a8974e1126b3c322d88ab50d8&
+https://cdn.discordapp.com/attachments/1283031043019898922/1297850096213299230/image.png?ex=69f31d17&is=69f1cb97&hm=e7262fc6ab9bc4351bf0b2e16f30e2c4571901c91a0d68e1adc9ccaaa468e2c6&
+
+
+[10/22/2024 07:25] woshishazi0151
+What are everyone's results? Why do I feel like I've been losing money?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1283031043019898922/1298185367316332585/image.png?ex=69f303d6&is=69f1b256&hm=087b45cb11d608aa0a3d3f66de68765918c23ad642a65ef07778dc8beb7bb112&
+
+
+[12/17/2024 11:05] juninhojesus
+📊The best repacks of 24 years only in our group📊
+IPTVPlayer AtlasVPN TradingView-Premium...
+✍️ https://t.me/repackme888777 ✍️
+
+{Embed}
+https://t.me/repackme888777
+Cʀᴀᴄᴋɪɴɢ Cʟᴀss [ᴄʜᴀᴛʀᴏᴏᴍs]
+The best programs are only free
+https://images-ext-1.discordapp.net/external/28fxi58YXu_P--stod8kqzgZjXWB-oVt-3Rl8b_I9-g/https/cdn4.cdn-telegram.org/file/owgWX_8ueMP99kjWi0LMxKqz9aEaYQK05qZZKt60Kbb6fxH2QDNfqpe6ooMf05I_OllQrG-0az8vgz7k0v5yPGhUfAkw4zi4pSZHgjiVt0eqFFWsenm_BsrdeRYOq960d69_qpQ7C5v-w6L9KVB3mc5PcUnVF8ho83jXn_jaEafNNm0FkCBIbHp0_Tp0Yg140KB7W7uXUDVTAuvB2sSs1FpOouH-xueF0zjjdj0sHqm_11v9ALNzsrm4MHkUCIPHqSvx7cyGgJJm_YpJUL5MwEHHxGBzV5MDg5H04p7ZtCWDxJ-M8h9GZV0QQg46Fg8B9pWcAsjs7N3q-1CxtqwyLg.jpg
+
+
+[12/19/2024 09:18] attique_80740
+ROI: Closed trades
+∙ 82.013 USDT (1.32%) (8.2 Σ%)
+∙ 81.933 USD
+ROI: All trades
+∙ 69.248 USDT (0.98%) (6.92 Σ%)
+∙ 69.18 USD
+Total Trade Count: 37
+Bot started: 2024-12-18 11:05:31
+First Trade opened: 21 hours ago (2024-12-18 11:40:36)
+Latest Trade opened: 3 hours ago (2024-12-19 06:15:42)
+Win / Loss: 17 / 15
+Winrate: 53.12%
+Expectancy (Ratio): 2.56 (1.11)
+Avg. Duration: 2:19:35
+Best Performing: 1000PEPE/USDT:USDT: 18.79%
+Trading volume: 14452.687 USDT
+Profit factor: 3.37
+Max Drawdown: 1.49% (16.246 USDT)
+    from 2024-12-19 02:15:39 (93.692 USDT)
+    to 2024-12-19 04:15:36 (77.446 USDT)
+
+Updated: Thu Dec 19 09:17:36 2024
+
+{Reactions}
+👍
+
+[12/20/2024 05:18] attique_80740
+ROI: Closed trades
+∙ 131.743 USDT (1.42%) (13.17 Σ%)
+∙ 131.616 USD
+ROI: All trades
+∙ 131.743 USDT (1.42%) (13.17 Σ%)
+∙ 131.616 USD
+Total Trade Count: 46
+Bot started: 2024-12-18 11:05:31
+First Trade opened: a day ago (2024-12-18 11:40:36)
+Latest Trade opened: 12 hours ago (2024-12-19 16:07:26)
+Win / Loss: 28 / 18
+Winrate: 60.87%
+Expectancy (Ratio): 2.86 (1.29)
+Avg. Duration: 3:09:16
+Best Performing: 1000PEPE/USDT:USDT: 25.71%
+Trading volume: 19281.088 USDT
+Profit factor: 4.30
+Max Drawdown: 1.55% (16.972 USDT)
+    from 2024-12-19 02:15:39 (93.692 USDT)
+    to 2024-12-19 11:15:47 (76.72 USDT)
+
+
+[12/20/2024 05:19] attique_80740
+win rate is not that high but still able to grab some USDT.
+
+
+[12/20/2024 07:24] serialkiller15
+@Attique nice thanks for sharing
+
+{Reactions}
+👍
+
+[01/25/2026 14:19] raul0909
+@Alex Crypto King
+
+
+==============================================================
+Exported 120 message(s)
+==============================================================

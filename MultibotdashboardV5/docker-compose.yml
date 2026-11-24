@@ -1,0 +1,105 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: dashboard-postgres
+    environment:
+      POSTGRES_USER: dashboard
+      POSTGRES_PASSWORD: dashboard
+      POSTGRES_DB: dashboard
+    # Internal only - no host port binding needed
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dashboard"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # Redis Cache (optional)
+  redis:
+    image: redis:7-alpine
+    container_name: dashboard-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # Backend API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: dashboard-backend
+    environment:
+      DATABASE_URL: postgresql://dashboard:dashboard@192.168.0.210:5432/dashboard
+      REDIS_URL: redis://redis:6379/0
+      JWT_SECRET: ${JWT_SECRET:-development-secret-change-in-production}
+      # Bootstrap admin user (migration 002)
+      DASHBOARD_ADMIN_USERNAME: ${DASHBOARD_ADMIN_USERNAME:-admin}
+      DASHBOARD_ADMIN_PASSWORD: ${DASHBOARD_ADMIN_PASSWORD:-admin}
+      # Alerts feature not deployed yet
+      DISABLE_ALERTS: ${DISABLE_ALERTS:-true}
+      # (Optional) override Freqtrade API defaults via env
+      DASHBOARD_API_DEFAULTS__USERNAME: ${DASHBOARD_API_DEFAULTS__USERNAME:-}
+      DASHBOARD_API_DEFAULTS__PASSWORD: ${DASHBOARD_API_DEFAULTS__PASSWORD:-}
+      # Analytics DB connection (second database for historic data)
+      DASHBOARD_ANALYTICS__URL: "postgresql://dashboard:dashboard@192.168.0.210:5432/freqtrade_analytics"
+    ports:
+      - "8000:8000"
+    volumes:
+      - /opt:/opt
+      - ./backend/src:/app/src:ro
+      - ./config:/app/config:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # Frontend (development)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: dashboard-frontend
+    environment:
+      PUBLIC_HOST: ${PUBLIC_HOST:-192.168.0.210}
+      VITE_API_URL: http://192.168.0.210:8000/api/v1
+      VITE_WS_URL: ws://192.168.0.210:8000/api/v1/ws
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./frontend/src:/app/src:ro
+    depends_on:
+      - backend
+
+  # Adminer - Database Web GUI
+  adminer:
+    image: adminer:latest
+    container_name: dashboard-adminer
+    restart: unless-stopped
+    ports:
+      - "8090:8080"
+    environment:
+      ADMINER_DEFAULT_SERVER: postgres
+      ADMINER_DESIGN: pepa-linha
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
+  redis_data:

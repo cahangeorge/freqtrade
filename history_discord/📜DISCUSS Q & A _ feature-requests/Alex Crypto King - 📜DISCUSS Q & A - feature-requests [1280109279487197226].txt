@@ -1,0 +1,139 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 📜DISCUSS Q & A / feature-requests
+==============================================================
+
+[09/02/2024 10:20] .7thdragon
+V8
+`
+        # Calculate aggregate score S
+        #w = [self.w0.value, self.w1.value, self.w2.value, self.w3.value, self.w4.value, self.w5.value, self.w6.value, self.w7.value, self.w8.value]
+        
+        dataframe['S'] = self.w0.value * dataframe['normalized_ma'] + self.w1.value * dataframe['normalized_macd'] + self.w2.value * dataframe[
+            'normalized_roc'] + self.w3.value * dataframe['normalized_rsi'] + self.w4.value * \
+                         dataframe['normalized_bb_width'] + self.w5.value * dataframe['normalized_cci'] + dataframe[
+                             'w_momentum'] * dataframe['normalized_momentum'] + self.w8.value * dataframe[
+                             'normalized_stoch'] + self.w7.value * dataframe['normalized_atr'] + self.w6.value * \
+                         dataframe['normalized_obv']
+`
+removing dataframes creation speeds up a bit the hyper
+
+
+[09/02/2024 10:27] serialkiller15
+done, will wait for other request and dann repost the files thanks!
+
+
+[09/02/2024 10:38] .7thdragon
+also for hyper speedup replace real
+`
+    threshold_buy = DecimalParameter(-1, 1, default=0, decimals=5, space='buy')
+    threshold_sell = DecimalParameter(-1, 1, default=0, decimals=5, space='sell')
+
+    # Weights for calculating the aggregate score - normalized to sum to 1
+    w0 = DecimalParameter(0, 1, default=0.10, decimals=5, space='buy')
+    w1 = DecimalParameter(0, 1, default=0.15, decimals=5, space='buy')
+    w2 = DecimalParameter(0, 1, default=0.10, decimals=5, space='buy')
+    w3 = DecimalParameter(0, 1, default=0.15, decimals=5, space='buy')
+    w4 = DecimalParameter(0, 1, default=0.10, decimals=5, space='buy')
+    w5 = DecimalParameter(0, 1, default=0.10, decimals=5, space='buy')
+    w6 = DecimalParameter(0, 1, default=0.10, decimals=5, space='buy')
+    w7 = DecimalParameter(0, 1, default=0.05, decimals=5, space='buy')
+    w8 = DecimalParameter(0, 1, default=0.15, decimals=5, space='buy')
+`
+
+
+[09/02/2024 10:45] serialkiller15
+Thanks
+
+
+[09/02/2024 10:50] andreis9311
+I suggest to add a custom method for stake_amount
+
+`    def custom_stake_amount(self, pair: str, current_time: datetime, current_rate: float,
+                            proposed_stake: float, min_stake: Optional[float], max_stake: float,
+                            leverage: float, entry_tag: Optional[str], side: str, **kwargs) -> float:
+        available_balance = self.wallets.get_total(self.config['stake_currency'])
+        adjusted_stake = available_balance * 0.01
+
+        if min_stake:
+            adjusted_stake = max(min_stake, adjusted_stake)
+        adjusted_stake = min(max_stake, adjusted_stake)
+
+        return adjusted_stake`
+
+And make   `"stake_amount": "unlimited"` in JSON
+
+
+[09/03/2024 01:12] dodwmd
+isn't the threshold score really a confidence score? if so why isn't that used as a modifier for the stake_amount? ie stake_amount should be modified by the % above threshold_score.. ie if the threshold score is 90% you should be staking more than if it is 20%..
+
+
+[09/04/2024 07:33] dodwmd
+@Alex Crypto King For me the strategy attempts to execute a trade on every candle, either by entering a short or long position. However, when the maximum number of trades is set to 10 and there are more than 10 coins available, freqAI doesn't choose the trade with the highest confidence score. Instead, it simply trades on the next coin evaluated. Ideally, the bot should skip candles where the confidence level is in a uncertain zone, freeing up trade slots for coins where the bot has higher confidence in shorting or longing. While the thresholds for buy/sell signals should adjust this behavior, hyperopt doesn't seem to care about volume and will always favor results that gives more profit. This in my mind makes the threshold values are currently ineffective. Shouldn't as a trader you want a strategy to make fewer, but higher-confidence, trades?
+
+
+[09/04/2024 07:52] dodwmd
+Also if you log if it should short or long you'll find instances where the bot wants to short and long on the same candle but the short overrides the long due to the order of the entry. Huge red flag that the bot is currently profitable because we're in a downturn.
+
+
+[09/04/2024 08:16] serialkiller15
+thanks for the inputs, yes i now that and i am on V81 to adjust this settings, important would be the definition of the targets for long, and also the targets for short!
+
+
+[09/04/2024 08:17] dodwmd
+yah i'd just love the bot to be like 'err.. i dunno.. skip' based on some kinda logic..
+
+
+[09/04/2024 08:26] serialkiller15
+yes my goal is to remove the treshold_buy and treshold_sell and make new rules for that, i am on it.... it works, but with ai have probs
+
+
+[09/04/2024 08:26] dodwmd
+awesome thanks for all your work man.. i'm learning a heap..
+
+{Reactions}
+🤟
+
+[09/06/2024 12:46] ximontan
+As I remember for this, we can set DI_threshold.  I test it and set to 1.
+
+
+[09/06/2024 13:07] .7thdragon
+in this case u need to set continous learning to false
+
+
+[09/06/2024 13:41] ximontan
+good point...
+
+{Reactions}
+👍
+
+[01/11/2026 10:34] glad8769
+Does anyone reduce stake size as equity grows to control risk?
+in most of the strategy the SL and max open trades are fixed, the only lower stake % when capital increases (e.g. 10% → 5% → 3% → 1%) could reduce portfolio drawdowns.
+Is this how you manage risk, or do you prefer another approach?
+Perhaps we can ideate a small util py that handle the stake size or whatever is needed and enabling it using config?
+
+
+[01/25/2026 14:18] raul0909
+@Alex Crypto King you can ban this scammer or spammer?
+
+
+[02/02/2026 23:55] themarkx_
+Quick update: @everyone My account was hacked recently, which is why you might have seen some spam coming from me. I’ve got full control back now and everything is secure.
+Apologies for the spam! Stay safe everyone.
+
+{Reactions}
+❤️
+
+[02/03/2026 07:06] serialkiller15
+Welcome back mate I got this many years ago
+
+
+[02/03/2026 07:12] themarkx_
+I share my one in mod based on 117 please check some major improvement in forward testing,gpu enable and so much other thing
+
+
+==============================================================
+Exported 20 message(s)
+==============================================================

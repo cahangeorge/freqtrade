@@ -1,0 +1,87 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 📜DISCUSS Q & A / feature-updates
+==============================================================
+
+[09/02/2024 09:29] serialkiller15
+Alex LSTM Strategy V8 uploaded with modifications!
+Seperated Hyperopt Files without freqai (not needed for hyperopt)
+
+
+[09/06/2024 10:10] serialkiller15
+Hey together, i am on finalizing the Next Version it will be Version 9, because of many modifications i did... stay tuned i am on test run at the moment need backtest on different timeframes!
+
+{Reactions}
+🚒 (4) 👍 (6) 💥
+
+[09/08/2025 07:14] serialkiller15 (pinned)
+@everyone a example for using OPTUNA (REAL)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1280078852634185749/1414509306312917012/message.txt?ex=69f30172&is=69f1aff2&hm=b71ec855d76996671d4b9939c2e9ff39e546d904aa1b9956da5695ad77db6056&
+
+{Reactions}
+🚀 (6)
+
+[09/08/2025 07:15] serialkiller15
+Pinned a message.
+
+
+[09/08/2025 21:40] bigbroseur
+https://tenor.com/view/fast-wheelie-car-crazy-go-gif-16006696663298460502
+
+{Embed}
+https://tenor.com/view/fast-wheelie-car-crazy-go-gif-16006696663298460502
+https://images-ext-1.discordapp.net/external/iaVGmlK-xpNoIow4Zlg_Iym2of3b3G1EOsN0fTZkA3Y/https/media.tenor.com/3iM1zuNVy1YAAAAe/fast-wheelie.png
+
+
+[09/08/2025 21:40] bigbroseur
+This is a turbo for working strats.
+
+
+[10/31/2025 10:23] themarkx_
+PROJECT -  HATE v3 (Hierarchical Adaptive Trading Engine)
+
+PROJECT GOAL
+
+The primary goal of this project is to build ai_engine, a state-of-the-art, self-learning, and fully autonomous algorithmic trading system.
+
+This engine is designed as a standalone, plug-and-play Python package intended to operate within the Freqtrade user_data directory. It functions as a sophisticated, decoupled "brain" that any Freqtrade strategy can import and call, reducing the strategy file itself to a simple "loader."
+
+The objective is to create an "unbeatable" system by moving beyond static, single-model strategies and building a multi-layered, adaptive ecosystem that learns from and optimizes its own performance in real-time.
+
+CORE PHILOSOPHY & ARCHITECTURE
+
+The engine is built on three core philosophies:
+
+Hierarchical Specialization: No single AI is responsible for everything. The system is a hierarchy of specialized agents, each handling one part of the problem. This mimics the structure of a quantitative hedge fund:
+
+Layer 1 (Analysts): Generates predictive signals (Alpha).
+
+Layer 2 (Manager): Decides on a strategy based on signals.
+
+Layer 3 (Trader): Executes the strategy with proper risk management.
+
+Layer 4 (Oversight): Provides a qualitative, human-like sanity check.
+
+Continuous Self-Improvement (The Learning Loop): The engine is not static; it is designed to learn. It is built on a foundational "Performance & Learning Loop" (Layer 0) that logs every decision and its outcome, analyzes its own performance, and autonomously triggers the re-optimization of any component that is underperforming.
+
+Decoupled & Modular: The ai_engine is a standalone Python package. The Freqtrade strategy file (my_hate_strategy.py) is a "dumb" client that simply imports and calls the engine's main class. All logic, configuration, and learning are contained within the ai_engine folder.
+
+@everyone i am going to start cooking some new stuff  anyone wants to join there is short explaination for project
+
+{Reactions}
+🔥 (6) 🚀
+
+[10/31/2025 11:22] 4v1234
+Look promising,  what can I help ?
+
+
+[10/31/2025 11:25] themarkx_
+just started few hours ago if i will stuck any where then i will ask you for help 
+but for now can you please guid me which type of risk manegment i can use like logic in detail so that i will code it
+
+
+==============================================================
+Exported 9 message(s)
+==============================================================

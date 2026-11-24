@@ -1,0 +1,58 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🎯alexsignalforge
+==============================================================
+
+[02/20/2026 11:34] serialkiller15 (pinned)
+lexSignalForgeV4 (ASF4) — VIP Strategy Overview 🤘☠️
+
+ASF4 is a non‑repainting futures signal strategy built for 15m execution with 1h market context. The goal: cleaner entries, fewer traps, smarter exits — designed for real market conditions, not just “nice charts”.
+
+Key Benefits ✅
+
+• Non‑repainting signals: decisions use closed candles only (confirmed data).
+• 15m + 1h logic: trades on 15m, uses 1h trend as a soft filter (not a hard blocker) to stay flexible.
+• Trap/false breakout filter: aims to avoid common pain points like wick-rejections and fake breakouts.
+• Volatility spike protection: reduces entries during extreme volatility (often liquidation spikes / falling knives).
+• Volume confirmation: prefers moves with real participation (volume ratio vs rolling mean), not weak drifts.
+
+Entry Logic (high level) 🎯
+
+• LONG: trend pullbacks + selective reversal setups when downside is rejected.
+• SHORT: downtrend pullbacks + selective rejection at the top.
+• Includes conflict handling so it won’t signal long & short at the same time.
+
+Exit Logic (where edge is made) 🛡️
+
+• Profit protection (peak tracking): locks in gains if price gives back too much after a strong run.
+• Momentum exhaustion exits (RSI-based): takes profit when moves look stretched.
+• Emergency protection: exits earlier if a trade gets dangerously bad.
+
+Notes ⚠️
+
+Start in DRY‑RUN, then backtest before live. This is not financial advice. Proper risk settings + sensible pair selection matter a lot.
+
+
+[02/20/2026 11:37] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474366960769695856/1474369315506749471/AlexSignalForgeV4.py?ex=69f33eed&is=69f1ed6d&hm=1c4ad57c9272a5373a21bf4ac088ab991cd16e7f98b17fa519ded63035662bc7&
+
+
+[02/20/2026 11:37] serialkiller15
+Pinned a message.
+
+
+[02/20/2026 11:37] serialkiller15
+Pinned a message.
+
+
+[03/08/2026 08:19] glad8769
+Hi @Alex Crypto King , I wonder if the V4 has already integrated all the adjustments made in the new V3 https://discord.com/channels/1238181199206154373/1382334861871812678/1479772363766763673 or also the v4 here needs some integrations. 
+From my understanding the new part with ML is missing in the v4 right?
+
+
+==============================================================
+Exported 5 message(s)
+==============================================================

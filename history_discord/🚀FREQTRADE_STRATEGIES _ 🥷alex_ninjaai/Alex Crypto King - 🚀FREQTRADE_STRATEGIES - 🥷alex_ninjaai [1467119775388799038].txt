@@ -1,0 +1,349 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🥷alex_ninjaai
+==============================================================
+
+[01/31/2026 11:31] serialkiller15 (pinned)
+@everyone
+
+🥷 Alex_NinjaV5 - ML-Powered Trading Strategy
+
+🤖 Core Intelligence
+
+• Timeframe 15m!
+• 9 ML Algorithms — Random Forest, XGBoost, LightGBM, SVM, Naive Bayes, Gradient Boosting
+• Ensemble Predictions — Weighted ensemble with uncertainty scoring
+• Optuna Hyperopt — Auto-tunes 14+ parameters in real-time
+• Model Versioning — A/B testing different model combinations
+📊 Signal Engine
+
+• 🎯 Fisher Transform — Mean reversion signals with dynamic thresholds
+• 📈 20 Technical Features — Volatility, momentum, volume, trend, Bollinger Bands
+• 🕐 Multi-Timeframe — 5m/15m/1h analysis with merge_informative_pair
+• 🧠 False Signal Detection — ML-powered fakeout filter
+💰 Risk Management
+
+• 🛡️ 6 Profit Protection Levels — Locks gains from 2% to 50%+
+• 📉 Dynamic Stop Loss — ATR-based trailing stops
+• ⏱️ Time-Based Exits — Max 24h holding with sideways detection
+• 🎚️ Staged Entries — Position sizing: 40% early / 100% confirmed / 60% trend
+⚙️ Smart Features
+
+• 🔄 Background Training — Async model updates every 100 bars
+• 🧪 AutoML — Self-optimizing with cross-validation
+• 💾 Atomic Model Saves — Zero corruption persistence
+• 📉 Memory Management — GC optimization for long runs
+🎯 Entry/Exit Tags
+
+| Tag            | Condition                     |
+| -------------- | ----------------------------- |
+| ML_Strong_Long | Ensemble confidence >80%      |
+| ML_Medium_Long | Ensemble confidence 50-80%    |
+| Early_Long     | Fisher extreme + volume spike |
+| Fisher_Exit    | Mean reversion complete       |
+
+{Reactions}
+🚀 (4) 🍾 (2) 👍
+
+[01/31/2026 11:31] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1467120201421295701/Alex_NinjaV5.py?ex=69f33da9&is=69f1ec29&hm=f9b7101cbded6c0dfa723e1ae70e668a4d38f37b1eb20333e3d2d3798782c6f8&
+
+
+[01/31/2026 11:33] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1467120486004555840/image.png?ex=69f33ded&is=69f1ec6d&hm=23777375f28252c5e47c92d75e06c0481c1531dc81212213487a9b92f9157fc4&
+
+
+[01/31/2026 11:33] serialkiller15
+Pinned a message.
+
+
+[01/31/2026 11:33] serialkiller15
+Pinned a message.
+
+
+[01/31/2026 11:51] saamyar
+This looks really interesting thanks  Alex
+
+
+[01/31/2026 11:51] serialkiller15
+i was forgetting it for days! because first it was negative, but the models did they work lets see how it does! Its not my work fully, got it from a nice guy, and did optimize some stuff in it!
+
+{Reactions}
+👍
+
+[02/02/2026 19:27] .7thdragon
+interesting to dry but i corrected some major errors related to 1h 4h, do not get how it worked to you 🧐
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1467964578913714376/Alex_NinjaV5.py?ex=69f3044d&is=69f1b2cd&hm=6aadd9ac888d048895eacf1066795c6d35a28e7d2074aa7b60586e37876543e2&
+
+{Reactions}
+👍 (2)
+
+[02/02/2026 20:18] vasko123.
+My backtest isn't working either. It's strange how you got such a good result right away?
+
+Should I have checked in claude?
+
+Problem: The code doesn't clear the data of NaN/infinity before training the models. You need to add the following to the train_models() function:
+python# Before training
+X_train = X_train.replace([np.inf, -np.inf], np.nan).fillna(0)
+X_test = X_test.replace([np.inf, -np.inf], np.nan).fillna(0)
+Would you like me to fix the code and add proper data handling?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1467977626164527369/18f990acb57182f7.png?ex=69f31073&is=69f1bef3&hm=b23303d1caa2a5201fd1e3b3a8a20bda71f1e416377ffcffb75548def7933aa6&
+
+
+[02/02/2026 20:20] serialkiller15
+Interesting please fix and we can do test in both versions thanks for your work
+
+
+[02/02/2026 20:30] .7thdragon
+do u know what "fix" does and implications?
+better not change, the data has no nans from what i ve checked
+
+
+[02/02/2026 20:32] .7thdragon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1467980927140364330/image.png?ex=69f31386&is=69f1c206&hm=8cb0afb9e404c0b04453a00d24a1c2f74c8091d56a2083e1bf6c55290c7a2927&
+
+
+[02/05/2026 11:28] lukovicka
+Do I need to run a backtest before running a dry run?
+
+
+[02/05/2026 12:00] vasko123.
+I did. But probably not necessary.
+In the strategy, change the exchange to your own (Binance by default).
+After the strategy starts, historical data is downloaded and a backtest is run.
+A test is run after each start.
+
+
+[02/09/2026 05:31] xf0x0f
+it seems its auto overoptimized after some days,...anybody else facing the problem that are no more trades after letting it run for some days?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1470291109463720027/Bildschirmfoto_2026-02-09_um_06.30.39.png?ex=69f3920d&is=69f2408d&hm=86412bed382930b7c9b5250fa17fd351990e8b73d3f7bca2610a15b8384c9071&
+https://cdn.discordapp.com/attachments/1467119775388799038/1470291109820367062/Bildschirmfoto_2026-02-09_um_06.30.31.png?ex=69f3920d&is=69f2408d&hm=4d4fb62c0632082b5243c126b71e132382faa7ffb2bf8961b9bbd821eea30ffd&
+
+{Reactions}
+👍
+
+[02/09/2026 13:20] vasko123.
+Yesterday I changed some thresholds on the indicators. I don't know if the settings were intentionally distorted or not, but it works now. But maybe it works well in this market, but not later. I'll keep an eye on it.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1470408911721988290/63c10fd51c9b86c7.png?ex=69f35703&is=69f20583&hm=65d1cb039cd91fc15ec71950605ea3e211f7ecfd5571f1645edfa9a53bc702fe&
+
+{Reactions}
+👍
+
+[02/09/2026 13:21] vasko123.
+SUI
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1470409289519726694/4fddc4d8a829511f.png?ex=69f3575d&is=69f205dd&hm=fa1ae8864f4da7b1f9939d213f7c0ed207f3139be23dbc977fab654d1b424ea6&
+
+
+[02/09/2026 13:25] vasko123.
+SUI - short entry
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1470410164313133179/590a883d478c3f2e.png?ex=69f3582e&is=69f206ae&hm=9b000e5b12910d165cb0383f025cc9e0011b62d2240df53515691c3155b69cf1&
+
+
+[02/10/2026 11:22] snokard.
+there were some errors with some exits not being triggered correctly, after fixing it and restarting the same run....
+
+
+heres the updated version:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1470741711901950116/image.png?ex=69f33b75&is=69f1e9f5&hm=514ff9ecf18bdeb74119200651d0425d80e6e1e06573e37a71e07e4a07e80d4d&
+
+
+[02/10/2026 11:23] snokard.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1470741891887661117/message.txt?ex=69f33ba0&is=69f1ea20&hm=a5fb0867e0d7c62fa0e9255e507fe5dd2cea55e97cb2c657cbe3762d0e18d31a&
+
+
+[02/10/2026 12:17] 4v1234
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1470755578119979130/image.png?ex=69f3485f&is=69f1f6df&hm=33b385ffd4fa18210c4c7cbbd2f9f30083a2658abf8157c66f2ccf5e4a175e9c&
+
+
+[02/10/2026 12:19] 4v1234
+Come onnnn 😀 yes there are some empty instructions. This graph is from  BTC protection and small profit protection......But yours straight up ......
+
+
+[02/10/2026 12:20] snokard.
+as i said is because the patch was applied on the same run, meaning that most of exits were already trying to trigger but were blocked. whenrestarting all of them triggered and closed 33 positions
+
+{Reactions}
+👍 (2)
+
+[02/10/2026 16:59] serialkiller15
+thanks for the patch, i am already on v9 did some stuff but needs time to see how it does
+
+{Reactions}
+❤️
+
+[02/10/2026 19:03] snokard.
+also im using more pairs for more rotation. looking good for the moment
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1470857697774669875/image.png?ex=69f2feba&is=69f1ad3a&hm=503ae298c9c3727f89ef9e552b88fa3d266127f4b52e474e5ebe8f4b4380ca06&
+
+
+[02/10/2026 19:38] serialkiller15
+yep i also see it on mine
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1470866631587790990/image.png?ex=69f3070c&is=69f1b58c&hm=e93c4ccd1a869773e940e29f326bc2300056649fb9edc06118a34f6ae59ae226&
+
+
+[02/10/2026 19:58] 4v1234
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1470871452529070233/image.png?ex=69f30b89&is=69f1ba09&hm=0445bdcfaed71a184213a322c98984676ad19c37027a7c63db4e1e0068aeee1b&
+https://cdn.discordapp.com/attachments/1467119775388799038/1470871452776399001/image.png?ex=69f30b89&is=69f1ba09&hm=bb14cbb55098bd74f734f345c51b3e710d5f5055bee90cc0cfc2e916b846c823&
+https://cdn.discordapp.com/attachments/1467119775388799038/1470871453074456841/image.png?ex=69f30b89&is=69f1ba09&hm=e2eae391b891c95d0d38d471ad8e65a3b642b6d0753936f52ac757341accf780&
+
+
+[02/10/2026 19:59] 4v1234
+@TITAN @Alex Crypto King 
+Do you have longs? Mine is from only short signals
+
+
+[02/10/2026 19:59] serialkiller15
+yep i also fixed the longs!
+
+
+[02/10/2026 20:06] serialkiller15
+@everyone 
+• 🧬 V5 → Base “NinjaAI” generation (ML ensemble inkl. RF/GB + optional XGB/LGBM/SVM/NB)
+• 🏋️ V5 Startup-Training ON (auto-trains early unless Hyperopt/backtest mode blocks it)
+• ⚡️ V6 Performance focus: startup training disabled to speed up/backtest smoother
+• 🧠 V7 Startup-Training ON by default again (faster “learn-on-start” in real runs)
+• 🧹 V7 Fresh-training option: clear_models_on_startup + _clear_ml_models() (wipe old ML models for clean retrain)
+• 📈 V7 Long entries loosened (market regime long became more permissive)
+• ✅ V7 Long allowed in any market (clear_market_condition_long = True) → longs not blocked by regime filter
+• 🧊 V7 cooldown / anti-whipsaw tightened (more conservative exit/entry pacing)
+• 💾 V8 BIG change: ML algorithms cut 6 → 2 (only RandomForest + GradientBoosting)
+• 🗜️ V8 storage -85% (~200MB/pair → ~30MB/pair), faster training & less disk pain
+• 🧩 V8 keeps full feature engineering + Optuna + risk mgmt (just smaller ML stack)
+• 🏁 V9 Exit logic merged from “Titan” fixes (without losing V8’s low-storage ML)
+• ✅ V9 ROI exits never blocked (confirm_trade_exit always allows ROI) → no “denied ROI” spam loop
+• 🩳✅ V9 short exits re-enabled (exit_short assignments restored)
+• 🏷️✅ V9 safer exit tagging (exit_long / exit_tag assignments separated, cleaner dataframe writes)
+
+{Reactions}
+👍 (2) 🔥 (2) caminhaodriftezgifcomresize1 (2) 🚀 (3)
+
+[02/10/2026 20:06] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1470873595096989854/Alex_NinjaV9.py?ex=69f30d88&is=69f1bc08&hm=0e8589ff07b389ee60d9438eaba5284ccdc0f9ea73d2b830f095779c960fcfe1&
+
+
+[02/10/2026 20:06] serialkiller15
+all did with OWNCLOD - Alex AI Assitent!
+
+
+[02/10/2026 20:07] serialkiller15
+and @TITAN thanks!! mate
+
+
+[02/10/2026 20:10] serialkiller15
+and sry for the versioning, but i need it to handle all the changes with openclaw...
+
+
+[02/10/2026 20:29] snokard.
+yes i do
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1470879473422307532/image.png?ex=69f31302&is=69f1c182&hm=8e0ab5e759cb4a154897cc83fdb5f091bbeab2e43de44138cd35e3db9ee200c0&
+
+
+[02/10/2026 20:30] snokard.
+oh thats the new one! will let mine run for a couple more days and then check if i swap or not
+
+
+[02/10/2026 20:30] snokard.
+thank you for building everything man!
+
+{Reactions}
+🔥
+
+[02/10/2026 20:50] 4v1234
+I have own fix version,  bur need time, and for now is only shorts.
+
+
+[02/10/2026 20:50] serialkiller15
+Let it run we can compare versions then later
+
+{Reactions}
+💯
+
+[02/10/2026 20:52] 4v1234
+When I'm happy with it I will upload it here or send it to you foe extraction of partial code for the next v10 version
+
+
+[02/11/2026 19:22] snokard.
+stopped V5 and launched the V9, -6% in a day :/
+
+
+[02/11/2026 19:23] dragongoattigercat
+I run bot v5 and v9. V9 is experiencing loss
+
+
+[02/11/2026 20:42] serialkiller15
+I run both let's see
+
+
+[02/11/2026 20:49] 4v1234
+Questions came up 😀
+Do they use the same file for lm_model ?
+
+{Reactions}
+👍
+
+[02/11/2026 20:49] 4v1234
+Since they are the same class
+
+
+[02/17/2026 17:04] 4v1234
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1467119775388799038/1473364573829726368/Alex_NinjaAI_V5_fixed_trailing_v3_leveragefix.py?ex=69f38bb0&is=69f23a30&hm=f4327e5e5f3608fa1b1ed21f1c2dd3105e1063fdfd93a8821c6b0102aaac1466&
+
+{Reactions}
+👍 (3)
+
+[02/17/2026 17:05] 4v1234
+Here is a small change in the profit protection if someone is interested
+
+
+[02/17/2026 17:05] 4v1234
+In a trend market it closes with small profit
+
+
+==============================================================
+Exported 48 message(s)
+==============================================================

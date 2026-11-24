@@ -1,0 +1,627 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖FREQAI_FUTURES / 🛠support
+==============================================================
+
+[09/02/2024 05:04] serialkiller15 (pinned)
+Installation of my Strategys for Freqai
+GITHUB:
+https://github.com/AlexCryptoKing/freqailstm?tab=readme-ov-file
+
+{Embed}
+https://github.com/AlexCryptoKing/freqailstm?tab=readme-ov-file
+GitHub - AlexCryptoKing/freqailstm
+Contribute to AlexCryptoKing/freqailstm development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/5rKlJ9QhFnuGaMjeaxNpvVpRB9a1moZVStbTI1AZwSU/https/opengraph.githubassets.com/1e2ad8211746645bab0a0c1882dcbd9e1b108d0e029546507b57800ca7540cdb/AlexCryptoKing/freqailstm
+
+{Reactions}
+👍 💯
+
+[09/02/2024 05:05] serialkiller15
+README
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1280030420834062419/1280030847717871726/README.md?ex=69f38bdf&is=69f23a5f&hm=0244079fdbf891ed1ab28e89b93775b92968901b70d75c6d44cbf27a7c55f070&
+
+{Reactions}
+👍
+
+[09/02/2024 07:16] serialkiller15 (pinned)
+HYPEROPT:
+
+I FIRSTLY DO HYPEROPT BEVORE BACKTEST:
+WITH THE MODIFIED AlexStrategyFinalV8Hyper - you can do hyperopt without freqai so its faster because no training is done during hyperopt!
+
+EXAMPLE:
+freqtrade hyperopt --hyperopt-loss OnlyProfitHyperOptLoss --spaces buy sell roi stoploss trailing trades -c user_data/config-torch.json --strategy AlexStrategyFinalV8Hyper --timerange=20240822-20240901 --epochs 200
+
+
+[09/02/2024 07:16] serialkiller15
+BACKTEST:
+
+AFTER HYPEROPT BACKTEST IS IMPORTANT:
+freqtrade backtesting --strategy AlexStrategyFinalV8Hyper --config user_data/config-torch.json --timerange 20240801-20240901
+
+
+[09/02/2024 07:18] serialkiller15
+1. after COMPLETED BOTH STEPS copy the VALUES from the AlexStrategyFinalV8Hyper.json file to your FINAL file -> AlexStrategyFinalV8.json 
+2. delete all existing models in models folder
+3. restart docker, restart freqtrade ai 
+4. enjoy
+
+
+[09/02/2024 07:26] giovannimauro
+Hey @Alex Crypto King I can't see the V8 in the Github!
+
+
+[09/02/2024 07:27] serialkiller15
+hey, its not final doing some tests, lets finish it, hyperopt is running at the moment!
+
+
+[09/02/2024 07:28] giovannimauro
+great!
+
+
+[09/03/2024 06:56] raul0909
+I've been getting trouble setting it up on kucoin. Does anyone use freqAI on kucoin?
+
+
+[09/03/2024 11:06] laupapp
+Nop Bybit but what is your problem ?
+
+
+[09/03/2024 11:33] serialkiller15
+I hope we fixed it had a short Session with @Raul C
+
+{Reactions}
+🙏🏻
+
+[09/04/2024 14:03] sera131
+following the instalation steps in the readme file i get the attached  error when back testing:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1280030420834062419/1280891102039248937/message.txt?ex=69f3614c&is=69f20fcc&hm=44b11bb690d5701e77a4ea43b13cccde5bc1e98009fc8d8c5d67decae0bd84e3&
+
+
+[09/04/2024 14:08] sera131
+i'm building the dockerfile for AMD, since i believe the setup is meant for non AMD GPU's
+
+
+[09/04/2024 14:10] .7thdragon
+no, no need just delete user_data\models\\[modelfolder]\backtesting_predictions
+
+
+[09/04/2024 14:15] sera131
+ok but the torch installed in the defaul image will not work for AMD GPU's anyway
+
+
+[09/04/2024 14:15] sera131
+retrying
+
+
+[09/04/2024 14:22] .7thdragon
+ok then not sure about it, i use nvidia
+
+
+[09/04/2024 14:27] sera131
+i'm rebuilding, the initial install did not recognize torch module under rocm
+
+
+[09/04/2024 14:28] sera131
+FYI -> for AMD users, ROCM *& WSL will not work right still, the support for ROCM and torch is for linux & GPU and not for WSL...
+
+To make it work, the docker image needs to be adjusted to reflect the requirements. Working on a docker build but not sure yet if I will be able to get it to start on AMD.
+
+{Reactions}
+👍
+
+[09/04/2024 14:43] sera131
+waiting for it to call torch
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1280030420834062419/1280901174639329324/image.png?ex=69f36aae&is=69f2192e&hm=29cf003305ea016eadf7b1a6112a416b1696f3594bdc5a9821fdf7ed887527c1&
+
+
+[09/04/2024 14:44] sera131
+should be ok until this moment, will see if errors are thrown
+
+
+[09/04/2024 14:44] serialkiller15
+looks good check the training then!
+
+
+[09/04/2024 14:45] sera131
+found no training data, it started training now...
+
+
+[09/04/2024 14:46] serialkiller15
+yes thats fine!
+
+
+[09/04/2024 14:46] .7thdragon
+the idea is that for only 10 epochs a fast cpu is enough, the only annoying thing is that it is busy with that 🙂
+
+
+[09/04/2024 14:46] sera131
+running multibot instance, i see CPU is only one used atm, no gpu
+
+
+[09/04/2024 14:47] sera131
+so rocm might not work on wsl for AMD
+
+
+[09/05/2024 15:15] sera131
+mmm the v8 1h strat for me currently its only doing shorting
+
+
+[09/05/2024 15:15] sera131
+since started
+
+
+[09/05/2024 15:25] francois5156
+Yes mine too, since a couples of days ago
+
+{Reactions}
+👍
+
+[09/05/2024 15:35] serialkiller15
+please use the #troubleshooting-bugs and #testing-results i am still on Testing V81.......
+
+
+[09/05/2024 16:03] .7thdragon
+For trading newbies, is a bear market at least till 17-18th (fed cut) september, so should not complain about this strategy that only normalize some important indicators 😁
+
+
+[09/05/2024 16:18] sera131
+no complaining, just curious if its normal, comparing to other ppl results
+
+{Reactions}
+👍 (4)
+
+[09/07/2024 11:01] daniel2314_xx
+I found a question about docker running:
+The **main reason** is that it doesn't include config-example.json and ExampleLSTMStrategy.py, so I need to modify the docker file.
+But when I modified config-torch_example.json to run as config-torch.json I found that it still needs me to set the **exchange name** in config-torch_example.json.(because of the lack of exchange settings in this file)
+> Modifying the** image** was so tough that I found it was running the **add** command to download it remotely from the URL. So no matter how much I modify the local file I am unable to build a working image.
+I ended up modifying **add** to **run** to get it to work.
+So I'm going to go out on a limb and ask if you are encouraging running locally rather than using docker. after all, docker is much more complex to run.
+
+
+[09/07/2024 12:50] maxgorbachevskiy
+Is there a way to speed up hyperopt? Hyperopt uses scikit-learn with "ET estimator" (https://www.freqtrade.io/en/stable/hyperopt/) which is CPU-only. They say that GPU is basically neither  supported not necessary in that type of ML.
+
+I found two posts about  librares that gives some suggestion on speed up:
+— https://towardsdatascience.com/make-your-sklearn-models-up-to-100-times-faster-563bb682665e
+— https://github.com/ray-project/tune-sklearn
+@7thDragon what do you think? What's your experience?
+
+
+[09/07/2024 14:40] .7thdragon
+Hmm not too much, try to optimize small programatic things and only important parameters. Usually i figure out how it performs from first 100 epochs so to be able to let it more unatended without stress. But really relevant optimizations are over 1000 epochs on few paramaters like alex version.
+
+
+[09/12/2024 17:53] maxgorbachevskiy
+guys, how do you run multiple dry-runs on Docker? 
+How I do it: I set a separate docker container for every dry-run. 
+With two dry-runs (containers) running simultaneously? as soon as tranining starts – my CPU always goes to 100% usage and docker is stuck, so have to reboot. 
+Am I doing wrong? Any suggestions/ideas?
+PS I know about venv, just docker is easier for me.
+
+
+[09/12/2024 18:01] .7thdragon
+i usually use exactly the same container definition, same configs same folders same db
+change only "bot_name" "strategy" (different versions) "identifier" and is enough.
+each container should have limited resources
+another option is to limit "n_jobs": 10, to less
+also, in my case, each container 50pairs ~ >3.5GB ram, otherwise is stopping/crushes
+
+
+[09/12/2024 19:03] serialkiller15
+I run 6 different docker 3 in dry and 3 for hyperopt and backtests
+
+
+[09/12/2024 19:06] .7thdragon
+Btw i use a synology docker for drys 😁
+
+
+[09/12/2024 19:21] serialkiller15
+Nice
+
+
+[09/12/2024 20:23] maxgorbachevskiy
+can you please have a look at my docker compose? I don't understand where the CPU overload comes from. As if several containers start loading the same process and everything falls into indefinite loop.  But there are no errors in any logs.
+
+
+[09/12/2024 20:24] serialkiller15
+Yes mate
+
+
+[09/12/2024 20:26] maxgorbachevskiy
+One container for hyperopt, then three containers for dryruns. 
+NO any two containers cannot run simultaneously. I cannot dryrun two containers. I cannot dryrun and hyperopt at the same time.... It's really very limiting... I need a solution.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1280030420834062419/1283886467864727594/docker-compose.yml?ex=69f31233&is=69f1c0b3&hm=c77d3792534f6323f079f61227bb1e13efd18481d8338c1f0342d94f56e76bdc&
+
+
+[09/12/2024 20:28] serialkiller15
+Where do you run the Containers CPU size and RAM for?
+
+
+[09/12/2024 20:30] maxgorbachevskiy
+Dedicated Desktop at home
+Windows 10
+Intel) i5-8400 CPU @ 2.80GHz
+16 GB Ram
+NVIDIA RTX 3070 16GB
+
+
+[09/12/2024 20:34] maxgorbachevskiy
+Docker CPU utilization is 1-2% CPU during silent moments. During training moments, CPU is around 25-40% and I don't see any problems with it. The problem only starts at the moment of starting a training / inferencing. I suspect there's sometthing about lstm regressor.. maybe..
+
+
+[09/12/2024 21:38] .7thdragon
+as i said before, did u tried with "n_jobs": 1? and grow it if everything is smooth
+
+
+[09/12/2024 22:25] maxgorbachevskiy
+Yes, I have n_jobs set to 10.
+
+
+[09/12/2024 22:26] .7thdragon
+check with 1 first
+
+
+[09/12/2024 22:26] maxgorbachevskiy
+Hmm, if you have all bots in one contanier, how do you delete/reinstate any bot? For example when you need to wipe out trashy runs and start from scratch?
+
+
+[09/12/2024 22:28] .7thdragon
+i use each container for each bot, but in my case is a different docker build for synology
+only the paths are the same, especially the data (from exchanges)
+
+
+[09/12/2024 22:37] maxgorbachevskiy
+shit' somehow I don't have n_jobs. It's missing. Maybe I deleted it somehow. Will try to add it.
+
+
+[09/12/2024 22:38] .7thdragon
+check the original instalation files, is in freqai json section
+
+{Reactions}
+👍
+
+[09/12/2024 22:41] maxgorbachevskiy
+n_jobs=1 did not help..
+
+
+[09/12/2024 22:41] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1280030420834062419/1283920476237725829/image.png?ex=69f331df&is=69f1e05f&hm=2c57b49218c8c32578653e307c0f14983b003b4ff1473e0819e43c5368237a5d&
+
+
+[09/12/2024 22:41] .7thdragon
+pff no else idea
+
+
+[09/12/2024 22:43] maxgorbachevskiy
+hmmm wait a sec. I was too quick to judge. Looks like t works!! It took a minute to load smth (also disk = 100% load) and now it trains. Thankssss
+
+{Reactions}
+❤️
+
+[09/12/2024 22:44] .7thdragon
+grow it till it covers ok for processing all containers
+
+
+[09/12/2024 23:00] maxgorbachevskiy
+…failed((( as soon as second model (second container) started training, CPU went to 100% and never goes down, docker freezes.
+
+{Reactions}
+😥
+
+[09/12/2024 23:03] .7thdragon
+try with 1 pair on each container to see if is a memory problem, if disk is 100% look for fragmentation, check disks, files count in folders, clean temp etc
+
+
+[09/13/2024 14:39] maxgorbachevskiy
+My guess is that MAYBE the problem comes from GPU (several containers use GPU at the same time).
+
+
+[09/13/2024 14:39] maxgorbachevskiy
+I tried to split the load into several PyTorchLSTMRegressor (PyTorchLSTMRegressor1, PyTorchLSTMRegressor2, PyTorchLSTMRegressor3 etc)– it did NOT work
+
+
+[09/13/2024 14:43] maxgorbachevskiy
+Now I try to disable GPU. 
+— i changed "cuda" in configjson to "cpu"
+— I removed cuda in pytorchlstmrgressor.py 
+— delete container, clean docker compose
+
+But I cannot - I still get the error! 
+`2024-09-13 14:40:14,333 - freqtrade.strategy.strategy_wrapper - ERROR - Unexpected error Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU. calling <bound method IStrategy._analyze_ticker_internal of <dry2_Alex91beta.dry2_AlexStrategyFinalV91beta object at 0x7fc3100f2ff0>>
+RuntimeError: Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.`
+
+To note, manual check returns the following:
+> import torch
+> >>> torch.cuda.is_available()
+> False
+> >>> torch.backends.mps.is_available()
+> False
+
+
+[09/13/2024 14:43] maxgorbachevskiy
+Heed your help!
+
+
+[09/13/2024 14:54] sera131
+you can try to give more power to docker via the below command:
+
+docker update --cpuset-cpus "0-15" (depends on the number of your cores) CONTAINER_ID
+
+To find out container id use: docker container ls -a
+
+
+[09/13/2024 14:54] sera131
+your cuda is no enabled, torch is basicly not running on GPU, only using your CPU
+
+
+[09/13/2024 14:54] sera131
+arre you having AMD or Nvidia GPU?
+
+
+[09/13/2024 15:04] maxgorbachevskiy
+Nvidia gpu
+
+
+[09/13/2024 15:06] maxgorbachevskiy
+Correct, cuda is not enabled as cuda.torch.os_available() shows (as intended). But error shows that cuda is requested by some part of the scripts . And I don’t understand why, anf how to fix that
+
+
+[09/13/2024 15:08] sera131
+cuda is used by torch, it is not called by freqtrade normally (I think)... freqtrade calls torch.. there is a torch config for freqai, i cant really help here as I have an AMD card and I use this differently
+
+
+[09/13/2024 15:10] sera131
+the default is selected to be GPU so I guess if you disabled cuda, you must also set up in freqai to use CPU only... but again its just an assumption, maybe someone with Nvidia card can assist
+
+
+[09/13/2024 15:12] inviting_moose_32088
+I have 3060ti for testing, but ama afk till tomorrow and need some help for configuring freq for cuda.
+
+
+[09/13/2024 15:39] maxgorbachevskiy
+@7thDragon  ideas?
+
+
+[09/13/2024 15:42] .7thdragon
+hmm i figured out that with current pytorch files the gpu is determined automatically, do not matter if set cuda or not
+so if you do not have cuda should work also with original files. just clean up the models folder when starting bot
+i use it on a synology nas, no cuda, and working fine, original torch files
+but if you have cuda there need more modifications to work only with cpu (setting cpu in config is not enough), i do not know how further
+
+
+[09/13/2024 15:44] sera131
+@MaxG also, try to allocate more CPU cores as I mentioned above
+
+{Reactions}
+👍
+
+[09/13/2024 15:44] sera131
+by default i found on my side docker used only 2 cores
+
+
+[09/13/2024 15:47] maxgorbachevskiy
+When it happens,I see 100% cpu **AND** 100% disk utilisation. This is very strange! Like an overflow/cycle bug.
+
+
+[09/13/2024 15:51] sera131
+how many pairs set up?
+
+
+[09/13/2024 15:51] sera131
+try to lower number of pairs and see if changes anything also
+
+
+[09/13/2024 15:53] maxgorbachevskiy
+37 pairs. Trying every possible idea now ))) But since it looks like a sudden overflow, I am not. sure if it is of memory/cpu origin, or a sudden clinch between. scripts
+
+
+[09/13/2024 15:55] sera131
+I've just started version9 myself and its downloading pair data
+
+
+[09/13/2024 15:55] sera131
+will see what happens on training
+
+
+[09/13/2024 15:55] maxgorbachevskiy
+> just clean up the models folder when starting bot
+
+Oh shit, I am stupid 🫏  🤣
+
+{Reactions}
+🤣
+
+[09/13/2024 15:56] sera131
+was it the models folder?:))
+
+
+[09/13/2024 15:56] maxgorbachevskiy
+(this only solves the non-gpu initialization prblem, 
+the issue with CPU overload is still not solved)
+
+
+[09/13/2024 15:57] .7thdragon
+🙂 not all the models lol, the subfolder specific IN the models folder for the specific container
+
+{Reactions}
+👆
+
+[09/13/2024 15:57] sera131
+did you retest just now?
+
+
+[09/13/2024 16:05] maxgorbachevskiy
+Not yet, first trying to finalize test of idea "GPU clinch". In case one GPU-enabled container and one GPU-disabled container can work together, then I have at least some insight into what's happening
+
+
+[09/13/2024 16:10] maxgorbachevskiy
+Okkayyy gentlemen I see that this setup  
+> one GPU-**enabled** container and one **GPU**-disabled container
+works. 
+So far, it started second training while first container is already active. 
+
+Combination
+> **two** GPU-**enabled** containers
+does not work.
+So I believe that my problem is somewhere in the GPU allocation. Now I want to understand ❓  **how to make several GPU-enabled containers process LTSM regressor together**.   ❓
+Anybody experienced the same problem?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1280030420834062419/1284184329727246477/image.png?ex=69f37edb&is=69f22d5b&hm=573b7d0057c30b16fecb35e8fc99af602392aa333544e448fa2889e5c6529ed0&
+
+
+[09/13/2024 16:11] sera131
+i'm at 40-66% while training
+
+
+[09/13/2024 16:14] maxgorbachevskiy
+I am on Dedicated Desktop at home, Windows 10, Intel i5-8400 CPU @ 2.80GHz, 16 GB Ram, NVIDIA RTX 3070 16GB
+Maybe my CPU is too old for this shit andgoes to 100%?
+In ayy case, this is at least something working.
+
+{Reactions}
+👍
+
+[09/13/2024 16:24] sera131
+might be, freqai kinda needs power
+
+{Reactions}
+💯
+
+[09/13/2024 17:10] .7thdragon
+i beat u, mine is older, Intel(R) Core(TM) i7 CPU  970 and is not used, maybe for a short period on bots start, then 10 20 percent, 2 bots, on hyperopt goes of course higher depending on j parameter, pytorch using only cuda nvidia1080
+
+
+[09/18/2024 07:49] serialkiller15
+Pinned a message.
+
+
+[09/18/2024 07:49] serialkiller15
+Pinned a message.
+
+
+[09/26/2024 11:07] .7thdragon
+⛑️  FT is really stupid built, it does not consider can_short in config, only in strat 🤪 🤮 
+normally, all the internal variables should have the posibility to be overwritten in config, and more advanced feature, to be reloaded periodically if set. currently some do some dont
+
+
+[09/26/2024 11:08] serialkiller15
+#RUNNING ON OPTUNA#
+like @7thDragon said o do this 
+DO HYPEROPT THE BACKTEST STRATEGY
+freqtrade hyperopt --hyperopt-loss SharpeHyperOptLossDaily --spaces buy stoploss -c user_data/config-torch.json --strategy AlexBTStrategyFinalV93 --timerange=20240816-20240916 -e 1000
+RUN OPTUNA WITH
+python ./freqtrade/user_data/strategies/AlexStrategy_Optunan.pyt--showft --trials 10000 --maxtrials 100 --days 30 --download
+
+
+[10/11/2024 22:43] hirotakah7
+Hi @Alex Crypto King
+
+
+[10/11/2024 22:43] hirotakah7
+Why the API required these permissions WARNING - additional_exchange_init() returned exception: "Error in additional_exchange_init due to PermissionDenied. Message: bybit private api uses /user/v3/private/query-api to check if you have a unified account. The API key of user id must own one of permissions: "Account Transfer", "Subaccount Transfer", "Withdrawal" {"retCode":10005,"retMsg":"Permission denied, please check your API key permissions.","result":{},"retExtInfo":{},"time":1728686277726}". Retrying still for 4 times
+
+
+[10/11/2024 22:44] hirotakah7
+Most Important one is "Withdrawal"
+
+
+[10/12/2024 11:01] muhammadatifh
+@Alex Crypto King anything on above message ?
+
+
+[10/12/2024 11:15] serialkiller15
+thats normal the api key has not the permissions to do ...Account Transfer", "Subaccount Transfer", "Withdrawal" {" set the permissions under api .....
+
+
+[10/12/2024 11:15] muhammadatifh
+I disabled the withdrawal but still getting this error
+
+
+[10/12/2024 11:18] serialkiller15
+why disable? this should be enabled mate
+
+
+[10/12/2024 11:19] muhammadatifh
+Why withdrawal should be enabled in api ? Bot required any withdrawal or transfer ?
+
+
+[11/06/2024 14:18] cheluxe
+Did anyone have this error when testing NotankAi with RL?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1280030420834062419/1303725128844181534/Captura_desde_2024-11-06_15-16-21.png?ex=69f364a4&is=69f21324&hm=c54bacb4790a01e2b1a5c0bb07c55404277df4c0eef19289736964e940b486f9&
+
+
+[11/06/2024 15:19] ximontan
+at the bottom of print screen key word maxima, line 715
+try add 
+        dataframe["minima"] = np.where(dataframe["&s-extrema"] == -1, 1, 0)
+        dataframe["maxima"] = np.where(dataframe["&s-extrema"] == 1, 1, 0)
+before 715
+
+
+[11/06/2024 15:27] cheluxe
+Thanks @Ximontan 🙏 . I'll try
+
+
+[11/06/2024 15:37] cheluxe
+Is fixed 👍
+
+{Reactions}
+👍 (2)
+
+[11/06/2024 16:33] cheluxe
+It's strange that I have so many errors like this, when I'm using the default 7Dragon file for testing.  🤔
+
+
+[11/06/2024 16:33] cheluxe
+I shouldn't have to change anything in the code for it to work normally.
+
+
+[11/06/2024 17:21] .7thdragon
+indeed strange,  but i do not had this (any) error even the code was not correct with ft 2024.10 :/
+for the moment i rewritten the code to be fully compliant with RL
+in 1.2.x &s-extrema is overwritten with prediction action values of 1 to 4 so practically having no good logic on entries exits and adjustements, also tensorboard showing not good data
+
+
+[11/12/2024 02:26] joaolool
+Can someone help me with a docker image because I'm having difficulty, I've already tried with a normal image and with a custom image that I got from the group
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1280030420834062419/1305720472033427578/image.png?ex=69f366b3&is=69f21533&hm=593461b83ee47db6572d9e54de95318bccded586d9790cdac5da95729d3c95cf&
+
+
+[11/12/2024 05:47] serialkiller15
+morning mate! did you use the latest github version and checked the installation guide, because i changed it few days ago! the progressor file is not in the right folder!
+
+
+[11/13/2024 19:59] alex_737071
+I added your fix... but results in `  File "/root/freqtrade/.venv/lib/python3.9/site-packages/pandas/core/indexes/range.py", line 413, in get_loc
+    return self._range.index(new_key)
+ValueError: 0 is not in range`
+
+Any solutions? Am i running wrng version of FT?
+
+
+[11/13/2024 21:59] ximontan
+can you show full log
+
+
+==============================================================
+Exported 117 message(s)
+==============================================================

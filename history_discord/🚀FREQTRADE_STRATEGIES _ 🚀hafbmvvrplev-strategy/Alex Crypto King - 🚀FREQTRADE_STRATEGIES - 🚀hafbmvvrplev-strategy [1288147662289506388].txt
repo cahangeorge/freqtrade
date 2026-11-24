@@ -1,0 +1,1729 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🚀hafbmvvrplev-strategy
+==============================================================
+
+[09/24/2024 14:52] serialkiller15 (pinned)
+@everyone here we have an amazing Freqtrade Strategy
+with many inputs from the Community, thanks for all they worked on it!
+@Ch1cK3N_t4c0s thanks for sharing your ideas with us!
+
+{Reactions}
+🎉 (6) 😍
+
+[09/24/2024 14:53] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288151211014488095/haFbmVVRPlev.json?ex=69f36ccd&is=69f21b4d&hm=3100bff19ccef1f3a1156564ab5bdc2785870441bba3fa28af9989e24975b84d&
+https://cdn.discordapp.com/attachments/1288147662289506388/1288151211425661030/haFbmVVRPlev.py?ex=69f36ccd&is=69f21b4d&hm=47bb78d090402e2f2e6fe6ab1d78d07f92d28e79d50d0802989ac0f27ddb995b&
+
+
+[09/24/2024 14:53] serialkiller15
+Pinned a message.
+
+
+[09/24/2024 14:53] serialkiller15
+Pinned a message.
+
+
+[09/24/2024 15:41] .7thdragon
+@Ch1cK3N_t4c0s when you have time can you look at this if i understand correctly for shorts?
+https://discord.com/channels/1238181199206154373/1287754019565076562/1288069779353243670
+
+
+[09/24/2024 15:43] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288163893889204224/image.png?ex=69f3789d&is=69f2271d&hm=58972f23a36a2a1e0ee517cc695c136f09d07deec66a80c5c907b3c7d27a44c6&
+
+
+[09/24/2024 15:43] sera131
+version with no increment / no spread yet
+
+
+[09/24/2024 15:45] serialkiller15
+nice mate...thanks!
+
+
+[09/24/2024 15:45] andreis9311
+`2024-09-24 15:14:00,649 - freqtrade.strategy.strategy_wrapper - WARNING - Strategy caused the following exception: Insufficient data points for FFT: 299. Need at least 305 data points.<bound method IStrategy._analyze_ticker_internal of <haFbmVVRPlev.haFbmVVRPlev object at 0x7ac35c1c7c20>>`
+
+did anyone face such an issue?
+
+
+[09/24/2024 15:47] serialkiller15
+do you have downloaded enough data?
+
+
+[09/24/2024 15:48] andreis9311
+I downloaded data for the last 200 days. Is it not enough?
+
+
+[09/24/2024 15:50] serialkiller15
+startup_candle_count: int = 200
+
+
+[09/24/2024 16:31] attique_80740
+No module named 'matplotlib'
+
+
+[09/24/2024 16:32] ximontan
+comment it
+
+
+[09/24/2024 16:32] sera131
+or install it via docker file
+
+
+[09/24/2024 16:33] ximontan
+are you using static pairs or dynamic?
+
+
+[09/24/2024 16:33] sera131
+static
+
+
+[09/24/2024 16:33] serialkiller15
+@Attique use the docker file i have on github its fine then
+
+
+[09/24/2024 16:34] attique_80740
+Got it, Thanks
+
+
+[09/24/2024 16:39] attique_80740
+Backtestedon over last 10 months
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288178046095986708/image.png?ex=69f385cb&is=69f2344b&hm=5e8ae8818356d9eb64db9539952bbfa998705af220ccb208f341326495e76f69&
+
+
+[09/24/2024 16:40] attique_80740
+does it looks buggy to you!!!
+
+
+[09/24/2024 16:40] ximontan
+O_o something fishy on your result...
+
+
+[09/24/2024 16:40] attique_80740
+yeah,
+
+
+[09/24/2024 16:41] attique_80740
+looks like
+
+
+[09/24/2024 16:41] ximontan
+try test it with --timeframe-detail 1m, but for short range...
+
+
+[09/24/2024 16:42] sera131
+and this is why backtesting is never reliable :)))
+
+
+[09/24/2024 16:42] attique_80740
+lets see with 5 min
+
+
+[09/24/2024 16:42] sera131
+its enough to ignore everything there, once i see 4500 rejected signals, something is definetly wrong and only 5 sell at loss.
+
+
+[09/24/2024 16:43] ximontan
+it's already timeframe = '5m'
+
+
+[09/24/2024 16:44] ximontan
+here is my result's but haFbmVVRPlev_Spread_T
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288179212728930374/image.png?ex=69f386e1&is=69f23561&hm=a7cbd7c8fe6a2b86c5e6285da9ce6ea47760c8601b91cf9dd0736b90a69340ed&
+
+
+[09/24/2024 16:44] attique_80740
+docker compose run --rm futuresBackTest backtesting --config user_data/config.json --strategy haFbmVVRPlev --timerange 20231201-20240801 -i 15m this is how i test
+
+
+[09/24/2024 16:44] sera131
+max balance and max drawdown is the same, crazy
+
+{Reactions}
+🤣
+
+[09/24/2024 16:45] attique_80740
+fishy fishy
+
+
+[09/24/2024 16:45] ximontan
+do clean up backtest_results folder
+
+
+[09/24/2024 16:46] sera131
+or add --no-cache at the end of the test
+
+{Reactions}
+👍 (3)
+
+[09/24/2024 16:48] sera131
+that CAGR% =))
+
+
+[09/24/2024 16:50] ximontan
+it's weird, any way I can't normally do lookahead-analysis for it,
+does anybody did it?
+
+
+[09/24/2024 16:51] bigbroseur
+Just started dry on Kucoin Spot
+
+{Reactions}
+👍
+
+[09/24/2024 16:53] giovannimauro
+I tried but doesnt work. @Ch1cK3N_t4c0s have to refine the strat for backtesting things I think
+
+
+[09/24/2024 17:08] sera131
+@Giovanni Mauro @Ch1cK3N_t4c0s @Alex Crypto King @7thDragon does anyone know who built the increment code ? i want to know more about the logic behind.
+
+
+[09/24/2024 17:09] attique_80740
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288185465232429088/image.png?ex=69f38cb4&is=69f23b34&hm=1800c07615718b03beef7895274c8962003c0f51a9c34ab85b9ac4a0b273492a&
+
+{Reactions}
+🔥
+
+[09/24/2024 17:09] attique_80740
+on 5 min
+
+
+[09/24/2024 17:15] attique_80740
+now it looks  good
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288186952147009640/image.png?ex=69f38e16&is=69f23c96&hm=2d2dd38455d1732fa7204bd68b14a080be9f11e2edaad97ce7f1a0c76854d3ee&
+
+{Reactions}
+🔥
+
+[09/24/2024 17:15] attique_80740
+15 min
+
+
+[09/24/2024 17:16] serialkiller15
+interesting i also was thinking to change to 15m timeframe!
+
+
+[09/24/2024 17:16] attique_80740
+15 mins works much better
+
+
+[09/24/2024 17:17] attique_80740
+leverage set to 5  no risk, lets run it in dry mode
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288187638167371888/image.png?ex=69f38eba&is=69f23d3a&hm=ff01d703fa93ecd7c08e14999f78e883c07a65b90084618834049550da15e872&
+
+
+[09/24/2024 17:46] ximontan
+hmmm, interesting I'll check too...
+
+
+[09/24/2024 18:02] .7thdragon
+not really sure how this is really helpful if in config already having orders type *other* set
+and in case of volatility this should be dynamic changed not fixed
+this is a fixed average approach of moving the entry
+
+
+[09/24/2024 18:48] ch1ck3n_t4c0s
+Me
+
+{Reactions}
+👍
+
+[09/24/2024 18:49] serialkiller15
+👍
+
+
+[09/24/2024 18:59] ch1ck3n_t4c0s
+Please remember my caveat for testing this for the current renditions!!! Until the VVRP code is turned into a rolling function I would only test in smaller segments of time maybe 2 weeks max.
+
+
+[09/24/2024 19:01] .7thdragon
+correct, even 1w for 5m
+
+
+[09/24/2024 19:36] sera131
+checking with you about logic, ill DM
+
+
+[09/24/2024 19:43] alex_737071
+@Ch1cK3N_t4c0s @Alex Crypto King and others... Thank you guys, this looks very promising! Some excellent work. 32% in less than 24 hours is a good start! 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288224225076842527/Screenshot_2024-09-24_at_21.41.20.png?ex=69f3080d&is=69f1b68d&hm=1f63ce01f21ebde0374b795558b1528066a379efd445686e1d353bc1257784d4&
+
+{Reactions}
+💯 (2)
+
+[09/24/2024 19:43] serialkiller15
+Thanks that is the result of our community not mine...
+
+{Reactions}
+💯
+
+[09/24/2024 19:44] alex_737071
+Yes indeed! And a great community you built! 🙂
+
+
+[09/24/2024 19:44] ch1ck3n_t4c0s
+https://tenor.com/view/teamwork-gif-21178977
+
+{Embed}
+https://tenor.com/view/teamwork-gif-21178977
+https://images-ext-1.discordapp.net/external/EyJo4_HoKsYUh2rWAygu2hm_wGMrjPtnDDdIcyDjLwg/https/media.tenor.com/y9C-bqGhlloAAAAe/teamwork.png
+
+{Reactions}
+❤️ (2) 💯
+
+[09/24/2024 19:45] serialkiller15
+Thanks mate..... I love it to was a long way others take money for that but we will stay free always.. Have fun and enjoy
+
+
+[09/24/2024 19:45] serialkiller15
+@Ch1cK3N_t4c0s gave rely good and nice ideas....
+
+
+[09/24/2024 19:46] alex_737071
+I always thought if you one of those groups that chargs money, then your Strat cant be that good, cause if they were, you would not need the money! 🙂
+
+
+[09/24/2024 19:46] alex_737071
+But i love the open source concept, Team Work makes the Dream work indeed!
+
+{Reactions}
+👍
+
+[09/24/2024 19:46] serialkiller15
+Absolute i was in many of them so I told you long journey
+
+
+[09/24/2024 19:47] serialkiller15
+Yes because we have tester here develooers ideas creators and many others that's good so
+
+
+[09/24/2024 19:49] serialkiller15
+Also the v93 Optuna we posted is doing good..
+
+
+[09/24/2024 19:49] alex_737071
+Well, you have inspired me to learn python so i can contribute too! Coming from Ruby its not that different thankfully!  🙂
+
+
+[09/24/2024 19:50] serialkiller15
+Thanks mate let us All inspire together that's my goal
+
+
+[09/24/2024 19:50] alex_737071
+Is there a run down of the setup for v93 Optuna by the way? Lots of threads about it but I not sure im getting how optuna works, because i dont think im running it correctly
+
+
+[09/24/2024 19:52] serialkiller15
+We will make a faq for that we very taking time to let it run....
+
+
+[09/24/2024 19:52] serialkiller15
+You can try the docker file of github i posted today there is eveythink you need insider only put the v93 in there that's it
+
+{Reactions}
+👍
+
+[09/24/2024 19:53] serialkiller15
+Alternativ can DM me no prob will help
+
+
+[09/24/2024 19:54] alex_737071
+I dont run docker at the moment, i just run screen's on ubunt VPS. But am i right in thinking i need the optuna python script running, then i start a trader on top? And why do we hyperopt first... does optuna not basicly hyperopt for us?
+
+
+[09/24/2024 20:09] ammart90
+My backtest result for Spot without leverage
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288230792513716304/message.txt?ex=69f30e2b&is=69f1bcab&hm=dc327635d317341ecaba4be172b66b4b7e4f9c5fceb6ad28cf6a49ae95361ebb&
+
+
+[09/24/2024 20:23] ch1ck3n_t4c0s
+Should make a install bash script that auto copies the files 😉
+
+{Reactions}
+💯
+
+[09/24/2024 20:24] serialkiller15
+For what exactly?
+
+
+[09/24/2024 21:16] .7thdragon
+anybody fixed the stoploss steps for shorts? i do not want to work twice 🙂
+as this leads to misleading results for futures
+
+
+[09/24/2024 21:54] ch1ck3n_t4c0s
+Like copying the files lol
+
+
+[09/24/2024 21:54] ch1ck3n_t4c0s
+I'm working on a mod sir.
+
+{Reactions}
+❤️
+
+[09/24/2024 22:19] sera131
+working, nearly there @7thDragon
+
+
+[09/24/2024 22:19] sera131
+meanwhile, if someone wants to test with me the code for incremental for longs and shorts:
+
+def custom_entry_price(self, pair: str, trade: Optional['Trade'], current_time: datetime, proposed_rate: float, entry_tag: Optional[str], side: str, **kwargs) -> float:
+    """
+    Customizes the entry price for incremental entries.
+    If it's a long entry, it increments the price slightly each time to avoid overbuying.
+    If it's a short entry, it decrements the price similarly.
+    """
+    
+    dataframe, last_updated = self.dp.get_analyzed_dataframe(pair=pair, timeframe=self.timeframe)
+    entry_price = (dataframe['close'].iat[-1] + dataframe['open'].iat[-1] + proposed_rate + proposed_rate) / 4
+    logger.info(f"{pair} Using Entry Price: {entry_price} | close: {dataframe['close'].iat[-1]} open: {dataframe['open'].iat[-1]} proposed_rate: {proposed_rate}")
+
+    # Apply different increments for long and short positions
+    if entry_tag == 'enter_long':
+        # Long position: increment the entry price if we re-enter close to the last entry
+        if self.last_entry_price is not None and abs(entry_price - self.last_entry_price) < 0.0001:
+            entry_price *= (1 + self.increment.value)  # Increment by the defined percentage
+            logger.info(f'{pair} Incremented long entry price to: {entry_price}, previous: {self.last_entry_price}')
+    
+    elif entry_tag == 'enter_short':
+        # Short position: decrement the entry price for incremental short entries
+        if self.last_entry_price is not None and abs(entry_price - self.last_entry_price) < 0.0001:
+            entry_price *= (1 - self.increment.value)  # Decrement by the defined percentage
+            logger.info(f'{pair} Decremented short entry price to: {entry_price}, previous: {self.last_entry_price}')
+
+    # Store the last entry price for future comparisons
+    self.last_entry_price = entry_price
+
+    return entry_price
+
+
+[09/24/2024 22:49] .7thdragon
+hey thanks but not needed! i already posted the fix somewhere is more simplier and hyperoptable separately!
+`
+    increment_long  = DecimalParameter(low=1.0005, high=1.0030, default=1.0010, decimals=4 ,space='buy', optimize=True, load=True)
+    increment_short = DecimalParameter(low=0.9930, high=0.9995, default=0.9910, decimals=4 ,space='buy', optimize=True, load=True)
+`
+
+
+[09/24/2024 22:51] .7thdragon
+and the fix for trailing is much simplier, also some code is useless there, i need to rethink it a bit
+`
+        SL1 = -abs(SLT1 - SLT0)
+        SL2 = -abs(SLT2 - SLT1)
+        SL3 = -abs(SLT2 - SLT1)
+`
+
+
+[09/24/2024 22:54] sera131
+hey xDD we don't all have your skills
+
+{Reactions}
+🤣 (2)
+
+[09/24/2024 22:54] sera131
+hehe
+
+
+[09/24/2024 22:55] .7thdragon
+i am old assembler guy, only python syntax killing me 😄
+
+{Reactions}
+🎉
+
+[09/24/2024 22:55] sera131
+it needs both lines and the function above btw
+
+
+[09/24/2024 22:55] sera131
+otherwise i don't think it sees shorts correctly
+
+
+[09/24/2024 22:55] sera131
+but I might be very wrong
+
+
+[09/24/2024 22:56] .7thdragon
+yes of course but i am refering to a version posted containing them, both variables named separately and nothing else changed, with no minus sign
+
+
+[09/24/2024 22:57] sera131
+aa
+
+
+[09/24/2024 23:00] sera131
+thing is, and again i might be wrong
+
+
+[09/24/2024 23:00] sera131
+without if/elif.... it doesn't run correctly with both defined seperately at same time; ill check it though
+
+
+[09/24/2024 23:02] .7thdragon
+`    def custom_entry_price(self, pair: str, trade: Optional['Trade'], current_time: datetime, proposed_rate: float, entry_tag: Optional[str], side: str, **kwargs) -> float:
+        dataframe, last_updated = self.dp.get_analyzed_dataframe(pair=pair, timeframe=self.timeframe)
+        
+        entry_price = (dataframe['close'].iat[-1] + dataframe['open'].iat[-1] + proposed_rate + proposed_rate) / 4
+        if self.dp.runmode.value in ('live', 'dry_run'):
+            logger.info(f"{pair} Using Entry Price: {entry_price} | close: {dataframe['close'].iat[-1]} open: {dataframe['open'].iat[-1]} proposed_rate: {proposed_rate}")
+
+        # Check if there is a stored last entry price and if it matches the proposed entry price
+        if entry_tag == 'enter_long':
+            if self.last_entry_price is not None and abs(entry_price - self.last_entry_price) < 0.0001:  # Tolerance for floating-point comparison
+                entry_price *= self.increment_long.value  # Increment by 0.2%
+                if self.dp.runmode.value in ('live', 'dry_run'):
+                    logger.info(f"{pair} Incremented entry price: {entry_price} based on previous entry price: {self.last_entry_price}.")
+        elif entry_tag == 'enter_short':
+            # Check if there is a stored last entry price and if it matches the proposed entry price
+            if self.last_entry_price is not None and abs(entry_price - self.last_entry_price) < 0.0001:  # Tolerance for floating-point comparison
+                entry_price *= self.increment_short.value  # Decrement by 0.2%
+                if self.dp.runmode.value in ('live', 'dry_run'):
+                    logger.info(f"{pair} Decrement entry price: {entry_price} based on previous entry price: {self.last_entry_price}.")
+        # Update the last entry price
+        self.last_entry_price = entry_price                               
+
+        return entry_price`
+
+
+[09/24/2024 23:03] sera131
+oh i see now
+
+
+[09/24/2024 23:03] sera131
+nevermind me, i get it now
+
+
+[09/24/2024 23:04] .7thdragon
+and with this parametrization at beginning of the class, way easy customizable
+`    increment_long  = DecimalParameter(low=1.0005, high=1.0030, default=1.0010, decimals=4 ,space='buy', optimize=True, load=True)
+    increment_short = DecimalParameter(low=0.9930, high=0.9995, default=0.9910, decimals=4 ,space='buy', optimize=True, load=True)`
+
+
+[09/24/2024 23:06] sera131
+ye makes sense, i'm basicly using just one variable, i wanna see if the calculus is correct though. but your code should work more than fine
+
+
+[09/24/2024 23:08] .7thdragon
+i also posted that this code dont make much difference, only in volatility maybe
+usually the order type "other" take care of that, but hell knows how reliable is FT 🙂
+
+
+[09/24/2024 23:09] sera131
+but if you use market orders...
+
+
+[09/24/2024 23:09] sera131
+might make the difference?
+
+
+[09/24/2024 23:10] .7thdragon
+no 🙂
+
+{Reactions}
+🤣
+
+[09/24/2024 23:10] sera131
+allright allright
+
+
+[09/24/2024 23:10] sera131
+i'm testing a simple fix for the trailing stop loss, where we removed the bias for shorting
+
+
+[09/24/2024 23:12] .7thdragon
+https://www.freqtrade.io/en/stable/configuration/#enter-price-side
+
+{Reactions}
+👍
+
+[09/24/2024 23:17] sera131
+time to upgrade v91 to next version and ill get back to making a trailing stop loss, stealing code from both chicken and giovani, mwahaha
+
+{Reactions}
+🤣
+
+[09/24/2024 23:18] sera131
+not sure where it was posted :)))
+
+
+[09/24/2024 23:18] .7thdragon
+is not quite "trailing", are the mean levels
+
+
+[09/24/2024 23:19] sera131
+we'll see
+
+
+[09/24/2024 23:23] sera131
+@7thDragon sorry to bother, since you are online, where was alexai posted?
+
+
+[09/24/2024 23:28] .7thdragon
+sent dm before u found it 🙂
+
+{Reactions}
+❤️
+
+[09/24/2024 23:31] sera131
+you are fast, i am just too slow at this hour
+
+
+[09/25/2024 01:14] ch1ck3n_t4c0s (pinned)
+Added 'move' based roi, 'move' based negative stoploss protection. leverage profit and stoploss hyperopt multiplier for a greed emphasis/demphasis. Has @Giovanni Mauro protections that he shared. Will be adding into the VVRP spot next. Still testing things on the non VVRP version as it is more basic atm...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288307607760797717/haFbmVVRPlev_ST.py?ex=69f355b5&is=69f20435&hm=85f1028986986a23b3388d7ba7343a7dde09aa71ad4c6721530e3e3fc77bb0ca&
+
+{Reactions}
+🤘 (3) 🔥 (2)
+
+[09/25/2024 01:19] ch1ck3n_t4c0s
+WIP = market bias normilazation and refactoring the vvrp function to work in backtest hyperopt for longer periods... I would not exceed much more than 10-days when testing with the vvrp function as it will skew from live results at the moment, hyperopt in batches and then take averages of results, see if they are correalating in a direction/value and adjust params as necessary. Narrow windows around new center then hyper opt batches again
+
+{Reactions}
+🔥
+
+[09/25/2024 01:21] ch1ck3n_t4c0s
+Boolean Change of Direction function that can be applied to any indicator. (Posted this in snippets)
+
+
+[09/25/2024 01:22] .7thdragon
+i will look into it tomorow, thanks for your efffort!
+
+
+[09/25/2024 01:22] ch1ck3n_t4c0s
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288309660637466766/image.png?ex=69f3579e&is=69f2061e&hm=18c75c9ed02c6f6b63c89aebebedee3104d2c79006a09c2505e51924d3eebc14&
+
+
+[09/25/2024 01:23] ch1ck3n_t4c0s
+see green bars in middle indicator. example is applied to SR_Ratio_Smooth and then filter above our entry and exit requirements
+
+{Reactions}
+👍
+
+[09/25/2024 01:24] ch1ck3n_t4c0s
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288310107347746947/image.png?ex=69f35809&is=69f20689&hm=ef87776f51b7b7adea77c314aa47cf4c26ce8bc989ec50dfed05d08658de1a34&
+
+{Reactions}
+💪
+
+[09/25/2024 01:24] ch1ck3n_t4c0s
+can be used to invalidate entries and exits due to the shifting nature of frequency ditection
+
+{Reactions}
+💪
+
+[09/25/2024 01:25] ch1ck3n_t4c0s
+as shown here on light coin
+
+
+[09/25/2024 01:26] ch1ck3n_t4c0s
+delaying the entry would have netted a potential .75% increase in gain
+
+
+[09/25/2024 01:29] ch1ck3n_t4c0s
+but these are still tied to the output of the vvrp which live rolls the length of the data frame so the accuracy does not have enough dry testing to prove out any weakness in that portion of the strategy. thank you all for testing the bi-directional version as the higher frequency of trades will help debug the long version quicker!
+
+
+[09/25/2024 01:30] sera131
+currently running 2 versions of it, will keep you updated
+
+
+[09/25/2024 01:30] sera131
+time for me to sleep, anoher day closed at 4:30 AM
+
+
+[09/25/2024 04:58] serialkiller15
+Nice work will test then
+
+
+[09/25/2024 05:20] serialkiller15
+Pinned a message.
+
+
+[09/25/2024 07:14] giovannimauro
+ROI: Closed trades
+∙ 274.237 USDT (19.50%) (27.42 Σ%)
+∙ 274.025 USD
+ROI: All trades
+∙ 255.617 USDT (12.88%) (25.56 Σ%)
+∙ 255.42 USD
+Total Trade Count: 10
+Bot started: 2024-09-24 11:06:42
+First Trade opened: 20 hours ago (2024-09-24 11:10:27)
+Latest Trade opened: 3 minutes ago (2024-09-25 07:10:39)
+Win / Loss: 7 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 39.18 (100.00)
+Avg. Duration: 6:52:56
+Best Performing: BAND/USDT:USDT: 32.62%
+Trading volume: 37963.082 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from  (0 USDT)
+    to  (0 USDT)
+
+
+Spread_T  5 max trades, 20 hours 27% closed profit
+
+{Reactions}
+🔥 (4)
+
+[09/25/2024 07:16] laupapp
+5m or 15m ?
+
+
+[09/25/2024 07:16] giovannimauro
+5m
+
+{Reactions}
+👍
+
+[09/25/2024 07:28] .7thdragon
+custom_stoploss is exactly the same as previous versions, put stoploss above rate, leaving opportunity to  liquidation
+backtest and hyper are fouled by this situation because you will not get the respective errors
+as i previously said, custom_stoploss should return relative negative value. Or it can be calculated by stoploss_from_open or stoploss_from_absolute (this one can be used with indicators last candle) for example
+did anybody checked the logs for dry?
+
+
+[09/25/2024 07:39] .7thdragon
+correct stoplos and afterwards trailing should be this way
+`2024-09-25 09:56:58,293 - haFbmVVRPlev - INFO - *** TON/USDT:USDT SHORT *** Profit 1 9.346% -> 9.340%/-1.234% activated
+2024-09-25 09:56:58,294 - haFbmVVRPlev - INFO - *** TON/USDT:USDT SHORT *** Profit 9.346% stoploss locked at -0.0123
+2024-09-25 09:57:00,828 - freqtrade.rpc.rpc_manager - INFO - Sending rpc strategy_msg: *** TON/USDT:USDT SHORT *** Profit 1 9.346% -> 9.340%/-1.234% activated`
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288404487924617226/image.png?ex=69f3072f&is=69f1b5af&hm=7ab00a4c28f1a1a309f791c4c12b260870964fe6ae63a6d934b6e658612fd0be&
+
+
+[09/25/2024 07:40] serialkiller15
+nice..
+
+
+[09/25/2024 07:41] serialkiller15
+can you post the changes so i can share them in the channel thanks
+
+
+[09/25/2024 07:45] .7thdragon
+i did not fixed it properly, but i mentioned here a possible solution
+https://discord.com/channels/1238181199206154373/1288147662289506388/1288271215408058462
+the results are of course real and much more diminished
+
+
+[09/25/2024 07:47] serialkiller15
+ah ok thanks will take a look on it!
+
+
+[09/25/2024 08:35] serialkiller15
+i fixed these lines for hyperopt because always got errors on it 
+        #TP0 = current_candle['h2_move_mean'] (self.leverage_value + self.levX.value)
+        #TP1 = current_candle['h1_move_mean'] (self.leverage_value + self.levX.value)
+        #TP2 = current_candle['h0_move_mean'] (self.leverage_value + self.levX.value)
+        #TP3 = current_candle['cycle_move_mean'] (self.leverage_value + self.levX.value)
+        TP0 = current_candle['h2_move_mean'] * (self.leverage_value + self.levX.value)
+        TP1 = current_candle['h1_move_mean'] * (self.leverage_value + self.levX.value)
+        TP2 = current_candle['h0_move_mean'] * (self.leverage_value + self.levX.value)
+        TP3 = current_candle['cycle_move_mean'] * (self.leverage_value + self.levX.value)
+
+
+[09/25/2024 08:39] .7thdragon
+where did u get this line with leverage and levx, what is levx?
+#TP0 = current_candle['h2_move_mean'] (self.leverage_value + self.levX.value)
+
+
+[09/25/2024 08:40] serialkiller15
+in the last strategy i got yesterday..... on hyperopt failure on these values!
+
+
+[09/25/2024 08:41] serialkiller15
+trying only to test this to make hyperopt working thats all
+
+
+[09/25/2024 09:47] .7thdragon
+u messed up something as are ok in the above, the only problem is with shorts in dry
+the same problem that misleads everybody with huge profits in futures 🙂
+
+{Reactions}
+👍 (2)
+
+[09/25/2024 09:48] andreis9311
+yep 🙂 Had -100% this night in short position 🙂
+
+
+[09/25/2024 09:50] .7thdragon
+it will go down, be patient 🙂
+
+
+[09/25/2024 09:53] andreis9311
+First of all, I really appreciate what you are doing guys! 
+Could you please share some parts of your config for haFbmVVRPlev? I am mostly interested in settings for: 
+- order_types 
+- unfilledtimeout 
+- entry/exit_pricing
+
+And maybe some filters that you are using.  
+
+Are you using enable_ws? 
+And what is your process_throttle_secs? I really appreciate it!
+
+
+[09/25/2024 10:00] .7thdragon
+https://www.freqtrade.io/en/stable/configuration/#entry-price-with-orderbook-enabled
+all the trade operations depends on you flavor and error logs, the strategy (all strat in general) is not a HFT (high frequency trading with decisions in 10ms), FT in my opinion was not made for this and inherits old stuff
+unfilledtimeout should be usually lower than the time frameused
+enable_ws is a must otherwise u cannot use more than few pairs
+process trottle is ok 5
+
+{Reactions}
+😍
+
+[09/25/2024 12:11] ammart90
+trying to backtest FbmVVRPlev_ST.py  failed due to 'invalid syntax (haFbmVVRPlev_ST.py, line 103)'
+
+    levX = DecimalParameter(low=-0.25., high=0.25, default=0.0, decimals=2 ,space='buy', optimize=True, load=True)
+
+
+This is the line, whats wrong with it ?
+
+
+[09/25/2024 12:13] ximontan
+remove . dot 0.25=>.<=
+
+{Reactions}
+👍 (2)
+
+[09/25/2024 12:15] serialkiller15
+correct line shoud be 
+levX = DecimalParameter(low=-0.25, high=0.25, default=0.0, decimals=2 ,space='buy', optimize=True, load=True)
+
+{Reactions}
+👍
+
+[09/25/2024 13:21] ch1ck3n_t4c0s
+Sorry fat fingers
+
+
+[09/25/2024 14:43] giovannimauro
+Hey @Ch1cK3N_t4c0s 
+I've done backtests on other timerange, and I choose a bear period, with my long only version.... just to see how it goes on difficult situations...  and... surprise... We have big potential losses...
+As you can see in left openrades we have biiiiig potential losses, with trade under the -100% that is not possible in isolated futures. 
+
+So we need for sure
+
+1_An hard stoploss at -100% in custom exit, just to emulate the real trading
+2_A loss management (how to handle losses?)
+3_Better trend recognition???
+
+For the point 3, I don't know if it depend from the VVRP not ready for backtesting (?), is possible that all the backtest can be falsified due to the nature of this indicator?
+
+Anyway, I just inform you to the "problems" I notice running backtests
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288511109455941642/image.png?ex=69f36a7b&is=69f218fb&hm=1d821381b224166113a9c601beeed0f577a6f4234f12c23f657190e072c4c827&
+https://cdn.discordapp.com/attachments/1288147662289506388/1288511109736828949/image.png?ex=69f36a7b&is=69f218fb&hm=ce52b951ea72559a09f0befa6aa88861f42a88245db1101bb41110d89c6ae25c&
+
+{Reactions}
+🤣
+
+[09/25/2024 18:44] alex_737071
+Whats the latest versoin to test?
+
+
+[09/25/2024 19:19] alex_737071
+Running the _ST in drymode but getting: ` File "/root/freqtrade/user_data/strategies/haFbmVVRPlev_ST.py", line 315, in custom_exit
+    TP0 = current_candle['h2_move_mean'] (self.leverage_value + self.levX.value)
+TypeError: 'numpy.float64' object is not callable`
+
+
+[09/25/2024 19:26] ximontan
+add multiply sign, TP0 = current_candle['h2_move_mean']  * (self.leverage_value + self.levX.value)
+https://discord.com/channels/1238181199206154373/1288147662289506388/1288418612272435200
+
+{Reactions}
+👍
+
+[09/25/2024 20:44] ch1ck3n_t4c0s
+I must of had many typos
+
+
+[09/25/2024 20:44] ch1ck3n_t4c0s
+Lol
+
+
+[09/25/2024 22:55] sera131
+this is why we need to improve shorting version also
+
+
+[09/25/2024 22:55] sera131
+in downtrend, it should not place longs randomly but revert to shorts
+
+
+[09/25/2024 22:56] sera131
+i dont really really trust it tbh but i'll start hyperopting just to mess with it
+
+
+[09/26/2024 06:22] bigbroseur
+It's a very clever way to know if we really use the fruit of your very inspired reflections
+
+{Reactions}
+😎
+
+[09/26/2024 10:34] attique_80740
+Dry run since last night, at first it bring 100$ and after that market conditions changed a bit it struggle there to still openingShort positions
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288810889767813234/image.png?ex=69f3302d&is=69f1dead&hm=a5385b765104125acde658a15f67d8f77b1435a8514430fd0db5a0fd7e5d8309&
+
+
+[09/26/2024 10:36] giovannimauro
+Short logic seems not ready
+
+{Reactions}
+👍
+
+[09/26/2024 11:07] ch1ck3n_t4c0s
+Yes there are errors in the short logic. I fell asleep in my chair last night fixing things
+
+
+[09/26/2024 11:09] .7thdragon
+simply is better, there is also another bias consideration post below this https://discord.com/channels/1238181199206154373/1288418348400508938/1288788168384184332
+
+
+[09/26/2024 13:27] giovannimauro
+In my log I see that cycle. 
+_Running 5 minutes
+_Remove
+_Failed to reuse
+_re-calculation
+_Running 5 minutes
+_etc..
+_etc...
+
+Is it ok for you @Ch1cK3N_t4c0s
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288854453591740532/image.png?ex=69f358bf&is=69f2073f&hm=ebde4b346d9b002ec3d299b6baf0a3e533e26ab7255ca6d673658c8445efeb80&
+
+
+[09/26/2024 13:31] ch1ck3n_t4c0s
+I dunno what that watch issue is sounds like more exchange issue.
+
+
+[09/26/2024 13:32] giovannimauro
+okey! In fact, in my dashboard trades update very slow
+
+
+[09/26/2024 13:32] andreis9311
+I have the same from time to time but then it's back to normal behaviour. What exchange you are using?
+
+
+[09/26/2024 13:33] giovannimauro
+bybit
+
+
+[09/26/2024 13:34] .7thdragon
+you will see it better in volatility on bybit is awful
+
+
+[09/26/2024 13:34] andreis9311
+I use OKX
+
+
+[09/26/2024 13:37] andreis9311
+Maybe it's a network issue or something. Actually, freqtrade is quite buggy. Sometimes it stops consuming the ticks or just starts crashing in a loop. Usually, it's enough to restart the container.
+
+{Reactions}
+👍
+
+[09/26/2024 15:07] sera131
+do you guys use CCXT rate limitations?
+
+
+[09/26/2024 15:08] .7thdragon
+of course, depends on the number of exchange, pairs and somewhat timeframe
+
+
+[09/26/2024 15:10] sera131
+i have 100 for all my bots but i'm not sure if I should still rate limit it if i filter it via binance proxy tool
+
+
+[09/26/2024 15:10] sera131
+and traefik
+
+
+[09/26/2024 15:12] .7thdragon
+not using proxy, no dockers 🙂
+if you do not get errors from exchange u could lower it
+still in case of volatility might be a problem lower than 100
+
+
+[09/26/2024 15:47] ch1ck3n_t4c0s
+Docker slows down inference fyi... much much faster in terminal
+
+{Reactions}
+👍
+
+[09/26/2024 15:48] ch1ck3n_t4c0s
+Much easier IMHO without.
+
+
+[09/26/2024 15:48] .7thdragon
+docker is slow by it's definition 🙂
+
+
+[09/26/2024 15:48] ch1ck3n_t4c0s
+Yes
+
+
+[09/26/2024 15:49] ch1ck3n_t4c0s
+Most optimal parameters are in there already
+
+
+[09/26/2024 16:40] sera131
+i have full resources alocated to docker, is as fast as it can be, under a emulated linux env;; its basicly as fast as WSL
+
+
+[09/26/2024 16:40] sera131
+but i have duo OS in my system and if i switch to pure linux, then well... everything changes when it comes to speed xD
+
+
+[09/26/2024 16:44] sera131
+@Ch1cK3N_t4c0s @Giovanni Mauro I propose to keep working on Hafbm to be able to optimize it a bit and maybe fix some issues we have on shorting or better said on trend changing. its not necesarly shorting the issue, its regarding more related to when trend changes with shorts in the bag. And its the same thing with longs... if you have longs in the bags... and trend changes.
+
+After we saturate it, do we feel ready to apply same process for TSP? @Ch1cK3N_t4c0s 
+
+We have more winners in the bags...
+
+
+[09/26/2024 16:47] sera131
+meanwhile
+
+
+[09/26/2024 16:48] sera131
+I've added below portion of the code to allow hard fixed stop loss exits as it was easier than bringing in code; currently testing
+
+
+[09/26/2024 16:48] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1288905113913528341/image.png?ex=69f387ed&is=69f2366d&hm=d8610638af536c622a6aa2b8f957e79721a1d350bdcb838f0f0669eeed21db96&
+
+
+[09/26/2024 17:47] ch1ck3n_t4c0s
+Yeah probably best to stay focused on the hafbm and Alex's strategy. I have Hurst test going and tsp0chicken needs to see a down trend to know what's up with that.
+
+
+[09/26/2024 17:53] .7thdragon
+It might be a good fix, lol
+
+
+[09/26/2024 17:56] andreis9311
+I know this is kind of tricky to understand the real result, but the backtests show worse results then without stop_loss
+
+
+[09/26/2024 18:11] serialkiller15
+@Ch1cK3N_t4c0s absokut let's focus thanks
+
+{Reactions}
+👍
+
+[09/26/2024 18:48] sera131
+ATM having some issues running alexai but will figure it out
+
+
+[09/27/2024 02:08] ch1ck3n_t4c0s
+Ch1cK3N_t4c0s | Event 16 💀:
+ha_df['market_bias'] = (ha_df['signal_MEAN_UP_dc'] / abs(ha_df['signal_MEAN_DN_dc'])) 
+        ha_df['market_bias_new'] = np.where(ha_df['market_bias'] < 1, -(1 / ha_df['market_bias']),ha_df['market_bias'])
+        ha_df['market_bias_new'] = ha_df['market_bias_new'] - 1
+        market_bias2 = ha_df['market_bias_new'].iloc[-1]
+
+# Fetch bid and ask for the current pair
+        if self.dp.runmode.value in ('live', 'dry_run'):
+            ob = self.dp.orderbook(metadata['pair'], 1)
+            bid = ob['bids'][0][0]
+            ask = ob['asks'][0][0]
+
+{Reactions}
+🤘
+
+[09/30/2024 16:53] .7thdragon
+@Ch1cK3N_t4c0s question, for this strategy is not better having EWM and envelops as TP steps instead of means? or is the same effect?
+
+
+[09/30/2024 19:11] ch1ck3n_t4c0s
+Plot them and see 😉 so in prior strats I've had indicators that would disable the stop loss to ride the impulse up. The problem is often there is a small reversal that stops you then the trend carries on... gotta find the right on off switch. In bullish conditions I want to disable slt0 but still working on it.
+
+{Reactions}
+👍 (2)
+
+[09/30/2024 19:12] ch1ck3n_t4c0s
+Possible that maybe need something like psar based stoploss.
+
+
+[09/30/2024 19:29] .7thdragon
+Similar small reversals for shorts like this when the trend is down
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1290395056452276317/image.png?ex=69f304cb&is=69f1b34b&hm=e6f493dcc1781127adefe05e82a71e84b6cfdca8ebc5bac815015cb96b46d070&
+
+
+[10/01/2024 18:25] .7thdragon
+for anybody wants to test this snippet for custom_stoploss on envelops, indeed not so good like means, but maybe in other strat or config. is for both directions
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1290741403034320957/message.txt?ex=69f2f5db&is=69f1a45b&hm=7e71b1a9eb45e12334c3c77ef85709c37dbf4d72758f5d46c840cee67b1d5619&
+
+{Reactions}
+👍 (2)
+
+[10/02/2024 10:47] .7thdragon
+At least for futures (both directions), once the stoploss is moved it transforms in trailing
+if something is wrong with the bot and if u have more trades opened you will remain stuck towards liquidation (force exit) so a correct fix would be like this as first hard condition:
+`        if trade.calc_profit_ratio(rate) < -abs(self.stoploss):
+            trade.exit_reason = f"stoploss_{self.stoploss * 100:.2f}%"
+            if self.dp.runmode.value in ('live', 'dry_run'):
+                logger.info(f"Hard stop {trade.pair}. Profit is below {self.stoploss}")
+                #self.dp.send_msg(f'Hard stop {trade.pair}. Profit is below {self.stoploss}')
+            return True`
+Let me know your opinions of course 🙂
+
+
+[10/02/2024 10:55] branly76
+Let us test it.
+
+
+[10/02/2024 17:28] .7thdragon
+guys, i tried everything and didnt succed to replace the trailing\_stop reason, with anything, with any message, and did not investigated ft code, do u have idea how should be done correctly? 🙏
+using in custom stoploss
+`        trade.exit_reason = f"stoploss_{self.stoploss*100:.2f}%"
+        return self.stoploss`
+does not work, it is still trailing_stop_loss reason :/
+
+
+[10/02/2024 18:51] ch1ck3n_t4c0s
+Put it in custom exit.
+
+
+[10/02/2024 18:51] ch1ck3n_t4c0s
+If you want a verbose reason
+
+
+[10/02/2024 18:51] .7thdragon
+Another consideration that shows that original code is not realistic even for spot:
+https://www.freqtrade.io/en/stable/strategy-callbacks/#custom-stoploss
+`The stoploss price can only ever move upwards - if the stoploss value returned from custom_stoploss would result in a lower stoploss price than was previously set, it will be ignored.`
+So u cannot deny stoploss itself, neither trailing or use stoplossguard, ever
+
+
+[10/02/2024 18:52] .7thdragon
+Does not work either in custom exit 🙂 i use 2024.7.1, it might be a bug,  maybe in some circumstances
+
+
+[10/02/2024 18:52] ch1ck3n_t4c0s
+Should.
+
+
+[10/02/2024 18:52] ch1ck3n_t4c0s
+Just...
+
+Return 'str'
+
+
+[10/02/2024 18:53] ch1ck3n_t4c0s
+Returns as true
+
+
+[10/02/2024 19:28] .7thdragon
+But what really do not understand is why trade do not exit if Denied and the 
+"stoploss_on_exchange": true,
+🤪 
+the only explanation that the following trailing stops (except the initial stoploss that was canceled after next trailing were set btw) are NOT stoploss set on exchange and therefore very dangerous
+
+so for live testing on bybit futures, after the first stoploss (set on exchange) and first upper or lower trailing custom stoploss is set, first stoploss is canceled and disapearing on exchange and remain on ft only. not tested if it happens the same with the ft auto trailing
+
+
+[10/02/2024 21:32] ximontan
+Found interesting thing, if use shorts and set **dataframe.loc[full_send8, 'enter_short'] = 1**, we have trailing_stop_loss
+If set to 0 then it no trailing_stop_loss.
+Seems we try open short when we in long already...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1291150865205563432/image.png?ex=69f321b2&is=69f1d032&hm=f0cd0206c41e280c379d568f68c2f2369225998bd94322fd0c72b8d4667b6e37&
+https://cdn.discordapp.com/attachments/1288147662289506388/1291150865675194480/image.png?ex=69f321b2&is=69f1d032&hm=92b27d17d4dec66c1fe7337d6fa2231017b36367acf30f1c2cacea8fa3b63cee&
+
+{Reactions}
+🔥
+
+[10/02/2024 21:44] .7thdragon
+aaaa so u instruct not to enter short by using dataframe.loc[full_send8, 'enter_short'] = 0 
+anyway does not matter direction, is the same issue having only trailing reason
+
+
+[10/02/2024 21:46] ximontan
+but I have no trailing at all, and if comment enter to long in populate_entry_trend, trailing_stop_loss stop still exists...
+it somehow related to short, how I'm not unrested
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1291154345219461133/image.png?ex=69f324f0&is=69f1d370&hm=6d07c491263ff5ab13d53595a216a1da17587d4326f8ba47c57fca3a8e19563d&
+
+
+[10/02/2024 21:46] .7thdragon
+No, u have ! Read the docs 🙂
+After first movement of stoploss it transforms in trailing
+
+{Reactions}
+👍
+
+[10/02/2024 21:47] ximontan
+trailing_stop = False, this is main condition for trailing stop, what else we have?
+
+
+[10/02/2024 21:47] ximontan
+aaa, I get it
+
+
+[10/02/2024 21:49] .7thdragon
+i get a headache of FT stupid logic(s) which screws everything, i might  need a break 🙂
+and bugs of course, they built a lambo on a square wheels
+
+
+[10/02/2024 21:51] ximontan
+super ), this tell us about your ideas after rest!
+
+
+[10/03/2024 07:28] maxgorbachevskiy
+I tried to hyperopt haFbmVVRPlev with this snippet, but I get errors in line 
+`adjust_rate = self.spread_protection if direction_value == 1 else (1 - abs(1-self.spread_protection))`
+
+My log:
+> `2024-10-03 07:21:27,513 - freqtrade.strategy.strategy_wrapper - ERROR - Unexpected error 'haFbmVVRPlev' object has no attribute 'spread_protection' calling <bound method haFbmVVRPlev.custom_stoploss of
+> <haFbmVVRPlev.haFbmVVRPlev object at 0x7fab5a1ae6c0>>
+> Traceback (most recent call last):
+>   File "/freqtrade/freqtrade/strategy/strategy_wrapper.py", line 28, in wrapper
+>     return f(*args, **kwargs)
+>            ^^^^^^^^^^^^^^^^^^
+>   File "/freqtrade/user_data/strategies/haFbmVVRPlev_2giovanni_5m_customsl2/haFbmVVRPlev.py", line 276, in custom_stoploss
+>     adjust_rate = self.spread_protection if direction_value == 1 else (1 - abs(1-self.spread_protection))
+>                   ^^^^^^^^^^^^^^^^^^^^^^
+> AttributeError: 'haFbmVVRPlev' object has no attribute 'spread_protection'`
+
+
+[10/03/2024 07:33] ximontan
+try add this:     spread_protection =0.1
+or some decimal number
+
+{Reactions}
+👍
+
+[10/03/2024 07:53] maxgorbachevskiy
+Thanks mate
+
+
+[10/03/2024 08:41] .7thdragon
+hey sorry i forgot to mention, is just a small protection, for example when is volatility or other causes for not filling positions (timeouts etc). can be defined just as 1.00 (real no with 2 important dec) or to have a small value 1.01 or you can remove it completly
+
+
+[10/04/2024 08:33] .7thdragon
+hey guys i am not sure if the envelope snippet working fully correct (i will post it later a new one, meanwhile default means is also good) but still for leverage (futures) there is a major flaw as the stoploss is not correctly assigned in first place, so my approach would be this way as a first decision in custom stoploss:
+`        if after_fill:
+            #trade.exit_reason = f"stoploss_DEF_{self.stoploss:.3f}%" # exit_reason is not working anyway anywhere
+            return stoploss_from_open(-abs(self.stoploss), current_profit, is_short=trade.is_short, leverage=trade.leverage)`
+also if there is leverage approach for volatility, there should be used trade.leverage for opened position adjustments instead of self.stoploss
+
+{Reactions}
+👍 (2)
+
+[10/06/2024 10:35] .7thdragon
+Started a thread.
+
+
+[10/08/2024 10:43] maxgorbachevskiy
+Guys, desperately asking for your help with debug of my setup.
+My hyperopts of haFbmVVRPlev are always zero or even negative (down to -50%). 
+I post here my command, config and log. Maybe some can look into it? I feel completely dumb and stuck.
+
+I tried all sort of things: change config params, pairs, timeframes, hyperopt function. Nothing works.
+
+My workflow: before hyperopt I delete hyperopt results and JSON with params, delete and re-create Docker hyperopt container. No changes in strategy PY files. 
+
+> `freqtrade hyperopt -c user_data/strategies/hyperopt/haFbmVVRPlev.config.json --timerange 20240920-20241006 --strategy-path user_data/strategies/hyperopt/ -s haFbmVVRPlev --hyperopt-loss SharpeHyperOptLossDaily --spaces buy sell stoploss --epochs 5000`
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1293161842381819985/message.txt?ex=69f33251&is=69f1e0d1&hm=25e9554d8acf9678a6213c07a1abeded9a397864559feeb165f725b2510c75fb&
+https://cdn.discordapp.com/attachments/1288147662289506388/1293161842784337971/haFbmVVRPlev.config.json?ex=69f33251&is=69f1e0d1&hm=e8588e0d40b59ce386b3371344954acf5534c7cab15b7e54a36f591938da7548&
+
+
+[10/08/2024 10:54] branly76
+Your hyper-opts are not all negative
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1293164570898071552/image.png?ex=69f334db&is=69f1e35b&hm=84ac23da3f97b8aea8f76eac944dc254403c377d5860ebe070ccb351363adaf0&
+
+
+[10/08/2024 10:56] maxgorbachevskiy
+This is the best I can achieve, mostly they are like this.  In any case, my point is that I always have very bad results compared to others, doing a hyperopt with the same parameters. There's something wrong that I miss..
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1293165000893927455/Screenshot_2024-10-07_at_22.13.09.png?ex=69f33542&is=69f1e3c2&hm=fa40e6a08ed1d0772a177381976fba60c088d75eaa99a23d558e0bbdc89945c1&
+
+
+[10/08/2024 10:59] .7thdragon
+Hey Max, i think you used my version which is not yet finished, still working on exits
+
+
+[10/08/2024 11:01] maxgorbachevskiy
+It is about other versions as well (not yours)...  
+But as for your version, Alex and you have positive hyperopts. Me - negative. I am crazy..
+
+
+[10/08/2024 11:01] serialkiller15
+hmmmm
+
+
+[10/08/2024 11:03] .7thdragon
+Ok, still for futures one, is not only on hyperopt but also on dry 🙂 when the market sinks or up it kills your gains
+
+
+[10/08/2024 11:04] ch1ck3n_t4c0s
+Anyone try 15m tf?
+
+
+[10/08/2024 11:05] .7thdragon
+myself not, but it will be the same at the bigger scale, and longer time
+
+
+[10/08/2024 11:10] branly76
+I took this table from your logfile, you posted just above.
+
+
+[10/08/2024 11:16] maxgorbachevskiy
+Indeed. But when I have 0%, others have like 20%. Which is strange
+
+
+[10/08/2024 19:11] bigbroseur
+@Ch1cK3N_t4c0s 
+15m TF, MOP#4, TR#31d  %W83 %P57
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1293289737574154282/image.png?ex=69f300ad&is=69f1af2d&hm=0fefa3ff0efa0f82c273c76b07451c497dea749a16bb021a78cc5193f1323d53&
+
+
+[10/08/2024 19:12] ch1ck3n_t4c0s
+Hrmm try reducing the window values to 1/3 of the 5m values
+
+
+[10/08/2024 19:15] bigbroseur
+@Ch1cK3N_t4c0s 
+hbfm gave me good result hyper TF30m configfile start but dry with TF15m rather than 30
+
+
+[10/08/2024 19:18] bigbroseur
+@Ch1cK3N_t4c0s 
+TF#1h backtesting, %W100% MOT#4, %P51, #TRD4
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1293291383498608720/image.png?ex=69f30236&is=69f1b0b6&hm=9ed869ab569efc663cb34483d04262792cb7cebee05ddf2f1ffa874d7b82ca5a&
+
+
+[10/08/2024 19:51] ch1ck3n_t4c0s
+So it may be possible 5m is not optimal for broad market conditions
+
+
+[10/08/2024 19:58] bigbroseur
+Yep, not easy to adapt TF to market condition
+
+
+[10/08/2024 20:05] bigbroseur
+@Ch1cK3N_t4c0s done bakctest on Sept, with TF#1h and TF30m of haFbmVVRPlev and gave me also good results even with hyper from august...
+1. TF#30m = %W#100, %P#54 
+2. TF#1h = %W#100, %P#59
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1293303322488471663/image.png?ex=69f30d54&is=69f1bbd4&hm=b2c6cfbaa10252b0fa554e7f8360d71e2d1c7e8f4f2d8ba82b11527c01ac6007&
+https://cdn.discordapp.com/attachments/1288147662289506388/1293303322798854185/image.png?ex=69f30d54&is=69f1bbd4&hm=dca20c19d02710947a379d0e05f64b2251c19466c406c57c41942016dfd9bce4&
+
+
+[10/08/2024 20:12] ch1ck3n_t4c0s
+So I would try hyper opting but adjusting the window value to corresponde to the window on 5m but at the appropriate time frame and hyper opt it for the time frame.
+
+
+[10/08/2024 20:14] ch1ck3n_t4c0s
+So on 5m 250 - 500, 15m would be 80-200 ish... and 20- 50 for 1h
+
+
+[10/08/2024 20:14] ch1ck3n_t4c0s
+Everything else will adjust
+
+
+[10/08/2024 20:14] ch1ck3n_t4c0s
+Tsl etc.
+
+
+[10/08/2024 20:16] bigbroseur
+D U want mOk, I can do it if U want
+
+
+[10/08/2024 20:16] ch1ck3n_t4c0s
+Mok?
+
+
+[10/08/2024 20:18] bigbroseur
+Mok means?
+
+
+[10/08/2024 20:25] bigbroseur
+Starting with 1h
+   ### Custom Functions
+    #window_size = IntParameter(250, 500, default=266, space='buy', optimize=True) # TF#5m
+    #window_size = IntParameter(80, 200, default=100, space='buy', optimize=True) # TF#15m
+    #window_size = IntParameter(40, 100, default=50, space='buy', optimize=True) # TF#30m
+    window_size = IntParameter(20, 50, default=30, space='buy', optimize=True) # TF#1h
+
+
+[10/08/2024 20:31] bigbroseur
+freqtrade hyperopt --hyperopt-loss OnlyProfitHyperOptLoss --spaces buy sell  trades --strategy haFbmVVRPlev  --config user_data/config_backtesting.json  -e 200 -p `cat pairs34`  --timerange  20240801-20240901   -j 5  --timeframe-detail 5m --timeframe 1h
+MOT#4, TRD#3, %W#100, %P#58, AVGD#17d
+freqtrade backtesting --strategy haFbmVVRPlev  --config user_data/config_backtesting.json -p `cat pairs34`  --timerange  20240901-20241001   --timeframe-detail 5m --timeframe 1h
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1293309822875336794/image.png?ex=69f31362&is=69f1c1e2&hm=063ef3fe4013e1957495e71fdbc2d4fecc2beddea21f1764ca95497f748c38b8&
+
+
+[10/08/2024 20:32] bigbroseur
+Backtesting next month
+MOT#3, TRD#3, %W#100, %P#61, AVGD#25d
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1293310140099067935/image.png?ex=69f313ad&is=69f1c22d&hm=d71531ce2b1fa23afa120985cfb1c15489482c0ce905a0280e76ce501c7135fb&
+
+
+[10/08/2024 20:44] bigbroseur
+Now 30m
+    ### Custom Functions
+    #window_size = IntParameter(250, 500, default=266, space='buy', optimize=True) # TF#5m
+    #window_size = IntParameter(80, 200, default=100, space='buy', optimize=True) # TF#15m
+    window_size = IntParameter(40, 100, default=50, space='buy', optimize=True) # TF#30m
+    #window_size = IntParameter(20, 50, default=30, space='buy', optimize=True) # TF#1h
+freqtrade hyperopt --hyperopt-loss OnlyProfitHyperOptLoss --spaces buy sell  trades --strategy haFbmVVRPlev  --config user_data/config_backtesting.json  -e 200 -p `cat pairs34`  --timerange  20240801-20240901   -j 5  --timeframe-detail 5m --timeframe 30m
+MOT#3, TRD#6, %W#83, %P#57, AVGD#11d
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1293313175592112219/image.png?ex=69f31681&is=69f1c501&hm=db2a666ea36597472d385a44e9e15942759a6a4c7f7a48b8bf511043fb943f96&
+
+
+[10/08/2024 20:46] bigbroseur
+Backtesting next month
+MOT#4, TRD#5, %W#100, %P#54, AVGD#20d
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1293313594011815986/image.png?ex=69f316e5&is=69f1c565&hm=bd0f5e5319269743fe4bcad2c2994e6636a68974b629980fd1d1ae9f0cb8d32e&
+
+
+[10/08/2024 21:06] bigbroseur
+Let's try TF#15m
+### Custom Functions
+    #window_size = IntParameter(250, 500, default=266, space='buy', optimize=True) # TF#5m
+    window_size = IntParameter(80, 200, default=100, space='buy', optimize=True) # TF#15m
+    #window_size = IntParameter(40, 100, default=50, space='buy', optimize=True) # TF#30m
+    #window_size = IntParameter(20, 50, default=30, space='buy', optimize=True) # TF#1h
+freqtrade hyperopt --hyperopt-loss OnlyProfitHyperOptLoss --spaces buy sell  trades --strategy haFbmVVRPlev  --config user_data/config_backtesting.json  -e 200 -p `cat pairs34`  --timerange  20240801-20240901   -j 5  --timeframe-detail 5m --timeframe 15m
+MOT#4, TRD#19, %W#73, %P#37 AVGD#5d
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1293318693308338288/image.png?ex=69f31ba5&is=69f1ca25&hm=fd7b196504780f4cfea789926894dbe704dafcc91c304765cf458f8d47720c38&
+
+{Reactions}
+👍
+
+[10/08/2024 21:08] bigbroseur
+TF#15m Backtesting next month
+MOT#5, TRD#23, %W#78, %P#38, AVGD#6d
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1293319134528012369/image.png?ex=69f31c0e&is=69f1ca8e&hm=385d06138dbc4d38fcb622db54336cb109a22d677dd01bb3ef29a6e6e2b6c0af&
+
+
+[10/23/2024 13:28] hirotakah7
+haFbmVVRPlev anyone have issue with stoploss ?
+
+
+[10/23/2024 14:50] hirotakah7
+Stoploss is not working anyone else have this issue ?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1298659949248778300/image.png?ex=69f36c53&is=69f21ad3&hm=dc2563fa52fe1dbc5db75eba019b48b56b4091bc5b6b26953fbba04c1b174ee2&
+
+
+[10/23/2024 14:51] hirotakah7
+2024-10-23 14:49:39 INFO    freqtrade.freqtradebot - Exit for TAO/USDT:USDT detected. Reason: trailing_stop_loss
+2024-10-23 14:49:40 INFO    freqtrade.wallets - Wallets synced.
+2024-10-23 14:49:40 INFO    haFbmVVRPlev_Sera20241008_mod - TAO/USDT:USDT trailing stop price is below 0
+2024-10-23 14:49:40 INFO    freqtrade.freqtradebot - User denied exit for TAO/USDT:USDT.
+2024-10-23 14:49:44 INFO    freqtrade.freqtradebot - Exit for TAO/USDT:USDT detected. Reason: trailing_stop_loss
+2024-10-23 14:49:45 INFO    freqtrade.wallets - Wallets synced.
+2024-10-23 14:49:45 INFO    haFbmVVRPlev_Sera20241008_mod - TAO/USDT:USDT trailing stop price is below 0
+2024-10-23 14:49:45 INFO    freqtrade.freqtradebot - User denied exit for TAO/USDT:USDT.
+2024-10-23 14:49:49 INFO    freqtrade.freqtradebot - Exit for TAO/USDT:USDT detected. Reason: trailing_stop_loss
+2024-10-23 14:49:50 INFO    freqtrade.wallets - Wallets synced.
+
+
+[10/23/2024 15:44] ximontan
+hm, in ST same problem...
+seems somewhere we already disscuss this problem
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1298673334774665268/image.png?ex=69f378cb&is=69f2274b&hm=925a044fe5041a8128860b5ee3c44744be74ea199c7bbf91bffc094dfd832145&
+
+
+[10/23/2024 16:00] maxgorbachevskiy
+Same! I thought it is only me. Did I miss a solution for that?
+
+
+[10/23/2024 16:10] .7thdragon
+it was discussed already, and i mentioned the FT doc somewhere, changing ST become trailing. and trailing is denied in strat. so is a not a good approach here. backtest/hyper is fouled. if exit is allowed, u ll not get good results
+
+
+[10/23/2024 16:17] ximontan
+yes you are right
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1298681716109475923/image.png?ex=69f38099&is=69f22f19&hm=2d20f63bfbe79450bad7f0fe8e7941ee5d6a8e132906abe97f7d29469b46b860&
+
+
+[10/23/2024 16:55] serialkiller15
+yes i saw it on dryrun
+
+
+[10/23/2024 20:09] hirotakah7
+any solution the strategy is good
+
+
+[10/23/2024 20:32] serialkiller15
+No not now but I am on it...
+
+{Reactions}
+👍
+
+[10/23/2024 20:45] hirotakah7
+you are the boss
+
+
+[10/23/2024 20:45] serialkiller15
+No we are a community no boss here hehe
+
+
+[10/23/2024 21:14] ximontan
+I comment block of code in confirm_trade_exit, but not test it, just left it in dry,
+it immediately sell loos orders
+I'll back test it letter
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1298756474641584128/image.png?ex=69f31d79&is=69f1cbf9&hm=0168f51ee0e3cc99e3885a2d4073d2d10ddd974297b8c92ba8aa7e93335d53e6&
+https://cdn.discordapp.com/attachments/1288147662289506388/1298756474998231061/image.png?ex=69f31d79&is=69f1cbf9&hm=5f054e60cadf0f67805fc2b31837518663504c120860524c03db977263ce9b93&
+
+
+[10/23/2024 21:15] maxgorbachevskiy
+booooooooom
+
+{Reactions}
+😀
+
+[10/23/2024 21:15] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1298756645194694718/nightmare-on-elm-street-movies-in-order-index-1632944846.png?ex=69f31da1&is=69f1cc21&hm=4f81738aeefc7f1aa24fbfcb521ed7be077af676e2a74b9ab39d7a453cfd947b&
+
+
+[10/23/2024 21:17] maxgorbachevskiy
+If not that, haFbmVVRLpev is really nice. Got almost 25% profit in 10 days on dryrun. Zero losing days! We need a working solution
+
+
+[10/23/2024 21:20] ximontan
+you mean this version haFbmVVRPlev?
+I skip it for dry
+can you show you result?
+
+
+[10/23/2024 21:30] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1298760485386194944/image.png?ex=69f32135&is=69f1cfb5&hm=65d4c700b79330065a144c89d8ab60ed39279d1a375d1a66b76b0355860181f8&
+
+{Reactions}
+👍
+
+[10/23/2024 21:31] maxgorbachevskiy
+in general, similar to yours. Just, all the stoplosses are not as big as yours (stake settings matter, i have 10 per trade)
+
+
+[10/24/2024 20:26] ximontan
+Do you have same bad result on hyperopt like mine?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1299106683334955079/image.png?ex=69f31221&is=69f1c0a1&hm=c7c59f4d80f648b938dcd5186e97254390135bf5a7107dc681dc2b1eed065071&
+
+
+[10/24/2024 20:32] maxgorbachevskiy
+Basically yes. My hyperopts are always around 0% (so far I could not undestand the reason - maybe my specific sert of parameters.
+
+
+[10/24/2024 20:34] maxgorbachevskiy
+What I see from your results, your losses are much higher than mine. My bot was still with positive net liquidation value (lost only approx 50% of gains). Most probably your stakes are higher and leverage is higher, thus leading to a crash?
+
+
+[10/24/2024 20:36] ximontan
+my  "stake_amount": 50, and leverage_value = 10.0
+I'll try decrease it...
+
+
+[10/24/2024 20:38] maxgorbachevskiy
+My wallet/stake/leverage is 1000/10/10. With gained profit 200 USDT, approx 20 trades at 50% loss = -100 USDT loss → net profitable. Risk management... 🙂
+
+{Reactions}
+👍 (2) 😍
+
+[10/24/2024 20:41] serialkiller15
+I also have 10 stake amount but for me the stoploss is a problem did not have time to take a further look on in indicators are doing good was in profit but the not working stoploss killed it
+
+
+[10/24/2024 20:41] maxgorbachevskiy
+Slow and steady wins the race.  That's why I encourage you all: **do your dry-runs as if it is live! Real-life simulation. ** I wouldn't allow myself to risk 50 per stake when my wallet is = 1000 (5% stake from wallet size)) . (If only I had a wallet  of 1.000.000 - then, yes, even 1.000 per stake is fine  🙂 )
+
+
+[10/24/2024 20:44] maxgorbachevskiy
+This strategy will kill ALLLL your gains and your wallet in case of any significant market downshift, no risk management will save you (because there's no stop-loss)). So it is useless to continue using this strategy without further improvements.
+
+{Reactions}
+🤘
+
+[10/24/2024 20:44] serialkiller15
+Absolute
+
+
+[10/25/2024 00:19] alex_737071
+Ok, so here, 1H dry run, 100usd start.... But because of its partial exits, its in profit it seem, but the freqtrade UI says its not, but the FT UI balance says is.... Bug in FT? Does not show the partial exits... I almost want to set it live just so i can see what actual trades get opened and what the real profit/loss is 🙂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1299165305376866364/Screenshot_2024-10-25_at_02.14.18.png?ex=69f348ba&is=69f1f73a&hm=86ffcd61242401236ef0782ae95c1f48c7426c4fead5390c8c56efd527cd6a48&
+
+
+[10/25/2024 01:24] alex_737071
+Thats weird no? FT bug? This is a Live run, so the Open Profit Summary  showing profit while the  BOT showing loss.... The summary is correct, my live trading account is + 1.5USDT....
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1299181827814326332/Screenshot_2024-10-25_at_03.20.37.png?ex=69f3581d&is=69f2069d&hm=2486ef238e30580adaadbc994acbb2db6027441ec3e88dcc50c858cb873b7313&
+
+
+[10/26/2024 11:56] hirotakah7
+I see some trades got stoploss
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1299703248248246292/image.png?ex=69f34379&is=69f1f1f9&hm=9b8abadc48fa362440dc73273b84721944a9225c6c252c6b83968c0f6e387468&
+
+
+[10/26/2024 12:12] serialkiller15
+@Hiroshi T nice what did you changed? was offline so did not read all messeges here
+
+
+[10/26/2024 12:12] hirotakah7
+I didnt changed anything
+
+
+[10/26/2024 12:13] hirotakah7
+its on dry run and noticed few with stoploss
+
+
+[10/26/2024 12:14] serialkiller15
+ach ok i see perfect thanks!
+
+
+[10/26/2024 12:17] hirotakah7
+I am using haFbmVVRPlev_Sera20241008_mod
+
+
+[10/26/2024 12:18] hirotakah7
+without any hyperopts
+
+
+[10/26/2024 12:19] serialkiller15
+thanks mate!
+
+
+[10/29/2024 10:41] huangyafei_90755
+@Hiroshi T Hi, where can I find this version haFbmVVRPlev_Sera20241008_mod
+
+
+[10/29/2024 11:02] hirotakah7
+Its shared somewhere in group
+
+
+[10/29/2024 11:05] hirotakah7
+check #member-features-strategy if you will find it their
+
+
+[11/05/2024 01:16] huangyafei_90755
+Can someone change him to long and short the same amount
+
+
+[05/19/2025 15:41] serialkiller15
+old but gold.....
+
+
+[05/19/2025 15:41] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1374049385708785794/image.png?ex=69f37836&is=69f226b6&hm=b4559794dfe40b8708b9567b8c782dac5c3703e0dfae974d3187b3237021eb53&
+
+
+[10/06/2025 15:06] niutie8977
+why profit1 will cause loss
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1288147662289506388/1424774755185328160/image.png?ex=69f36fe4&is=69f21e64&hm=e26d428cf8aec0d37020ee66852371cf861452bdc03cd0759181997d8ba5be3d&
+
+{Reactions}
+♥️ 🔥
+
+[03/18/2026 14:34] .7thdragon
+Started a thread.
+
+{Reactions}
+👍
+
+==============================================================
+Exported 300 message(s)
+==============================================================

@@ -1,0 +1,836 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: FREQAI_SPOT / 🚀thegreatdivergencespot
+==============================================================
+
+[10/24/2024 15:07] serialkiller15 (pinned)
+Hey @everyone! 🚀
+
+Here is another Strategy i got from @AmarT  – TheGreatDivergenceSpot! 🎯 This strategy is packed with technical indicators and divergences, offering powerful tools for spotting key trends and potential market moves. Here’s a quick overview of what this strategy brings to the table:
+
+🔍 Key Features:
+
+    Timeframe: 15m ⏰
+    Indicators: RSI, MACD, Stoch, UO, AO, CCI, CMF, OBV, MFI, ADX 📊
+    Divergences: Detects both bullish and bearish divergences across multiple indicators 📈🔻
+    Keltner Channels + Bollinger Bands to track price volatility 💹
+    EMA Crosses for signal confirmation 🚦
+    Custom Entry & Exit Signals tailored for high accuracy! 🎯
+
+🚨 Risk Management:
+
+    Stoploss: Custom stoploss settings 🛑
+    Trailing Stop: Enabled for maximizing profits while minimizing risks 🏹
+
+💡 How it works: The strategy scans for divergence patterns on popular indicators, using advanced checks like Keltner Band and EMA Crossovers to time entries. Plus, custom stoploss and trailing stop logic helps protect your capital! 📉🔒
+
+This is a powerful tool for those who like spotting trends early and capitalizing on market divergences. 💰✨
+
+Stay tuned for backtesting results and join the discussion in our channel! 🔥💬 Let’s keep growing together!
+I did a modifcation to do Futures on it but its not finished now....
+Hyperopt no buy and sell parameters in there only do roi and trailing !!
+
+THANKS @AmarT 
+
+Happy trading! 💹📈
+
+{Reactions}
+👍 (2) 🔥 (3)
+
+[10/24/2024 15:07] serialkiller15
+I got good results here in dryrun also on live but do your own decissions.... -> i was running on top 50 coins volume
+
+
+[10/24/2024 15:08] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1299026644933152778/TheGreatDivergenceSpot.json?ex=69f37056&is=69f21ed6&hm=a77119e3c3126bb620daf2565712879de2666c60f4409e0b4ead1b9cf2170b73&
+https://cdn.discordapp.com/attachments/1299025797746790520/1299026645339865218/TheGreatDivergenceSpot.py?ex=69f37056&is=69f21ed6&hm=5fc5ccba94c150ed4707415ffdb1c13903825efe6e15396390e8e03ffd3c7e34&
+
+
+[10/24/2024 15:08] serialkiller15
+Pinned a message.
+
+
+[10/24/2024 15:08] serialkiller15
+Pinned a message.
+
+
+[10/24/2024 15:16] hirotakah7
+@Alex Crypto King is it for Spot or Futures >
+
+
+[10/24/2024 15:16] damian_ox9
+Spot
+
+
+[10/24/2024 15:16] damian_ox9
+Already in the name
+
+
+[10/24/2024 15:17] hirotakah7
+ok
+
+
+[10/24/2024 15:17] hirotakah7
+thank you
+
+{Reactions}
+😙
+
+[10/24/2024 15:17] hirotakah7
+gonna test it and share results.
+
+
+[10/24/2024 15:31] serialkiller15
+You are in the spot group so it's for spot 🔥
+
+
+[10/24/2024 15:42] laupapp
+@Alex Crypto King  Do you have a screenshot from your Dryrun ?
+
+
+[10/24/2024 15:43] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1299035662980354160/image.png?ex=69f378bc&is=69f2273c&hm=7097b82c16c9e2f8ea420599bb7756151a455b56e0e4856fbc82967288af0ada&
+
+
+[10/24/2024 15:44] branly76
+Running two weeks now.
+
+
+[10/24/2024 15:45] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1299036010944139377/image.png?ex=69f3790f&is=69f2278f&hm=e3067ed34f78107e18d2505f84c2f7f7598e32b043a1eb6fe7a7545a827b61c9&
+
+
+[10/24/2024 16:10] serialkiller15
+@Laurent D. yes will post them later
+
+
+[10/24/2024 18:32] cheluxe
+This are my results
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1299077977426100245/Captura_desde_2024-10-24_20-29-21.png?ex=69f2f765&is=69f1a5e5&hm=77aeb2ea1634cb68721d1cf587dd83a5627967a62c1fa3c59d7d1f2bd89768ec&
+
+
+[10/24/2024 18:34] damian_ox9
+Hi can you share no tank ai future ?
+
+
+[10/24/2024 18:35] cheluxe
+Is exactly the same file as spot
+
+
+[10/24/2024 18:35] cheluxe
+You have to change the configuration tu futures, isolated
+
+
+[10/24/2024 18:35] damian_ox9
+so in the strategy file
+
+
+[10/24/2024 18:36] damian_ox9
+do you have to change anything ?
+
+
+[10/24/2024 18:40] cheluxe
+Anything
+
+
+[10/24/2024 18:40] cheluxe
+You can change the short parameter, but personally i dont recommend it
+
+
+[10/24/2024 18:41] cheluxe
+Those results are only long
+
+
+[10/24/2024 20:22] ximontan
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1299105673971367936/image.png?ex=69f31130&is=69f1bfb0&hm=1175dd1105572dc87804e5e4765a833b859f8c1581e1c151a75823dd0aa44ed0&
+https://cdn.discordapp.com/attachments/1299025797746790520/1299105674340335718/image.png?ex=69f31130&is=69f1bfb0&hm=ef510178d9bfa4a5fbd7fc5cfaaba702d8c2fb9b99fb65e6a13fd2a3d9f8da2b&
+
+
+[10/25/2024 07:24] serialkiller15
+on dry run here are my results
+
+
+[10/25/2024 07:25] serialkiller15
+BUT PLEASE IGNOR THE OPEN PROFIT because the DOCKER was offline for 2 days.... had a technical problem to fix!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1299272711604011030/image.png?ex=69f30401&is=69f1b281&hm=53833c24de429a0595ce367f8c2c75b65b370523f6ad88919d6c09994238d675&
+https://cdn.discordapp.com/attachments/1299025797746790520/1299272711889092639/image.png?ex=69f30401&is=69f1b281&hm=c0a4dd416641cdc269863dd0ca041052c2ecf7b6ea32d9b515fefa0c02106766&
+
+{Reactions}
+🔥
+
+[10/25/2024 11:54] brewy_024
+Anybody @here noticed huge CPU usage with this strategy?
+
+
+[10/25/2024 11:57] korenhskoh
+Hi Alex, is this trailing stop enable in config  ?
+
+
+[10/25/2024 12:02] ximontan
+yes, same, b/c there are a lot of loops, and I hyper opt it for not long period
+
+
+[10/25/2024 12:05] serialkiller15
+@korenhskoh i got it disabled will thest with hyperopt and roi and trailing...
+
+{Reactions}
+👍
+
+[10/25/2024 12:08] korenhskoh
+How many pairs of spot coins you backtested in this strategy ? Could you share abit ?
+
+
+[10/25/2024 12:08] serialkiller15
+yes of course
+
+
+[10/25/2024 12:09] serialkiller15
+"BTC/USDT:USDT",
+                "ETH/USDT:USDT",
+                "SOL/USDT:USDT",
+                "SUI/USDT:USDT",
+                "1000PEPE/USDT:USDT",
+                "NEIROETH/USDT:USDT",
+                "WIF/USDT:USDT",
+                "POPCAT/USDT:USDT",
+                "ENA/USDT:USDT",
+                "SEI/USDT:USDT",
+                "1000NEIROCTO/USDT:USDT",
+                "TIA/USDT:USDT",
+                "WLD/USDT:USDT",
+                "FTM/USDT:USDT",
+                "XRP/USDT:USDT",
+                "1000000BABYDOGE/USDT:USDT",
+                "DOGS/USDT:USDT",
+                "EIGEN/USDT:USDT",
+                "REEF/USDT:USDT",
+                "TAO/USDT:USDT",
+                "APT/USDT:USDT",
+                "ORDI/USDT:USDT",
+                "AVAX/USDT:USDT",
+                "SHIB1000/USDT:USDT",
+                "MOODENG/USDT:USDT",
+                "NEAR/USDT:USDT",
+                "SXP/USDT:USDT",
+                "PEOPLE/USDT:USDT",
+                "MEW/USDT:USDT",
+                "SAGA/USDT:USDT",
+                "HMSTR/USDT:USDT",
+                "SILLY/USDT:USDT",
+                "UNI/USDT:USDT",
+                "ARKM/USDT:USDT",
+                "CATI/USDT:USDT",
+                "DOG/USDT:USDT",
+                "OP/USDT:USDT",
+                "1000BONK/USDT:USDT",
+                "MYRO/USDT:USDT",
+                "ARK/USDT:USDT",
+                "BNB/USDT:USDT",
+                "LINK/USDT:USDT",
+                "NOT/USDT:USDT",
+                "1000TURBO/USDT:USDT",
+                "INJ/USDT:USDT",
+                "GALA/USDT:USDT",
+                "CELO/USDT:USDT",
+                "OG/USDT:USDT",
+                "1000000MOG/USDT:USDT"
+
+
+[10/25/2024 12:12] korenhskoh
+Thanks !
+
+
+[10/25/2024 12:12] serialkiller15
+you are welcome, will also start a dry run with trailing enabled and top volume coins
+
+
+[10/25/2024 12:15] korenhskoh
+Do you recommend to add on the argument of --timeframe-detail 1m or 5m for the hyport ?
+
+
+[10/25/2024 13:08] brewy_024
+is there any way to optimize that since it is using more cpu than 4 other bots combined?
+
+
+[10/25/2024 13:18] ximontan
+theoretically yes) but it looks complicated, good way use np lambda instead loops...
+
+
+[11/05/2024 21:18] ximontan
+SL -0.22 and pivots = pivot_points(informative, 17), in other like original
+what result do you have?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1303468543995678770/image.png?ex=69f31e6e&is=69f1ccee&hm=9f1160c146851e24d53c6e47d5ee734570869dc79f028274af313210dfe43646&
+https://cdn.discordapp.com/attachments/1299025797746790520/1303468544327155732/image.png?ex=69f31e6e&is=69f1ccee&hm=f28691ffcf4d4a3f6385ed94f6854b62d33a57c239cfdb5dd1370b8cbf4b3670&
+
+
+[11/05/2024 21:43] ximontan
+and I found one strange thing that divergence can changed like in img, it enter to long without green triangle...
+seems something wrong in strategy
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1303474712340598844/20241105-2140-43.7733696.mp4?ex=69f3242c&is=69f1d2ac&hm=d86c89e6c8db3cd8b35c253ca0d0caa25177d00459fa9473f1f688c5aff5d96b&
+https://cdn.discordapp.com/attachments/1299025797746790520/1303474712910893166/image.png?ex=69f3242c&is=69f1d2ac&hm=46b8a821dfd33a4c5ffaac622a53b3488375929f1d1908cf4c5e32c1a927737f&
+
+
+[11/06/2024 05:46] serialkiller15
+Yes there is some stuff to fix on it
+
+
+[11/10/2024 20:49] serialkiller15
+here are my results after running the spot version here on live after dryruns
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1305273176820940830/image.png?ex=69f317a0&is=69f1c620&hm=6029453bc2668a416691cab44c3fa13f622471a0c6abd22e993aff49f8e50549&
+
+{Reactions}
+🤘
+
+[11/10/2024 20:50] ximontan
+what is timeframe?
+
+
+[11/10/2024 21:08] serialkiller15
+15min will share the config then
+
+
+[11/10/2024 21:14] serialkiller15
+@everyone  here is the TGDS Strategy postet and the hyper.json with that i made the profits on dryrun on screenshot
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1305279555702882335/TheGreatDivergenceSpot.json?ex=69f31d91&is=69f1cc11&hm=aa589b9c82fba1f40036f0e7e03277a42f23d6cf5ec52b1cf3c6403fec18717a&
+https://cdn.discordapp.com/attachments/1299025797746790520/1305279556382490665/TheGreatDivergenceSpot.py?ex=69f31d91&is=69f1cc11&hm=ef205f52056faac187135d0b9db838e08ad40f5b2305a70252cabe643282f1bc&
+
+{Reactions}
+❤️ (2) 👍
+
+[11/10/2024 21:15] cheluxe
+Thanks Alex!
+
+
+[11/10/2024 21:17] serialkiller15
+and i used static parilist on it 
+        "pair_whitelist": [
+                "BTC/USDT:USDT",
+                "ETH/USDT:USDT",
+                "SOL/USDT:USDT",
+                "SUI/USDT:USDT",
+                "1000PEPE/USDT:USDT",
+                "NEIROETH/USDT:USDT",
+                "WIF/USDT:USDT",
+                "POPCAT/USDT:USDT",
+                "ENA/USDT:USDT",
+                "SEI/USDT:USDT",
+                "1000NEIROCTO/USDT:USDT",
+                "TIA/USDT:USDT",
+                "WLD/USDT:USDT",
+                "FTM/USDT:USDT",
+                "XRP/USDT:USDT",
+                "1000000BABYDOGE/USDT:USDT",
+                "DOGS/USDT:USDT",
+                "EIGEN/USDT:USDT",
+                "REEF/USDT:USDT",
+                "TAO/USDT:USDT",
+                "APT/USDT:USDT",
+                "ORDI/USDT:USDT",
+                "AVAX/USDT:USDT",
+                "SHIB1000/USDT:USDT",
+                "MOODENG/USDT:USDT",
+                "NEAR/USDT:USDT",
+                "SXP/USDT:USDT",
+                "PEOPLE/USDT:USDT",
+                "MEW/USDT:USDT",
+                "SAGA/USDT:USDT",
+                "HMSTR/USDT:USDT",
+                "SILLY/USDT:USDT",
+                "UNI/USDT:USDT",
+                "ARKM/USDT:USDT",
+                "CATI/USDT:USDT",
+                "DOG/USDT:USDT",
+                "OP/USDT:USDT",
+                "1000BONK/USDT:USDT",
+                "MYRO/USDT:USDT",
+                "ARK/USDT:USDT",
+                "BNB/USDT:USDT",
+                "LINK/USDT:USDT",
+                "NOT/USDT:USDT",
+                "1000TURBO/USDT:USDT",
+                "INJ/USDT:USDT",
+                "GALA/USDT:USDT",
+                "CELO/USDT:USDT",
+                "OG/USDT:USDT",
+                "1000000MOG/USDT:USDT"
+
+{Reactions}
+👍 (2)
+
+[11/10/2024 21:40] cheluxe
+Aren't these pairs for futures?
+
+
+[11/10/2024 21:40] serialkiller15
+Yes I use it on the futures account of bybit
+
+
+[11/10/2024 21:41] cheluxe
+Oh so you used the spot strategy version with futures
+
+
+[11/10/2024 21:41] serialkiller15
+Yes Sry did not explain it enough
+
+
+[11/10/2024 21:41] cheluxe
+Oh great! 👍
+
+
+[11/10/2024 21:42] serialkiller15
+Don't use any leverage on it it will kill mostly your profits better stay secure
+
+{Reactions}
+👍
+
+[11/10/2024 21:43] serialkiller15
+Small profits but secure my approach
+
+
+[11/10/2024 21:45] cheluxe
+Yep, i think is better
+
+
+[11/10/2024 21:46] serialkiller15
+I did many tests with different strategys I build or modified or tested from others leverage mostly kills them
+
+
+[11/10/2024 21:47] serialkiller15
+Have some other strategys for spot will post tomorrow
+
+
+[11/10/2024 21:49] cheluxe
+That would be nice 😄
+
+
+[11/10/2024 21:50] serialkiller15
+No time for test will publish them and see if maybee some can test them or enhance or fish them
+
+{Reactions}
+👍
+
+[11/10/2024 22:00] cheluxe
+These are my results, although the bot was turned off from November 2nd to 8th. This rise was a destruction for every futures strat i had ..xd
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1305291044736204901/Captura_desde_2024-11-10_22-55-34.png?ex=69f32844&is=69f1d6c4&hm=0f8d9b860d3c416cb3dbced7b4c1eaecdbb079a66fcf42986c27470d323a30f7&
+
+
+[11/10/2024 22:01] serialkiller15
+Nice
+
+
+[11/10/2024 22:03] ximontan
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1305291660862820423/image.png?ex=69f328d7&is=69f1d757&hm=c7a65a9e565062f4b818c45c3fb5558287236b1868aada9dc49a85980cdd302f&
+https://cdn.discordapp.com/attachments/1299025797746790520/1305291661307547739/image.png?ex=69f328d7&is=69f1d757&hm=46ca50a6b2cbbcf1f8f6a7d768e43fd1132734a107cfdd2bdc1271c4be2d4e14&
+
+
+[11/10/2024 22:03] serialkiller15
+Wrong time period for turning it off hehe no joke will see and take more time to check the futures version I did that before but not finished it
+
+
+[11/10/2024 22:03] cheluxe
+yep 🤣 , i know
+
+
+[11/10/2024 22:03] serialkiller15
+@Ximontan sl?
+
+
+[11/10/2024 22:04] ximontan
+"stoploss": -0.22  both
+
+
+[11/10/2024 22:04] serialkiller15
+I did mod mine because of 2 trades killed the profit
+
+
+[11/10/2024 22:04] serialkiller15
+Ok
+
+
+[11/11/2024 07:51] michelyan
+Hey guys
+
+
+[11/11/2024 08:17] serialkiller15
+hey @michel kkkk welcome on board
+
+
+[11/13/2024 16:59] serialkiller15
+@everyone did you see what happend the last hours? altcoins going up and with this strategy i make goooood profits!
+
+{Reactions}
+🔥 (2)
+
+[11/13/2024 17:02] cheluxe
+haha did you?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1306303066026283058/Captura_desde_2024-11-13_18-01-34.png?ex=69f38b08&is=69f23988&hm=cf24c771cec6a50a5e06b71b219af7cf17b4feeaf4deb8a75ed9b677e2391062&
+
+
+[11/13/2024 17:02] serialkiller15
+yep
+
+
+[11/13/2024 17:02] cheluxe
+I lost everything haha
+
+
+[11/13/2024 17:02] serialkiller15
+wait a little bit it will come
+
+
+[11/13/2024 17:02] cheluxe
+Stoploss killed all my profit
+
+
+[11/13/2024 17:02] serialkiller15
+??? why do you have so much losses?
+
+
+[11/13/2024 17:03] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1306303398282395648/image.png?ex=69f38b58&is=69f239d8&hm=4770161f58467bca1002000f83793fe57fac88711498770b95f9044663ead3c2&
+
+
+[11/13/2024 17:03] cheluxe
+i have 3% stoploss and i lost a lot of trades
+
+
+[11/13/2024 17:03] serialkiller15
+i have some trades red yes but there are coming up no stop loss hit
+
+
+[11/13/2024 17:04] serialkiller15
+you use my json file? i posted?
+
+
+[11/13/2024 17:04] cheluxe
+No, i was using the one from 7thDragon but with spot
+
+
+[11/13/2024 17:04] serialkiller15
+ok i see
+
+
+[11/13/2024 17:05] animeshbarai2006
+this one json file you are talking about?
+
+
+[11/13/2024 17:05] serialkiller15
+that wat i posted
+
+{Reactions}
+👍
+
+[11/13/2024 17:05] serialkiller15
+https://discord.com/channels/1238181199206154373/1299025797746790520/1305279556868898877
+
+
+[11/13/2024 17:06] serialkiller15
+this is my json i hyperopted only one time so it was running good, dont need to adjust it
+
+
+[11/13/2024 17:06] serialkiller15
+no changes on running strategys!!
+
+{Reactions}
+👍
+
+[11/13/2024 17:06] .7thdragon
+@Alex Crypto King even is bull market expect some big pullbacks
+so, when the trades are stopped for loosing?
+
+
+[11/13/2024 17:06] animeshbarai2006
+i was using the last json file posted  on the futures channel
+
+
+[11/13/2024 17:07] serialkiller15
+@Animesh Barai use mine mate its my opinion!
+
+
+[11/13/2024 17:07] animeshbarai2006
+thank i am configuring it now with your one
+
+
+[11/13/2024 17:07] serialkiller15
+dont mix stuff i use this stratgy with my json hyperopted only one time on mid oktober and it woorks good without any adjustments!
+
+{Reactions}
+👍
+
+[11/13/2024 17:07] animeshbarai2006
+ok thank you
+
+
+[11/13/2024 17:08] serialkiller15
+its only long spot or features but it works in this situation of market
+
+{Reactions}
+👍
+
+[11/13/2024 17:08] serialkiller15
+market will change yes, so we have to change the strategys, i am working on a mod for shorts only, because features combined dont get the good results -> my opinion!
+
+{Reactions}
+👍
+
+[11/13/2024 17:09] serialkiller15
+and make small profits with trades, dont wait for big profits each trade, this is my opinion after many years!
+
+
+[11/13/2024 17:09] serialkiller15
+better then nothing!
+
+{Reactions}
+👍
+
+[11/13/2024 17:12] cheluxe
+Do you think BTC will reach 100.000?
+
+{Reactions}
+👍
+
+[11/13/2024 17:16] serialkiller15
+hmm i think it will need a correction in the next days, but be aware what will hapend, i hold btc since it was on 55k so now i am good in profit with spot, will sell when its maybee on 92k or then i am not a gambler,
+
+
+[11/13/2024 17:16] serialkiller15
+also altcoins, meme shib, pepe, bonk and so on...
+
+
+[11/13/2024 17:17] cheluxe
+It is already at 93000
+
+
+[11/13/2024 17:17] serialkiller15
+xrp is also mostly stable so as i told be aware if you hold some coins
+
+{Reactions}
+👍
+
+[11/13/2024 17:17] cheluxe
+Is crazy
+
+
+[11/13/2024 17:17] serialkiller15
+aaaaa i ditn see fuck ok so i will wait
+
+
+[11/13/2024 17:17] ford_warra
+Hahaha
+
+{Reactions}
+👍
+
+[11/13/2024 17:19] serialkiller15
+@Fordwarra i dont look all the days to any charts but thanks i missed it hehe
+
+{Reactions}
+👀
+
+[11/13/2024 17:19] ford_warra
+I have expectations that it will rise to 100k, the market is going to push it there and then there will be a certain collapse
+
+
+[11/13/2024 17:20] serialkiller15
+that would be nice mate, but dont expect anythink in your life or in market the trend and the market will change, as it always did! but lets make money thats fine!
+
+
+[11/13/2024 17:21] ford_warra
+Of course, we are all here for the same thing.
+
+
+[11/13/2024 17:27] serialkiller15
+@Fordwarra welcome
+
+
+[11/13/2024 17:29] ford_warra
+Thanks Alex, I've been here for a couple of days learning and seeing about the configurations. looking forward to sharing my proposals soon
+
+
+[11/13/2024 17:32] serialkiller15
+Perfect if you need something let us know
+
+
+[11/13/2024 17:32] ford_warra
+thanks mate
+
+
+[11/13/2024 17:33] serialkiller15
+You arevwelcime
+
+
+[11/13/2024 17:33] serialkiller15
+Welcome
+
+
+[11/13/2024 17:34] serialkiller15
+My thingers are cold
+
+
+[11/13/2024 17:34] ford_warra
+hahaha
+
+
+[11/13/2024 17:34] cheluxe
+xD
+
+
+[11/13/2024 17:34] .7thdragon
+@Alex Crypto King in sshot u have 15 trades, in config u have 7 🙂
+
+
+[11/13/2024 17:34] serialkiller15
+Fingers
+
+
+[11/13/2024 17:34] serialkiller15
+Yes I adapted it yesterday
+
+{Reactions}
+👍
+
+[11/13/2024 17:34] serialkiller15
+Because of the market
+
+
+[11/13/2024 19:30] .7thdragon
+next level: 98k
+
+
+[11/13/2024 19:31] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1306340789173096598/Screenshot_20241113_202034_Binance.jpg?ex=69f3056a&is=69f1b3ea&hm=547ce09d0977e8168368e263265d86bf14113aba1dfb5df0359934584ed59694&
+
+
+[11/13/2024 19:32] serialkiller15
+Ate you sure about it
+
+
+[11/13/2024 19:32] serialkiller15
+I think to much residence here
+
+
+[11/13/2024 19:33] serialkiller15
+The strategies we or I run will get crazy...
+
+
+[11/13/2024 19:45] .7thdragon
+fibo whispered me 😄
+
+
+[11/16/2024 15:25] ximontan
+Fixed!
+on the main loop for every candle get previous pivots and etc...and it become super slow again
+And now it's not profitable at all, but get divergence correctly.
+May by I do something wrong, but I check compare it this TV divergences.
+
+The main problem as I understand when we have divergence from some previous pivot and current candle and while we keep going divergence continue without change direction...
+like this https://discord.com/channels/1238181199206154373/1299025797746790520/1303474713024004118
+hyperopt didn't help too...
+I give up with divergence
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1307366020985520312/TGDF.py?ex=69f3747d&is=69f222fd&hm=b8a9bc5ab9551e019e7fcf903646b3aca8ada4554da2e1872bc88f8085c63b42&
+https://cdn.discordapp.com/attachments/1299025797746790520/1307366021354491974/AVAX_INFO.txt?ex=69f3747d&is=69f222fd&hm=d8aa3941b7539129dbd97f2a4a8d162beef0d222f6377fba324da60dde418c5d&
+https://cdn.discordapp.com/attachments/1299025797746790520/1307366022034096189/freqtrade-plot-AVAX_USDT_USDT-4h.html?ex=69f3747d&is=69f222fd&hm=427405cbef53ec7ab578d2628c5fbadccb03dfcd9c2353fab609d33bd6254811&
+
+{Reactions}
+👏 (2)
+
+[11/16/2024 15:41] serialkiller15
+Thanks for your inputs... Will take a look on it
+
+
+[11/16/2024 15:59] ximontan
+May be need add some extra indicators, now it raw divergence
+
+
+[11/16/2024 16:11] .7thdragon
+did u check if in fact here
+                        current_frame.loc[index-TGDF.index_range.value, "total_bullish_divergences_names"] += indicator_source.lower() + '<br>'
+is upper instead of lower? and for bearish the same
+and i didnt catch total count of divergences, i got 0...
+
+
+[11/16/2024 16:26] ximontan
+total_bullish_divergences_count and total_bullish_divergences_names have no influence to enter just for display info
+0 it's strange, do you have any entries?
+
+
+[11/16/2024 16:27] .7thdragon
+just started checking
+total count, i mean on entry or exit
+nope, backtesting, hyper no trades
+
+
+[11/16/2024 18:31] ximontan
+weird I was attach results...https://discord.com/channels/1238181199206154373/1299025797746790520/1307366022650531901
+
+
+[11/16/2024 18:35] .7thdragon
+pivots output yes, but no trades in bt or hyper (this not ending)
+bearish prev_pivot = 2023-12-29 08:00:00+00:00 | index = 2023-12-31 04:00:00+00:00 | rsi
+
+
+[11/16/2024 18:38] ximontan
+what pair did you test? and timeframe?
+
+
+[11/16/2024 18:39] ximontan
+index  mean entry point and prev_pivot for compare entry point with...
+
+
+[11/16/2024 18:50] .7thdragon
+15m, 6d ago, more pairs...
+
+
+[11/16/2024 19:05] .7thdragon
+after 1h started, all negative
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1299025797746790520/1307421274041221201/image.png?ex=69f2ff32&is=69f1adb2&hm=7ffd2fcb5b3f114e91b00ccb1e2368921ca1e49e0f977cc78cca4f06cb47d4e0&
+
+
+[11/16/2024 20:32] unclehard256
+Am totally a newbie, here now prior experience in python but good in mql5 ,
+
+
+==============================================================
+Exported 145 message(s)
+==============================================================

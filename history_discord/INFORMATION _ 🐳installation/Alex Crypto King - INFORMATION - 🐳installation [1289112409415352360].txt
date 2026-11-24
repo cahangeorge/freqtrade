@@ -1,0 +1,193 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: INFORMATION / 🐳installation
+==============================================================
+
+[09/27/2024 07:45] serialkiller15 (pinned)
+**🚀 Installation Guide for AlexFreqAI Docker Image 🎓**
+
+Follow these steps to install and run the AlexFreqAI Docker image on your machine. Let’s get started! 🎉
+1️⃣ Create a Folder for the Docker Setup 📁
+
+First, make a directory where the Docker setup will be run. You can use the terminal or file explorer to create it.
+2️⃣ Clone the Repository 🛠️
+
+Open your terminal and run the following command to clone the repository into the folder you just created:
+
+sudo git clone https://github.com/AlexCryptoKing/freqailstm.git
+
+3️⃣ Navigate to the Project Directory 📂
+
+After cloning the repo, move into the freqailstm directory:
+
+cd freqailstm
+
+4️⃣ Make the Setup Script Executable 🔑
+
+To allow the setup script to run, you need to give it execution permissions:
+
+sudo chmod +x setup_alexfreqailstm.sh
+
+5️⃣ Run the Setup Script 🖥️
+
+Now, you’re ready to run the setup script. This will install everything you need, including the Docker image for AlexFreqAI:
+
+sudo ./setup_alexfreqailstm.sh
+
+6️⃣ Start the Docker Compose 🚢
+
+Once the setup completes, you can start the Docker containers with the following command:
+
+sudo docker compose up
+
+This will launch AlexFreqAI and get your environment up and running! 🎉🚀
+
+And that’s it! 🎉 You’ve successfully installed the AlexFreqAI Docker image. You’re now ready to dive into crypto trading strategies and AI learning models. Good luck! 💰📈
+
+{Reactions}
+💯
+
+[09/27/2024 10:27] serialkiller15
+Pinned a message.
+
+
+[09/27/2024 10:31] serialkiller15
+WHEN DOCKER INSTALLATION IS FINE YOU SHOULD SEE THIS
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1289112409415352360/1289172528081670154/image.png?ex=69f32f7a&is=69f1ddfa&hm=4a90b90f25f8b877b9ae3634a4dee84b593fade569ec3030a33a8a2054056a4b&
+
+
+[09/27/2024 10:32] serialkiller15
+📥** Next Step: Download Necessary Data **📊
+
+Before starting with strategy optimization and backtesting, we need to download the historical data. Follow these steps to proceed!
+1️⃣ Download Data 📈
+
+Run the following command to download the necessary data for various timeframes (5m, 15m, 30m, 1h, 2h, 4h, 1d):
+
+freqtrade download-data -c user_data/config-torch.json --timerange 20240101-20240917 --timeframe 5m 15m 30m 1h 2h 4h 1d
+
+This command downloads the data needed for your backtesting and hyperopt processes. 📅
+
+2️⃣ Hyperopt 🔧⚙️
+
+After downloading the data, it’s time to run hyperoptimization to find the best strategy settings. We’ll use the SharpeHyperOptLossDaily loss function.
+
+Run this command to optimize the buy and stoploss spaces:
+
+freqtrade hyperopt --hyperopt-loss SharpeHyperOptLossDaily --spaces buy stoploss -c user_data/config-torch.json --strategy AlexStrategyFinalV9Hyper --timerange=20240616-20240830 -e 1000
+
+    🧠 Strategy: AlexStrategyFinalV9Hyper
+    ⏳ Timerange: June 16, 2024 - August 30, 2024
+    📊 Epochs: 1000 (to fine-tune the hyperparameters)
+
+3️⃣ Backtest Your Strategy 🧪
+
+Now that we have optimized the strategy, it’s time to test it using a backtest!
+
+Run the following command to backtest the strategy over a specific date range:
+
+freqtrade backtesting --strategy AlexStrategyFinalV9Hyper --config user_data/config-torch.json --cache none --export=signals --timeframe-detail 15m --timerange 20240901-20240925
+
+    No Cache: We avoid using any cached data to ensure accurate results.
+    Timeframe: 15m for detailed results.
+
+This will give you a report of how your strategy would have performed! 📈🔬
+
+🎉 Congrats! You've now downloaded data, run hyperoptimization, and performed a backtest of your strategy. Keep refining and testing for the best results! 🚀
+
+
+[10/16/2024 16:42] serialkiller15
+📊 V9x Strategy Usage Guide 📊
+
+(V9x - "x" stands for the version number)
+This guide explains how to use the V9x strategies (NOT Optuna)
+
+🗂 Files Overview
+
+Depending on the version, you will have 4 files:
+
+    AlexStrategyFinal9x.py
+    ➡️ Main strategy file with Progressor/FreqAI enabled.
+    👉 To activate FreqAI, set freqai=true in your config file.
+
+    AlexStrategyFinal9x.json
+    ➡️ Strategy Parameters File 
+
+    AlexStrategyFinal9xHyper.py
+    ➡️ Strategy file for Hyperopt and Backtesting, with Progressor and FreqAI disabled.
+    👉 To deactivate FreqAI, set freqai=false in your config file.
+
+    AlexStrategyFinal9xHyper.json
+    ➡️ Hyperopt result file.
+    This file is generated after running Hyperopt on the AlexStrategyFinal9xHyper.py strategy.
+
+🔄 How to Use the Files
+
+    After Hyperopt is complete, copy the AlexStrategyFinal9xHyper.json file:
+    ➡️ AlexStrategyFinal9xHyper.json → AlexStrategyFinal9x.json.
+
+    Update the first line of the AlexStrategyFinal9x.json file to the correct name:
+    ➡️ Change it to AlexStrategyFinal9x.json to match the new file name.
+
+🔧 Configuration Tips
+
+    For FreqAI enabled runs: Set freqai=true in the config.
+    For Hyperopt or Backtesting: Set freqai=false to disable it.
+
+{Reactions}
+👍 (2) 💯
+
+[11/04/2024 06:45] serialkiller15 (pinned)
+**🚀 Installation Guide for NoTankAi  Docker Image 🎓**
+
+Step 1: Download the Freqtrade Bot Files 📂
+Make sure you have the customized Freqtrade files, which include everything you need to get started, like configurations and Docker setup. 📁
+
+Step 2: Build the Docker Image 🚀
+Open your terminal and navigate to the folder where you saved the bot files. Then, run this command to build the Docker image:
+
+docker compose build
+This command will install any necessary dependencies (like the ta package) as part of the build process. 🛠️
+
+Step 3: Start the Bot 🏁
+Once the build is complete, start the bot by running:
+
+docker compose up
+
+
+[11/04/2024 06:47] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1289112409415352360/1302886811709997078/docker-compose.yml?ex=69f2fae6&is=69f1a966&hm=07c648bf2184a33ecdb17948ca1d61bf63838d1bbdb941153d59443d86af1abb&
+https://cdn.discordapp.com/attachments/1289112409415352360/1302886812024438877/Dockerfile.freqai?ex=69f2fae6&is=69f1a966&hm=c441d7805b104123984a828606f0b44ff7277649c3f34aec10a5b5a039db36cf&
+
+
+[11/04/2024 06:47] serialkiller15
+Pinned a message.
+
+
+[02/20/2026 11:55] serialkiller15
+@everyone if someone need it! OPENCLAW INSTALLATION GUIDE!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1289112409415352360/1474373901290307594/message.txt?ex=69f34332&is=69f1f1b2&hm=7a1bd9cccbc7ad6f9258ebf6fd3d221c24fecefc2895b52166a75907eeb9cd2c&
+
+
+[02/20/2026 11:56] serialkiller15
+Offical Link
+https://docs.openclaw.ai/install
+
+{Embed}
+https://docs.openclaw.ai/install
+Install - OpenClaw
+https://images-ext-1.discordapp.net/external/o93fTbIusvSvDB9M50brPMYgkc7zt1xk6rxULutasKI/%3Furl%3D%252F_mintlify%252Fapi%252Fog%253Fdivision%253DInstall%252Boverview%2526title%253DInstall%2526logoLight%253Dhttps%25253A%25252F%25252Fmintcdn.com%25252Fclawdhub%25252F4rYvG-uuZrMK_URE%25252Fassets%25252Fpixel-lobster.svg%25253Ffit%25253Dmax%252526auto%25253Dformat%252526n%25253D4rYvG-uuZrMK_URE%252526q%25253D85%252526s%25253Dda2032e9eac3b5d9bfe7eb96ca6a8a26%2526logoDark%253Dhttps%25253A%25252F%25252Fmintcdn.com%25252Fclawdhub%25252F4rYvG-uuZrMK_URE%25252Fassets%25252Fpixel-lobster.svg%25253Ffit%25253Dmax%252526auto%25253Dformat%252526n%25253D4rYvG-uuZrMK_URE%252526q%25253D85%252526s%25253Dda2032e9eac3b5d9bfe7eb96ca6a8a26%2526primaryColor%253D%252523FF5A36%2526lightColor%253D%252523FF8A6B%2526darkColor%253D%252523FF5A36%2526backgroundLight%253D%252523ffffff%2526backgroundDark%253D%2525230e0c0d%26w%3D1200%26q%3D100/https/clawdhub.mintlify.app/mintlify-assets/_next/image
+
+{Reactions}
+🚀
+
+==============================================================
+Exported 10 message(s)
+==============================================================

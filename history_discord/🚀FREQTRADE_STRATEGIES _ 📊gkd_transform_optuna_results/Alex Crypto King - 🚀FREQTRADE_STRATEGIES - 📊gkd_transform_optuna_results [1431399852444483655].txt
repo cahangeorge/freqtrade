@@ -1,0 +1,3078 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 📊gkd_transform_optuna_results
+==============================================================
+
+[10/24/2025 21:52] snokard.
+Thanks! Will post tomorrow
+
+
+[10/25/2025 07:17] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1431542225480974416/IMG_8635.png?ex=69f30217&is=69f1b097&hm=c6a7c120c41f600b4efabcde8ae180730b002f08f3fcc9b2f5e81f58c649a9e1&
+
+
+[10/25/2025 07:18] 4v1234
+👍
+
+
+[10/25/2025 07:42] viking046433
+What is the stop loss here?
+
+
+[10/25/2025 08:05] serialkiller15
+in the strat we have -0.10
+
+
+[10/25/2025 10:42] snokard.
+1h and 15m
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1431593802703048834/image.png?ex=69f33220&is=69f1e0a0&hm=48062cea5a17f7c157340f9ecb3212d0b143294185329bb19d54f91ef822c6f8&
+https://cdn.discordapp.com/attachments/1431399852444483655/1431593803176742944/image.png?ex=69f33220&is=69f1e0a0&hm=59507e72b0177821a39c657f4f4f711e41f729026a8aaf2267a4f5f4cc599136&
+
+
+[10/25/2025 10:46] themarkx_
+Which version
+
+
+[10/25/2025 10:59] snokard.
+v72 ultimate
+
+
+[10/25/2025 13:00] xf0x0f
+Since I am unable to achieve these results,
+ I am unfortunately finding it difficult to further optimise this.
+
+
+[10/25/2025 17:13] snokard.
+I want to leave it running long time... looks really promising but still might collapse
+
+
+[10/25/2025 20:32] dragongoattigercat
+1h TF. promisable
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1431742249946972170/image.png?ex=69f313a0&is=69f1c220&hm=065d71ccd4338f740c192ce16e73f72ad8ccb1aaccfe1cef8d3852d1a4360426&
+
+
+[10/26/2025 04:56] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1431869197637648384/IMG_8644.png?ex=69f389db&is=69f2385b&hm=036f8e2140da7353d52e5ec63c7c36513560ef8b5baa2258d28c90b91fd90644&
+
+
+[10/26/2025 05:16] vasko123.
+V63C - Excellent. Even though there are 10 strategies running in a single Docker container, and most likely not enough resources, V63C is showing good results.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1431874185088733225/image.png?ex=69f38e80&is=69f23d00&hm=650a2ab68134b42294fd02539f9ec908e769ecb681de0dc2f565722ca990e5c3&
+
+
+[10/26/2025 06:07] xf0x0f
+Whats your rate limit settings?
+
+
+[10/26/2025 06:58] vasko123.
+Minimum internet plan. When running 3 PCs live (7 bots) + 10 bots in Docker (12 cores per PC). Furthermore, there are over 100 crypto pairs with normal market volatility for each strategy. This creates challenges for adequate strategy testing.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1431899894544859147/image.png?ex=69f2fdb2&is=69f1ac32&hm=c39960f654101346712a8ca1e9c42118f29aa18464c93ecf208f1b43493f3531&
+
+
+[10/26/2025 07:05] xf0x0f
+And you monitor rate limit in logs?
+
+
+[10/26/2025 07:07] xf0x0f
+docker ps -q | xargs -n1 -I{} sh -c 'echo "--- {} ---"; docker logs --since="2h" {} 2>&1 | grep -i "rate limit\|too many requests\|limit.*exceed\|temporar.*error"'
+
+
+[10/26/2025 07:19] vasko123.
+I'm far from that 🙂  Docker on Windows
+
+
+[10/26/2025 07:48] xf0x0f
+How you measure „far from that“? Im interested in how you manage this. Im using checkmk to monitor rate limit exceptions
+
+{Reactions}
+👍
+
+[10/26/2025 22:23] xf0x0f
+Restarted today with some leverage tweaking and optuna,… have only time to modify on mobilephone cause im not at home for some days,…
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1432132628504383751/IMG_8645.png?ex=69f32db2&is=69f1dc32&hm=a05df40fe4505a03ef872bac687732e1ee80e0bfe5d22c34d91aadf1a9829df2&
+
+{Reactions}
+🚀 (2)
+
+[10/27/2025 05:00] dragongoattigercat
+1h TF.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1432232358278463650/image.png?ex=69f38a93&is=69f23913&hm=0c0dc923dd4962c8a4a05d76b8ec26cf0d09de71241db146e60629f0ad62cff0&
+
+
+[10/27/2025 15:51] snokard.
+1h tf, still holding... looking good
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1432396385092898959/image.png?ex=69f37a96&is=69f22916&hm=dcdabb39ac85c66e8f715510a02538918ed027a8a341bc60aa1e359bc5d85fb9&
+
+
+[10/27/2025 16:27] vasko123.
+StaticPairList? SL 7%, 50%?
+
+
+[10/27/2025 19:13] viking046433
+Yo can you please share the exact strategy and config with me in private mate? I don't want to confuse people here
+
+
+[10/28/2025 16:40] serialkiller15
+mine was not surviving
+
+
+[10/28/2025 16:40] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1432771001627971716/image.png?ex=69f385fa&is=69f2347a&hm=557f34bf522fef70ba4e46054c89de402ac152bef1c6f91be510b440452fbafb&
+
+
+[10/28/2025 16:40] serialkiller15
+will stop the bot
+
+
+[10/28/2025 16:48] dragongoattigercat
+I am still profitable a little bit
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1432773072309588078/image.png?ex=69f387e8&is=69f23668&hm=9d7c0926910e092931d32ece32156f9dbce8bcbecd23e5117a7dfc827a8f85be&
+
+
+[10/28/2025 19:46] vasko123.
+StaticPairList. TF15m
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1432817735515115650/image.png?ex=69f308c0&is=69f1b740&hm=54aec8bcd3c1244498cd24c70e807a0a64f702bd28f18701d4153e28536005d0&
+
+
+[10/29/2025 04:22] saamyar
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1432947638751330415/Screenshot_20251029-122145.jpg?ex=69f381bb&is=69f2303b&hm=05305f19720c80b2cac2cf8d62c62694d873190d0102c9c90dbccdf809b6590b&
+https://cdn.discordapp.com/attachments/1431399852444483655/1432947639220961320/Screenshot_20251029-122139.jpg?ex=69f381bc&is=69f2303c&hm=dd879e6766dd1848389fdd08bbe1f7725381e021dc00a8e587b43e02b72cd939&
+
+
+[10/29/2025 04:26] themarkx_
+Can you share this version
+
+
+[10/29/2025 04:26] themarkx_
+And what is your pairlist
+
+
+[10/29/2025 04:31] ggoyito
+It seems that v57 is the first winning iteration, good performance
+
+
+[10/29/2025 04:32] ggoyito
+By the way, nice user interface, it looks... 
+Professional
+
+
+[10/29/2025 04:38] saamyar
+Static pairlist:
+ "1000PEPE/USDT:USDT","SUI/USDT:USDT","VIRTUAL/USDT:USDT","POPCAT/USDT:USDT","TAO/USDT:USDT","GALA/USDT:USDT","1000BONK/USDT:USDT","BRETT/USDT:USDT","ETHFI/USDT:USDT","1000FLOKI/USDT:USDT","PENGU/USDT:USDT","BERA/USDT:USDT","NEAR/USDT:USDT","RENDER/USDT:USDT","ARKM/USDT:USDT","PYTH/USDT:USDT","OP/USDT:USDT","W/USDT:USDT","DEEP/USDT:USDT","AR/USDT:USDT","LDO/USDT:USDT","1000000MOG/USDT:USDT","NOT/USDT:USDT","PEOPLE/USDT:USDT","ORDI/USDT:USDT","CETUS/USDT:USDT","JASMY/USDT:USDT","ARB/USDT:USDT","MEW/USDT:USDT","AAVE/USDT:USDT            ","BOME/USDT:USDT","10000SATS/USDT:USDT","JUP/USDT:USDT","PENDLE/USDT:USDT","KAS/USDT:USDT","CRV/USDT:USDT","DOGS/USDT:USDT","XAI/US            DT:USDT","MEME/USDT:USDT","BEAM/USDT:USDT","SSV/USDT:USDT","INJ/USDT:USDT","ENA/USDT:USDT","BIO/USDT:USDT","VINE/USDT:USDT","PONKE/U            SDT:USDT","SUPER/USDT:USDT","RSR/USDT:USDT","AEVO/USDT:USDT","TOKEN/USDT:USDT","PIXEL/USDT:USDT","KDA/USDT:USDT","FIDA/USDT:USDT","AI/USDT:USDT","XVG/USDT"
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1432951594852552704/GKD_TRANSFORMV57_ML.py?ex=69f3856b&is=69f233eb&hm=7e89cca21b099babddedc1be295d985581efb48e39a493e3726b0d47e81ba56d&
+
+
+[10/29/2025 04:50] themarkx_
+Thank you so much mate
+
+
+[10/29/2025 04:56] saamyar
+Your welcome
+I have another modified version of this strategy: changed entry logic, added 3 more features for ML, still testing it will share the results soon
+
+{Reactions}
+👍
+
+[10/29/2025 04:58] themarkx_
+Okay
+
+
+[10/29/2025 04:58] themarkx_
+Is this modified version
+
+
+[10/29/2025 05:47] saamyar
+Nope
+
+
+[10/29/2025 06:02] dragongoattigercat
+When can we run it for real trade?
+
+
+[10/29/2025 07:00] serialkiller15
+there is no financal advise in this community for real trade, its your money, your decision not mine
+
+
+[10/29/2025 11:26] boooooon
+🤔
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1433054474628239474/image.png?ex=69f33c7b&is=69f1eafb&hm=becd837765fdbac4dac3f3d4e2efe13dcd31ab9abad0181c9b87c7ad828507bb&
+
+
+[10/30/2025 16:35] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1433494484158517399/image.png?ex=69f384c6&is=69f23346&hm=cdf3de63ef69f0ed724a5213c12edce9dca15033def4aa28bfa2b936504bfee6&
+
+
+[10/30/2025 16:35] serialkiller15
+bot i must say i delete 1-2 trades because of stoploss not beeing hit or some trades get huge profit without hitting it! but its good
+
+
+[10/30/2025 16:36] snokard.
+Day (count)       USDT             Profit %
+----------------  -----------  --  ----------
+2025-10-30 (68)   10.284 USDT   0  0.93%
+2025-10-29 (28)   4.648 USDT    0  0.42%
+2025-10-28 (57)   11.04 USDT    0  1.01%
+2025-10-27 (25)   1.709 USDT    0  0.16%
+2025-10-26 (48)   10.668 USDT   0  0.99%
+2025-10-25 (39)   5.322 USDT    0  0.50%
+2025-10-24 (63)   9.54 USDT     0  0.90%
+2025-10-23 (68)   5.038 USDT    0  0.48%
+2025-10-22 (100)  22.971 USDT   0  2.22%
+2025-10-21 (128)  37.631 USDT   0  3.78%
+2025-10-20 (0)    0 USDT        0  0.00%
+
+
+[10/30/2025 16:36] snokard.
+Using max trades=100
+
+
+[10/30/2025 16:36] ywk3926
+Is it the latest version?
+
+
+[10/30/2025 16:36] snokard.
+I like it being really stable
+
+
+[10/30/2025 16:37] snokard.
+ROI: Closed trades
+∙ 118.85 USDT (2.35%) (11.92 Σ%)
+ROI: All trades
+∙ 75.855 USDT (1.35%) (7.61 Σ%)
+Total Trade Count: 674
+Bot started: 2025-10-20 21:14:29
+First Trade opened: 9 days ago (2025-10-20 21:49:05)
+Latest Trade opened: 33 minutes ago (2025-10-30 16:03:56)
+Win / Loss: 560 / 64
+Winrate: 89.74%
+Expectancy (Ratio): 0.19 (0.25)
+Avg. Duration: 22:34:19
+Best Performing: GIGGLE/USDT:USDT: 7.639 USDT (59.29%)
+Trading volume: 15138.27 USDT
+Profit factor: 3.41
+Max Drawdown: 0.46% (4.868 USDT)
+    from 2025-10-23 16:06:32 (69.687 USDT)
+    to 2025-10-24 04:44:07 (64.819 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-10-30 16:03:31 (118.85 USDT)
+
+
+[10/30/2025 16:39] dragongoattigercat
+V63c with 1h TF
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1433495599541653514/image.png?ex=69f385cf&is=69f2344f&hm=355aef345e641deda0f1bb4d54d9e71c8c7d0ebd97e6e09b6a4dc75e1f0c0274&
+
+
+[10/30/2025 16:40] dragongoattigercat
+is it V72_Ultimate?
+
+
+[10/30/2025 16:40] snokard.
+Yes
+
+
+[10/30/2025 16:41] dragongoattigercat
+can you please share your pairlist, SL,.... I was lost too much on V72 so I turned it off and only keep v63c
+
+
+[10/30/2025 16:48] snokard.
+Cant share it now... but its on this thread
+
+{Reactions}
+👍
+
+[10/31/2025 05:49] vasko123.
+V63c with 1h TF. Hmm. I will test it on dynamic pairs.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1433694347622088724/image.png?ex=69f39629&is=69f244a9&hm=f3e366e81888a894d6f25f4db912884ee542c2cb8b7695f5083dcb4d5043ee90&
+
+{Reactions}
+👍
+
+[10/31/2025 07:11] branly76
+Bybit, TF15, 20 pairs, started 2025-10-09
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1433714981932892160/GKD_FisherTransformV63_Dynamic.png.png?ex=69f300a0&is=69f1af20&hm=ac19f44b9eb0e4dfe260c83ded5c625505fb46f861a1b24c989ffb7332d538c5&
+
+
+[10/31/2025 07:11] branly76
+started also now for hyperliquid to compare
+
+
+[10/31/2025 07:20] viking046433
+Also V63c
+
+
+[10/31/2025 09:00] branly76
+Yes but gives same results as you have, not so good. But started 2025-10-25, too early to judge.
+
+
+[10/31/2025 18:03] snokard.
+15m 1h
+config:
+
+  "stake_amount": "unlimited",
+  "tradable_balance_ratio": 1,
+  "max_open_trades": 100,
+  "timeframe": "15m",
+  "trading_mode": "futures",
+  "margin_mode": "isolated",
+
+
+
+
+  "pairlists": [
+    {
+      "method": "VolumePairList",
+      "number_assets": 200,
+      "sort_key": "quoteVolume",
+      "refresh_period": 21600
+    },
+    { "method": "AgeFilter", "min_days_listed": 14 },
+    { "method": "SpreadFilter", "max_spread_ratio": 0.01 },
+    { "method": "VolatilityFilter", "min_volatility": 0.005 },
+    {
+      "method": "PerformanceFilter",
+      "lookback_days": 3,
+      "min_profit": 0.01,
+      "min_trades": 5,
+      "refresh_period": 1440
+    }
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1433879015457816596/image.png?ex=69f39965&is=69f247e5&hm=d418f850b79dd265a3c036b16fe210f8492889707fdd60eefe3a0f2a8aa21f44&
+https://cdn.discordapp.com/attachments/1431399852444483655/1433879015856410727/image.png?ex=69f39965&is=69f247e5&hm=1a93cb8b05c20bbb35e60f28e94459f6844fa68f1ae2014f0a2cbedae9aa8da5&
+
+{Reactions}
+🚀
+
+[10/31/2025 18:04] snokard.
+20 more days performing like this and i will go live on the 15m
+
+
+[10/31/2025 18:07] serialkiller15
+any problems with stoploss? or other stuff? its V72?
+
+
+[10/31/2025 18:07] snokard.
+0,46% max drawdown
+
+
+[10/31/2025 18:08] snokard.
+id say its working perfectly for me
+
+
+[10/31/2025 18:08] snokard.
+look at the profits line how perfect it is
+
+
+[10/31/2025 18:08] serialkiller15
+yes absolute mate!
+
+
+[10/31/2025 18:09] snokard.
+improved drastically when using 100 max trades and the dynamic pairlist
+
+{Reactions}
+👍
+
+[10/31/2025 18:09] snokard.
+unrealized profit wasnt at breakeven until day 5-6 of running
+
+
+[10/31/2025 18:09] snokard.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1433880668814709007/message.txt?ex=69f39aef&is=69f2496f&hm=2f340e3543a87369b39dd3b95cb74ea0d5279dc268fd976d0189243f072d2049&
+
+{Reactions}
+👍
+
+[10/31/2025 18:09] snokard.
+its this one
+
+
+[10/31/2025 18:10] snokard.
+doing it with 20 trades, gets it stalled
+
+
+[10/31/2025 18:10] snokard.
+i have some trades that have been opened for 6-7 days
+
+
+[10/31/2025 18:10] snokard.
+and still have some that are 9days old
+
+
+[10/31/2025 18:11] serialkiller15
+yes but not like this one here
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1433880980703412224/image.png?ex=69f39b3a&is=69f249ba&hm=42e4dc929d45a9fbbee40ae3283f679a728f3439016010c4e4a5475ed545624b&
+
+
+[10/31/2025 18:11] snokard.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1433881057996050652/image.png?ex=69f39b4c&is=69f249cc&hm=85b02b6a492c96b629703cf0c7226f23a372410aee20bc70b6fab6a75fafe1af&
+https://cdn.discordapp.com/attachments/1431399852444483655/1433881058536984739/image.png?ex=69f39b4c&is=69f249cc&hm=fa6acf2dcd6a4491e5b97849ba97555d675d8d8345e41d9b6ed8252ea2a4b6df&
+https://cdn.discordapp.com/attachments/1431399852444483655/1433881059308605621/image.png?ex=69f39b4c&is=69f249cc&hm=ddbb0fe0f1a2e897f2dbfcd329fe558a46aef4b6ddbbfd6db87865e4110ceb29&
+
+
+[10/31/2025 18:12] snokard.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1433881335579021322/image.png?ex=69f39b8e&is=69f24a0e&hm=f3610c5904f8b8a4b57bd3c2a522f55c564115ec6ffd5579677b7b384ea3f892&
+
+
+[10/31/2025 18:12] snokard.
+mine does partial exits on losing pairs
+
+
+[10/31/2025 18:12] snokard.
+wait
+
+
+[10/31/2025 18:13] snokard.
+GKD, [10/31/25 4:38 PM]
+⚠ Binance (dry): Exiting BAS/USDT:USDT (#690)
+Unrealized Profit: -52.45% (loss: -0.971 USDT)
+Enter Tag: Bear_Desc_Triangle
+Exit Reason: stop_loss
+Direction: Short (2x)
+Amount: 305
+Open Rate: 0.01214 USDT
+Current Rate: 0.01531 USDT
+Exit Rate: 0.01531 USDT
+Duration: 21:34:55 (1294.9 min)
+
+GKD, [10/31/25 4:38 PM]
+⚠ Binance (dry): Exited BAS/USDT:USDT (#690)
+Sub Profit: -52.29% (loss: -0.968 USDT)
+Final Profit: -16.95% (-1.32566099 USDT)
+Enter Tag: Bear_Desc_Triangle
+Exit Reason: stop_loss
+Direction: Short (2x)
+Amount: 305
+Open Rate: 0.01214 USDT
+Exit Rate: 0.0153 USDT
+Duration: 21:34:55 (1294.9 min)
+
+GKD, [10/31/25 4:38 PM]
+❌ Binance (dry): Partially exiting AUCTION/USDT:USDT (#688)
+Unrealized Sub Profit: -10.53% (loss: -0.104 USDT)
+Cumulative Profit: -0.379 USDT
+Enter Tag: Bear_Desc_Triangle
+Exit Reason: partial_exit
+Direction: Short (2x)
+Amount: 0.32
+Open Rate: 6.205 USDT
+Current Rate: 6.521 USDT
+Exit Rate: 6.519 USDT
+Remaining: 3.847 USDT
+
+GKD, [10/31/25 4:38 PM]
+❌ Binance (dry): Partially exited AUCTION/USDT:USDT (#688)
+Sub Profit: -10.53% (loss: -0.104 USDT)
+Cumulative Profit: -0.482 USDT
+Enter Tag: Bear_Desc_Triangle
+Exit Reason: partial_exit
+Direction: Short (2x)
+Amount: 0.32
+Open Rate: 6.205 USDT
+Exit Rate: 6.519 USDT
+Remaining: 2.854 USDT
+
+GKD, [10/31/25 4:59 PM]
+❌ Binance (dry): Partially exiting AUCTION/USDT:USDT (#688)
+Unrealized Sub Profit: -9.43% (loss: -0.094 USDT)
+Cumulative Profit: -0.482 USDT
+Enter Tag: Bear_Desc_Triangle
+Exit Reason: partial_exit
+Direction: Short (2x)
+Amount: 0.32
+Open Rate: 6.205 USDT
+Current Rate: 6.487 USDT
+Exit Rate: 6.485 USDT
+Remaining: 2.854 USDT
+
+GKD, [10/31/25 4:59 PM]
+❌ Binance (dry): Partially exited AUCTION/USDT:USDT (#688)
+Sub Profit: -9.43% (loss: -0.094 USDT)
+Cumulative Profit: -0.573 USDT
+Enter Tag: Bear_Desc_Triangle
+Exit Reason: partial_exit
+Direction: Short (2x)
+Amount: 0.32
+Open Rate: 6.205 USDT
+Exit Rate: 6.485 USDT
+Remaining: 1.861 USDT
+
+
+[10/31/2025 18:14] snokard.
+ROI: Closed trades
+∙ 139.445 USDT (2.42%) (14.05 Σ%)
+ROI: All trades
+∙ 85.499 USDT (1.25%) (8.61 Σ%)
+Total Trade Count: 770
+Bot started: 2025-10-20 21:14:29
+First Trade opened: 10 days ago (2025-10-20 21:49:05)
+Latest Trade opened: an hour ago (2025-10-31 17:04:22)
+Win / Loss: 613 / 66
+Winrate: 90.28%
+Expectancy (Ratio): 0.21 (0.25)
+Avg. Duration: 22:06:05
+Best Performing: GIGGLE/USDT:USDT: 7.639 USDT (59.29%)
+Trading volume: 17893.494 USDT
+Profit factor: 3.56
+Max Drawdown: 0.46% (4.868 USDT)
+    from 2025-10-23 16:06:32 (69.687 USDT)
+    to 2025-10-24 04:44:07 (64.819 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-10-31 17:03:42 (139.445 USDT)
+
+
+[10/31/2025 18:14] serialkiller15
+Thanks will check it out!
+
+
+[10/31/2025 18:14] snokard.
+key thing was increasing number of trades, tried the same with divergence too but not getting results like this...
+
+this is the first strategy that i ever used that survived this long and with this kind of performance and stability
+
+{Reactions}
+👍
+
+[10/31/2025 18:16] serialkiller15
+thats nice thanks!
+
+{Reactions}
+🔥
+
+[10/31/2025 18:16] snokard.
+thank you!
+
+
+[10/31/2025 18:16] serialkiller15
+was the work of all us in here!
+
+
+[10/31/2025 18:16] snokard.
+so thanks to everyone! but lets not claim victory yet... needs to run for more time
+
+
+[10/31/2025 18:17] snokard.
+but its a really good start, also i like using a lot of pairs and trades and it using low leverage meaning that it can grow for more time
+
+
+[10/31/2025 18:20] 4v1234
+@TITAN  Plans to test live ?
+
+
+[10/31/2025 18:25] snokard.
+.
+
+
+[10/31/2025 18:26] snokard.
+also this is already trained on 1600 trades from previous runs... maybe it affects results
+
+
+[10/31/2025 18:27] serialkiller15
+that absolute makes sense, because of the value of the trades in there! so it will grow after more trades, so if you use 100 entrys thats fine for training, the data is good in there!
+
+
+[10/31/2025 18:27] snokard.
+yes, im actually seeing improvement on profits
+
+
+[10/31/2025 18:27] snokard.
+at start most of them were 2-3% now im getting some with 5-6%
+
+
+[10/31/2025 18:31] snokard.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1433886221049794752/image.png?ex=69f2f75b&is=69f1a5db&hm=c3f7f15e523ddd5d821762bd5c4df3462636f3751b9fea269a93873c34a7b401&
+
+
+[10/31/2025 18:36] 4v1234
+Yesterday or the day before, on chanl we discussed the monitoring of BTC as a prevention of large market jumps. Did you integrate this idea?
+
+
+[10/31/2025 18:37] snokard.
+no, i dont see it usefull in here
+
+
+[10/31/2025 18:37] snokard.
+also this strategy has a flash crash protection already included
+
+
+[10/31/2025 18:38] 4v1234
+Perfect
+
+
+[10/31/2025 18:40] 4v1234
+Tomorrow I'm finishing one live test on Divergence,  after I share the results,  may I test your one on  live ?
+
+
+[10/31/2025 18:40] snokard.
+i wouldnt go live directly.... needs training
+
+
+[10/31/2025 18:44] 4v1234
+I will go with it. It will train live. Everyday i will share the results to you.
+
+{Reactions}
+👍 (2)
+
+[10/31/2025 18:44] snokard.
+if you go live without training you will get bad results i think. no rush to go live
+
+
+[10/31/2025 18:45] 4v1234
+For all my practical experience the best results, came after fine tuning the live performance.
+
+
+[10/31/2025 18:46] serialkiller15
+and how many did you lost with this aproach? or made money? sry mate i dont think so.
+
+{Reactions}
+💯
+
+[10/31/2025 18:47] serialkiller15
+expecialy for this strategy it needs to train on training data thats what we are talking about
+
+
+[10/31/2025 18:47] snokard.
+i guess most of them were losses since you are still here 😅  i will only go live if it goes like its going for a month
+
+
+[10/31/2025 18:47] 4v1234
+No win without losing  😀
+
+
+[10/31/2025 18:47] snokard.
+makes no sense to train live, you then can use the data you trained on dry to go live
+
+
+[10/31/2025 18:50] viking046433
+None of these strategies have worked for me not like anything I have seen on here
+
+
+[10/31/2025 18:50] 4v1234
+Recently joined the group, I hope my ideas and promts were useful to some one here.
+
+
+[10/31/2025 18:50] viking046433
+I’m own is the best I have had so far
+
+{Reactions}
+🚀
+
+[10/31/2025 21:38] themarkx_
+ROI: Closed trades
+∙ 76.146 USDT (1.11%) (6.99 Σ%)
+ROI: All trades
+∙ 70.599 USDT (0.88%) (6.48 Σ%)
+Total Trade Count: 144
+Bot started: 2025-10-28 09:01:53
+First Trade opened: 3 days ago (2025-10-28 09:02:53)
+Latest Trade opened: 27 seconds ago (2025-10-31 21:37:27)
+Win / Loss: 99 / 25
+Winrate: 79.84%
+Expectancy (Ratio): 0.61 (0.33)
+Avg. Duration: 5:34:48
+Best Performing: ZEC/USDT:USDT: 9.587 USDT (3.46%)
+Trading volume: 14792.096 USDT
+Profit factor: 2.62
+Max Drawdown: 1.61% (18.17 USDT)
+    from 2025-10-29 05:31:11 (41.467 USDT)
+    to 2025-10-29 15:46:09 (23.297 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-10-31 21:19:29 (76.146 USDT)
+
+{Reactions}
+👍
+
+[11/01/2025 02:33] ohbad1330
+i did the opposite one with small max trade, max 5 trades. did some modif to gkd-63c for minimize drawdown, but it still 10 hours running, need time to make sure it work well or not for long term.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1434007408593600552/Screenshot_2025-11-01_at_09.29.02.png?ex=69f36838&is=69f216b8&hm=2a8753a0fea2cff41dcff965e141196041c12237b470321e6c38c7286673adc9&
+
+
+[11/01/2025 08:08] xf0x0f
+i understand your point, that kind of randomness can really distort results in a live run. ideally, the strategy should reach a level of stability where trade outcomes are not heavily dependent on luck, even when running with a high trade limit like 50 or 100. if it’s still fluctuating a lot or hitting max trades often, it might need more tuning on entry conditions or position sizing to reduce volatility and make results more consistent. your test with a lower trade limit and adjustments to gkd‑63c is a smart move to observe performance under controlled pressure before scaling up.
+
+
+[11/03/2025 16:10] saamyar
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1434937670739427409/Screenshot_20251104-000901.jpg?ex=69f37ed8&is=69f22d58&hm=3084a555d956879e19867a440b1e682bcaf5fff43a8911b3ef455e0863f29d21&
+https://cdn.discordapp.com/attachments/1431399852444483655/1434937671301730374/Screenshot_20251104-000911.jpg?ex=69f37ed8&is=69f22d58&hm=b6d245339ab638a7bddd68aafcd97f6107bc04379812e8127599c1107a3838a7&
+
+
+[11/03/2025 16:32] viking046433
+Yo can you share this version
+
+
+[11/03/2025 16:33] viking046433
+Please
+
+
+[11/03/2025 16:52] saamyar
+I have shared it once, scroll up you'll find
+
+{Reactions}
+🚀
+
+[11/03/2025 17:51] themarkx_
+How much are the max open trade
+
+
+[11/04/2025 03:19] mmnbm_79378
+Hello, is this the 15-minute level?
+
+
+[11/04/2025 04:58] saamyar
+Its on 1h timeframe and 5 max open trades
+
+
+[11/04/2025 05:45] mmnbm_79378
+OK
+
+
+[11/04/2025 06:12] vasko123.
+Thanks Samyar. Your setup works great. I'm testing it on VolumePairList.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1435149807969898579/image.png?ex=69f39baa&is=69f24a2a&hm=aeef4c5681fc2519c1e614e048282e81807c79671e6f49fd1c39cc8c726f6b54&
+
+
+[11/04/2025 16:51] damian_ox9
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1435310459963052153/image.png?ex=69f38888&is=69f23708&hm=4c2b67f1ff282ab37e1ec9bc7b08fed865b2d0c38c79910f2261de5a2e0de19e&
+
+
+[11/04/2025 16:51] damian_ox9
+I have a problem can't adjust stop lost on strat
+
+
+[11/05/2025 04:57] vasko123.
+everything is in the black, despite the terrible market
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1435493207361191978/image.png?ex=69f389fa&is=69f2387a&hm=4e0bb6e12b6d23cf3a69f08896f62e9666219b29935c67ea87a285e34c336a6a&
+
+{Reactions}
+👍
+
+[11/05/2025 04:58] viking046433
+Version and setup?
+
+
+[11/05/2025 04:59] vasko123.
+GKD_v57ML 1h SL50
+
+
+[11/05/2025 05:11] niutie8977
+same strat and timeframe, i only have 2 trade for last two days
+
+
+[11/05/2025 05:14] niutie8977
+Could you share your pairlist setting
+
+
+[11/05/2025 05:40] vasko123.
+"pairlists": [
+    {
+      "method": "VolumePairList",
+      "number_assets": 200,
+      "sort_key": "quoteVolume",
+      "refresh_period": 1800
+    },
+    { "method": "AgeFilter", "min_days_listed": 60 },
+    {
+      "method": "PriceFilter",
+      "low_price_ratio": 0.003
+    },
+    {
+      "method": "SpreadFilter",
+      "max_spread_ratio": 0.005
+    },
+    {
+      "method": "RangeStabilityFilter",
+      "lookback_days": 3,
+      "min_rate_of_change": 0.03,
+      "max_rate_of_change": 0.95,
+      "refresh_period": 1800
+    }
+  ],
+
+{Reactions}
+❤️
+
+[11/05/2025 05:41] abb8187
+I'm also testing it.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1435504362343497770/image.png?ex=69f3945e&is=69f242de&hm=5b39090ecfb228ece595c76398002a926585d8b605f76d2ac6b1c2fc3cd6b7a7&
+
+
+[11/05/2025 06:49] 4v1234
+Добро утро 🙂 Би ли влезнал live  с тези настройки от 05.11 and SL 50 ?
+
+
+[11/05/2025 09:29] mmnbm_79378
+ROI: Closed trades
+∙ 429.809 USDT (5.75%) (9.55 Σ%)
+∙ 429.774 USD
+ROI: All trades
+∙ 428.599 USDT (5.06%) (9.52 Σ%)
+∙ 428.564 USD
+Total Trade Count: 28
+Bot started: 2025-11-04 03:17:25
+First Trade opened: a day ago (2025-11-04 04:31:04)
+Latest Trade opened: an hour ago (2025-11-05 08:16:08)
+Win / Loss: 23 / 2
+Winrate: 92.00%
+Expectancy (Ratio): 17.19 (1.28)
+Avg. Duration: 2:52:07
+Best Performing: POPCAT/USDT:USDT: 127.446 USDT (8.09%)
+Trading volume: 60283.817 USDT
+Profit factor: 16.99
+Max Drawdown: 0.53% (25.946 USDT)
+    from 2025-11-04 21:34:46 (367.664 USDT)
+    to 2025-11-05 00:39:39 (341.717 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-11-05 01:39:20 (429.809 USDT)
+
+{Reactions}
+🔥 (2)
+
+[11/05/2025 09:32] abb8187
+Which strategy is this?
+
+
+[11/05/2025 09:44] mmnbm_79378
+this
+
+
+[11/05/2025 09:47] abb8187
+I just ran, and the results aren't out yet.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1435566247256526868/image.png?ex=69f32540&is=69f1d3c0&hm=156124aafb135782227e42a02e23838daca360ab2f20ff2a4e19324382262ae2&
+
+
+[11/05/2025 09:49] abb8187
+My machine isn't powerful enough; I need to buy a higher-spec one to run the tests, haha.
+
+
+[11/05/2025 13:28] vasko123.
+Със стотачка бих опитал без проблем. Но всичките ми устройства са заети и се навивам да си събера на 20 ядрен CPU машинка.
+
+{Reactions}
+💯
+
+[11/05/2025 13:40] 4v1234
+Аз се мъча с DivergentV3
+Как да си пишем 1v1
+
+
+[11/05/2025 13:56] vasko123.
+Сега ще сложа снимка в ТГ чата (PROFITS) от тая стратегия и ще ми имаш контакта
+
+
+[11/05/2025 14:05] serialkiller15
+guys please use English or an Translation
+
+{Reactions}
+👍 (4)
+
+[11/06/2025 16:31] xenigami
+15m
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1436030353667002459/GKD_AdaptiveFisher_MTF_v63c_1.PNG?ex=69f383fc&is=69f2327c&hm=90baa31211cb62118c6a4f1d91dbc6ee7f173824729866b471d97ae6d7002f6b&
+https://cdn.discordapp.com/attachments/1431399852444483655/1436030353994420254/GKD_AdaptiveFisher_MTF_v63c_2.PNG?ex=69f383fc&is=69f2327c&hm=ed273f78c6b91f6d3f419b2d49309b28bbb45fd3ef2ce3f907f6778538953187&
+
+{Reactions}
+❤️
+
+[11/07/2025 17:13] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1436403255466000596/IMG_8763.png?ex=69f38dc7&is=69f23c47&hm=4fa192d3191ef0fefcc5f0cd157250ac7f2680340c2488c4c23cc2147305abaf&
+
+
+[11/07/2025 17:15] 4v1234
+Nice one 😀
+
+
+[11/07/2025 17:30] xf0x0f
+This is with shorts, just started:
+
+Running Freqtrade 2025.8
+
+Running with 10xunlimited USDT on binance in futures markets, with Strategy GKD_UltimateFusionV2.
+
+Stoploss on exchange is disabled.
+
+Currently running, force entry: false
+
+Dry-Run
+Avg Profit 5.025% (∑ 70.345%) in 14 Trades, with an average duration of 0:50:58. Best pair: 1000X/USDT:USDT.
+
+Bot start date: 2025-11-07 15:43:40 (UTC)
+First trade opened: 2025-11-07 15:45:54 (UTC)
+Last trade opened: 2025-11-07 16:49:13 (UTC)
+
+Trading volume: 55585,556 USDT
+
+Profits for
+
+All
+
+Long
+
+Short
+Trades
+Metric
+Value
+ROI closed trades    616,299 USDT (5.69%)
+ROI all trades    634,785 USDT (5.02%)
+Total Trade count    14
+Bot started    2025-11-07 15:43:40 (UTC)
+First Trade opened    2025-11-07 15:45:54 (UTC)
+Latest Trade opened    2025-11-07 16:49:13 (UTC)
+Win / Loss    12 / 0
+Winrate    100.000%
+Expectancy (ratio)    51.36 (100.00)
+Avg. Duration    0:50:58
+Best performing    1000X/USDT:USDT: 9.20%
+Trading volume    55585,556 USDT
+Profit factor    N/A
+Max Drawdown    N/A (N/A) from 2025-11-07 16:25:40 to 2025-11-07 16:25:40
+Current Drawdown    N/A (N/A) since 20
+
+
+[11/07/2025 17:33] 4v1234
+Where is the SL....in my cases 2 bad entries and everything is gone as profit.  Need more time ti see.
+
+
+[11/07/2025 17:46] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1436411485147369532/Bildschirmfoto_2025-11-07_um_18.46.20.png?ex=69f39571&is=69f243f1&hm=7c0ac25a9d3bf5bd1e1500116a1e4bd282e38bf829be68019e306b09d5159d9f&
+
+
+[11/07/2025 17:46] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1436411540117913811/Bildschirmfoto_2025-11-07_um_18.46.13.png?ex=69f3957e&is=69f243fe&hm=88422dfb9fd6f142b970f7550458930a4671a040fbe49a2241fac26ce2ff581b&
+
+
+[11/08/2025 15:00] snokard.
+started a live run on it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1436732041478803567/image.png?ex=69f36e7b&is=69f21cfb&hm=fe8e53df226581192541c38fba8f442a5d250b8c02e18682146864c84bab4278&
+https://cdn.discordapp.com/attachments/1431399852444483655/1436732041931653363/image.png?ex=69f36e7b&is=69f21cfb&hm=05e778148ad01eef25c83e62425a6fea9f0f145b7f5085d606772754d442dbfb&
+
+
+[11/08/2025 15:09] themarkx_
+Which one
+
+
+[11/08/2025 15:13] snokard.
+its up on this thread, search for my messages
+
+
+[11/08/2025 15:17] ywk3926
+The floating loss is too large, it should be a very large stop-loss, and we can only tough it out and wait for the market to improve.
+
+
+[11/08/2025 15:20] snokard.
+yes i know, but its been consistent with the dry run, i will keep a close look at it. im happy taking the risk. will update if i end any of the runs
+
+
+[11/08/2025 15:21] snokard.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1436737459252887683/image.png?ex=69f37387&is=69f22207&hm=7b81c67799210d19e223f7deb78d2541c6cc81078272bacf54a64f0407298a6b&
+
+{Reactions}
+👍
+
+[11/08/2025 15:59] zzokbary
+What timeframe did you use?
+
+
+[11/08/2025 16:16] snokard.
+15m
+
+{Reactions}
+❤️ (2)
+
+[11/08/2025 19:11] themarkx_
+I tried to find it but but didn't get it, can you please forward it
+
+
+[11/08/2025 21:34] snokard.
+its the gkd72ultimate
+
+
+[11/09/2025 03:49] sang_tm
+GKD_FisherTransformV4_ML
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1436925699016622254/image.png?ex=69f37a17&is=69f22897&hm=0e994e26bf21f08e1355d9d71df9a427dcbf89088bb297e856cf121c4c62d37b&
+
+{Reactions}
+🔥
+
+[11/09/2025 03:50] sang_tm
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1436925790905303150/image.png?ex=69f37a2d&is=69f228ad&hm=15fee2ab52068606f46049350896b2b46243b1e5a57764925b268efb23a2d899&
+
+
+[11/09/2025 03:50] sang_tm
+top 150 volume - 1h time frame
+
+
+[11/09/2025 03:53] zzokbary
+running 53 pairs on the 15 minute timeframe.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1436926738235134013/IMG_5457.png?ex=69f37b0f&is=69f2298f&hm=b893f08a2a24a881acc431340184c8e0152343905080c414ca86cc620691abb5&
+
+
+[11/09/2025 06:36] vasko123.
+After testing, I launched it in live mode.
+But this strategy requires a larger deposit. If the price goes against me, then top up several times the bet, then four times the previous bet (Stake 1=8, 2=24, 3=100). During testing, the W/L was 100/0.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1436967697047883816/image.png?ex=69f2f874&is=69f1a6f4&hm=21e8842b25223d18a9b9027f928140378da0a1e5e1093ade1d6c08f41610d2d2&
+
+
+[11/09/2025 06:39] vasko123.
+GKD_FisherTransformV4_ML - 1h, 200 VolumePairList
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1436968338621206648/image.png?ex=69f2f90d&is=69f1a78d&hm=95a64a045971187df323d746a396fc87d5b0d5c64bd6101aceafc3dd18c023db&
+
+
+[11/09/2025 09:06] lukovicka
+this strategy doesn't have sl. if you want to lose all ur money, do it
+
+{Reactions}
+👍
+
+[11/09/2025 11:48] vasko123.
+Oh well, it's just pennies. But the profit percentage is higher in a short period of time, and you can always stop. I stopped NOTankAi the other day - SL99, but there was still some profit (except for the 10th). I tested GKD_FisherTransformV4_ML for several weeks, and the market was terrible, without a single loss.
+
+
+[11/09/2025 11:49] 4v1234
+GKD tested  dry or live ?
+
+{Reactions}
+👍
+
+[11/09/2025 14:12] serialkiller15
+i test it in dry only to much drawdown in live and to much risk from my side, but indeed its doing good
+
+
+[11/09/2025 15:28] mmnbm_79378
+15m
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1437101647019901089/image.png?ex=69f37534&is=69f223b4&hm=5ed595e2344977dd12844770c3af72dd34b7b7cb8cf93aea8a1cc289e950f80d&
+
+
+[11/09/2025 15:30] mmnbm_79378
+1h
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1437102087950438581/image.png?ex=69f3759d&is=69f2241d&hm=d3b10b82c914b011f3a407444321ee9ab2d4b7450d1ff0069b64e47761245020&
+
+
+[11/09/2025 19:09] themarkx_
+Which version
+
+
+[11/10/2025 06:13] vasko123.
+GKD_FisherTransformV4_ML
+
+
+[11/10/2025 06:14] abb8187
+The profits are less than the losses from open positions.
+
+
+[11/10/2025 14:24] serialkiller15
+GDK 4ML will not recover here, there are some fixes to bee done! i stopped the bot
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1437447910777294868/image.png?ex=69f36630&is=69f214b0&hm=74b9a75486c32654cd8d0e3223fc0031291604e4d3509335669f199edc8af677&
+
+
+[11/10/2025 18:04] vasko123.
+The beauty of this strategy is that if you have a large deposit, the bot will take over. It starts with small amounts, but if the price is against it, it increases progressively. For example, the screenshot for "HUSDT"
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1437503091007033364/image.png?ex=69f39994&is=69f24814&hm=c6c26cda989a996c19d5081cc1e197001743c57eb932b8ee62da27b2962b6aa3&
+https://cdn.discordapp.com/attachments/1431399852444483655/1437503091434983465/image.png?ex=69f39994&is=69f24814&hm=a675b6fd3906941b0969154949f10311f3eb365ba07efdca7ef77122069afbbd&
+
+
+[11/10/2025 18:08] 4v1234
+Number  13 😀
+
+
+[11/10/2025 21:32] bala03
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1437555417822789672/Screenshot_2025-11-11-03-00-55-70_41203aada896b37f358f9de124058c4f.jpg?ex=69f32190&is=69f1d010&hm=28cd04d89544934bba09be15c4616ed1942994e8ec11f1efd1b77d03aa6f6498&
+https://cdn.discordapp.com/attachments/1431399852444483655/1437555418174853120/Screenshot_2025-11-11-03-00-50-21_41203aada896b37f358f9de124058c4f.jpg?ex=69f32190&is=69f1d010&hm=530944b2f79e35bd1b908c99b3f231237ac400cb389c1b963c17c8f24fd30cc7&
+https://cdn.discordapp.com/attachments/1431399852444483655/1437555418522976337/Screenshot_2025-11-11-03-00-46-39_41203aada896b37f358f9de124058c4f.jpg?ex=69f32190&is=69f1d010&hm=8a120800dc2bb6b96c8cf3f9eb11b8d1db7ca9430ee748af6dd520898de3deb8&
+
+{Reactions}
+👍 🚀
+
+[11/10/2025 23:03] vasko123.
+GKD_FisherTransformV4_ML ---- A strange strategy. He enters a position and most often misses the target, but then he adds, adds, adds, reverses, and makes a profit.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1437578438121619487/image.png?ex=69f33700&is=69f1e580&hm=2be53c9a5b24c70efee122b763e7d5c0cad1beb5d084a70817a6d1ffd3fadb8c&
+
+{Reactions}
+👍
+
+[11/10/2025 23:22] zzokbary
+Hey, which version of your strategy are you running?Is it your own custom setup?
+I’m really curious — most of us are losing lately,
+but you’re still making gains somehow. How?
+
+
+[11/10/2025 23:52] bala03
+latest one V58 only and i have not modified anything.. simply running in dry for testing
+
+
+[11/10/2025 23:54] zzokbary
+Thx. Which timeframe are you using? and can you share your pairlist?
+
+
+[11/10/2025 23:55] bala03
+#pairlists  "pairlists": [
+    {
+      "method": "VolumePairList",
+      "number_assets": 200,
+      "sort_key": "quoteVolume",
+      "refresh_period": 21600
+    },
+    { "method": "AgeFilter", "min_days_listed": 14 },
+    { "method": "SpreadFilter", "max_spread_ratio": 0.01 },
+    { "method": "VolatilityFilter", "min_volatility": 0.005 },
+    {
+      "method": "PerformanceFilter",
+      "lookback_days": 3,
+      "min_profit": 0.01,
+      "min_trades": 5,
+      "refresh_period": 1440
+
+and didnt touched anything.. all are default values.. my maximum trade count is 5
+
+
+[11/11/2025 00:04] zzokbary
+Thx. How long have you been running it?
+
+
+[11/11/2025 12:56] bala03
+24 hours
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1437788022987816960/Screenshot_2025-11-11-18-26-05-35_41203aada896b37f358f9de124058c4f.jpg?ex=69f35171&is=69f1fff1&hm=49ca963d612346b47837a4f4fa5bbc923c5a659d7c7b21830abab18614229fcc&
+
+
+[11/11/2025 12:58] 4v1234
+Impossible....where is the SL and TP ?
+
+
+[11/11/2025 14:27] zzokbary
+Seriously? I’ve lost over $1,000 in the past 24 hours! ㅜㅜ
+
+
+[11/11/2025 14:28] niutie8977
+all orders closed?
+
+
+[11/11/2025 14:30] saamyar
+Live ??
+
+
+[11/11/2025 14:31] zzokbary
+I mostly run it live. Lost around $5,000 in the last 7 days.
+
+{Reactions}
+😂
+
+[11/11/2025 14:33] niutie8977
+which version?
+
+
+[11/11/2025 14:37] serialkiller15
+🤣
+
+
+[11/11/2025 14:41] viking046433
+Dom bra
+
+
+[11/11/2025 14:41] viking046433
+Live why
+
+
+[11/11/2025 14:41] serialkiller15
+Who knows
+
+
+[11/11/2025 14:54] ohbad1330
+wow
+
+
+[11/11/2025 14:55] ohbad1330
+mine for gkd strategy is doing good as well.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1437817902152679555/Screenshot_2025-11-11_at_21.54.00.png?ex=69f36d45&is=69f21bc5&hm=d6daf9b9d856b2156d2e93234081be07d84e39117708c5c013e7c142364a2bad&
+
+
+[11/11/2025 14:55] zzokbary
+Nothing teaches you faster than losing money.
+
+{Reactions}
+🔥
+
+[11/11/2025 15:54] serialkiller15
+Sry mate but to do live with this Strategie is like burning your money in fire
+
+
+[11/11/2025 18:14] bala03
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1437868069706797127/IMG_20251111_234307.jpg?ex=69f39bfe&is=69f24a7e&hm=3564b660eab03f65473ec4f09bb407b12b8c4e9465ae26b8dbf4d083b87361f4&
+https://cdn.discordapp.com/attachments/1431399852444483655/1437868070411436092/IMG_20251111_234233.jpg?ex=69f39bfe&is=69f24a7e&hm=2a54ecaaaff1ee42788b99f76ca9556d312a549294772db3f83bcf735501ec62&
+
+
+[11/11/2025 18:15] bala03
+for me somehow its profitable and its really doing great
+
+
+[11/11/2025 18:15] bala03
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1437868399576223835/Screenshot_2025-11-11-23-45-29-30_41203aada896b37f358f9de124058c4f.jpg?ex=69f39c4c&is=69f24acc&hm=456038c026f914c969b364b2f7aa37ee0044787ff190a0315c8612898257c811&
+
+
+[11/11/2025 18:16] bala03
+5 closed orders
+
+
+[11/11/2025 18:17] bala03
+no SL so may be in live straight liquidation
+
+
+[11/11/2025 18:17] serialkiller15
+That's the point no SL
+
+
+[11/11/2025 18:20] bala03
+at least 80% DCA would make a position in green... so i think like other strategies custom exit logics like 30m 60m 3% 5% exit profit conditions could make the strategy effectively so what is your thought @Alex Crypto King ?
+
+
+[11/11/2025 18:21] serialkiller15
+Yes absolute I stopped all if them why because when the market changes fast from long to short you will loose good money indeed a custom exit would be better to handle it... Maybe use the one from AlexBamdSniper. And also SL must be integrated to work
+
+
+[11/11/2025 18:24] bala03
+yes i was thinking the same.. maybe i will run with custom exit logics from AlexBandSniper and will see the results
+
+
+[11/11/2025 18:31] snokard.
+i see it working really good, also have a diferent run in live and doing great too
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1437872426288681170/image.png?ex=69f2f74c&is=69f1a5cc&hm=0ae058d0b3b77c6177734d21743756d5ed7f53a504ced422aca54dc819381203&
+https://cdn.discordapp.com/attachments/1431399852444483655/1437872426666164224/image.png?ex=69f2f74c&is=69f1a5cc&hm=a08ec8f1d6b2af9157110a56fee142f9cd2d3320db284af7ab5a8e0a5d4cafd1&
+
+
+[11/11/2025 18:31] serialkiller15
+i already started it
+
+
+[11/11/2025 18:32] serialkiller15
+@TITAN absolute but as i said, when market changes in live you will absolute looose money on it!
+
+
+[11/11/2025 18:35] snokard.
+100% agree on this, but the dry run is the best run ive ever got using freqtrade and i dont mind burning 1000$.
+Just giving it a try.
+
+And its still learning and optimizing so... just wanted to go live with small amount to see what happens
+
+
+[11/11/2025 18:35] serialkiller15
+yes absolute lets give it a try...
+
+{Reactions}
+❤️
+
+[11/11/2025 18:36] snokard.
+I still dont see any "issues" with the strategy. I like the logic behind it and how it operates
+
+
+[11/11/2025 18:37] snokard.
+I firmly believe that this strategy optimization + pairlist optimization could be a really good thing
+
+
+[11/11/2025 18:38] serialkiller15
+i will do it with custom_exits i am the kindly Safe Person...
+
+
+[11/11/2025 18:38] serialkiller15
+but yes you are right about that
+
+{Reactions}
+❤️
+
+[11/11/2025 19:24] bala03
+maybe i will also test it with live to see a real result
+
+
+[11/11/2025 19:29] snokard.
+Wouldnt recommend if you dont have a solid run on dry run for the training
+
+
+[11/11/2025 19:29] snokard.
+I was thinking of adding a time based exit
+
+
+[11/11/2025 19:30] snokard.
+Day (count)       USDT              Profit %
+----------------  ------------  --  ----------
+2025-11-11 (21)   4.387 USDT     0  0.38%
+2025-11-10 (23)   -1.789 USDT    0  -0.15%
+2025-11-09 (28)   -1.065 USDT    0  -0.09%
+2025-11-08 (37)   4.885 USDT     0  0.42%
+2025-11-07 (49)   2.239 USDT     0  0.19%
+2025-11-06 (59)   0.06 USDT      0  0.01%
+2025-11-05 (45)   5.608 USDT     0  0.49%
+2025-11-04 (32)   -12.193 USDT   0  -1.05%
+2025-11-03 (85)   21.016 USDT    0  1.85%
+2025-11-02 (45)   2.89 USDT      0  0.25%
+2025-11-01 (35)   -1.681 USDT    0  -0.15%
+2025-10-31 (37)   4.581 USDT     0  0.40%
+2025-10-30 (91)   27.347 USDT    0  2.48%
+2025-10-29 (28)   4.648 USDT     0  0.42%
+2025-10-28 (57)   11.04 USDT     0  1.01%
+2025-10-27 (25)   1.709 USDT     0  0.16%
+2025-10-26 (48)   10.668 USDT    0  0.99%
+2025-10-25 (39)   5.322 USDT     0  0.50%
+2025-10-24 (63)   9.54 USDT      0  0.90%
+2025-10-23 (68)   5.038 USDT     0  0.48%
+2025-10-22 (100)  22.971 USDT    0  2.22%
+2025-10-21 (128)  37.631 USDT    0  3.78%
+2025-10-20 (0)    0 USDT         0  0.00%
+2025-10-19 (0)    0 USDT         0  0.00%
+2025-10-18 (0)    0 USDT         0  0.00%
+2025-10-17 (0)    0 USDT         0  0.00%
+2025-10-16 (0)    0 USDT         0  0.00%
+2025-10-15 (0)    0 USDT         0  0.00%
+2025-10-14 (0)    0 USDT         0  0.00%
+2025-10-13 (0)    0 USDT         0  0.00%
+
+
+This is my dry run
+
+{Reactions}
+👍 (2)
+
+[11/11/2025 19:33] snokard.
+ROI: Closed trades
+∙ 164.852 USDT (1.68%) (16.56 Σ%)
+ROI: All trades
+∙ 45.503 USDT (0.38%) (4.57 Σ%)
+Total Trade Count: 1243
+Bot started: 2025-10-20 21:14:29
+First Trade opened: 21 days ago (2025-10-20 21:49:05)
+Latest Trade opened: 28 minutes ago (2025-11-11 19:04:28)
+Win / Loss: 1009 / 134
+Winrate: 88.28%
+Expectancy (Ratio): 0.14 (0.12)
+Avg. Duration: 1 day, 0:11:12
+Best Performing: BTC/USDT:USDT: 8.385 USDT (2.54%)
+Trading volume: 29295.826 USDT
+Profit factor: 2.02
+Max Drawdown: 1.25% (14.534 USDT)
+    from 2025-11-04 02:15:20 (162.87 USDT)
+    to 2025-11-05 06:11:53 (148.336 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-11-11 17:27:54 (164.852 USDT)
+
+
+[11/11/2025 19:34] serialkiller15
+Time to take a deeper look into results are realy good..
+
+
+[11/11/2025 19:36] snokard.
+I want to give it time to clear really old trades, 
+Avg duration from new ones is decreasing fast however thats why im confident on the learning is working
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1437888643602579646/image0.jpg?ex=69f30667&is=69f1b4e7&hm=71b9041eb4f9566bc5daeaa9bd632d8cf648df30fa95b628c410902b695ae9eb&
+
+
+[11/11/2025 19:36] serialkiller15
+🔥
+
+
+[11/11/2025 19:50] snokard.
+But overall having over 1000 trades and still in profit is really good sign
+
+
+[11/12/2025 00:41] zzokbary
+live run result
+
+Daily Profit over the last 7 days:
+Day (count)      USDT           USD          Profit %
+---------------  -------------  -----------  ----------
+2025-11-12 (0)   0 USDT         0.00 USD     0.00%
+2025-11-11 (25)  288.32 USDT    288.17 USD   22.29%
+2025-11-10 (3)   -775.733 USDT  -775.32 USD  -37.49%
+2025-11-09 (13)  124.946 USDT   124.88 USD   6.43%
+2025-11-08 (0)   0 USDT         0.00 USD     0.00%
+2025-11-07 (0)   0 USDT         0.00 USD     0.00%
+2025-11-06 (0)   0 USDT         0.00 USD     0.00%
+
+{Reactions}
+🙀
+
+[11/12/2025 00:42] zzokbary
+Wanna learn? Burn some
+
+
+[11/12/2025 00:49] ggoyito
+Impressive, my savings from 2 years as a university student 😀
+
+
+[11/12/2025 01:50] snokard.
+No training?
+
+
+[11/12/2025 02:46] zzokbary
+Yes, live run only
+
+{Reactions}
+👍 (3)
+
+[11/13/2025 15:09] bala03
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1438546411099652197/Screenshot_2025-11-13-20-39-32-16_41203aada896b37f358f9de124058c4f.jpg?ex=69f370bf&is=69f21f3f&hm=11d20158a8111f005fc131923b9ab7264dc92d0493b6b9d05598aab03270d89f&
+https://cdn.discordapp.com/attachments/1431399852444483655/1438546411804164228/Screenshot_2025-11-13-20-39-28-16_41203aada896b37f358f9de124058c4f.jpg?ex=69f370bf&is=69f21f3f&hm=d550386f60f3c6d4b512a4f7e5577746fb635c2411d419643c696d09cb75a095&
+https://cdn.discordapp.com/attachments/1431399852444483655/1438546412630708274/Screenshot_2025-11-13-20-39-21-35_41203aada896b37f358f9de124058c4f.jpg?ex=69f370bf&is=69f21f3f&hm=2afc2565f41183b8d28920b8541b20b6307b04ffcc1e8c50b9d23bf72c85af85&
+
+
+[11/13/2025 15:11] lukovicka
+how many bad coins😲
+
+
+[11/13/2025 19:36] bala03
+not a static pair list that's why
+
+
+[11/14/2025 04:37] zzokbary
+live run
+
+Daily Profit over the last 7 days:
+Day (count)      USDT           USD          Profit %
+---------------  -------------  -----------  ----------
+2025-11-14 (1)   269.054 USDT   268.96 USD   33.79%
+2025-11-13 (1)   91.219 USDT    91.19 USD    12.94%
+2025-11-12 (1)   220.735 USDT   220.65 USD   45.59%
+2025-11-11 (25)  288.32 USDT    288.22 USD   147.20%
+2025-11-10 (3)   -775.733 USDT  -775.45 USD  -79.84%
+2025-11-09 (13)  124.946 USDT   124.90 USD   14.76%
+2025-11-08 (0)   0 USDT         0.00 USD     0.00%
+
+
+[11/14/2025 04:41] viking046433
+Please send profit page
+
+
+[11/14/2025 04:42] zzokbary
+Where I can find it?
+
+
+[11/14/2025 04:42] viking046433
+/profit
+
+
+[11/14/2025 04:42] viking046433
+On telegram
+
+
+[11/14/2025 04:42] zzokbary
+ROI: Closed trades
+∙ 218.541 USDT (-0.66%) (25.81 Σ%)
+∙ 218.462 USD
+ROI: All trades
+∙ 218.541 USDT (-0.66%) (25.81 Σ%)
+∙ 218.462 USD
+Total Trade Count: 44
+Bot started: 2025-11-08 03:36:50
+First Trade opened: 5 days ago (2025-11-08 19:32:52)
+Latest Trade opened: 3 hours ago (2025-11-14 01:05:15)
+Win / Loss: 39 / 5
+Winrate: 88.64%
+Expectancy (Ratio): 4.97 (0.03)
+Avg. Duration: 7:27:50
+Best Performing: GIGGLE/USDT:USDT: 269.054 USDT (33.99%)
+Trading volume: 209208.895 USDT
+Profit factor: 1.28
+Max Drawdown: 79.84% (775.733 USDT)
+    from 2025-11-09 10:07:29 (124.946 USDT)
+    to 2025-11-10 22:49:39 (-650.788 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-11-09 10:07:29 (218.541 USDT)
+
+
+[11/14/2025 04:43] viking046433
+Not to bad hey
+
+
+[11/14/2025 04:43] viking046433
+79% drawdown ufffff
+
+{Reactions}
+😫
+
+[11/14/2025 04:44] viking046433
+What you max open trades
+
+
+[11/14/2025 04:44] zzokbary
+just one
+
+
+[11/14/2025 04:45] viking046433
+So this does not have a stop loss
+
+
+[11/14/2025 04:47] zzokbary
+There’s no stoploss, so I can lose everything. That’s why I allow only one max trade.
+
+
+[11/14/2025 04:48] viking046433
+Balls you got
+
+
+[11/14/2025 04:48] viking046433
+That’s exactly how you can loose everything
+
+
+[11/14/2025 04:49] zzokbary
+or get alot
+
+
+[11/14/2025 04:49] viking046433
+Sure
+
+
+[11/14/2025 04:50] viking046433
+I modified one of the ones here with ML but it needs stop loss on exchange
+
+
+[11/14/2025 04:51] viking046433
+Because of leverage the stops are pretty wide
+
+
+[11/14/2025 04:51] ohbad1330
+what coin that makes you have 79% drawdown?
+
+
+[11/14/2025 04:51] viking046433
+
+
+{Forwarded Message}
+Originally sent: 11/13/2025 13:05
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1438753304346886184/image.png?ex=69f388ae&is=69f2372e&hm=2fa798553fccd889aad8a26904d5fefb359c420fc35fe244f9925ae03d580646&
+
+
+{Reactions}
+👍
+
+[11/14/2025 04:56] zzokbary
+How can I search it? sorry ;;
+
+
+[11/14/2025 05:05] viking046433
+/performance
+
+
+[11/14/2025 06:23] sang_tm
+GKD_FisherTransformV4_ML
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1438776394669887488/image.png?ex=69f2f56f&is=69f1a3ef&hm=a21d3c32d6c9c501ca7e044b492d175dfb67196abc7c561ca03aae7d55ac141d&
+
+
+[11/14/2025 06:24] sang_tm
+this strat is good, but i don't recommend put large of money into it in live, 50 usdt is enough in live
+
+
+[11/14/2025 06:27] 4v1234
+I have the feeling,  that when I start test in live, the market is going crazy 😀  Have you tried this setting live ? Is is static pairlis?
+
+
+[11/14/2025 06:29] zzokbary
+Performance:
+1.  GIGGLE/USDT:USDT 224.391 USDT (14.42%) (2)
+2.  JASMY/USDT:USDT 211.223 USDT (11.29%) (5)
+3.  SUPER/USDT:USDT 54.279 USDT (7.45%) (2)
+4.  1000PEPE/USDT:USDT 49.845 USDT (2.81%) (5)
+5.  OP/USDT:USDT 42.391 USDT (7.82%) (2)
+6.  KAS/USDT:USDT 35.178 USDT (2.71%) (3)
+7.  BIO/USDT:USDT 34.576 USDT (11.29%) (1)
+8.  JUP/USDT:USDT 13.61 USDT (1.53%) (4)
+9.  ARB/USDT:USDT 12.675 USDT (4.74%) (2)
+10.  MEW/USDT:USDT 7.629 USDT (2.41%) (1)
+11.  FIDA/USDT:USDT 6.714 USDT (1.97%) (2)
+12.  1000BONK/USDT:USDT 5.765 USDT (1.81%) (1)
+13.  PENDLE/USDT:USDT 4.818 USDT (8.14%) (2)
+14.  1000FLOKI/USDT:USDT 3.216 USDT (1.20%) (2)
+15.  LDO/USDT:USDT 3.2 USDT (12.99%) (1)
+16.  BOME/USDT:USDT 1.708 USDT (0.51%) (2)
+17.  BRETT/USDT:USDT 0.522 USDT (1.64%) (1)
+18.  PYTH/USDT:USDT 0.164 USDT (0.59%) (1)
+19.  CETUS/USDT:USDT -0.684 USDT (-0.33%) (1)
+20.  AAVE/USDT:USDT -101.306 USDT (-5.24%) (2)
+21.  PENGU/USDT:USDT -203.834 USDT (-39.91%) (2)
+22.  ARKM/USDT:USDT -232.203 USDT (-92.64%) (1)
+
+
+[11/14/2025 12:42] lukovicka
+@Samyar Hi. Does this version (v57) have a stop-loss? I had 37 trades, and all of them ended in profit. Some trades had a temporary large loss (-32%), but the trade didn't close until it became profitable again (+0.5%). It seems to have the same problem as Alex's version.
+
+
+[11/14/2025 12:43] viking046433
+Nope
+
+{Reactions}
+😧
+
+[11/14/2025 14:27] brewy_024
+No stop loss. That bot will increase position size until price change direction or until it blows your whole account which will happen sooner or later. It's like playing roulette 🙂 
+Test it if you like in dry run, but i highly don't recommend it for live trading.
+
+{Reactions}
+👍 (4)
+
+[11/14/2025 23:46] snokard.
+Day (count)       USDT              Profit %
+----------------  ------------  --  ----------
+2025-11-14 (65)   10.724 USDT    0  0.91%
+2025-11-13 (54)   6.416 USDT     0  0.55%
+2025-11-12 (41)   4.253 USDT     0  0.37%
+2025-11-11 (32)   6.831 USDT     0  0.59%
+2025-11-10 (23)   -1.789 USDT    0  -0.15%
+2025-11-09 (28)   -1.065 USDT    0  -0.09%
+2025-11-08 (37)   4.885 USDT     0  0.42%
+2025-11-07 (49)   2.239 USDT     0  0.19%
+2025-11-06 (59)   0.06 USDT      0  0.01%
+2025-11-05 (45)   5.608 USDT     0  0.49%
+2025-11-04 (32)   -12.193 USDT   0  -1.05%
+2025-11-03 (85)   21.016 USDT    0  1.85%
+2025-11-02 (45)   2.89 USDT      0  0.25%
+2025-11-01 (35)   -1.681 USDT    0  -0.15%
+2025-10-31 (37)   4.581 USDT     0  0.40%
+2025-10-30 (91)   27.347 USDT    0  2.48%
+2025-10-29 (28)   4.648 USDT     0  0.42%
+2025-10-28 (57)   11.04 USDT     0  1.01%
+2025-10-27 (25)   1.709 USDT     0  0.16%
+2025-10-26 (48)   10.668 USDT    0  0.99%
+2025-10-25 (39)   5.322 USDT     0  0.50%
+2025-10-24 (63)   9.54 USDT      0  0.90%
+2025-10-23 (68)   5.038 USDT     0  0.48%
+2025-10-22 (100)  22.971 USDT    0  2.22%
+2025-10-21 (128)  37.631 USDT    0  3.78%
+2025-10-20 (0)    0 USDT         0  0.00%
+2025-10-19 (0)    0 USDT         0  0.00%
+2025-10-18 (0)    0 USDT         0  0.00%
+2025-10-17 (0)    0 USDT         0  0.00%
+2025-10-16 (0)    0 USDT         0  0.00%
+
+
+Still surviving
+
+
+[11/15/2025 10:32] serialkiller15
+ROI: Closed trades
+∙ 24.892 USDT (1.25%) (16.59 Σ%)
+∙ 24.881 USD
+ROI: All trades
+∙ 13.869 USDT (1.13%) (9.25 Σ%)
+∙ 13.863 USD
+Total Trade Count: 438
+Bot started: 2025-11-13 08:16:59
+First Trade opened: 2 days ago (2025-11-13 08:30:55)
+Latest Trade opened: an hour ago (2025-11-15 09:12:54)
+Win / Loss: 431 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 0.06 (100.00)
+Avg. Duration: 0:59:39
+Best Performing: LAB/USDT:USDT: 1.662 USDT (1.50%)
+Trading volume: 10030.052 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from 2025-11-13 08:34:01 (0.019 USDT)
+    to 2025-11-13 08:34:01 (0.019 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-11-15 09:31:03 (24.892 USDT)
+
+{Reactions}
+😱
+
+[11/15/2025 10:35] darkreaper0756
+2 Days 431 treads😳
+
+
+[11/15/2025 10:36] serialkiller15
+Yes but the exits are not good look at the profit... Needs some further work
+
+
+[11/15/2025 10:37] darkreaper0756
+Yes, I saw it…
+
+
+[11/15/2025 10:53] vasko123.
+Winrate: 100.00%,  2 days  - Simply unthinkable. Super.   7 Open trade - "+" "-" ?  What version of strategy? - GKD_FisherTransformV4_ML? SL?
+
+
+[11/15/2025 10:54] serialkiller15
+Yep exits needs adjustments will fix in the afternoon
+
+
+[11/15/2025 10:56] viking046433
+Does this have a stop loss?
+
+
+[11/15/2025 10:57] serialkiller15
+Nope also needs to be fixed
+
+{Reactions}
+👍
+
+[11/16/2025 15:47] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1439643013407051816/Screenshot_20251116_164551_Firefox2.jpg?ex=69f37989&is=69f22809&hm=9f33ffc2e577154ff7ac3c87dee04b71bee07260022ff3e35ce100110c9d0d5b&
+
+{Reactions}
+💯 (5)
+
+[11/16/2025 15:47] serialkiller15
+Optimized roi with trailing it's going better.
+
+{Reactions}
+🚀
+
+[11/16/2025 16:18] ywk3926
+It's a difficult time again.
+
+
+[11/16/2025 16:18] serialkiller15
+Yep
+
+
+[11/16/2025 16:18] serialkiller15
+Unhendable
+
+
+[11/16/2025 16:25] serialkiller15
+Fucking crazy Market
+
+
+[11/16/2025 16:26] serialkiller15
+But gkd is handling good better then bandsniper
+
+
+[11/19/2025 16:22] viking046433
+ROI: Closed trades
+∙ 85.674 USDT (2.19%) (8.65 Σ%)
+∙ 1468.448 ZAR
+ROI: All trades
+∙ 85.48 USDT (2.12%) (8.63 Σ%)
+∙ 1465.126 ZAR
+Total Trade Count: 69
+Bot started: 2025-11-05 09:18:45
+First Trade opened: 14 days ago (2025-11-05 11:35:45)
+Latest Trade opened: a minute ago (2025-11-19 16:20:42)
+Win / Loss: 66 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 1.30 (100.00)
+Avg. Duration: 11:46:05
+Best Performing: BDXN/USDT:USDT: 13.229 USDT (0.78%)
+Trading volume: 14857.731 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from 2025-11-05 21:32:03 (0.86 USDT)
+    to 2025-11-05 21:32:03 (0.86 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-11-19 15:50:56 (85.674 USDT)
+
+{Reactions}
+🚀 (4)
+
+[11/19/2025 16:22] viking046433
+V54_ml
+
+
+[11/19/2025 16:22] viking046433
+No leverage
+
+
+[11/19/2025 16:43] zzokbary
+no stoploss?
+
+
+[11/19/2025 18:50] viking046433
+No but it’s doing actually really well. Trades don’t linger to long
+
+
+[11/19/2025 23:29] zzokbary
+Can you share your current profit?
+
+
+[11/20/2025 06:01] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1440945035502948482/Schermafdruk_van_2025-11-20_06-58-35.png?ex=69f398e3&is=69f24763&hm=71dbbd18eab32506cd6d253c52a79e61c6ec0bd4c7d93f8b95f1e1a4ef2126aa&
+
+
+[11/20/2025 07:51] viking046433
+Stoploss ?
+
+
+[11/20/2025 10:05] branly76
+Is is dynamic stoploss, max 10%
+
+
+[11/20/2025 10:06] branly76
+But crypto's go south for about a week now, so many good trades.
+
+
+[11/21/2025 03:12] .oliver6
+could you please share config file? thanksss🙏
+
+
+[11/21/2025 07:34] viking046433
+ROI: Closed trades
+∙ 101.979 USDT (2.12%) (10.3 Σ%)
+∙ 1756.07 ZAR
+ROI: All trades
+∙ 99.174 USDT (2.03%) (10.02 Σ%)
+∙ 1707.776 ZAR
+Total Trade Count: 81
+Bot started: 2025-11-05 09:18:45
+First Trade opened: 15 days ago (2025-11-05 11:35:45)
+Latest Trade opened: 4 hours ago (2025-11-21 03:25:47)
+Win / Loss: 78 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 1.31 (100.00)
+Avg. Duration: 11:22:27
+Best Performing: BDXN/USDT:USDT: 13.229 USDT (0.78%)
+Trading volume: 19567.588 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from 2025-11-05 21:32:03 (0.86 USDT)
+    to 2025-11-05 21:32:03 (0.86 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-11-21 05:31:55 (101.979 USDT)
+
+{Reactions}
+❤️
+
+[11/21/2025 07:35] zzokbary
+WTF 😱  15m timeframe?
+
+
+[11/21/2025 07:35] viking046433
+Yo Brandy please share this strategy file or tag it
+
+
+[11/21/2025 07:38] viking046433
+5m
+
+
+[11/21/2025 07:39] viking046433
+Using whitelist ['StaticPairList'] with 58 pairs
+TAG/USDT:USDT, MYX/USDT:USDT, BDXN/USDT:USDT, PUMP/USDT:USDT, AIN/USDT:USDT, OL/USDT:USDT, TAC/USDT:USDT, TANSSI/USDT:USDT, GRIFFAIN/USDT:USDT, CROSS/USDT:USDT, M/USDT:USDT, VINE/USDT:USDT, OG/USDT:USDT, BIO/USDT:USDT, PENGU/USDT:USDT, ESPORTS/USDT:USDT, SOPH/USDT:USDT, ICNT/USDT:USDT, AIOT/USDT:USDT, ZORA/USDT:USDT, AXL/USDT:USDT, SPX/USDT:USDT, SPK/USDT:USDT, H/USDT:USDT, NTRN/USDT:USDT, DOLO/USDT:USDT, POPCAT/USDT:USDT, NEIRO/USDT:USDT, MILK/USDT:USDT, ILV/USDT:USDT, CATI/USDT:USDT, PROMPT/USDT:USDT, SKATE/USDT:USDT, VIC/USDT:USDT, RLC/USDT:USDT, 1INCH/USDT:USDT, BR/USDT:USDT, MOODENG/USDT:USDT, MEME/USDT:USDT, API3/USDT:USDT, KERNEL/USDT:USDT, ALGO/USDT:USDT, SUSHI/USDT:USDT, MAGIC/USDT:USDT, BULLA/USDT:USDT, VELVET/USDT:USDT, ZRC/USDT:USDT, SAHARA/USDT:USDT, IDOL/USDT:USDT, CFX/USDT:USDT, PNUT/USDT:USDT, BB/USDT:USDT, LDO/USDT:USDT, BID/USDT:USDT, IP/USDT:USDT, AIXBT/USDT:USDT, MAV/USDT:USDT, BANK/USDT:USDT
+
+
+[11/21/2025 07:39] serialkiller15
+🔥
+
+
+[11/21/2025 07:41] zzokbary
+which version?
+
+
+[11/21/2025 07:42] viking046433
+V54 ML no leverage
+
+{Reactions}
+❤️ (2)
+
+[11/21/2025 07:42] serialkiller15
+Nice
+
+
+[11/21/2025 09:00] ywk3926
+No stop-loss; this is crazy.
+
+
+[11/21/2025 09:23] 4v1234
+This is the main core 😀
+
+
+[11/21/2025 10:27] branly76
+It seems that only GKD survives the last days, bybit 15 coins, strated 10/10
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1441374403396108430/Schermafdruk_van_2025-11-21_11-23-39.png?ex=69f32e85&is=69f1dd05&hm=b6a78a3de9bd467a3c9e9e4e390a91fb7295075d928806fc51b72f5125d612aa&
+
+
+[11/21/2025 10:28] branly76
+Hyperliquid, same 15 coins, only shorter period. Started 31/10
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1441374661878349964/Schermafdruk_van_2025-11-21_11-24-53.png?ex=69f32ec2&is=69f1dd42&hm=9e81abd499dd0eaac5abc8967a08ffe5660794892d9a1a4bf460d39b2f5c270c&
+
+
+[11/21/2025 10:29] lukovicka
+It's true. All my tests with Band Sniper and Divergence were broken in the last few days. Only GKD survived.
+
+
+[11/21/2025 10:29] viking046433
+But you use a dynamic stop loss what version here has that?
+
+
+[11/21/2025 10:29] ywk3926
+AlexBandSniperV8AI,   $200 profit,,  Drawdown to -$90
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1441375023670755430/image.png?ex=69f32f19&is=69f1dd99&hm=5f7bff2085d587263dc963f030237af7f4652f7d8d67a15b17d44da3e9b72288&
+
+
+[11/21/2025 10:29] ywk3926
+🥲
+
+
+[11/21/2025 10:30] lukovicka
+but GKD strategy has no sl
+
+
+[11/21/2025 10:32] branly76
+Dynamic stop loss, it is in the name of the strategy
+
+
+[11/21/2025 10:33] branly76
+GKD_FischerTransformV63_Dynamic.py
+
+{Reactions}
+🚀
+
+[11/21/2025 10:34] viking046433
+To be fair this strategy the v54ml has some much dumb code in it hard to find where what is
+
+
+[11/21/2025 10:34] branly76
+ask claude to take the not used code out.
+
+
+[11/21/2025 10:35] viking046433
+I have placed a hard stop version with dca it’s useless
+
+
+[11/21/2025 10:36] branly76
+If the price goes to long in the wrong direction DCA is killing, but bad killing
+
+
+[11/21/2025 10:36] lukovicka
+which timeframe?
+
+
+[11/21/2025 10:37] branly76
+15M
+
+
+[11/21/2025 10:38] branly76
+But i use for all tests a limited number of coins, always the same and max 5/6 open trades
+
+
+[11/21/2025 10:39] lukovicka
+static pairlist?
+
+
+[11/21/2025 10:39] branly76
+yes.
+
+
+[11/21/2025 10:41] branly76
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1441377987755769887/config.GKD_63.json?ex=69f331db&is=69f1e05b&hm=e11c89c5f647b6bca0cdc5115a2c45ee127ee309adae8124f9c7a8630efadb67&
+
+
+[11/21/2025 12:11] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1441400704387518606/img.jpg?ex=69f34703&is=69f1f583&hm=a22529762f0077c1aaf65e881968c2e3c8922c9055a91c191e2921c17c2efd67&
+
+
+[11/21/2025 18:57] zzokbary
+Very good!!! which version and timeframe?
+
+
+[11/21/2025 19:00] xf0x0f
+1h v4_ml
+
+
+[11/21/2025 19:02] dragongoattigercat
+sorry to ask. is it V58_ML strategy?
+
+
+[11/21/2025 19:09] xf0x0f
+I think so,… im naming all strategies like the class at most
+
+
+[11/21/2025 19:13] dragongoattigercat
+if that, it should be V57_ML file. Can you share the strategy file please? Thank you.
+
+
+[11/21/2025 19:19] xf0x0f
+Will do
+
+
+[11/21/2025 19:30] dragongoattigercat
+Thank you. I am a bit loss on this. 🤣
+
+
+[11/22/2025 12:34] xf0x0f
+this is my gkdv57
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1441768780413010041/Bildschirmfoto_2025-11-22_um_13.32.50.png?ex=69f34c50&is=69f1fad0&hm=6d28621ed727ccd449722a9f37abc2525eb98fde1694f9e2551a6bae97726a7b&
+
+
+[11/22/2025 17:27] xf0x0f
+15% today till now,… pretty good
+
+
+[11/22/2025 18:15] lukovicka
+did you fix the exits?
+
+
+[11/22/2025 18:27] dragongoattigercat
+Can you please re-share your strategy file? Thank you
+
+
+[11/22/2025 19:40] xf0x0f
+please give me some more time,.. i will do soon
+
+{Reactions}
+👍 (2)
+
+[11/22/2025 21:47] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1441907994538541157/Bildschirmfoto_2025-11-22_um_22.47.15.png?ex=69f32537&is=69f1d3b7&hm=12c406d6177895fda1970fd710b7c3d9a4f34d2edd774fb6a4e27f4e5a59f512&
+
+
+[11/22/2025 21:47] xf0x0f
+good fight,... good night,... 😉
+
+
+[11/22/2025 21:49] 4v1234
+Perfect green flame 🔥  😀
+
+{Reactions}
+🤣
+
+[11/22/2025 21:50] serialkiller15
+Nice but 47 win and 23 loss about 50% loss yes big trades that's it why you have this profit
+
+
+[11/22/2025 21:52] xf0x0f
+🚀 Binance (dry): Exited STRK/USDT:USDT (#72)
+Sub Profit: 22.63% (profit: 600.291 USDT)
+Final Profit: 22.68% (601.59922894 USDT)
+Enter Tag: fisher_short_ml
+Exit Reason: profit_protection (empty)
+Direction: Short (4.8x)
+Amount: 81696.2
+Open Rate: 0.1559 USDT
+Exit Rate: 0.1484 USDT
+Duration: 1:30:02 (90.0 min)
+
+🚀 Binance (dry): Exited HYPE/USDT:USDT (#71)
+Sub Profit: 7.10% (profit: 258.072 USDT)
+Final Profit: 7.10% (257.85574082 USDT)
+Enter Tag: fisher_short_ml
+Exit Reason: profit_protection (empty)
+Direction: Short (4.8x)
+Amount: 571.34
+Open Rate: 30.545 USDT
+Exit Rate: 30.063 USDT
+Duration: 1:30:04 (90.1 min)
+
+🚀 Binance (dry): Exited HYPE/USDT:USDT (#66)
+Sub Profit: 6.57% (profit: 202.064 USDT)
+Final Profit: 6.56% (201.83225939 USDT)
+Enter Tag: fisher_short_ml
+Exit Reason: profit_protection (empty)
+Direction: Short (4.8x)
+Amount: 472.17
+Open Rate: 31.281 USDT
+Exit Rate: 30.822 USDT
+Duration: 1:40:02 (100.0 min)
+
+
+[11/22/2025 21:53] 4v1234
+Eeee he was just about to get a rest........before the comment  😀
+I see something,  but I do kot know if it is valid from the start,  and this is leverage value. This strategy needs push to get profit.
+
+
+[11/22/2025 21:55] 4v1234
+So I'd 69 and 70 should do green too
+
+
+[11/23/2025 07:05] serialkiller15
+Ok @xF0x0F you won nice Results
+
+
+[11/25/2025 22:41] snokard.
+Day (count)       USDT              Profit %
+----------------  ------------  --  ----------
+2025-11-25 (21)   0.197 USDT     0  0.02%
+2025-11-24 (24)   1.786 USDT     0  0.15%
+2025-11-23 (29)   8.359 USDT     0  0.69%
+2025-11-22 (49)   10.466 USDT    0  0.87%
+2025-11-21 (77)   7.691 USDT     0  0.64%
+2025-11-20 (56)   19.534 USDT    0  1.65%
+2025-11-19 (61)   -1.063 USDT    0  -0.09%
+2025-11-18 (31)   -7.758 USDT    0  -0.65%
+2025-11-17 (52)   9.932 USDT     0  0.84%
+2025-11-16 (50)   7.668 USDT     0  0.65%
+2025-11-15 (20)   -9.264 USDT    0  -0.78%
+2025-11-14 (65)   10.724 USDT    0  0.92%
+2025-11-13 (54)   6.416 USDT     0  0.55%
+2025-11-12 (41)   4.253 USDT     0  0.37%
+2025-11-11 (32)   6.831 USDT     0  0.59%
+2025-11-10 (23)   -1.789 USDT    0  -0.15%
+2025-11-09 (28)   -1.065 USDT    0  -0.09%
+2025-11-08 (37)   4.885 USDT     0  0.42%
+2025-11-07 (49)   2.239 USDT     0  0.19%
+2025-11-06 (59)   0.06 USDT      0  0.01%
+2025-11-05 (45)   5.608 USDT     0  0.49%
+2025-11-04 (32)   -12.193 USDT   0  -1.06%
+2025-11-03 (85)   21.016 USDT    0  1.85%
+2025-11-02 (45)   2.89 USDT      0  0.26%
+2025-11-01 (35)   -1.681 USDT    0  -0.15%
+2025-10-31 (37)   4.581 USDT     0  0.41%
+2025-10-30 (91)   27.347 USDT    0  2.48%
+2025-10-29 (28)   4.648 USDT     0  0.42%
+2025-10-28 (57)   11.04 USDT     0  1.02%
+2025-10-27 (25)   1.709 USDT     0  0.16%
+2025-10-26 (48)   10.668 USDT    0  0.99%
+2025-10-25 (39)   5.322 USDT     0  0.50%
+2025-10-24 (63)   9.54 USDT      0  0.90%
+2025-10-23 (68)   5.038 USDT     0  0.48%
+2025-10-22 (100)  22.971 USDT    0  2.23%
+2025-10-21 (128)  37.631 USDT    0  3.79%
+2025-10-20 (0)    0 USDT         0  0.00%
+2025-10-19 (0)    0 USDT         0  0.00%
+2025-10-18 (0)    0 USDT         0  0.00%
+2025-10-17 (0)    0 USDT         0  0.00%
+
+
+
+ROI: Closed trades
+∙ 236.236 USDT (1.44%) (23.79 Σ%)
+ROI: All trades
+∙ 73.359 USDT (0.42%) (7.39 Σ%)
+Total Trade Count: 1884
+Bot started: 2025-10-20 21:14:29
+First Trade opened: a month ago (2025-10-20 21:49:05)
+Latest Trade opened: 2 hours ago (2025-11-25 19:57:25)
+Win / Loss: 1583 / 201
+Winrate: 88.73%
+Expectancy (Ratio): 0.13 (0.09)
+Avg. Duration: 1 day, 5:35:41
+Best Performing: ETH/USDT:USDT: 13.177 USDT (2.68%)
+Trading volume: 45978.678 USDT
+Profit factor: 1.82
+Max Drawdown: 1.26% (14.534 USDT)
+    from 2025-11-04 02:15:20 (162.87 USDT)
+    to 2025-11-05 06:11:53 (148.336 USDT)
+Current Drawdown: 0.11% (1.302 USDT)
+    from 2025-11-24 12:58:35 (237.538 USDT)
+
+
+Roi all trades is slowly increasing... good sign
+
+
+[11/26/2025 06:17] viking046433
+This is the dynamic strategy?
+
+
+[11/26/2025 08:42] snokard.
+Still v72 stratrgy
+
+
+[11/26/2025 10:35] viking046433
+Ok tell me I see it has a stop loss did you implement?
+
+
+[11/26/2025 10:58] snokard.
+sl is 0.5 (50%)
+
+
+[11/26/2025 10:59] snokard.
+already have one in live
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1443194416541077504/image.png?ex=69f3360a&is=69f1e48a&hm=7876cf2dd6eb2a4c1e287ea3a3350cb81225ecd0602d6103d504c6f2116a722d&
+
+
+[11/26/2025 11:30] densky188
+Any strategy must have strict stoploss
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1443202364474392638/20251126_192949.png?ex=69f33d71&is=69f1ebf1&hm=1afe07c8995463cefc39f727d745ebabb6704bd519b6e419ac21ef4137888f9b&
+
+
+[11/26/2025 11:55] snokard.
+depends highly on position sizing and wr but yes
+
+
+[11/27/2025 10:26] viking046433
+Ok geeze so you have had some 50% stops I see it’s doing well actually
+
+
+[12/01/2025 10:05] vasko123.
+Meanwhile, the bot has no losses.
+Even if you just exit all positions, you'll get +10%.
+But you can leave everything as is (HYPE, SKY, ADA) and there's sure to be a pump.
+Everything's great.
+We're waiting for the pump.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1444992794178486313/52f2aa9328bfa3aa.png?ex=69f32968&is=69f1d7e8&hm=0746a9d25fca3450b2627bda6b8967f397f834dd5ab7704a48d566dbcb151bf0&
+
+
+[12/01/2025 10:10] lukovicka
+which version?
+
+
+[12/01/2025 10:20] vasko123.
+There is a version in the picture
+
+
+[12/01/2025 10:21] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1444996705572618371/490faf9afcb93682.png?ex=69f32d0d&is=69f1db8d&hm=0f8ef6b3d6d537ec111dfb8be7b9f7f497a1378516aedb27d57d86f3952f2716&
+
+
+[12/01/2025 10:22] sliper82_32020
+Can you share that version of the strategy here?
+
+
+[12/01/2025 10:22] sliper82_32020
+Ако можеш
+
+{Reactions}
+👍
+
+[12/01/2025 10:37] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1445000753084367030/0f84e9761c99f527.png?ex=69f330d2&is=69f1df52&hm=e9dfb8067b80595cfebef9922a00fd5b817eb1268bc2a2e5d40dd0ca1c6a2417&
+
+{Reactions}
+👍 (2)
+
+[12/01/2025 10:45] lukovicka
+without stoploss?
+
+
+[12/01/2025 10:50] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1445004075258351678/ccd197da91f16581.png?ex=69f333ea&is=69f1e26a&hm=c349912b55807a994ac19870a4aaf96fcf82d4ac36901ada05c4c990d2e1825e&
+
+
+[12/01/2025 10:51] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1445004264278589460/f20a0760441a6b24.png?ex=69f33417&is=69f1e297&hm=87d6cc5a1611c7885fb68d6f1a24820a9801626d1d80aa494ff2831c20c5b9b9&
+
+
+[12/01/2025 10:51] densky188
+Without setting a stoploss, it was liquidated twice during testing.
+
+{Reactions}
+👍
+
+[12/01/2025 10:52] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1445004581988728983/4ea0f08759914557.png?ex=69f33463&is=69f1e2e3&hm=166eef98dc1570cc1578aa25ff9cdf7f548d8233dea4d8958ed6bb89d9bf91c4&
+
+
+[12/01/2025 10:54] vasko123.
+Isn't it possible to exit a losing trade?
+/fx {ID}
+
+
+[12/01/2025 10:55] vasko123.
+Well, there will be some kind of minus
+
+
+[12/01/2025 10:56] vasko123.
+I want to see how the strategy behaves when the market reverses.
+
+
+[12/01/2025 16:47] viking046433
+ROI: Closed trades
+∙ 145.275 USDT (1.86%) (14.67 Σ%)
+∙ 2484.199 ZAR
+ROI: All trades
+∙ 135.688 USDT (1.77%) (13.71 Σ%)
+∙ 2320.271 ZAR
+Total Trade Count: 127
+Bot started: 2025-11-05 09:18:45
+First Trade opened: 26 days ago (2025-11-05 11:35:45)
+Latest Trade opened: 8 hours ago (2025-12-01 08:21:24)
+Win / Loss: 125 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 1.16 (100.00)
+Avg. Duration: 15:09:12
+Best Performing: BDXN/USDT:USDT: 14.138 USDT (0.82%)
+Trading volume: 29337.385 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from 2025-11-05 21:32:03 (0.86 USDT)
+    to 2025-11-05 21:32:03 (0.86 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-12-01 12:37:50 (145.275 USDT)
+
+
+[12/01/2025 16:47] viking046433
+V54_ML no leverage
+
+{Reactions}
+🔥 (2)
+
+[12/01/2025 22:14] xf0x0f
+who else is running gkd v63a from me last weeks
+
+
+[12/01/2025 22:14] xf0x0f
+please share your exits
+
+
+[12/04/2025 02:16] 4v1234
+Do live testing....on dry everyone gets good results.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1445961853862940842/20251204_041225.jpg?ex=69f3642a&is=69f212aa&hm=b062a17de06aa90c63cf358029c9f266236aee2486099d7d5cf009c2643239a1&
+https://cdn.discordapp.com/attachments/1431399852444483655/1445961854462722230/20251204_041257.jpg?ex=69f3642a&is=69f212aa&hm=3eabce130de17c0eb12fa8694a972bf54172c086adfa20d31c92e66a8a2092c3&
+
+
+[12/04/2025 08:32] niksat24.
+What is the difference between "dry" and "live"? I thought "dry run" was the same thing, just without real money.
+
+
+[12/04/2025 10:05] darkreaper0756
+Do you have a stop loss?
+
+
+[12/04/2025 10:06] darkreaper0756
+I ran it without stoploss and it didn't lose a single trade
+
+
+[12/04/2025 10:34] 4v1234
+After one month ot testing on dry, I believe it was the " divergent " and with optimization from 2021 it gave 100% win rate.  Immediately after this result it was set ot " live" and guest what....total failure. From that point on everything is tested only live.
+
+
+[12/04/2025 10:36] 4v1234
+Yes it uses its own stop loss settings. You are live with no stop loss? How long?
+
+
+[12/04/2025 13:05] niksat24.
+Yes, that's very annoying, of course, but I think it was simply the momentum of the market that changed. Because in a dry run, the movements are identical to those in real life.
+It would be interesting to run the same strategy synchronously in live mode and in dry run mode. Then you could really see if it makes a difference.
+
+{Reactions}
+👍 (2)
+
+[12/07/2025 17:40] viking046433
+ROI: Closed trades
+∙ 192.327 USDT (1.90%) (19.43 Σ%)
+∙ 3256.103 ZAR
+ROI: All trades
+∙ 184.311 USDT (1.84%) (18.62 Σ%)
+∙ 3120.381 ZAR
+Total Trade Count: 162
+Bot started: 2025-11-05 09:18:45
+First Trade opened: a month ago (2025-11-05 11:35:45)
+Latest Trade opened: 2 hours ago (2025-12-07 15:10:48)
+Win / Loss: 160 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 1.20 (100.00)
+Avg. Duration: 14:11:44
+Best Performing: H/USDT:USDT: 19.564 USDT (7.96%)
+Trading volume: 35363.258 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from 2025-11-05 21:32:03 (0.86 USDT)
+    to 2025-11-05 21:32:03 (0.86 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-12-07 14:25:46 (192.327 USDT)
+
+
+
+V54 ML no leverage
+
+{Reactions}
+🔥 (2)
+
+[12/07/2025 18:02] vasko123.
+I couldn't set up v54 without leverage.
+Please share your strategy and configuration.
+So, maybe I did set it up, but I was losing money.
+
+
+[12/07/2025 18:03] vasko123.
+GKDVIIAI
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1447287516494299146/0707daa89561dbe9.png?ex=69f39989&is=69f24809&hm=ded85383158172f9e4ece674f026d928116cb8d257aab72d2d4774854f63a989&
+
+
+[12/07/2025 18:05] vasko123.
+GKD_FisherTransformV4_ML
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1447287845126668399/731e85c09c16c1dd.png?ex=69f399d7&is=69f24857&hm=9888f09a44147916b39d4d0e0a67ffce6ee550b604046365e8a5e3fe8b6c960c&
+
+
+[12/07/2025 23:16] .oliver6
+which version please tell me?  is it V57
+
+
+[12/08/2025 03:29] .oliver6
+I think the major problem of GKDVIIAI is it doesn't has a stoploss
+
+{Reactions}
+👏
+
+[12/08/2025 03:45] zzokbary
+No stoploss — that’s the key to this strategy.
+
+
+[12/08/2025 10:19] lukovicka
+1h? can you share your pairlist?
+
+
+[12/14/2025 20:36] erkankesemen6252
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1449862688120504472/Screenshot_2025-12-14-23-36-25-903_org.telegram.messenger.jpg?ex=69f31499&is=69f1c319&hm=e7ac2e8055244e9d6a5e7c296217a555925cfac405b3eb2d3bef31697445742c&
+https://cdn.discordapp.com/attachments/1431399852444483655/1449862688631947438/Screenshot_2025-12-14-23-36-07-844_org.telegram.messenger-edit.jpg?ex=69f3149a&is=69f1c31a&hm=e716affc98142406979350d59c511a16c04905acb99f6f10a0d80217ba4671ed&
+https://cdn.discordapp.com/attachments/1431399852444483655/1449862688938262648/Screenshot_2025-12-14-23-35-56-323_org.telegram.messenger-edit.jpg?ex=69f3149a&is=69f1c31a&hm=a57e99b77c8a403330dce4a3f3d779a5c56dc850c27cbf0fbf988c9a0aa52096&
+
+{Reactions}
+🚀
+
+[12/16/2025 13:17] viking046433
+ROI: Closed trades
+∙ 283.446 USDT (1.84%) (28.63 Σ%)
+∙ 4759.055 ZAR
+ROI: All trades
+∙ 283.645 USDT (1.83%) (28.65 Σ%)
+∙ 4762.405 ZAR
+Total Trade Count: 199
+Bot started: 2025-11-05 09:18:45
+First Trade opened: a month ago (2025-11-05 11:35:45)
+Latest Trade opened: 12 hours ago (2025-12-16 00:55:55)
+Win / Loss: 198 / 0
+Winrate: 100.00%
+Expectancy (Ratio): 1.43 (100.00)
+Avg. Duration: 15:05:04
+Best Performing: AIOT/USDT:USDT: 61.499 USDT (3.74%)
+Trading volume: 45146.372 USDT
+Profit factor: inf
+Max Drawdown: 0.00% (0 USDT)
+    from 2025-11-05 21:32:03 (0.86 USDT)
+    to 2025-11-05 21:32:03 (0.86 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-12-16 04:49:32 (283.446 USDT)
+
+
+V54 no leverage
+
+{Reactions}
+👍 (4) 🔥
+
+[12/16/2025 15:03] glad8769
+WOW!
+
+Win / Loss: 198 / 0
+Winrate: 100.00%
+
+
+[12/16/2025 15:05] serialkiller15
+meanwhile i run 2 bots on live
+and its doing really good!
+
+
+[12/16/2025 15:08] serialkiller15
+ignore the loss i closed it manualy
+GKD_FisherTransformV4_ML
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1450504916161396876/image.png?ex=69f37079&is=69f21ef9&hm=b1a8444764a3127e15537d457edd1d06ed12a51a5f47c4a25f3b4f5fe5859535&
+
+
+[12/16/2025 15:10] lukovicka
+what about timeframe and pairlist?
+
+
+[12/16/2025 15:25] serialkiller15
+1h static pairlist
+
+{Reactions}
+👍
+
+[12/16/2025 15:25] lukovicka
+can you share it please?
+
+
+[12/16/2025 15:26] serialkiller15
+my static pairlist as i always use found in the channel!
+
+{Reactions}
+👍
+
+[12/16/2025 15:26] serialkiller15
+https://discord.com/channels/1238181199206154373/1433333846329528411/1433495093515386991
+
+
+[12/16/2025 15:27] lukovicka
+thank you
+
+{Reactions}
+👍
+
+[12/16/2025 15:42] glad8769
+Are you still using "dynamic" pair list? You wrote "static" here but in the config I see that is dynamic
+
+
+[12/16/2025 15:43] serialkiller15
+i use static and dynamic in another bot
+
+
+[12/16/2025 15:43] glad8769
+There is only the dynamic there 🙂
+
+{Reactions}
+👍
+
+[12/16/2025 15:43] glad8769
+or I am blind 😄
+
+
+[12/16/2025 15:46] serialkiller15
+yep you are not blind i added it!
+
+{Reactions}
+🙏
+
+[12/16/2025 15:47] glad8769
+back to test 😄
+
+
+[12/16/2025 16:41] viking046433
+It does not have a stop loss
+
+{Reactions}
+👍 🤯
+
+[12/17/2025 05:56] abb8187
+It's useless. In half a month, your losses will catch up with your profits.
+
+
+[12/22/2025 07:26] viking046433
+Has anyone a dry run results for V63 dynamic
+
+
+[12/22/2025 12:00] bigbroseur
+Got GKDAF_MTF_v63c_15mf with sleep of 2 days cause tech server problem.
+I'll probably swith to 1h TF...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1452631957753040947/image.png?ex=69f3446f&is=69f1f2ef&hm=609abaebde11eb6fe5451f04e7ca93870402696c8ac0fd43f7132e72e61070e8&
+https://cdn.discordapp.com/attachments/1431399852444483655/1452631958113878026/image.png?ex=69f3446f&is=69f1f2ef&hm=bf3027d9e7f269bffd37af88c7e3e42ea0fb5ead7866721000e8c68582cdea61&
+https://cdn.discordapp.com/attachments/1431399852444483655/1452631958415872171/image.png?ex=69f3446f&is=69f1f2ef&hm=c66ccb2a05e155699d00991217ac5d54d4c2bf56921a823c1f4754a298dc7926&
+
+{Reactions}
+🚀
+
+[12/22/2025 12:01] viking046433
+It’s not looking very good this tho
+
+
+[12/22/2025 12:02] viking046433
+Well it’s ok I guess
+
+
+[12/22/2025 12:02] viking046433
+Tnx @😇
+
+
+[12/22/2025 16:56] bigbroseur
+Let's start with GDK...
+GKDVIIAI_15ml2fs_hy@hbot1 
+    read as strat:GKDVIIAI , TF:15m , l2:max leverage 2, f:futures (or s:spot), s:static pairlist (or v:volume)
+need certainly a stoploss logic or/and limit of  open_trade duration
+probably better perf with TF:1h
+I'll switch to 1h TF
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1452706356527370392/image.png?ex=69f389b9&is=69f23839&hm=b9a7173ee0242ac48f6f64a974675403ed070aa752c76ce702be1815bf517e48&
+https://cdn.discordapp.com/attachments/1431399852444483655/1452706356804063444/image.png?ex=69f389b9&is=69f23839&hm=fdd5e5799dc0d32c1292e59946fc27386463319d60b5606eb70412bda4e5cdbc&
+https://cdn.discordapp.com/attachments/1431399852444483655/1452706357118631966/image.png?ex=69f389b9&is=69f23839&hm=0e2ebbe371c13e30858119cd493d7ac63e2f960affc76b0ba14074c8a935d182&
+
+{Reactions}
+👍
+
+[12/22/2025 17:07] bigbroseur
+Now better one, 
+No best one... 
+GKDv58FreqAI_1hl3fs_by 
+    read as strat:GKD_FTV58ML_FreqAI2 , tf:1h , l:3, f:futures , s:static pairs
+need certainly stoploss logic or/and limit of  open_trade duration
+1st freqai that works in dry (since a long, long..)
+probably a candidate for a 'live' in 2026
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1452709254371741838/image.png?ex=69f38c6c&is=69f23aec&hm=2f86469e7bf29fbb4e5bd5526cc3c1fc47b24f4dab3cb50ba1ff7655fa42831a&
+https://cdn.discordapp.com/attachments/1431399852444483655/1452709254703349892/image.png?ex=69f38c6c&is=69f23aec&hm=1a20699a02caeb69f5d4437ef00d4f1a1d39672da1f39afdd4b5fc93a61f4d68&
+https://cdn.discordapp.com/attachments/1431399852444483655/1452709255189893331/image.png?ex=69f38c6c&is=69f23aec&hm=7d6327160782708e0bf141e6311d6b9494cfb4ab37f22c91f71196eae2fda679&
+
+{Reactions}
+👍
+
+[12/23/2025 08:31] serialkiller15
+Interesting thanks, there are so many versions of gdk so i did not test all of them but this loogs good! ets see
+
+
+[12/23/2025 11:27] bigbroseur
+Trades statistic of GKD_FTV58ML_FreqAI2
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1452985899020324990/GKD_FTV58ML_FreqAI2.txt?ex=69f33c91&is=69f1eb11&hm=86b21e1c49406abf5a14d1daa9fd6dccaadc7331727302a150b7d746f832f1ab&
+
+
+[01/02/2026 01:24] .oliver6
+Using the same config, running for 39 days
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1456458001400594679/2026-01-02_9.23.27.png?ex=69f357f7&is=69f20677&hm=77d00214dd3249284d1f3d6c9b222296bd4dd2ad3ccdeaf6768fdc8f87af9c7f&
+
+
+[01/02/2026 01:25] .oliver6
+GKD dynamic 63 version. The trading frequency is weird, sometimes it doesn't make a single trade for a few days, but suddenly it open a lot of positions within short time period
+
+
+[01/09/2026 13:46] sera131
+impossible results. tell me the version so I can break it down
+
+
+[01/09/2026 13:47] sera131
+I'm working on a GKDFisher version, I think it was initially here but I'm not sure anymore
+
+
+[01/09/2026 13:48] sera131
+the version i picked up some time ago was GKD_FisherTransformV72_Ultimate
+
+
+[01/09/2026 13:49] sera131
+how back am I with the latest updates? 🙂 am I in the right place?
+
+
+[01/09/2026 19:14] viking046433
+V54 ML
+
+
+[01/09/2026 21:51] sera131
+unfortunetely I can't find it
+
+
+[01/12/2026 05:12] viking046433
+Check the gkd transform site
+
+{Reactions}
+👍
+
+[01/25/2026 14:19] raul0909
+@Alex Crypto King
+
+
+[02/06/2026 13:03] snokard.
+this one still surviving, majority of drawdown are long positions, lets see now what happens when markets start going up instead of down
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1469317657991057573/image.png?ex=69f35334&is=69f201b4&hm=337db1fe3053d643cf8ce7fd70283b83f92fced39a728270ebfaa38358d9eeda&
+
+{Reactions}
+👍 (3)
+
+[02/25/2026 15:35] serialkiller15
+dry run
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1476241170731368571/image.png?ex=69f376ba&is=69f2253a&hm=311e4cd4bfd62fa80a9ba1ca4148ff40440eaed3e491e8988642f1a5bcf50fb6&
+
+
+[02/25/2026 15:35] serialkiller15
+and live
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1476241237626322944/image.png?ex=69f376ca&is=69f2254a&hm=3f3e044f7956c7e052832e2429109259749b49ac9ca0a2100a8def7a26fb3d0c&
+
+
+[02/25/2026 15:35] serialkiller15
+available under all Basic and Pro Members (was many work to get it working)
+
+
+[02/25/2026 16:09] alexandermoysa
+Looks very interesting. Can you share this strategy?
+
+
+[02/25/2026 16:09] serialkiller15
+No only for basic user membership sry
+
+
+[02/25/2026 16:09] alexandermoysa
+Ok!
+
+
+[02/25/2026 16:10] serialkiller15
+To much free work in the path that's it
+
+
+[02/25/2026 16:10] lukovicka
+without stop-losses?
+
+
+[02/25/2026 16:11] serialkiller15
+Stoploss works now
+
+{Reactions}
+🔥
+
+[02/25/2026 16:11] serialkiller15
+And reversal logic also
+
+
+[02/25/2026 16:14] alexandermoysa
+Donations only using crypto? No patreon or something similar?
+
+
+[02/25/2026 16:15] serialkiller15
+Yes patreon is here need to implement it into the #🤝💚donate stuff
+
+
+[02/25/2026 16:27] alexandermoysa
+Thank you! I bought basic
+
+
+[02/25/2026 16:37] serialkiller15
+@Alexander thanks access granted
+
+
+[02/25/2026 17:12] alexandermoysa
+Thank you!
+
+
+[02/28/2026 10:47] lukovicka
+how is it going?
+
+
+[02/28/2026 11:43] themarkx_
+Day (count)      USDT              Profit %
+---------------  ------------  --  ----------
+2026-02-28 (20)  -37.543 USDT   0  -3.53%
+2026-02-27 (32)  -41.484 USDT   0  -3.76%
+2026-02-26 (12)  14.332 USDT    0  1.32%
+2026-02-25 (0)   0 USDT         0  0.00%
+2026-02-24 (0)   0 USDT         0  0.00%
+2026-02-23 (0)   0 USDT         0  0.00%
+2026-02-22 (0)   0 USDT         0  0.00%
+
+
+[02/28/2026 12:50] alexandermoysa
+ID L/S    Pair            Since     Profit (USD)       # Entries
+--------  --------------  --------  ---------------  -----------
+1 S 2.4x  BTC/USDT:USDT   16 h ago  6.04% (1.65)               1
+2 S 2.4x  BNB/USDT:USDT   16 h ago  5.53% (0.14)               1
+3 S 2.4x  XRP/USDT:USDT   16 h ago  10.06% (0.24)              1
+4 L 2.4x  DOT/USDT:USDT   16 h ago  -15.81% (-7.17)            4
+5 S 2.4x  DOGE/USDT:USDT  16 h ago  11.79% (0.28)              1
+--------  --------------  --------  ---------------  -----------
+Total                               -4.86 USD
+
+
+[02/28/2026 12:51] serialkiller15
+Reduce the dca entrys... For example..
+
+
+[02/28/2026 12:52] alexandermoysa
+What is maximum limit in the strategy?
+
+
+[02/28/2026 12:53] serialkiller15
+I don't know at the moment I am on mobile also the stake amount should be increased.. One trade can kill all profits
+
+
+[02/28/2026 12:53] alexandermoysa
+It seems to me, it would be good to have some weight balance for different positions in the strategy (as I understand, now, it is independent). If the market is clearly bearish, ensure the total "Long" volume doesn't exceed the total "Short" volume. But this work is better to give trading agent
+
+
+[02/28/2026 12:54] alexandermoysa
+I will check 🙂
+
+
+[02/28/2026 13:05] serialkiller15
+I already fixed some stuff in V5 and V6.. V5 is still available in the Basic Member group V6 needs to finish tests..
+
+
+[02/28/2026 13:14] alexandermoysa
+Is it possible to keep strategies in GitHub? It would be easier to keep versions and branches? In the v5 I found issues with nan values during backtest and Hyperopt. This changes can be valuable for somebody
+
+
+[02/28/2026 13:35] vasko123.
+I'm confused 🙁
+Which version exactly are you talking about?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1477298160454996060/1dae869ea37e2fba.png?ex=69f35aa0&is=69f20920&hm=8759841cf54009fb3e72d9a7889b6d6c295962075fd757d965675ed530c70228&
+
+
+[02/28/2026 13:37] alexandermoysa
+I used version from discord ALEXGKD_FisherTransformV5_ML.py
+
+
+[02/28/2026 15:34] serialkiller15
+V4 is for free members and V5 for Basic and Pro Members thats the difference!
+
+
+[02/28/2026 15:35] serialkiller15
+V5 is based on GKD_FisherTransformV4_ML - this was doing mostly shorts so i also fixed some stuff in V5 thats the difference!
+
+{Reactions}
+👍
+
+[02/28/2026 15:40] serialkiller15
+@Alexander its a great idea, but i dont have time at the moment to handle this also
+
+
+[03/02/2026 19:27] serialkiller15
+V53
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1478111575381639389/image.png?ex=69f3046d&is=69f1b2ed&hm=c82d3f5809649b88dfb2fe441e64bd690c1e290809576f918a53545e72e684bc&
+
+
+[03/09/2026 15:32] vasko123.
+GKD_FisherTransformV4_ML - Conservatively. It works.
+stoploss = -1 - comment it out and you'll be happy. Line 798
+Hyperopt takes a very long time, but you'll have a working strategy and AI chat to help. Unfortunately, I was working with Kasuari_btc_template and didn't really delve into what I was doing with GKD_FisherTransformV4_ML.
+stoploss: -0.171
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1480589201144676463/88058e3161737c8a.png?ex=69f37625&is=69f224a5&hm=7c198dd8fb40ff1565d04e02bc6547392f4802f5ac20906223789e32a75ac258&
+
+
+[03/09/2026 15:40] vasko123.
+https://discord.com/channels/1238181199206154373/1392174991499329787/1480576357644894271 - Why do backtesting and hyper-optimization yourself?
+
+
+[03/25/2026 12:41] vasko123.
+v6 - Doesn't give up
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1486344344725094400/9d331a7817273bf9.png?ex=69f34e0a&is=69f1fc8a&hm=ba8683e0b56f2893f986a1ddecfb2772328bcbdfd9577b0b1b5a652925df3cd5&
+
+
+[03/25/2026 12:58] serialkiller15
+👍
+
+
+[03/26/2026 15:08] divarak
+Please help,v5 crashing.. Can't understand what's wrong and I have open trades
+
+
+[03/26/2026 15:08] divarak
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1431399852444483655/1486743727358873691/message.txt?ex=69f3707e&is=69f21efe&hm=f8f486e266709434c07f7e231d7b45ab53dca3ca1f735182d80a9856e73554b5&
+
+
+[03/26/2026 15:09] divarak
+tried to relaunch deleting the database
+
+
+[03/26/2026 16:08] serialkiller15
+If you deleted the dB your trades will be gone on the dashboard...
+Dry or live? If dry then it's OK when love close them in the exchange directly
+
+{Reactions}
+🫡
+
+[03/26/2026 18:50] divarak
+Live... Start closing.
+
+
+[03/26/2026 18:50] divarak
+So.. Any idea what happened?
+
+
+[03/26/2026 19:32] dragongoattigercat
+have you had your computer restore from a backup? it seems like the database got compromised. I think you can handle current trades manually until you close them all then rebuild the bot from fresh.
+
+
+[03/26/2026 20:37] serialkiller15
+DB broken not the Strategie
+
+
+[03/27/2026 19:28] divarak
+No, I didn't ... In case of corrupt database, or inconsistent... any suggestion how to sanitize it? some tool to purge bad data?
+
+
+[03/27/2026 19:29] serialkiller15
+You can access the dB with different tools depends on your is you have
+
+{Reactions}
+🫡
+
+[03/27/2026 19:30] kalibeus
+Except a backup I don’t see any solution
+
+
+[03/27/2026 19:31] serialkiller15
+It depends
+
+
+[03/27/2026 19:42] dragongoattigercat
+VS Code has add-on that you can open .sqlite file. so you can have a look and find out the bad record in the DB. always make a copy before changing so you can go back when needed
+
+
+[03/27/2026 19:44] serialkiller15
+on Windows i use Dbeaver...
+
+
+[03/28/2026 17:06] xf0x0f
+Same on mac
+
+{Reactions}
+👍
+
+==============================================================
+Exported 474 message(s)
+==============================================================

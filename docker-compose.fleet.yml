@@ -1,0 +1,80 @@
+# =============================================================================
+# 3-bot freqtrade fleet + dashboard
+#
+# Pattern: shared `user_data/data/` for OHLCV, per-bot user_data via subfolders,
+# each bot exposes its REST API on the host (Alex's pattern from discord).
+# Use `docker compose up -d` to start. `podman-compose up -d` also works.
+# =============================================================================
+
+services:
+
+  # ---------- Bot 1: AlexNexusForgeV8AIV7 (FreqAI, ~50% capital) ----------
+  ft-nexusforge:
+    image: freqtradeorg/freqtrade:stable_freqai
+    restart: unless-stopped
+    container_name: ft-nexusforge
+    volumes:
+      - "./user_data:/freqtrade/user_data"
+    ports:
+      - "127.0.0.1:9020:8080"
+    command: >
+      trade
+      --logfile /freqtrade/user_data/logs/nexusforge.log
+      --db-url sqlite:////freqtrade/user_data/nexusforge.sqlite
+      --config /freqtrade/user_data/configs/config_bot1_nexusforge.json
+      --strategy AlexNexusForgeV8AIV7
+    networks: [ftnet]
+
+  # ---------- Bot 2: ECRV32 (DCA, ~30% capital) ----------
+  ft-ecrv32:
+    image: freqtradeorg/freqtrade:stable
+    restart: unless-stopped
+    container_name: ft-ecrv32
+    volumes:
+      - "./user_data:/freqtrade/user_data"
+    ports:
+      - "127.0.0.1:9060:8080"
+    command: >
+      trade
+      --logfile /freqtrade/user_data/logs/ecrv32.log
+      --db-url sqlite:////freqtrade/user_data/ecrv32.sqlite
+      --config /freqtrade/user_data/configs/config_bot2_ecrv32.json
+      --strategy ECRV32
+    networks: [ftnet]
+
+  # ---------- Bot 3: AlexBandSniperV654 (sniper, ~20% capital) ----------
+  ft-bandsniper:
+    image: freqtradeorg/freqtrade:stable
+    restart: unless-stopped
+    container_name: ft-bandsniper
+    volumes:
+      - "./user_data:/freqtrade/user_data"
+    ports:
+      - "127.0.0.1:9050:8080"
+    command: >
+      trade
+      --logfile /freqtrade/user_data/logs/bandsniper.log
+      --db-url sqlite:////freqtrade/user_data/bandsniper.sqlite
+      --config /freqtrade/user_data/configs/config_bot3_bandsniper.json
+      --strategy AlexBandSniperV654
+    networks: [ftnet]
+
+  # ---------- FreqUI dashboard (official, free) ----------
+  # Browse to http://localhost:8500 and add each bot:
+  #   http://ft-nexusforge:8080  /  ft-ecrv32:8080  /  ft-bandsniper:8080
+  # Login = freqtrade / CHANGE_ME (whatever you set in api_server.password).
+  frequi:
+    image: freqtradeorg/frequi:latest
+    restart: unless-stopped
+    container_name: frequi
+    ports:
+      - "127.0.0.1:8500:80"
+    networks: [ftnet]
+    depends_on:
+      - ft-nexusforge
+      - ft-ecrv32
+      - ft-bandsniper
+
+networks:
+  ftnet:
+    driver: bridge

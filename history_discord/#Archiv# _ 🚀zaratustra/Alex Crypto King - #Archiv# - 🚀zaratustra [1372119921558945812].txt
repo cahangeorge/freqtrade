@@ -1,0 +1,535 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: #Archiv# / 🚀zaratustra
+==============================================================
+
+[05/14/2025 14:14] serialkiller15
+@everyone Here is the Zaratustra if someone want to try it
+
+{Reactions}
+👍 (2)
+
+[05/14/2025 14:15] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1372215700663566377/Zaratustra_Alex_TRAIL_ROI_V2.py?ex=69f363f5&is=69f21275&hm=c01576217ffb2c1559dcdd7f4648562cfeaec416dfdab3a201cdb5609c8fb2f1&
+
+
+[05/14/2025 20:18] xaviertoor
+Share configs
+
+
+[05/15/2025 06:14] serialkiller15 (pinned)
+here is the Config!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1372457209610371122/config-torch_-_Original.json?ex=69f39c21&is=69f24aa1&hm=0b1c9e2d942d2eed970941b631e267adc93cc465fee1150786c754091aa256bc&
+
+{Reactions}
+👍
+
+[05/15/2025 06:15] serialkiller15
+Pinned a message.
+
+
+[05/16/2025 15:07] xaviertoor
+Binance
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1372953584949399672/image.png?ex=69f3702a&is=69f21eaa&hm=b54b92be0d5f17aa8a0902078c86ee07715796d04b13be4add566d587e9de5d8&
+
+
+[05/16/2025 16:32] serialkiller15
+Nice
+
+
+[05/19/2025 07:54] francois5156
+Thanks for sharing! Will try it out today
+
+
+[05/19/2025 15:31] serialkiller15
+I have another version will share soon
+
+
+[05/20/2025 07:39] serialkiller15 (pinned)
+@everyone Here is the V7 Version of Zaratustra, make your own tests
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1374290471047925760/ZaratustraDCA2_07.py?ex=69f3073d&is=69f1b5bd&hm=d272c28d869f00567b8d0761bec44f263fc3e766787e7c3d9b3c0b15d5527315&
+
+{Reactions}
+🔥 (3)
+
+[05/20/2025 07:40] serialkiller15
+Pinned a message.
+
+
+[06/09/2025 16:09] xalt8851
+No way I can enable leverage x3, please share your configuration🙏
+
+
+[06/09/2025 17:23] xaviertoor
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1381685128417382573/config-tankai.json.txt?ex=69f3900d&is=69f23e8d&hm=35b05e5dc62d91f7bb05bb767e9483dc1b22ba09d72fe512d69ffcf5ec803611&
+
+{Reactions}
+🫶🏻
+
+[06/10/2025 14:11] xalt8851
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1381999187713065021/image.png?ex=69f3630a&is=69f2118a&hm=31d7e010dfaa9838f5c2a4ebff804e919aa10d31c026faae73d05bde9ef5448f&
+
+
+[06/10/2025 15:45] geze21
+what model for freqai did you use?
+
+
+[06/10/2025 18:11] xaviertoor
+https://github.com/AlexCryptoKing/freqailstm.git
+
+{Embed}
+https://github.com/AlexCryptoKing/freqailstm.git
+GitHub - AlexCryptoKing/freqailstm
+Contribute to AlexCryptoKing/freqailstm development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/Ijw0T5QhJDBorCCRiMwgXCDmGbfRWkZOuKkXyg6nOGk/https/opengraph.githubassets.com/f2700bd9a2a200623c057d009e6e6b12af7a424623f37e05bb76af9c55e58cad/AlexCryptoKing/freqailstm
+
+
+[06/10/2025 18:12] serialkiller15
+@Xaviertoor old and we never got it to fly
+
+
+[06/10/2025 18:12] serialkiller15
+To complex...
+
+
+[06/10/2025 20:01] xaviertoor
+True, I think you posted an update here on Discord!
+
+
+[06/12/2025 10:03] xalt8851
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1382661547394072678/image.png?ex=69f328e9&is=69f1d769&hm=756bb4c696594c2fb510e14b81aa81112f4413cb48f97bd2146564af86203041&
+
+
+[06/12/2025 10:09] erbosnio_17282
+It seems it os the one with the best performance in downtrends
+
+
+[06/13/2025 08:20] xalt8851
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1382997998157430834/image.png?ex=69f310c1&is=69f1bf41&hm=a637cbafddcb233c515682c0083f4667cae34e6a61b88fda6a43a09c2be2c83a&
+
+
+[06/13/2025 12:51] xalt8851
+are there any advantages to using freqai?
+
+
+[06/13/2025 12:54] serialkiller15
+@Xalt forget about freqai its not eays for starting and it was never successfull
+
+{Reactions}
+👌🏻
+
+[06/13/2025 13:25] serialkiller15
+For starting Zarathustra is perfekt
+
+
+[06/13/2025 18:44] xalt8851
+https://deepwiki.com/search/how-coins-are-selected-in-the_2f92e9ad-df78-4460-8a06-e864d8e4c7b1
+
+{Embed}
+https://deepwiki.com/search/how-coins-are-selected-in-the_2f92e9ad-df78-4460-8a06-e864d8e4c7b1
+Search | DeepWiki
+DeepWiki provides up-to-date documentation you can talk to, for every repo in the world. Think Deep Research for GitHub - powered by Devin.
+
+
+[06/13/2025 18:45] xalt8851
+Good strategy, but it will work better with volatility. I also use passivbot and there coin selection is implemented very well. You can study it at the link above
+
+
+[06/24/2025 12:44] serialkiller15
+@everyone if someone would give it a try, got this from an nother community for testing
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1387050876358758531/config.ZaratustraDCA5.json?ex=69f34ecb&is=69f1fd4b&hm=ce5d2f60db2d079d95d40515f590e484f805f4ecec7cd0f22989bdfe9ac20387&
+https://cdn.discordapp.com/attachments/1372119921558945812/1387050876719595550/ZaratustraDCA5.py?ex=69f34ecb&is=69f1fd4b&hm=562bbabb6681b2b82826cedfed61172bc99b76558d897812b2260e879e670f3f&
+
+
+[06/25/2025 08:15] p.temple
+will test it and send result
+
+
+[06/25/2025 08:16] kyrylodudnyk
+I've started dry run yesterday.  Will share the results too
+
+
+[06/30/2025 19:03] xalt8851
+DCA5
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1389320500207157461/image.png?ex=69f2fecb&is=69f1ad4b&hm=1df097fd106668fe930ce12997421a70caa3a1cfd88f8a738f25849e237f1640&
+
+{Reactions}
+👍
+
+[06/30/2025 19:23] kyrylodudnyk
+Running Freqtrade 2025.5
+
+Running with 3x15 USDT on bybit in futures markets, with Strategy ZaratustraDCA5.
+
+Stoploss on exchange is enabled.
+
+Currently running, force entry: false
+
+Dry-Run
+
+Avg Profit 0.205% (∑ 14.992%) in 73 Trades, with an average duration of 4:30:24. Best pair: PENDLE/USDT:USDT.
+
+Bot start date: 2025-06-24 22:26:43 (GMT+3)
+First trade opened: 2025-06-24 23:40:02 (GMT+3)
+Last trade opened: 2025-06-30 17:10:06 (GMT+3)
+
+Profit factor: 7.95
+Trading volume: 2233,759 USDT
+
+Metric
+Value
+ROI closed trades  2,528 USDT (0.24%)
+ROI all trades  1,776 USDT (0.21%)
+Total Trade count  73
+Bot started  2025-06-24 22:26:43 (GMT+3)
+First Trade opened  2025-06-24 23:40:02 (GMT+3)
+Latest Trade opened  2025-06-30 17:10:06 (GMT+3)
+Win / Loss  66 / 6
+Winrate  91.667%
+Expectancy (ratio)  0.04 (0.58)
+Avg. Duration  4:30:24
+Best performing  PENDLE/USDT:USDT: 0.56%
+Trading volume  2233,759 USDT
+Profit factor  7.95
+Max Drawdown  0.18% (0,183 USDT) from 2025-06-25 16:13:06 to 2025-06-25 16:23:23
+
+
+[07/01/2025 15:56] libebcnof
+I am seeing good results too with DCA5 (been less than a day) Anyone tried enabling leverage?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1389635784797192362/image.png?ex=69f37bad&is=69f22a2d&hm=d19d18a37f7f57fea37c07ab51ac882bd11eba06027fea52781c79b2a28cc786&
+
+
+[07/01/2025 15:57] serialkiller15
+We have it running in our testfarm will check
+
+
+[07/01/2025 16:06] ch1ck3n_t4c0s
+You need way more time on a dry run to tell
+
+{Reactions}
+💯
+
+[07/01/2025 16:07] serialkiller15
+Yes we are on it
+
+
+[07/01/2025 16:07] serialkiller15
+@Ch1cK3N_t4c0s any suggestions about using order book.... I already implemented it... But need tests and rewrite some stuff
+
+
+[07/01/2025 16:08] ch1ck3n_t4c0s
+Let me think about that a bit today... are you using the new feature set they added with the OB columns?
+
+
+[07/01/2025 16:09] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1389639064877011014/image-3.png?ex=69f37ebb&is=69f22d3b&hm=d7c5fb6cd6526703e24fb9e3c3626716139ba63c6d6660d5be996007c49a1f0f&
+
+
+[07/01/2025 16:09] serialkiller15
+Bid ask wall and ither stuff
+
+
+[07/01/2025 19:18] ch1ck3n_t4c0s
+So really optimally OB data should be combined with vrvp (historical data) to find order blocks as orderbook data changes with Ticks and can be spoofed to pull markets one way or the other?
+
+
+[07/01/2025 19:24] serialkiller15
+It's my first aprosch to handle that thanks for your impact
+
+
+[07/01/2025 19:56] ch1ck3n_t4c0s
+Is on data backtestable tbh, I haven't used that new feature yet
+
+
+[07/07/2025 11:41] xalt8851
+DCA5 Live
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1391745939714343074/image.png?ex=69f33fe9&is=69f1ee69&hm=95c50bcdc42e246ab44d9f1df91356b5a2bb6889e6fc69749d73254d9b119cad&
+
+{Reactions}
+🔥
+
+[07/07/2025 12:06] viking046433
+How long have it been running? Looks like 12 days?
+
+
+[07/07/2025 15:12] xalt8851
+From 26.06
+
+
+[07/07/2025 15:16] viking046433
+The profit taking is very low why
+
+
+[07/07/2025 15:16] viking046433
+It takes profits at like 0.3%
+
+
+[07/07/2025 15:24] libebcnof
+It's on 1x leverage.
+
+
+[07/07/2025 15:25] viking046433
+And lol 😂
+
+
+[07/07/2025 16:44] serialkiller15
+I have a version with leverage into it
+
+
+[07/07/2025 17:05] xalt8851
+could you please share?
+
+
+[07/07/2025 17:16] serialkiller15
+Yep
+
+{Reactions}
+👍🏻
+
+[07/07/2025 17:39] xalt8851
+And if you've run it dry or live, I'd like to see the stats too🙏
+
+
+[07/07/2025 17:39] serialkiller15
+I don't run it no I only did take a look on it
+
+{Reactions}
+👌🏻
+
+[07/07/2025 17:49] serialkiller15
+with leverage
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1391838602949955717/ZaratustraDCA5.py?ex=69f39636&is=69f244b6&hm=a75ea296b3b1d6071443e135825cc1c4cd470c86a6d9cd11c0ef56b7046a3506&
+
+{Reactions}
+🔥 (2)
+
+[07/07/2025 19:25] libebcnof
+There are a lot of hard coded magic numbers in the strat which also need to be adjusted if we want to change the leverage. So perhaps it's best to stick with 1x... But I have a feeling that one day when market crashes (could be months from now) it will wipe out all the pennies the strat had been making, and half the deposit along with them.
+
+
+[07/07/2025 19:57] libebcnof
+I made a version where all the stops, rois and dca thresholds are dynamically calculated based on leverage. LMK anyone who wants it.
+
+{Reactions}
+🇷🇴 👍🏻
+
+[07/07/2025 20:14] maxgorbachevskiy
+Absolutely, you are very welcome to share! You can also start sub-thread for this
+
+
+[07/08/2025 07:04] libebcnof
+Started a thread.
+
+{Reactions}
+🔥
+
+[07/08/2025 09:42] xalt8851
+with leverage Alex version
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1392078411773771806/image.png?ex=69f3240c&is=69f1d28c&hm=b1d349feca604bb2eeb6d05c51c2e2331cd69004a0a7c05e07a7c69634b4174e&
+
+
+[07/08/2025 10:55] libebcnof
+I did a 1 year backtest which confirmed my fear exactly. The strat made a whopping 36% in 7 months but then it caught a bad trend, DCAd all the money into it and never recovered
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1392096698053955604/image.png?ex=69f33514&is=69f1e394&hm=fcda839661c56d6ff95e6444a6ed0a44720df7246de6b23da1925344b55762ee&
+
+
+[07/09/2025 09:37] viking046433
+Mmm 36% is bad lol
+
+
+[07/09/2025 10:45] libebcnof
+especially if it becomes minus 80 in the end
+
+
+[07/10/2025 07:13] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1392765595933479032/image.png?ex=69f3010a&is=69f1af8a&hm=c110fe0bc1e948016bf84d938080f75da15a80e58642a40877c826ca2825a762&
+
+
+[07/10/2025 07:13] maxgorbachevskiy
+Thoughts?
+
+
+[07/10/2025 07:13] serialkiller15
+286 is dooing good?
+
+
+[07/10/2025 07:14] maxgorbachevskiy
+I believe leveraged Zaratustra is for those who have big balls. And have no risk management.
+))
+
+{Reactions}
+🤣
+
+[07/10/2025 07:16] maxgorbachevskiy
+286 is doing MUCH better job that 285 currently! 
+Better realised profit, zero negative trades!
+
+
+[07/10/2025 07:16] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1392766532014051348/image.png?ex=69f301e9&is=69f1b069&hm=4ca2111872cdc931ba6fad40a36d48cd5153b71230cacd6a485aa7059e60b8f1&
+
+
+[07/10/2025 07:17] maxgorbachevskiy
+the difference is in pairlists! g4_15m vs g4_5m
+
+
+[07/10/2025 07:17] serialkiller15
+hehe you and your nice pairlists hehe!
+
+
+[07/10/2025 08:32] erbosnio_17282
+Good market now... Be careful
+
+
+[07/10/2025 08:33] serialkiller15
+yes its going to shorts slowly...as i can see on our strategies...
+
+
+[07/10/2025 09:17] xalt8851
+Can you share 286 with your pairlist?
+
+
+[07/10/2025 09:55] maxgorbachevskiy
+regarding pairlist, as of now I would kindly encourage to do your research. 
+This is my early work-in-progress, a bit too early to share.
+More importantly, my pairlist is limited to a specific exchange (because in every echange, pricing data is different).
+
+
+[07/10/2025 09:55] maxgorbachevskiy
+The idea is: 
+— get data for top 500 coins (bybit, in my case)
+— calculate correlation of coin prices against .... BTC (?)
+— calculate volatility of each coin (ATR)
+With these data, get most correlated & choose ATR volatility of your preference (most/least volatile). 
+
+In this concept, many input params are yet to be tested and improved. For example,which of correlations to use (pearson? spearman? cosine? cointegration? anny other?)
+Share your results please! 
+
+*** a python script for alll that stuff is very easy to generate with any GPT*
+
+
+[07/10/2025 09:56] maxgorbachevskiy
+Important to add: timeframes are different! 1h and 15m pairlists, based on the same logic, are completely different
+
+{Reactions}
+🔥
+
+[07/10/2025 09:57] maxgorbachevskiy
+that's why you have to find a combination that works for YOUR specific setup
+
+{Reactions}
+🔥
+
+[07/10/2025 10:00] maxgorbachevskiy
+even the script may be different, and you end up with a better solution than mine
+
+
+[07/10/2025 10:02] maxgorbachevskiy
+and then, lots lots lots of tests with different coins, and stake/maxtrade setups
+
+
+[07/11/2025 07:16] maxgorbachevskiy
+as expected, 286 is also stuck with MASSIVE loads of losses
+
+
+[07/11/2025 07:16] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1393128788509982900/image.png?ex=69f301ca&is=69f1b04a&hm=60ede408a706dafc76bb9638104ce32b064f8ecbe1ac5121e11d26fdf2ec8df4&
+
+
+[07/11/2025 07:18] maxgorbachevskiy
+I see NO possibility for Zaratustra to be able to recover these trades. Opinions?
+
+
+[07/11/2025 07:34] maxgorbachevskiy
+Zaratustra 285 (with a custom pairlist optimisefd for 15m timeframe) is down -52% of the wallet amount.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1372119921558945812/1393133241417859226/image.png?ex=69f305ef&is=69f1b46f&hm=3d6b77a5c71976cc409ba469dde796dd4c7632508f119faddfa7e3164a5cc4ef&
+
+{Reactions}
+👍 (2)
+
+[07/11/2025 07:34] maxgorbachevskiy
+The trade # 63 alone is holding  a whopping $-114 of unrealised losses
+
+
+[07/11/2025 07:35] maxgorbachevskiy
+I would NOT recommend using this strategy for anyone who knows these two words: "risk" and "management" 😅
+
+
+[07/11/2025 07:36] maxgorbachevskiy
+All non-leveraged are way down, too (282, 283, 284). 
+They will be able to recover if only the market goes down.
+But.. what if... the market decides not to go down? ))))
+
+
+[07/11/2025 07:55] maxgorbachevskiy
+Besides that, when leveraged, it wil lbe eating your fees, for all this time of waiting for a recovery – A LOT !
+
+
+[07/11/2025 08:32] maxgorbachevskiy
+@everyone  i received a lot of DM requests yesterday, asking for 286 pairlist. 
+i would love to see same enthusiasm and proactivity on strategy improvements.. 
+Don't be just consumers..
+
+{Reactions}
+👍 (2)
+
+[11/19/2025 03:01] .oliver6
+hi anybody still running zaratustra? I think it gives good signal - keep shorting over the past few days, but only V13 gives me the best backtesting results, all the other mod version's backtest is negative profits
+
+
+[11/19/2025 03:01] .oliver6
+V13's signal is good but it's too basic and it doenst have complete profit taking and stoploss logic
+
+
+==============================================================
+Exported 92 message(s)
+==============================================================

@@ -1,0 +1,3597 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🎯alexbandsniper
+==============================================================
+
+[11/09/2024 17:32] serialkiller15
+
+
+{Forwarded Message}
+little bit increase performance by move out iterators and pass it to each call of divergence. custom_exit and custom_stoploss find signal candle without loop...
+and next I'll try fix find pivots by not start when it just find, need wait window time
+Originally sent: 11/08/2024 23:21
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1304861060645392414/TGDF.py?ex=69f39210&is=69f24090&hm=2aa06b4fff70b3c84308e453e688082200fc4e2dcc7457c88cd181de9dd5808a&
+
+
+
+[11/10/2024 08:19] metinbarut._73694
+Do you get the following error while running dry-run with Volume pair list  (  from Bybit or Binance ) ~`2024-11-10 08:15:51 WARNING freqtrade.strategy.interface - Unable to analyze candle (OHLCV) data for pair SPEC/USDT:USDT: list index out of range
+2024-11-10 08:15:52 ERROR   freqtrade.strategy.strategy_wrapper - Unexpected error list index out of range calling <bound method IStrategy._analyze_ticker_internal of <TGDF.TGDF object at 0x7fc3b78564e0>>
+Traceback (most recent call last):`
+
+
+[11/10/2024 09:16] ximontan
+Yes, add this 
+**                if i not in occurences:
+                    continue
+**
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305098663441207379/image.png?ex=69f31dd8&is=69f1cc58&hm=2a9fb051b90f10ec7e2f99a2d85e1f99d658d9b716c80f911cf40fc9cba9428e&
+
+
+[11/10/2024 09:40] ximontan
+I forget about this bug, it not finished yet, I want fix early entry like in image.
+We have low and immediately after that we open order, but in live we will wait x candles when we detect that is a low...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305104679838945340/image.png?ex=69f32373&is=69f1d1f3&hm=91ad3f70a2cdae689fdbb85b2ebdab1e5383a29163a7f84ae2e72c0d675ea865&
+
+
+[11/10/2024 11:11] .7thdragon
+another problem is trailing... is too low, id prefer not to use it and to optimize window and index search for a specific period
+
+{Reactions}
+👍
+
+[11/10/2024 12:24] .7thdragon
+if i not in occurences: continue would not be correct here because i is an index, not an actual value in the occurences list. the correct one would be:
+            if i < 0 or i >= len(occurences):
+                continue
+
+
+[11/10/2024 13:01] .7thdragon
+Ha ha, found another FT bug, i am really sick of them 
+if you set in strat self.trailing_stop = True, if the hyperopt will have this value stored in memory, it will dump (end of epochs or interrupted) it anyway as True, even if you did NOT mention this space to be optimized or parameter json is explicit False, so be careful on optimizations
+so in this strat either use bigger values for trailing_stop_positive (like >= 0.04 to be realistic) and offset either remove/disable custom_exit as it is currently written
+Also in the current strat, trailing is applied to all pairs which is wrong, u get small gains vs big looses.
+
+
+[11/10/2024 13:06] ximontan
+you are right, i is index not value...
+
+{Reactions}
+👍 (2)
+
+[11/10/2024 15:01] ximontan
+I don't like this idea change trailing_stop in custom_exit, b/c it have influence in other pairs
+
+
+[11/10/2024 15:16] .7thdragon
+yes, i mention it above also :), hyperopt also is fouled
+
+
+[11/10/2024 15:19] .7thdragon
+v1.2.1 here is my proposed solution to be tested
+trailing moved to stoploss
+chop and natr added, can be disabled
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305190000828088401/TGDF.py?ex=69f372e9&is=69f22169&hm=965b8aee2e515c2e4c0981efe660ca7fbb245b5118273615107794ba25ccef23&
+
+
+[11/10/2024 15:21] ximontan
+Thanks, I'll check
+
+
+[11/10/2024 16:55] cheluxe
+Is it normal that the strategy hasn’t executed any buy orders during backtest?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305214342610030722/Captura_desde_2024-11-10_17-52-12.png?ex=69f38994&is=69f23814&hm=32af4e8e3f4ba495809579bf9c2814ff1b0b7c174f2ff3da53aad205b9361edd&
+
+
+[11/10/2024 17:06] cheluxe
+Oh sorry, use_natr_direction_change and use_natr_combined_change was false by default
+
+
+[11/10/2024 17:08] .7thdragon
+hyperopt first
+
+{Reactions}
+👍
+
+[11/10/2024 17:08] cheluxe
+Yes, Thanks!
+
+
+[11/10/2024 17:11] cheluxe
+Should I add roi and trailing to the hyperoptimization? Or just buy and stoploss? @7thDragon
+
+
+[11/10/2024 17:16] .7thdragon
+is your flavour, but recommended no. yes +trades
+
+{Reactions}
+👍
+
+[11/10/2024 18:03] .7thdragon
+v1.2.3 something is very weird even if are disabled, so i removed chops and natr for the moment
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305231303720833054/TGDF.py?ex=69f39960&is=69f247e0&hm=ae3e3d60a86fd1f749233708378f924b0e01cd98244587ec6e6d2dd29704affa&
+
+
+[11/10/2024 18:26] cheluxe
+wow
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305237070305820814/Captura_desde_2024-11-10_19-25-39.png?ex=69f2f5ff&is=69f1a47f&hm=ef3e4df0305c0e8b13ef379dbe57e3a170b6a6edd01a388266dd030f6df977eb&
+
+
+[11/10/2024 18:26] cheluxe
+Much better
+
+
+[11/10/2024 18:27] serialkiller15
+nice job!
+
+
+[11/10/2024 18:46] .7thdragon
+did bt too for the next few period after hyper? with --timeframe-detail 5m or 1m? what was your stoploss?
+
+
+[11/10/2024 18:51] cheluxe
+Nope, that was the first one with defaults settings. But i have similars results hyperopting with a diferent period. From 20241008 to 20241108
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305243341201346601/Captura_desde_2024-11-10_19-49-00.png?ex=69f2fbd6&is=69f1aa56&hm=1e088171fa25f58eb511e2b3c1423c342cde8d34be982b2ad65a654d76cd0690&
+
+
+[11/10/2024 18:52] cheluxe
+with --timeframe-detail 5m yes
+
+
+[11/10/2024 18:52] serialkiller15
+nice so you hyperopt buy and stoploss only?
+
+
+[11/10/2024 18:52] cheluxe
+buy, stoploss and trades with 100 stake amount
+
+
+[11/10/2024 18:52] serialkiller15
+thanks will do the same! then
+
+{Reactions}
+👍
+
+[11/10/2024 18:57] cheluxe
+mmm... but i have notice that it is not buying in dry run, even finding signals in several coins
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305244994633732106/Captura_desde_2024-11-10_19-56-21.png?ex=69f2fd61&is=69f1abe1&hm=11c96b744cf4af117f429b176a43544db5a0695416c31b7e82f9b4cd7d5647fd&
+
+{Reactions}
+🧐
+
+[11/10/2024 18:58] serialkiller15
+let me check!
+
+
+[11/10/2024 18:58] serialkiller15
+starting hyperopt and backtest i got te same error in my version i think
+
+
+[11/10/2024 20:02] hirotakah7
+Should i test this one ?
+
+
+[11/10/2024 20:03] serialkiller15
+yes would be nice because i got good restults with the spot version. i am already working on the futures mods...
+
+
+[11/10/2024 20:06] .7thdragon
+found the culprit (that could also give false results), testing
+
+{Reactions}
+👍
+
+[11/10/2024 20:06] hirotakah7
+Good
+
+
+[11/10/2024 22:28] cheluxe
+Could it be that the issue is lookahead bias? For using functions like shift(-1) and iloc[-1), which access future data points that aren’t available in real-time. This could explain why the strategy performs that well in backtesting but skips trades in a live or dry run because it can’t access future candles.
+
+
+[11/10/2024 22:33] ximontan
+yes, it can be, 
+https://www.freqtrade.io/en/stable/strategy-customization/#diving-in-deeper
+anyway it get orders, in img it decided that high level already there and get order, but actually high level would be little bit after...
+you can add high/low in chart and see when it try to get it
+in second example it guess correctly and SL help
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305299239705903176/image.png?ex=69f32fe6&is=69f1de66&hm=d520a87229a4c6121d3315ffc96aa32ec9ce4060a05dd205c8837a1f9cc1d98f&
+https://cdn.discordapp.com/attachments/1304860205565087795/1305299240150630532/image.png?ex=69f32fe6&is=69f1de66&hm=31e0e5c2b0c7c2ea1f4ee7bfc4b31d8c2c6b76078c9b8996cec580e31b778c51&
+
+
+[11/10/2024 22:40] cheluxe
+Which version is this? I had the not taken order problem in 1.2.3
+
+
+[11/10/2024 22:41] ximontan
+v1.2.1
+
+
+[11/10/2024 22:42] cheluxe
+I tried to activate the pivot chart lines but i get this error. I will try to fixed tomorrow.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305301688739168377/message.txt?ex=69f3322d&is=69f1e0ad&hm=ebe0a5d5049046c76bc7325280051c8b0d9e794330eadbedc3f6cdbfcdcb5323&
+
+
+[11/10/2024 22:44] ximontan
+I add this, just to display lines
+    plot_config = {
+        'main_plot': {
+            'pivot_highs_drw': {'color': 'blue'},
+            'pivot_lows_drw': {'color': 'red'},
+        },
+        'subplots': {
+            "some": {}
+        }
+    }
+--------------------
+and this in populate_indicators afer pivot_points:
+        # only for dry
+        df_len = len(informative)
+        pivot_highs_drw = np.full(df_len, np.nan)
+        pivot_lows_drw = np.full(df_len, np.nan)
+        for i in range(self.window.value, df_len):
+            if not math.isnan(pivots['pivot_highs'][i]):
+                for j in range(i, i + self.window.value):
+                    if j < len(pivot_highs_drw):
+                        pivot_highs_drw[j] = pivots['pivot_highs'][i]
+            if not math.isnan(pivots['pivot_lows'][i]):
+                for j in range(i, i + self.window.value):
+                    if j < len(pivot_highs_drw):
+                        pivot_lows_drw[j] = pivots['pivot_lows'][i]
+        dataframe['pivot_highs_drw'] = pivot_highs_drw
+        dataframe['pivot_lows_drw'] = pivot_lows_drw
+
+
+[11/10/2024 22:51] ximontan
+and comment this
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305303796674461726/image.png?ex=69f33424&is=69f1e2a4&hm=4a6d1b05c1f59044504799c9ee0449d4158bbaffdc9d53db70530ce2650ecd56&
+
+{Reactions}
+👍
+
+[11/10/2024 22:52] cheluxe
+i had lots of things like that yesterday with 1.0.1 🙃, it really wants it to have it short haha
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305304100854038609/Captura_desde_2024-11-10_23-48-29.png?ex=69f3346d&is=69f1e2ed&hm=79b72d05c35653e3a577b5d7f8ea4c6239328f83ea5bf57bc9c73d6ad067131b&
+
+{Reactions}
+😀
+
+[11/10/2024 22:52] cheluxe
+Nice, i will try later. Thanks
+
+
+[11/11/2024 10:26] .7thdragon
+😀  i wonder why it didnt entered last one tho
+
+
+[11/11/2024 10:46] cheluxe
+I think the strategy might sometimes remove certain buy points it detects, and then places them on the chart where it ideally should have detected them initially, based on the correct pivot setup. This is somewhat similar to what happened with the extrema indicator in NOTankAi, where signals would appear later but align with prior ideal conditions. This behavior might be contributing to the good results you're seeing in backtests.
+
+{Reactions}
+👍
+
+[11/11/2024 13:15] serialkiller15
+good results on hyperopt
+
+
+[11/11/2024 13:15] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305521250281459774/image.png?ex=69f355e9&is=69f20469&hm=25c7c009bad4afe924c48c8e72533cb7c47d8076b336a880081d4b4421fec056&
+
+
+[11/11/2024 13:15] serialkiller15
+BACKTEST ALSO
+
+
+[11/11/2024 13:15] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305521299766116412/image.png?ex=69f355f5&is=69f20475&hm=b00b338af2e636bae5c0dafd185aa448b515bc736f9ccf74e32b3da58fb46c6f&
+
+
+[11/11/2024 13:36] serialkiller15
+@7thDragon good job!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305526570462478406/image.png?ex=69f35add&is=69f2095d&hm=89c1fe8be1e0f0de50802d63fe30469e452c9c87f6e86fdc8628e8ef8330559d&
+
+
+[11/11/2024 13:36] serialkiller15
+I USE my prefered COIN LIST STATIC TOP 50
+
+
+[11/11/2024 13:44] cheluxe
+uuh good signals! 👍
+
+
+[11/11/2024 13:45] cheluxe
+Wich period did you use for hyperopt? My signals for this par are a mess ☹️
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305528873139568782/Captura_desde_2024-11-11_14-45-14.png?ex=69f35d02&is=69f20b82&hm=e54d5901e2be7aed9ccff91c26b75807d3746d3ff39699b65273187a7df6712e&
+
+
+[11/11/2024 13:52] metinbarut._73694
+@Alex Crypto King can you share hyperopted json file or the hyperopt command that you used to test with different pair lists and timescale
+
+
+[11/11/2024 14:03] cheluxe
+Oh i see, is cause you are using the default 1.2.3 version
+
+
+[11/11/2024 14:05] cheluxe
+I had to modify (dataframe[resample('total_bullish_divergences')].shift() > 0) to (dataframe[resample('total_bullish_divergences')] > 0) for the strategy to execute the orders in dry run but the signals got a bit crazy
+
+{Reactions}
+👍
+
+[11/11/2024 14:08] serialkiller15
+@howdy yes give me a sec
+
+
+[11/11/2024 14:10] serialkiller15
+i use for hyperopt
+
+
+[11/11/2024 14:11] serialkiller15
+freqtrade hyperopt --hyperopt-loss SharpeHyperOptLossDaily --spaces buy trades stoploss -c user_data/config-torch.json --strategy TGDF --timerange 20241008-20241108 -e 1000
+
+
+[11/11/2024 14:12] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305535525704175736/TGDF.json?ex=69f36335&is=69f211b5&hm=d0960f9b22b903866dfa6a4be96cbe136f53cadc10b9f4753b91cb4e660db075&
+
+
+[11/11/2024 14:12] serialkiller15
+MY PARILIST ALWAYS I USE THIS ONE STATIC
+        "pair_whitelist": [
+                "BTC/USDT:USDT",
+                "ETH/USDT:USDT",
+                "SOL/USDT:USDT",
+                "SUI/USDT:USDT",
+                "1000PEPE/USDT:USDT",
+                "NEIROETH/USDT:USDT",
+                "WIF/USDT:USDT",
+                "POPCAT/USDT:USDT",
+                "ENA/USDT:USDT",
+                "SEI/USDT:USDT",
+                "1000NEIROCTO/USDT:USDT",
+                "TIA/USDT:USDT",
+                "WLD/USDT:USDT",
+                "FTM/USDT:USDT",
+                "XRP/USDT:USDT",
+                "1000000BABYDOGE/USDT:USDT",
+                "DOGS/USDT:USDT",
+                "EIGEN/USDT:USDT",
+                "REEF/USDT:USDT",
+                "TAO/USDT:USDT",
+                "APT/USDT:USDT",
+                "ORDI/USDT:USDT",
+                "AVAX/USDT:USDT",
+                "SHIB1000/USDT:USDT",
+                "MOODENG/USDT:USDT",
+                "NEAR/USDT:USDT",
+                "SXP/USDT:USDT",
+                "PEOPLE/USDT:USDT",
+                "MEW/USDT:USDT",
+                "SAGA/USDT:USDT",
+                "HMSTR/USDT:USDT",
+                "SILLY/USDT:USDT",
+                "UNI/USDT:USDT",
+                "ARKM/USDT:USDT",
+                "CATI/USDT:USDT",
+                "DOG/USDT:USDT",
+                "OP/USDT:USDT",
+                "1000BONK/USDT:USDT",
+                "MYRO/USDT:USDT",
+                "ARK/USDT:USDT",
+                "BNB/USDT:USDT",
+                "LINK/USDT:USDT",
+                "NOT/USDT:USDT",
+                "1000TURBO/USDT:USDT",
+                "INJ/USDT:USDT",
+                "GALA/USDT:USDT",
+                "CELO/USDT:USDT",
+                "OG/USDT:USDT",
+                "1000000MOG/USDT:USDT"
+
+
+[11/11/2024 14:14] serialkiller15
+will do hyperopt now with my 122 coin list!
+
+
+[11/11/2024 14:14] serialkiller15
+and backtest to
+
+
+[11/11/2024 14:30] .7thdragon
+i didnt succed to reliable debug the situations and total bulish divergences
+i didnt succed to get their counting, dataframe['total_bullish_divergences_count'], always are Enter_Long_0 (either are shifted or not)
+anyway, the signals cannot be used standalone
+
+
+[11/11/2024 14:46] metinbarut._73694
+Thanks @Alex Crypto King
+
+
+[11/11/2024 14:46] serialkiller15
+BACKTEST ON 122 COINS SHORTER PERIOD
+
+
+[11/11/2024 14:47] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305544385378783232/image.png?ex=69f36b75&is=69f219f5&hm=4e5ce48079cac11db9ce49bda9d1ffdbdb079cc0752827094de9f5a712e1a5b5&
+
+
+[11/11/2024 14:48] serialkiller15
+@7thDragon i think i got this error before on my version, give me some time will check mine, also i had that red and green candle failure
+
+
+[11/11/2024 17:21] serialkiller15
+no entrys still 6 hours will check your entrys
+
+
+[11/11/2024 18:08] laupapp
+same here
+
+
+[11/11/2024 18:17] metinbarut._73694
+Same here. Even entry signals are generated in the chart for the pair, it does not enter the trade in paper and live trading.
+
+
+[11/11/2024 18:22] serialkiller15
+i will try my version
+
+
+[11/11/2024 18:54] serialkiller15
+i think i find the problem lets do backtest....
+
+
+[11/11/2024 19:53] serialkiller15
+you can try this version here but its not finished yet, i have to study the aproach of 7thdragon its better from backtest but no trades are beeing done in the dry run will take a further look, but as i said not finshed yet!!!
+
+
+[11/11/2024 19:54] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305621786850889739/TheGreatDivergenceFuturesV6.py?ex=69f30acb&is=69f1b94b&hm=291833f76ed4035fe92d2304294759ec8a15d2b61fad36f7eb8f511707039064&
+
+{Reactions}
+❤️ (2)
+
+[11/11/2024 20:38] laupapp
+can wait don't worry 🙂 i try to solve too
+
+
+[11/11/2024 20:39] cheluxe
+I'll check it
+
+
+[11/11/2024 20:39] serialkiller15
+The signals of @7thdragon are better then mine so we will put them together need some time
+
+
+[11/11/2024 20:39] serialkiller15
+Also his back tests are better
+
+
+[11/12/2024 11:54] .7thdragon
+yes correct this is the only way for enters and exits 😦 but strat has also other bugs
+
+
+[11/12/2024 11:57] cheluxe
+Yep, it is too random 🙃
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305864014206861373/Captura_desde_2024-11-12_12-55-23.png?ex=69f343a2&is=69f1f222&hm=62ec9535fa0c1e11a2f90ae11edbc06e8e95bd4faf94f5bf187bcc1f9e820f9e&
+https://cdn.discordapp.com/attachments/1304860205565087795/1305864014932480032/Captura_desde_2024-11-12_12-55-15.png?ex=69f343a2&is=69f1f222&hm=aa7ffd080be53bf84fde737b0a61214f1c1a327f4f7fd6e0c31678fef4bc2410&
+
+
+[11/12/2024 12:07] serialkiller15
+can you share an chart of one coin to see your signals? thanks mate
+
+
+[11/12/2024 12:08] ximontan
+))) same
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305866766756483142/image.png?ex=69f34633&is=69f1f4b3&hm=7940976757983ff549a6ed81e4cdd38f445811d8f4912af0cf0b8d5c88cf9653&
+
+
+[11/12/2024 12:09] ximontan
+and example
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305866998281928704/image.png?ex=69f3466a&is=69f1f4ea&hm=c808dc24c6ae6d9b98b6822697794cff44accbdbe2e773672868741cd122bc92&
+
+
+[11/12/2024 12:10] ximontan
+I have idea the we need only first level and no need second, just check divergence from first level to current candle, but now I busy by work, will try implement it in weekend
+
+
+[11/12/2024 12:11] serialkiller15
+ok when i compare it to mine it looks a little bit to frequent
+
+
+[11/12/2024 12:11] serialkiller15
+ETH 15MIN TIMEFRAME
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305867634968887319/image.png?ex=69f34702&is=69f1f582&hm=c4ff46b0a193df2928a5e91194d1894f12e3e3c40045ff88b01b1ce73cba8a42&
+
+
+[11/12/2024 12:12] serialkiller15
+and i have the shift in my version - (dataframe[resample('total_bullish_divergences')].shift() > 0)
+
+
+[11/12/2024 12:14] .7thdragon
+i have a working version with corrections but still not like signals
+the main idea is that if is good for silent market will not be good for volatility and viceversa
+@Ximontan do not use roi and trailing if you want to have a good strat
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305868251460403251/image.png?ex=69f34795&is=69f1f615&hm=bf53a4b5e10482eb16a2ac901171ef2bd691de792b18986dee877f4548b89758&
+
+
+[11/12/2024 12:15] ximontan
+hm, I'll try, thanks
+
+
+[11/12/2024 12:16] cheluxe
+Of course
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305868715799347253/Captura_desde_2024-11-12_13-15-40.png?ex=69f34803&is=69f1f683&hm=516cc0ce4127c577b2a921d803a3ed23686f6ddf8627faf1b1d64263f7cffd05&
+
+
+[11/12/2024 12:17] .7thdragon
+can you post the screenshot of closing table ones, tx
+
+
+[11/12/2024 12:20] cheluxe
+You mean this?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305869798030315560/Captura_desde_2024-11-12_13-19-57.png?ex=69f34905&is=69f1f785&hm=20b500ff5801eb5caeeeabe45536368c8d7fa1ec60906a9d8b4bda9535724fe6&
+https://cdn.discordapp.com/attachments/1304860205565087795/1305869798705729616/Captura_desde_2024-11-12_13-19-24.png?ex=69f34905&is=69f1f785&hm=2213baac9d8fb08c8cffff32032c0895bf693795ebb6a8d8b04c1849ee04dead&
+
+{Reactions}
+👍
+
+[11/12/2024 12:20] serialkiller15
+no the chart of one coin to do the compares!
+
+
+[11/12/2024 12:21] cheluxe
+@Alex Crypto King
+
+
+[11/12/2024 12:22] .7thdragon
+v1.2.5 - draft version! json is just a example of course, i prefer to optimize often/daily
+- corrected entries and exits not being used
+- main strat corrections
+- added my stoploss flavour for trending market - hope it works as it should, backtest is ok
+- added volume_change, which i think is important in context
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305870371333079090/TGDF.py?ex=69f3498e&is=69f1f80e&hm=fe85ae61eaac84c6687741df0fa0e0a70ee6fc13bc5d0980b6c5c152d947796b&
+https://cdn.discordapp.com/attachments/1304860205565087795/1305870371739668480/TGDF.json?ex=69f3498e&is=69f1f80e&hm=c33ec7c6bd0fe5ac0bf4f5e8096cc17222133c19d15042b8aa6a5f4545444476&
+
+{Reactions}
+🔥 (3)
+
+[11/12/2024 12:28] .7thdragon
+also, usually a good trader make adjustments by adding value to trend pullbacks (some confuse this with simple dca) not decrement them as i seen in other strats, but is way over my head to implement a correct one
+and this cannot be analyzed so simple, even the complex NFIX5 is not good at this 😦
+
+
+[11/12/2024 12:42] .7thdragon
+seems for a choppy trend might be also ok, also stoploss
+still, might not be profitable in a silent market, will see
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305875410013261866/image.png?ex=69f34e3f&is=69f1fcbf&hm=43a5890d2167f4740d07677b729c53ecc89b0d4a3a1a264ff51df3a4ff655904&
+
+
+[11/12/2024 13:08] .7thdragon
+so we now reached a critical point for btc 1.618, either hype continue to the next level or... i dont want to say it's name, sauron is watching at ~42k :), eth has also been doing his role already, we need to wait the eow :/
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305881957594431580/image.png?ex=69f35458&is=69f202d8&hm=2190f72b0b9e11bd2db2a60d19800676d94f5a723b1318d8a8179e8e3dc00b8e&
+
+
+[11/12/2024 13:51] ximontan
+absolutely, I waiting pullback, in CME big gap, think we will go close it soon and can be get some liquidity at 70k +/-
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1305892706546876507/image.png?ex=69f35e5b&is=69f20cdb&hm=50a8f69c0dc2be67b9760ac55af78988440b8f2dcb984edce748f6f208c5adde&
+
+{Reactions}
+👍 (2)
+
+[11/12/2024 20:28] cheluxe
+When you say optimize daily are you referring to using SharpeHyperOptLossDaily in hyperopt, running hyperopt daily with data from the past week or same-day, or something else entirely?
+
+
+[11/12/2024 20:31] cheluxe
+Couse when I optimize with hyperopt, I usually use one-month periods that include both sharp bullish and bearish market moves to capture diverse conditions.
+
+
+[11/12/2024 20:31] cheluxe
+Maybe i am doing it wrong
+
+
+[11/12/2024 21:01] .7thdragon
+at least for testing, running hyperopt daily, with a range of 10d back, in my opinion 30d is too much, but u could test with backtests (backtest period should not intersect hyper range)
+
+{Reactions}
+👍
+
+[11/15/2024 11:30] .7thdragon
+u might be right, better for for 30d back
+
+
+[12/09/2024 18:32] metinbarut._73694
+@7thDragon Is there any updated version of TGDF (after v1.0.26) that we can test
+
+
+[12/09/2024 18:38] .7thdragon
+nope :/
+
+
+[12/10/2024 12:58] giovannimauro
+Hey! Any update on this one? The last one is the v1.2.5 by @7thDragon ?
+
+
+[12/10/2024 12:58] giovannimauro
+thank you 🙂
+
+
+[12/10/2024 18:34] serialkiller15
+Hey no updates since that.
+
+
+[12/25/2024 10:37] attique_80740
+ROI: Closed trades
+∙ -317.711 USDT (-0.21%) (-21.18 Σ%)
+∙ -317.497 USD
+ROI: All trades
+∙ -307.804 USDT (-0.21%) (-20.52 Σ%)
+∙ -307.597 USD
+Total Trade Count: 1080
+Bot started: 2024-12-05 09:17:32
+First Trade opened: 20 days ago (2024-12-05 09:30:38)
+Latest Trade opened: 20 minutes ago (2024-12-25 10:15:54)
+Win / Loss: 371 / 707
+Winrate: 34.42%
+Expectancy (Ratio): -0.29 (-0.08)
+Avg. Duration: 1:29:25
+Best Performing: ARB/USDT:USDT: 47.07%
+Trading volume: 823736.41 USDT
+Profit factor: 0.88
+Max Drawdown: 26.04% (389.705 USDT)
+    from 2024-12-05 09:54:18 (-3.293 USDT)
+    to 2024-12-22 13:34:52 (-392.998 USDT)
+
+
+[07/14/2025 16:39] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1394357708521734245/image.png?ex=69f385cf&is=69f2344f&hm=9d6e572b25839c59c4d8b87d6d0dbace1b00e4720deede83a9cbcef1f392a3f4&
+
+
+[07/14/2025 16:40] viking046433
+Ooof 😅
+
+
+[07/14/2025 16:40] viking046433
+That looks very sus
+
+
+[07/14/2025 16:40] viking046433
+But if not man
+
+
+[07/14/2025 16:41] viking046433
+lol
+
+
+[07/14/2025 16:41] serialkiller15
+Backtest is never telling us the trueth
+
+
+[07/14/2025 16:41] viking046433
+Not never
+
+
+[07/14/2025 16:42] viking046433
+If a start is not performing on backtest it’s not going to perform on dry but if it performs on backtest its not always going to perform on dry. There is a place for it
+
+
+[07/14/2025 16:42] serialkiller15
+yep thats it!
+
+
+[07/14/2025 16:43] viking046433
+If I create a signal and it performs pretty ok on backtest I have to run it dry i just might have a banger
+
+
+[07/14/2025 16:44] viking046433
+If I just leave it might have lost out to something special
+
+
+[08/08/2025 14:10] serialkiller15
+many work many code, but it looks good
+
+
+[08/08/2025 14:10] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1403379876798398554/image.png?ex=69f362dc&is=69f2115c&hm=63b00ab5dbbd4fff399e0f30c580f13079226c4b70bbe32c891a477f6f7b7161&
+
+{Reactions}
+🔥 (9) 💯 😍 (2) 👍 (2)
+
+[08/13/2025 19:32] ammart90
+Can this work with Spot, Long only ?
+
+
+[08/14/2025 05:42] viking046433
+Mate how is this run going?
+
+
+[08/14/2025 05:44] serialkiller15
+Hi it needs more time to go into it, market change was not good for it, will take a deeper look on it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1405426846132342824/image.png?ex=69f394ff&is=69f2437f&hm=21f8cc6573d6c50c8e5bd2d2f0c76e9237f59e0d35148fdbd3e07cf50d14d418&
+
+{Reactions}
+🚀 (2)
+
+[08/14/2025 11:18] mmnbm_79378
+ROI: Closed trades
+∙ 268.953 USDT (0.55%) (15.93 Σ%)
+∙ 268.953 USD
+ROI: All trades
+∙ 219.209 USDT (0.49%) (12.98 Σ%)
+∙ 219.209 USD
+Total Trade Count: 210
+Bot started: 2025-07-28 17:55:38
+First Trade opened: 16 days ago (2025-07-28 17:57:30)
+Latest Trade opened: 8 hours ago (2025-08-14 02:47:40)
+Win / Loss: 180 / 29
+Winrate: 86.12%
+Expectancy (Ratio): 1.29 (0.03)
+Avg. Duration: 2:59:35
+Best Performing: ETHFI/USDT:USDT: 90.916 USDT (2.84%)
+Trading volume: 581875.079 USDT
+Profit factor: 1.19
+Max Drawdown: 26.22% (567.884 USDT)
+    from 2025-08-11 04:20:16 (477.204 USDT)
+    to 2025-08-12 05:28:02 (-90.68 USDT)
+
+{Reactions}
+🔥 (4)
+
+[08/14/2025 11:19] mistifux
+Where is the strat ?
+
+
+[08/14/2025 11:59] neveerrk
+Let's test it together
+
+
+[08/15/2025 14:47] serialkiller15
+Will relase it next week
+
+
+[08/19/2025 02:13] neveerrk
+Is it out yet
+
+
+[08/19/2025 05:30] maxgorbachevskiy
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1407235191419834389/image0.jpg?ex=69f391a6&is=69f24026&hm=80632b9d9a5e9d4a4bdf6bd5e26ce6fc7e6b90e49171a153a6612154aaa24c47&
+
+{Reactions}
+🚀 (2) 💯 (3)
+
+[08/19/2025 05:32] maxgorbachevskiy
+I don’t know much about far-east cultures, but in European cultures being that pushy is extreme rudeness and leads to complete ignorance
+
+{Reactions}
+👍 (4)
+
+[08/19/2025 05:35] neveerrk
+Something's wrong with the translation... and yeah my English sucks lol
+
+
+[08/19/2025 07:50] maxgorbachevskiy
+@neveerr 
+— you have little to none patience
+— you demonstrated little to none politeness
+— you demonstrated little to none knowledge of risk management
+— you have great skills of throwing money into the window (by using non-tested strategies live with a big wallet)
+
+I can send you unfinished versions. BUT I have a better idea to you. 
+Here's my idea to you: instead of throwing even more money into the window (by using yet another unstable version), you will transfer this money (that you will definitely lose) to the community. There are several people here (starting with @Alex Crypto King ) that deserve at least a 0,01€ of appreciation. 
+
+This way, we will save your money, any your money will be used for further development.
+
+{Reactions}
+👍 (3) 👌 (2)
+
+[08/19/2025 08:04] neveerrk
+If I made you uncomfortable, I apologize for that. Since my translations tend to be quite colloquial, I thought it would help build rapport. I’ll be more mindful in the future
+
+{Reactions}
+❤️ (2)
+
+[08/19/2025 08:16] snokard.
+translations might be tricky specially with languages so diferent... maybe creating a gpt project with instructions to translate from chineese to english in a "kind" way would be helpful 😉
+
+{Reactions}
+❤️
+
+[08/25/2025 15:21] neveerrk
+How has BandSniper been performing lately? I've always been interested in this strategy
+
+
+[08/25/2025 15:22] serialkiller15
+to be true not nice
+
+
+[08/25/2025 15:22] serialkiller15
+needs more time to go into it, the first results where amazing but market changed so its not good at all, will try to make a freqai version on it, but this is one of the last in my list, will fokus und nexusforge
+
+
+[08/25/2025 15:22] serialkiller15
+better this way because it works mostly
+
+
+[08/25/2025 15:24] neveerrk
+Perhaps you could share it, and we could work together to optimize it. If not, that's alright too.
+
+
+[08/25/2025 15:24] neveerrk
+Ok
+
+
+[08/25/2025 15:24] neveerrk
+🫡
+
+
+[08/25/2025 15:25] serialkiller15
+i can share it thats not the problem, but i have no time to go into it further more
+
+
+[08/25/2025 15:26] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1409559597198606376/image.png?ex=69f374ac&is=69f2232c&hm=acd6276953c7c4c977fde3b8f2cf5d45c560af3f3abc6c81a83d2e1c502c651d&
+
+
+[08/25/2025 15:26] serialkiller15
+that does not make sense to folow it now
+
+
+[08/25/2025 15:27] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1409559828912672858/AlexBandSniperV7.py?ex=69f374e3&is=69f22363&hm=458c4b5ce3c3da2ab6dfba8cfe3f05ddfe79252efd67a7e2130f08f3fb1fc261&
+https://cdn.discordapp.com/attachments/1304860205565087795/1409559829231435776/AlexBandSniperV31C.py?ex=69f374e3&is=69f22363&hm=1ddedbca66c7c478e44813bc303860a47c30799c3aaee67f745629dc1dfdb913&
+https://cdn.discordapp.com/attachments/1304860205565087795/1409559829563052083/AlexBandSniperV32C.py?ex=69f374e3&is=69f22363&hm=1b64aeb6ce0d468834145ab8c3297e80b4616d25fcabd40dd86d9283220ae3fa&
+https://cdn.discordapp.com/attachments/1304860205565087795/1409559829856391300/AlexBandSniperV33C.py?ex=69f374e3&is=69f22363&hm=264c4066bf136aaec741441bea606024642f7c602f65d822e2e5b7974c2dcd9c&
+
+
+[08/25/2025 15:27] serialkiller15
+not finished, and to be clear no support
+
+
+[08/25/2025 15:28] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1409559960702029994/ATGDFV2.py?ex=69f37502&is=69f22382&hm=7e91ace63ad709079f7971c06c531695cff30d26d3c88c9722d4cec22d263dbf&
+
+
+[08/25/2025 15:28] neveerrk
+🫣
+
+
+[08/25/2025 15:28] neveerrk
+I try
+
+
+[08/25/2025 15:28] serialkiller15
+have fun mate
+
+
+[08/25/2025 15:28] neveerrk
+Thx
+
+
+[08/25/2025 15:28] serialkiller15
+its waste of time trust me
+
+{Reactions}
+❤️ (2)
+
+[08/25/2025 15:30] serialkiller15
+ML/RL Version also not finished yet
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1409560496771698708/AlexBandSniperAIV6.py?ex=69f37582&is=69f22402&hm=afcef936e08b56b97aa308124f68ea5c40c50bd9b6b3cd44ce375f3edac56f44&
+
+{Reactions}
+🚀
+
+[08/25/2025 15:30] serialkiller15
+the backtests are realy good, but in dry its worse
+
+
+[08/26/2025 06:25] .oliver6
+Has anybody still running TGDF? I backtested it and find the result is not good
+
+
+[08/26/2025 06:54] serialkiller15
+the BandSniper is a modded version based on tgdf....
+
+
+[08/26/2025 07:07] .oliver6
+Oh I see. I've been keep dry running TGDS(spot version) but didn't get good results. So just would like to check if future version is better
+
+
+[08/26/2025 07:26] serialkiller15
+@neveerr i think i found the failure why it not works mostly, let mi fix it and do some test on it
+
+{Reactions}
+🚀
+
+[08/26/2025 07:27] neveerrk
+🫡  yes sir
+
+
+[08/26/2025 13:23] neveerrk
+Aside from messing up backtesting data, look-ahead bias (future functions) seem pretty practical.
+
+
+[08/26/2025 13:24] serialkiller15
+yes it has bias, i alreade removed it in another releasy but no trades yet...
+
+{Reactions}
+👍
+
+[08/26/2025 13:34] serialkiller15
+the backtest results are realy good but in dry will let it run and we will see then
+
+
+[08/26/2025 13:34] serialkiller15
+after a few days
+
+
+[08/28/2025 15:06] serialkiller15
+the code for bandsniper is already finished, now lets start dryrun....
+
+{Reactions}
+👍 (4) 🤞 (3) 🚀 (2) 🔥 (2) ✅ (2)
+
+[08/28/2025 15:09] serialkiller15
+Backtest
+
+
+[08/28/2025 15:09] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1410642437482741851/image.png?ex=69f370a5&is=69f21f25&hm=fa6386d8398ee2c27724ee5a1905c827609128c09f5b4c028dd863d93e3a935d&
+
+
+[08/28/2025 15:09] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1410642480311042118/image.png?ex=69f370af&is=69f21f2f&hm=fdf63b1d6576e7f286b1972ae54d8b24b183fdd64fee349f19c4111ff2020e7b&
+
+
+[08/28/2025 15:09] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1410642572329877514/image.png?ex=69f370c5&is=69f21f45&hm=1fc8cb13cb60ac70b12f94ae655f0d18612d0a9ab54201c48446241add68a0d9&
+
+{Reactions}
+👍 (3) 😵 (2) 🫡 (2)
+
+[08/28/2025 17:09] neveerrk
+An average of 250 orders a day and such a high rate of return. Amazing🚀 🚀 🚀
+
+
+[08/28/2025 19:04] serialkiller15
+Thanks but dry will tell us the trueth
+
+
+[08/29/2025 05:23] neveerrk
+It's been four days and there has been no transaction. Is this normal?
+
+
+[08/29/2025 05:24] neveerrk
+Alexbandsniperv33c
+
+
+[08/29/2025 09:27] nerazurri0420
+What is the hardware computing power requirement for this ml/rl version?
+
+
+[08/31/2025 07:32] serialkiller15
+
+
+{Forwarded Message}
+Originally sent: 08/31/2025 02:50
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1411614528986284154/AlexBandSniperV81AIIntegrated.py?ex=69f3057a&is=69f1b3fa&hm=b04f81608f8e78ae5abbcd0e3ba521757eaa29d33fe83842729b5d5abfd149ce&
+
+
+
+[08/31/2025 07:32] serialkiller15
+@joaolool thanks for sharing, let it test...
+
+
+[08/31/2025 19:24] divarak
+Hello everybody... @joaolool . Backtesting AlexBandSniperV81AIIntegrate, got this:
+
+{Reactions}
+♥️
+
+[08/31/2025 19:24] divarak
+Am I doing something wrong? this is my config:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1411793838434943067/backtest_2025-08-31_12-31-38.png?ex=69f303b8&is=69f1b238&hm=72bab7ea69e81f1d429ac274caadb5f63d1f4596ce2b8a62de8ce4977c429b55&
+https://cdn.discordapp.com/attachments/1304860205565087795/1411793838942584864/Backtest_2025-08-31_12-32-21.png?ex=69f303b9&is=69f1b239&hm=1f60bd5d411c5b069975e849b59c5e103c14d9486ded1f4f711f64fc5889c760&
+
+
+[08/31/2025 19:25] divarak
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1411794114659352706/config_agu_futures_binance30x.json?ex=69f303fa&is=69f1b27a&hm=0176af573ac14f7099d134a382fa09997883df86e558770216da163c60d87ccd&
+
+
+[08/31/2025 19:27] neveerrk
+The original strategy has a future function, so backtesting has no effect. It is best to dry
+
+
+[08/31/2025 19:32] divarak
+Thank you. Going dry run then
+
+
+[09/01/2025 09:16] serialkiller15
+so the AlexBAndSniper (without AI) Signals are realy great now need to make costum_exits, trailing, roi and other stuff, will take some time...but good signals at all..
+
+{Reactions}
+🚀 👍 (2)
+
+[09/01/2025 09:17] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412003461763043388/image.png?ex=69f31e33&is=69f1ccb3&hm=6d40472d777935bae33d2f4565aa2beddfc818bb72067d62c4ed88aeb065aac8&
+
+{Reactions}
+🚀 (4)
+
+[09/01/2025 09:17] serialkiller15
+15m timeframe..
+
+
+[09/01/2025 10:02] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412014765202604042/image.png?ex=69f328b9&is=69f1d739&hm=117ef07470f5ba05b187779306adf03441248cc82ac5a424bb3608f333f44bd2&
+
+{Reactions}
+🚀 (3)
+
+[09/01/2025 10:14] serialkiller15
+some tests mods on a ml/rl AlexBandSniper version....
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412017655468003379/image.png?ex=69f32b6b&is=69f1d9eb&hm=aa0ce17a372df2de0c4bf21002a825fdda8b7dadb5297ed8da0ebd74248f7982&
+
+{Reactions}
+👍 (2) 🚀 (2) 🔥
+
+[09/01/2025 19:08] divarak
+Guys... How much time should dry run before live? A month?
+
+
+[09/01/2025 19:09] xf0x0f
+thats a question no one can really answer 😄
+
+{Reactions}
+👍
+
+[09/01/2025 19:09] serialkiller15
+Depends on the market situation but one month is a good base
+
+{Reactions}
+👍
+
+[09/01/2025 19:09] xf0x0f
+do you know the market of tomorrow?
+
+
+[09/01/2025 19:11] divarak
+No... Nobody does.. Just trying to define a good amount of time before taking real risk. I believe we aren't here to try run / backtest / hyperopt only 😁
+
+
+[09/01/2025 19:19] xf0x0f
+it also depends on your perspective: are you someone who asks, "what did i do wrong?" or rather, "why was it done wrong?" in addition, it matters whether you have defined a contingency plan to exit the situation, or if you simply don't care.
+
+
+[09/01/2025 19:21] divarak
+Well... About contingency plan ... Is there a way to stop the bots if the account   is down (example) 40%?
+
+
+[09/01/2025 19:22] xf0x0f
+what you mean by stopping? 😉 ask yourself
+
+
+[09/01/2025 19:24] divarak
+I am a noob on programming, some way to cease the bot to open new  trades after losing a good porcentage of the account.
+
+{Reactions}
+👍
+
+[09/01/2025 19:26] xf0x0f
+go train it
+
+{Reactions}
+👍
+
+[09/02/2025 10:16] serialkiller15
+@everyone some short feedback
+The AlexBandSniper (without ML) ist doing realy good since adjusting signals. will release soon for further Tests here!
+THE RL/AI Version is not that what i expected the signals are not good as in the Original so i decided ot change the logic and use confidence Signal Filtering with ML, at the moment it does good, will post new updates
+
+{Reactions}
+👍 (3) 🚀 (2)
+
+[09/02/2025 10:16] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412380558545391616/image.png?ex=69f32be5&is=69f1da65&hm=67db016b126a631ae4cf9f1ff7345b823135c8507d2effcd15b5ddc5d51b8e6b&
+
+
+[09/02/2025 10:17] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412380786052694097/image.png?ex=69f32c1c&is=69f1da9c&hm=7d621406ac73dedd3498bb4fda9a84747e08c44b6752620838f373fe23c5b432&
+
+
+[09/02/2025 10:17] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412380872916865024/image.png?ex=69f32c30&is=69f1dab0&hm=f4e4c7b6a8596ab34c67d1f9e0d145ea68fce73de8945ba15bc9e31b2417bead&
+
+{Reactions}
+👍 (3)
+
+[09/02/2025 10:20] serialkiller15
+Pinned a message.
+
+
+[09/02/2025 10:40] nerazurri0420
+2025-09-02 18:36:51,876 - AlexBandSniperV47C - INFO - Successfully merged 1h data for BTC/USDT:USDT
+2025-09-02 18:36:52,973 - AlexBandSniperV47C - INFO - Successfully merged 1h data for ETH/USDT:USDT
+2025-09-02 18:36:54,014 - AlexBandSniperV47C - INFO - Successfully merged 1h data for SOL/USDT:USDT
+2025-09-02 18:36:55,097 - AlexBandSniperV47C - INFO - Successfully merged 1h data for XRP/USDT:USDT
+2025-09-02 18:36:56,018 - AlexBandSniperV47C - INFO - Successfully merged 1h data for SUI/USDT:USDT
+2025-09-02 18:36:56,920 - AlexBandSniperV47C - INFO - Successfully merged 1h data for DOGE/USDT:USDT
+2025-09-02 18:36:57,821 - AlexBandSniperV47C - INFO - Successfully merged 1h data for TRUMP/USDT:USDT
+2025-09-02 18:36:58,689 - AlexBandSniperV47C - INFO - Successfully merged 1h data for BNB/USDT:USDT
+2025-09-02 18:36:59,671 - AlexBandSniperV47C - INFO - Successfully merged 1h data for TRX/USDT:USDT
+2025-09-02 18:37:00,590 - AlexBandSniperV47C - INFO - Successfully merged 1h data for ADA/USDT:USDT； @Alex Crypto King  Are these logs normal? Or is there a way to directly include the 1h timeframe data?
+
+
+[09/02/2025 10:40] serialkiller15
+yes its normal
+
+
+[09/02/2025 10:41] serialkiller15
+at this time i keeped them in 1h is not used at the moment, but will come if necessary
+
+
+[09/02/2025 10:41] xf0x0f
+you told him,... "do something with 62"? 😂
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412386906716770314/Bildschirmfoto_2025-09-02_um_12.40.59.png?ex=69f331cf&is=69f1e04f&hm=9a98dd5ec71382a5439db1439f7141283837dda9b9923fa89883cdea3e9e7833&
+
+
+[09/02/2025 10:41] serialkiller15
+need testers thats it
+
+
+[09/02/2025 10:42] serialkiller15
+@xF0x0F ?? what do you mean with 62 hehe
+
+
+[09/02/2025 10:42] xf0x0f
+62 long entry and exit and short too xD
+
+
+[09/02/2025 10:42] xf0x0f
+weird looking on first look 😉
+
+
+[09/02/2025 10:42] serialkiller15
+hehe ok nice coin
+
+
+[09/02/2025 10:43] serialkiller15
+yes
+
+
+[09/02/2025 10:43] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412387339149377598/image.png?ex=69f33236&is=69f1e0b6&hm=ae644a26b9fe5333ecffb1f6a0033f1d25b2201652572be06c6318b363001f8c&
+
+
+[09/02/2025 10:43] serialkiller15
+you picket the right coin..
+
+
+[09/02/2025 10:43] xf0x0f
+SPELL/USDT:USDT
+
+Long entries: 65
+Long exit: 52
+Short entries: 52
+Short exits: 65
+
+
+[09/02/2025 10:44] serialkiller15
+he
+
+
+[09/02/2025 10:44] xf0x0f
+yours is V34C? mine is V47C
+
+
+[09/02/2025 10:45] serialkiller15
+i did not renamed my bot, the version i shared is exactly that version let me recheck again but should be the right one
+
+
+[09/02/2025 10:45] xf0x0f
+ok, thx
+
+
+[09/02/2025 10:48] serialkiller15
+on your chart the entrys are fine, delete your db, and restart the bot clean...
+
+
+[09/02/2025 10:48] xf0x0f
+7min after start first trades opened,.... n1
+
+
+[09/02/2025 10:48] xf0x0f
+it was new db
+
+
+[09/02/2025 10:49] serialkiller15
+ok
+
+
+[09/02/2025 10:49] serialkiller15
+the code is the same as mine
+
+
+[09/02/2025 10:49] xf0x0f
+perfect,... let it run some hours and compare
+
+
+[09/02/2025 10:49] serialkiller15
+what exchange you use?
+
+
+[09/02/2025 10:49] xf0x0f
+binance
+
+
+[09/02/2025 10:50] nerazurri0420
+🔵 Binance (dry): New Trade (#1)
+Pair: LTC/USDT:USDT
+Enter Tag: Bull_E7
+Amount: 7.239
+Direction: Long (4x)
+Open Rate: 110.51 USDT
+Current Rate: 110.51 USDT
+Total: 199.995 USDT / 199.995 USD
+
+
+[09/02/2025 10:50] serialkiller15
+ok mine is bybit different volumes, but look on the chart entry signals they should be fine!
+
+{Reactions}
+👍
+
+[09/02/2025 10:50] nerazurri0420
+the first trade made 3min ago
+
+{Reactions}
+👍
+
+[09/02/2025 10:50] serialkiller15
+@everyone i enhanced the Entrys E1-E7 and DIV.....
+
+{Reactions}
+👍
+
+[09/02/2025 10:54] serialkiller15
+@everyone leverage is based on 10x you can reduce it and it depends on the signal qualitity...
+
+
+[09/02/2025 10:54] neveerrk
+Binance's CEO, Zhao Changpeng, is from the same city as me: Lianyungang, Jiangsu hah
+
+
+[09/02/2025 10:54] erbosnio_17282
+Call him for a beer with us
+
+{Reactions}
+🤣
+
+[09/02/2025 10:55] neveerrk
+😂
+
+
+[09/02/2025 10:55] serialkiller15
+i need to buy some beer all my refrigirators are empty, because yesterday was bandsniper day os no beer need to buy
+
+{Reactions}
+👍 (2)
+
+[09/02/2025 10:56] erbosnio_17282
+I'm on it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412390755200405575/rn_image_picker_lib_temp_83aab7d6-dead-4829-b649-aa98ff43e352.jpg?ex=69f33564&is=69f1e3e4&hm=dda0acb39fbb08f127e343d2cb52b517f69ab34bd0627e90ffd6b24c4640a05f&
+
+{Reactions}
+❤️ (2)
+
+[09/02/2025 10:57] neveerrk
+Beautiful place, comfortable life
+
+
+[09/02/2025 10:58] boooooon
+I can help you with testing different cases on my server. If you want to test something specific, tell me.
+
+
+[09/02/2025 10:59] anonymuis
+And we can all help you testing different beers if you'd like!
+
+{Reactions}
+😂 (3)
+
+[09/02/2025 11:01] neveerrk
+Lemon beer is delicious
+
+
+[09/02/2025 11:01] xf0x0f
+lets bring me some "Einstök White Ale" 😄
+
+
+[09/02/2025 11:02] xf0x0f
+you mean a shandy?
+
+{Reactions}
+❤️
+
+[09/02/2025 11:15] erbosnio_17282
+🧐🧐🧐🧐
+
+
+[09/02/2025 11:15] darkreaper0756
+Nice bro, I want it too✌️
+
+
+[09/02/2025 11:16] mmnbm_79378
+🚀
+
+{Reactions}
+👍
+
+[09/02/2025 11:16] erbosnio_17282
+I'm drinking this one
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412395746870956134/pinonera-pale.jpg?ex=69f33a0b&is=69f1e88b&hm=8cfda1e5ad89aeeda1563952913798cf40750763d5922c9c762e804f8ac296e6&
+
+{Reactions}
+👍
+
+[09/02/2025 11:16] erbosnio_17282
+Pale Ale
+
+
+[09/02/2025 11:25] neveerrk
+Great signal. Good job, bro.
+
+{Reactions}
+👍
+
+[09/02/2025 11:25] serialkiller15
+@x thanks do your tests, different parilists and other stuff, keep timeframe 15m need to test, different market situations!
+
+
+[09/02/2025 11:26] serialkiller15
+thanks but i am not 100% happy with it some are not good need tests and optimizing!
+
+
+[09/02/2025 11:26] serialkiller15
+so thats what you are for hehe
+
+
+[09/02/2025 11:26] serialkiller15
+example
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412398245250076815/image.png?ex=69f33c5e&is=69f1eade&hm=9a413f664596ff620bf383f8dd5874b844c0ec65c6b609f2311f5fdd2f672eeb&
+
+
+[09/02/2025 11:28] serialkiller15
+@erbosnio nice place i am on the way..
+
+
+[09/02/2025 11:30] erbosnio_17282
+Hahaha here I am
+
+{Reactions}
+🔥
+
+[09/02/2025 12:52] boooooon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412419823186612376/image.png?ex=69f35077&is=69f1fef7&hm=acb647ee40689c552db30fcb01aa9e33ec206a003b233b15a18a316d8c416dd8&
+
+
+[09/02/2025 12:52] xf0x0f
+mines performing nearby same
+
+
+[09/02/2025 12:53] serialkiller15
+yes i know i saw it last 5 trades sl hits, please let it run....there should come some shorts...
+
+{Reactions}
+👍
+
+[09/02/2025 13:32] serialkiller15
+as you can see it recoverys i get the first longs let see what happens, any improvments welcome
+
+
+[09/02/2025 13:39] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412431827603296396/Bildschirmfoto_2025-09-02_um_15.39.37.png?ex=69f35ba5&is=69f20a25&hm=d5a46511ee69f57a477077b229d40d5c275c729947167d27ca7bab5671b8553a&
+https://cdn.discordapp.com/attachments/1304860205565087795/1412431827846693034/Bildschirmfoto_2025-09-02_um_15.39.19.png?ex=69f35ba5&is=69f20a25&hm=16dc2407192fdebde8584d6117517123517a347ff19774cd4e75686ae881bb07&
+
+
+[09/02/2025 13:56] serialkiller15
+as i ssaid longs coming back
+
+
+[09/02/2025 13:56] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412435964391063696/image.png?ex=69f35f7f&is=69f20dff&hm=4845b21e614bd3c2e6a4d4da3999d56568eb092e69f06a8fd26f724bcac0424d&
+
+
+[09/02/2025 13:56] serialkiller15
+@xF0x0F only shorts ? check the entries ?
+
+
+[09/02/2025 13:56] serialkiller15
+Performance of the Entrys...
+
+
+[09/02/2025 13:56] serialkiller15
+thanks
+
+
+[09/02/2025 13:57] xf0x0f
+no short at all. 17 long
+
+
+[09/02/2025 13:57] xf0x0f
+have to check conf
+
+
+[09/02/2025 13:57] serialkiller15
+ok i see
+
+
+[09/02/2025 14:41] serialkiller15
+Changes here
+Adapted Custom_Exit
+Depending on Signal Quality and keep the Profits longer!
+Do your tests
+
+
+[09/02/2025 14:55] xf0x0f
+after adding canshort true in conf, number 19 is first short
+
+
+[09/02/2025 14:55] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412450978367672411/Bildschirmfoto_2025-09-02_um_16.55.43.png?ex=69f36d7b&is=69f21bfb&hm=15f535ef8bbc167d126b29b6e6adb8e5cf05f9f739a1466a2cf50f591d207041&
+https://cdn.discordapp.com/attachments/1304860205565087795/1412450978736640104/Bildschirmfoto_2025-09-02_um_16.55.51.png?ex=69f36d7b&is=69f21bfb&hm=fbeaf4fa934753923b2ee419f94ad1cf1b6c5e24895805fc7ec49ddc3f7c0ff2&
+
+
+[09/02/2025 14:56] serialkiller15
+interesting because i have it it the strat can_short = True
+
+
+[09/02/2025 14:57] xf0x0f
+it wasnt set in my conf before,... can be a coincidence
+
+{Reactions}
+🤣
+
+[09/02/2025 15:22] neveerrk
+What's updated
+
+
+[09/02/2025 15:22] neveerrk
+🫣
+
+
+[09/02/2025 15:25] serialkiller15
+sry you where faster..
+i modified
+Changes here
+Adapted Custom_Exit
+Depending on Signal Quality and keep the Profits longer!
+and also the reversal logic for exiting long on short signals and in reverse was not working
+
+
+[09/02/2025 15:25] serialkiller15
+you can stay on the first version
+or test both
+
+
+[09/02/2025 15:26] serialkiller15
+also Signal E7 shift was increased for better faster signals
+
+
+[09/02/2025 15:27] neveerrk
+👍
+
+
+[09/02/2025 15:28] serialkiller15
+but i have to say the market is perfect at the moment to test this strategy...
+
+{Reactions}
+🚀
+
+[09/02/2025 15:50] serialkiller15
+please be so kind and test both versions i also do it...
+
+
+[09/02/2025 16:13] boooooon
+I'll test simulteniously updated version on the same config
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412470534209409225/image.png?ex=69f37fb1&is=69f22e31&hm=98a33b935705b5e609affd4512c456a0cf8484405d4db0ace1bba5ad21dd4bbe&
+https://cdn.discordapp.com/attachments/1304860205565087795/1412470534545084559/image.png?ex=69f37fb1&is=69f22e31&hm=9dd69feeeb098a3ea0ec143dc678b8be4d1c2a9158eb75f9f7532c22e3f4de65&
+
+{Reactions}
+🔥
+
+[09/02/2025 16:14] serialkiller15
+thanks mate, my refrigirators are ready and filled full with stuff
+
+{Reactions}
+🍺 (2)
+
+[09/02/2025 17:13] xf0x0f
+this wont work for me.  i think the 48c also not
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412485515537813504/Bildschirmfoto_2025-09-02_um_19.12.22.png?ex=69f38da5&is=69f23c25&hm=346dac8462d0682fa1979fcb92554f1e6cce139231844b1f4eb8ec4bb2c10483&
+
+
+[09/02/2025 17:45] serialkiller15
+its realy interesting...
+
+
+[09/02/2025 17:45] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412493640869089350/image.png?ex=69f39536&is=69f243b6&hm=3f093b62f5b8050df871fb0da6b02ac922d47de8e8d09b471b3589fa003fc4d7&
+
+{Reactions}
+🚀 (2) 👍 🔥 ✅
+
+[09/02/2025 17:49] serialkiller15
+its not the strategy... why are you making dryrun with so much amount of money? i prefer 10x10 usdt or 20x10 usdt, because will you start with 10k?
+
+
+[09/02/2025 17:51] serialkiller15
+it needs adjustments absolute
+
+
+[09/02/2025 17:51] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412495108447932459/image.png?ex=69f39694&is=69f24514&hm=a0ab3f203e3472d67fb785c522177446fc1e6efe9618fc6b7d42654a2bddddfa&
+
+
+[09/02/2025 17:51] serialkiller15
+int the exits
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412495221400272936/image.png?ex=69f396af&is=69f2452f&hm=b44960463b5ccecc62e0d9088249c4a5c365bb4106365e1f87af257d8be94fb2&
+
+
+[09/02/2025 17:51] serialkiller15
+but the signals are good
+
+
+[09/02/2025 17:52] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412495334864715947/image.png?ex=69f396ca&is=69f2454a&hm=e62b94061c13ac138a29e74353a6c7de247dba535d3e04b8bd485efeb6799d44&
+
+{Reactions}
+🚀
+
+[09/02/2025 18:02] xf0x0f
+Sure, ill start with 10k thats why im using it in dryrun
+
+
+[09/02/2025 18:44] xaviertoor
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412508604975550474/20250902_154411.jpg?ex=69f2fa66&is=69f1a8e6&hm=fb6511d1e29b85ad365e872a005d7ea876f6b046f669ab96fa38167446618a07&
+
+{Reactions}
+😂 (10)
+
+[09/02/2025 19:19] serialkiller15
+That's why I drink beer when doing backtest...
+
+{Reactions}
+😂 (2)
+
+[09/02/2025 19:19] serialkiller15
+@xF0x0F will fix tomorrow mate danke
+
+
+[09/03/2025 03:35] neveerrk
+ROI: Closed trades
+∙ -2.386 USDT (-0.09%) (-0.24 Σ%)
+∙ -2.386 USD
+ROI: All trades
+∙ -3.469 USDT (-0.13%) (-0.35 Σ%)
+∙ -3.469 USD
+Total Trade Count: 22
+Bot started: 2025-09-02 15:52:28
+First Trade opened: 11 hours ago (2025-09-02 16:01:39)
+Latest Trade opened: 18 minutes ago (2025-09-03 03:16:38)
+Win / Loss: 4 / 17
+Winrate: 19.05%
+Expectancy (Ratio): -0.11 (-0.05)
+Avg. Duration: 0:51:37
+Best Performing: BAKE/USDT:USDT: 24.114 USDT (19.85%)
+Trading volume: 19019.456 USDT
+Profit factor: 0.93
+Max Drawdown: 2.01% (19.862 USDT)
+    from 2025-09-02 16:31:33 (-3.44 USDT)
+    to 2025-09-03 03:16:34 (-19.862 USDT)
+Current Drawdown: 0.67% (6.638 USDT)
+    from 2025-09-03 03:17:03 (4.252 USDT)
+
+
+[09/03/2025 03:36] neveerrk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412642280720039976/Screenshot_20250903_113552_Telegram.jpg?ex=69f376e5&is=69f22565&hm=81fa0d45d1f926d021fe86e9eb17745394158d9e74faf04b3854df6328a5f56f&
+
+
+[09/03/2025 06:18] serialkiller15
+Good morning guys my results also changed to worse the signals are good but the exits are worse will try to fix it today..
+
+
+[09/03/2025 06:53] boooooon
+maybe it will be useful for you
+47C
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412691987672469535/image.png?ex=69f2fc70&is=69f1aaf0&hm=780c13db8eaf2bdee2f7636f3842a3d1fd4ad7d31f1574f6cdd29e8a2fed9f43&
+https://cdn.discordapp.com/attachments/1304860205565087795/1412691987961872394/image.png?ex=69f2fc70&is=69f1aaf0&hm=a924f81fae4ae35e8a17bea2d8267f7a9d7f9ea96fb5285be31b0cd802946077&
+
+
+[09/03/2025 06:54] boooooon
+48C
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412692122749894676/image.png?ex=69f2fc90&is=69f1ab10&hm=4f8c3813571872e1178d83ad6d46b81b74701a1bae31679b12a2c37cf29e0f28&
+https://cdn.discordapp.com/attachments/1304860205565087795/1412692123052015656/image.png?ex=69f2fc90&is=69f1ab10&hm=f8a7be94a29c0fb720d84b4949e447f4e30990fb793bfeee6dedec21020b79dd&
+
+
+[09/03/2025 06:54] serialkiller15
+Thanks!
+
+
+[09/03/2025 11:12] serialkiller15 (pinned)
+@everyone so some mods, please make your tests
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412757017285886083/AlexBandSniperV51C.py?ex=69f33900&is=69f1e780&hm=ee3df899a3ce4f42e6bed7a1ec0de901ecfd7c8dbf2d0c13e0c25ae26f45a254&
+
+{Reactions}
+👍 (3)
+
+[09/03/2025 11:13] serialkiller15
+Pinned a message.
+
+
+[09/03/2025 11:22] xf0x0f
+AlexBandSniperV51C | 15m
+SPELL/USDT:USDT
+
+Long entries: 67
+Long exit: 50
+Short entries: 50
+Short exits: 67
+
+
+[09/03/2025 11:23] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412759952841379850/image.png?ex=69f33bbc&is=69f1ea3c&hm=85675de6898440a954f1d198d747cfca6324aa94acce420117d48643f090f61f&
+
+
+[09/03/2025 11:28] serialkiller15
+but thats fine because the entrys are fine let it run we will see
+
+
+[09/03/2025 11:38] giovannimauro
+@Alex Crypto King can I ask wich kind of config we have to run with? There is some informative pair to put  into it or something else? 
+Thank you
+
+
+[09/03/2025 11:40] serialkiller15
+This is my Config
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412764280826237042/message.txt?ex=69f33fc4&is=69f1ee44&hm=9e9a345a8924fab85c7b8401f31a952d0ce8f00c5f7503d5e1e892bddb5e84a2&
+
+{Reactions}
+🧘 👍 🤞 👍🏻
+
+[09/03/2025 11:41] serialkiller15
+at the moment i have 2 Versions running for Testing will see what happens the next days!
+
+{Reactions}
+👍 (2)
+
+[09/03/2025 12:07] serialkiller15
+Backtest hehehehehehe
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412770894522220665/image.png?ex=69f345ed&is=69f1f46d&hm=f905334c06d34f17a2571e41a5198ce896113efcd54cc3a2748d213db1d91a41&
+
+
+[09/03/2025 12:07] erbosnio_17282
+Lamborghini for tomorrow
+
+
+[09/03/2025 12:07] serialkiller15
+Backtest without Beer......
+
+
+[09/03/2025 12:08] boooooon
+https://tenor.com/view/doge-doge-coin-to-the-moon-crypto-cryptocurrency-gif-14563637
+
+{Embed}
+https://tenor.com/view/doge-doge-coin-to-the-moon-crypto-cryptocurrency-gif-14563637
+https://images-ext-1.discordapp.net/external/gxI4JBj8FEKqcQoWEfMveqChstaGgAQs2skImnDvQtQ/https/media.tenor.com/CT3GOSeG8xcAAAAe/doge-doge-coin.png
+
+
+[09/03/2025 12:09] serialkiller15
+hehe that would be perfect, but my experience 
+Backtest ist only for testing the strategy logic as it self nothing more
+some Quality Check nothing more
+
+
+[09/03/2025 12:11] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412771872050774137/image.png?ex=69f346d6&is=69f1f556&hm=77b92426293fcf7088b45effbebf891e669409d924b07c01d08dbfb47236bfe3&
+
+
+[09/03/2025 12:12] mistifux
+is this a strategy without freqai?
+
+
+[09/03/2025 12:12] serialkiller15
+yes but not that i posted here need to finish test and this will be another version
+
+
+[09/03/2025 12:13] mistifux
+Ok boss
+
+{Reactions}
+👍
+
+[09/03/2025 13:08] serialkiller15
+i can make it better i hate backtest? if somebody knows it...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412786281280438433/image.png?ex=69f35441&is=69f202c1&hm=19011c96fe7df7be8c4d1ecdd6ce99eab7b59950080d6cd69ed4695988b7c8ec&
+
+
+[09/03/2025 13:12] darkreaper0756
+Every time I get extraordinary results in backtesting, I do recursive and bias analysis…
+
+
+[09/03/2025 13:12] serialkiller15
+i now mate
+
+
+[09/03/2025 13:12] serialkiller15
+i do it only to test the logic of the strategy and errors or other stuff...
+
+
+[09/03/2025 13:13] divarak
+Could you please explain how to do bias analysis?
+
+
+[09/03/2025 13:14] xf0x0f
+https://www.freqtrade.io/en/stable/lookahead-analysis/
+
+{Embed}
+https://www.freqtrade.io/en/stable/lookahead-analysis/
+Lookahead analysis - Freqtrade
+Freqtrade is a free and open source crypto trading bot written in Python, designed to support all major exchanges and be controlled via Telegram or builtin Web UI
+
+{Reactions}
+👍
+
+[09/03/2025 13:14] darkreaper0756
+And try to do tests only on a day when the market has risen or fallen a lot to see how it behaves on such days..
+
+{Reactions}
+🫡
+
+[09/03/2025 13:23] serialkiller15
+for example
+freqtrade lookahead-analysis --strategy AlexBandSniperV5 --config user_data/config-torch15m.json  --timerange 20250601-20250825
+
+
+[09/03/2025 15:01] serialkiller15
+My backtest Plattform
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412814886005772359/20250903_170133.jpg?ex=69f36ee5&is=69f21d65&hm=be1cc6e3538c125914fa10356fe861b75acf0754688da195f29d80d4432d8595&
+
+{Reactions}
+👍🏻 (2) 😂 🫡
+
+[09/03/2025 15:15] imtalento
+Swapped to 51C @4PM
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412818304782827690/Screenshot_2025-09-03_alle_17.14.51.png?ex=69f37214&is=69f22094&hm=40046988a34532b0c9e76ff99f043e796044ede5c4017b7574df5d3364a6ae59&
+
+
+[09/03/2025 15:15] serialkiller15
+i have mostly the same here
+
+
+[09/03/2025 15:16] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412818496584286319/image.png?ex=69f37242&is=69f220c2&hm=56d0b02b2f5c6f953d24e8462317ed17a8cd430214a3a74053261648d787d1fe&
+
+
+[09/03/2025 15:16] serialkiller15
+did not cleanup the db or restart from scratch
+
+
+[09/03/2025 15:16] imtalento
+same
+
+
+[09/03/2025 15:17] serialkiller15
+i deleted the old versions here, there where not good at all...lets continue tests on 51C
+
+
+[09/03/2025 15:24] darkreaper0756
+Party test platform🤣🤣🤣
+
+{Reactions}
+🔥 😂
+
+[09/03/2025 15:24] serialkiller15
+yes in my garage....my room, my rules hehe
+
+{Reactions}
+❤️ (2)
+
+[09/03/2025 15:46] boooooon
+beerish market😂
+
+{Reactions}
+👍
+
+[09/03/2025 16:01] serialkiller15
+...
+
+
+[09/03/2025 16:01] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412829794718056649/image.png?ex=69f37cc8&is=69f22b48&hm=dd7ad778619d0ae3873b7ef9ea483e39028c3f07fc0f53cd1879b835f59f807d&
+
+{Reactions}
+🤏 (2)
+
+[09/03/2025 16:36] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412838777239376006/IMG_4039.jpg?ex=69f38525&is=69f233a5&hm=e5dc5990d431c855245a230c5a2ff17160d08dfbe1bd62587d299d49c4c7eab9&
+
+
+[09/03/2025 16:37] darkreaper0756
+Start testing😆
+
+
+[09/03/2025 16:37] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1412838906319339612/IMG_8166.jpg?ex=69f38544&is=69f233c4&hm=f37f23b965ee17ca5fffd9aeca9eaa9252569182cea8963288f6ec5398b79c6a&
+
+{Reactions}
+😂
+
+[09/03/2025 16:37] serialkiller15
+also nice i am on the way should i take some glasses!
+
+
+[09/03/2025 16:37] serialkiller15
+@xF0x0F zipfer oh my goood
+
+
+[09/03/2025 16:42] darkreaper0756
+Have fun guys.!!!
+
+
+[09/04/2025 02:55] nerazurri0420
+"ccxt_async_config": {
+      "aiohttp_trust_env": true,
+      "enableRateLimit": true,
+      "rateLimit": 150
+    }, Does this configuration limit the interaction frequency with the exchange API to prevent triggering risk control？ @Alex Crypto King
+
+
+[09/04/2025 08:13] giovannimauro
+Investigating, I see many signal not triggered in the past. 
+Those are divergence and pivot points, that they can be confirmed only when more candles are passed. 
+This is not understood as lookahead bias, but the result is the same. 
+
+This mean that in backtest, where all the dataframe is charged at start, we will see a mostly perfect backtest, because we trigger asll signal accordingly with those entries, but in dryrun we will fall in many not-triggered contrary position that they can save us from losses as exits.
+
+
+[09/04/2025 08:14] giovannimauro
+I suggest to investigate those 2 type of entries.... until this moment backtest are not usefull at all
+hope to be helpfull
+
+
+[09/04/2025 08:16] serialkiller15
+thanks i already saw it yesterday, i am on it to fix it
+
+
+[09/04/2025 08:16] serialkiller15
+@Giovanni Mauro every impact is helpful thanks
+
+{Reactions}
+👍
+
+[09/05/2025 11:44] serialkiller15
+get some nice stuff here from a comm member, not final jet but its a nice aproach for BandSniper, integrate OPTUNA, what it does, it trains the best parameters for the entrys on every coin
+its in deployment so please no questions about when its beeing released!
+I also implemented the Indicators of @neveerr thanks for that
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1413489959729500181/image.png?ex=69f3409b&is=69f1ef1b&hm=f1f13413ed2024dfc59a5e2b73c5a5d276d90819ca1afee3f983fc543b331e92&
+
+{Reactions}
+🔥 (2) 🚀 👍
+
+[09/05/2025 11:46] serialkiller15
+@DarkReaper maybee would be also helpful for anfv8 so no need to hyperopt it ....optuna will handle that
+
+
+[09/05/2025 11:46] darkreaper0756
+OPTUNA is nice😇
+
+
+[09/05/2025 11:47] serialkiller15
+yes
+
+
+[09/05/2025 11:48] erbosnio_17282
+I plan to integrate it on a next step also but i'm worried about if it will take too much time. How much time does it take per coin?
+
+
+[09/05/2025 11:49] darkreaper0756
+It saves you a lot of time…
+
+
+[09/05/2025 11:49] serialkiller15
+no it does not
+
+
+[09/05/2025 11:49] serialkiller15
+1 coin on band sniper like 2-3 seconds
+
+
+[09/05/2025 11:49] erbosnio_17282
+Yes
+
+
+[09/05/2025 11:49] erbosnio_17282
+Oohh then its really nice
+
+
+[09/05/2025 12:59] dennyhui8023
+@Alex Crypto King  hi alex,  I've just learned about Optuna and have reviewed some related materials—I now have a general understanding of its architecture and workflow. I'd like to ask a couple of questions:
+1.When using Optuna for training, does it essentially rely on calling Freqtrade's backtesting API ?
+2.To integrate Optuna into a trading strategy, should I pre-train parameters offline for each trading pair and then dynamically retrieve them during strategy execution based on the specific pair, or should the strategy dynamically train and optimize parameters in real-time during initialization to obtain the best values ?
+
+
+[09/05/2025 13:04] serialkiller15
+from my understanging optuna is doing backtest with the parameters you want it to train
+also it trains on startup of the strategy, and also in the running also, you should let optuna do all pairs, because many indicators,dataframes are different on different coins, from my point of view, i was doing optuna 1 year ago, but we mixed freqai with optuna, so we were not successfull. but as i can see on some strategies it realy makes sense, because no hyperopt is needed and other stuff..
+
+
+[09/05/2025 13:07] darkreaper0756
+I think if the bot needs to be restarted for freqtrade to take the new parameters load…?
+
+
+[09/05/2025 13:13] dennyhui8023
+Based on my understanding, Optuna itself does not perform backtesting; it is responsible for "parameter sampling + early-stop pruning." The evaluation still relies on metrics generated by Freqtrade's backtesting (via CLI or API).
+
+
+[09/05/2025 13:23] serialkiller15
+no would not need to restart, the values been done by optune will be available in the strategy.....
+in the past i got an aproach to reload the results its also fine
+
+
+[09/05/2025 14:27] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1413531000578768907/image.png?ex=69f366d4&is=69f21554&hm=bfe577e679b9f96b7c804473d404a6c256d57df2c92b2b8d00155c18d9f639df&
+
+
+[09/05/2025 14:31] darkreaper0756
+It would be great if you could also make a dashboard like this
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1413531929440948314/Screenshot_2025-09-05_162855.png?ex=69f367b2&is=69f21632&hm=53b3de5d9ec4d91bac9dd759d2a55fbe7f7072bead032880db539667ad3c2f09&
+
+{Reactions}
+🔥 (2)
+
+[09/05/2025 14:31] serialkiller15
+fuck whats that
+
+
+[09/05/2025 14:32] darkreaper0756
+😂
+
+
+[09/05/2025 14:33] darkreaper0756
+Shell terminal
+
+
+[09/05/2025 14:33] serialkiller15
+ah i see
+
+
+[09/05/2025 14:55] maxgorbachevskiy
+Dashboarding is my professional business 😎
+
+{Reactions}
+👍 (3)
+
+[09/05/2025 14:57] serialkiller15
+you are my master of numbers.........
+
+
+[09/05/2025 14:58] erbosnio_17282
+I have to show my own competence for freqtrade 🤣🤣 it's 85% implemented, and with a nice frontend
+
+{Reactions}
+😂 🔥
+
+[09/05/2025 14:58] serialkiller15
+then show
+
+
+[09/05/2025 14:59] erbosnio_17282
+Maybe you can correct some bugs 🤣
+
+
+[09/05/2025 14:59] serialkiller15
+let me pick up some beer bevore mate
+
+
+[09/05/2025 14:59] erbosnio_17282
+It's a lot of months of work, but stopped when my baby comes
+
+{Reactions}
+🔥
+
+[09/05/2025 14:59] maxgorbachevskiy
+We can absolutely think of some sort of dashboarding solution(Superset + Airflow, maybe?). 
+I managed to crunch freqtrade sqlite databases, so we can have our custom reporting, too.
+
+
+[09/05/2025 15:00] serialkiller15
+i need a beeeeeeeeeeeeeeeeeeer
+
+{Reactions}
+😂
+
+[09/05/2025 15:00] serialkiller15
+@erbosnio babys are more importand then everything others, gratulations mate......family is everything
+
+{Reactions}
+👍
+
+[09/05/2025 15:01] serialkiller15
+only problem is when they grow up, my daughter is already 8, and no cuddles, no kisses nothing....it depends hehe
+
+
+[09/05/2025 15:02] erbosnio_17282
+She has promise to me to stay with 10 months forever 🤣
+
+{Reactions}
+🔥 🤣
+
+[09/05/2025 15:02] serialkiller15
+damn
+
+
+[09/05/2025 15:02] serialkiller15
+you have a joker
+
+
+[09/05/2025 15:03] maxgorbachevskiy
+Hehe my boy is 9 now, we’re in the same boat 😂😂
+
+{Reactions}
+👍
+
+[09/05/2025 15:04] darkreaper0756
+i use rich console
+
+
+[09/05/2025 15:04] serialkiller15
+@MaxG yes but its a boy, i have two princesses at home.....
+
+{Reactions}
+😂 (2)
+
+[09/05/2025 15:04] serialkiller15
+and a dog withouth balls
+
+{Reactions}
+🤣 (2)
+
+[09/05/2025 15:05] serialkiller15
+so i have lost
+
+{Reactions}
+🤣
+
+[09/05/2025 15:07] anonymuis
+I feel you!!
+But let me join the party:
+A wife, 2 daughters (9 and 15), daughters boyfriend and 2 (also female) kittens!
+
+{Reactions}
+😂
+
+[09/05/2025 15:07] serialkiller15
+damn....you won absolute @Anonymuis my friend
+
+
+[09/05/2025 15:09] anonymuis
+So, this is what I do every Friday at work, right before going home... Courage drinking, my colleagues call it!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1413541466881392772/rn_image_picker_lib_temp_c0dc3207-ff92-48ac-87a4-1043c6a4dff6.jpg?ex=69f37094&is=69f21f14&hm=bccb67c5510fb72b74231b8cde3a8c9fbd99ac7a76f4837472644fd415a7d0b1&
+https://cdn.discordapp.com/attachments/1304860205565087795/1413541467640827954/image1.gif?ex=69f37094&is=69f21f14&hm=239acadf8f20899d3545463fa375500eee2aae158874710078bbd84b8d8c2bc9&
+
+{Reactions}
+😂
+
+[09/05/2025 15:09] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1413541542861213747/20250905_170841.jpg?ex=69f370a6&is=69f21f26&hm=eb3531121faaf403b905f7aea2e35a567dd970e314b13d874e0f7fdc70266aed&
+
+{Reactions}
+😂 (3) 🧐
+
+[09/05/2025 15:09] serialkiller15
+good beer i tested it
+
+
+[09/05/2025 15:10] anonymuis
+Wauw! That looks like we've got some strategy updates coming!
+
+{Reactions}
+👍
+
+[09/05/2025 15:10] serialkiller15
+you should run maintanance....
+
+{Reactions}
+😂 💯
+
+[09/05/2025 15:12] serialkiller15
+i think we are on a good way, many good impacts, alexnexusforgegpu, bandsniper, and other stufff.....
+thanks for your time here and that we can do this together!
+
+
+[09/05/2025 15:12] serialkiller15
+new members with nice ideas
+
+
+[09/05/2025 15:12] darkreaper0756
+you need something strong even for weak transactions 🙂
+
+
+[09/05/2025 15:13] serialkiller15
+hehe i can not handle strong alcohol anymore....so thats my stuff
+
+
+[09/05/2025 15:14] serialkiller15
+@DarkReaper but great to have you here, you made some realy amazing impacts, i would not think about that. your ideas nice thanks...
+
+
+[09/05/2025 15:14] boooooon
+when will there be champagne?🙂
+
+
+[09/05/2025 15:15] serialkiller15
+maybee when it all works and we make a party in dubai
+
+{Reactions}
+🚀 (2) 🕺
+
+[09/05/2025 15:15] maxgorbachevskiy
+Refill detected!
+
+{Reactions}
+🤣
+
+[09/05/2025 15:16] serialkiller15
+yep refilled it yesterday....
+
+
+[09/05/2025 15:17] maxgorbachevskiy
+in our Dubai 😂
+
+
+[09/05/2025 15:17] darkreaper0756
+What cool backtesting we did on a cruise
+
+
+[09/05/2025 15:17] serialkiller15
+hehe
+
+
+[09/05/2025 15:18] serialkiller15
+have a picture in my mind, we all dring and have our laptops on there and make backtests....
+
+
+[09/05/2025 15:18] serialkiller15
+drink
+
+
+[09/05/2025 15:20] anonymuis
+I'm curious... Would us sitting together with unlimited beers and laptops on a cruise improve the combined coding performance?
+Our would it just count as 'inspiration' and not 'productivity'..?
+
+
+[09/05/2025 15:21] serialkiller15
+i would say inspiration..................no porductivity
+
+
+[09/05/2025 15:21] anonymuis
+That's a shame. Because then we can't see it as an investment with possible tax write-off...
+
+
+[09/05/2025 15:22] serialkiller15
+dont worry i will pay the bills.
+
+{Reactions}
+😂
+
+[09/05/2025 15:23] anonymuis
+To be honest, it could even be affordable/profitable in the end...
+
+
+[09/05/2025 15:23] serialkiller15
+absolute
+
+
+[09/05/2025 15:24] serialkiller15
+i need to say, thanks for @everyone that we made it happen that the community is on life after break and realy good impacts here! i  love that thanks!
+
+{Reactions}
+🥳 (2)
+
+[09/05/2025 15:25] erbosnio_17282
+I have also two syno servers 😁
+
+
+[09/05/2025 15:25] erbosnio_17282
+One with xpenology
+
+{Reactions}
+🔥
+
+[09/05/2025 15:26] anonymuis
+Damn!! You guys are curious! 😝
+
+
+[09/05/2025 15:26] serialkiller15
+as i told you some long time ago, i have enough infrastrucutre here, working for the biggest it company in austria, 
+ressources are not the problem
+
+{Reactions}
+🔥 (2)
+
+[09/05/2025 15:26] erbosnio_17282
+For sure we could create something spectacular
+
+
+[09/05/2025 15:27] serialkiller15
+we are killing the channel here hehe
+
+{Reactions}
+😂
+
+[09/05/2025 15:27] erbosnio_17282
+My servers have not enough power, i do everything on an old computer
+
+
+[09/05/2025 15:27] erbosnio_17282
+Lets see if this year i can buy a new equipment
+
+
+[09/05/2025 15:28] serialkiller15
+enough here mate
+
+
+[09/05/2025 15:28] serialkiller15
+dont worry
+
+
+[09/05/2025 15:31] maxgorbachevskiy
+Dutch style questions, always about efficiency 😂😂😂
+(no offense here, im from the Netherlands too). 
+Love it
+
+{Reactions}
+👍 😂
+
+[09/05/2025 15:31] serialkiller15
+i have a e-car so i am efficient
+
+
+[09/05/2025 15:32] serialkiller15
+and my power comes from the son so i am
+
+{Reactions}
+😂
+
+[09/05/2025 15:35] serialkiller15
+so who wants a beer need to pick some
+
+
+[09/05/2025 15:37] erbosnio_17282
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1413548585978691584/rn_image_picker_lib_temp_28235dea-df5c-4033-acf1-eeb18eaa1c9c.jpg?ex=69f37735&is=69f225b5&hm=92942a1614fa8bb911ff42918f5866f8c30decc3fce6f70e1e94a176691dd9ed&
+
+{Reactions}
+❤️
+
+[09/05/2025 15:37] serialkiller15
+i hate your pictures? did i say it ..
+
+{Reactions}
+😂
+
+[09/05/2025 15:38] erbosnio_17282
+Hahahaha
+
+
+[09/05/2025 15:41] anonymuis
+Whahaha! That's great! We should meet...
+
+{Reactions}
+💯
+
+[09/05/2025 15:42] serialkiller15
+yes would say we heve the right place at @erbosnio nice thanks for inviting us
+
+{Reactions}
+🔥
+
+[09/05/2025 15:43] serialkiller15
+so should we release alexbandsniper optuna before weekend? or should i wait.............
+
+
+[09/05/2025 15:44] serialkiller15
+i only test with small amounts............
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1413550425537253376/image.png?ex=69f378eb&is=69f2276b&hm=40b1dfdee7b80a1b2967193d4c567b4c1dc1d6220211ad8c5abfd19ae357db7c&
+
+
+[09/05/2025 15:45] viking046433
+I’m busy
+
+{Reactions}
+👍
+
+[09/05/2025 15:45] viking046433
+Hahahaha sorry my hand typed that while speaking to my wife
+
+{Reactions}
+🤣 😂
+
+[09/05/2025 15:46] viking046433
+Release it lets run
+
+
+[09/05/2025 15:51] serialkiller15 (pinned)
+@everyone ...............
+AlexBandSniperV54CO
+Optuna integrated, check your patch in the script
+No Need to Hyperopt
+15m Timeframe
+Pairlist -> your choice
+Integration of RSV1 - Indicators!
+if needed
+pip install optuna
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1413552137706672208/AlexBandSniperV54COptuna.py?ex=69f37a84&is=69f22904&hm=9719e9ef5fd224e49c71bd59ff82f706e36df679b64daf7c3eac8650a73d4998&
+
+{Reactions}
+🚀 (7)
+
+[09/05/2025 15:51] darkreaper0756
+😂
+
+
+[09/05/2025 15:52] serialkiller15
+?
+
+
+[09/05/2025 15:52] darkreaper0756
+I wanted to go to bed
+
+{Reactions}
+😂
+
+[09/05/2025 15:52] serialkiller15
+then do it mate. no problem with that
+
+
+[09/05/2025 15:52] darkreaper0756
+But now I'm staying at the computer for a while😇
+
+
+[09/05/2025 15:53] serialkiller15
+damn sry mate should i delete it
+
+{Reactions}
+😂 (2)
+
+[09/05/2025 15:54] darkreaper0756
+I'll give you a case of beer, just don't delete it
+
+
+[09/05/2025 15:54] serialkiller15
+dont worry you can test it on monday weekend is not good for doing trades we will see,
+but what i saw the last days its that optuna is doing a good job mostly
+
+
+[09/05/2025 15:59] darkreaper0756 (pinned)
+Today I did some tests with parameter values ​​adapted for each coins, it was much better than adapting the indicator thresholds to be global.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1413554136670015599/ADAptive_pairs.txt?ex=69f37c60&is=69f22ae0&hm=0b68a48e54e858fea1aa6f4b04b3b6f1718475995a55f066f4425da4c868ce94&
+
+{Reactions}
+👍 (3)
+
+[09/05/2025 16:00] maxgorbachevskiy
+Pinned a message.
+
+
+[09/05/2025 16:01] maxgorbachevskiy
+Pinned a message.
+
+
+[09/05/2025 16:07] erbosnio_17282
+All invited!!
+
+{Reactions}
+🎉 (2)
+
+[09/05/2025 16:15] boooooon
+Sorry for the stupid question. Should I use `SimpleOptunaManager`? Or `OptunaManager` that you posted here? Because I see `self.optuna_manager = SimpleOptunaManager("AlexBandSniperV54CO")` and I don't see where you use `OptunaManager`.
+
+
+[09/05/2025 16:17] serialkiller15
+there are no stupid questions only stupid answers, yes you are right simpleoptuna is good so you dont need the OptunaManager, it was a previos version....my vault
+
+{Reactions}
+👍
+
+[09/05/2025 16:54] boooooon
+Why I see `recent_entries > 0` but I don't have any signals🤔
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1413568015412498462/image.png?ex=69f3894d&is=69f237cd&hm=8cc7764e281aa09827e3c6bcbaed04c93add6a8451ac6fead84ad247e3108402&
+https://cdn.discordapp.com/attachments/1304860205565087795/1413568016083321016/image.png?ex=69f3894d&is=69f237cd&hm=305fc600c269d7ca422dec18ed5bb50d5d23d21555351989d31ff15dc8e48ce3&
+
+
+[09/05/2025 16:55] serialkiller15
+Signals will come....
+
+
+[09/05/2025 16:57] boooooon
+but if we have `recent_entries`, does that mean we had `enter_long` or `enter_short` set somewhere, i.e. there should have been signals? or is there a filter somewhere that blocks them?
+
+
+[09/05/2025 17:07] maxgorbachevskiy
+Austrians: talk about beer
+Chinese:  talk about beer
+Americans: talk about beer
+Everyone else: talk about beer
+Dutch:  talk about beer and tax write-offs 
+😂😂
+
+{Reactions}
+😂 (2) ✅
+
+[09/05/2025 17:08] serialkiller15
+👍
+
+
+[09/05/2025 17:17] maxgorbachevskiy
+how to calculate these parameters for other coins – via hyperopt? 
+Hyperopt with a 1 coin in the config?
+
+
+[09/05/2025 17:29] darkreaper0756
+Wait
+
+
+[09/05/2025 17:29] darkreaper0756
+Send strategy
+
+
+[09/05/2025 17:32] darkreaper0756
+Yes, per coin
+
+
+[09/05/2025 17:32] darkreaper0756
+1 yars data
+
+
+[09/05/2025 17:33] darkreaper0756
+15m timeframe
+
+
+[09/05/2025 19:28] neveerrk
+Oh fuck  its so good
+
+
+[09/05/2025 20:45] xaviertoor
+from optuna_manager import OptunaManager
+
+Where to find optuna_manager.py ?
+
+
+[09/05/2025 21:51] maxgorbachevskiy
+
+
+{Forwarded Message}
+Originally sent: 09/05/2025 18:00
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1413642642641911888/optuna_manager.py?ex=69f3260e&is=69f1d48e&hm=28f4d60190e0564097b022c6742ac1d2961e4d45f1f17e2592278f45c01a0a4e&
+
+
+{Reactions}
+👍 (2)
+
+[09/05/2025 21:51] maxgorbachevskiy
+place it in the stratetgy folder and restart it
+
+
+[09/05/2025 22:17] serialkiller15
+@neveerr itd your indicator in there...
+
+
+[09/05/2025 22:54] snokard.
+So on bandsniper you are using a bunch of multiple indicators right? Sounds really interesting... need testing on any timeframe? I will find some time next week to work on my strategy but can definetly run another one in the meanwhile
+
+
+[09/05/2025 23:01] xaviertoor
+**Signal:** friday_close_exit ✌️ 👀 😎 ✅🍺
+
+
+[09/06/2025 05:32] serialkiller15
+👍
+
+
+[09/06/2025 22:12] bigbroseur
+Hello beer snipers,
+for those who want to dry on hyperliquid with feather file format,
+download hyper historic data (tks hippo):
+cd
+git clone https://github.com/frequenthippoOrg/freqtrade_hyperliquid_download-data.git
+cd   freqtrade_hyperliquid_download-data
+git fetch origin
+git reset --hard origin/main
+cd ~/freqtrade/user_data/data
+rm -fr hyperliquid
+ln -s ${HOME}/freqtrade_hyperliquid_download-data/user_data/data/hyperliquid hyperliquid
+
+Version with  mods to support feather file format...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1414010388344868924/AlexBandSniperV54COptuna.py?ex=69f32b0b&is=69f1d98b&hm=c07aa2d185c08a162ea4b2f621ee407bb67a53a22b0552dcab1e816514a6eff2&
+
+{Embed}
+https://github.com/frequenthippoOrg/freqtrade_hyperliquid_download-data.git
+GitHub - FrequentHippos/freqtrade_hyperliquid_download-data
+Contribute to FrequentHippos/freqtrade_hyperliquid_download-data development by creating an account on GitHub.
+https://images-ext-1.discordapp.net/external/9iwaTyDa65PJzbpE9J0GvneewmdtF2fiz-AkETeFSzw/https/opengraph.githubassets.com/62c21d9b63fe0b9e5c0eeaa67aabb154749bf5468b6e569de865700b9091ffb5/FrequentHippos/freqtrade_hyperliquid_download-data
+
+{Reactions}
+👍 (3) 🙏 (3)
+
+[09/06/2025 22:18] anonymuis
+Thank you! I was just looking into this...
+
+
+[09/07/2025 18:10] ammart90
+1 noob question, is it good for long spot (no leverage) only trading ? i've been strugling and testing alot but it seems that most of str are made for long/short
+
+
+[09/07/2025 18:11] xf0x0f
+long short are for futures. in spot there is no shorting
+
+{Reactions}
+👍
+
+[09/07/2025 18:22] ammart90
+will this str work for long only ?
+
+
+[09/07/2025 19:46] bigbroseur
+Test and tell us, 
+usually short is more risky whatever leverage, but more risk means more profits if it sometime works
+
+{Reactions}
+👍
+
+[09/07/2025 19:48] bigbroseur
+U can play futures with only long it's more safer
+
+{Reactions}
+👍
+
+[09/11/2025 06:03] Deleted User
+hi guys i tried to run the lookahead analysis on our alex bandsniper strat, and the result show it has bias, so does this strategy just meant for dryrun to see if it works? or we can do backtest on it too? cuz the backtest results are quite decent tbh
+
+
+[09/11/2025 07:01] serialkiller15
+yes it in the pivot_section there, but after some days running it can say that it does not improve the results, i have also a running strategy without the lookahead, backtest results (without optuna) are the same so i personaly think no impact on the strat!
+
+
+[09/11/2025 07:11] Deleted User
+thx for the reply alex, ur the goat!
+
+
+[09/17/2025 17:58] bigbroseur
+Hello mates,
+Tried to optimize sniper without success and the go back to basic with TGDF, the root of sniper and seems got right mods to improve stability....
+I'll let you know to confirm in few days and post the mods version.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1417932718863286406/image.png?ex=69f39840&is=69f246c0&hm=330e3ec16d58b65012226253e58f3962da9949eec71a3006299394e9c5a4e72e&
+https://cdn.discordapp.com/attachments/1304860205565087795/1417932719211544647/image.png?ex=69f39840&is=69f246c0&hm=494b70e21cdacd6e0bb7df1e1b275bb52579ff9508458d98729879af73dc3139&
+
+{Reactions}
+🚀 (8) 🔥
+
+[09/17/2025 19:16] serialkiller15
+Thanks welcome back here long time ago...
+
+
+[09/17/2025 19:34] bigbroseur
+In fact,i was still there but very busy and also working on strat optimisation and how to manage efficiently  bots army to select top10.
+Both demand a lot of work, but finally begin to pay back…
+Let you know
+
+
+[09/28/2025 13:23] inmogicwetrust
+how's it going now? after almost two weeks.
+
+
+[09/29/2025 16:49] bigbroseur
+Being patient is the first essential quality in the ruthless world of trading, and even more so in crypto...
+Being patient is already being efficient.
+
+{Reactions}
+💯
+
+[09/29/2025 17:47] serialkiller15
+Patient is the key yes
+
+
+[10/05/2025 12:58] serialkiller15
+@everyone
+some improvements on signals over the weekend, you are getting more entrys make your tests code is the same only enabled/disabled some entrys
+doing good at this market situation, but if it change we will see what happens!
+
+
+[10/05/2025 12:58] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1424380247733702767/AlexBandSniperV18AI.py?ex=69f351fa&is=69f2007a&hm=8b18fb989dabe0932a184e9700ca9f001388d2526e93b65f04321e2fd434fb5d&
+
+{Reactions}
+🚀 (3)
+
+[10/05/2025 12:59] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1424380558430965820/image.png?ex=69f35244&is=69f200c4&hm=61b7b285e833fa758506966e7876f2fdee043741abcd71cc687f8ba9a9d96660&
+
+
+[10/05/2025 13:11] ywk3926
+I use OKX, some of the trading pairs you recommended are not available, is there any impact? Thank you.
+
+
+[10/05/2025 13:14] serialkiller15
+nope
+
+
+[10/05/2025 13:21] mmnbm_79378
+Is this a one hour level or a 15 level
+
+
+[10/05/2025 13:21] serialkiller15
+i prefere using 15m timeframe
+
+
+[10/05/2025 13:22] mmnbm_79378
+OK I'll try
+
+
+[10/05/2025 13:24] ywk3926
+max_open_trade=6，Is it too little to complete 10 orders in one day?😆
+
+
+[10/05/2025 13:24] mmnbm_79378
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1424386779494088766/image.png?ex=69f35810&is=69f20690&hm=50f9d5efaa435ea0203c1159bec53fec8a8cb4341383f15969f7ad9febd77d8b&
+
+
+[10/05/2025 13:24] serialkiller15
+do your tests, i have running it on 20trades 20usdt each
+
+
+[10/05/2025 13:25] ywk3926
+ok，thk❤️
+
+
+[10/10/2025 13:35] serialkiller15
+@everyone there was a bug in bandsniper the devergience signals where not working so that's the main think why the results are so bad I already fixed it but needs time for testing...
+
+{Reactions}
+👍 (6)
+
+[10/10/2025 14:11] inmogicwetrust
+Thanks and take care
+
+
+[10/10/2025 15:14] xalt8851
+🚀
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1426226432975175710/image.png?ex=69f371df&is=69f2205f&hm=452ed703584a820188bc64d33fb45291c44db28850a87c58a1a8a00e51d385fc&
+
+{Reactions}
+👍
+
+[10/10/2025 16:02] ywk3926
+It just happened to meet a decline, and before that, it was all short selling, this is not easy to evaluate, the market may also move in the opposite direction, resulting in a completely opposite outcome.
+
+
+[10/10/2025 16:24] serialkiller15
+Best time to check the entrys...
+
+
+[10/10/2025 16:24] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1426244073777266838/image.png?ex=69f3824d&is=69f230cd&hm=8c6751f3ad5eced9934889868b8eeac4ac2c7d87029af933b08d44e0f030c918&
+
+
+[10/10/2025 16:29] ywk3926
+This entrance signal is so excellent, is it a new version?
+
+
+[10/10/2025 16:30] serialkiller15
+Divergence yes but it needs to be further testet!
+
+
+[10/10/2025 16:30] serialkiller15
+as i sed the divergence was not working in the prefered versions so i fixed it, maybee will cut of other unnacessary signals...
+
+
+[10/10/2025 16:31] xf0x0f
+Give it some more days
+
+{Reactions}
+👍
+
+[10/10/2025 16:32] serialkiller15
+but the candle shows you, about 12 after fixing it
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1426245937482956828/image.png?ex=69f38409&is=69f23289&hm=648690d8bf13745fed9751bf55988d393deaf04a1510d2b677ce89e7fc65db9f&
+
+{Reactions}
+🚀 (2)
+
+[10/10/2025 16:32] serialkiller15
+yes mate absolute!
+
+
+[10/10/2025 17:36] inmogicwetrust
+Thank you for your contribution. In addition, how long can we use the latest bug-fixed version of sniper?
+
+
+[10/10/2025 19:03] serialkiller15
+The versions are working but without divergence
+
+
+[10/10/2025 19:09] dragongoattigercat
+can you guide us so we can turn on divergence?
+
+
+[10/10/2025 19:15] serialkiller15
+Let's finish the tests will post then thanks
+
+{Reactions}
+👍
+
+[10/11/2025 05:41] inmogicwetrust
+Excuse me, does the sniper strategy have a minimum live capital requirement? If Max trade = 25, is it okay to use 100USDT for live test? Thank you
+
+
+[10/11/2025 06:18] erbosnio_17282
+Dont put it in live!
+
+
+[10/11/2025 06:19] inmogicwetrust
+Could you please tell me why?
+
+
+[10/11/2025 06:20] erbosnio_17282
+Have you tested it for a long time?
+
+
+[10/11/2025 06:21] inmogicwetrust
+I usually test directly using live instead of dry run, cuz sometimes dry run is different from live test
+
+
+[10/11/2025 06:22] xf0x0f
+Next level 😜
+
+{Reactions}
+😂
+
+[10/11/2025 06:22] serialkiller15
+Don't run it live not finished yet but it's your money not mine
+
+
+[10/11/2025 06:25] erbosnio_17282
+You are crazy men
+
+
+[10/11/2025 07:11] inmogicwetrust
+I trust you
+
+
+[10/12/2025 04:48] inmogicwetrust
+Excellent performance
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1426793526749823047/5c971006dac88e5bad511a287dc2f8c9.jpg?ex=69f387c5&is=69f23645&hm=d2417119a181d771dde1adfa39c929ebe64e0c5a6bd454aa1245145a7d020b68&
+
+
+[10/12/2025 04:49] ywk3926
+Which version?
+
+
+[10/12/2025 05:12] inmogicwetrust
+this one
+
+
+[10/12/2025 05:12] dragongoattigercat
+What is your timeframe?
+
+
+[10/12/2025 05:13] inmogicwetrust
+all default settings
+
+
+[10/12/2025 05:25] ywk3926
+When will this version be released? I also want to test it.
+
+
+[10/12/2025 05:28] ywk3926
+The maximum trades are set to how much? More than 200 trades in a day?😆
+
+
+[10/12/2025 05:38] inmogicwetrust
+dry run 1000usdt, max trade = 25
+
+{Reactions}
+🔥
+
+[10/20/2025 10:22] serialkiller15
+so guys, as i finished the Alex Divergence V2 with good performance, will take a deeper look into the BandSniper, i did integrate the lates Div Signals from Divergence 
+and also adjust some other signals, will take time but we will so. Also we then can use this Signals for the GDK Stuff!
+
+{Reactions}
+🔥 (3) 🙏 (3) 👍
+
+[10/20/2025 10:23] ch1ck3n_t4c0s
+Excellent!
+
+{Reactions}
+👍
+
+[10/25/2025 08:26] serialkiller15
+I am testing now BandSniper with divergence, optuna and fisher signals into it lets see how it does, more to come!
+
+{Reactions}
+👍 (3) 🫡
+
+[10/26/2025 12:14] serialkiller15
+ROI: Closed trades
+∙ 184.269 USDT (1.93%) (23.03 Σ%)
+∙ 184.453 USD
+ROI: All trades
+∙ 183.698 USDT (1.92%) (22.96 Σ%)
+∙ 183.882 USD
+Total Trade Count: 484
+Bot started: 2025-10-15 14:05:25
+First Trade opened: 3 days ago (2025-10-15 14:40:22)
+Latest Trade opened: 22 minutes ago (2025-10-19 05:46:10)
+Win / Loss: 419 / 64
+Winrate: 86.75%
+Expectancy (Ratio): 0.38 (0.41)
+Avg. Duration: 1:28:15
+Best Performing: ZEC/USDT:USDT: 10.749 USDT (3.62%)
+Trading volume: 95951.794 USDT
+Profit factor: 4.08
+Max Drawdown: 1.95% (16.629 USDT)
+    from 2025-10-16 05:49:14 (52.584 USDT)
+    to 2025-10-16 07:16:20 (35.955 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-10-19 04:17:45 (184.269 USDT)
+
+
+[10/26/2025 12:20] themarkx_
+Which version?
+
+
+[10/26/2025 12:21] serialkiller15
+Still in n development
+
+
+[10/26/2025 12:23] themarkx_
+Okay
+
+
+[10/31/2025 15:44] serialkiller15
+AlexBandSniper in Combination with Fisher.....
+let it run for a few days
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1433844043275829339/image.png?ex=69f378d3&is=69f22753&hm=cefd3e5c2ef47a6c9d39eabbf76d4f8b2a18b3175cb627bfca5806b5526c5649&
+
+{Reactions}
+😍 (2) 👍
+
+[11/01/2025 06:56] themarkx_
+What
+
+
+[11/01/2025 06:58] xenigami
+I'm sorry. The cat did that.
+
+{Reactions}
+😀 (4)
+
+[11/01/2025 07:03] serialkiller15
+its always the cat hehe
+
+
+[11/01/2025 08:39] serialkiller15
+its the almost perfect combination of signals, fisher and divergence no more entrys needed, i have deleted/disabled other entrys, and run it will post after some days to compare the results!
+
+{Reactions}
+🚀 (4)
+
+[11/15/2025 05:33] sliper82_32020
+In this strategy  BuckV4_2B I looked at the logic for a Bitcoin crash and I really liked it. Alex, if you agree and like it, could you incorporate it into the strategy? Remove the strategy if you find it inappropriate that I uploaded it here.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1439126030655819776/BuckV4_2B.py?ex=69f3924f&is=69f240cf&hm=08d2320c8f39f262d7a1fcf6c66528b277c15322f8ce1f17d94095302d3045d7&
+
+{Reactions}
+👍 (2)
+
+[11/15/2025 05:43] serialkiller15
+Thanks for sharing will take a look on it
+
+{Reactions}
+👍
+
+[12/08/2025 02:23] nerazurri0420
+This strategy I'm dry run testing looks good, but the trading frequency is a bit low
+
+
+[12/19/2025 09:24] nerazurri0420
+is GPU required?
+
+
+[12/19/2025 09:27] serialkiller15
+nope
+
+
+[01/09/2026 23:19] jhonn3214
+My strategy make 5% per month 🙁
+
+
+[01/10/2026 06:25] xf0x0f
+better than losing money to inflation every year when it just sits in the bank
+
+
+[01/10/2026 07:00] ohbad1330
+In my country, bank term deposits are regulated to return a maximum of 6% per year 🤣
+
+
+[01/10/2026 07:16] glad8769
+Do you mean that they give interests to you once you have the money on the banking account?
+
+
+[01/10/2026 08:16] ohbad1330
+Yep 😄 Not normal savings, but bank term *deposits*. You lock the money for a few months and they pay interest (up to ~6%/year here).
+
+
+[01/10/2026 08:17] glad8769
+Well zero risk basically it is not so bad with 6%. Here happened that we had negative interests to have money on banking accounts 🤷‍♂️
+
+
+[01/10/2026 08:18] glad8769
+If you have million you are done with 6% annually 🎉
+
+
+[01/10/2026 08:19] 4v1234
+Imagine 3 consecutive trades with  + 6%
+
+{Reactions}
+🚀
+
+[01/10/2026 08:28] ohbad1330
+Negative interest?? 😭 that’s painful haha
+Yeah 6% sounds nice, but with inflation + tax, it becomes “6%… but emotionally 2%” 😆
+
+{Reactions}
+🤣
+
+[01/10/2026 09:59] glad8769
+You are done for the entire year 🤣🤣🤣
+
+
+[01/10/2026 10:20] ywk3926
+Maybe we can give you the money, just give me 4%, you get 2%, just kidding, because 4% is too high in our country.😁
+
+{Reactions}
+🤣
+
+[01/10/2026 11:55] ohbad1330
+LOL 😂 tempting offer!
+If only it was that easy… I’d retire early 😁
+
+
+[03/14/2026 14:34] serialkiller15
+what a small fix can change....
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1482386426753712146/image.png?ex=69f36871&is=69f216f1&hm=f618c35db102facb780b82882c09ae01b14a1de583d0be77011d4cf5d80b3d67&
+
+
+[03/14/2026 14:34] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1482386547151081545/image.png?ex=69f3688e&is=69f2170e&hm=989ca25f11c56f2d5862fa785dd3d617cb898d1b6604553a4ca6cd5512223984&
+
+{Reactions}
+👏 (5)
+
+[03/15/2026 19:52] glad8769
+@Alex Crypto King has this version already been released?
+
+{Reactions}
+👀
+
+[03/30/2026 06:20] serialkiller15 (pinned)
+@everyone
+AlexBandSniperV6 Release
+👊 AlexBandSniper V6 – TL;DR
+
+⚡️ Bug‑fix – Fast Signals
+- V6x used shift(1) → needed 2+ divergences on the same bar → almost never triggered.
+- V6x: 3‑bar rolling window, min div count = 1 → catches divergences within any 3 candles.
+- Configurable via `fast_min_div_count`.
+- Added choppiness filter to reject sideways markets.
+
+🆕 New Signals
+1. **Squeeze Breakout** – BB compresses inside KC then expands → breakout entry.  
+  Conditions: ≥ 6‑bar squeeze, BB expands, momentum direction, EMA9/EMA20 alignment, not choppy, volume.
+2. **Momentum Burst** – pure momentum play, no divergence needed.  
+  Entry when RSI, MACD, volume, EMA9/EMA20, ADX all line up → strong real‑time momentum entry.
+
+🛡️ Better Exits
+- ATR‑adaptive trailing: pullback tolerance = N × ATR × leverage × multiplier × tightness × time_factor.  
+- Uses current volatility, signal strength, signal type → tighter on calm pairs, looser on volatile ones.
+- Improves profit capture, reduces premature exits.
+
+🛡 New Safeguard
+- **Choppiness Filter** (default thresh = 61.8) blocks entries in sideways markets.
+
+⚙️ Volatility‑Scaled Leverage
+- Reduces leverage on high‑vol pairs or weak signals.
+- Squeeze/Momentum signals get 0.8× leverage (riskier, faster plays).
+
+💰 Expected Gains
+- ↑ Signal frequency (now includes fast + squeeze + momentum).  
+- ↓ False signals (choppiness filter).  
+- ↑ Avg profit/trade (ATR‑scaled trailing).  
+- Fewer premature exits (ATR‑scaled room).  
+- Better capture of big winners.
+
+💡 Recommendation  
+1️⃣ Phase 1 – Hyperopt buy‑side params (500 epochs).  
+2️⃣ Phase 2 – Hyperopt sell‑side (MaxDrawDownRelative).  
+3️⃣ Back‑test 2024‑01‑01 → 2026‑03‑01.
+
+{Reactions}
+🚀 (4)
+
+[03/30/2026 06:21] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1488060466755534958/AlexBandSniperV6.py?ex=69f2f4ce&is=69f1a34e&hm=c741cf904aa553535de6bcff8cc0c9300a68b214d088e9133bb7391497179dd7&
+
+
+[03/30/2026 06:21] serialkiller15
+Pinned a message.
+
+
+[03/30/2026 06:21] serialkiller15
+Pinned a message.
+
+
+[03/30/2026 08:36] serialkiller15
+@matematika welcome here is the latest version so you dont need to search for, any improvements hardly welcome!
+
+
+[03/30/2026 08:39] matematika6547
+Thanks, I'll definitely take a look.
+
+{Reactions}
+🔥
+
+[03/30/2026 10:16] serialkiller15
+the Backtest Results are not as they should be in live/dry!
+thanks @matematika for the screening of the code, i already fixed it and will share it later!
+but on dry it does realy good!
+
+
+[03/30/2026 12:29] matematika6547
+Yes, v66 is the most accurate version so far. We fixed one major bug with the pivot points. It was my fault. As far as I understand, they are completely correct. However, I would still ask you to double-check them, as this is a pretty serious issue. Thank you for your work.
+
+{Reactions}
+👍
+
+[03/30/2026 12:30] matematika6547
+The most important thing is that the strategy does not look into the future
+
+
+[03/31/2026 18:48] matematika6547
+Has anyone run Sniper v6 in real life?
+
+
+[03/31/2026 19:18] serialkiller15
+As you know I run live and dry at the moment since weeks
+
+
+[03/31/2026 20:54] matematika6547
+No, I wanted to know if anyone else has the same problem as me. We have 1 code v6, but it doesn't work at all. I looked through the entire code but couldn't find anything. I'm very sad because of this.
+
+
+[03/31/2026 20:54] serialkiller15
+You mean you don't get any entrys?
+
+
+[03/31/2026 20:55] serialkiller15
+@vasko123 Is running it and he has entrys in the resolts channel so it works.
+
+
+[03/31/2026 20:58] matematika6547
+I showed and explained everything in private messages, and we couldn't figure out what was wrong, but the fact that there was no entry upon entry was already clear. 2 days and not a single trade with dozens of signals.
+
+
+[03/31/2026 21:00] serialkiller15
+I am realy Sry about that and I also have no ideas maybee send you another version to look on it currently I run 4 different versions with only changed entrys basic code is the same so you can test. Will do tomorrow I am on mobile..
+
+
+[03/31/2026 21:02] matematika6547
+Thank you very much, I'm just trying to solve the problem not only for myself but also for others who may encounter this, I hope I will find the reason for all this
+
+
+[03/31/2026 21:02] serialkiller15
+Absolute have a nice evening write you tomorrow
+
+{Reactions}
+💯
+
+[03/31/2026 21:07] matematika6547
+The main thing I don't understand is that you have the same code and everything works, but I don't, and that's very strange.
+
+
+[04/01/2026 06:11] vasko123.
+I'm testing with pivot_points_highs[index]
+
+{Reactions}
+👍 (2)
+
+[04/02/2026 14:05] miluu5979
+gemini says: 
+I've checked the AlexBandSniperV6 code and found a massive lookahead bias in the backtests due to how pivot points and divergences are calculated.
+
+In the `pivot_points` function, the code confirms a pivot by looking `window` (7) candles ahead, but then retroactively assigns the pivot to the past candle (`pivot_points_highs[index - window] = current_high`). Because of this, the divergence logic triggers the entry signal immediately after the pivot happens, 7 candles before it would actually be confirmed in live trading.
+
+Additionally, using `.bfill()` on multiple indicators in `populate_indicators` introduces a minor lookahead bias by filling empty rows with future data.
+
+This causes the strategy to have artificially perfect entries in backtests that will not replicate in live trading. You need to shift the divergence signals forward by the `window` length so they trigger only when the pivot is actually confirmed.
+
+
+[04/02/2026 14:06] serialkiller15
+thanks i already know that but on live/dry the signals are fine so take a look into it, forget backtest! yes
+
+
+[04/02/2026 14:08] viking046433
+What i have done before is to open on a pivot confirmation like 2 candles but sometime by then its moved so much already sometimes
+
+
+[04/02/2026 15:34] serialkiller15
+@miluu 
+fix from my side. but as i said its only in backtest...
+I changed the pivot_points() function in AlexBandSniperV64.py.
+
+Location: Line ~1323 (end of pivot_points function)
+
+Changed FROM:
+
+return pd.DataFrame(index=dataframe.index, data={
+    'pivot_lows': pivot_points_lows,
+    'pivot_highs': pivot_points_highs
+})
+
+Changed TO:
+
+# FIX: Shift pivots forward by 'window' to remove lookahead bias
+# Pivot at index-window is only CONFIRMED at current index
+# So we shift it forward so backtest matches live trading
+return pd.DataFrame(index=dataframe.index, data={
+    'pivot_lows': pd.Series(pivot_points_lows, index=dataframe.index).shift(window),
+    'pivot_highs': pd.Series(pivot_points_highs, index=dataframe.index).shift(window)
+})
+
+What it does:
+
+• Before: Pivot appears on candle index - window (7 bars early — lookahead)
+• After: Pivot appears on candle index (when actually confirmed — realistic)
+
+This makes backtest entries happen at the same time as live entries.
+
+{Reactions}
+🔥
+
+[04/03/2026 05:32] xf0x0f
+@Alex Crypto King my strategy analyzer bot found something, please check it:
+
+the choppiness filter in the current code is basically:
+
+1. calculate natr over a rolling window
+2. calculate the highest high and lowest low over the same window
+3. calculate the price span as:
+span = high_max - low_min
+4. then compute choppiness as:
+choppiness = 100 * log10(sum(natr over window) / span) / log10(window)
+in code style, it is this pattern:
+def choppiness_index(high, low, close, window=14):
+natr = pd.Series(ta.NATR(DataFrame({'high': high, 'low': low, 'close': close}), timeperiod=window))
+high_max = high.rolling(window=window).max()
+low_min = low.rolling(window=window).min()
+span = (high_max - low_min).replace(0, np.nan)
+return 100 * np.log10((natr.rolling(window=window).sum()) / span) / np.log10(window)
+the problem with this version is that it uses natr, which is already normalized, and then divides again by the raw price span. that mixes incompatible units and can produce unrealistic values, including negative ones.
+
+a more standard choppiness formula is closer to:
+choppiness = 100 * log10(sum(true_range over window) / (highest_high - lowest_low)) / log10(window)
+so in simple words:
+
+• sum the true range over the last window candles
+• divide it by the total high-low range over the same window
+• take log10 of that ratio
+• normalize by log10(window)
+• multiply by 100
+
+
+[04/03/2026 05:35] xf0x0f
+it should look something like this:
+
+prev_close = close.shift(1)
+tr1 = high - low
+tr2 = (high - prev_close).abs()
+tr3 = (low - prev_close).abs()
+true_range = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
+tr_sum = true_range.rolling(window=window, min_periods=window).sum()
+high_max = high.rolling(window=window, min_periods=window).max()
+low_min = low.rolling(window=window, min_periods=window).min()
+span = (high_max - low_min).replace(0, np.nan)
+ratio = (tr_sum / span).replace([np.inf, -np.inf], np.nan)
+return 100 * np.log10(ratio) / np.log10(window)
+
+{Reactions}
+💯 (3)
+
+[04/03/2026 08:59] serialkiller15
+thanks mate your assistent is right will fix and post the latest version!
+
+{Reactions}
+👍
+
+[04/03/2026 15:02] xf0x0f
+Results get better very fast with chopfix
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1489641276113424424/IMG_1031.png?ex=69f36f0c&is=69f21d8c&hm=b8bcc068a6d1a6e08a9e8d1a048902bb6dd95622acd01ab30a7ae7f6c3fda87f&
+
+{Reactions}
+👍 (2)
+
+[04/05/2026 13:43] serialkiller15
+@everyone my config for BandSniper
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1490346090489315529/ABSV6_config-torch.json?ex=69f35c75&is=69f20af5&hm=25254b0e84ec1246969e0af6e8d8fb6863ce72ece24901329ee06665081b5dec&
+
+{Reactions}
+🔥 (4)
+
+[04/05/2026 13:44] viking046433
+Ill run it tonight will aend back feedback
+
+{Reactions}
+👍
+
+[04/07/2026 08:19] serialkiller15 (pinned)
+@everyone
+fixed version pivot lookahead and choppy stuff!
+V6431....
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1490989387201118289/AlexBandSniperV6431.py?ex=69f31093&is=69f1bf13&hm=12e90df20418a44502d0f1f0a5d14b6ed00a953d69ccb4ea018b00fa99e53a3b&
+
+{Reactions}
+👍
+
+[04/07/2026 08:19] serialkiller15
+Pinned a message.
+
+
+[04/07/2026 11:05] matematika6547
+The tests show very bad results.
+
+
+[04/07/2026 11:07] serialkiller15
+Not in my side... My tests are good how long you run it?
+
+
+[04/07/2026 11:13] matematika6547
+1 year ago my entire balance was destroyed
+
+
+[04/07/2026 11:14] serialkiller15
+Mate we don't discuss it 1year ago this Strategie was published a view hours ago what's the problem
+
+
+[04/07/2026 11:16] matematika6547
+I apologize, translator, I meant that I took the test for a year.
+
+{Reactions}
+👍
+
+[04/07/2026 11:17] serialkiller15
+would be nice if you share your backtest results in the results channel so we can all take a look into it thanks mate!
+
+
+[04/07/2026 11:18] matematika6547
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1491034512438853734/2026-04-07_14.17.28.png?ex=69f33a99&is=69f1e919&hm=09f1b97d4be9860abe0497bd32af6be3ce59707d7be0f6a9842f185995f74408&
+https://cdn.discordapp.com/attachments/1304860205565087795/1491034512799436922/2026-04-07_14.17.16.png?ex=69f33a99&is=69f1e919&hm=42f90c97047dc58cc10cd428d69c308faab0b2acd3228243d6a3379d370c833a&
+
+
+[04/07/2026 11:19] matematika6547
+something is clearly wrong
+
+
+[04/07/2026 11:21] matematika6547
+Please share your test results.
+
+
+[04/08/2026 18:22] serialkiller15
+here a Changelog of the running Versions at the moment...stay tuned will updated Versions after some days.....
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1304860205565087795/1491503463358664736/V6_SERIES_DOCUMENTATION.md?ex=69f2f518&is=69f1a398&hm=06e84bef6e4ef7c0d956c76b78fa36f7374215ff261841b9aee6a5e2277da853&
+
+{Reactions}
+❤️ (2)
+
+[04/28/2026 17:21] serialkiller15
+@Alex ClowdBOT_Free please give us a summary of the ideas and problems we found today on bandsniper V653 and new in V655
+
+
+[04/28/2026 17:21] serialkiller15
+🎯 BandSniper V655 — Critical Pivot Fix
+
+**Problem (V653):**
+2-sided pivot checked 7 bars into the FUTURE. Backtest has full dataframe → looks perfect. Live/dry can't see future → signals don't exist in real time.
+
+Result: Backtest 34 entries, dry run 5-6. The other 28 were phantom signals.
+
+**Fix (V655):**
+1-sided pivot: bar i is swing low if lowest of LAST 3 bars (backward only). Knowable instantly when candle closes. No future data needed.
+
+✅ Backtest = dry run = live (honest numbers)
+✅ Every diamond on chart is actionable
+✅ Truncation test proves it
+
+**Trade-off:** More signals on chart (looser pivot). Expected — real metric is divergence bars → actual trades ratio.
+
+**Watch:** Total divergence bars | Trades with HQ_*/Div_* tags | Ratio
+Too low → relax filters | Too high → tighten
+
+This is the difference between backtest fantasy and live money-maker. 🤘
+
+
+==============================================================
+Exported 616 message(s)
+==============================================================

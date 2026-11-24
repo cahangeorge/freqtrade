@@ -1,0 +1,190 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 📊hmmregime_results
+==============================================================
+
+[01/27/2026 18:00] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1465740225039831221/1465768532859031758/image.png?ex=69f398d2&is=69f24752&hm=1793fb48df0adfd39c1d7ea2070ab2a45a004c05e7477704b7fcd2bb1332164f&
+
+{Reactions}
+🚀 (2)
+
+[01/27/2026 20:38] vasko123.
+Something's wrong with my bot.
+It's moving in the wrong direction. 🙁
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1465740225039831221/1465808169266839810/8a002c891283573a.png?ex=69f314fc&is=69f1c37c&hm=fe5a145bbb1f2b81afc5eb3cd243d231b1e709d051a00ac48827eaf4cb871d24&
+
+
+[01/27/2026 21:15] dragongoattigercat
+the same to mine.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1465740225039831221/1465817547873059051/image.png?ex=69f31db8&is=69f1cc38&hm=04e853e28a48e693bad557a9a28f0fc05034e534816364cfc9c489f06de19c50&
+
+
+[01/27/2026 21:18] 4v1234
+How is this possible to start at the same time and get different directions?
+
+
+[01/27/2026 21:18] vasko123.
+So everything's fine.
+Alex will solve the problem later.
+
+
+[01/27/2026 22:22] ggoyito
+Remember that HHM, being unsupervised learning, has biases of greater risk of inaccurate results. Human intervention to validate output variables and the lack of transparency in the database on which the data were grouped.
+
+{Reactions}
+🔥
+
+[01/31/2026 07:08] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1465740225039831221/1467054027358474423/Bildschirmfoto_2026-01-31_um_08.08.42.png?ex=69f30008&is=69f1ae88&hm=25873b65ec769c92f42fe451a43ca80bfaa36d68e38af985ac4aa04a331cc02e&
+
+
+[01/31/2026 07:12] 4v1234
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1465740225039831221/1467054807637426237/Screenshot_20260131_091135_Chrome.jpg?ex=69f300c2&is=69f1af42&hm=850486e3b56ff0b51ede71873cd30eaeba82b273d4c973c3a175a0b4f0fb6efa&
+
+
+[01/31/2026 07:12] 4v1234
+Will let it run for 2 days more and start analyzing,  what is going on.
+
+
+[01/31/2026 14:45] divarak
+Day (count)      USDT              Profit %
+---------------  ------------  --  ----------
+2026-01-31 (35)  -27.444 USDT   0  -2.90%
+2026-01-30 (51)  -40.256 USDT   0  -4.09%
+2026-01-29 (74)  -3.997 USDT    0  -0.40%
+2026-01-28 (44)  -1.454 USDT    0  -0.15%
+2026-01-27 (0)   0 USDT         0  0.00%
+2026-01-26 (0)   0 USDT         0  0.00%
+2026-01-25 (0)   0 USDT         0  0.00%
+Not good so far, let's wait.
+
+
+[01/31/2026 20:53] xf0x0f
+Wth?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1465740225039831221/1467261646035750942/IMG_0376.png?ex=69f318a4&is=69f1c724&hm=c61da1c7668088fa022aa5c6f9f7b259d717e7186ab78bb39ef45ab4e4863873&
+
+{Reactions}
+🔥 🤣 🚀
+
+[01/31/2026 21:26] 4v1234
+Tell me that it is live ?
+
+
+[01/31/2026 23:00] darkreaper0756
+Nice
+
+
+[01/31/2026 23:08] ggoyito
+If it's a bug...
+
+
+[01/31/2026 23:08] ggoyito
+More bugs like that 💯
+
+
+[02/01/2026 15:40] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1465740225039831221/1467545227542663229/Bildschirmfoto_2026-02-01_um_16.40.33.png?ex=69f377ff&is=69f2267f&hm=a464b504838242fdfa9f1c82de3902f6791c1c71e1585e5820c8169fc10d5d35&
+
+{Reactions}
+🚀
+
+[02/01/2026 15:41] xf0x0f
+its my first custom version of the strat
+
+
+[02/01/2026 16:37] bigbroseur
+Your custom version is also my best friend
+
+
+[02/02/2026 06:13] ohbad1330
+Nice, but the position sizing looks risky.
+
+
+[02/04/2026 12:09] boooooon
+```
+ROI: Closed trades
+∙ -56.759 USDT (-0.77%) (-14.19 Σ%)
+∙ -56.687 USD
+ROI: All trades
+∙ -57.781 USDT (-0.78%) (-14.45 Σ%)
+∙ -57.708 USD
+Total Trade Count: 372
+Bot started: 2026-02-01 11:12:28
+First Trade opened: 2 days ago (2026-02-01 17:45:03)
+Latest Trade opened: 58 minutes ago (2026-02-04 10:15:12)
+Win / Loss: 256 / 115
+Winrate: 69.00%
+Expectancy (Ratio): -0.15 (-0.09)
+Avg. Duration: 0:59:05
+Best Performing: NEAR/USDT:USDT: 4.954 USDT (2.48%)
+Trading volume: 73112.077 USDT
+Profit factor: 0.71
+Max Drawdown: 21.45% (92.05 USDT)
+    from 2026-02-03 19:03:18 (29.099 USDT)
+    to 2026-02-03 21:16:03 (-62.951 USDT)
+Current Drawdown: 20.01% (85.858 USDT)
+    from 2026-02-03 19:03:18 (29.099 USDT)
+```
+
+{Reactions}
+🚀
+
+[02/04/2026 15:45] dragongoattigercat
+ROI closed trades    -25.024 USDT (-0.48%)
+ROI all trades    -28.404 USDT (-0.54%)
+Total Trade count    515
+Bot started    2026-01-30 12:05:03 (MST)
+First Trade opened    2026-01-30 17:30:03 (MST)
+Latest Trade opened    2026-02-04 08:36:56 (MST)
+Win / Loss    326 / 182
+Winrate    64.173%
+Expectancy (ratio)    -0.05 (-0.07)' })
+Avg. Duration    0:49:49
+Best performing    AVAX/USDT:USDT: 1.63%
+Trading volume    50100.387 USDT
+Profit factor    0.79
+Max Drawdown    41.78% (49.313 USDT) from 2026-01-31 10:12:43 to 2026-02-04 07:45:08
+Current Drawdown    36.47% (43.045 USDT) since 2026-01-31 10:12:43
+
+{Reactions}
+🚀
+
+[02/04/2026 16:19] darkreaper0756
+Need minor improvements
+
+
+[02/04/2026 17:13] serialkiller15
+absolute yes
+
+
+[02/05/2026 16:35] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1465740225039831221/1469008564088471728/IMG_0389.png?ex=69f384d6&is=69f23356&hm=727e53f50dec86ed2b00d053ae28861798f57b8010f320584d1e41383bdaaba5&
+
+{Reactions}
+🚀 (2) 🧐
+
+==============================================================
+Exported 24 message(s)
+==============================================================

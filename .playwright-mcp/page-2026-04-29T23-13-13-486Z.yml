@@ -1,0 +1,793 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#introduction"
+  - banner [ref=e3]:
+    - navigation "Header" [ref=e4]:
+      - link "Freqtrade" [ref=e5] [cursor=pointer]:
+        - /url: .
+        - img "logo" [ref=e6]
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - generic [ref=e10]: Freqtrade
+          - generic [ref=e11]:
+            - button "Select version" [ref=e12] [cursor=pointer]: 2026.3stable
+            - list:
+              - listitem [ref=e13]:
+                - link "developlatest" [ref=e14] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/develop/
+              - listitem [ref=e15]:
+                - link "2026.3stable" [ref=e16] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2026.3/
+              - listitem [ref=e17]:
+                - link "2026.2" [ref=e18] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2026.2/
+              - listitem [ref=e19]:
+                - link "2026.1" [ref=e20] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2026.1/
+              - listitem [ref=e21]:
+                - link "2025.12" [ref=e22] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.12/
+              - listitem [ref=e23]:
+                - link "2025.11.2" [ref=e24] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.11.2/
+              - listitem [ref=e25]:
+                - link "2025.11.1" [ref=e26] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.11.1/
+              - listitem [ref=e27]:
+                - link "2025.11" [ref=e28] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.11/
+              - listitem [ref=e29]:
+                - link "2025.10" [ref=e30] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.10/
+              - listitem [ref=e31]:
+                - link "2025.9.1" [ref=e32] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.9.1/
+              - listitem [ref=e33]:
+                - link "2025.9" [ref=e34] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.9/
+              - listitem [ref=e35]:
+                - link "2025.8" [ref=e36] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.8/
+              - listitem [ref=e37]:
+                - link "2025.7" [ref=e38] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.7/
+              - listitem [ref=e39]:
+                - link "2025.6" [ref=e40] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.6/
+              - listitem [ref=e41]:
+                - link "2025.5" [ref=e42] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.5/
+              - listitem [ref=e43]:
+                - link "2025.4" [ref=e44] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.4/
+              - listitem [ref=e45]:
+                - link "2025.3" [ref=e46] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.3/
+              - listitem [ref=e47]:
+                - link "2025.2" [ref=e48] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.2/
+              - listitem [ref=e49]:
+                - link "2025.1" [ref=e50] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2025.1/
+              - listitem [ref=e51]:
+                - link "2024.12.1" [ref=e52] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.12.1/
+              - listitem [ref=e53]:
+                - link "2024.12" [ref=e54] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.12/
+              - listitem [ref=e55]:
+                - link "2024.11" [ref=e56] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.11/
+              - listitem [ref=e57]:
+                - link "2024.10" [ref=e58] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.10/
+              - listitem [ref=e59]:
+                - link "2024.9" [ref=e60] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.9/
+              - listitem [ref=e61]:
+                - link "2024.8" [ref=e62] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.8/
+              - listitem [ref=e63]:
+                - link "2024.7.1" [ref=e64] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.7.1/
+              - listitem [ref=e65]:
+                - link "2024.7" [ref=e66] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.7/
+              - listitem [ref=e67]:
+                - link "2024.6" [ref=e68] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.6/
+              - listitem [ref=e69]:
+                - link "2024.5" [ref=e70] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.5/
+              - listitem [ref=e71]:
+                - link "2024.4" [ref=e72] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.4/
+              - listitem [ref=e73]:
+                - link "2024.3" [ref=e74] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.3/
+              - listitem [ref=e75]:
+                - link "2024.2" [ref=e76] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.2/
+              - listitem [ref=e77]:
+                - link "2024.1" [ref=e78] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2024.1/
+              - listitem [ref=e79]:
+                - link "2023.12" [ref=e80] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.12/
+              - listitem [ref=e81]:
+                - link "2023.11" [ref=e82] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.11/
+              - listitem [ref=e83]:
+                - link "2023.10" [ref=e84] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.10/
+              - listitem [ref=e85]:
+                - link "2023.9" [ref=e86] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.9/
+              - listitem [ref=e87]:
+                - link "2023.8" [ref=e88] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.8/
+              - listitem [ref=e89]:
+                - link "2023.7" [ref=e90] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.7/
+              - listitem [ref=e91]:
+                - link "2023.6" [ref=e92] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.6/
+              - listitem [ref=e93]:
+                - link "2023.5.1" [ref=e94] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.5.1/
+              - listitem [ref=e95]:
+                - link "2023.5" [ref=e96] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.5/
+              - listitem [ref=e97]:
+                - link "2023.4" [ref=e98] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.4/
+              - listitem [ref=e99]:
+                - link "2023.3" [ref=e100] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.3/
+              - listitem [ref=e101]:
+                - link "2023.2" [ref=e102] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.2/
+              - listitem [ref=e103]:
+                - link "2023.1" [ref=e104] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2023.1/
+              - listitem [ref=e105]:
+                - link "2022.12" [ref=e106] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.12/
+              - listitem [ref=e107]:
+                - link "2022.11" [ref=e108] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.11/
+              - listitem [ref=e109]:
+                - link "2022.10" [ref=e110] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.10/
+              - listitem [ref=e111]:
+                - link "2022.9.1" [ref=e112] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.9.1/
+              - listitem [ref=e113]:
+                - link "2022.9" [ref=e114] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.9/
+              - listitem [ref=e115]:
+                - link "2022.8" [ref=e116] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.8/
+              - listitem [ref=e117]:
+                - link "2022.7" [ref=e118] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.7/
+              - listitem [ref=e119]:
+                - link "2022.6" [ref=e120] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.6/
+              - listitem [ref=e121]:
+                - link "2022.5.1" [ref=e122] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.5.1/
+              - listitem [ref=e123]:
+                - link "2022.5" [ref=e124] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.5/
+              - listitem [ref=e125]:
+                - link "2022.4.2" [ref=e126] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.4.2/
+              - listitem [ref=e127]:
+                - link "2022.4.1" [ref=e128] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.4.1/
+              - listitem [ref=e129]:
+                - link "2022.3" [ref=e130] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.3/
+              - listitem [ref=e131]:
+                - link "2022.2.2" [ref=e132] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.2.2/
+              - listitem [ref=e133]:
+                - link "2022.2.1" [ref=e134] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.2.1/
+              - listitem [ref=e135]:
+                - link "2022.2" [ref=e136] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.2/
+              - listitem [ref=e137]:
+                - link "2022.1" [ref=e138] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2022.1/
+              - listitem [ref=e139]:
+                - link "2021.12" [ref=e140] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.12/
+              - listitem [ref=e141]:
+                - link "2021.11" [ref=e142] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.11/
+              - listitem [ref=e143]:
+                - link "2021.10" [ref=e144] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.10/
+              - listitem [ref=e145]:
+                - link "2021.9" [ref=e146] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.9/
+              - listitem [ref=e147]:
+                - link "2021.8" [ref=e148] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.8/
+              - listitem [ref=e149]:
+                - link "2021.7" [ref=e150] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.7/
+              - listitem [ref=e151]:
+                - link "2021.6" [ref=e152] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.6/
+              - listitem [ref=e153]:
+                - link "2021.5" [ref=e154] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.5/
+              - listitem [ref=e155]:
+                - link "2021.4" [ref=e156] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.4/
+              - listitem [ref=e157]:
+                - link "2021.3" [ref=e158] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.3/
+              - listitem [ref=e159]:
+                - link "2021.2" [ref=e160] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.2/
+              - listitem [ref=e161]:
+                - link "2021.1" [ref=e162] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2021.1/
+              - listitem [ref=e163]:
+                - link "2020.12" [ref=e164] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.12/
+              - listitem [ref=e165]:
+                - link "2020.11" [ref=e166] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.11/
+              - listitem [ref=e167]:
+                - link "2020.10" [ref=e168] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.10/
+              - listitem [ref=e169]:
+                - link "2020.9.1" [ref=e170] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.9.1/
+              - listitem [ref=e171]:
+                - link "2020.9" [ref=e172] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.9/
+              - listitem [ref=e173]:
+                - link "2020.8" [ref=e174] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.8/
+              - listitem [ref=e175]:
+                - link "2020.7" [ref=e176] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.7/
+              - listitem [ref=e177]:
+                - link "2020.6" [ref=e178] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.6/
+              - listitem [ref=e179]:
+                - link "2020.5" [ref=e180] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.5/
+              - listitem [ref=e181]:
+                - link "2020.4" [ref=e182] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.4/
+              - listitem [ref=e183]:
+                - link "2020.3" [ref=e184] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.3/
+              - listitem [ref=e185]:
+                - link "2020.02" [ref=e186] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.02/
+              - listitem [ref=e187]:
+                - link "2020.01" [ref=e188] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2020.01/
+              - listitem [ref=e189]:
+                - link "2019.11" [ref=e190] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2019.11/
+              - listitem [ref=e191]:
+                - link "2019.10" [ref=e192] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2019.10/
+              - listitem [ref=e193]:
+                - link "2019.9" [ref=e194] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2019.9/
+              - listitem [ref=e195]:
+                - link "2019.8-1" [ref=e196] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2019.8-1/
+              - listitem [ref=e197]:
+                - link "2019.8" [ref=e198] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2019.8/
+              - listitem [ref=e199]:
+                - link "2019.7" [ref=e200] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2019.7/
+              - listitem [ref=e201]:
+                - link "2019.6" [ref=e202] [cursor=pointer]:
+                  - /url: https://www.freqtrade.io/en/2019.6/
+        - generic:
+          - generic: Home
+      - generic [ref=e203]:
+        - radio "Switch to dark mode"
+        - generic "Switch to dark mode" [ref=e204] [cursor=pointer]:
+          - img [ref=e205]
+        - radio "Switch to light mode"
+      - dialog [ref=e207]:
+        - search [ref=e208]:
+          - generic [ref=e209]:
+            - textbox "Search" [ref=e210]
+            - generic:
+              - img
+            - navigation "Search":
+              - link "Share":
+                - /url: https://www.freqtrade.io/en/stable/?q=
+                - img
+              - button "Clear":
+                - img
+          - generic [ref=e212]: Initializing search
+      - link "GitHub 2026.3 49.6k 10.3k" [ref=e214] [cursor=pointer]:
+        - /url: https://github.com/freqtrade/freqtrade
+        - img [ref=e216]
+        - generic [ref=e218]:
+          - text: GitHub
+          - list:
+            - listitem: "2026.3"
+            - listitem: 49.6k
+            - listitem: 10.3k
+  - generic [ref=e219]:
+    - main [ref=e220]:
+      - generic [ref=e221]:
+        - navigation "Navigation" [ref=e225]:
+          - generic [ref=e226]: Freqtrade
+          - list [ref=e227]:
+            - listitem [ref=e228]:
+              - link "Home" [ref=e229] [cursor=pointer]:
+                - /url: .
+                - generic [ref=e230]: Home
+            - listitem [ref=e231]:
+              - link "Quickstart with Docker" [ref=e232] [cursor=pointer]:
+                - /url: docker_quickstart/
+                - generic [ref=e233]: Quickstart with Docker
+            - listitem [ref=e234]:
+              - link "Installation" [ref=e235] [cursor=pointer]:
+                - /url: installation/
+                - generic [ref=e236]: Installation
+            - listitem [ref=e237]:
+              - link "Freqtrade Basics" [ref=e238] [cursor=pointer]:
+                - /url: bot-basics/
+                - generic [ref=e239]: Freqtrade Basics
+            - listitem [ref=e240]:
+              - link "Configuration" [ref=e241] [cursor=pointer]:
+                - /url: configuration/
+                - generic [ref=e242]: Configuration
+            - listitem [ref=e243]:
+              - link "Strategy Quickstart" [ref=e244] [cursor=pointer]:
+                - /url: strategy-101/
+                - generic [ref=e245]: Strategy Quickstart
+            - listitem [ref=e246]:
+              - link "Strategy Customization" [ref=e247] [cursor=pointer]:
+                - /url: strategy-customization/
+                - generic [ref=e248]: Strategy Customization
+            - listitem [ref=e249]:
+              - link "Strategy Callbacks" [ref=e250] [cursor=pointer]:
+                - /url: strategy-callbacks/
+                - generic [ref=e251]: Strategy Callbacks
+            - listitem [ref=e252]:
+              - link "Stoploss" [ref=e253] [cursor=pointer]:
+                - /url: stoploss/
+                - generic [ref=e254]: Stoploss
+            - listitem [ref=e255]:
+              - link "Plugins" [ref=e256] [cursor=pointer]:
+                - /url: plugins/
+                - generic [ref=e257]: Plugins
+            - listitem [ref=e258]:
+              - link "Start the bot" [ref=e259] [cursor=pointer]:
+                - /url: bot-usage/
+                - generic [ref=e260]: Start the bot
+            - listitem [ref=e261]:
+              - generic [ref=e263]: Control the bot
+            - listitem [ref=e265]:
+              - link "Data Downloading" [ref=e266] [cursor=pointer]:
+                - /url: data-download/
+                - generic [ref=e267]: Data Downloading
+            - listitem [ref=e268]:
+              - link "Backtesting" [ref=e269] [cursor=pointer]:
+                - /url: backtesting/
+                - generic [ref=e270]: Backtesting
+            - listitem [ref=e271]:
+              - link "Hyperopt" [ref=e272] [cursor=pointer]:
+                - /url: hyperopt/
+                - generic [ref=e273]: Hyperopt
+            - listitem [ref=e274]:
+              - generic [ref=e276]: FreqAI
+            - listitem [ref=e278]:
+              - link "Short / Leverage" [ref=e279] [cursor=pointer]:
+                - /url: leverage/
+                - generic [ref=e280]: Short / Leverage
+            - listitem [ref=e281]:
+              - link "Utility Sub-commands" [ref=e282] [cursor=pointer]:
+                - /url: utils/
+                - generic [ref=e283]: Utility Sub-commands
+            - listitem [ref=e284]:
+              - link "Plotting" [ref=e285] [cursor=pointer]:
+                - /url: plotting/
+                - generic [ref=e286]: Plotting
+            - listitem [ref=e287]:
+              - link "Exchange-specific Notes" [ref=e288] [cursor=pointer]:
+                - /url: exchanges/
+                - generic [ref=e289]: Exchange-specific Notes
+            - listitem [ref=e290]:
+              - generic [ref=e292]: Data Analysis
+            - listitem [ref=e294]:
+              - generic [ref=e296]: Advanced Topics
+            - listitem [ref=e298]:
+              - link "FAQ" [ref=e299] [cursor=pointer]:
+                - /url: faq/
+                - generic [ref=e300]: FAQ
+            - listitem [ref=e301]:
+              - link "Strategy migration" [ref=e302] [cursor=pointer]:
+                - /url: strategy_migration/
+                - generic [ref=e303]: Strategy migration
+            - listitem [ref=e304]:
+              - link "Updating Freqtrade" [ref=e305] [cursor=pointer]:
+                - /url: updating/
+                - generic [ref=e306]: Updating Freqtrade
+            - listitem [ref=e307]:
+              - link "Deprecated Features" [ref=e308] [cursor=pointer]:
+                - /url: deprecated/
+                - generic [ref=e309]: Deprecated Features
+            - listitem [ref=e310]:
+              - link "Contributors Guide" [ref=e311] [cursor=pointer]:
+                - /url: developer/
+                - generic [ref=e312]: Contributors Guide
+        - navigation "Table of contents" [ref=e316]:
+          - generic [ref=e317]: Table of contents
+          - list [ref=e318]:
+            - listitem [ref=e319]:
+              - link "Introduction" [ref=e320] [cursor=pointer]:
+                - /url: "#introduction"
+                - generic [ref=e321]: Introduction
+            - listitem [ref=e322]:
+              - link "Features" [ref=e323] [cursor=pointer]:
+                - /url: "#features"
+                - generic [ref=e324]: Features
+            - listitem [ref=e325]:
+              - link "Supported exchange marketplaces" [ref=e326] [cursor=pointer]:
+                - /url: "#supported-exchange-marketplaces"
+                - generic [ref=e327]: Supported exchange marketplaces
+              - navigation "Supported exchange marketplaces" [ref=e328]:
+                - list [ref=e329]:
+                  - listitem [ref=e330]:
+                    - link "Supported Spot Exchanges" [ref=e331] [cursor=pointer]:
+                      - /url: "#supported-spot-exchanges"
+                      - generic [ref=e332]: Supported Spot Exchanges
+                  - listitem [ref=e333]:
+                    - link "Supported Futures Exchanges" [ref=e334] [cursor=pointer]:
+                      - /url: "#supported-futures-exchanges"
+                      - generic [ref=e335]: Supported Futures Exchanges
+                  - listitem [ref=e336]:
+                    - link "Community tested" [ref=e337] [cursor=pointer]:
+                      - /url: "#community-tested"
+                      - generic [ref=e338]: Community tested
+            - listitem [ref=e339]:
+              - link "Community showcase" [ref=e340] [cursor=pointer]:
+                - /url: "#community-showcase"
+                - generic [ref=e341]: Community showcase
+            - listitem [ref=e342]:
+              - link "Requirements" [ref=e343] [cursor=pointer]:
+                - /url: "#requirements"
+                - generic [ref=e344]: Requirements
+              - navigation "Requirements" [ref=e345]:
+                - list [ref=e346]:
+                  - listitem [ref=e347]:
+                    - link "Hardware requirements" [ref=e348] [cursor=pointer]:
+                      - /url: "#hardware-requirements"
+                      - generic [ref=e349]: Hardware requirements
+                  - listitem [ref=e350]:
+                    - link "Software requirements" [ref=e351] [cursor=pointer]:
+                      - /url: "#software-requirements"
+                      - generic [ref=e352]: Software requirements
+            - listitem [ref=e353]:
+              - link "Support" [ref=e354] [cursor=pointer]:
+                - /url: "#support"
+                - generic [ref=e355]: Support
+              - navigation "Support" [ref=e356]:
+                - list [ref=e357]:
+                  - listitem [ref=e358]:
+                    - link "Help / Discord" [ref=e359] [cursor=pointer]:
+                      - /url: "#help-discord"
+                      - generic [ref=e360]: Help / Discord
+            - listitem [ref=e361]:
+              - link "Ready to try?" [ref=e362] [cursor=pointer]:
+                - /url: "#ready-to-try"
+                - generic [ref=e363]: Ready to try?
+        - article [ref=e365]:
+          - link "Edit this page" [ref=e366] [cursor=pointer]:
+            - /url: https://github.com/freqtrade/freqtrade/edit/develop/docs/index.md
+            - img [ref=e367]
+          - heading "Home" [level=1] [ref=e369]
+          - paragraph [ref=e370]:
+            - img "freqtrade" [ref=e371]
+          - paragraph [ref=e372]:
+            - link "Freqtrade CI" [ref=e373] [cursor=pointer]:
+              - /url: https://github.com/freqtrade/freqtrade/actions/workflows/ci.yml
+              - img "Freqtrade CI" [ref=e374]
+            - link "DOI" [ref=e375] [cursor=pointer]:
+              - /url: https://doi.org/10.21105/joss.04864
+              - img "DOI" [ref=e376]
+            - link "codecov" [ref=e377] [cursor=pointer]:
+              - /url: https://codecov.io/gh/freqtrade/freqtrade
+              - img "codecov" [ref=e378]
+            - link "Documentation" [ref=e379] [cursor=pointer]:
+              - /url: https://www.freqtrade.io
+              - img "Documentation" [ref=e380]
+            - link "Discord Server" [ref=e381] [cursor=pointer]:
+              - /url: https://discord.gg/p7nuUNVfP7
+              - img "Discord Server" [ref=e382]
+          - paragraph [ref=e383]:
+            - link "Star" [ref=e384] [cursor=pointer]:
+              - /url: https://github.com/freqtrade/freqtrade
+              - img [ref=e386]
+              - text: Star
+            - link "Fork" [ref=e388] [cursor=pointer]:
+              - /url: https://github.com/freqtrade/freqtrade/fork
+              - img [ref=e390]
+              - text: Fork
+            - link "Download" [ref=e392] [cursor=pointer]:
+              - /url: https://github.com/freqtrade/freqtrade/archive/stable.zip
+              - img [ref=e394]
+              - text: Download
+          - heading "Introduction ¶" [level=2] [ref=e397]:
+            - text: Introduction
+            - link "¶" [ref=e398] [cursor=pointer]:
+              - /url: "#introduction"
+          - paragraph [ref=e399]: Freqtrade is a free and open source crypto trading bot written in Python. It is designed to support all major exchanges and be controlled via Telegram or webUI. It contains backtesting, plotting and money management tools as well as strategy optimization by machine learning.
+          - generic [ref=e400]:
+            - paragraph [ref=e401]: DISCLAIMER
+            - paragraph [ref=e402]: This software is for educational purposes only. Do not risk money which you are afraid to lose. USE THE SOFTWARE AT YOUR OWN RISK. THE AUTHORS AND ALL AFFILIATES ASSUME NO RESPONSIBILITY FOR YOUR TRADING RESULTS.
+            - paragraph [ref=e403]: Always start by running a trading bot in Dry-run and do not engage money before you understand how it works and what profit/loss you should expect.
+            - paragraph [ref=e404]: We strongly recommend you to have basic coding skills and Python knowledge. Do not hesitate to read the source code and understand the mechanisms of this bot, algorithms and techniques implemented in it.
+          - paragraph [ref=e405]:
+            - img "freqtrade screenshot" [ref=e406]
+          - heading "Features ¶" [level=2] [ref=e407]:
+            - text: Features
+            - link "¶" [ref=e408] [cursor=pointer]:
+              - /url: "#features"
+          - list [ref=e409]:
+            - listitem [ref=e410]:
+              - text: "Develop your Strategy: Write your strategy in python, using"
+              - link "pandas" [ref=e411] [cursor=pointer]:
+                - /url: https://pandas.pydata.org/
+              - text: . Example strategies to inspire you are available in the
+              - link "strategy repository" [ref=e412] [cursor=pointer]:
+                - /url: https://github.com/freqtrade/freqtrade-strategies
+              - text: .
+            - listitem [ref=e413]: "Download market data: Download historical data of the exchange and the markets your may want to trade with."
+            - listitem [ref=e414]: "Backtest: Test your strategy on downloaded historical data."
+            - listitem [ref=e415]: "Optimize: Find the best parameters for your strategy using hyperoptimization which employs machine learning methods. You can optimize buy, sell, take profit (ROI), stop-loss and trailing stop-loss parameters for your strategy."
+            - listitem [ref=e416]: "Select markets: Create your static list or use an automatic one based on top traded volumes and/or prices (not available during backtesting). You can also explicitly blacklist markets you don't want to trade."
+            - listitem [ref=e417]: "Run: Test your strategy with simulated money (Dry-Run mode) or deploy it with real money (Live-Trade mode)."
+            - listitem [ref=e418]: "Control/Monitor: Use Telegram or a WebUI (start/stop the bot, show profit/loss, daily summary, current open trades results, etc.)."
+            - listitem [ref=e419]:
+              - text: "Analyze: Further analysis can be performed on either Backtesting data or Freqtrade trading history (SQL database), including automated standard plots, and methods to load the data into"
+              - link "interactive environments" [ref=e420] [cursor=pointer]:
+                - /url: data-analysis/
+              - text: .
+          - heading "Supported exchange marketplaces ¶" [level=2] [ref=e421]:
+            - text: Supported exchange marketplaces
+            - link "¶" [ref=e422] [cursor=pointer]:
+              - /url: "#supported-exchange-marketplaces"
+          - paragraph [ref=e423]:
+            - text: Please read the
+            - link "exchange specific notes" [ref=e424] [cursor=pointer]:
+              - /url: exchanges/
+            - text: to learn about eventual, special configurations needed for each exchange.
+          - heading "Supported Spot Exchanges ¶" [level=3] [ref=e425]:
+            - text: Supported Spot Exchanges
+            - link "¶" [ref=e426] [cursor=pointer]:
+              - /url: "#supported-spot-exchanges"
+          - list [ref=e427]:
+            - listitem [ref=e428]:
+              - checkbox [checked] [disabled] [ref=e429]
+              - link "Binance" [ref=e430] [cursor=pointer]:
+                - /url: https://www.binance.com/
+            - listitem [ref=e431]:
+              - checkbox [checked] [disabled] [ref=e432]
+              - link "BingX" [ref=e433] [cursor=pointer]:
+                - /url: https://bingx.com/invite/0EM9RX
+            - listitem [ref=e434]:
+              - checkbox [checked] [disabled] [ref=e435]
+              - link "Bitget" [ref=e436] [cursor=pointer]:
+                - /url: https://www.bitget.com/
+            - listitem [ref=e437]:
+              - checkbox [checked] [disabled] [ref=e438]
+              - link "Bitmart" [ref=e439] [cursor=pointer]:
+                - /url: https://bitmart.com/
+            - listitem [ref=e440]:
+              - checkbox [checked] [disabled] [ref=e441]
+              - link "Bybit" [ref=e442] [cursor=pointer]:
+                - /url: https://bybit.com/
+            - listitem [ref=e443]:
+              - checkbox [checked] [disabled] [ref=e444]
+              - link "Gate.io" [ref=e445] [cursor=pointer]:
+                - /url: https://www.gate.io/ref/6266643
+            - listitem [ref=e446]:
+              - checkbox [checked] [disabled] [ref=e447]
+              - link "HTX" [ref=e448] [cursor=pointer]:
+                - /url: https://www.htx.com/
+            - listitem [ref=e449]:
+              - checkbox [checked] [disabled] [ref=e450]
+              - link "Hyperliquid" [ref=e451] [cursor=pointer]:
+                - /url: https://hyperliquid.xyz/
+              - text: (A decentralized exchange, or DEX)
+            - listitem [ref=e452]:
+              - checkbox [checked] [disabled] [ref=e453]
+              - link "Kraken" [ref=e454] [cursor=pointer]:
+                - /url: https://kraken.com/
+            - listitem [ref=e455]:
+              - checkbox [checked] [disabled] [ref=e456]
+              - link "OKX" [ref=e457] [cursor=pointer]:
+                - /url: https://okx.com/
+            - listitem [ref=e458]:
+              - checkbox [checked] [disabled] [ref=e459]
+              - link "MyOKX" [ref=e460] [cursor=pointer]:
+                - /url: https://okx.com/
+              - text: (OKX EEA)
+            - listitem [ref=e461]:
+              - checkbox [disabled] [ref=e462]
+              - link "potentially many others through ccxt" [ref=e463] [cursor=pointer]:
+                - /url: https://github.com/ccxt/ccxt/
+                - text: potentially many others through
+                - img "ccxt" [ref=e464]
+              - text: .
+              - emphasis [ref=e465]: (We cannot guarantee they will work)
+          - heading "Supported Futures Exchanges ¶" [level=3] [ref=e466]:
+            - text: Supported Futures Exchanges
+            - link "¶" [ref=e467] [cursor=pointer]:
+              - /url: "#supported-futures-exchanges"
+          - list [ref=e468]:
+            - listitem [ref=e469]:
+              - checkbox [checked] [disabled] [ref=e470]
+              - link "Binance" [ref=e471] [cursor=pointer]:
+                - /url: https://www.binance.com/
+            - listitem [ref=e472]:
+              - checkbox [checked] [disabled] [ref=e473]
+              - link "Bitget" [ref=e474] [cursor=pointer]:
+                - /url: https://www.bitget.com/
+            - listitem [ref=e475]:
+              - checkbox [checked] [disabled] [ref=e476]
+              - link "Bybit" [ref=e477] [cursor=pointer]:
+                - /url: https://bybit.com/
+            - listitem [ref=e478]:
+              - checkbox [checked] [disabled] [ref=e479]
+              - link "Gate.io" [ref=e480] [cursor=pointer]:
+                - /url: https://www.gate.io/ref/6266643
+            - listitem [ref=e481]:
+              - checkbox [checked] [disabled] [ref=e482]
+              - link "Hyperliquid" [ref=e483] [cursor=pointer]:
+                - /url: https://hyperliquid.xyz/
+              - text: (A decentralized exchange, or DEX)
+            - listitem [ref=e484]:
+              - checkbox [checked] [disabled] [ref=e485]
+              - link "OKX" [ref=e486] [cursor=pointer]:
+                - /url: https://okx.com/
+            - listitem [ref=e487]:
+              - checkbox [checked] [disabled] [ref=e488]
+              - link "Kraken" [ref=e489] [cursor=pointer]:
+                - /url: https://www.kraken.com/features/futures
+          - paragraph [ref=e490]:
+            - text: Please make sure to read the
+            - link "exchange specific notes" [ref=e491] [cursor=pointer]:
+              - /url: exchanges/
+            - text: ", as well as the"
+            - link "trading with leverage" [ref=e492] [cursor=pointer]:
+              - /url: leverage/
+            - text: documentation before diving in.
+          - heading "Community tested ¶" [level=3] [ref=e493]:
+            - text: Community tested
+            - link "¶" [ref=e494] [cursor=pointer]:
+              - /url: "#community-tested"
+          - paragraph [ref=e495]: "Exchanges confirmed working by the community:"
+          - list [ref=e496]:
+            - listitem [ref=e497]:
+              - checkbox [checked] [disabled] [ref=e498]
+              - link "Bitvavo" [ref=e499] [cursor=pointer]:
+                - /url: https://bitvavo.com/
+            - listitem [ref=e500]:
+              - checkbox [checked] [disabled] [ref=e501]
+              - link "Kucoin" [ref=e502] [cursor=pointer]:
+                - /url: https://www.kucoin.com/
+          - heading "Community showcase ¶" [level=2] [ref=e503]:
+            - text: Community showcase
+            - link "¶" [ref=e504] [cursor=pointer]:
+              - /url: "#community-showcase"
+          - paragraph [ref=e505]: This section will highlight a few projects from members of the community.
+          - generic [ref=e506]:
+            - paragraph [ref=e507]: Note
+            - paragraph [ref=e508]: The projects below are for the most part not maintained by the freqtrade team, therefore use your own caution before using them.
+          - list [ref=e509]:
+            - listitem [ref=e510]:
+              - link "Example freqtrade strategies" [ref=e511] [cursor=pointer]:
+                - /url: https://github.com/freqtrade/freqtrade-strategies/
+            - listitem [ref=e512]:
+              - link "FrequentHippo - Statistics of dry/live runs and backtests" [ref=e513] [cursor=pointer]:
+                - /url: http://frequenthippo.ddns.net
+              - text: (by hippocritical).
+            - listitem [ref=e514]:
+              - link "Online pairlist generator" [ref=e515] [cursor=pointer]:
+                - /url: https://remotepairlist.com/
+              - text: (by Blood4rc).
+            - listitem [ref=e516]:
+              - link "Freqtrade Backtesting Project" [ref=e517] [cursor=pointer]:
+                - /url: https://strat.ninja/
+              - text: (by Blood4rc).
+            - listitem [ref=e518]:
+              - link "Freqtrade analysis notebook" [ref=e519] [cursor=pointer]:
+                - /url: https://github.com/froggleston/freqtrade_analysis_notebook
+              - text: (by Froggleston).
+            - listitem [ref=e520]:
+              - link "FTUI - Terminal UI for freqtrade" [ref=e521] [cursor=pointer]:
+                - /url: https://github.com/freqtrade/ftui
+              - text: (by Froggleston).
+            - listitem [ref=e522]:
+              - link "Bot Academy" [ref=e523] [cursor=pointer]:
+                - /url: https://botacademy.ddns.net/
+              - text: (by stash86) - Blog about crypto bot projects.
+          - heading "Requirements ¶" [level=2] [ref=e524]:
+            - text: Requirements
+            - link "¶" [ref=e525] [cursor=pointer]:
+              - /url: "#requirements"
+          - heading "Hardware requirements ¶" [level=3] [ref=e526]:
+            - text: Hardware requirements
+            - link "¶" [ref=e527] [cursor=pointer]:
+              - /url: "#hardware-requirements"
+          - paragraph [ref=e528]: "To run this bot we recommend you a linux cloud instance with a minimum of:"
+          - list [ref=e529]:
+            - listitem [ref=e530]: 2GB RAM
+            - listitem [ref=e531]: 1GB disk space
+            - listitem [ref=e532]: 2vCPU
+          - heading "Software requirements ¶" [level=3] [ref=e533]:
+            - text: Software requirements
+            - link "¶" [ref=e534] [cursor=pointer]:
+              - /url: "#software-requirements"
+          - list [ref=e535]:
+            - listitem [ref=e536]: Docker (Recommended)
+          - paragraph [ref=e537]: Alternatively
+          - list [ref=e538]:
+            - listitem [ref=e539]: Python 3.11+
+            - listitem [ref=e540]: pip (pip3)
+            - listitem [ref=e541]: git
+            - listitem [ref=e542]: TA-Lib
+            - listitem [ref=e543]: virtualenv (Recommended)
+          - heading "Support ¶" [level=2] [ref=e544]:
+            - text: Support
+            - link "¶" [ref=e545] [cursor=pointer]:
+              - /url: "#support"
+          - heading "Help / Discord ¶" [level=3] [ref=e546]:
+            - text: Help / Discord
+            - link "¶" [ref=e547] [cursor=pointer]:
+              - /url: "#help-discord"
+          - paragraph [ref=e548]:
+            - text: For any questions not covered by the documentation or for further information about the bot, or to simply engage with like-minded individuals, we encourage you to join the Freqtrade
+            - link "discord server" [ref=e549] [cursor=pointer]:
+              - /url: https://discord.gg/p7nuUNVfP7
+            - text: .
+          - heading "Ready to try? ¶" [level=2] [ref=e550]:
+            - text: Ready to try?
+            - link "¶" [ref=e551] [cursor=pointer]:
+              - /url: "#ready-to-try"
+          - paragraph [ref=e552]:
+            - text: Begin by reading the installation guide
+            - link "for docker" [ref=e553] [cursor=pointer]:
+              - /url: docker_quickstart/
+            - text: (recommended), or for
+            - link "installation without docker" [ref=e554] [cursor=pointer]:
+              - /url: installation/
+            - text: .
+      - button "Back to top":
+        - img
+        - text: Back to top
+    - contentinfo [ref=e555]:
+      - navigation "Footer" [ref=e556]:
+        - 'link "Next: Quickstart with Docker" [ref=e557] [cursor=pointer]':
+          - /url: docker_quickstart/
+          - generic [ref=e558]:
+            - text: Next
+            - generic [ref=e559]: Quickstart with Docker
+          - img [ref=e561]
+      - generic [ref=e565]:
+        - text: Made with
+        - link "Material for MkDocs" [ref=e566] [cursor=pointer]:
+          - /url: https://squidfunk.github.io/mkdocs-material/

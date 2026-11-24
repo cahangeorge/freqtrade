@@ -1,0 +1,335 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🎯alexgkdtransform
+==============================================================
+
+[02/20/2026 11:49] serialkiller15 (pinned)
+Alex_GKD_FisherTransform is a Fisher Transform momentum/trend strategy with ML-assisted filtering/optimization. It’s built to catch strong directional moves while reducing chop/noise through confirmations and confidence logic.
+
+Key Benefits ✅
+
+• Fisher Transform core: highlights momentum shifts and trend acceleration (good for catching “impulse” phases).
+• Balanced LONG + SHORT logic: entries are designed to work symmetrically in both directions (no one-sided bias).
+• ML confidence layer 🤖: uses a model/scaler pipeline to score conditions and help filter weaker setups (aim: fewer low-quality trades).
+• Risk tightened vs earlier versions: stoploss and general risk controls were significantly tightened compared to older drafts (more realistic safety posture).
+• Trade capacity capped: reduced max exposure by limiting max open trades (helps prevent overtrading during high volatility).
+• Built for iteration: includes Optuna/ML model persistence paths so the system can improve via testing over time.
+
+What it’s best for 🎯
+
+• Markets with clear swings and momentum bursts
+• Traders who value signal quality over constant entries
+• Setups where shorts matter (not only long-only cycles)
+
+Notes / Expectations ⚠️
+
+This is still a powerful system (and can be complex due to ML). Start with DRY-RUN + backtests, keep leverage sane, and treat ML as a filter—not magic.
+
+
+[02/20/2026 11:49] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474371138581958879/1474372378460160081/ALEXGKD_FisherTransformV5_ML.py?ex=69f341c7&is=69f1f047&hm=1af040dfb6dbd79cae4ba7ce9f4790deb703420e3b5daf16d428e660d2671aea&
+
+
+[02/20/2026 11:49] serialkiller15
+Pinned a message.
+
+
+[02/20/2026 11:49] serialkiller15
+Pinned a message.
+
+
+[02/26/2026 18:56] alexandermoysa
+Could you share config.json for this strategy?
+
+
+[02/26/2026 18:59] serialkiller15
+timeframe 1h
+pairlist is always the same
+    "pair_whitelist": [
+    "BTC/USDT:USDT",
+    "ETH/USDT:USDT",
+    "SOL/USDT:USDT",
+    "BNB/USDT:USDT",
+    "XRP/USDT:USDT",
+    "ADA/USDT:USDT",
+    "AVAX/USDT:USDT",
+    "DOT/USDT:USDT",
+    "MATIC/USDT:USDT",
+    "LINK/USDT:USDT",
+    "ATOM/USDT:USDT",
+    "UNI/USDT:USDT",
+    "LTC/USDT:USDT",
+    "NEAR/USDT:USDT",
+    "APT/USDT:USDT",
+    "ARB/USDT:USDT",
+    "OP/USDT:USDT",
+    "INJ/USDT:USDT",
+    "TIA/USDT:USDT",
+    "SUI/USDT:USDT",
+    "SEI/USDT:USDT",
+    "FIL/USDT:USDT",
+    "ICP/USDT:USDT",
+    "DOGE/USDT:USDT",
+    "SHIB/USDT:USDT",
+    "PEPE/USDT:USDT",
+    "AR/USDT:USDT",
+    "AAVE/USDT:USDT",
+    "MKR/USDT:USDT",
+    "CRV/USDT:USDT",
+    "LDO/USDT:USDT",
+    "GRT/USDT:USDT",
+    "SAND/USDT:USDT",
+    "MANA/USDT:USDT",
+    "AXS/USDT:USDT",
+    "RUNE/USDT:USDT",
+    "FTM/USDT:USDT",
+    "ALGO/USDT:USDT",
+    "VET/USDT:USDT",
+    "HBAR/USDT:USDT",
+    "ETC/USDT:USDT",
+    "XLM/USDT:USDT",
+    "TRX/USDT:USDT",
+    "BCH/USDT:USDT",
+    "EOS/USDT:USDT",
+    "THETA/USDT:USDT",
+    "XTZ/USDT:USDT"
+        
+    ],
+
+
+[02/26/2026 19:00] alexandermoysa
+Ok! I mean other critical parameters.
+
+
+[02/26/2026 19:05] serialkiller15
+which one there are no others you need for? what do you mean mate?
+
+
+[02/26/2026 20:32] divarak
+for example, informative timeframes if needed, freqai, some parameters that could or should be enabled/disabled... I suggest some "template" settings for the strategies. Maybe some settings are opposite between strategies.
+
+
+[02/26/2026 20:33] serialkiller15
+Ok yes you are right will share my config json then!
+
+{Reactions}
+🙏
+
+[02/26/2026 20:34] divarak
+Glad we understand! hehe
+
+{Reactions}
+👍
+
+[02/26/2026 20:35] serialkiller15
+CONFIG
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474371138581958879/1476679090952994846/message.txt?ex=69f31452&is=69f1c2d2&hm=d6ad23b8892eb370fb25771d21b54858a165d553e5fa6afcfad924258010aff0&
+
+{Reactions}
+👍
+
+[02/26/2026 20:39] alexandermoysa
+Thank you!
+
+{Reactions}
+👍
+
+[02/26/2026 21:04] divarak
+sorry to bother, I "translplanted" the settings from the template to my config file, getting this error:
+2026-02-26 17:59:46,109 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2026-02-26 17:59:46,124 - freqtrade.configuration.config_validation - CRITICAL - Invalid configuration. Reason: 'data_split_parameters' is a required property
+my freqai settings are disabled
+
+
+[02/26/2026 21:04] divarak
+but that parameter is missing.
+
+
+[02/26/2026 21:05] serialkiller15
+in my shared config there is no freqai stuff in there so delete the fully stuff mate !
+
+{Reactions}
+🫡
+
+[03/01/2026 10:21] alexander_22542
+Hi, Could you share the strategy json file after hyperopt. I want to compare my results.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474371138581958879/1477611719030345769/GKD_FisherTransformV5_ML_1.json.txt?ex=69f32d26&is=69f1dba6&hm=186060f1edc3a1640589d879409ac55571e4a1a4754ff9c8f1a19e3cfa86a796&
+
+
+[03/01/2026 10:26] serialkiller15
+Hi i did not use hyperopt on it but can do then!
+
+
+[03/01/2026 10:29] alexander_22542
+but, this file is the result of hyperopt. In your strategy at the begging there is a suggestion to run hyperopt 🙂
+
+
+[03/01/2026 10:29] serialkiller15
+hehe no problem will do then!
+
+
+[03/01/2026 10:31] alexander_22542
+Ok! Thank you! I just want to understand. there What variant of tune strategy do you use? Just prune during dry run?
+
+
+[03/01/2026 10:32] serialkiller15
+i do running on ml and let it train thats the idea behind it because the parameters are going true the ml, but if hyperopt will make better results we can test it thanks for your input!
+
+
+[03/01/2026 10:52] alexander_22542
+so it means, that i can run strategy without hyperopt. It will tune by ML inside strategy?
+
+
+[03/01/2026 11:12] serialkiller15
+YES thats the main idea behind it
+
+{Reactions}
+👍
+
+[03/13/2026 10:26] themarkx_
+@Alex Crypto King can you share latest version of gkdfishertranform
+
+
+[03/13/2026 10:39] serialkiller15
+V6 is still in testing needs time... V5 is already good
+
+
+[03/15/2026 19:56] glad8769
+I see, do you prefer to use fixed amount rather than compounding?
+
+
+[03/16/2026 19:20] bovejuan
+How can I prevent the stake amount from skyrocketing like in SSV 2590 USDT, where it exceeded more than half of the capital? Does the stop loss work in this strategy?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474371138581958879/1483183161675612250/Captura_desde_2026-03-16_16-17-00.png?ex=69f302b5&is=69f1b135&hm=a1011cf4ddcfe0e555f5d56588d99f323478f24b063ebd147690b49a02e1d63a&
+
+
+[03/16/2026 21:43] serialkiller15
+Will show tomorrow the changes of stake amount and sl should already work.
+
+
+[03/17/2026 14:34] serialkiller15 (pinned)
+@everyone 
+ALEXGKD_FisherTransformV6_ML 🎣🤖
+
+What We Fixed: ✅
+
+| Fix                   | Before             | After     |
+| --------------------- | ------------------ | --------- |
+| 🛑 Stoploss           | -52% (!!)          | -15%      |
+| 💰 Max Trades         | 20                 | 5         |
+| ⚖️ Long/Short Balance | Unbalanced         | Symmetric |
+| 🎯 Entry Threshold    | 0.65               | 1.0       |
+| 🔒 Goldie Locks       | Restrictive shorts | Removed   |
+
+Key Features: 🚀
+
+• 🧠 ML/Random Forest predictions
+• 📊 Fisher Transform signals
+• 🎭 Balanced long/short entries
+• 🛡️ Tightened risk management
+
+Status: ✅ All fixed and ready!
+
+Ready to catch those fish! 🐟📈🤘
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474371138581958879/1483473704770863115/ALEXGKD_FisherTransformV6_ML.py?ex=69f3688c&is=69f2170c&hm=8e85475f9abce4311016e747be863392f35e45c51c7617131c18307302f85010&
+
+{Reactions}
+❤️ 🚀
+
+[03/17/2026 14:35] serialkiller15
+Pinned a message.
+
+
+[03/17/2026 15:45] divarak
+Alex.. Any changes on config file?
+
+
+[03/17/2026 15:45] serialkiller15
+nope not needed!
+
+{Reactions}
+🫡
+
+[03/17/2026 15:47] divarak
+Another thing.. I jumped to live account with v5, should test for a few days before switch to v6?
+
+
+[03/17/2026 15:53] serialkiller15
+if you are happy with v5 than its fine most importand is the stake amount used in v5 if you are fine let it as it is!
+
+{Reactions}
+🫡
+
+[03/17/2026 18:46] vasko123.
+Hi. First launch - backtest or dry-run launch?
+
+
+[03/17/2026 18:48] serialkiller15
+dry-run is fine mate
+
+{Reactions}
+👍
+
+[03/18/2026 13:04] serialkiller15
+@everyone 
+some fixes with stoploss and confirm_trade_exit
+
+
+[03/18/2026 13:20] .7thdragon
+@Alex Crypto King it needed some small fixes related to model name, make diff to see them
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474371138581958879/1483817482513809548/ALEXGKD_FisherTransformV61_ML.py?ex=69f35737&is=69f205b7&hm=f85f107581e6b5aad3dfc1d4326757984078517873e5d154ae71bdd725c11aae&
+
+
+[03/18/2026 13:21] serialkiller15
+Thanks mate.. Was only fixing the other functions.. Thanks for your  Cosmetics thanks
+
+{Reactions}
+👍
+
+[03/18/2026 13:23] .7thdragon
+is not quite cosmetic, the model is not read/write properly because of :USDT
+
+
+[03/18/2026 13:23] serialkiller15
+damn yes you are right!
+
+
+[03/18/2026 13:33] .7thdragon
+i missed myself one enter_tag instead of entry_tag -> wrong attribute, please check
+
+
+[03/18/2026 13:34] serialkiller15
+Will check
+
+
+[03/18/2026 13:35] serialkiller15
+Hehe also your fingers where to fast.. 🙂
+
+{Reactions}
+👍
+
+[03/18/2026 14:12] serialkiller15
+now fixed
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474371138581958879/1483830355109875906/ALEXGKD_FisherTransformV61_ML.py?ex=69f36334&is=69f211b4&hm=250ad3d62c0748c33c63b45183f513b1e1d2b8bd2cc23d76ca1cb5ab5eab6309&
+
+{Reactions}
+👍 (5)
+
+==============================================================
+Exported 46 message(s)
+==============================================================

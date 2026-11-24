@@ -1,0 +1,588 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖FREQAI_FUTURES / 📈v91-optuna-results
+==============================================================
+
+[09/18/2024 16:00] serialkiller15
+here are Results on Dryrun - with predicted_r....... and other
+
+
+[09/18/2024 16:01] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1285993996585533460/image.png?ex=69f37cbd&is=69f22b3d&hm=f5d8b67f14d40f2879471b7f18de525079f099d8826a3b9f29990dd3a903fe52&
+
+{Reactions}
+💯
+
+[09/18/2024 16:08] schtk
+Is there I way I can access the 9.1 version so I can fire it also for dryrun ?
+
+
+[09/18/2024 16:09] serialkiller15
+yes there is.... but no support on it, need testers, and make together aprovements!
+
+
+[09/18/2024 16:10] schtk
+I have a google cloud environment with 8cpu and 16gb ram to test all of this
+
+
+[09/18/2024 16:10] serialkiller15
+you are in give me a sec
+
+{Reactions}
+👍
+
+[09/18/2024 16:11] serialkiller15
+access granted! please post results here
+
+{Reactions}
+👍
+
+[09/18/2024 17:02] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286009458778181673/image.png?ex=69f38b23&is=69f239a3&hm=9fb50ce83f77b997b52d71b953192cad68d602f151f8c986f69b36a61bf40d0e&
+
+{Reactions}
+👀 (2)
+
+[09/18/2024 18:23] ammart90
+Hello @Alex Crypto King 
+I'm able to test also but as a spot, if you want please invite me
+
+
+[09/18/2024 18:47] serialkiller15
+I will add you but did not test in spot now..
+
+
+[09/18/2024 18:50] serialkiller15
+@AmarT you are in beta testing group enjoy
+
+{Reactions}
+👍
+
+[09/18/2024 19:58] laupapp
+now dryrun ... i will report tomorrow !
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286053879531704360/image.png?ex=69f30bc2&is=69f1ba42&hm=febc81fac91d3e5c334fe59192f1b9301bcd2b8fa7f632d30f38c59b4786c954&
+
+
+[09/18/2024 20:42] serialkiller15
+Thanks...
+
+
+[09/18/2024 21:03] ximontan
+Does anyone have same error?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286070184087392256/image.png?ex=69f31af1&is=69f1c971&hm=98ecd985fad1bbebfe2560b2b5bdf2dbf9d741962f08578e7d06dabc501eb915&
+
+
+[09/18/2024 21:05] laupapp
+Yes but it’s work anyway I think
+
+
+[09/18/2024 21:06] ximontan
+no, it return error, in sub process we run command like this **['freqtrade', 'hyperopt', '--strategy', 'AlexStrategyFinalV911',  ', '20240801-20240917', '--config', 'user_data/config-torch-def.json']**
+but without some parameters, at least need add** --hyperopt-loss SharpeHyperOptLossDaily**
+but I little bit doubt about this...
+
+
+[09/18/2024 21:08] ximontan
+and in normal way result should be  Trial X finished with value: **number from 0 to 1** and parameters...but my knowledge from just saw video)
+
+
+[09/19/2024 00:37] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286124052586692710/image.png?ex=69f34d1d&is=69f1fb9d&hm=3ec9b460fb6d96af30887a8ca4ccc6a81c904adc3c95156b7f6b6c3742246a80&
+
+
+[09/19/2024 00:38] sera131
+something weird
+
+
+[09/19/2024 00:39] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286124349983690822/image.png?ex=69f34d64&is=69f1fbe4&hm=c47cf38f58aa512078439fbb6bb3ce28eaea4a13f871c7b3797f7167a9141bc6&
+
+
+[09/19/2024 00:39] sera131
+i'm probably doing something wrong on set up if noone has same examples
+
+
+[09/19/2024 04:46] serialkiller15
+gm ... i have to fix some stuff with the optuna, hyperopt will post then... @7thDragon did managed some good changes will test it then..
+
+
+[09/19/2024 09:17] ximontan
+Have same issue, I compare chart with TradingView and it means price go upper and FT not already load this candle
+
+
+[09/19/2024 09:18] giovannimauro
+Can be for a market based entry instead of a limit One?
+
+
+[09/19/2024 09:19] giovannimauro
+Im away from my PC, I can't see how It Is.
+
+
+[09/19/2024 10:10] ch1ck3n_t4c0s
+That right there.... the 'ol buy in the sky'... I have something for that.
+
+{Reactions}
+💯
+
+[09/19/2024 10:16] laupapp
+@Ximontan do you have resolve this problem ? Indeed, hyperopt for each Trial is strange
+
+
+[09/19/2024 10:18] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286270268012105831/image.png?ex=69f32c89&is=69f1db09&hm=89fd1643a4c63b592db203d7d7d89266ce9a8658af5218002f42cdce75f18d48&
+
+
+[09/19/2024 10:18] serialkiller15
+i am on it...
+
+{Reactions}
+👌
+
+[09/19/2024 10:24] serialkiller15
+but i have to say, i love optuna......
+
+
+[09/19/2024 10:28] anonymuis
+Optuna is great and very valuable! But the risk over over optimizing on not enough data or not enough coins is real. Backtesting over data that is used for optimizing gives way too positive results. The proof is in the dry/live forward testing.
+
+Anyway, Optuna helps with optimizing variables that would otherwise cost months in manual labor.
+
+
+[09/19/2024 10:28] ch1ck3n_t4c0s
+@upSera use the custom entry price script in haFBm... you will have to make it bidirectional though as it's for long entries atm.
+
+
+[09/19/2024 10:33] ch1ck3n_t4c0s
+For short entries, you will need to make the bias and the increment be on the opposite side of the mid price and invert the increment to just below 1 instead of just above 1 for longs.
+
+
+[09/19/2024 10:37] ch1ck3n_t4c0s
+I highly suggest it is added to ever strategy as it can make or break the actual entry
+
+
+[09/19/2024 10:38] ch1ck3n_t4c0s
+Irregardless of where the little green triangles are at
+
+
+[09/19/2024 11:32] ximontan
+Not yet, after work I'll start fix it....
+
+
+[09/19/2024 15:01] sera131
+considering it but currently having network issues... ISP being down 12 hours again... heavy losses created. Sometimes I wish i would enable stoploss on exchange
+
+
+[09/19/2024 15:44] serialkiller15
+fuck.....
+
+
+[09/19/2024 15:45] serialkiller15
+i do some automations for the bots and it looks good at the moment, so it does optuna..... and reloads the config in the docker file thats nice, a short downtime, i now not the best aproach but will fix it!
+
+
+[09/19/2024 15:50] ximontan
+Ok, I was solw problem.
+I change approach. 
+
+In original version we do this: freqtrade hyperopt --strategy AlexStrategyFinalV911 --timerange 20240801-20240917 --config /freqtrade/user_data/config-torch_optuna.json
+In my:    freqtrade backtesting --strategy AlexStrategyFinalV911Backtest --timerange 20240801-20240917 -c user_data/YOU_CONFIG_FILE.json
+
+It's slow, we can run only one instance of this optimization b/c parameters writes to file best_optuna_params.json and used when we call AlexStrategyFinalV911Backtest.
+Not applicable n_jobs=-1
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286353690051088477/AlexStrategyFinalV911_Optuna.py?ex=69f37a3b&is=69f228bb&hm=351b5b3b4c9ca0d2d788b7d3bb4dd8b062ac6c5ae4abbac151cdf9c90d5daaab&
+https://cdn.discordapp.com/attachments/1285993245096017960/1286353690399342592/image.png?ex=69f37a3b&is=69f228bb&hm=965ee3cb27efa16e993904482d6ff7023deab161bafa2fd9ad2a6295308ab5ed&
+
+{Reactions}
+🤞 🤘
+
+[09/19/2024 15:50] .7thdragon
+Optuna needa to update every time the model with a resuly/target! Careful otherwise are random numbers
+
+
+[09/19/2024 15:51] .7thdragon
+I am on the run will check later but already advanced with my version😉
+
+
+[09/19/2024 17:05] sera131
+without having the best params loaded
+
+
+[09/19/2024 17:05] sera131
+I think maybe its a reason for this
+
+
+[09/19/2024 17:07] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286373111746400331/image.png?ex=69f38c51&is=69f23ad1&hm=c0759a76a120b4b661082cb106faf836a6b9d9674736243ea34d72fc1fa090e2&
+
+
+[09/19/2024 17:07] sera131
+but 26% in less than 24 hours feels pretty good atm
+
+
+[09/19/2024 17:08] sera131
+with 12 hours downtime...
+
+
+[09/19/2024 17:08] sera131
+market was heavy in uptrend today so too soon to praise it but I think its on the right path
+
+
+[09/19/2024 17:09] ximontan
+Can you please share you config
+
+
+[09/19/2024 17:09] sera131
+reloading again with params and will check again
+
+
+[09/19/2024 17:12] sera131
+i can but i really don't have anything special in it atm.
+
+{Reactions}
+👍
+
+[09/19/2024 17:14] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286374768077176902/message.txt?ex=69f38ddc&is=69f23c5c&hm=2538e91acab3f7263c3f38c123efdfc1d9416a58925a2d5b4c740e703fd9b105&
+
+
+[09/19/2024 17:14] sera131
+enabled stop loss on exchange recently
+
+
+[09/19/2024 17:14] sera131
+due to issues with my ISP
+
+
+[09/19/2024 17:52] serialkiller15
+Nice I also have good results since yesterday on dryrun
+
+
+[09/19/2024 17:54] .7thdragon
+what is your stoploss? default stoploss = -0.305 ? it might go down faster than u think 🙂
+
+
+[09/19/2024 17:57] sera131
+30% ye
+
+
+[09/19/2024 17:58] sera131
+well definetly uptrend is in favor
+
+{Reactions}
+👍 (2)
+
+[09/19/2024 17:59] .7thdragon
+in fact the clear trend, not spikes
+
+
+[09/19/2024 17:59] serialkiller15
+I di Tests on Stoploss 0.1
+
+
+[09/19/2024 18:01] sera131
+how was it?
+
+
+[09/19/2024 18:01] serialkiller15
+Good at the moment
+
+{Reactions}
+👍
+
+[09/19/2024 18:16] serialkiller15
+Have do also v90 on Optuna and also good at the moment
+
+
+[09/19/2024 19:49] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286413767286198435/image.png?ex=69f3096e&is=69f1b7ee&hm=1f165bc6dec785cbe4b05e04fb05f7087621090fa0557c23f69156f61d39a631&
+
+
+[09/19/2024 19:49] sera131
+30% lets go
+
+
+[09/19/2024 19:49] sera131
+well placed short on reverse
+
+
+[09/19/2024 19:50] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286414085021499454/image.png?ex=69f309ba&is=69f1b83a&hm=18443f77e9255b0ddefb50981588a23ff8b9d82ad8cf07d39f38af46288ba03e&
+
+
+[09/19/2024 19:51] serialkiller15
+Looks good mate
+
+
+[09/19/2024 21:58] sera131
+really good entries on hafb as far as I see
+
+
+[09/19/2024 21:59] sera131
+I will need your help understanding it a bit so i can implement in few strats :)) but will chat with you in private
+
+
+[09/20/2024 08:16] serialkiller15
+here you can see how optuna does...
+
+
+[09/20/2024 08:16] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286601898559799328/image.png?ex=69f30fe4&is=69f1be64&hm=d8f571e670e16e61f5db70ae5537fe8b9de3754f8d8cf7845a2bdbb5f2b1cda8&
+
+
+[09/20/2024 08:26] laupapp
+my dryrun with Optuna is dead this morning ... I just re-run the python :
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286604307092865055/image.png?ex=69f31222&is=69f1c0a2&hm=aa7838a7f8c7e75804e99be04cf457814b0d55ca5c47a24d94f4f8764278e415&
+
+
+[09/20/2024 11:05] sera131
+currently still surviving
+
+
+[09/20/2024 11:05] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286644352466030592/image.png?ex=69f3376e&is=69f1e5ee&hm=720041f04eb74ef7f6f15b126e7404bf18710d240b69d587f2219aa6ba2802f5&
+
+
+[09/20/2024 11:06] sera131
+default verbose?
+
+
+[09/20/2024 12:07] sera131
+@Alex Crypto King  I see the below reason and the code:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286659937371688981/image.png?ex=69f345f2&is=69f1f472&hm=b0a7e39ec5ec89ebc5a554bc6380b071c629d43d929d63c6e77946786c7694fd&
+
+
+[09/20/2024 12:07] sera131
+but wanted to ask you, what was your ideea behind it? i want to understand a bit more
+
+
+[09/20/2024 17:27] sera131
+still not dead
+
+
+[09/20/2024 17:28] sera131
+took some stoploss hits though
+
+
+[09/20/2024 17:28] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286740678226739250/image.png?ex=69f39124&is=69f23fa4&hm=7a25d0d79917b5e615609165c530c16a3c1611e53cf3e47a629ab7981e8af323&
+
+{Reactions}
+🤣
+
+[09/20/2024 18:33] serialkiller15
+@upSera we are on it and are working on an new Update with many nice modifications..
+
+{Reactions}
+💪
+
+[09/20/2024 18:35] serialkiller15
+@7thDragon did an amazing improvements with nice ideas we will do test and then Post it in a new channel here...
+
+{Reactions}
+💯 (3) 💪
+
+[09/20/2024 22:49] .7thdragon
+Some sample 😉
+Automatic optimization of parameters by optuna by continous backtesting suggestions -> update parameters on each improvement -> dry_run read new parameters in real time
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286821651366809650/image.png?ex=69f333cd&is=69f1e24d&hm=865c70dcf407bff42ee0d41d8659f01b1b206624deed2ec7fb61756a828c53cb&
+
+{Reactions}
+👍
+
+[09/21/2024 07:08] schtk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286947137581744183/IMG_0724.png?ex=69f2ffeb&is=69f1ae6b&hm=f74590220f33f53633c840ba4e93f79852a8be420ebe5e500a6bca35b20a4c41&
+
+
+[09/21/2024 07:16] serialkiller15
+it will be better we are working on it look at this here
+
+
+[09/21/2024 07:16] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286949045134426142/image.png?ex=69f301b2&is=69f1b032&hm=b011178b7028a71af20d476fe78b8d533bae9f4c7e659158d9348197b6c28a8f&
+
+{Reactions}
+💯
+
+[09/21/2024 07:17] schtk
+I tried to hyper opt it but i had some difficulties to have it working
+
+
+[09/21/2024 07:18] schtk
+But ok I can fix this
+
+
+[09/21/2024 07:18] schtk
+This showed up while de back testing worked perfectly for a longer period …
+
+
+[09/21/2024 07:18] schtk
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1286949764977659904/IMG_0719.jpg?ex=69f3025e&is=69f1b0de&hm=8b3079f39d908813c13234f527382d7dd0fdc8edf371d9d62fc227dec2a28650&
+
+
+[09/21/2024 07:29] serialkiller15
+why do you do backtest against the main strategy? you should do it on the backtest.py?
+
+
+[09/21/2024 07:29] serialkiller15
+also you dont have enough data downloaded
+
+
+[09/21/2024 07:33] schtk
+I used the backtest.py to do the backtesting
+
+
+[09/21/2024 07:33] schtk
+And it worked but for the Hyperopt on a shorter period I got this error
+
+
+[09/21/2024 07:35] laupapp
+Yes same backtest but dry-run in loss at the moment. I’ve stop-loss 0.1. Easy to move first stop-loss to previous h4 low/high ?
+
+
+[09/22/2024 18:19] sera131
+lost half the profit but still alive.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1287478459232288859/image.png?ex=69f39d40&is=69f24bc0&hm=a58d514540a816c1061e1aef17a8baa17c23f1ec88f84fdf9573f740f68e9e11&
+
+
+[09/22/2024 18:20] sera131
+this is 9.1 optuna
+
+
+[09/22/2024 18:21] ch1ck3n_t4c0s
+Should be picking up shorts I believe we are gonna do a retest of upper trendline on btc to around 61k then more up
+
+{Reactions}
+👍
+
+[09/22/2024 18:32] sera131
+we'll see how monday opens
+
+
+[09/22/2024 18:34] serialkiller15
+Lets see what tomorrow happens the market is horrible at the moment
+
+
+[09/22/2024 18:44] sera131
+could be worse 😄
+
+
+[09/22/2024 18:45] serialkiller15
+Personaly i think it will dropdown but dont kill me hehe
+
+
+[09/22/2024 19:03] sera131
+same
+
+
+[09/22/2024 22:08] sera131
+sooner than expected, already dropping hard xD
+
+
+[09/22/2024 22:10] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1287536500166361171/image.png?ex=69f32a8e&is=69f1d90e&hm=0cc5aa7bd66ded018dabb5d6d1f4a9dbea8df84239441be4ca9b71906ff0c0d2&
+
+{Reactions}
+🤣
+
+[09/22/2024 22:10] sera131
+official time of death: last dipp
+
+
+[09/22/2024 22:11] sera131
+i think I will add my btc protections to it once I fully test them
+
+
+[09/22/2024 22:11] sera131
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285993245096017960/1287536883450253334/image.png?ex=69f32aea&is=69f1d96a&hm=dce552dbfaea4172ec1f29c0798400e9fd0206be8ef631ac2e6c3d030e1098c7&
+
+
+[09/24/2024 09:52] priezz
+@7thDragon Can you share the code please? I guess you have also addressed issues in `AlexStrategyFinalV911_Optuna.py` (https://ptb.discord.com/channels/1238181199206154373/1285996661205631117/1288072205673955370)
+
+P.S. Don't you guys think that code changes and related discussions would be much more convenient to have by creating PRs in github?
+
+
+[09/24/2024 09:55] serialkiller15
+@priezz yes you are right, but as i am only Admin i dont have time here to add all the changes to github mate, wenn there will be some major updates i will do that thanks
+
+
+[09/24/2024 10:02] priezz
+Changes are supposed to be added by their authors. In this very case if @7thDragon proposes some changes he creates a respective PR. Then you just decide whether to accept the changes pushing a button. As for your own changes you just do `git commit`/`git push` in a `dev` branch, which should be a way easier than posting snippets in Descord. Does it make sense?
+
+
+[09/24/2024 10:02] serialkiller15
+yes absolute mate thanks for your input!
+
+
+[10/06/2025 00:29] ziyyan_
+Bro please read my DM
+
+
+==============================================================
+Exported 114 message(s)
+==============================================================

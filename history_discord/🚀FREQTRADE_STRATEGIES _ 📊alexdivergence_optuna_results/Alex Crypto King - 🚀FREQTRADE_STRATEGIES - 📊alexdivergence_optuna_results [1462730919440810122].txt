@@ -1,0 +1,345 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 📊alexdivergence_optuna_results
+==============================================================
+
+[01/19/2026 08:50] serialkiller15
+Some Results for AlexDivergence_Optuna V1
+
+dry
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1462731031055568980/image.png?ex=69f317ee&is=69f1c66e&hm=0dda444fc9ea6787da5b08e9ce6596f8e243a75b923937aea25967af04bd4af2&
+
+{Reactions}
+🚀
+
+[01/19/2026 08:51] serialkiller15
+Live (startet today morning)
+
+
+[01/19/2026 08:51] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1462731172890017866/image.png?ex=69f3180f&is=69f1c68f&hm=b0e52a03ddd37e2f220578042f680413677b2e991d78bb520489ba8d468fa16c&
+
+{Reactions}
+🔥
+
+[01/19/2026 09:01] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1462733695994826804/image.png?ex=69f31a69&is=69f1c8e9&hm=20a9a15e259c46f1cbce92147f38a0a21acdb4e8ee4e010196c8ed0de706d5ec&
+
+
+[01/19/2026 09:12] serialkiller15
+wrong channel?
+
+{Reactions}
+👍
+
+[01/19/2026 10:30] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1462756218216120444/image.png?ex=69f32f63&is=69f1dde3&hm=e17567000c2d8a7028acdb99c6715ae4d9011e0428a9852d609c916162d873b2&
+
+
+[01/20/2026 05:48] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1463047424602800211/Bildschirmfoto_2026-01-20_um_06.47.55.png?ex=69f395d8&is=69f24458&hm=047bcccca312ebf639eea6e589a8117551afb717b1f3731bda76a3be9200b46d&
+
+{Reactions}
+👍 (2)
+
+[01/20/2026 18:13] divarak
+Day (count)      USDT           USD          Profit %
+---------------  -------------  -----------  ----------
+2026-01-20 (49)  -119.114 USDT  -119.00 USD  -11.98%
+2026-01-19 (2)   3.199 USDT     3.20 USD     0.32%
+2026-01-18 (0)   0 USDT         0.00 USD     0.00%
+2026-01-17 (0)   0 USDT         0.00 USD     0.00%
+2026-01-16 (0)   0 USDT         0.00 USD     0.00%
+2026-01-15 (0)   0 USDT         0.00 USD     0.00%
+2026-01-14 (0)   0 USDT         0.00 USD     0.00%
+
+Maybe inverting entry signals will make it profitable 😁
+
+
+[01/20/2026 18:13] divarak
+2026-01-20 04:55:07 (26.697 USDT)
+
+
+[01/20/2026 18:14] serialkiller15
+today yes
+
+{Reactions}
+🫡
+
+[01/20/2026 21:39] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1463286954945675569/IMG_0261.png?ex=69f3236c&is=69f1d1ec&hm=dc80497c27f4bf97541c5b630b6a72ef55a28b7dbb28440861b45bbffc083441&
+
+
+[01/21/2026 11:41] vasko123.
+Several days of testing on TF 15m = deposit drained little by little.
+Now testing on TF 1h = not so promising yet.
+Alex Crypto King, what's the difference between version 12 in Telegram and version 1? I tried a short test, but there were no trades.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1463498617573867531/e974f2a1d591b0ea.png?ex=69f33fcc&is=69f1ee4c&hm=df4fa557e4961734be09756e03de0f5dbf4076e92c7f37d12cba02904abddcc5&
+
+
+[01/21/2026 11:42] serialkiller15
+its the same like this one here!
+
+
+[01/22/2026 11:41] miluu5979
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1463861022644506720/image.png?ex=69f33fd1&is=69f1ee51&hm=b4875ddc05ed8a9e53d9a48fcfe427d5fa55967a3b13c743215d749af27a8c93&
+https://cdn.discordapp.com/attachments/1462730919440810122/1463861023088971786/image.png?ex=69f33fd1&is=69f1ee51&hm=c127b7561a077a893c91d6dda50b52981bffa9b7d93861b7b06f8f946fa8c6ec&
+
+
+[01/22/2026 11:43] miluu5979
+big profit overnight
+
+
+[01/22/2026 11:49] serialkiller15
+Optuna?
+
+
+[01/22/2026 11:56] branly76
+Optuna version
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1463864807336968194/image.png?ex=69f34357&is=69f1f1d7&hm=c89e2eac1621fd7c0a97f8d5be24b28c397d7c43d94733d650b79cb2990fdb91&
+
+
+[01/22/2026 11:59] serialkiller15
+It's normal yesterday was a cracy market but it will recover...
+
+
+[01/22/2026 12:00] miluu5979
+yes, Optuna
+
+
+[01/22/2026 12:01] serialkiller15
+Perfekt so a good job was done will see how it does after weeks
+
+{Reactions}
+👍
+
+[01/22/2026 12:05] branly76
+As long we have that orange baby at the whitehouse, crazy wil be the new normal.
+
+
+[01/22/2026 12:05] serialkiller15
+Absolute but let's say let them run will not make any adjustments the next days...
+
+
+[01/23/2026 20:22] vasko123.
+AD_Optuna v1
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1464354622620565575/8dc2f72a3deefb54.png?ex=69f31144&is=69f1bfc4&hm=34e33885488727c7ee60a6f6820140b59adba52341ec2dee9b5fcf7b56b73fcd&
+
+
+[01/23/2026 20:24] vasko123.
+AD_Optuna v12 (from the Telegram channel)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1464355151543537735/fc5af13f32fe445b.png?ex=69f311c2&is=69f1c042&hm=5d4318356811d23e646b7f42b409ed5ceff1ff0a492087ffca0219edd33aff58&
+
+
+[01/23/2026 20:25] vasko123.
+v12 works a little better.
+Launching simultaneously
+
+
+[01/23/2026 20:32] serialkiller15
+I was sure it's the same... But need to check my changelog
+
+
+[01/23/2026 20:35] vasko123.
+There's a bit more code in v12
+And AI claims some improvements
+
+
+[01/27/2026 12:52] lukovicka
+AD Optuna
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1465690882937192500/image.png?ex=69f35081&is=69f1ff01&hm=f047462a546f5b8334f79af584148a146adc302938428ed1d1bc9f8b8ded15b0&
+
+
+[01/27/2026 15:29] liam_77636
+@Alex Crypto King Hello sir, I'm currently using your strategy (Alex_Divergence_Optuna). You mentioned before that the longer the strategy runs, the higher the accuracy rate. Is this statement correct?
+
+
+[01/27/2026 15:34] serialkiller15
+yes it should be...
+
+
+[01/27/2026 15:42] liam_77636
+ok,tks!
+
+
+[01/29/2026 06:49] xf0x0f
+Opt. a little
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1466324405209665631/54C67245-91F6-4F18-B8E8-3487D2E87D85.jpg?ex=69f2fb85&is=69f1aa05&hm=488211110d96892df7e29e85b7276125491a0c9b03c9e1732621228141865791&
+
+
+[01/29/2026 07:14] serialkiller15
+And what did you opt thanks
+
+
+[01/30/2026 20:32] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1466893976887103551/Bildschirmfoto_2026-01-30_um_21.32.40.png?ex=69f313b9&is=69f1c239&hm=ea99bb315363758cf99987f902fbd781ed4cc7c968494ccc9260b3f1201338e9&
+
+{Reactions}
+👍
+
+[01/30/2026 20:38] serialkiller15
+only shorts? as you said
+
+
+[01/30/2026 21:24] xf0x0f
+yep
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1466906931301191763/Bildschirmfoto_2026-01-30_um_22.24.18.png?ex=69f31fca&is=69f1ce4a&hm=1e68b2406cf4a43b0e82d58dd2358acd080b737184107ec955f055d3fc22a325&
+
+
+[01/30/2026 21:30] 4v1234
+Interesting
+
+
+[01/30/2026 21:39] serialkiller15
+It's the market mostly when it change to longs... It have to change also!
+
+
+[01/30/2026 21:44] xf0x0f
+this is when i want to get to my hybrid 😉
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1466911999031120136/Bildschirmfoto_2026-01-30_um_22.44.17.png?ex=69f32482&is=69f1d302&hm=c823d2d3ce224027658d55b1b2ba071e14bffcfde17712dd4d0c39c3cde672c0&
+
+
+[01/30/2026 21:44] serialkiller15
+yes absolute! nice idea!
+
+
+[01/31/2026 12:08] liam_77636
+Hey guys, has anyone been running the Alex_Divergence_Optuna strategy? Could you share your recent performance results, especially how it held up after the recent market crash? My trading bot crashed unexpectedly and I failed to cut my losses in time, leading to heavy losses.
+
+
+[01/31/2026 12:32] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1467135564452069447/image.png?ex=69f34bf8&is=69f1fa78&hm=f3f964cd3575e9f01ba9d09ec371a82dfca0628d7585e66fdedf04d69e643d86&
+
+
+[01/31/2026 12:37] liam_77636
+Thanks sir. Seems the market storm spared no one.
+
+
+[01/31/2026 12:37] serialkiller15
+dont call me sir hehe🤖
+
+
+[01/31/2026 12:41] liam_77636
+This is just my way of showing respect.🤣
+
+
+[01/31/2026 12:41] serialkiller15
+no need you can call me king hehe no joke alex/mate what you want
+
+
+[01/31/2026 12:46] liam_77636
+ok,i see
+
+
+[01/31/2026 14:43] divarak
+Day (count)      USDT           USD          Profit %
+---------------  -------------  -----------  ----------
+2026-01-31 (58)  -165.263 USDT  -165.00 USD  -28.84%
+2026-01-30 (83)  -8.946 USDT    -8.93 USD    -1.54%
+2026-01-29 (61)  -132.458 USDT  -132.25 USD  -18.54%
+2026-01-28 (0)   0 USDT         0.00 USD     0.00%
+2026-01-27 (0)   0 USDT         0.00 USD     0.00%
+2026-01-26 (30)  18.826 USDT    18.80 USD    2.71%
+2026-01-25 (73)  -182.677 USDT  -182.39 USD  -20.80%
+😢
+
+
+[02/01/2026 13:15] xf0x0f
+This is the short only version i optimised a week ago
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1467508598069526529/IMG_0378.png?ex=69f355e2&is=69f20462&hm=acf6b2e7927a33f60c7bae29ecc2a4e0596d713e7230c6ef6a7da58ce5f39914&
+
+{Reactions}
+😵
+
+[02/01/2026 13:25] lukovicka
+I wonder what will happen to the strategy if the market changes
+
+
+[02/01/2026 13:26] xf0x0f
+There will be no trades at best
+
+
+[02/04/2026 17:40] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1468662424428089434/IMG_0386.png?ex=69f393f8&is=69f24278&hm=51973e5cb49b3c9e08672d1001962c16e66655a052bd2200c469ac38b37409ee&
+
+
+[02/05/2026 16:32] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1469007867913699489/IMG_0388.png?ex=69f38430&is=69f232b0&hm=e3f9c33a82afffdc702f97c25fcdd5b98b952723ad9b4b3c7d7f96e92993dbdc&
+
+{Reactions}
+🔥 👍 ❤️
+
+[02/05/2026 16:38] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462730919440810122/1469009311475957873/IMG_0390.png?ex=69f38588&is=69f23408&hm=7dca8e199b6893d2ebe2ab953f631188db1054f5a8b070ec254b38383fa18d7e&
+
+{Reactions}
+👍
+
+[02/05/2026 16:46] serialkiller15
+only shorts?
+
+
+[02/05/2026 17:07] serialkiller15
+would be nice if you share your changes here thanks mate!
+
+
+[03/17/2026 16:08] viking046433
+Yes please @xF0x0F
+
+
+==============================================================
+Exported 57 message(s)
+==============================================================

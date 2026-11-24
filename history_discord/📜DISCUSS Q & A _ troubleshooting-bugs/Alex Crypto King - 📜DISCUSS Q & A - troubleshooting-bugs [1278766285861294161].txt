@@ -1,0 +1,700 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 📜DISCUSS Q & A / troubleshooting-bugs
+==============================================================
+
+[09/03/2024 20:59] .7thdragon
+Damn, from time to time bybit has big api issus, i see it is not solved on ccxt or freqtrade yet. The amount stake is set to 1 for a while
+
+
+[09/04/2024 04:55] serialkiller15
+Ok i had never this Situation but will check it I run 4 docker 2 APIs 2 dry 2 live
+
+
+[09/06/2024 10:10] .7thdragon
+bybit lol
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1281557254021316650/image.png?ex=69f32ab3&is=69f1d933&hm=01c2500360cda6488b3b18a4f7f6cb5dd20318fc70e7625ec93e19cc9f546052&
+
+
+[09/06/2024 10:44] serialkiller15
+Why? Had good results with matic sometimes
+
+
+[09/06/2024 10:45] .7thdragon
+dunno, is delisted
+
+
+[09/06/2024 11:15] ximontan
+have same problem this morning...
+
+
+[09/06/2024 11:16] .7thdragon
+yeah ft does not have error handling on this kind of issue for years
+
+
+[09/06/2024 11:20] serialkiller15
+yes i also switched to non static pairlists with volume and other stuff.
+
+
+[09/06/2024 11:21] serialkiller15
+"pairlists": [
+        {
+            "method": "VolumePairList",
+            "number_assets": 20,  // Adjust the number of pairs dynamically
+            "sort_key": "quoteVolume",
+            "refresh_period": 1800,  // Refresh every 30 minutes
+            "filters": [
+                {
+                    "method": "QuoteVolumeFilter",
+                    "min_value": 1000000,  // Minimum daily volume (in quote currency, e.g., USDT)
+                    "refresh_period": 1800  // Refresh every 30 minutes
+                }
+            ]
+        },
+        {
+            "method": "VolatilityFilter",
+            "lookback_days": 7,
+            "min_volatility": 3.0,  // Minimum volatility threshold in percentage
+            "refresh_period": 3600  // Refresh every 60 minutes
+        },
+        {
+            "method": "PairBlacklist",
+            "pairs": [
+                ".*UP/USDT:USDT",
+                ".*DOWN/USDT:USDT",
+                ".*BEAR/USDT:USDT",
+                ".*BULL/USDT:USDT",
+                "DOGE/USDT:USDT"  // Retain specific blacklist items if needed
+            ]
+        }
+    ],
+
+{Reactions}
+👍
+
+[09/06/2024 11:28] .7thdragon
+good values! still, for this strategy needs a constant rate along a week or so, refresh can be higher, but indeed can have this delisting issues
+    {
+      "method": "VolumePairList",
+      "number_assets": 20,
+      "sort_key": "quoteVolume",
+      "min_value": 1000000,
+      "refresh_period": 600000, // seconds, 1w, or 80000 for daily
+      "lookback_days": 7,
+     //"lookback_period": 7,
+    },
+
+{Reactions}
+👍
+
+[09/06/2024 11:31] serialkiller15
+yes thanks
+
+
+[09/06/2024 11:49] andreis9311
+With `VolatilityFilter`  like in your config I have 
+
+`2024-09-06 11:48:07,107 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 0 pairs: []`
+
+😁
+
+
+[09/06/2024 12:24] .7thdragon
+😄 because is             "lookback_days": 7,
+u can use 0.01, 0.03 onwards on min_volatility till it fills 20 pairs
+
+
+[09/14/2024 19:23] laupapp
+someone have this problem ? my hyperopt crash when : 
+`freqtrade hyperopt -c user_data/config-backtest-futures-ai.json --hyperopt-loss SharpeHyperOptLossDaily --spaces buy sell roi stoploss trailing trades --epochs 500 --timerange 20240801-20240901`
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1284595387369390150/image.png?ex=69f3036e&is=69f1b1ee&hm=7aceebb2a2d7418c2f50c80f1b5434f2f8a52248b962394cfd8cad8835efbe88&
+
+
+[09/14/2024 19:26] maxgorbachevskiy
+how many pairs do you have?
+
+
+[09/14/2024 19:31] ximontan
+I have same issue where have no ram available, try set less pairs or set smaller date range
+
+
+[09/14/2024 19:31] ximontan
+or set less parallel jobs
+
+
+[09/14/2024 19:31] maxgorbachevskiy
+It clearly says in the log that it ran out of memory and killed itself
+
+
+[09/14/2024 19:34] laupapp
+110 pairs
+
+
+[09/14/2024 19:34] laupapp
+do you know how ?
+
+
+[09/14/2024 19:35] maxgorbachevskiy
+as you said in another thread, you have a mini desktop pc. Well, 110 pairs is.. a lot.
+
+
+[09/14/2024 19:36] ximontan
+seems it's not mini pc in print screet it have 18 cores
+
+
+[09/14/2024 19:36] .7thdragon
+@Laurent D.  RAM ?
+
+
+[09/14/2024 19:37] ximontan
+freqtrade hyperopt ... **-j 15**
+
+{Reactions}
+👍
+
+[09/14/2024 19:37] laupapp
+with fewer pairs it's ok but it's weird in view of the performances ...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1284598939772784691/image.png?ex=69f306bd&is=69f1b53d&hm=ff6f3286c475a8a8bc747ec6cb61d562dfef0254fea27b51106806adf2c4e307&
+
+
+[09/14/2024 19:37] .7thdragon
+is huge j 15, shoud start with 2 🙂
+
+
+[09/14/2024 19:38] ximontan
+right, just example
+
+
+[09/14/2024 19:38] .7thdragon
+usually crashes from out of memory or too much process 1 of 2 🙂
+
+
+[09/14/2024 20:13] maxgorbachevskiy
+official documentation of freqtrade is awesome, I encourage always check for advice there first
+
+
+[09/14/2024 20:13] maxgorbachevskiy
+https://www.freqtrade.io/en/stable/hyperopt/#out-of-memory-errors
+
+{Embed}
+https://www.freqtrade.io/en/stable/hyperopt/
+Hyperopt - Freqtrade
+Freqtrade is a free and open source crypto trading bot written in Python, designed to support all major exchanges and be controlled via Telegram or builtin Web UI
+
+
+[09/14/2024 20:14] maxgorbachevskiy
+Out of Memory errors¶
+As hyperopt consumes a lot of memory (the complete data needs to be in memory once per parallel backtesting process), it's likely that you run into "out of memory" errors. To combat these, you have multiple options:
+
+Reduce the amount of pairs.
+Reduce the timerange used (--timerange <timerange>).
+Avoid using --timeframe-detail (this loads a lot of additional data into memory).
+Reduce the number of parallel processes (-j <n>).
+Increase the memory of your machine.
+Use --analyze-per-epoch if you're using a lot of parameters with .range functionality.
+
+{Reactions}
+👌
+
+[09/23/2024 15:08] amiralbhar
+hi i'm trying to run backtest of the V9 strategy but i get an error "freqtrade - ERROR - Impossible to load FreqaiModel 'PyTorchLSTMRegressor'. This class does not exist or contains Python code errors." i used docker file as follow :  #
+services:
+  freqtrade:
+    image: freqtradeorg/freqtrade:stable_freqaitorch
+    healthcheck:
+        test: "curl --fail http://localhost:8080 || exit 1"
+        interval: 30s
+        timeout: 10s
+        retries: 5
+    restart: unless-stopped
+    container_name: freqtradeAIio
+    volumes:
+      - "./user_data:/freqtrade/user_data"
+      - "./user_data/freqailstm/torch/BasePyTorchModel.py:/freqtrade/freqtrade/freqai/base_models/BasePyTorchModel.py"
+      - "./user_data/freqailstm/torch/PyTorchLSTMModel.py:/freqtrade/freqtrade/freqai/torch/PyTorchLSTMModel.py"
+      - "./user_data/freqailstm/torch/PyTorchModelTrainer.py:/freqtrade/freqtrade/freqai/torch/PyTorchModelTrainer.py"
+    ports:
+      - "8090:8080"
+
+    command: >
+      backtesting
+      --logfile /freqtrade/user_data/logs/freqtradeAI-Test-Gateio.log
+      --config /freqtrade/user_data/config.json
+      --freqaimodel PyTorchLSTMRegressor
+      -s AlexStrategyFinalV9
+      --timeframe 5m
+      --timerange 20240815-20240915
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1287792667698397265/image.png?ex=69f37062&is=69f21ee2&hm=f7bb118cf7935278a09e8b7fe7f0695aba13b8024578045f2a93d8f87b9281eb&
+
+
+[09/23/2024 16:01] serialkiller15
+where did you have put the regressor file in should be in freqai? 
+    && cp torch/PyTorchLSTMRegressor.py /freqtrade/user_data/freqaimodels/ \?
+
+
+[09/23/2024 16:42] amiralbhar
+ok i forgot this file, now it's working thanks you 🙏
+
+{Reactions}
+👍
+
+[09/23/2024 16:44] serialkiller15
+you are welcome! enjoy
+
+
+[09/24/2024 20:36] .7thdragon
+@everyone  with latest FT with stoploss in memory do you encounter this shitty issue? to be possible to put stoploss after rate?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1288237556961382490/image.png?ex=69f31477&is=69f1c2f7&hm=8646aac38059ba5d1856257d1439adb5d0e09a1a4ef40f152964ba499b527d65&
+
+
+[09/24/2024 20:42] ximontan
+yes, have same, and as I understand it's related with custom_stoploss. Like set it dynamically
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1288239080798421012/image.png?ex=69f315e3&is=69f1c463&hm=a767921c7632c43f16d0bdb88259b23464ab7874dfa7551aa9484b72c96f3e11&
+
+{Reactions}
+😭
+
+[09/24/2024 20:47] .7thdragon
+gee after so many time, i though i am the only one.... then for me is server side forever 🫡
+
+
+[09/26/2024 19:48] andreis9311
+@Alex Crypto King did you close the hafbm channels? I can't see them here...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1288950419392823399/image.png?ex=69f3095f&is=69f1b7df&hm=56d1162ca3a1d9bbfe273576e0451eb947bc8f0fbaa4c62b2a9707d0c75f356c&
+
+
+[09/26/2024 19:49] serialkiller15
+No did only for beta member will add you
+
+{Reactions}
+👍 (2)
+
+[09/26/2024 19:50] serialkiller15
+Done should work now
+
+{Reactions}
+🤟
+
+[09/27/2024 08:09] brewy_024
+Hello @Alex Crypto King i can't see any new added channel in infromation section.
+Can you give me permision to see it?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1289136833954971712/image.png?ex=69f30e3c&is=69f1bcbc&hm=3483aa9b47e62aeddd78daf384d28b33be7f53099c23abdb91a5f1bdd92fc33f&
+
+
+[09/27/2024 09:00] _s9h
+Hi! Same here. I don't think we suppose to have access
+
+
+[09/27/2024 09:08] brewy_024
+That's odd since I'm actively testing strategies even before v6, but ok..
+
+
+[09/27/2024 09:26] serialkiller15
+i fixed it! was not finished yet should be working please try!
+
+
+[09/27/2024 09:26] serialkiller15
+did a restruction on it! reorganized some thinks!
+
+
+[09/27/2024 09:30] brewy_024
+Still same, no permision to view this channels:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1289157216024399872/Screenshot_2024-09-27_at_11.28.48.png?ex=69f32137&is=69f1cfb7&hm=eca3b7b12a09204a03fa252b3bc283b730742709a7e98dd6afe7d4cc80caf207&
+
+
+[09/27/2024 09:31] brewy_024
+and channels for haFbm stategy disapeared
+
+
+[09/27/2024 09:36] serialkiller15
+@brew recheck the INFORMATION Channels should work now
+
+
+[09/27/2024 09:38] brewy_024
+Nope, still no permission
+
+
+[09/27/2024 09:38] brewy_024
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1289159326853763164/image.png?ex=69f3232e&is=69f1d1ae&hm=afab9a55ffb90d3aa2d71ca5ad52efed7329949d07abadeb4e9e3d726f97caaf&
+
+
+[09/27/2024 09:41] anonymuis
+You don't see the HISTORY (yet), but you'll see new messages from now on. But all guides that Alex wrote are not visible yet.
+I have the same issue.
+
+
+[09/27/2024 09:41] anonymuis
+Alex can fix this setting.
+
+
+[09/27/2024 09:45] serialkiller15
+was a long night the are coming my vault!
+
+
+[09/27/2024 09:48] serialkiller15
+@brewy look at the other groups, general is only for incoming members no content in it!
+
+{Reactions}
+👍
+
+[10/15/2024 21:20] hirotakah7
+@Alex Crypto King no trades last 48 hours
+
+
+[10/15/2024 22:29] hirotakah7
+I see signals but no trades
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1295876339546591323/image.png?ex=69f32f23&is=69f1dda3&hm=8747bd7abaf6be80afc19c21429cf8f1eaf070b6d4ae60a6ace96c280f60cf9b&
+
+
+[10/15/2024 22:30] hirotakah7
+"trading_mode": "futures",
+    "margin_mode": "isolated",
+    "max_open_trades": 10,
+    "stake_currency": "USDT",
+    "stake_amount": 100,
+    "tradable_balance_ratio": 0.9,
+    "dry_run_wallet": 1000,
+
+
+[10/17/2024 05:37] daniel2314_xx
+I also have this problem, it can be backtesting , but no trade for it
+
+
+[10/17/2024 06:31] serialkiller15
+@Hiroshi T will check it....
+
+
+[10/17/2024 07:20] muhammadatifh
+Which strategy file you are using ?
+
+
+[10/17/2024 08:17] 0jessica0_
+the one without freqai and with trailing stop
+
+
+[10/17/2024 08:42] hirotakah7
+try the file without the name Hyper.py at the end
+
+{Reactions}
+👍
+
+[10/17/2024 08:42] hirotakah7
+its gonna work
+
+
+[10/17/2024 09:01] 0jessica0_
+nah, without the hyper, it will need to enable the freqai. My server is too bad to run it. I am going to run it without the ai
+
+
+[10/17/2024 09:03] 0jessica0_
+hi, I think I may find out what is going on. Because in the code 
+target_horizon = 1  # Define your prediction horizon here
+dataframe['&-target'] = dataframe['T'].shift(-target_horizon)
+if in the backtest, it will have result. But in live trading, it will always be nan. I am just very curious why it can pass the lookahead analysis.
+
+
+[10/17/2024 09:08] daniel2314_xx
+AlexStrategyFinalV90Hyper_Trail.py this file
+
+
+[10/17/2024 09:11] daniel2314_xx
+First I hyperparameterized it by 1000
+Then I backtested it and got a result that I think is satisfactory
+Finally a 24 hour dry-run test revealed that it did not generate any open trades.
+The logs also didn't report errors and showed it was running, so I'm not sure why
+
+
+[10/17/2024 09:12] daniel2314_xx
+Thanks bro, let me double check it
+
+
+[10/17/2024 10:39] daniel2314_xx
+😀 you are right and Thxxxxxxxx !
+
+
+[10/17/2024 10:43] 0jessica0_
+you enabled the ai right?
+
+
+[10/17/2024 13:00] serialkiller15
+Hey will take a Look in the evening
+
+
+[10/17/2024 14:05] 0jessica0_
+To be honest, I don't know what goes wrong. THere are short signals all over. Average holding period is 11 min. Compare to backtest around 1 hour.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1296474225615572992/image.png?ex=69f361b6&is=69f21036&hm=0af930034d579b5512c6f8e9abb27bbfab075b9e5935a3bab3817e966f66f087&
+
+
+[10/17/2024 14:29] 0jessica0_
+I got signal like this. Similar to the picture above.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1296480151898685472/image.png?ex=69f3673b&is=69f215bb&hm=97be33420b3700543473ab9cfaf36e685cefe731d173e24c195862e63721046e&
+
+
+[10/17/2024 16:19] daniel2314_xx
+yes , i just follow the installation
+
+
+[10/17/2024 16:31] 0jessica0_
+how is your short signal? Is it similar to mine?
+
+
+[10/17/2024 16:38] daniel2314_xx
+No, totally different, actually, I don't know if it's working right now.
+
+
+[10/17/2024 16:39] daniel2314_xx
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1296512973325602826/2024-10-18_003546.png?ex=69f385cc&is=69f2344c&hm=7ec8707bf8d3a816b9ada707f9e26a07299337f014f351a187a218ed3d8612c2&
+
+
+[10/17/2024 16:40] daniel2314_xx
+It only have exit signal, no entry signal and no trade (dry-run for 1h)
+
+
+[10/17/2024 16:42] daniel2314_xx
+so weird
+
+
+[10/17/2024 18:05] serialkiller15
+@Daniel please use the Version i posted the old eine is buggy
+
+
+[10/18/2024 09:25] daniel2314_xx
+Ok, thanks for you kindly remind
+
+
+[07/03/2025 20:46] .7thdragon
+anybody get the following issue in ft >= 2025.5?
+when an exit condition is like this
+        dataframe.loc[
+            (
+                (dataframe['close'] > dataframe['resistance_line']) &
+                (dataframe['rsi'] > self.rsi_short_exit.value) &
+                (dataframe['low'] > dataframe['support_line'])
+            ),
+            ['**exit_short**', 'exit_tag']] = (1, 'resistance_break')
+
+**will exit also longs instead of shorts only**
+(of course no other similar exit reasons exists)
+
+log example:
+2025-07-03 21:55:43 INFO    freqtrade.freqtradebot - Exit for TAO/USDT:USDT detected. Reason: exit_signal Tag: resistance_break
+2025-07-03 21:55:44 INFO    freqtrade.wallets - Wallets synced.
+2025-07-03 21:55:44 INFO    freqtrade.rpc.rpc_manager - Sending rpc message: {'type': exit, 'trade_id': 23, 'exchange': 'Bybit', 'pair': 'TAO/USDT:USDT', 'leverage': 10.0, 'direction': '**Long**', 'gain': 'profit', 'limit': 333.9, 'order_rate': 333.9, 'order_type': 'limit', 'amount': 0.299, 'open_rate': 333.45, 'close_rate': 333.9, 'current_rate': 333.9, 'profit_amount': 0.00989481, 'profit_ratio': 0.00099185, 'buy_tag': 'support_bounce', 'enter_tag': 'support_bounce', 'exit_reason': '**resistance_break**', 'open_date': datetime.datetime(2025, 7, 3, 15, 22, 48, 505607, tzinfo=datetime.timezone.utc), 'close_date': datetime.datetime(2025, 7, 3, 18, 55, 44, 461827, tzinfo=datetime.timezone.utc), 'stake_amount': 9.970155, 'stake_currency': 'USDT', 'base_currency': 'TAO', 'quote_currency': 'USDT', 'fiat_currency': 'USD', 'sub_trade': False, 'cumulative_profit': 0.0, 'final_profit_ratio': None, 'is_final_exit': False}
+
+
+[07/03/2025 21:01] .7thdragon
+if anybody has this problem this can be a fix by using this deny function and having all exit reasons properly renamed starting with exit direction (like **short_resistance_break** if you want to exit a short):
+```
+    def confirm_trade_exit(self, pair: str, trade: Trade, order_type: str, amount: float,
+                           rate: float, time_in_force: str, exit_reason: str,
+                           current_time: datetime, **kwargs) -> bool:
+
+        is_short = (trade.entry_side == "sell")
+        if not is_short and exit_reason.startswith('short'):
+            return False
+                           
+        if is_short and exit_reason.startswith('long'):
+            return False
+                           
+        return True
+```
+
+
+Another better fix is to use a separate variable that looks for the direction of the first order/entry:
+```
+is_short = (trade.entry_side == "sell")
+```
+trade.is_short is rigged on some exchanges as the main FT purpose was on spot markets and still have old inherited logic issues
+
+{Reactions}
+🔥 (2)
+
+[07/03/2025 23:26] geze21
+There is something strange in my logs, because in the configuration I use bybit
+do you have any idea why this is happening?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1390473854429696121/image.png?ex=69f33c70&is=69f1eaf0&hm=467ad5c11140987d95bd488c857bfa42d88036d3b445179078cb2fcc69606497&
+
+
+[07/04/2025 11:31] maxgorbachevskiy
+Please refer to my earlier post in #📘learining-stuff  re ByBit errors
+Link: https://discord.com/channels/1238181199206154373/1289103496007782464/1387833492271796386
+
+
+[07/04/2025 11:39] maxgorbachevskiy
+As for CoinGecko error,  you have too many bots running at the same moment. Fix this by signing up for a CoinGecko API key. Free account with 1 API key is enough for you.
+
+
+[07/04/2025 17:51] .7thdragon
+Nobody these days do a minimal search anymore 😦
+This forum is plenty of valuable info that u not find elsewhere...
+https://discord.com/channels/1238181199206154373/1278766200431841320/1298027829644099686
+
+{Reactions}
+👍
+
+[07/04/2025 18:33] geze21
+thank you! I will check the information in the future
+
+
+[08/30/2025 09:06] darkreaper0756
+Hello everyone, what method do you use to run multiple bots on separate ports?
+
+
+[08/30/2025 09:15] xf0x0f
+Script and cors
+
+
+[08/30/2025 09:24] darkreaper0756
+I mean CCXT, all bots use the same port to communicate with the exchange. Maybe that's also a problem. I notice if I don't have many instances open the results are better.
+
+
+[08/30/2025 09:28] boooooon
+Use proxy
+
+
+[08/30/2025 09:42] viking046433
+I use docker so I just open multiple folders with their own docker compose file then change the port in there in the config. Also give a name for each instance like freqtrade - freatrade1
+
+
+[08/30/2025 13:04] xf0x0f
+Which proxies are you using?
+
+
+[08/30/2025 13:17] boooooon
+webshare
+
+{Reactions}
+👍
+
+[08/30/2025 13:18] xf0x0f
+N1 never heard of, thx
+
+
+[08/30/2025 13:32] boooooon
+why do you need a compose file for each strategy? you can just build an image once and run different containers from it, forwarding ports.
+
+
+[08/30/2025 14:33] viking046433
+Don’t know I feel. Keep better track of it that way
+
+
+[08/30/2025 14:41] xf0x0f
+There are so many ways how you deal best with compose files. Im also the one who build compose for specific cases separately but i think for freqtrade i also want to go in one file, for getting better track in one go of shared ports, running strats and versions and so on. But im not dealing with docker in case of freqtrade. Ive already everything running in LXC on a PVE,… i will dive more into „1 LXC for 1 service“ to automate/optimize more on it in future
+
+{Reactions}
+🚀
+
+[10/20/2025 09:16] brewy_024
+Just to warn @everyone  if you encounter any online service issues today, there is some massive outage with AWS and half  surface web internet is connected through AWS. https://downdetector.com/
+
+{Reactions}
+👍 (2)
+
+[10/27/2025 09:37] 4v1234
+Hello,  it is about live traiding on Bybit
+We need a solution for making direct order on bybit  platform for TP and Tailing Stop using freqtrade.  Eventually only stop loss is placed on bybit.  ( please see pictures ) 
+Why we need this - we have found differences of -0.25 % on FT vs Bybit open orders (live)
+Potential solution - placing all commands for Stop Loss, TP and Trailing Stop on the exchange Bybit as limits  ( eliminating time delay between platform) 
+Actio- we managa to place Stop Loss on bybit  - working
+Broblem - using instructions for creating separate code and files to corespond with Bybit platform for direct activation of Take Profit and Trailing Stop. We can not manage to do it. 
+Surching  - for practical solutions? 
+Thank for the help and time.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1432302078616801290/Screenshot_20251027_104330_Bybit.jpg?ex=69f322c2&is=69f1d142&hm=033e6bb8b0481c6e5e787bb27594e1a79c86c6e2d487cd111ab9ec84df49bb9d&
+https://cdn.discordapp.com/attachments/1278766285861294161/1432302079204134942/Screenshot_20251027_104401_Bybit.jpg?ex=69f322c2&is=69f1d142&hm=aabe68fcba5be3efcc81e4bb3abcc0abeb0a19b53bfbf8c63f9cf1fcf60b921f&
+https://cdn.discordapp.com/attachments/1278766285861294161/1432302079661182996/Screenshot_20251027_104411_Bybit.jpg?ex=69f322c2&is=69f1d142&hm=070cc2fbb53ffde50cca284dcc9bd10e123ca91b665c7c6181aaefd23e939544&
+
+
+[10/27/2025 09:53] 4v1234
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1432306135519596554/4_6050697077032230316.py?ex=69f32689&is=69f1d509&hm=dff4d7232b5ec78e70f4c4ef2cafb49aa525eda3fb431b2b4e07b172e729836d&
+
+
+[10/27/2025 09:53] 4v1234
+Those are the commands
+
+
+[10/27/2025 09:55] 4v1234
+We use and are not working
+
+
+[10/27/2025 10:04] 4v1234
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1432309033381138535/bybit_client.py?ex=69f3293c&is=69f1d7bc&hm=535950c76485ae855d6f9d5813bab0633c474a78bae747dae6719a587227a98e&
+
+
+[10/27/2025 10:08] 4v1234
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1432310064294924370/bybit_tradingstop_mixin.py?ex=69f32a32&is=69f1d8b2&hm=739660e21c30b4e91252e60600e01f871f7562ddabe6db55ad129b555ba209bf&
+
+
+[10/27/2025 10:09] 4v1234
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1278766285861294161/1432310136650731652/bybit_trailing.py?ex=69f32a43&is=69f1d8c3&hm=804689ed62b4e406d6c338ee00974366d67d72bbfde324ed9c92a0f077bd95c6&
+
+
+[10/27/2025 13:22] vasko123.
+What city countryman from?
+
+
+[10/27/2025 14:39] 4v1234
+The same as yours 😀
+
+
+[10/27/2025 15:26] 4v1234
+So the above problem was solved  - needed adjustment of time settings for Bybit live. If some is using this please check the time of the order.
+
+
+[10/27/2025 15:28] 4v1234
+As usual solving one problem pulls another one. 
+After we set all parameters on the exchange, after closers of positions FT still displays the positions as " active" it does not recognize that it is closed or is missing communication from the exchange for termination.
+
+
+[10/27/2025 15:29] 4v1234
+Any suggestions will help 🙂
+
+
+==============================================================
+Exported 113 message(s)
+==============================================================

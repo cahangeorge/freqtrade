@@ -1,0 +1,69 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🎯imperator
+==============================================================
+
+[02/13/2026 14:10] serialkiller15 (pinned)
+@everyone thanks to @xF0x0F good work!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1471871100194652203/1471871198152364299/ImperatorStrategy.py?ex=69f362df&is=69f2115f&hm=54093eacd58e3fabce990070bc5a49f8ca15df9f418dc886238404a07f5f4b0c&
+
+{Reactions}
+🚀 (3)
+
+[02/13/2026 14:11] serialkiller15
+Pinned a message.
+
+
+[02/23/2026 13:17] serialkiller15
+@xF0x0F thanks for your update!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1471871100194652203/1475481587540955321/ImperatorStrategy_V3.py?ex=69f3564f&is=69f204cf&hm=e19591a438d9a293dc945241ba7436f2dc12154e1c7cdbc020ab8caadef2f497&
+
+
+[02/23/2026 22:17] divarak
+Hello, any suggested pairlist?
+
+
+[02/24/2026 06:32] serialkiller15
+"pair_whitelist": [
+    "BTC/USDT:USDT",
+    "ETH/USDT:USDT",
+    "SOL/USDT:USDT",
+    "XRP/USDT:USDT",
+    "BNB/USDT:USDT",
+    "ADA/USDT:USDT",
+    "AVAX/USDT:USDT",
+    "DOT/USDT:USDT",
+    "LINK/USDT:USDT",
+    "TRX/USDT:USDT",
+    "TON/USDT:USDT",
+    "LTC/USDT:USDT",
+    "BCH/USDT:USDT",
+    "ATOM/USDT:USDT",
+    "UNI/USDT:USDT",
+    "NEAR/USDT:USDT",
+    "APT/USDT:USDT",
+    "SUI/USDT:USDT",
+    "ARB/USDT:USDT",
+    "OP/USDT:USDT",
+    "INJ/USDT:USDT",
+    "ICP/USDT:USDT",
+    "FET/USDT:USDT",
+    "RENDER/USDT:USDT",
+    "TIA/USDT:USDT",
+    "SEI/USDT:USDT",
+    "XLM/USDT:USDT",
+    "FIL/USDT:USDT",
+    "HBAR/USDT:USDT",
+    "AAVE/USDT:USDT"
+]
+
+{Reactions}
+🫡
+
+==============================================================
+Exported 5 message(s)
+==============================================================

@@ -1,0 +1,85 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖alex-multibot-dashboard
+==============================================================
+
+[02/20/2026 11:59] serialkiller15
+@PRO-Members and @BASIC-Members 
+The MultiBotDashboard is your command center for running multiple Freqtrade bots like a pro — all in one clean UI. Instead of jumping between terminals, logs and APIs, you get a single place to monitor, compare and manage everything in real time.
+
+✨ What it does
+
+• 🧩 Multi‑Bot Management: See all bots at a glance (status, mode, health)
+• ⚡️ Real‑Time Updates: Live refresh via WebSocket — no stale data
+• 🔍 Auto‑Discovery: Finds bots automatically (Docker + filesystem scanning)
+• 📊 Portfolio Analytics: Aggregated totals (profit, balance, trades, winrate)
+• 🏆 Top & Bottom Performers: Instantly see who’s printing and who’s bleeding
+• 📜 Trade History: Detailed logs with filtering + export (audit & analysis)
+• 🩺 Health Monitoring: Uptime/latency/error awareness so issues don’t hide
+• 🚨 Alerts (optional): Drawdown/status change awareness
+• 🌙 Dark Mode + 📱 Mobile Ready: Looks great on desktop & phone
+
+🏗️ How it’s built (high level)
+
+• Frontend: React + TypeScript + Tailwind + charts
+• Backend: FastAPI (Python) + REST + WebSocket
+• Discovery: Docker scan / filesystem scan / API integration
+• Auth: JWT + roles (admin/operator/readonly)
+
+🎯 Why it matters
+
+• One dashboard for the entire bot fleet
+• Faster decisions, less chaos
+• Better transparency: performance, problems, and progress — all visible
+
+{Reactions}
+🔥 (2)
+
+[02/20/2026 12:00] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474366018808713407/1474375062843822080/image.png?ex=69f34447&is=69f1f2c7&hm=e17a0affa36bbad9392805e19d1b1e9a4c048faa2b9c3b95b87ed5ee9673f420&
+
+
+[02/20/2026 12:00] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474366018808713407/1474375132092043284/image.png?ex=69f34458&is=69f1f2d8&hm=aac03060324ea0df57c1e25291f699094f5dd4db60658cf92689f8cbe5f10498&
+
+
+[02/20/2026 12:00] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474366018808713407/1474375199225806938/image.png?ex=69f34468&is=69f1f2e8&hm=7ecf8082da4eefc51a6571cc6fcc916aa5e8444c05ec1f7a279914f506860fba&
+
+
+[02/20/2026 12:00] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474366018808713407/1474375262689824860/image.png?ex=69f34477&is=69f1f2f7&hm=3cab5304adc632b7bedb1abc2b9919c06c250a3d116182a6d223f0065bdb5b73&
+
+
+[02/20/2026 12:01] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474366018808713407/1474375473763975270/image.png?ex=69f344a9&is=69f1f329&hm=8353a6157209bd5297453b9f702a914fa9e7efa2a31fce671c4f33f4104f948e&
+https://cdn.discordapp.com/attachments/1474366018808713407/1474375474519081103/image.png?ex=69f344a9&is=69f1f329&hm=745fe1b43c4aff652966dfa0d38711f2660e361d73b5511278430428c4746cc6&
+
+
+[02/20/2026 12:04] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1474366018808713407/1474376053689421907/MultibotdashboardV5.rar?ex=69f34533&is=69f1f3b3&hm=ee23930599c0c87b5b320a8c706c2abc7550e6380afd51b1831e04fe07699d0e&
+
+{Reactions}
+🔥 (2) 👍
+
+==============================================================
+Exported 7 message(s)
+==============================================================

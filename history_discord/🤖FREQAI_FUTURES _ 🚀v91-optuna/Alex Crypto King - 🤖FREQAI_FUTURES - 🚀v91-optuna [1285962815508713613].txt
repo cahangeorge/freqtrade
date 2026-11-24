@@ -1,0 +1,268 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖FREQAI_FUTURES / 🚀v91-optuna
+==============================================================
+
+[09/18/2024 13:58] serialkiller15 (pinned)
+Here is another aproach i tried to ....
+Based on Version91 without changes
+I integrated Automated Optuna on it.
+This is just a Test i cann not say if it will be profitable.....
+
+pip install optuna
+There are this Files to use for
+AlexStrategyFinalV911.py                      - Main Script wor Live/Dry RUN
+AlexStrategyFinalV911_Optuna.py     - Optuna Script
+AlexStrategyFinalV911_Backtest.py  - For Backtest!
+best_optuna_params.json                   - json with the Best Optuna Parameters
+optuna_hyperopt_params.json          - json for Optuna Optimizing
+
+For Testrun i used this command (for testing)
+python /freqtrade/user_data/strategies/AlexStrategyFinalV911_Optuna.py
+
+in this file there is an importand line 
+Run the optimization with a defined number of trials (e.g., 100 trials)
+study.optimize(objective, n_trials=100)
+
+
+[09/18/2024 14:09] serialkiller15
+So when everythink is fine you will get somethink like this
+
+
+[09/18/2024 14:09] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285962815508713613/1285966046091542589/image.png?ex=69f362b5&is=69f21135&hm=c4f3af6dee54883512b8825c2366de05cc14defeb9c04738d1d0de3aca4d24a2&
+
+
+[09/18/2024 14:51] serialkiller15
+SO HERE IT COMES......
+
+{Reactions}
+🍻 (6)
+
+[09/18/2024 14:54] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1285962815508713613/1285977179233976330/AlexStrategyFinalV911.py?ex=69f36d13&is=69f21b93&hm=b9cb952c0633cfc93e3fc7e0c05417bb926dba8c8211578dea62a22a8b21ea16&
+https://cdn.discordapp.com/attachments/1285962815508713613/1285977179758399558/AlexStrategyFinalV911_Backtest.py?ex=69f36d13&is=69f21b93&hm=7d7e60dc6fb931f3afcd519d8928ae9e6798928099a13bf00148b01d6c998f33&
+https://cdn.discordapp.com/attachments/1285962815508713613/1285977180358312060/AlexStrategyFinalV911_Optuna.py?ex=69f36d14&is=69f21b94&hm=3761e27955436c07c4289d253765721b8dba9748968dbaf98f2edd3ac55d9a2b&
+https://cdn.discordapp.com/attachments/1285962815508713613/1285977180886667379/best_optuna_params.json?ex=69f36d14&is=69f21b94&hm=1ebe7995f91b95800f5eff50dd06a18ec09c2888f7612b2f0735adc050711519&
+https://cdn.discordapp.com/attachments/1285962815508713613/1285977181582786630/optuna_hyperopt_params.json?ex=69f36d14&is=69f21b94&hm=a69b47feab1116e6b73e8e78bfccd800236440562bee02147b56448cc0d23229&
+
+
+[09/18/2024 14:55] serialkiller15
+Started a thread.
+
+
+[09/18/2024 14:55] serialkiller15
+Pinned a message.
+
+
+[09/18/2024 14:59] serialkiller15
+this is another aproach..... will do some tests,
+Everybody please decide for yourself if its usefulll
+I am tiered doing hyperopt every day....
+next steps here for me
+do test with V9 and other thinks for that.....
+Stay tuned
+
+
+[09/26/2024 15:42] maxgorbachevskiy
+A very dumb question. PYT script runs, trial are generated, new "AlexStrategyFinalV93.json" is generated. 
+But.. what's next? Questions
+
+
+[09/26/2024 15:42] maxgorbachevskiy
+1). how to automatically reload the strategy with the new values every time?
+
+
+[09/26/2024 15:42] maxgorbachevskiy
+2) how often to reload?
+
+
+[09/26/2024 15:43] .7thdragon
+Should have the code inside the dry already that reloads at every populate_indicators the buy_params and stoploss
+
+
+[09/26/2024 15:43] maxgorbachevskiy
+3) I suppose PYT shoud be able run in background mode, otherwise I have to keep a separate terminal window always open?
+
+
+[09/26/2024 15:44] maxgorbachevskiy
+4) is it any necessary to reload that often (lime every minutee)? What's the logic behind optun'ing so often? I miss some understanding ofr the general concept
+
+
+[09/26/2024 15:45] .7thdragon
+you can tune less often than 1h if you want
+
+
+[09/26/2024 15:55] maxgorbachevskiy
+Okaay, I'm getting there. I understand more and more.   Please correct me if I am wrong:
+> Optuna does multiple backtests. I run PYT once, and can leave it forever. But it updates strategy json ONLY in case it finds a better combination of parameters than current json.
+
+
+[09/26/2024 15:57] .7thdragon
+no, writes i thnk every hour the best trial found, do not have any check for existing parameters in dry, do not have sense this
+
+
+[09/26/2024 15:57] maxgorbachevskiy
+A-ha, this is line 467 from your .py filem, correct? And everything is automatic?  I should do a dry-run as usual,  and I don't have to do anything extra?
+
+`self.reload_parameters_from_json()  # Call the function`
+
+
+[09/26/2024 15:58] .7thdragon
+this is the main purpose and a difference than normal hyper
+hyper is doing only trials 
+optuna build a model and suggest parameters
+was better maybe in freqai done but i am not so skilled 😉
+
+
+[09/26/2024 16:01] maxgorbachevskiy
+..and then FreqAI does inferencing, based on these params?
+
+
+[09/26/2024 16:02] maxgorbachevskiy
+these params are always up-to-date, so it means that FreqAI always works with the best and latest params?
+
+
+[09/26/2024 16:02] maxgorbachevskiy
+correct?
+
+
+[09/26/2024 16:02] .7thdragon
+yes the buy_params wx stoploss etc are used in realtime (1h 🙂 )
+no reload
+
+{Reactions}
+🔥
+
+[09/26/2024 16:07] .7thdragon
+btw, not sure if anybody knows that for freqai pairs are read automatically if they are changed in config, the problem is that if a pair is dropped and you have open positions (everybody misuse positions with orders even software providers or exchanges lol) you are screwed, so i also provided a fix
+so practically no need to reload anymore
+
+
+[09/26/2024 16:09] maxgorbachevskiy
+Yep, I remember that. I added this to my library of snippets  and fixes .But we definitely need a private community Github to have this community knoeledge saved and circulater.
+
+
+[09/26/2024 16:10] .7thdragon
+-> @Alex Crypto King should lead 🙂
+
+
+[09/26/2024 16:14] maxgorbachevskiy
+I thnk we can also rely on @priezz  who has a lot of proper experience with git, in case @Alex Crypto King  trusts
+
+{Reactions}
+🤘
+
+[09/26/2024 16:16] maxgorbachevskiy
+we only need to set up the environment & follow a set of common rules (but this discussion is for another thread).
+
+
+[09/26/2024 16:16] serialkiller15
+yes thanks alreade got this inputs, but i am not realy aware on github? maybee how can assists me here, i am really busy with testing, my daily business and other thins! who wants contact me i am a newbie in github sorry ....
+
+
+[09/26/2024 16:17] serialkiller15
+yes i got a conversation with him, but sry i dont have the experience on github now....
+
+
+[09/26/2024 16:17] serialkiller15
+was my first github!
+
+
+[09/26/2024 16:17] maxgorbachevskiy
+@Alex Crypto King  just outsource this task to @priezz  he will arrange everything and explain the rules, I think
+
+
+[09/26/2024 16:17] serialkiller15
+@priezz you are ok with that, what do you need from me to handle this thanks!
+
+
+[09/26/2024 16:17] maxgorbachevskiy
+give permissions, and enjoy the properly set environment
+
+
+[09/26/2024 16:18] serialkiller15
+outsourcing is goood i do that all day hehe yes
+
+
+[09/26/2024 16:18] priezz
+So does it immediately forget of those positions? I think that't expected if you remove a pair from your config. The ideal behaviour would be to remember of a romoved pair until a position is closed. What your fix does?
+
+
+[09/26/2024 16:18] serialkiller15
+@MaxG thanks!
+
+
+[09/26/2024 16:18] maxgorbachevskiy
+Check this thread https://discord.com/channels/1238181199206154373/1284586552760074323
+
+{Reactions}
+👍
+
+[09/26/2024 16:20] .7thdragon
+practically freqai will not download anymore the needed data for opened positions for pairs that are not in whitelist
+
+
+[09/26/2024 16:21] priezz
+As I wrote nothing atm, I'll start with the processes first. Right after I finish with V93 setup to let it run in the background
+
+
+[09/26/2024 16:24] priezz
+That's dumb, but expected.
+
+{Reactions}
+🤣 (2)
+
+[09/26/2024 16:25] serialkiller15
+ok fine thanks @priezz
+
+
+[10/23/2024 19:22] daniel2314_xx
+Hi guys , I have a small question about optuna , can it be placed on docker ? Or can I only use local freqtrade?
+
+
+[10/23/2024 19:25] serialkiller15
+Hi Yes You can run it inside Docker I also run mostly strategies inside Docker
+
+
+[10/23/2024 19:29] daniel2314_xx
+So, how to run optuna in docker? I didn't quite get it. Is it possible that I need to encapsulate the Optuna file into an image? (change docker file)
+
+
+[10/23/2024 19:29] daniel2314_xx
+🥲
+
+
+[10/23/2024 19:31] serialkiller15
+Read the instructions here I am only mobile because of a business Trip but use search function
+
+
+[10/23/2024 19:35] daniel2314_xx
+Okay. Thanks for your patience.
+
+
+[10/23/2024 20:02] serialkiller15
+You are welcome
+
+
+[10/23/2024 20:02] serialkiller15
+https://discord.com/channels/1238181199206154373/1285962815508713613/1285963144816234517
+
+
+[10/23/2024 20:03] serialkiller15
+https://discord.com/channels/1238181199206154373/1289112409415352360
+
+
+[10/23/2024 20:03] serialkiller15
+Have fun on reading
+
+
+==============================================================
+Exported 52 message(s)
+==============================================================

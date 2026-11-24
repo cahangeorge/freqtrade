@@ -1,0 +1,81 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 📊alexsmartmoney_results
+==============================================================
+
+[10/27/2025 12:42] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1432346621022310553/1432348759471296594/image.png?ex=69f34e3c&is=69f1fcbc&hm=d66eda24379fdcb4a05227ae1ec7d32916f37ad79077597b5ad8435f88e7c0b8&
+
+
+[10/28/2025 06:08] bala03
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1432346621022310553/1432611967637524581/606DD074-395D-4946-A9A3-4674CD0B25F1.png?ex=69f39a9d&is=69f2491d&hm=da6bc9e892fca2e380e43859661690a2c5b83fc82d92b0de18b8c515c6ae3369&
+
+
+[10/28/2025 06:40] 4v1234
+Which strategy is this ? When do you see gain and then negative - wright away after entry of position or later in the trade?
+
+
+[10/28/2025 07:46] serialkiller15
+@vasko123 which strategy is this, you are in the wrong channel i think thanks
+
+
+[10/28/2025 07:55] vasko123.
+Sorry. I got confused by the abbreviations and reported in the wrong place - AlexMarketStructurePro
+Different strategies then went negative, as if they were carbon copies. Correct configuration settings are needed. Both Divergence and TGDF_ALEXV6. Only GKD_AdaptiveFisher_MTF_v63c is positive.
+
+
+[10/28/2025 08:37] 4v1234
+Is your observation on live or dry ?
+
+
+[10/28/2025 09:58] xalt8851
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1432346621022310553/1432669908633784350/image.png?ex=69f327d3&is=69f1d653&hm=002e5730a005b7b7f18708fb7103de89b23b74a51ce75bfb87d3b336d350ea4e&
+
+{Reactions}
+🚀
+
+[10/28/2025 10:00] anton652
+Money button
+
+
+[10/28/2025 10:08] serialkiller15
+its an aproach yes but not profitable needs more time to improve, but first lets finish divergence then go true this!
+
+
+[11/06/2025 16:31] xenigami
+15m
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1432346621022310553/1436030264072732772/AlexSmartMoneyAdaptive_1.PNG?ex=69f383e7&is=69f23267&hm=9d0ed753d7ee8cedca7f4c620aeff2a5979a275e2077ceaad09aee7caf87649e&
+https://cdn.discordapp.com/attachments/1432346621022310553/1436030264592699443/AlexSmartMoneyAdaptive_2.PNG?ex=69f383e7&is=69f23267&hm=ec0b93112be14a18a141ad3b10bad944c3a633a3d2a10311d3dd07b60709a590&
+
+
+[12/22/2025 22:48] bigbroseur
+Still running STMV5 added trailing why it's V6,  
+SMTV6_15ml5fs 
+need probably better exit signals and filter
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1432346621022310553/1452794895076036628/image.png?ex=69f3336e&is=69f1e1ee&hm=ae92351863f0b672267c3bafbbb0d9f1f485c1b9d757a235029f27735d5e7e68&
+https://cdn.discordapp.com/attachments/1432346621022310553/1452794895541735444/image.png?ex=69f3336e&is=69f1e1ee&hm=28582516b1993daeb0550016e024883bd1fdc77c27cc5a9b3284ace8219ee00a&
+
+
+[12/22/2025 23:27] bigbroseur
+Trades statistic of STMV6:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1432346621022310553/1452804836952379574/SMTV6.txt?ex=69f33cb0&is=69f1eb30&hm=2e77704c9f9e7ff4ca2898d90c282e942413569f58d654f3dae77ae4286c1102&
+
+
+==============================================================
+Exported 12 message(s)
+==============================================================

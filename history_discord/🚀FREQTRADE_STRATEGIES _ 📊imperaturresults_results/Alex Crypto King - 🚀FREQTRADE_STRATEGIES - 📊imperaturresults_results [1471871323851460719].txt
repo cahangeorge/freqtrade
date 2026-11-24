@@ -1,0 +1,99 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 📊imperaturresults_results
+==============================================================
+
+[02/14/2026 00:12] ywk3926
+ROI: Closed trades
+∙ -105.658 USDT (-1.32%) (-5.28 Σ%)
+∙ -105.609 USD
+ROI: All trades
+∙ -105.788 USDT (-1.29%) (-5.29 Σ%)
+∙ -105.74 USD
+Total Trade Count: 165
+Bot started: 2026-02-13 14:56:21
+First Trade opened: 8 hours ago (2026-02-13 15:51:14)
+Latest Trade opened: 11 minutes ago (2026-02-14 00:00:48)
+Win / Loss: 45 / 116
+Winrate: 27.95%
+Expectancy (Ratio): -0.66 (-0.51)
+Avg. Duration: 0:24:55
+Best Performing: ENS/USDT:USDT: 2.295 USDT (1.15%)
+Trading volume: 81526.956 USDT
+Profit factor: 0.29
+Max Drawdown: 5.28% (105.658 USDT)
+    from 2026-02-13 15:55:54 (0 USDT)
+    to 2026-02-14 00:07:19 (-105.658 USDT)
+Current Drawdown: 5.28% (105.658 USDT)
+    from 2026-02-13 15:55:54 (0 USDT)
+
+
+[02/23/2026 13:17] serialkiller15
+Imperator V3
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1471871323851460719/1475481636354130051/image.png?ex=69f3565b&is=69f204db&hm=14b5887ffdd563d4ed53666d0c681e35e10087bf1dd671baf9f4fda699b4e6c6&
+
+
+[02/23/2026 13:18] serialkiller15
+@xF0x0F the strategie is good but i think we should improve the stoploss /Trailing  a little bit because some signals are good but it needs some time that the signals go into the right direction!
+
+like here
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1471871323851460719/1475481875735646359/image.png?ex=69f35694&is=69f20514&hm=f44a4decf156fc387b7efa0e87cb467ee34fb9a2cc0032edfab665b847c5a184&
+
+
+[02/23/2026 13:58] serialkiller15
+Option1:
+    def custom_stoploss(self, pair: str, trade: Trade, current_time: datetime,
+                        current_rate: float, current_profit: float, **kwargs) -> float:
+        dataframe, _ = self.dp.get_analyzed_dataframe(pair, self.timeframe)
+        if len(dataframe) < 1:
+            return self.stoploss
+
+        atr_pct = dataframe.iloc[-1].get('atr_pct', 2.0) / 100
+        dynamic_sl = min(-0.04, -atr_pct * 2)
+
+        # Breakeven protection - don't lose money once in profit
+        if current_profit > 0.01:  # 1% profit
+            return -0.01  # Stop at breakeven + small buffer
+        
+        # Small profit protection
+        if current_profit > 0.03:  # 3% profit
+            return 0.01   # Lock in 1% minimum
+            
+        # Medium profit trailing
+        if current_profit > 0.06:  # 6% profit
+            return 0.03   # Lock in 3% minimum
+            
+        # Big profit trailing
+        if current_profit > 0.10:  # 10% profit
+            return 0.05   # Lock in 5% minimum
+
+        return max(self.stoploss, dynamic_sl)
+
+
+[02/23/2026 13:59] serialkiller15
+Option2:
+def custom_stoploss(self, pair: str, trade: Trade, current_time: datetime,
+                    current_rate: float, current_profit: float, **kwargs) -> float:
+    # Simple profit floor strategy
+    if current_profit > 0.10:  # 10%+
+        return 0.05   # Lock 5%
+    if current_profit > 0.05:  # 5%+
+        return 0.02   # Lock 2%
+    if current_profit > 0.02:  # 2%+
+        return 0.01   # Lock 1%
+    
+    # Default stoploss
+    return -0.06
+
+
+[02/26/2026 02:08] .oliver6
+massive dropdown for imperator...
+
+
+==============================================================
+Exported 6 message(s)
+==============================================================

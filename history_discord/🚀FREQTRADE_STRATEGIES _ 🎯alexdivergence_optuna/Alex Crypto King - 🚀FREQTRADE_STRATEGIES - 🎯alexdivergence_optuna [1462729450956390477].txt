@@ -1,0 +1,180 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🎯alexdivergence_optuna
+==============================================================
+
+[01/19/2026 08:48] serialkiller15
+📊 AlexDivergence Optuna Strategy 📈
+🔍 Multi-Indicator Divergence Hunter
+Scans 11 technical indicators (RSI, MACD, Stochastic, CCI, MFI, CMF, OBV, AO, UO, ROC, ADX) to catch market reversals before they happen
+⚡ Smart Signal System
+
+15min entries with 1hr confirmation
+3-tier priority signals (Super/HQ/Standard)
+Optimized for 3-15% profit targets
+
+🤖 AI-Powered Optimization
+Optuna hyperparameter tuning delivers unique settings for each coin - no one-size-fits-all approach
+💎 Live Trading Stats
+
+5x leverage on Bybit Futures
+40-120 trading pairs
+Balanced long/short positions
+
+🛡️ Risk Management
+ATR-based stops + intelligent trailing system + BTC correlation filters
+
+
+[01/19/2026 09:00] vasko123.
+Should we expect AlexDivergencev4?
+Or is AlexDivergenceOptunaV1 replacing it?
+
+
+[01/19/2026 09:00] serialkiller15
+working on both......
+
+{Reactions}
+👍
+
+[01/19/2026 09:19] serialkiller15
+The Nice think about the Optuna version is that it makes divergence_coint optimazion on each coin so the signals are mostly better!
+            (dataframe[resample('total_bullish_divergences_count')].shift() >= params['min_bullish_div_count']) &
+
+
+[01/19/2026 09:47] lukovicka
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462729450956390477/1462745364670058496/message.txt?ex=69f32547&is=69f1d3c7&hm=d72deab30ca7de337f03ca90cd17843bcc21341b8c14f14ccd333100a9894eb2&
+
+
+[01/19/2026 09:48] serialkiller15
+check your bot, delete everythink and start from scratch!
+
+
+[01/19/2026 09:48] serialkiller15
+sqlite3.OperationalError: database is locked
+
+{Reactions}
+🤔
+
+[01/19/2026 09:51] serialkiller15
+also delete optuna_studies... will check it i did not get the error
+
+
+[01/19/2026 09:56] serialkiller15
+i see the error let me check it
+
+
+[01/19/2026 09:57] lukovicka
+This is a classic SQLite concurrency issue. The `database is locked` error occurs because SQLite has limited support for concurrent writes, and your background threads are competing for database access.
+Root causes:
+
+Multiple pairs triggering optimization simultaneously via `threading.Thread`
+Each `trial.suggest_*` call writes to the SQLite database
+SQLite's default timeout (5 seconds) is too short for heavy optimization loads
+
+**Solutions (pick one or combine)**:
+
+**Option 1: Quick Fix — SQLite Connection Args + WAL Mode**
+```python
+# In optimize_coin method, modify storage creation:
+storage_path = f"sqlite:///{study_dir}/optuna_{study_name}.db?timeout=60"
+
+# Better: Use RDBStorage with engine_kwargs
+from optuna.storages import RDBStorage
+
+storage = RDBStorage(
+    url=f"sqlite:///{study_dir}/optuna_{study_name}.db",
+    engine_kwargs={
+        "connect_args": {
+            "timeout": 60,
+            "check_same_thread": False
+        },
+        "pool_pre_ping": True,
+    }
+)
+
+# Enable WAL mode (add after study creation)
+import sqlite3
+db_path = f"{study_dir}/optuna_{study_name}.db"
+conn = sqlite3.connect(db_path)
+conn.execute("PRAGMA journal_mode=WAL;")
+conn.close()
+```
+
+**Option 2: Add Optimization Lock (Recommended)**
+Add a global lock to serialize optimizations:
+```python
+class RealOptunaManager:
+    _optimization_lock = threading.Lock()  # Class-level lock
+    
+    def optimize_coin(self, pair: str, objective_func, n_trials: int = 60):
+        # Serialize all optimizations
+        with self._optimization_lock:
+            # ... existing optimization code ...
+```
+
+**Recommendation**: Combine **Option 1 + Option 2**. The lock ensures no parallel SQLite writes, and the connection args provide safety if something slips through.
+
+
+[01/19/2026 09:57] serialkiller15
+thanks got it let me fix it...
+
+{Reactions}
+👍
+
+[01/19/2026 09:57] serialkiller15
+i did not get this error so i was not thinking about it!
+
+
+[01/19/2026 10:06] serialkiller15 (pinned)
+FIXED!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462729450956390477/1462750178858766379/AlexDivergenceOptunaV1.py?ex=69f329c3&is=69f1d843&hm=bfb193b569b8a5c2dff5b714ee9fc4cce12f76c6f67cf60bd987e7a493373da6&
+https://cdn.discordapp.com/attachments/1462729450956390477/1462750179173208191/image.png?ex=69f329c3&is=69f1d843&hm=89ff6ad1b1dc86697ccc28eea4e8e60d5694f657f15028a29b8cd982456ada5c&
+
+{Reactions}
+🔥 (4) 👍 (3)
+
+[01/19/2026 10:07] serialkiller15
+Pinned a message.
+
+
+[01/19/2026 19:41] lukovicka
+@Alex Crypto King I've been looking at the new versions of the ABS and Divergence and am testing them in dry-run - they look very promisable. Have you considered making the stop-loss dynamic, based on some indicators, like ATR, rather than a static 15%?
+
+
+[01/19/2026 19:43] serialkiller15
+Not at the moment ml exits doing good at the moment but let run the latest version for some days...
+
+{Reactions}
+💯
+
+[01/25/2026 14:17] kot7979
+goaway @themarkx_  spammer
+
+
+[01/25/2026 14:18] raul0909
+@Alex Crypto King
+
+
+[01/30/2026 03:02] xf0x0f
+removed longs, set stoplos to -5%, activated trailing stop, set class  _Divergence_Optuna to Alex_Divergence_Optuna
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1462729450956390477/1466629501252272190/Bildschirmfoto_2026-01-30_um_03.47.41.png?ex=69f36ee9&is=69f21d69&hm=8ce18dfa47cd224ba1dce25936b9bfe18ac25be442bae0c46e938ee4bf5bd789&
+
+
+[01/30/2026 08:09] .oliver6
+removed longs? you mean short only?
+
+
+[01/30/2026 08:49] xf0x0f
+correct,... longs made to much loss in short time
+
+
+==============================================================
+Exported 21 message(s)
+==============================================================

@@ -1,0 +1,440 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🤖FREQAI_FUTURES / 📰news-freqai
+==============================================================
+
+[09/25/2024 17:20] serialkiller15
+Hey @everyone i have finished V90 with old Targets with Optuna, who whants test #🚀v90-optuna
+
+{Reactions}
+👍 (3)
+
+[09/25/2024 17:21] distramed
+hey @Alex Crypto King , is it a spot or futures strategy ?
+
+
+[09/25/2024 17:22] serialkiller15
+futures mate
+
+
+[09/25/2024 17:22] serialkiller15
+i mostly only do futures
+
+
+[09/25/2024 17:22] serialkiller15
+but i can make a spot on it!
+
+
+[09/25/2024 17:22] serialkiller15
+no problem
+
+
+[09/25/2024 17:23] bigbroseur
+Spot for me in EU futures is not allowed for the moment
+
+{Reactions}
+👍 ✅
+
+[09/25/2024 17:23] serialkiller15
+so that why i prefer futures
+
+
+[09/25/2024 17:23] distramed
+I can hyperopt/backtest spot
+
+
+[09/25/2024 17:24] serialkiller15
+have to modify for spot
+
+
+[09/25/2024 17:24] bigbroseur
+I can hyper/backtest and dry in spot
+
+
+[09/25/2024 17:24] serialkiller15
+ok ok ok ok will make a spot version of it
+
+{Reactions}
+🎉 (2)
+
+[09/25/2024 17:25] bigbroseur
+😉 up 2 u
+
+
+[09/25/2024 17:25] distramed
+dry too
+
+
+[09/25/2024 17:25] serialkiller15
+time is only the problem ....
+
+
+[09/25/2024 17:26] distramed
+Thanks Alex. I am still learning, maybe at some point I can help converting futures to spot
+
+
+[09/25/2024 17:27] bigbroseur
+Short false is not sufficient
+
+
+[09/25/2024 17:35] bigbroseur
+It's optuna V90 not v91  u are interested for the moment?
+
+
+[09/25/2024 17:35] bigbroseur
+Or both?
+
+
+[09/25/2024 17:39] serialkiller15
+V90 is not V91 because V90 uses the old Targets its another aproach, between we will release V93 with amazing, but its still on test!
+
+{Reactions}
+👍
+
+[09/25/2024 17:44] chryses4371
+Spot also would be great, if possible, in my country futures is possible for almost all exchanges
+
+{Reactions}
+😂
+
+[09/25/2024 17:50] serialkiller15
+ok ok ok ok will do on spot.......
+
+
+[09/25/2024 17:51] serialkiller15
+@😇 we made V93 its based on V91 with the new targets, 
+but i also did V90 Optuna with the old targets thats it!
+
+
+[09/25/2024 17:52] serialkiller15
+thats V90 results on dryrun
+
+
+[09/25/2024 17:53] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1287789098639167558/1288558895668793354/image.png?ex=69f396fc&is=69f2457c&hm=a397386aa07a8008e8fa73fd28f4b18a17a03785fd085ed63d9e2f69148f302d&
+
+{Reactions}
+🤟
+
+[09/25/2024 22:44] sera131
+@everyone 
+
+I will be posting 6.6 gigs of trading / learn how to trade material. USE IT as its a 3k usd paid course. I'm no saying is the best but might help coders and programmers deal with some things or come up with new ideas. I need to figure out a way to share it with you but just so you know. It's coming.
+
+{Reactions}
+🤗 (5) 👏 (2)
+
+[09/25/2024 23:45] sera131
+damn, solved the storage issue, there is another issue, they are in my native language lol, I forgot about it. I'll share anyway. maybe someone has a solution to translate it with AI or something. Apologies if I got anyone hyped up 😦
+
+
+[09/25/2024 23:45] sera131
+https://drive.google.com/file/d/1DD1iR7rqvudHn2v4AIUQUIN2adtmg6V5/view?usp=drive_link
+
+
+[09/26/2024 00:12] sera131
+If i have time i'll translate them
+
+
+[09/26/2024 03:20] serialkiller15
+No you dint need that let AI fi it I have access to good Accounts thanks for sharing
+
+{Reactions}
+👍
+
+[09/26/2024 11:34] anonymuis
+Thanks! Downloading now.
+
+
+[09/26/2024 19:17] ch1ck3n_t4c0s
+The teachings of JM Hurst
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1287789098639167558/1288942455592325120/ProfitMagic.pdf?ex=69f301f4&is=69f1b074&hm=082cd803b34cf0c8deb80c4a5a1fc98eaa37555a928fcd7fde726150f0f288d2&
+
+{Reactions}
+🎓 (3) 👍
+
+[09/26/2024 19:53] .7thdragon
+🙂 `import numpy as np
+
+def calculate_eo(A, omega, t, omega_n, n):
+    # First term: A * cos(omega * t)
+    term_1 = A * np.cos(omega * t)
+    
+    # Second term: Summation of 2A * cos(omega * t) * cos(k * omega_n) for k in the range 1 to (n-1)/2
+    summation_term = 0
+    for k in range(1, (n - 1) // 2 + 1):
+        summation_term += np.cos(k * omega_n)
+    
+    # Multiply the summation by 2A * cos(omega * t)
+    term_2 = 2 * A * np.cos(omega * t) * summation_term
+    
+    # Total expression
+    eo = (1 / n) * (term_1 + term_2)
+    
+    return eo
+
+def calculate_f(omega_n, n):
+    # Initialize f to 0
+    f = 0
+    
+    # Compute the summation of cosines
+    for k in range(1, (n - 1) // 2 + 1):
+        f += np.cos(k * omega_n)
+    
+    return f
+`
+
+{Reactions}
+🤔
+
+[09/26/2024 20:01] schtk
+How do you guys improve a strategy ? Do you code the indicators, put them in dry run and wait until they fail to add some protection ? Would it be possible to look at previous bearish period and big dips and try your indicators on these worst case scenario ? Is this possible with frequi or do you guys use trading view ?
+
+
+[09/26/2024 20:02] schtk
+Basically my question is. What is the most straightforward steps to create your strategy from scratch and to verify if it is working
+
+
+[09/26/2024 20:07] ch1ck3n_t4c0s
+What is this sir?
+
+
+[09/26/2024 20:10] ch1ck3n_t4c0s
+Well that's kinda. Broad question... 
+
+1. The plan i.e. goals of the strategy. Swings, leverage scalps, etc...
+2. Timeframe to execute said plan on.
+3. Research. What indicators, protections, profit targets will meet this goal.
+
+
+[09/26/2024 20:10] .7thdragon
+fouling around with frequency response 🙂
+
+{Reactions}
+💯
+
+[09/26/2024 20:10] ch1ck3n_t4c0s
+I think I may need to put a lower frequency limit on the perform_ftt
+
+
+[09/26/2024 20:10] schtk
+Yes I know…
+
+
+[09/26/2024 20:21] .7thdragon
+i think window_size = IntParameter(250, 500, default=275, space='buy', optimize=True) should not be generic, needs a computed value or a value specific for each pair/tf
+
+
+[09/27/2024 02:07] ch1ck3n_t4c0s
+The ftt does that on the fly... this is just the filter upper limit.
+
+
+[09/27/2024 09:25] serialkiller15
+@everyone because of many support we have to handled, we closed the Beta Testing Group for and is available to max 20 Users, sry but to moch support to do in it, i also reorganized some stuff here! please use the #🐳installation and other groups i made!
+
+{Reactions}
+👍 (2)
+
+[09/27/2024 10:18] _s9h
+One question, how do we access the #😎general channel and others under the information section?
+
+
+[09/27/2024 10:19] serialkiller15
+all others work general are only the new members in it! please try
+
+
+[09/27/2024 10:23] _s9h
+Ok, thanks. Others seem to work but #😎general
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1287789098639167558/1289170451985076266/Screenshot_2024-09-27-13-20-01-79_572064f74bd5f9fa804b05334aa4f912.jpg?ex=69f32d8b&is=69f1dc0b&hm=444ded516611746483e69d52406eb9b4ed5b8de9d59c6d77543637134e9ecd62&
+
+
+[09/27/2024 10:24] serialkiller15
+recheck
+
+{Reactions}
+👍
+
+[09/27/2024 10:28] _s9h
+Now it works. Anyways, I thought it was used for general discussion or something. Thanks!
+
+
+[09/27/2024 13:26] .7thdragon
+news-freqtrade is also locked
+
+
+[09/27/2024 13:42] serialkiller15
+Done
+
+
+[09/27/2024 13:47] distramed
+I still have issue with permiisson 😦
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1287789098639167558/1289221965818892351/Screenshot_2024-09-27_at_15.46.57.png?ex=69f35d85&is=69f20c05&hm=dd9ce4cf4737806bd1dcb73897f8294bc69f94481515aa8021c9ded312281022&
+
+
+[09/27/2024 14:21] distramed
+I just checked again, and I have access now
+
+
+[10/01/2024 19:52] serialkiller15
+Hey together was busy the past days and on some business trips thanks for your ideas i got need to handle them and adjust some thinks mostly bullish or bearish market situations freqai cannot handle it good.. But stay on we are on it...
+
+{Reactions}
+❤️ (2) 👍
+
+[10/02/2024 16:18] serialkiller15
+Hey @Ch1cK3N_t4c0s has give good impacts on my V90, i also was rethinking and did paralell adjustments... stay tuned to early to post hit but its working gut, its on spot now after tests i will make an future strategy of it, looks realy promising!
+
+{Reactions}
+🔥 (5) ❤️ (3)
+
+[10/02/2024 16:19] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1287789098639167558/1291071957659291689/image.png?ex=69f380f5&is=69f22f75&hm=d238171a024858e2643f945b522695d1eab2a23263ce24a820e2fd071b245dd3&
+
+{Reactions}
+❤️ (3)
+
+[10/02/2024 18:58] ch1ck3n_t4c0s
+I will try and do some more filtering on entries.
+
+
+[10/02/2024 19:16] serialkiller15
+You made an amazing Job let me finish the Rest of it and then will post have to handle the entrys... But will fix them
+
+{Reactions}
+🔥
+
+[10/02/2024 21:35] distramed
+Hey @Alex Crypto King it look promising 🎉 Will we have the spot version too ? 😅
+
+
+[10/03/2024 03:40] serialkiller15
+Yes we will first finish the Spot Version the Screenshot is from Spot and than make for Futures
+
+{Reactions}
+❤️
+
+[10/03/2024 10:18] serialkiller15
+some insights of V94 - i am on it on OPTUNA
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1287789098639167558/1291343655206125618/image.png?ex=69f32c7f&is=69f1daff&hm=d427e0c3ba8d549aa9d1e47322d5e1177242e8ee20fa3ed0cc6bd946a4dc5c15&
+https://cdn.discordapp.com/attachments/1287789098639167558/1291343655436685323/image.png?ex=69f32c7f&is=69f1daff&hm=38272aa3b6d4afc41aad2563dfcf9a436317a4faa68afacb7691ea767a41799f&
+
+{Reactions}
+❤️ 🤘 (2)
+
+[10/03/2024 10:22] serialkiller15
+OPTUNA doing good, the mostly problems where the decimal settings so the range was toooooo large to handle it!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1287789098639167558/1291344685863800872/image.png?ex=69f32d75&is=69f1dbf5&hm=84c55adc889c45deac538e717a81175c9f609f572cdaba3c449dcb17005529dc&
+
+
+[10/03/2024 12:24] giovannimauro
+@Alex Crypto King IDK if you are talking about that, but to limit decimals, add this into the HyperParameters
+
+
+The numer reflect simply the number of numbers after comma.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1287789098639167558/1291375401242857523/image.png?ex=69f34a10&is=69f1f890&hm=d04c69e4412f1cf9c50a750cbe4d1701e632d2360e17356762ddf4a786f7ee67&
+
+
+[10/03/2024 12:30] serialkiller15
+thanks mate, i know that yes thats what i did!!!
+
+
+[10/03/2024 12:31] serialkiller15
+the best values i get with 2-decimals on the v94 version, so its fine, will also test it with 1-decimals!!
+
+
+[10/03/2024 12:32] giovannimauro
+I suggest 3 😄
+
+
+[10/03/2024 12:33] giovannimauro
+even better than 4895785737828 😄
+
+
+[10/03/2024 12:35] .7thdragon
+this is not good, value does not reflect the output of the test, is 0
+should be 300 or around that
+
+
+[10/03/2024 12:36] .7thdragon
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1287789098639167558/1291378276635377704/image.png?ex=69f34cbd&is=69f1fb3d&hm=d8c06a5bf265aff74e0446e787d49ac16f154755fd655f4779056eb1bff9c4c6&
+
+
+[10/03/2024 12:59] serialkiller15
+its on testing! will fix that thanks for your input!
+
+
+[10/03/2024 16:06] ch1ck3n_t4c0s
+Yeah narrow those down to like 3 decimals until you get a general range they are in.
+
+
+[10/03/2024 16:07] ch1ck3n_t4c0s
+Then narrow the search window and tack on another decimal.
+
+
+[10/03/2024 16:10] serialkiller15
+Already did that it's running only have to fix Optuna but tomorrow is also a day
+
+
+[10/10/2024 18:44] xokaidos
+is it possible to use ChatGPT in freqtrade or similar API (anthropic for example)?
+
+
+[10/10/2024 18:44] xokaidos
+And did anyone try that?
+
+
+[10/10/2024 21:41] bigbroseur
+didn't try but certainmy possible through FT API and/or FT webhook...
+
+
+[10/10/2024 21:50] ._.emilio._.
+I am trying to build up a rl Modell using everything we got available
+
+
+[10/10/2024 22:20] bigbroseur
+is it a question? what do U mean by using everything?
+
+
+[10/19/2024 12:45] serialkiller15
+@everyone because of some requests, and questions i added a description that compares the Strategies V90, V91 and V93Optuna.....
+Take a look at #🚀strategie-descriptions
+
+{Reactions}
+👍 (3) 🔥
+
+[08/28/2025 13:09] xaviertoor
+https://medium.com/data-science-collective/how-to-give-your-rtx-gpu-nearly-infinite-memory-for-llm-inference-de2c57af1e82
+
+{Embed}
+https://medium.com/data-science-collective/how-to-give-your-rtx-gpu-nearly-infinite-memory-for-llm-inference-de2c57af1e82
+How to Give Your RTX GPU Nearly Infinite Memory for LLM Inference
+Network-Attached KV Cache for Long-Context, Multi-Turn Workloads
+https://images-ext-1.discordapp.net/external/ypVVVYEpTKq7g5VTQ71bNzHslQuuNFW3Fu1a_0lDx1Q/https/miro.medium.com/v2/resize%3Afit%3A1200/1%2ALNzY5QBkm4iLx7jEpmO3lg.png
+
+{Reactions}
+👍 (2)
+
+==============================================================
+Exported 79 message(s)
+==============================================================

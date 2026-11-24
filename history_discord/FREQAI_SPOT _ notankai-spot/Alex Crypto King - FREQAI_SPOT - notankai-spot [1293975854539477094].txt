@@ -1,0 +1,645 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: FREQAI_SPOT / notankai-spot
+==============================================================
+
+[10/10/2024 16:38] serialkiller15
+It's a very safe strategy. I've been using it for a week now, and so far, the winrate has been 100%. With a stake amount of $100 and 10 max open trades, it has executed over 50 orders. Definitely worth checking out!
+
+
+[10/10/2024 16:39] xokaidos
+Where do we find out more about it?
+
+
+[10/10/2024 16:39] xokaidos
+GitHub maybe?
+
+
+[10/10/2024 16:40] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1293976442958254217/NOTankAi_15.py?ex=69f385f8&is=69f23478&hm=3b71a54274127518fce22b043c22fc92b789cb2894923c358ee09dd702bdc12b&
+
+{Reactions}
+👍
+
+[10/10/2024 16:40] serialkiller15
+It's here
+
+
+[10/10/2024 16:40] animeshbarai2006
+can this strategy be use for futures or spot?
+
+
+[10/10/2024 16:41] serialkiller15
+@xok here it is had no time
+
+
+[10/10/2024 16:41] serialkiller15
+As you are in the Spot channel it's in spot
+
+{Reactions}
+👍 (2)
+
+[10/10/2024 16:42] xokaidos
+I will take a shot and see how it goes
+
+
+[10/10/2024 17:11] serialkiller15
+Thanks please share results for it
+
+
+[10/10/2024 17:13] xokaidos
+I will
+
+
+[10/10/2024 17:13] serialkiller15
+Thanks mate and welcome here
+
+
+[10/10/2024 17:14] xokaidos
+Thank you too for the opportunity😇
+
+
+[10/10/2024 17:16] serialkiller15
+We are free here and that will be always so and everybody can learn from others shared results i could not handle that alone anymore so this was my idea to build it.. Enjoy... I also learned many thinks from member here...
+
+{Reactions}
+👍 (2)
+
+[10/10/2024 17:19] xokaidos
+We stop learning when we stop breathing
+
+
+[10/10/2024 17:19] xokaidos
+😇
+
+
+[10/10/2024 17:20] serialkiller15
+Absolute mate
+
+
+[10/10/2024 17:21] branly76
+For this, next day is our most important day in life
+
+{Reactions}
+👍 ❤️ (2)
+
+[10/10/2024 17:22] xokaidos
+I could not clearly understand what you mean to be honest
+
+
+[10/10/2024 17:23] .7thdragon
+some do 🙂
+
+
+[10/10/2024 17:23] branly76
+Every day, next day is the most important day. It means then you are still alive
+
+{Reactions}
+👍
+
+[10/10/2024 17:25] xokaidos
+That is great but I am talking about myself and not for "some"  😇
+
+{Reactions}
+🍻
+
+[10/10/2024 20:25] cheluxe
+Today was crazy
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1294033193938190357/Captura_desde_2024-10-10_22-24-55.png?ex=69f31213&is=69f1c093&hm=473a0835a6bad64c76c4018192118e2fcc2b1f30725bdb13d0f8dc8fa4e81594&
+
+
+[10/10/2024 20:27] cheluxe
+I lost the first three days because I accidentally deleted the SQLite file 🙃
+
+
+[10/11/2024 09:16] 491030360
+freqtrade download-data -c user_data/config_no_tank.json --days 60 --timeframe 5m 15m 8h --erase
+
+freqtrade hyperopt --config user_data/config_no_tank.json --hyperopt-loss ProfitDrawDownHyperOptLoss --spaces buy roi stoploss --timeframe 15m --timeframe-detail 5m --timerange 20240812-20240912 --epochs 500 
+freqtrade backtesting -c user_data/config_no_tank.json --cache none --timeframe 15m --timeframe-detail 5m --breakdown day week month --timerange 20240910-20241010
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1294227215634137140/image.png?ex=69f31e05&is=69f1cc85&hm=28107d1ccd4f369c6a22bbf4009ff0e16f2d807c6b85e327ea02ba9214b7f1a1&
+https://cdn.discordapp.com/attachments/1293975854539477094/1294227216242053130/image.png?ex=69f31e05&is=69f1cc85&hm=9f61db81367d93d56295119848f34e20c3a3d8c945fa0b3e5c1a2c1a60fe09a8&
+
+
+[10/11/2024 09:17] cheluxe
+Wow, thank you so much. That's a lot of information.
+
+
+[10/11/2024 09:20] 491030360
+timeframe is 15m,append --timeframe-detail 5m to backtesting command.It looks pretty good. I'm using --timeframe-detail 1m when I have time
+
+
+[10/11/2024 09:20] serialkiller15
+Adapted Version from @ByteWizard I removed "custom_stake_amount" and "adjust_trade_position"。Perhaps we can keep it intact
+
+
+[10/11/2024 09:20] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1294228165186818100/NOTankAi_15_V2.py?ex=69f31ee8&is=69f1cd68&hm=187e747e1495778e42780b48bd0f603ed17a1db8d872016441f038e9a6e6c36f&
+
+
+[10/11/2024 09:23] cheluxe
+I think this is not the correct file
+
+
+[10/11/2024 09:24] .7thdragon
+my mod version (spot/futures), "freqaimodel": "ReinforcementLearner", not tested, needs power
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1294229129478144063/NOTankAi_15.py?ex=69f31fce&is=69f1ce4e&hm=878b9d0dd431e9a87ea655e4207a632f01670ec24ea72f8dc43456a50878d5d6&
+
+{Reactions}
+🤘 🔥
+
+[10/11/2024 09:26] .7thdragon
+and settings, minimal for low gpu
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1294229666898509824/freqai.json?ex=69f3204e&is=69f1cece&hm=65b07f6a162f4cc77403d104e6862bbfd5c03391126665b879815830bc023110&
+
+
+[10/11/2024 09:27] giovannimauro
+I don't have followed this tread, but I want to just inform you that TankAI will give you ALLWAYS good profit in backtest, due to the nature of his extrema indicator. 
+In backtest it look forward in the history to bring the direction change exactly. 
+
+And as you can see in dryrun, most signal will disappear if the market don't follow the prevision. 
+
+Anyway, I don't know if you make some changes from the original one. 
+The one I tested some month ago have this lookahead bias problem
+
+{Reactions}
+👍 (2)
+
+[10/11/2024 09:28] ximontan
+argrelextrema is lookahead and it's redudant hyperopt it...
+
+{Reactions}
+👍
+
+[10/11/2024 09:28] giovannimauro
+right
+
+
+[10/11/2024 09:28] 491030360
+Sorry, I just remove "custom_stake_amount"
+
+
+[10/11/2024 09:30] cheluxe
+oh, so you leave the Adjust_trade_position function?
+
+
+[10/11/2024 09:30] .7thdragon
+thats why hope AI add some reverse bias 🙂
+
+{Reactions}
+👍
+
+[10/11/2024 09:30] 491030360
+y
+
+{Reactions}
+👍
+
+[10/11/2024 09:34] xokaidos
+I have resources to run dozens of strategies at the same time...
+
+
+[10/11/2024 09:35] xokaidos
+I'd suggest to send me strats and confs to test and I will put them in...
+
+
+[10/11/2024 09:35] cheluxe
+I have a question about the Reinforcement Learner models in FreqAI. Do we have to customize the calculate reward function? Because I've heard that the function that comes by default in Freqtrade is just an example and doesn't work properly. Im starting now with FreaAi 🙃
+
+
+[10/11/2024 09:35] xokaidos
+I will also think about how to give the reports to all of you to see results...
+
+
+[10/11/2024 09:39] 491030360
+My suggestion is to first find a money-making strategy to run, and then study reinforcement learning. I have wasted a lot of time on reinforcement learning without any progress; maybe I'm just too dumb😫
+
+
+[10/11/2024 09:43] .7thdragon
+yes, you need to analyze it a bit, but you do not have much to tune
+
+
+[10/11/2024 09:46] cheluxe
+Yes, you are right, first is to find a profitable strategy. This is my second month trying to understand ML and RL models without any results, i think we both are xD
+
+
+[10/11/2024 09:46] cheluxe
+The problem is that I need to understand what I'm doing first hahaha
+
+{Reactions}
+👍
+
+[10/11/2024 11:56] ximontan
+for RL we need somehow avoid use &-extrema and use &-action-s (1,2,3,4).
+I'm struggle with this b/c main target of strategy predict &-extrema, and if we use it argrelextrema it would be bias,
+do you have some ideas about this?
+
+
+[10/11/2024 12:02] cheluxe
+Do you use an special RL model file for testing? Or is the default ok?
+
+
+[10/11/2024 12:04] cheluxe
+I got this results with XGBoostRegressor
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1294269381878087742/Captura_desde_2024-10-11_14-03-36.png?ex=69f3454b&is=69f1f3cb&hm=dde740371eb92a94a02bc5cff18d42e3b3339dd796ef32f9bd5c8544d3c105d5&
+
+
+[10/11/2024 12:04] ximontan
+Look good,
+Now figure out with default, but long time ago use A2C and will try use it
+
+
+[10/11/2024 12:06] cheluxe
+Those results looks almost as my dry runs without freqai, more realistics than backtests with the default configuration.
+
+
+[10/11/2024 12:10] ximontan
+it's for bull market, if it would be bear it would be big loss (99%) or liqudation, that way I think AI is here...
+and I agree with you that I have same result AI and without)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1294270830158807051/image.png?ex=69f346a4&is=69f1f524&hm=42a52933e31887c0b374c1b64eb5fe0b834c8eff6ebb4934805e46a08e659b63&
+
+
+[10/11/2024 12:18] xokaidos
+Have you used GeneTrader optimization? https://github.com/imsatoshi/GeneTrader?tab=readme-ov-file
+
+{Embed}
+https://github.com/imsatoshi/GeneTrader?tab=readme-ov-file
+GitHub - imsatoshi/GeneTrader: Genetic Algorithm Optimization for T...
+Genetic Algorithm Optimization for Trading Strategies - imsatoshi/GeneTrader
+https://images-ext-1.discordapp.net/external/5r6Bkgg6AZ1AIDSzjzNGmn9Flpf98lnJW1GkXvTEqsc/https/opengraph.githubassets.com/00da43fcac7e7a7cf3a6c60f1dfcabba301b94ded913f831700fc69d8a6f5394/imsatoshi/GeneTrader
+
+
+[10/11/2024 12:22] cheluxe
+So do you think this strategy would fail in a bear market as it is set up right now?
+
+
+[10/11/2024 12:23] ximontan
+with stpoloss -0.99 yes, loos everything
+
+
+[10/11/2024 12:23] cheluxe
+😨
+
+
+[10/11/2024 12:24] cheluxe
+But you mean with futures, right? Not spot
+
+
+[10/11/2024 12:25] ximontan
+we need some how set stoploss like 0.3 or so, and play with this params in hyperopt 
+futures failed earlier, spot not so earlier
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1294274584744431670/image.png?ex=69f34a23&is=69f1f8a3&hm=615ad7752edeecd10b9ab9a5e74c7d31ea00acee6b3d158cb58f5b2115bc6a73&
+
+
+[10/11/2024 12:25] ximontan
+this is default futures
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1294274797789904997/image.png?ex=69f34a56&is=69f1f8d6&hm=49437e31d0db76f675315ac47a8a8afbd3f883f2ff2ab8c5cca7c1d4671cb67a&
+
+
+[10/11/2024 12:26] cheluxe
+Yep, i got similar results with my dry run in futures
+
+
+[10/11/2024 12:27] cheluxe
+Did you have short activate? or only long?
+
+
+[10/11/2024 12:28] ximontan
+now only long spot
+
+
+[10/11/2024 12:29] cheluxe
+I mean in the dry run of this picture
+
+
+[10/11/2024 12:30] ximontan
+only longs too
+
+
+[10/11/2024 12:32] cheluxe
+Shit, i almost put that strategy in live, with futures only long the other day ... Thanks, European Union restrictions 🙏 🤣
+
+{Reactions}
+😀
+
+[10/11/2024 12:33] cheluxe
+I had only profit during 1 week and a half in dry run, almost 500$ profit with just 300$ initial amount
+
+
+[10/11/2024 12:34] cheluxe
+It trickt my mind hahaha
+
+
+[10/11/2024 12:34] ximontan
+))) 1 week it's not long period, I want dry at least 2 mth and then live...
+
+
+[10/11/2024 12:34] cheluxe
+Lol
+
+
+[10/11/2024 12:36] cheluxe
+I will take it into account, thanks haha
+
+
+[10/11/2024 14:54] ammart90
+@Alex Crypto King i tested for live for more than a week, over 116 win trade with 0% profit
+
+
+[10/11/2024 14:54] ammart90
+This is another dry
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1294312239813365825/image.png?ex=69f36d35&is=69f21bb5&hm=caf3a7bcefda6d06749fd2d7cf712b1e7c591f9e386d1eec3b68671ae7bcbd67&
+
+
+[10/11/2024 15:03] serialkiller15
+Ok thanks for sharing
+
+
+[10/11/2024 17:27] .7thdragon
+Action should be a confirrmation of argrelextrema
+
+
+[10/12/2024 17:46] damian_ox9
+@Chelu Hi, I want to test your strats, can you share the last modify of your strats
+
+
+[10/12/2024 20:12] ch1ck3n_t4c0s
+Angel extrema repaints bad... I've spent the better part of a year trying to tame it.
+
+
+[10/12/2024 21:18] bigbroseur
+extema is extremely too wild...
+
+
+[10/12/2024 21:18] serialkiller15
+Absolute.... To much
+
+
+[10/13/2024 10:58] cheluxe
+I wish it was mine haha
+
+{Reactions}
+😆
+
+[10/13/2024 10:58] cheluxe
+The last version is already uploaded in this channel
+
+{Reactions}
+🤩
+
+[10/24/2024 08:10] branly76
+NOTankAi_15, spot. Result over 14 days.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1298921440392908871/image.png?ex=69f30e5c&is=69f1bcdc&hm=840f2ca0f076b658f75f6ed0a3b1a948f8225c760294ddf845efc50a9924fec3&
+
+{Reactions}
+👍
+
+[10/24/2024 08:13] branly76
+Many trades close around open price.
+
+
+[10/24/2024 08:13] cheluxe
+This are mine, for 18 days
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1298922412456546335/Captura_desde_2024-10-24_10-11-43.png?ex=69f30f43&is=69f1bdc3&hm=3cc49ad9c1f30ae5410677a56d3c4acf8cac9c79c159ed3f62b2a60930d13829&
+
+{Reactions}
+👍
+
+[10/24/2024 08:15] branly76
+Stake size ?
+
+
+[10/24/2024 08:16] cheluxe
+Yep, I had to make a fix that forced closing orders above 0.5%.
+
+
+[10/24/2024 08:17] branly76
+OK
+
+
+[10/24/2024 08:17] cheluxe
+5xUnlimited, with 1000$
+
+
+[10/24/2024 08:22] xenigami
+How many pair ?
+
+
+[10/24/2024 08:24] cheluxe
+115
+
+
+[10/24/2024 08:25] xenigami
+wow
+
+
+[10/24/2024 08:25] cheluxe
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1298925408816861194/message.txt?ex=69f3120e&is=69f1c08e&hm=865ef5ae6e040494fa83744c91de3f245daf744aea0ef103eca4afb7b42ec12c&
+
+
+[10/24/2024 14:26] ximontan
+my results
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1299016143406891100/image.png?ex=69f3668f&is=69f2150f&hm=f32bb2653874200e6b1357eca6f184202764cbed259c7149d3448f771bb3b877&
+
+
+[10/24/2024 16:22] .7thdragon
+anybody tested my futures AI version?
+i would go further setting  "stoploss": -0.1
+also had a bug related to buy space due to find replace, but it does not matter, no hyper needed
+
+
+[10/24/2024 16:25] branly76
+Still on the todo list. Now have running futures version with only long trades, but with leverage (5x). Will post in about two weeks first results.
+
+{Reactions}
+👍 (2)
+
+[10/24/2024 18:07] cheluxe
+I was going to try it, but my RL file version is FreqAi's default and I wasn't sure if it would be worth using that particular version.
+
+
+[10/24/2024 18:10] .7thdragon
+yes is default, i would mention if was other 👍
+
+
+[10/24/2024 19:13] cheluxe
+I understood that the calculate_reward function in the ReinforcementLearner class needs to be customized and cannot be used as-is, since it's just an example
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1299088388485419079/Captura_desde_2024-10-24_21-02-19.png?ex=69f30117&is=69f1af97&hm=a7facbb8ff52b9608595da18de004f3f412ac32bd4688fb7a1232c416a2bb8bc&
+
+
+[10/24/2024 21:36] .7thdragon
+yes indeed, still... "It is also designed to run quickly on small computers" 🙂
+
+
+[10/31/2024 16:24] korenhskoh
+Does it normal for getting no data found error in the dry run mode of the tankai_15m?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1301582657855033455/image.png?ex=69f3824f&is=69f230cf&hm=383a7af18619d7c674681db01d4996a396eefd21e78d9f40bee2774b7fe84767&
+
+
+[10/31/2024 16:25] korenhskoh
+From Log Tankai_Spot.py 
+freqtrade_NOTankAi_15m_freqai  | 2024-10-31 16:24:30,509 - freqtrade.strategy.strategy_wrapper - ERROR - Unexpected error Pipeline expected Index(['%-rsi-period_10_IOTA/USDTUSDT_5m', '%-mfi-period_10_IOTA/USDTUSDT_5m',                        
+
+Does this error normal in the dry run mode ?
+
+
+[11/01/2024 10:32] .7thdragon
+no data found, remove models, download all necessary data, re-run
+
+
+[11/01/2024 10:33] korenhskoh
+Hi , You mean remove the model from the freqaimodel folder ?
+
+
+[11/01/2024 12:11] .7thdragon
+from models folder, u should read the basic freqtrade/freqai docs
+
+{Reactions}
+👍
+
+[11/02/2024 02:23] korenhskoh
+Yup i did, but i may still facing some issue especially no data found. Still learning phase
+
+
+[11/02/2024 13:34] .7thdragon
+There could be also a logic problem here :), be careful as FT has a lot of bugs.
+For Opened positions FreqAI will NOT download data so this is also a situation that you will encounter that error.
+Here is the fix https://discord.com/channels/1238181199206154373/1284586552760074323
+
+
+[11/02/2024 13:35] korenhskoh
+I see . So it’s good to download all pre data first then start the dry run again
+
+{Reactions}
+👍
+
+[11/04/2024 20:50] ammart90
+Hi,
+is this normal ?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1303099035606974464/image.png?ex=69f317cc&is=69f1c64c&hm=fde73347081144a1127ff8d702f4f7c23e9338815eacb25858be7e6b1d887b2d&
+
+{Reactions}
+👍
+
+[11/04/2024 21:27] serialkiller15
+Yep let's finish the training for the coins depends on the coins you have it takes a while
+
+{Reactions}
+👍
+
+[11/06/2024 13:32] krampus248
+Hi, does this NOTankAi_15 strategy work in spot mode? I ran it in backtesting, and it gave me great results, but it’s not making any buys in dry_run mode. Any insights would be appreciated. Thanks!
+
+
+[11/06/2024 16:30] serialkiller15
+you are in the spot channel? which version do you mean exactly?
+
+
+[11/06/2024 16:38] krampus248
+This version https://discord.com/channels/1238181199206154373/1293975854539477094/1293976443340197938
+
+
+[11/06/2024 16:41] serialkiller15
+yes for example, you can also try the futures version and set can short to false, but test it i didnt do it
+
+{Reactions}
+👍
+
+[11/06/2024 17:10] branly76
+basic  NOTank_Ai_15m as futures and only longs
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1303768371375898734/Screenshot_2024-11-06_at_18-06-17_freqUI_-_NOTANKAI_F.png?ex=69f38cea&is=69f23b6a&hm=0aec82928891c443c76f05cb773a612ca7208317a4fcf802578b916dc67ea810&
+
+
+[11/06/2024 17:10] branly76
+Just over 2 weeks now
+
+
+[11/06/2024 17:10] branly76
+basic= is first posted version
+
+
+[11/06/2024 17:12] cheluxe
+Was it good for you? I had orders stuck a couple of weeks ago and they never recovered
+
+
+[11/06/2024 17:20] branly76
+It is only about 14 days, time will learn.
+
+
+[11/06/2024 17:21] branly76
+End of the year we know more.
+
+
+[01/18/2025 12:31] diegoboiy
+where can i find notankai revived dev for spot?
+
+
+[05/23/2025 13:31] ximontan
+old pure notankai, stay on DD 3 months and 2 months
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1375466183981138010/image.png?ex=69f359b5&is=69f20835&hm=c6f962ef3ea13a7e703adcd179c85dd77420558eb6ea9aa501b0eb8b72fd2007&
+
+{Reactions}
+👍 (5)
+
+[05/23/2025 20:32] joaolool
+What would be the version?
+
+
+[05/23/2025 21:07] ximontan
+same version like in the top https://discord.com/channels/1238181199206154373/1293975854539477094/1293976443340197938
+and not optimized
+
+
+[08/22/2025 00:23] .oliver6
+When I'm running old pure notankai-spot, it always close around the open price,  the reason is Maxima/Minima Full Send
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1293975854539477094/1408245042765893732/Screenshot_2025-08-22_at_8.21.01_AM.png?ex=69f349a6&is=69f1f826&hm=22167faae587e4246f3a7571f0170e92e737cc2fe7c3abd821f89e0eae379755&
+
+
+==============================================================
+Exported 124 message(s)
+==============================================================

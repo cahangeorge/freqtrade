@@ -1,0 +1,68 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 📊alexbattletankkillerv4_results
+==============================================================
+
+[07/03/2025 07:21] serialkiller15
+@Beta-Tester here we have our dry run running since 2 days
+
+
+[07/03/2025 07:22] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390209330770350160/1390231208226717808/image.png?ex=69f30335&is=69f1b1b5&hm=c237273d84e92c945914002a287ff22d37e338421c01aa34b6727c96a44a5c9e&
+
+{Reactions}
+👏 (3)
+
+[07/03/2025 07:30] laupapp
+=> just started, i feedback asap
+
+{Reactions}
+👍
+
+[07/03/2025 07:48] giovannimauro
+Awesome, I'll fire it up this afternoon!
+
+{Reactions}
+👍
+
+[07/03/2025 07:49] serialkiller15
+thanks also goes to @MaxG he did the tests and also to @Anonymuis for his plattform! thanks! @Ch1cK3N_t4c0s gave me the missing impact for using HURST....
+
+{Reactions}
+💪 (3)
+
+[07/04/2025 19:58] xaviertoor
+30 hours running with VolumePairList
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390209330770350160/1390783820776734882/image.png?ex=69f30b9e&is=69f1ba1e&hm=223deb1ae71e5b2891f2147c88c24817ebadc199f29d71f2bbe81e46e56a8014&
+
+
+[07/04/2025 20:31] laupapp
+{
+            "method": "VolumePairList",
+            "number_assets": 100,
+            "sort_key": "quoteVolume",
+            "refresh_period": 7200,
+        },
+        { "method": "AgeFilter", "min_days_listed": 4 },
+        { "method": "FullTradesFilter" }
+
+MOT = 20
+STAKE = 10
+TIMEFRAME = 15m
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1390209330770350160/1390792241903046656/image.png?ex=69f31376&is=69f1c1f6&hm=6d8b2b7e36f779d2ba19fca4e78e7ef29729240311daa5b3db988eb2bdbc3f50&
+
+
+[01/25/2026 14:19] raul0909
+@Alex Crypto King
+
+
+==============================================================
+Exported 8 message(s)
+==============================================================

@@ -1,0 +1,874 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🚀tankairev-lstm🚀
+Topic: Based on the TankAI_REV Futures Version with Implempentation of LSTM Progressor...
+==============================================================
+
+[01/13/2025 13:48] serialkiller15 (pinned)
+@everyone First off, I want to wish every single one of you an incredible start to 2025! Here's to another year of innovation, collaboration, and success in our journey together. 💪✨
+As we step into the new year, I’m excited to share a fantastic new idea from our members, @Ch1cK3N_t4c0s fort the TankAI-Rev Version for Futures Trading.
+@cs  has made an impressive contribution by integrating LSTM (Long Short-Term Memory) models to refine predictive performance. 📈
+This approach not only enhances the system’s ability to identify trends but also tackles some of the challenges we’ve faced with short-term volatility. The results so far are promising, showing potential for better decision-making and risk management in our trading strategies.
+Here's a quick highlight of the improvements:
+•    📊 Enhanced data interpretation: LSTM helps capture sequential patterns more effectively.
+•    🔍 Improved accuracy: Especially for predicting market movements over shorter timeframes.
+•    ⚙️ Streamlined integration: The modifications align well with the existing TankAI-Rev framework.
+Big thanks to CS for pushing boundaries and bringing this fresh perspective to the table! 👏👏
+Looking ahead, let’s discuss this further and brainstorm how we can refine and implement these ideas to maximize their impact. Feel free to share your thoughts, questions, or suggestions in the thread below.
+Here’s to more innovation and success in 2025! 🚀
+
+{Reactions}
+👍 (13)
+
+[01/13/2025 13:54] serialkiller15
+Some Details:
+Futures Version:
+Timeframe: 5m -> can also run on other timeframes
+
+
+[01/13/2025 13:55] serialkiller15 (pinned)
+Here is the Strategy based from ....
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1328361896524644403/TankAiRevivalFuturesNew.py?ex=69f35f6b&is=69f20deb&hm=04f83b4cbe58f33bd210d37502161844199700a5dd5821790efde3e53d18ed84&
+
+
+[01/13/2025 13:56] serialkiller15
+The Config File...
+
+
+[01/13/2025 13:58] serialkiller15 (pinned)
+Needed Files
+for user_data/freqaimodels -> copy them in there
+Version with CUDA or without CUDA!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1328362426630144060/PyTorchLSTMRegressor.py?ex=69f35fea&is=69f20e6a&hm=4f5859672ca37589bbed075bcb9f6b2e883a12e028a021c0258c0b4a570d67dc&
+https://cdn.discordapp.com/attachments/1328352857036034139/1328362427024281771/PyTorchLSTMRegressor_Cuda.py?ex=69f35fea&is=69f20e6a&hm=9ce32075e3907c7f1e531909313c27110c522dbbefdc5cfecc10fac47a52b972&
+
+
+[01/13/2025 14:05] serialkiller15 (pinned)
+ZIP FIle with all necessary STUFF!
+
+
+[01/13/2025 14:06] serialkiller15
+Lets continue our Journey and THANKS for the Hard work!
+
+
+[01/13/2025 14:18] serialkiller15
+Pinned a message.
+
+
+[01/13/2025 14:18] serialkiller15
+Pinned a message.
+
+{Reactions}
+🥳
+
+[01/13/2025 14:18] serialkiller15
+Pinned a message.
+
+
+[01/13/2025 14:18] serialkiller15
+Pinned a message.
+
+
+[01/13/2025 14:18] serialkiller15
+Pinned a message.
+
+
+[01/13/2025 14:18] serialkiller15
+Pinned a message.
+
+
+[01/13/2025 14:33] serialkiller15 (pinned)
+ZIP FIle with all necessary STUFF!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1328371474947375134/tankai_rev_lstm.zip?ex=69f36857&is=69f216d7&hm=2de970eb50ba77ecc1f4cefe709ce7ea856de65a7f5d2d90cbf81a799e65d64c&
+
+{Reactions}
+❤️ (7)
+
+[01/13/2025 14:34] serialkiller15
+Pinned a message.
+
+
+[01/13/2025 14:47] serialkiller15 (pinned)
+The CONFIG FILE for it..
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1328374907297595464/config-tankai.json?ex=69f36b89&is=69f21a09&hm=04e3f7613fe3f41a0203082ae36f99c06aedb67e9204ac80b10d5250064a885e&
+
+
+[01/13/2025 15:02] serialkiller15
+Pinned a message.
+
+
+[01/13/2025 15:03] serialkiller15
+more to come here! different timeframes and settings for it...
+
+
+[01/13/2025 21:18] anonymuis
+I've read through the code and it is pretty impressive. Could be very promising if it is not over fitting a lot.
+Very nice job! 💪
+
+
+[01/13/2025 21:37] serialkiller15
+@Anonymuis yes we will se there is also some work to do on it..
+
+
+[01/14/2025 02:47] avalon5227
+@Alex Crypto King
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1328556122243600415/ztofrwqb.w2m.png?ex=69f36b8e&is=69f21a0e&hm=fad1628bdf47aa620b27d8e3ca020b3ef673d666b3ec3ca7c838092733e972d5&
+
+
+[01/14/2025 05:19] serialkiller15
+@Avalon yes you are right its not a failure, its how @cs implemented it and used it
+i am on it to change it to the BasePyLSTMTorchModel and Regressor from @7thdragon will post then!
+
+
+[01/14/2025 07:30] avalon5227
+got it, THANKS for all your nice work~~
+
+
+[01/14/2025 07:32] avalon5227
+for now , i am testing with previous BasePyLSTMTorchModel, all is fine
+
+
+[01/14/2025 07:32] avalon5227
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1328627778865725461/q2v5k44o.uxp.png?ex=69f3058b&is=69f1b40b&hm=d144fd3b3ffb90ca73f1fe186a5e564c1650659e3188a9cfd222158e0e1fcab1&
+
+
+[01/14/2025 07:32] serialkiller15
+yes also on my side, i run different versions
+
+
+[01/14/2025 07:33] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1328627989260537856/image.png?ex=69f305bd&is=69f1b43d&hm=a681bdbc9351a96bca03702ad8a253e265777ff88ba918b92344e034b504956f&
+
+
+[01/14/2025 07:33] serialkiller15
+will upload the new ZIP File with LSTM then...
+
+
+[01/14/2025 07:34] serialkiller15
+@Avalon not my work the work from the members here, i only did the post and get the infos together, now its to optimize the great ideas....
+
+{Reactions}
+👍
+
+[01/14/2025 07:41] avalon5227
+You all deserve praise~
+
+
+[01/14/2025 07:42] serialkiller15
+Thats why the community is for, if you need something let me know on dm
+
+{Reactions}
+❤️
+
+[01/14/2025 14:41] metinbarut._73694
+I get the following error while running. Any idea
+
+
+[01/14/2025 16:22] serialkiller15
+Which error?
+
+
+[01/14/2025 18:36] metinbarut._73694
+It was about getting historical data and has been fixed with changing the identifier name.
+
+
+[01/14/2025 18:43] metinbarut._73694
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1328796680904118394/image.png?ex=69f2fa18&is=69f1a898&hm=f6cd2dc678684f25148aa8569f18cc43605075219dd760cb998e2c8ee306cba1&
+
+
+[01/14/2025 19:01] serialkiller15
+as i indentified there are some troubles with stoploss, need to be fixed one example here
+
+
+[01/15/2025 07:40] ammart90
+hope to see a spot version
+
+{Reactions}
+😵‍💫 (2)
+
+[01/15/2025 10:34] .7thdragon
+from futures to spot just put is_short=false, viceversa is complicated
+
+
+[01/16/2025 10:24] cs_0612_49562
+Hi everyone, let me tell you a possible error and its solution:
+Problem: During the training process, the following error message may appear (keyword is len() should return>=0):
+
+
+[01/16/2025 10:24] cs_0612_49562
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1329395916658053162/error.log?ex=69f32ded&is=69f1dc6d&hm=cafe1e5b9470b8a4047676e665b12e92118d64ec0d9ef111ec6bbf16a91349cf&
+
+
+[01/16/2025 10:24] cs_0612_49562
+Reason: Some pairs of candles are quite special, and in many cases, their high and low prices are equal. Their subtraction appears as a divisor in some features of tnkai, which causes many feature values to become Nan, leading to the error mentioned earlier.
+
+
+[01/16/2025 10:25] cs_0612_49562
+terms of settlement:
+1. Add the following statement at the end of the   `feature_engineering_expand_basic` function (choose one of the two): `dataframe.filter(like='%%').fillna(method='ffill', inplace=True)` or `dataframe.filter(like='%%').fillna(0, inplace=True)`
+2. If 1 does not work, set the `DI_threshold` in the config as large as possible, such as 100.
+3. If 1 and 2 do not work, then increase the `train_period_days` in config or decrease the `window_size`。
+4. If none of the above methods work, please put the problematic pair on the blacklist. Its data is really not suitable for LSTM training.
+
+{Reactions}
+👍 (5)
+
+[01/16/2025 10:34] serialkiller15
+Thanks @cs will try it out later
+
+{Reactions}
+😃
+
+[01/16/2025 11:11] .7thdragon
+yes, in general, NA screws the Ai, regressor lstm what ever, because errors are not handled well and wrong assumes that data is 100% accurate.
+i usually use this sequence on the last of each features, last one is for failsafe as it is possible that all values are NaN
+        `    dataframe = dataframe.filter(like='%').ffill()
+        dataframe = dataframe.filter(like='%').bfill()
+        dataframe.filter(like='%').fillna(0, inplace=True)`
+
+{Reactions}
+👍 (3)
+
+[01/16/2025 13:43] eakapob
+Thanks a lot This is more easy for me.
+
+{Reactions}
+👍
+
+[01/16/2025 16:27] serialkiller15
+have to upload the V2 with the pytorchlstm.... its on my todo list...
+
+{Reactions}
+👍 (3)
+
+[01/17/2025 06:24] serialkiller15
+ZIP FIle with all necessary STUFF! Version 2 LSTM....
+
+
+[01/17/2025 06:24] serialkiller15 (pinned)
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1329697774832320542/tankai_rev_lstmv2.zip?ex=69f2f58e&is=69f1a40e&hm=a2b58f905e392e80a53e92e80b86c0e392aedb31f8d85783e89d74c51e2a97d9&
+
+{Reactions}
+👍 (7) 🚀
+
+[01/17/2025 06:24] serialkiller15
+Pinned a message.
+
+
+[01/17/2025 11:42] eduard_trutsyk
+Hi guys, VarianceThreshold removes 156 features  any column that has 0 variance, is it expected?
+```
+datasieve.pipeline - INFO - VarianceThreshold will remove 156 features from the dataset.on transform. ['%%-fBm_mean_gen_BTC/USDTUSDT_5m'
+ '%%-candle_2perc_50_gen_BTC/USDTUSDT_5m'
+ '%%-candle_3perc_50_gen_BTC/USDTUSDT_5m'
+ '%%-candle_5perc_50_gen_BTC/USDTUSDT_5m'
+ '%%-candle_-1perc_50_gen_BTC/USDTUSDT_5m'
+ '%%-candle_-2perc_50_gen_BTC/USDTUSDT_5m'
+ '%%-candle_-3perc_50_gen_BTC/USDTUSDT_5m'
+ '%%-candle_-5perc_50_gen_BTC/USDTUSDT_5m'
+ '%%-isBullishCross_gen_BTC/USDTUSDT_5m'
+ '%%-isBearishCross_gen_BTC/USDTUSDT_5m'
+ '%%-isBullishSmooth_gen_BTC/USDTUSDT_5m'
+ '%%-isBearishSmooth_gen_BTC/USDTUSDT_5m'
+ '%%-alertBullish_gen_BTC/USDTUSDT_5m'
+ '%%-alertBearish_gen_BTC/USDTUSDT_5m'
+```
+
+
+[01/17/2025 15:10] .7thdragon
+yes, but indeed only if are really too many then the model will not have reliable base features
+otherwise the freqai will take what is relevant automatically, you can use for example `"plot_feature_importances": 500,` and see what is important and be related or influence the actual output dimensions
+
+
+[01/17/2025 18:24] eduard_trutsyk
+Some test_loss curves increase after reaching a minimum, indicating overfitting
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1329879017964179457/image.png?ex=69f2f599&is=69f1a419&hm=84d61f9a89e50909a108ad26c95e83951b8ebb7bb7d578a85240ca8bbc10aaf9&
+
+
+[01/17/2025 18:34] serialkiller15
+@ED welcome here.. nice...
+
+
+[01/17/2025 18:34] serialkiller15
+Great to have you here
+
+{Reactions}
+❤️
+
+[01/17/2025 19:26] .7thdragon
+welcome 👋 , yes this we are struggling, if u have some ideas please share, we ll break it down ! 🙂
+
+
+[01/17/2025 19:57] eduard_trutsyk
+of course, I will look into it, today is the first day I'm running this strategy. 😀
+
+
+[01/17/2025 20:22] serialkiller15
+Stay tuned... @ED
+
+
+[01/18/2025 13:36] avalon5227
+under freqai/torch seems missing PyTorchModelTrainer.py file
+
+
+[01/18/2025 13:37] avalon5227
+after i copy the old one, it works
+
+
+[01/20/2025 10:56] eduard_trutsyk
+Hello everyone!
+
+**Recommendations for Training a FreqAI Model:**
+1. Avoid trying to predict price extremes directly, as the values will mostly be zero, leading to poor model training. Instead, predict the closing price and derive extremes from those predictions.  
+2. Focus on predicting the actual price rather than percentage price changes.  
+3. Exclude features with near-zero variance to reduce unnecessary noise.  
+4. Adjusted the FreqAI config:  
+   - Increased `train_period_days`  
+   - Reduced `num_lstm_layers` and `hidden_dim`  
+   - Set `dropout_percent` to 0.5  
+   - and other small changes (output_dim etc)
+5. Train the model on longer timeframes for better and faster results; I use a 1h timeframe. 
+
+what do you think?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1330853377843662909/image.png?ex=69f3354b&is=69f1e3cb&hm=e9b5c8e97cf7680c8d6be8e7de0de18832d29a0de59fb5cda5c3a6a3fa098f86&
+
+{Reactions}
+👍 (6)
+
+[01/20/2025 10:59] serialkiller15
+hi ED! thanks for your inputs, any sugesstions on 1h timeframe, i also get worse results on 5min timeframe, they come better on 15min and more...
+
+
+[01/20/2025 11:36] cs_0612_49562
+Nice suggestions! I have never seen so beautiful loss chart like this with my training params. Thank you to share your idea, I will try it.
+
+
+[01/20/2025 14:38] .7thdragon
+1-2 is the core tank strategy, cannot be other way, small variances are the problem not small values
+3-5 is ok but is not optimal, 30d for 5m is ok, 90d for 15m/1h
+output_dim is fixed 3, extrema smin smax, threshold is not determined by strat itself
+
+
+[01/20/2025 14:56] eduard_trutsyk
+from my point of view it doesn't make sense to predict `extrema`, the core logic will be the same, but `extrema` can be calculated by `&-s close`
+
+
+[01/20/2025 14:58] eduard_trutsyk
+I also increased `"test_size": 0.15`
+
+
+[01/21/2025 13:38] lijunnan0113
+Guys I have modified some code, no test results yet.
+1. def confirm_trade_exit added judgment for short orders, orders that are short during live trading can't be exited because of triggering if hodl == 1, I think it should be modified like this
+2. modified the lag in def feature_engineering_expand_basic so that %%-alertBullish and %%-alertBearish are not removed by VarianceThreshold. If it's zero, yhat1 and yhat2 seem to be equal, not sure if this modification would violate the original design intent of def nadaraya_watson
+3. trying to improve repainting, I used def peak_valley_pivots to assist argrelextrema
+4. def nadaraya_watson added the short judgment
+I'm wondering if there is anything else that can be improved?Can %%-nw_entry be used for entry signals
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1331256527411220611/Modify.py?ex=69f35b41&is=69f209c1&hm=335426670c063d7a2385c2a870611b5e52b16c52d3f20c790ff1ddb2d710a073&
+
+{Reactions}
+🧐
+
+[01/21/2025 15:51] serialkiller15
+thanks will test it then
+
+
+[01/22/2025 15:35] xaviertoor
+```TankAiRevival  | 2025-01-22 15:33:35,843 - freqtrade.resolvers.iresolver - WARNING - Could not import /freqtrade/user_data/freqaimodels/PyTorchLSTMRegressor.py due to 'No module named 'freqtrade.freqai.base_models.BasePyLSTMTorchRegressor''
+TankAiRevival  | 2025-01-22 15:33:36,492 - matplotlib.font_manager - INFO - generated new fontManager
+TankAiRevival  | 2025-01-22 15:33:36,762 - freqtrade - ERROR - Impossible to load FreqaiModel 'PyTorchLSTMRegressor'. This class does not exist or contains Python code errors.```
+
+
+[01/22/2025 15:49] serialkiller15
+check BasePyLSTMTorchRegressor' - under folder /base_models...
+
+
+[01/22/2025 15:49] xaviertoor
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1331652073275658291/image.png?ex=69f37a23&is=69f228a3&hm=57b062f30d17e8eff743cac270cf9942e1c6e78c31bad266c0a8bebab99047f9&
+
+
+[01/22/2025 15:51] xaviertoor
+Does the freqai folder need to be copied into the container?
+The installation example does not have reference to the freqai folder
+
+
+[01/22/2025 15:51] serialkiller15
+yes
+
+
+[01/22/2025 15:52] serialkiller15
+should be then /freqtrade/freqtrade/freqai... depends on your settings in docker...
+
+
+[01/22/2025 16:44] alex_737071
+Anyone getting `Strategy caused the following exception: 1 columns passed, passed data had 3 columns<bound method IStrategy._analyze_ticker_internal of <TankAiRevivalFuturesNew.TankAiRevival `
+
+
+[01/22/2025 18:48] serialkiller15
+@Hmm can you send me the full log via DM thanks
+
+
+[01/23/2025 08:36] eduard_trutsyk
+Hi guys, I guess make sense to sell everything on the short signal
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1331905444863676426/image.png?ex=69f3149b&is=69f1c31b&hm=de72e3c3835dbec4a0a7db145304cc06b3f8738c20fc0eec72af4165e41f27ed&
+
+
+[01/23/2025 09:06] eduard_trutsyk
+one more case: close short position on long entry signal, in this case it will open new position on new entry signal
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1331912864935444631/image.png?ex=69f31b84&is=69f1ca04&hm=6d52e562d6634a7252747580e69bcc4f1e1a5f4b82a4520a98d4318ad87c0573&
+
+
+[01/23/2025 09:47] cs_0612_49562
+Has anyone tried early stopping? I just tried it and it showed a greater improvement in training speed compared to not stopping early, but I'm not sure if this will increase the final profit.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1331923214695403543/image.png?ex=69f32528&is=69f1d3a8&hm=95675169ca0bb9c592c11eaeb18f3334da8ec1b363709fe07f0b5a78dd17b886&
+
+
+[01/23/2025 10:28] .7thdragon
+of course is necessary 🙂 longer training is useless on regressor
+for example usually using 10 stopping steps with learning rate of 0.1 is enough
+
+{Reactions}
+👍
+
+[01/23/2025 13:50] cs_0612_49562
+You are right, and I find that under the same params, using early stopping would also result in better profits, which is indeed helpful.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1331984295371477115/3369597be5daf2f4cc8c2380a60be0e.jpg?ex=69f35e0b&is=69f20c8b&hm=b4aad700ced45f144968a8f8cec03c26cd2d441abf90b785ad1f9de0b7cb2bc2&
+
+{Reactions}
+👍 (2)
+
+[01/23/2025 13:53] .7thdragon
+u are still using stoploss 0.99? 🙂 what kind of stops are that loses?
+
+
+[01/23/2025 13:56] cs_0612_49562
+I used my own stop loss method (still in the experimental stage)
+For early stopping, if the test loss does not decrease for three consecutive steps, I will stop.
+
+{Reactions}
+👍
+
+[01/23/2025 14:12] eduard_trutsyk
+what params do you use for early stopping?
+
+
+[01/23/2025 14:35] cs_0612_49562
+There are no ready-made parameters, so I have made some changes to the code. If needed, I can send it out.
+
+
+[01/23/2025 14:36] alex_737071
+I would be interested to see 🙂 Trying SL options myslef at the moment
+
+
+[01/23/2025 14:45] cs_0612_49562
+Okay, I'll organize it and post it here tomorrow when I have time.
+
+{Reactions}
+👍 (4)
+
+[01/23/2025 18:29] serialkiller15
+Thanks for the inputs I handled different stop losses also and indeed it's the main problem in the Strategy mostly profitable but not always I kicked out coins made a new parilist also timeframe makes better results @cs thanks for inputs and sharing the changes
+
+{Reactions}
+😃
+
+[01/24/2025 12:13] xaviertoor
+I'm running the strategy with 3 slots of 100 dollars, but the entries are exceeding 100 dollars, is this normal?
+
+
+[01/24/2025 12:15] ch1ck3n_t4c0s
+Add some debugging statements to your stake size management if applicable.
+
+
+[01/24/2025 17:43] cs_0612_49562
+Here is the new trainer for lstm. Overwrite your files and try new features.
+1. In the config, add 3 params to `trainer_kwargs`: 
+`"early_stopping": true,` (the switch for early stopping), 
+`"patience": 7` (the number of steps that the test loss value can tolerate without decreasing continuously validly), 
+`"min_delta": 0.001` (the change in loss value at each step is considered valid) to activate eralying stopping.
+2.  Modify the `custom_loss_function` in the file to customize the loss. I have already written an example loss for learning extreme target, but I have not tested it yet, so I commented it out first.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1332405436548251731/PyTorchModelTrainer.py?ex=69f394c2&is=69f24342&hm=47a68db2a92518e0906174e229b4cddf9ba6da848827911a4d355a3f7b7078d3&
+
+{Reactions}
+👍 (4)
+
+[01/24/2025 17:46] cs_0612_49562
+Please forgive the Chinese language used in the file. I am accustomed to writing comments in my native language, but you can translate it into English.
+
+
+[01/24/2025 17:55] serialkiller15
+Happy New Year maybee I am to late but I was in China many times before.. Will go there thanks for your work
+
+{Reactions}
+🥳 (2)
+
+[01/24/2025 17:56] serialkiller15
+Nothing to forgive...
+
+
+[01/24/2025 19:17] .7thdragon
+LSTMs do not inherently exclude small variances in the same way that a traditional regressor might smooth out noise by fitting a trend line. So if the model is ok, setting n_epochs like 30 is quite enough in most situations. But nice work anyway!
+
+{Reactions}
+👍
+
+[01/25/2025 08:35] chenz0799
+Hello, guys. I have a question for you all. The custom_stake_amount method in tankai, which calculates the calculated_stake, dynamically adjusts the entry amount when the price is at a different position in the lower_envelope. According to general logic, when I go long, when the current price is lower, it means that there is a higher possibility of realizing a profit, at this time should put more balance. That is, stake3>stake2>stake1>stake0. However, my optimization result is like this. Why is this happening.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1332629816519950408/f6b8627639a78d53680d3217f37a09a6.png?ex=69f3143b&is=69f1c2bb&hm=c08e64241870990acbcbb579e8b00c855ff4051204dbb85c882928fddf1cf905&
+https://cdn.discordapp.com/attachments/1328352857036034139/1332629816821809202/8e8e0bfe0b02c73a0f84a97d7f641983.png?ex=69f3143b&is=69f1c2bb&hm=d3ac6e659ee9f52472841df24e0f00633d82c001d13e68b5e4eb45906105c388&
+
+
+[01/25/2025 11:07] ch1ck3n_t4c0s
+That is the best returned result by the amount of epochs you have run. Doesn't always mean it is the best.😎
+
+
+[01/25/2025 11:45] chenz0799
+Thank you for your reply. Got it! I have another question. Is there something wrong with the logic here?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1332677626971820112/b433f7e5eb78990c346be1f2eea59fc3.png?ex=69f340c2&is=69f1ef42&hm=cfa195ea538055de725efaa05d8dad56794f7b4917e7c274bd9ae3b707d06953&
+
+
+[01/25/2025 11:57] ch1ck3n_t4c0s
+The levels there should be inverted from the long side. So if the entry is higher on the chart the stake size "should" increase (hyperopt dependant)
+
+
+[01/25/2025 11:58] ch1ck3n_t4c0s
+That was my thought process anyway the more skewed from center the more likely the entry is to succeed
+
+
+[01/25/2025 12:01] chenz0799
+I understand what you're saying! I mean if you look at these greater than and less than signs, are they not quite right? I'm talking about grammar.Thanks！
+
+
+[01/25/2025 12:04] chenz0799
+I think what should be written here is, for example, `elif EP0 >= current_rate > EP1:` instead of `elif EP0 <= current_rate > EP1:`.
+
+
+[01/25/2025 12:19] ch1ck3n_t4c0s
+The first is correct
+
+
+[02/08/2025 15:51] chenz0799
+Excuse me, who can tell me the meaning of TP0 to TP3.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1337813063453245441/b96cc47b9be1d2e8686904454fd4e2af.png?ex=69f37a81&is=69f22901&hm=059a5b08afccb19545d427737ace29d3d8d8372afb50df49a23380b1f237c804&
+
+
+[02/08/2025 17:02] ch1ck3n_t4c0s
+Take Profit
+
+
+[02/25/2025 02:18] 133900029
+Hello,  how the dry run effect is for this configuration. Is the stop loss the same as before?
+
+
+[02/25/2025 08:20] serialkiller15
+Hello, yes on my tests its better after some weeks
+
+
+[03/23/2025 13:19] 133900029
+i try it ,but it show error when train , anyone know how to fix it ,thank
+
+
+[03/23/2025 13:20] 133900029
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1353357852789571726/error.txt?ex=69f35738&is=69f205b8&hm=136800bee8707fbdfe364bc40a8670dcdc6788682da5cbf383e5421aaa7a99e2&
+
+
+[03/24/2025 18:27] joaolool
+help
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1353797507548971049/image.png?ex=69f2f66e&is=69f1a4ee&hm=0ad2372a666328ec988a13afb5c46584e0ae32ca10c21b911b9a4ae62d866519&
+
+
+[08/16/2025 12:29] viking046433
+Need some info here where to place the moldels in a docker instance
+
+
+[08/16/2025 12:30] viking046433
+User_data freqaimodel
+
+
+[08/16/2025 12:30] viking046433
+The thing is not loading the model I’m not sure where to place it
+
+
+[08/16/2025 12:30] darkreaper0756
+What hardware configuration is needed to optimally run this strategy?
+
+
+[08/16/2025 12:48] viking046433
+Don’t sweat got it going
+
+
+[08/16/2025 18:02] viking046433
+No f fraqai is impossible
+
+
+[08/16/2025 18:02] viking046433
+What changed ?
+
+
+[08/16/2025 18:03] viking046433
+I can’t get the models to load it’s in the correct ✅ folder with the correct files I tried updating the training model and everything can’t get it going
+
+
+[09/29/2025 08:46] saamyar
+I get this error; trying to run the strategy for dry.
+No module named 'freqtrade.freqai.data_drawer'
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1422142403237904474/IMG_20250929_164440_978.png?ex=69f316d3&is=69f1c553&hm=104e8c2adf62b31c7a4642d16b8945e670e6956613bb038cd04ec73c177cd17a&
+
+
+[09/29/2025 11:14] divarak
+I suggest do "git pull" on freqtrade folder and run ./setup.sh -i
+
+
+[09/29/2025 11:14] divarak
+Should update and install all core modules.
+
+
+[09/30/2025 00:28] saamyar
+Thansk I will update here
+
+
+[10/04/2025 13:43] vijju284529
+same here
+
+
+[10/04/2025 14:22] serialkiller15
+whats the error? need a log to take a look into it..
+
+
+[10/04/2025 15:29] viking046433
+LSTM not working anymore with latest
+
+
+[10/04/2025 15:46] ywk3926
+Brothers, can Mac Air 4 run this?
+
+
+[10/04/2025 15:47] xf0x0f
+Yes
+
+
+[10/04/2025 15:47] ywk3926
+Use the non-cuda version, thank you.
+
+
+[10/04/2025 18:48] saamyar
+I had the same errors when tried to dry run this strategy; I've fixed some bugs here now its running for me
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1424105929888239616/tankai_rev_lstmv2.tar.gz?ex=69f2fb40&is=69f1a9c0&hm=a9894bf28a9069468bd6da7272fb96c43f66cc8f55ecc02b967fbd44ebf8cdfa&
+
+
+[10/05/2025 03:12] ywk3926
+Does my Waring have any impact?
+
+
+[10/05/2025 03:42] ywk3926
+same with me, how did you fix it?
+
+
+[10/05/2025 06:46] dragongoattigercat
+I checked all paths and file name but I could not fix it. Can you please help? Thank you.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1424286619854180382/image.png?ex=69f2fac8&is=69f1a948&hm=e954aac6d4c0e6d823d1ccb08b659d49db0c4e4f6d5ec632292779d99b7c29c3&
+
+
+[10/05/2025 07:43] serialkiller15
+the BasePy... hase to be in the base_models folder...
+
+
+[10/05/2025 08:50] ywk3926
+I know, the docker-compose.ym file needs to mount the freqai directory to the container, like this:
+
+{Reactions}
+👍
+
+[10/05/2025 08:50] ywk3926
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1424317826902003773/image.png?ex=69f317d8&is=69f1c658&hm=331644b24cef3a3c0956cc7545c6f2d640e96a8cd626984bf9766db7e42c1812&
+
+
+[10/06/2025 04:06] dragongoattigercat
+that works. Thank you mate
+
+
+[10/06/2025 14:27] dragongoattigercat
+Hi Mates, Can you please guide me to fix this error? Thank you
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1424764904014876752/Error_log.txt?ex=69f366b7&is=69f21537&hm=261a265756b43846ab4137ecded39e1060dd2da95585064ae6bd40a2a96f7e33&
+
+
+[10/06/2025 17:08] .7thdragon
+File "/freqtrade/freqtrade/freqai/data_drawer.py", line 615, in load_data
+    zipfile = torch.load(dk.data_path / f"{dk.model_filename}_model.zip")
+
+change to (but imply some risks if running unknown scripts)
+            zipfile = torch.load(dk.data_path / f"{dk.model_filename}_model.zip", weights_only=False)
+
+
+[10/06/2025 17:10] dragongoattigercat
+I only run docker for this strategy only. so it should be fine
+
+
+[10/07/2025 03:12] dragongoattigercat
+freqtrade.strategy.strategy_wrapper - Unexpected error 'Pipeline' object has no attribute 'features_in' calling <bound method IStrategy._analyze_ticker_internal of <TankAiRevivalFuturesNew.TankAiRevival object at 0x773981b76270>>
+
+
+[10/07/2025 03:13] dragongoattigercat
+mate, can you please help? are you running this bot on docker or install freqtrade on your OS?
+
+
+[10/07/2025 11:40] kugodybe
+@Alex Crypto King Can I find some extra information how to install this for version 2025.9?
+
+
+[10/07/2025 13:24] serialkiller15
+mine is running under
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1425111480776396810/image.png?ex=69f357fe&is=69f2067e&hm=d2310ee41fe9176c52b0505e1ec934d404424be7eb9205b1c47d4da26796d066&
+
+
+[10/29/2025 10:05] abb8187
+哈哈， 你是哪里的。。
+
+
+[10/29/2025 12:11] abb8187
+So far in the tests, how profitable is the daytime chart? I've seen some people running it for 1 hour, but I don't know which timeframe to run first.
+
+
+[10/29/2025 12:13] abb8187
+@Alex Crypto KingBrother, which cycle are you currently running?
+
+
+[10/29/2025 12:13] abb8187
+Run for 1 hour?
+
+
+[10/29/2025 12:14] abb8187
+刚刚下载了这个 ，
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1433066528848351232/image.png?ex=69f347b5&is=69f1f635&hm=ca843b4335c641400799397ae95458eed9e02a7d1aaedfbe68ea3bd22c98aacf&
+
+
+[10/29/2025 12:15] serialkiller15
+i use it on 15m timeframe since some weeks
+
+
+[10/29/2025 12:15] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1328352857036034139/1433066726240686090/image.png?ex=69f347e4&is=69f1f664&hm=bedb69131a13c071d291dcb66e28c4a99ab9e7b76e0394407bd5124874681fa2&
+
+{Reactions}
+😋
+
+[10/29/2025 12:15] serialkiller15
+not many trades but profitale at all see the roi of 240
+
+
+[10/29/2025 12:16] abb8187
+The configuration hasn't changed. Do I need to select a different currency?
+
+
+[10/29/2025 12:28] serialkiller15
+nope
+
+
+[10/29/2025 12:29] abb8187
+Thanks
+
+
+[10/29/2025 12:34] serialkiller15
+sry mate i have no time for that, its an old strategy use the channels for the strategys thanks
+
+
+[10/29/2025 12:35] serialkiller15
+and please use the right channels thanks
+
+
+[10/29/2025 12:36] abb8187
+OK
+
+
+[10/29/2025 12:36] serialkiller15
+#🚀v9-strategy different versions there but we stopped it because it was not profitable at all dont waste your time with it
+
+
+[10/29/2025 12:39] abb8187
+OK
+
+
+[10/29/2025 12:47] serialkiller15
+but if you have some inputs for optimizing you are welcome!
+
+
+[11/13/2025 05:44] sliper82_32020
+Can someone give me a tested static pair list for this strategy: TankAiRevivalFuturesNew?
+
+
+==============================================================
+Exported 160 message(s)
+==============================================================

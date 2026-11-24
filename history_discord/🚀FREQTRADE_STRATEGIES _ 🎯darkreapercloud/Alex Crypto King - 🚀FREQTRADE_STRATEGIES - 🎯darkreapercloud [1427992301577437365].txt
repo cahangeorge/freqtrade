@@ -1,0 +1,2274 @@
+==============================================================
+Guild: Alex Crypto King
+Channel: 🚀FREQTRADE_STRATEGIES / 🎯darkreapercloud
+==============================================================
+
+[10/15/2025 12:12] serialkiller15
+@everyone and @DarkReaper thanks for your impact here is your version.....
+improvements will come later and also maybe optuna or other stuff!
+
+{Reactions}
+🔥 (3) 💪
+
+[10/15/2025 12:13] serialkiller15
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1427992665626247299/DarkCloud.py?ex=69f3474e&is=69f1f5ce&hm=fba2e7506576ef2e080d9b45bc070247be44949ea75c9ca85c7b9e6e50512ce6&
+
+
+[10/15/2025 12:16] xf0x0f
+
+
+{Forwarded Message}
+what? ive hyperopted,.... running since 10min, hyperopt is loaded,... nothing is happening,...
+Originally sent: 10/15/2025 12:09
+
+
+[10/15/2025 12:16] xf0x0f
+
+
+{Forwarded Message}
+Originally sent: 10/15/2025 12:10
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1427993478402543759/Bildschirmfoto_2025-10-15_um_14.10.25.png?ex=69f34810&is=69f1f690&hm=b4136758a68931bd6febeb98e5c1360436271c36b7dccab94ca86c35e6b7a000&
+https://cdn.discordapp.com/attachments/1427992301577437365/1427993478738219028/Bildschirmfoto_2025-10-15_um_14.10.15.png?ex=69f34810&is=69f1f690&hm=53281accce3cf70c2d6d7a2ebfe3d907f4aa2498f8d7c009660559a132e7bb22&
+
+
+
+[10/15/2025 12:26] darkreaper0756
+not run hyperopt?
+
+
+[10/15/2025 12:29] xf0x0f
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1427996804405923850/Bildschirmfoto_2025-10-15_um_14.29.20.png?ex=69f34b29&is=69f1f9a9&hm=67c7bf07ce9b52054fe504d87bb633a5d50293ed8235edfdf261f73736cd3d19&
+
+
+[10/15/2025 12:32] erbosnio_17282
+Optuna forever, for that purpose, in Alex we trust 🤣
+
+
+[10/15/2025 13:04] xf0x0f
+ok,... why not,... i dont want to a trade 10 seconds after start anymore,... 😄
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1428005603216724038/Bildschirmfoto_2025-10-15_um_15.03.45.png?ex=69f3535a&is=69f201da&hm=23797041ec36aacc6974a0ea76b85f629d3ccbdffe39425ee99e7e793660899e&
+
+{Reactions}
+🚀 (3) 🤣
+
+[10/15/2025 13:05] darkreaper0756
+work nice in volatil market
+
+
+[10/15/2025 13:07] darkreaper0756
+need more signal, i work to new version
+
+
+[10/15/2025 13:53] darkreaper0756
+work fine
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1428017878728441999/Screenshot_2025-10-15_155221.png?ex=69f35ec9&is=69f20d49&hm=fe75bbd99fb4f837c7230ef39ee543ab66838b0fce43e101817ac8f8437ee6f5&
+https://cdn.discordapp.com/attachments/1427992301577437365/1428017879110127686/Screenshot_2025-10-15_155056.png?ex=69f35ec9&is=69f20d49&hm=dc6901b71a47236f26db142a592ed761f76f7cad50a770b7580c319d86fe70f0&
+
+
+[10/15/2025 14:00] xf0x0f
+mine is sleeping,...
+
+
+[10/15/2025 14:01] xf0x0f
+how? i dont understand why mine is working like that
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1428020004510765056/Bildschirmfoto_2025-10-15_um_16.01.17.png?ex=69f360c4&is=69f20f44&hm=5dbb66395a1317b32fd66dbb5e42228b6c753c9758d9138daf62bee94572e9dd&
+
+
+[10/15/2025 14:08] sang_tm
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1428021689614340177/Screenshot_2025-10-15_at_21.08.16.png?ex=69f36256&is=69f210d6&hm=b8f8c0222c0fa84e79256e74c33dafe931764fca202311ab82d341ce536e0dc8&
+
+{Reactions}
+🚀
+
+[10/15/2025 14:12] xf0x0f
+please share a config,... thanks
+
+
+[10/15/2025 14:16] sang_tm
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1428023661964689559/message.txt?ex=69f3642c&is=69f212ac&hm=36457541e8e1218eb28a9b8bd3322732a3fac89375685384986052f299b78865&
+
+
+[10/15/2025 14:16] sang_tm
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1428023836619571353/Screenshot_2025-10-15_at_21.16.25.png?ex=69f36456&is=69f212d6&hm=b90780db70ba02aeb64a96ce11626f43873252c6cc3e677bc7ae6f2b683a32be&
+
+
+[10/15/2025 14:17] sang_tm
+something strange
+
+
+[10/15/2025 15:17] serialkiller15
+some futures integrated
+long/short
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1428039055970664681/image.png?ex=69f37282&is=69f22102&hm=a4ed2fb82d880a79897ce71d3cdae2a83109da42b974eb7570671edbc10f73d2&
+
+{Reactions}
+🚀
+
+[10/15/2025 16:52] serialkiller15
+Optimized and fixed some bugs in the code to run for futures
+will let it run on dryrun and report...
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1428062932457095188/image.png?ex=69f388bf&is=69f2373f&hm=ca5c0bcfb18caa2683b0f97b0e9c20ebd7a97200633e98fdbcbd37026cf6cc99&
+
+{Reactions}
+🚀 (2)
+
+[10/15/2025 17:54] darkreaper0756
+Nice result!
+
+
+[10/15/2025 18:05] serialkiller15
+Need to handle the thresholds for long and shorts
+
+
+[10/15/2025 18:06] serialkiller15
+Will also share the fixed code for spot tomorrow
+
+
+[10/15/2025 18:07] darkreaper0756
+I'm really curious how it handles shorts too
+
+
+[10/15/2025 18:07] serialkiller15
+Many work
+
+
+[10/15/2025 18:07] serialkiller15
+And beer
+
+{Reactions}
+🚀
+
+[10/15/2025 19:22] xf0x0f
+thats the move with your config,... how is yours?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1428100644408918236/Bildschirmfoto_2025-10-15_um_21.21.28.png?ex=69f3031e&is=69f1b19e&hm=4053deb04f7c0e3c4dcca886542608f1c79a841a2e83b1bcb052cb2fe54883b8&
+
+
+[10/15/2025 19:35] erbosnio_17282
+Shorts, longs or mix?
+
+
+[10/15/2025 19:45] xf0x0f
+only longs
+
+
+[10/25/2025 08:15] darkreaper0756
+Hello everyone, in this version we added OrderBook Filter, It does more sampling between Ask and Bid and then decides whether to enter Long or Short transactions Following HTf 1H and 4H with the possibility to configure how many red or green candles to be consecutive. Don't be scared by the large number of entries, I needed it so as not to wait long to see if OrderBook Filter works... Enjoy!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1431556783947907092/DarkCloudV2.py?ex=69f30fa6&is=69f1be26&hm=23eec41df155a47592e4f96dfef49d30506d9958612906a7c2982a72bbdd176f&
+https://cdn.discordapp.com/attachments/1427992301577437365/1431556784320942171/Screenshot_2025-10-24_153246.png?ex=69f30fa6&is=69f1be26&hm=4cd202c182e077d35b620bd60609d22e8d5c9b3bc1f8b357e90076b3eb321574&
+
+{Reactions}
+🔥 (6) 🚀
+
+[10/25/2025 08:23] darkreaper0756
+Not use in pairlist 200+ coin, need more processing power for OrderBook calculation, Use  20 30 40 coins...
+
+
+[10/25/2025 08:26] serialkiller15
+good work mate thanks!
+
+
+[10/25/2025 08:28] darkreaper0756
+✌️
+
+
+[10/25/2025 08:28] serialkiller15
+its good that my new server cames yesterday, running out of recourses for testing hehe!
+
+{Reactions}
+🔥 (2)
+
+[10/25/2025 08:29] darkreaper0756
+😂
+
+
+[10/25/2025 08:30] darkreaper0756
+I also need to buy a video card, my old Rtx 3070TI is a bit old
+
+
+[10/25/2025 08:31] darkreaper0756
+I am currently working on an AI RL model and it requires a lot of resources for the training to be completed in a timely manner to see how the agent behaves...
+
+
+[10/25/2025 08:32] serialkiller15
+you dont have to
+
+
+[10/25/2025 08:32] serialkiller15
+i have a gpu docker farm here
+
+
+[10/25/2025 08:43] anonymuis
+You're in need of more resources?
+
+
+[10/25/2025 08:43] darkreaper0756
+No
+
+
+[10/25/2025 08:43] serialkiller15
+no thanks mate can share mine !
+
+
+[10/25/2025 08:48] darkreaper0756
+How many strategies are you currently dryrunning?
+
+
+[10/25/2025 08:48] serialkiller15
+about 40
+
+{Reactions}
+😱
+
+[10/25/2025 08:48] serialkiller15
+different versions, and about 3 live (divergence)
+
+
+[10/25/2025 08:52] darkreaper0756
+Pfuaa
+
+{Reactions}
+👍
+
+[10/25/2025 08:52] serialkiller15
+i have 2 servers running in cloud, 1 at home, and the new came yesterday but needs to bee installed
+
+
+[10/25/2025 08:52] darkreaper0756
+There really are many
+
+
+[10/25/2025 08:52] serialkiller15
+the problem is beer is empty so i have to fill it up before doing it
+
+{Reactions}
+😂 (3)
+
+[10/25/2025 09:16] darkreaper0756
+It's too cold for beer, I need something stronger🥃
+
+
+[10/25/2025 09:24] serialkiller15
+@DarkReaper yep
+
+
+[10/25/2025 10:08] xalt8851
+How are you getting on with RL? Care to share your results?
+
+
+[10/25/2025 10:19] darkreaper0756
+ROI: Closed trades
+∙ 88748.622 USDT (2.49%) (89.65 Σ%)
+∙ 88748.622 USD
+ROI: All trades
+∙ 88468.849 USDT (2.46%) (89.36 Σ%)
+∙ 88468.849 USD
+Total Trade Count: 307
+Bot started: 2025-10-12 13:40:26
+First Trade opened: 12 days ago (2025-10-12 14:56:33)
+Latest Trade opened: 42 minutes ago (2025-10-24 17:15:25)
+Win / Loss: 294 / 10
+Winrate: 96.71%
+Expectancy (Ratio): 291.94 (0.59)
+Avg. Duration: 1:37:42
+Best Performing: ETH/USDT:USDT: 7491.901 USDT (4.25%)
+Trading volume: 32365437.438 USDT
+Profit factor: 18.95
+Max Drawdown: 1.17% (1795.049 USDT)
+    from 2025-10-20 09:47:56 (54285.045 USDT)
+    to 2025-10-21 13:01:54 (52489.996 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2025-10-24 16:42:34 (88748.622 USDT)
+
+{Reactions}
+😆
+
+[10/25/2025 10:20] darkreaper0756
+Daily Profit over the last 7 days:
+Day (count)      USDT            USD           Profit %
+---------------  --------------  ------------  ----------
+2025-10-24 (55)  12209.067 USDT  12209.07 USD  6.99%
+2025-10-23 (77)  12159.589 USDT  12159.59 USD  7.48%
+2025-10-22 (56)  11479.177 USDT  11479.18 USD  7.60%
+2025-10-21 (5)   -1384.257 USDT  -1384.26 USD  -0.91%
+2025-10-20 (1)   664.711 USDT    664.71 USD    0.44%
+2025-10-19 (0)   0 USDT          0.00 USD      0.00%
+2025-10-18 (3)   1192.813 USDT   1192.81 USD   0.79%
+
+
+[10/25/2025 10:20] anton652
+When will you release this money button?
+
+
+[10/25/2025 10:21] darkreaper0756
+Warning: Simulated balances in Dry Mode.
+Starting capital: 99000 USDT , 99000 USD.
+BNFCR:
+ Available: 160803.27194584
+ Balance: 188748.62158784
+ Pending: 27945.34964200
+ Bot Owned: 158915.78572996
+ Est. USDT: 158915.786
+TRUMP/USDT:USDT:
+ short: 7918.75000000
+ Est. USDT: 9282.359
+ETH/USDT:USDT:
+ short: 12.00600000
+ Est. USDT: 9320.042
+YFI/USDT:USDT:
+ short: 9.89300000
+ Est. USDT: 9342.949
+
+Estimated Value (Bot managed assets only):
+ USDT: 186861.135 (88.75%)
+ USD: 186861.135 (88.75%)
+
+
+[10/25/2025 10:21] darkreaper0756
+Performance:
+1.  ETH/USDT:USDT 7491.901 USDT (4.25%) (14)
+2.  ENA/USDT:USDT 6312.287 USDT (3.64%) (14)
+3.  XMR/USDT:USDT 5414.565 USDT (3.01%) (12)
+4.  LTC/USDT:USDT 5025.51 USDT (3.14%) (12)
+5.  BERA/USDT:USDT 4045.989 USDT (3.12%) (9)
+6.  SOL/USDT:USDT 3894.029 USDT (2.86%) (15)
+7.  BTC/USDT:USDT 3840.387 USDT (2.34%) (12)
+8.  YFI/USDT:USDT 3476.763 USDT (2.49%) (8)
+9.  BCH/USDT:USDT 3174.361 USDT (2.27%) (11)
+10.  WIF/USDT:USDT 2889.493 USDT (3.17%) (9)
+11.  AAVE/USDT:USDT 2726.817 USDT (2.55%) (11)
+12.  ADA/USDT:USDT 2389.368 USDT (4.09%) (5)
+13.  LINK/USDT:USDT 2329.171 USDT (2.72%) (9)
+14.  ENS/USDT:USDT 2177.887 USDT (2.63%) (8)
+15.  NEAR/USDT:USDT 2027.436 USDT (3.42%) (6)
+16.  TON/USDT:USDT 2023.304 USDT (2.98%) (5)
+17.  AVAX/USDT:USDT 1935.669 USDT (1.74%) (7)
+18.  XRP/USDT:USDT 1907.036 USDT (2.27%) (10)
+19.  FARTCOIN/USDT:USDT 1873.936 USDT (2.78%) (7)
+20.  ETC/USDT:USDT 1837.952 USDT (2.16%) (7)
+21.  ICP/USDT:USDT 1509.787 USDT (2.75%) (6)
+22.  COMP/USDT:USDT 1490.147 USDT (2.41%) (7)
+23.  APT/USDT:USDT 1467.853 USDT (2.69%) (7)
+24.  TRB/USDT:USDT 1466.205 USDT (2.50%) (7)
+25.  QNT/USDT:USDT 1421.481 USDT (2.13%) (5)
+26.  QTUM/USDT:USDT 1392.834 USDT (2.78%) (5)
+27.  INJ/USDT:USDT 1375.361 USDT (2.43%) (6)
+28.  LPT/USDT:USDT 1317.281 USDT (2.86%) (5)
+29.  SUI/USDT:USDT 1176.228 USDT (2.03%) (6)
+30.  ONDO/USDT:USDT 1141.248 USDT (2.66%) (4)
+31.  DOT/USDT:USDT 1065.513 USDT (2.80%) (4)
+32.  FIL/USDT:USDT 1046.847 USDT (2.54%) (5)
+33.  TAO/USDT:USDT 1016.535 USDT (2.83%) (4)
+34.  DOGE/USDT:USDT 855.422 USDT (2.47%) (3)
+35.  ORDI/USDT:USDT 847.402 USDT (1.42%) (6)
+36.  PENDLE/USDT:USDT 824.353 USDT (2.51%) (4)
+37.  NEO/USDT:USDT 818.514 USDT (2.59%) (4)
+38.  NMR/USDT:USDT 812.291 USDT (2.60%) (3)
+39.  ZEC/USDT:USDT 533.125 USDT (1.59%) (4)
+40.  AXS/USDT:USDT 512.838 USDT (1.23%) (4)
+41.  IP/USDT:USDT 343.426 USDT (2.00%) (2)
+42.  TRUMP/USDT:USDT 292.357 USDT (0.59%) (6)
+43.  ATOM/USDT:USDT 97.693 USDT (1.13%) (1)
+44.  UNI/USDT:USDT -869.98 USDT (-1.84%) (5)
+
+
+[10/25/2025 10:24] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1431589212293042326/Screenshot_2025-10-24_195440.png?ex=69f32dd9&is=69f1dc59&hm=e40a8fb09d08c60475783418efbca33e68b676f15d6ac422634076aa1b3886cc&
+
+{Reactions}
+🔥
+
+[10/25/2025 10:25] darkreaper0756
+Has problem with memory management agent, 96Gb RAM is not enough
+
+
+[10/25/2025 10:26] anton652
+I have more, we are waiting for an agent and a strategy 🚀
+
+
+[10/25/2025 10:26] darkreaper0756
+Waiting✌️
+
+{Reactions}
+👍
+
+[10/25/2025 10:28] darkreaper0756
+It is currently in progress, I am adding something nice to make decisions and from news connected to AskNews
+
+
+[10/25/2025 10:31] anton652
+But this is the best result of all the strategies that exist, it’s strange that you haven’t posted it yet at least as the first version
+
+{Reactions}
+💯
+
+[10/25/2025 10:34] xalt8851
+AskNews can ruin a good strategy, so let's check this version together. I also have a good enough PC for such a test.
+
+
+[10/25/2025 11:41] boooooon
+What server characteristics are needed for testing it?
+
+
+[10/25/2025 13:59] ywk3926
+It has been running for more than an hour, with 40 trading pairs, and there has been no trading. Is this in line with expectations?
+
+
+[10/25/2025 14:09] darkreaper0756
+No, If there are no errors, that's another problem…
+
+
+[10/25/2025 14:11] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1431646438017863760/config.json?ex=69f36325&is=69f211a5&hm=55c17842532d6f7ef1977f9bdce2e48a608f9aa9e27cddab21d8e3b71917865e&
+
+
+[10/25/2025 14:33] xalt8851
+Which freqai model should be used with this configuration?
+
+
+[10/25/2025 14:34] darkreaper0756
+I wanted to send the config for Freqtrade, Not FreqAI sri
+
+
+[10/25/2025 14:36] xalt8851
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1431652717838733362/image.png?ex=69f368fe&is=69f2177e&hm=91d94bb111970128dcffecfd8a8f0d5c4fa0e36290ad177e2c1e7b77d915d00c&
+
+
+[10/25/2025 14:38] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1431653199441563659/config.json?ex=69f36971&is=69f217f1&hm=2d7d68bd9fdaef0c2918ae2199e13a3a99b65cfb4a54bcd05308c5fbe2bb8e3e&
+
+
+[10/25/2025 14:43] darkreaper0756
+It is not a complete config, I sent it by mistake...
+
+
+[10/25/2025 14:44] darkreaper0756
+it can work with the RL model from freqAI
+
+
+[10/25/2025 14:47] xalt8851
+Then we look forward to your RL strategy.
+
+
+[10/25/2025 14:49] xalt8851
+for now
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1431655794796924941/image.png?ex=69f36bdc&is=69f21a5c&hm=3da67630359a8947534d507f789cb08b00f68dd2091502193efcef0885ca1c91&
+
+
+[10/25/2025 15:24] viking046433
+Have this been released?
+
+
+[10/25/2025 16:25] darkreaper0756
+Hey, not now!
+
+{Reactions}
+👍
+
+[10/25/2025 20:28] dragongoattigercat
+can I test the DarkCloudV2 now?
+
+
+[10/25/2025 20:29] darkreaper0756
+Yes
+
+
+[10/25/2025 20:29] darkreaper0756
+Try
+
+
+[10/25/2025 20:29] dragongoattigercat
+what TF are you refer?
+
+
+[10/25/2025 20:29] darkreaper0756
+15m
+
+
+[10/25/2025 20:30] darkreaper0756
+5m
+
+
+[10/25/2025 20:30] dragongoattigercat
+Thank you. Any adjustment need to be done with the config file?
+
+
+[10/25/2025 20:30] dragongoattigercat
+I am fire it up now
+
+
+[10/25/2025 20:32] darkreaper0756
+.
+
+{Reactions}
+👍
+
+[10/25/2025 20:33] dragongoattigercat
+roger that
+
+
+[10/26/2025 05:44] xalt8851
+ROI: Closed trades
+∙ -196.478 USDT (-0.48%) (-9.82 Σ%)
+∙ -196.478 USD
+ROI: All trades
+∙ -198.628 USDT (-0.47%) (-9.93 Σ%)
+∙ -198.628 USD
+Total Trade Count: 112
+Bot started: 2025-10-25 09:00:29
+First Trade opened: 20 hours ago (2025-10-25 09:27:21)
+Latest Trade opened: 5 minutes ago (2025-10-26 05:38:57)
+Win / Loss: 35 / 72
+Winrate: 32.71%
+Expectancy (Ratio): -1.84 (-0.43)
+Avg. Duration: 0:53:12
+Best Performing: LINK/USDT:USDT: 13.663 USDT (0.70%)
+Trading volume: 375150.25 USDT
+Profit factor: 0.36
+Max Drawdown: 10.27% (206.382 USDT)
+    from 2025-10-25 10:14:48 (9.904 USDT)
+    to 2025-10-26 05:38:51 (-196.478 USDT)
+Current Drawdown: 10.27% (206.382 USDT)
+    from 2025-10-25 10:14:48 (9.904 USDT)
+
+{Reactions}
+😩
+
+[10/27/2025 04:59] dragongoattigercat
+I have no trade after running bot for almost 2 days
+
+
+[10/27/2025 10:06] anton652
+Lucky
+
+
+[10/27/2025 10:25] darkreaper0756
+Hi, If there are no errors in the Log I think the problem is something else...
+
+
+[10/27/2025 13:08] dragongoattigercat
+There is no error in log, CPU and RAM are not maximum either
+
+
+[10/27/2025 15:04] dragongoattigercat
+is it the problem for no trade?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1432384440746905752/image.png?ex=69f36f77&is=69f21df7&hm=308104ce12302d756487e1acca2d0277fc37e67de7a1110d9e60e89e0a38f9b9&
+
+
+[10/27/2025 15:15] neveerrk
+6 whitelisted pairs
+
+
+[10/27/2025 15:15] neveerrk
+Too many, more than six.
+
+
+[10/27/2025 15:40] dragongoattigercat
+I am doing 50 pairs 🙂
+
+
+[10/30/2025 07:57] viking046433
+If at some point you release this I’m ready. I bought server with 12 cores cpus and 180GB of memory
+
+{Reactions}
+🔥 (3) 👍
+
+[10/30/2025 11:55] darkreaper0756
+Hi, I'm curious what your server scores in cinebench R23
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1433423958429929534/Screenshot_2025-10-30_124529.png?ex=69f34317&is=69f1f197&hm=5f4a4b4a7ac5edd69e9d8cd822209aba5e67af14d5ffccac9425da2643fca937&
+
+
+[10/30/2025 12:59] viking046433
+I have ubuntu on won’t know
+
+
+[10/30/2025 13:00] darkreaper0756
+Aaaa
+
+
+[12/18/2025 17:43] darkreaper0756
+pip install hmmlearn
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1451268727705178234/DarkRenaissance.py?ex=69f394d3&is=69f24353&hm=b255b5d9303c7004f9d2b74bc0bec49a829d454a53cdaf206b4fe67fe21cde38&
+https://cdn.discordapp.com/attachments/1427992301577437365/1451268728204562664/Info.txt?ex=69f394d4&is=69f24354&hm=382afbb7e6d1b3722a668ddaea5f67b881d80ccca70529a60638862fa3de010b&
+
+
+[12/18/2025 17:47] darkreaper0756
+The strategy uses offline and live data for continuous training of the AI model. Give free rein to your imagination and modify the indicators used in training to generate new signals; in the CSV files you can see which indicators have the highest relevance.
+
+{Reactions}
+👏 👍
+
+[12/18/2025 17:49] serialkiller15
+Mate thanks👍
+
+
+[12/18/2025 17:52] darkreaper0756
+You're welcome!✌️
+
+
+[12/18/2025 19:12] .7thdragon
+@DarkReaper the exchange needs a variable inplace, curretly using binance
+nice reading direct data 😉
+exchange_name = self.exchange.name
+
+
+[12/18/2025 19:14] darkreaper0756
+Thanks!
+
+
+[12/18/2025 19:18] darkreaper0756
+To use offline data for another exchange, you must change the name of the binance folder in the strategy with the name of the exchange from which the data is downloaded. Or add more paths for different exchanges
+
+
+[12/18/2025 19:20] darkreaper0756
+Maybe with the help of the community we can make something good out of the strategy
+
+
+[12/18/2025 19:20] glad8769
+Thanks for sharing it! I'll have a look as well!
+
+
+[12/18/2025 19:21] glad8769
+any suggested configuration that you have used?
+
+
+[12/18/2025 19:21] darkreaper0756
+No specific config
+
+
+[12/18/2025 19:22] darkreaper0756
+Need power for training and data without Nan
+
+
+[12/18/2025 19:25] glad8769
+I guess a new toy is needed 😄 I do not have a proper device to run it h24 right now :/ Do you use some cloud machines?
+
+
+[12/18/2025 19:26] darkreaper0756
+No
+
+
+[12/18/2025 19:26] darkreaper0756
+My pc😅
+
+{Reactions}
+😅
+
+[12/18/2025 19:27] glad8769
+thanks!
+
+
+[12/18/2025 19:27] darkreaper0756
+✌️
+
+
+[12/18/2025 19:30] .7thdragon
+just replace
+'binance' with self.exchange.name
+🙂
+
+
+[12/18/2025 19:47] darkreaper0756
+Now I see you said that above in the comment, but I wasn't paying attention😅 Thanks!
+
+{Reactions}
+🤘
+
+[12/19/2025 05:54] dennyhui8023
+@DarkReaper Hey bro, I'm planning to download three years of historical data for training. Is this duration of data sufficient?
+
+
+[12/19/2025 06:00] darkreaper0756
+Hi
+
+
+[12/19/2025 06:03] darkreaper0756
+it's a lot !. Use 6 months of data from multiple timeframes: 5m 15m 1h 4h 6h etc
+
+
+[12/19/2025 06:04] darkreaper0756
+you can try for a longer period if your computer resources allow it…
+
+
+[12/19/2025 06:11] dennyhui8023
+Okay, thanks.
+
+
+[12/19/2025 13:27] glad8769
+Hi, I am running it in dry since this morning, but I do not get any trades. I see on the graph only "exit" signals. How ofter does it open trade for you?
+
+I have this in the logs:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1451566723684630588/message.txt?ex=69f358db&is=69f2075b&hm=501e66b5860d8302c0eacf361111ab4e43463157f898f424fccd1817b7c6783f&
+
+
+[12/19/2025 16:02] darkreaper0756
+Hi, There's a problem with your data
+
+
+[12/19/2025 16:03] darkreaper0756
+Download data from multiple timeframes: 5m 15m 1h 4h 6h 1d
+
+
+[12/19/2025 16:16] glad8769
+Ohh I see more than tu 15m and 1h. I’ll try, Thanks! Is there a message that I see when everything works?
+
+
+[12/19/2025 17:00] glad8769
+probably is working now
+
+```
+[Parallel(n_jobs=32)]: Using backend ThreadingBackend with 32 concurrent workers.
+[Parallel(n_jobs=32)]: Done 136 tasks      | elapsed:    7.5s
+[Parallel(n_jobs=32)]: Done 386 tasks      | elapsed:   13.9s
+[Parallel(n_jobs=32)]: Done 500 out of 500 | elapsed:   16.1s finished
+
+```
+
+
+[12/19/2025 17:05] darkreaper0756
+Try with 3-4 coins to train quickly and then check the chart to see if signals appear.
+
+
+[12/19/2025 17:30] glad8769
+```
+2025-12-19 18:26:16,112 - DarkRenaissance - WARNING - Overfitting detected for LTC/USDT:USDT: train_acc=74.7%, test_acc=46.0% (gap=28.7% > 15.0%)
+2025-12-19 18:26:16,112 - DarkRenaissance - INFO - LTC/USDT:USDT Test Set Classification Report:
+2025-12-19 18:26:20,088 - DarkRenaissance - INFO -                 precision    recall  f1-score   support
+2025-12-19 18:26:20,088 - DarkRenaissance - INFO -       Fisher_0       0.24      0.65      0.35       274
+2025-12-19 18:26:20,088 - DarkRenaissance - INFO -       Fisher_1       0.36      0.65      0.47      1692
+2025-12-19 18:26:20,246 - DarkRenaissance - INFO -       Fisher_2       0.48      0.61      0.54      4399
+2025-12-19 18:26:20,246 - DarkRenaissance - INFO -       Fisher_3       0.49      0.52      0.51      3982
+2025-12-19 18:26:20,246 - DarkRenaissance - INFO -       Fisher_4       0.51      0.27      0.35      6827
+2025-12-19 18:26:20,402 - DarkRenaissance - INFO -       accuracy                           0.46     17174
+2025-12-19 18:26:20,402 - DarkRenaissance - INFO -      macro avg       0.42      0.54      0.44     17174
+2025-12-19 18:26:20,403 - DarkRenaissance - INFO -   weighted avg       0.48      0.46      0.45     17174
+2025-12-19 18:26:56,390 - DarkRenaissance - INFO - ✓ Model LTC/USDT:USDT VALIDATED & SAVED: train=68692, test=17174, train_acc=74.7%, test_acc=46.0%, test_F1=44.8%, CV_acc=43.7%±2.7%, overfit_gap=28.7%, 
+OOB=49.5%, PCA=19/46
+```
+
+
+[12/19/2025 17:31] glad8769
+```
+2025-12-19 18:27:28,617 - DarkRenaissance - INFO - Original feature importances saved: user_data/models/Renaissance/LTC_USDT_USDT_v2_full_indicators_model_original_feature_importances.png (PNG) and 
+user_data/models/Renaissance/LTC_USDT_USDT_v2_full_indicators_model_original_feature_importances.csv (CSV). Also saved PCA importances CSV: 
+user_data/models/Renaissance/LTC_USDT_USDT_v2_full_indicators_model_pca_component_importances.csv
+2025-12-19 18:27:28,775 - DarkRenaissance - INFO - [HMM] Starting HMM regime model training for LTC/USDT:USDT...
+2025-12-19 18:27:28,776 - DarkRenaissance - INFO - [HMM-TRAIN] Preparing regime features for LTC/USDT:USDT...
+2025-12-19 18:27:40,069 - DarkRenaissance - INFO - [HMM-TRAIN] LTC/USDT:USDT: Prepared 88990 feature samples for HMM
+2025-12-19 18:27:52,561 - freqtrade.data.dataprovider - WARNING - No data found for (ETH/USDT:USDT, 1h, ).
+2025-12-19 18:27:52,563 - DarkRenaissance - INFO - ETH/USDT:USDT: Loaded HTF raw data from user_data/data/binance/futures/ETH_USDT_USDT-1h-futures.feather
+2025-12-19 18:27:52,566 - DarkRenaissance - INFO - ETH/USDT:USDT: Multi-TF analysis added (4h ADX, RSI, ATR) from HTF source
+2025-12-19 18:27:52,575 - DarkRenaissance - INFO - [HMM-ACTIVE] ETH/USDT:USDT: regime=volatile_up, confidence=100.0%, sharpe=1.13
+[Parallel(n_jobs=32)]: Using backend ThreadingBackend with 32 concurrent workers.
+[Parallel(n_jobs=32)]: Done 136 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=32)]: Done 386 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=32)]: Done 500 out of 500 | elapsed:    0.1s finished
+```
+
+
+[12/19/2025 17:31] glad8769
+I am using your set of pairs
+
+
+[12/19/2025 17:31] glad8769
+for now no trades
+
+
+[12/19/2025 17:47] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1451632117397061766/IMG_4902.jpg?ex=69f395c2&is=69f24442&hm=1dcfe390e6b0949d79d8de423a84f4cfce5a37cb82930d957f754fccd2b0c34e&
+
+{Reactions}
+🔥
+
+[12/19/2025 17:53] serialkiller15
+Good work
+
+
+[12/19/2025 18:54] darkreaper0756
+Thanks!
+
+
+[12/19/2025 18:54] darkreaper0756
+There is still work to be done, many opportunities are missed
+
+
+[12/19/2025 18:54] serialkiller15
+I will take a deeper look on it next week
+
+
+[12/19/2025 19:20] glad8769
+mm not sure why the data is not being downloaded anymore:
+
+```
+2025-12-19 20:18:57,201 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 6 pairs: ['BTC/USDT:USDT', 'ETH/USDT:USDT', 'SOL/USDT:USDT', 'AAVE/USDT:USDT', 'BCH/USDT:USDT', 'LTC/USDT:USDT']
+2025-12-19 20:19:00,117 - freqtrade.data.dataprovider - WARNING - No data found for (BTC/USDT:USDT, 1h, ).
+2025-12-19 20:19:00,119 - DarkRenaissance - INFO - BTC/USDT:USDT: Loaded HTF raw data from user_data/data/binance/futures/BTC_USDT_USDT-1h-futures.feather
+2025-12-19 20:19:00,121 - DarkRenaissance - INFO - BTC/USDT:USDT: Multi-TF analysis added (4h ADX, RSI, ATR) from HTF source
+2025-12-19 20:19:00,129 - DarkRenaissance - INFO - STABLE regime change for BTC/USDT:USDT: ranging_1 → ranging (confidence=100.0%, sharpe=11.95)
+2025-12-19 20:19:00,130 - DarkRenaissance - INFO - [HMM-ACTIVE] BTC/USDT:USDT: regime=ranging, confidence=100.0%, sharpe=11.95
+[Parallel(n_jobs=32)]: Using backend ThreadingBackend with 32 concurrent workers.
+[Parallel(n_jobs=32)]: Done 136 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=32)]: Done 386 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=32)]: Done 500 out of 500 | elapsed:    0.0s finished
+```
+
+
+[12/19/2025 20:33] darkreaper0756
+The strategy uses RandomForestClassifier
+
+
+[12/19/2025 20:34] darkreaper0756
+You must have RandomForest installed !
+
+
+[12/19/2025 20:34] darkreaper0756
+In the environment where you run freqtrade
+
+
+[12/19/2025 21:27] glad8769
+yep that was already installed 🙂
+
+```
+Requirement already satisfied: scikit-learn in ./.env/lib/python3.12/site-packages (1.8.0)
+Requirement already satisfied: numpy>=1.24.1 in ./.env/lib/python3.12/site-packages (from scikit-learn) (2.3.5)
+Requirement already satisfied: scipy>=1.10.0 in ./.env/lib/python3.12/site-packages (from scikit-learn) (1.16.3)
+Requirement already satisfied: joblib>=1.3.0 in ./.env/lib/python3.12/site-packages (from scikit-learn) (1.5.3)
+Requirement already satisfied: threadpoolctl>=3.2.0 in ./.env/lib/python3.12/site-packages (from scikit-learn) (3.6.0)
+
+```
+
+
+[12/19/2025 21:29] glad8769
+and I see some data in the models
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1451687890605314170/image.png?ex=69f320f4&is=69f1cf74&hm=fb2befeacfad634897eb53aff34f07c4bb7f55458c6c267ca407593be4e6c6e1&
+
+
+[12/19/2025 21:30] glad8769
+and this is generated, so I guess the training is working
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1451688089935155231/BTC_USDT_USDT_v2_full_indicators_model_original_feature_importances.png?ex=69f32123&is=69f1cfa3&hm=6289a75fe6e301bf1298fe83395e6960b3b45e478e27680eed5cf2425e0ce21b&
+
+
+[12/19/2025 21:30] glad8769
+probably I have something else that is obvious and not working on my side
+
+
+[12/20/2025 02:25] ywk3926
+6 months Historical data, 100 trading pairs, it takes a day to start😂
+
+
+[12/20/2025 02:33] dragongoattigercat
+So you only need to download data then start the bot? Do you need to backtest it first?
+
+
+[12/20/2025 02:34] ywk3926
+I never backtest, I don't think it's worth it.
+
+
+[12/20/2025 02:35] ywk3926
+A dry run can verify more, a backtest is only to see if the strategy can run normally.
+
+
+[12/20/2025 02:42] dragongoattigercat
+I see. I am not sure about it so I did a backtest only 3 coins and it took me 3hours but not finished yet. I canceled the backtest and start the bot now
+
+
+[12/20/2025 02:42] ywk3926
+2025-12-20 02:40:02,791 - DarkRenaissance - ERROR - Model quality too low for SOL/USDT:USDT: test_accuracy=36.7% < 40.0%. Model NOT saved. Need more/better data.
+
+
+2025-12-20 02:40:02,682 - DarkRenaissance - ERROR - Model quality too low for LTC/USDT:USDT: test_accuracy=36.7% < 40.0%. Model NOT saved. Need more/better data.
+
+
+[12/20/2025 02:43] ywk3926
+I also switched to using only 6 trading pairs, and it training failed.
+
+
+[12/22/2025 14:02] bigbroseur
+Hello DarkReaper, 
+thanks for sharing...
+Is it a tf 15m or 1h by default?
+Is it 1h primary_tf for get_training_dataframe() 
+The code use 15m but the get_training_dataframe() try use  1h tf but by  using self.timeframe which is 15m then remove all other timeframes including the 15m and not setting correctly primary_tf to 1h cause is 15m.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1452662639623798834/image.png?ex=69f36102&is=69f20f82&hm=d000e1796fd47cce0dc52bd607343e8e6b1d2e7674a3cc1a29dbd7aee4f9f2e5&
+
+
+[12/22/2025 14:09] darkreaper0756
+Hi, sometimes on data with small timeframe the AI ​​model overfits. on tf 1h you can download data for a longer period of time and training can be done quickly. You can also try with data on tf 15m or 5m
+
+
+[12/22/2025 14:14] darkreaper0756
+Here tf is excluded. But you can try with multiple timeframes by deleting from the code line
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1452665555810127963/IMG_4918.jpg?ex=69f363b9&is=69f21239&hm=b43765163f4b92dd2a8fa07679ad50bb22a026857afe2099483fd91a5d509ae6&
+
+
+[12/22/2025 14:21] bigbroseur
+Top, thanks
+
+
+[12/22/2025 14:27] darkreaper0756
+Anytime!🍾
+
+
+[12/22/2025 14:49] glad8769
+How is it going this Strat for you? I was not able to make it working as no trades were opened 🤔. I need to investigate more on it
+
+
+[12/22/2025 16:07] vasko123.
+I tried a backtest on 50 pairs.
+It failed somewhere around the 40th pair.
+But the Renaissance folder has 20 gigs of data.
+I ran it in dry-run mode, and the strategy rewrites the files.
+Docker memory is full (24 gigs), and the CPU is using 12 cores at full capacity.
+About 25-30 minutes per pair of crypto, then a new test.
+The results will probably only be available tomorrow.
+This strategy is probably for a server configuration.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1452694084526411951/e85751ac24877801.png?ex=69f37e4b&is=69f22ccb&hm=a91fe975388bd9b899d79cf3dfeb9d1a04499e1762c3d6bf5677b2d6b49a42b8&
+
+
+[12/22/2025 16:16] darkreaper0756
+At the moment we would improve the strategy a bit and make it run on the GPU
+
+{Reactions}
+🔥
+
+[12/22/2025 16:17] bigbroseur
+Start with less pairs to see if it will work as DarkReaper suggested and reduce #of CPU / Thread to your available CPUs/Thread minus 2 at least
+
+
+[12/22/2025 16:22] dragongoattigercat
+if I want to use 1h TF, I need to delete this code "other_timeframes = ['5m', '15m', '30m', '4h', '1d', '1w']"? Thank you
+
+
+[12/22/2025 16:39] bigbroseur
+No just change timeframe='15m' by '1h'
+
+{Reactions}
+👍
+
+[12/22/2025 16:57] dragongoattigercat
+Thank you. I will try it. I dry run only 3 pairs but I have not got any trade since 3 days.
+
+
+[12/22/2025 17:01] darkreaper0756
+I've been partying hard these days and haven't had time to change anything in my strategy. I noticed that BTC has the Fisher Square pattern
+
+
+[12/22/2025 17:01] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1452707683470934230/IMG_4920.jpg?ex=69f38af5&is=69f23975&hm=a6a0fd1bb2eefc8ab5396196b013f330ca0a913255ca12d8940483cbd73cf836&
+
+{Reactions}
+🤔
+
+[12/22/2025 17:03] darkreaper0756
+And this pattern repeats itself periodically. Even most currencies follow a specific pattern. I'm working on an RL model that learns market cyclicality
+
+{Reactions}
+👍 (2)
+
+[12/22/2025 17:07] dragongoattigercat
+awesome found
+
+
+[12/22/2025 17:08] darkreaper0756
+✳ Bybit (dry): Exiting BTC/USDT:USDT (#83)
+Unrealized Profit: 2.01% (profit: 14.823 USDT / 14.817 USD)
+Enter Tag: F Square
+Exit Reason: roi
+Direction: Short (5x)
+Amount: 0.041
+Open Rate: 89763 USDT
+Current Rate: 89300.1 USDT
+Exit Rate: 89300.1 USDT
+Duration: 1:44:38 (104.6 min)
+
+
+[12/22/2025 17:08] darkreaper0756
+✳ Bybit (dry): Exiting BCH/USDT:USDT (#81)
+Unrealized Profit: 2.87% (profit: 31.518 USDT / 31.506 USD)
+Enter Tag: F Square
+Exit Reason: roi
+Direction: Long (5x)
+Amount: 9.32
+Open Rate: 589.7 USDT
+Current Rate: 593.2 USDT
+Exit Rate: 593.2 USDT
+Duration: 1:05:24 (65.4 min)
+
+
+[12/22/2025 17:51] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1452720308032376902/8CD4E69C-22AD-41B4-B9CC-528D4ABF5503.png?ex=69f396b7&is=69f24537&hm=68fbdb3d49abc240bb7111c2801a3817df42d612575dc65d486494168c8aacc7&
+
+
+[12/22/2025 17:59] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1452722168764039269/IMG_4922.jpg?ex=69f39873&is=69f246f3&hm=1a92cba4e1a332b6bc13bd8e6674df1cd9e3469c41c4e53a47077e929c1137b2&
+
+
+[12/22/2025 17:59] darkreaper0756
+4h tf
+
+
+[12/22/2025 18:05] dragongoattigercat
+looks promisable. I am waiting for my very first trade. I just changed the TF from 15m to 1h
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1452723729648980059/image.png?ex=69f399e7&is=69f24867&hm=d06d0bc05d41ccf93d454a9be5ce789a91da0b605be9204cec753ad79f018e87&
+
+
+[12/22/2025 18:05] dragongoattigercat
+I only run 3 pairs now.
+
+
+[12/22/2025 18:25] dragongoattigercat
+is it the problem with this WARMING
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1452728729854939299/image.png?ex=69f2f5cf&is=69f1a44f&hm=8c2e1570124ba7f63eaaafeaf3b4cafd0ad887bcaa07fa21553cac0fdddb1795&
+
+
+[12/22/2025 20:04] branly76
+I also have sometimes this message after a while
+
+
+[12/22/2025 22:36] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1452791974070325280/DarkPaterns.py?ex=69f330b6&is=69f1df36&hm=bf5553a306900b70c32a42a3912bf3e792d934239e96fa46f86fe2b1124ed877&
+
+{Reactions}
+👍 (2)
+
+[12/23/2025 02:07] dragongoattigercat
+I got no trade since starting the bot 10 hours ago. I only use 5 pairs. My CPU is running at 20% and RAM is 25%.
+
+
+[12/23/2025 02:07] dragongoattigercat
+Does it work with BTC only?
+
+
+[12/23/2025 05:59] vasko123.
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1452903342366789693/bec60e644bcf4888.png?ex=69f3986e&is=69f246ee&hm=26f3fa1bb3d0cef2e73c7d75b142cd96735b9432e240dfdb9d6af370b23477f9&
+
+
+[12/23/2025 06:07] vasko123.
+@DarkReaper Have you hyper-optimized the strategy?
+
+
+[12/23/2025 08:27] bigbroseur
+work is needed on the signals for improvement and to reverse the financial trend...
+1h tf as default:
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1452940660696158421/image.png?ex=69f3126f&is=69f1c0ef&hm=19b4034fee32ac950084a3ee700edc8f32f96482e435a72ae233ae47b78b6b7d&
+https://cdn.discordapp.com/attachments/1427992301577437365/1452940661220311144/image.png?ex=69f3126f&is=69f1c0ef&hm=faf5faabc89a2655bf85ad26635fb26b09dd825e4982eeac927570f8b5f5ea95&
+https://cdn.discordapp.com/attachments/1427992301577437365/1452940661606322257/image.png?ex=69f31270&is=69f1c0f0&hm=e6d7418255270af0b85f0e9f45b57607131d4fcb61772d95f1fb97f14dfc683b&
+
+
+[12/23/2025 20:02] vasko123.
+I looked at the diagram visually.
+The signals are off.
+The backtest is in the red.
+@DarkReaper says to use your imagination.
+But then he showed very good trading diagram.
+Do you have a hyperoptimization file?
+
+
+[01/01/2026 16:55] darkreaper0756
+Greetings to the whole community and a new year full of dangerous transactions in a good way👍 . I have a new strategy for you here, if you have any ideas on how to accurately identify the areas to open the most profitable transactions, I look forward to your suggestions!!!!!
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1456329917838135323/VVRPStrategyBETA0_1.py?ex=69f3896d&is=69f237ed&hm=b62edeb691769eb277214647b33fcb22b9712beffce51fc526144e05df72a062&
+
+{Reactions}
+🔥 (5)
+
+[01/01/2026 16:55] serialkiller15
+thanks mate i alreade saw the strategy a few minutes before let us check!
+
+{Reactions}
+🎊
+
+[01/01/2026 16:57] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1456330486615117855/Screenshot_2026-01-01_172124.png?ex=69f389f5&is=69f23875&hm=70f56d9e47dfc6f18eab3af024ca276800c458794179bb96316cd4a659264fe4&
+
+
+[01/01/2026 16:58] darkreaper0756
+You're welcom!
+
+
+[01/02/2026 10:06] vasko123.
+After hyper-optimization, this is the maximum that was achieved
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1456589482890625140/be9c9a422abe376b.png?ex=69f329aa&is=69f1d82a&hm=7a4dc7783d6a91ca5d55ec758e1ce962d8a284d7450a17d6f3742ff3291b06d3&
+
+
+[01/02/2026 10:14] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1456591423343296718/VVRPStrategyBETA0_1.py?ex=69f32b79&is=69f1d9f9&hm=7c37d0617684c061444ba315935bec77f6b8701512a7c92f3f6b07fb732b1025&
+
+
+[01/02/2026 10:15] darkreaper0756
+hi, without huperopt how are the results?
+
+
+[01/02/2026 10:27] vasko123.
+The data was yesterday. Without hyper-optimization, the deposit approached zero.
+
+
+[01/02/2026 10:28] vasko123.
+TF - 1H
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1456594910206627862/7f27472b3b12c2ba.png?ex=69f32eb8&is=69f1dd38&hm=93a7df5bd5b67f9e004b41ffcaddc369385365e5851d73040b3dbc2acdd66ec9&
+
+
+[01/02/2026 10:31] darkreaper0756
+it's ok, the strategy is for testing and improvements😇
+
+
+[01/02/2026 10:36] vasko123.
+Signals around 11/20/25 for almost all coins
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1456596956041187430/7b96dbd117ade276.png?ex=69f330a0&is=69f1df20&hm=2b55118dde4c681a1fdbd8235378fa54431700f98f584c62146b98c7ac8cca8c&
+
+
+[01/02/2026 10:39] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1456597807053148170/Screenshot_2026-01-02_113914.png?ex=69f3316b&is=69f1dfeb&hm=0e37bc6c99748da84a9e70dd9ee3f36f7d5e838dd865b57c4941efe7017f446c&
+
+
+[01/02/2026 10:39] darkreaper0756
+15m tf
+
+
+[01/02/2026 10:41] viking046433
+That looks better
+
+
+[01/02/2026 10:50] ywk3926
+The backtest results are not very good, but the dry run looks good so far.
+
+
+[01/02/2026 10:50] ywk3926
+ROI: Closed trades
+∙ 9.416 USDT (0.59%) (0.09 Σ%)
+∙ 9.406 USD
+ROI: All trades
+∙ 11.022 USDT (0.46%) (0.11 Σ%)
+∙ 11.01 USD
+Total Trade Count: 24
+Bot started: 2026-01-02 02:53:04
+First Trade opened: 7 hours ago (2026-01-02 03:15:13)
+Latest Trade opened: 19 minutes ago (2026-01-02 10:30:07)
+Win / Loss: 15 / 1
+Winrate: 93.75%
+Expectancy (Ratio): 0.59 (2.76)
+Avg. Duration: 1:59:37
+Best Performing: 1000PEPE/USDT:USDT: 1.868 USDT (1.87%)
+Trading volume: 3967.883 USDT
+Profit factor: 45.23
+Max Drawdown: 0.00% (0.213 USDT)
+    from 2026-01-02 08:58:57 (6.491 USDT)
+    to 2026-01-02 08:59:09 (6.279 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2026-01-02 09:45:10 (9.416 USDT)
+
+
+[01/02/2026 10:51] ywk3926
+entry_mode = range_all
+
+
+[01/07/2026 04:25] ywk3926
+Is anyone testing this strategy? I've been running it for 5 days and it's still stable.
+
+
+[01/07/2026 04:25] ywk3926
+ROI: Closed trades
+∙ 243.879 USDT (1.28%) (2.44 Σ%)
+∙ 243.709 USD
+ROI: All trades
+∙ 198.815 USDT (1.00%) (1.99 Σ%)
+∙ 198.676 USD
+Total Trade Count: 200
+Bot started: 2026-01-02 02:53:04
+First Trade opened: 5 days ago (2026-01-02 03:15:13)
+Latest Trade opened: 8 minutes ago (2026-01-07 04:15:27)
+Win / Loss: 141 / 50
+Winrate: 73.82%
+Expectancy (Ratio): 1.28 (0.53)
+Avg. Duration: 4:52:32
+Best Performing: PIPPIN/USDT:USDT: 17.764 USDT (17.77%)
+Trading volume: 74704.045 USDT
+Profit factor: 3.01
+Max Drawdown: 0.53% (53.687 USDT)
+    from 2026-01-05 13:15:06 (113.234 USDT)
+    to 2026-01-05 14:29:36 (59.548 USDT)
+Current Drawdown: 0.25% (25.211 USDT)
+    from 2026-01-07 00:16:09 (269.09 USDT)
+
+Updated: Wed Jan  7 04:24:23 2026
+
+
+[01/07/2026 04:57] darkreaper0756
+Hi
+
+
+[01/07/2026 04:58] darkreaper0756
+Yes and must fine tune period indicators
+
+
+[01/09/2026 13:51] sera131
+close 🙂
+
+
+[01/09/2026 18:30] darkreaper0756
+Hi, Strategy is a concept, any advice is welcome.🥳
+
+{Reactions}
+👍
+
+[01/09/2026 19:04] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1459261542469079112/DarkProphetRL.py?ex=69f2fef7&is=69f1ad77&hm=40cbf9b32143ac538cb82e456b6b25b9097169d1e9f4b4ff264d31565bbd5cbd&
+
+{Reactions}
+👍 (4)
+
+[01/09/2026 19:04] darkreaper0756
+Hi, strategy for RL Agent
+
+
+[01/09/2026 19:12] serialkiller15
+Thanks for shring will take a look on it tomorrow!
+
+{Reactions}
+🚀
+
+[01/09/2026 19:13] darkreaper0756
+.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1459263710550954118/Screenshot_1.png?ex=69f300fc&is=69f1af7c&hm=e6fdfde19235201a9d527d68c34fb6d3f66733644fc9b41e3f414e9464bf4807&
+https://cdn.discordapp.com/attachments/1427992301577437365/1459263711398330542/Screenshot_3.png?ex=69f300fc&is=69f1af7c&hm=0c46582721eafdf58274befc556aea5ec8c47cd63824ab1483e6a9526f9d18fd&
+https://cdn.discordapp.com/attachments/1427992301577437365/1459263712115429559/Screenshot_4.png?ex=69f300fc&is=69f1af7c&hm=de9dda042c3937d8bb736d619ea7cef8c6d24d8661600a610f32cc7041c076e8&
+https://cdn.discordapp.com/attachments/1427992301577437365/1459263713210138798/Screenshot_5.png?ex=69f300fd&is=69f1af7d&hm=24d165bd0eaf764b0f51f858766f6590e0146f8c908a194a82fd3285a557c28c&
+https://cdn.discordapp.com/attachments/1427992301577437365/1459263714430816660/Screenshot_6.png?ex=69f300fd&is=69f1af7d&hm=836862877147da5b8614a8ebac0125ab656857053e8476efe63a1a8becb3031c&
+https://cdn.discordapp.com/attachments/1427992301577437365/1459263715303100488/Screenshot_7.png?ex=69f300fd&is=69f1af7d&hm=ea6cdfee23d458d2e9700c27b3c3a346a77a0a91870fe84737222ce5d0508837&
+https://cdn.discordapp.com/attachments/1427992301577437365/1459263715823063216/Screenshot2.png?ex=69f300fd&is=69f1af7d&hm=de3a116cf58ec74f1a941314606848c644aba0263bfc55b788d675073edd257d&
+
+{Reactions}
+👍
+
+[01/09/2026 19:22] anonymuis
+Nice one! Interesting/impressive featureset.
+Would you think about implementating feature importance? These could now generate a lot of noise for RL.
+And I think (not tested) the timespan for Horst and Entropy are usually for 1h timeframes. When using these on 1m with 50 candles, they don't work as expected.
+
+Am on phone now. Will take a better look later.
+Thanks for sharing!
+
+
+[01/09/2026 19:38] darkreaper0756
+On the 15-minute timeframe it was the most okay, sometimes the agent learns a very bad policy, you would think it's drunk. On the larger 1-hour timeframe it very rarely makes trades. There are a lot of equations in the RL model that are incomprehensible. At the moment it is quite stable, but the environment in which it makes trades still needs to be improved
+
+{Reactions}
+😂
+
+[01/09/2026 20:30] darkreaper0756
+for LLM !
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1459283265243320521/LLMPowered.py?ex=69f31332&is=69f1c1b2&hm=0edcf3021f9935ceed5e09230667fc2350625cfe01355b3d85924d7d17e104f1&
+
+
+[01/09/2026 20:31] darkreaper0756
+def populate_entry_trend(self, df: DataFrame, metadata: dict) -> DataFrame:
+        enter_long_conditions = [df["expert_long_enter"] == 1]
+        enter_short_conditions = [df["expert_short_enter"] == 1]
+
+        if enter_long_conditions:
+            df.loc[
+                reduce(lambda x, y: x & y, enter_long_conditions),
+                ["enter_long", "enter_tag"],
+            ] = (1, TAG_ENTER_LONG)
+
+        if enter_short_conditions:
+            df.loc[
+                reduce(lambda x, y: x & y, enter_short_conditions),
+                ["enter_short", "enter_tag"],
+            ] = (1, TAG_ENTER_SHORT)
+
+        return df
+
+{Reactions}
+👍 (2)
+
+[01/09/2026 21:23] xalt8851
+What about model and config?
+
+
+[01/09/2026 21:46] evgenyy1981
+Please bring the datasheet to the studio))
+
+{Reactions}
+😂
+
+[01/09/2026 21:58] xenigami
+GPTTraderV4? https://discord.com/channels/972414672584183828/1115262734485962763/1409850333798203522
+
+
+[01/10/2026 08:39] darkreaper0756
+Yes
+
+
+[01/10/2026 08:39] darkreaper0756
+Gpttrader
+
+
+[01/10/2026 11:57] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1459516441328881725/FQF_RL.svg?ex=69f3439c&is=69f1f21c&hm=20d3c1cf200f3e3bd1a470b8d6a200cc9879f01d19a25db4daf081410639aedd&
+
+
+[01/10/2026 12:55] ywk3926
+freqtrade.freqai.freqai_interface: WARNING - No model ready for AEVO/USDT:USDT, returning null values to strategy.
+2026-01-10 12:52:39
+
+I don't know if it's normal.
+
+
+[01/10/2026 13:02] darkreaper0756
+You need to configure the model you are using
+
+
+[01/10/2026 13:03] darkreaper0756
+First time requires training
+
+
+[01/10/2026 13:04] darkreaper0756
+it definitely doesn't work with a pairlist with 120+ coins
+
+
+[01/10/2026 13:04] anton652
+Why are you squeezing your boobs? Just send us the working RL model you use.
+
+{Reactions}
+😂 (2) 💯
+
+[01/10/2026 13:44] darkreaper0756
+There is plenty of information on the net. It is a starting point FinRL
+
+{Reactions}
+😆
+
+[01/10/2026 13:57] xalt8851
+All will go to google😀!
+
+
+[01/10/2026 13:58] darkreaper0756
+Yes😂
+
+
+[01/10/2026 13:58] anton652
+Thanks for the useful information, I didn't realize that everything is on Google.
+
+
+[01/10/2026 14:03] darkreaper0756
+♥️🙏😇
+
+
+[01/11/2026 11:02] darkreaper0756
+@everyone Greetings everyone! Today I’m sharing a small concept that uses an LLM model for offline trading, utilizing FreqAI and strategy features directly. The LLM analyzes the strategy features and makes trading decisions based on them.
+
+I’d be grateful if the whole group could contribute with ideas and suggestions to evolve this and transform it into a fully autonomous trading system.
+
+To run it:
+
+Copy the DarkProphetLLMAIV2 and prompting files into the freqaimodels folder.
+
+Put the strategy file in its usual place.
+
+Thank you all and have a great Sunday! I have a bit of a headache though—we finished 5 bottles of Absolut between 6 people last night🫡
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1459865090747662551/prompting.py?ex=69f336d0&is=69f1e550&hm=9fba84924cef3b7c317de43920249ff5fcfd91c3e540b2614f5c760fc4b02354&
+https://cdn.discordapp.com/attachments/1427992301577437365/1459865091041132638/DarkProphetLLMAIV2.py?ex=69f336d0&is=69f1e550&hm=c55aaa4458deda3438d3f538e86d9dd7e96d456dac893399b10ceb71b089d82a&
+https://cdn.discordapp.com/attachments/1427992301577437365/1459865091578269790/LLMStrategy.py?ex=69f336d0&is=69f1e550&hm=a05501be959ad0e9bd79811c359444d022ff6f452cedaeba3973155af461ab8a&
+
+{Reactions}
+🔥 (6) 👍 (3) 👏 (2) 🚀
+
+[01/11/2026 11:06] darkreaper0756
+forget config 🤣
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1459865970742136993/config.json?ex=69f337a2&is=69f1e622&hm=331e5d037e432a4f90d06c2a9c0a976cac794f3f9d81d60c40469f2d4ff6e17f&
+
+
+[01/11/2026 11:27] .7thdragon
+Very nice customizable implementation @DarkReaper 🍻  !
+I see this is sequential concept prompt for each pair with fixed amount and leverage...
+
+{Reactions}
+👍 (2)
+
+[01/11/2026 14:35] dragongoattigercat
+Do we need LLM server to run it?
+
+
+[01/11/2026 14:37] glad8769
+Can it be run using docker? It may be easy to install and use it
+
+
+[01/11/2026 14:42] serialkiller15
+Very nice Job lets run it!
+
+
+[01/11/2026 14:46] darkreaper0756
+but you need to check how it connects to the port where you run the LLM
+
+
+[01/11/2026 14:47] darkreaper0756
+Thanks!
+
+
+[01/11/2026 14:56] serialkiller15
+will test it on docker or outside!
+https://www.docker.com/blog/run-llms-locally/
+
+{Embed}
+Kevin Wittek
+https://www.docker.com/blog/run-llms-locally/
+Run LLMs Locally with Docker Model Runner | Docker
+Learn how to run LLMs locally with Docker Model Runner without the infrastructure headaches or complicated setup.
+https://images-ext-1.discordapp.net/external/PFW_oF4CMexHx4VndqsR7TTG4fZ2NsnY4GgXwgMnMHY/https/www.docker.com/app/uploads/2025/03/image.png
+
+{Reactions}
+👏 (2)
+
+[01/11/2026 15:03] sera131
+anything can run in docker... if you know how to do it.
+
+{Reactions}
+🧞‍♀️
+
+[01/11/2026 15:04] serialkiller15
+yep mate i know
+
+
+[01/11/2026 15:50] .7thdragon
+is working flawlessly and nice logging 💪   both cloud or local lets see further the results
+
+
+[01/12/2026 18:01] serialkiller15
+Any results started today in the morning no trade at all
+
+
+[01/13/2026 04:08] dragongoattigercat
+hi mate, I installed Ollama and pull gpt-oss:20b, I can access to http://ip_address:11434 but I got this error
+
+
+[01/13/2026 04:09] dragongoattigercat
+run ollama ps and it shows no model running.
+
+
+[01/13/2026 04:36] xenigami
+Try setting the IP address to 0.0.0.0 in Ollama.
+
+
+[01/13/2026 04:36] dragongoattigercat
+pinion: Error: 404 Client Error: Not Found for url: http://10.10.10.229:11434/v1/chat/completions response_body={"error":{"message":"model 'gpt-oss-20b' not found","type":"api_error","param":null,"code":null}}
+
+
+[01/13/2026 04:37] dragongoattigercat
+in Ollama I set Environment="OLLAMA_HOST=0.0.0.0" in [Service]
+
+
+[01/13/2026 05:07] darkreaper0756
+Try with an ollama model
+
+
+[01/13/2026 05:08] darkreaper0756
+Or the gpt model is not in the correct folder. Or maybe a colleague who uses ollama has some advice
+
+
+[01/13/2026 05:09] dragongoattigercat
+In my setup. I have ollama server on physical computer
+
+
+[01/13/2026 05:09] dragongoattigercat
+And freqtrade is a VM in proxmox
+
+
+[01/13/2026 05:09] dragongoattigercat
+They are in same LAN
+
+
+[01/13/2026 05:36] dragongoattigercat
+what are you using to run gpt-oss-20b?
+
+
+[01/13/2026 05:48] darkreaper0756
+Yes
+
+
+[01/13/2026 05:50] darkreaper0756
+maybe you don't have something configured properly in proxmox
+
+
+[01/13/2026 05:51] dragongoattigercat
+I think I am missing something on Ollama server
+
+
+[01/13/2026 05:52] dragongoattigercat
+I can run ollama run gpt-oss:20b to run the model
+
+
+[01/13/2026 05:52] dragongoattigercat
+but from other computer I can only access ollama without the model
+
+
+[01/13/2026 05:53] dragongoattigercat
+Ollama is install on Ubuntu server without GUI
+
+
+[01/13/2026 05:53] darkreaper0756
+curl -s -X POST "http://10.10.10.229:11434/v1/chat/completions" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "llama3.1:8b",
+    "messages": [
+      {"role":"user","content":"Hi ?"}
+    ]
+  }'
+
+
+[01/13/2026 05:55] dragongoattigercat
+are you using LLM Studio to run gpt-oss-20b?
+
+
+[01/13/2026 05:55] darkreaper0756
+Yes
+
+
+[01/13/2026 05:57] darkreaper0756
+Today i wiil try text-generation-webui
+
+
+[01/13/2026 05:57] dragongoattigercat
+I am installing open-webui on ollama server now
+
+
+[01/13/2026 05:57] dragongoattigercat
+let see if it can fix the issue
+
+
+[01/13/2026 05:57] dragongoattigercat
+if not, I will install LLM Studio
+
+
+[01/13/2026 06:01] darkreaper0756
+It is very easy to configure LLM studio and run a server
+
+
+[01/13/2026 06:32] dragongoattigercat
+I gave up on ollama, I will install LLM Studio now
+
+
+[01/13/2026 09:21] .7thdragon
+did u enable it first local api in settings?
+
+
+[01/13/2026 11:50] darkreaper0756
+Hello everyone, we have a new version with many bugs fixed thanks to @7thDragon 7thDragon. We also have two prompting systems, one more computationally heavy that uses more of the strategy capabilities using Regime_Detection, and the other is TokenSave strictly Necessary conditions for Entry: Any suggestion is welcome
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1460601997735624777/config.json?ex=69f3421c&is=69f1f09c&hm=d8b98d147b08406a933cf5dbbdd262ad88b09ab087d707f4820d004f80c3bb1d&
+https://cdn.discordapp.com/attachments/1427992301577437365/1460601998020706410/DarkProphetLLMAIV3.py?ex=69f3421d&is=69f1f09d&hm=663a497eaa8e46e2c7e72f43b02aab81be905a43973e0fd89c63ca3c36d04811&
+https://cdn.discordapp.com/attachments/1427992301577437365/1460601998524289055/LLMStrategyV1.py?ex=69f3421d&is=69f1f09d&hm=fcf8b752a22611574818cfb2e2e6235f87d593138c80a1ec4213741ef38e6c26&
+https://cdn.discordapp.com/attachments/1427992301577437365/1460601998817755156/prompting_7th.py?ex=69f3421d&is=69f1f09d&hm=d73ce36519da79e9f80bb93402ad91242fca5ae665d1e5cb8d0f6b5d5b3d31ae&
+https://cdn.discordapp.com/attachments/1427992301577437365/1460601999140589743/prompting.py?ex=69f3421d&is=69f1f09d&hm=b7668653d46c938dad0afdb2b4c0ebf2496c604ac3f02441da6ed8f7c08f92f9&
+
+{Reactions}
+🔥 (6)
+
+[01/13/2026 11:58] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1460603821804753112/Screenshot_2026-01-13_105027.png?ex=69f343cf&is=69f1f24f&hm=866b06a1fd1d21e79086f120737844852755d190597583d21d65eb7fc07b714a&
+
+{Reactions}
+🚀 (2)
+
+[01/13/2026 12:02] darkreaper0756
+Don't be scared if you see signals on all the candles, it's just a bug, it propagates on all the candles the last open position
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1460604801996947627/Screenshot_2026-01-13_125940.png?ex=69f344b9&is=69f1f339&hm=a442811a22364f77ac6702f63dba136979125a6aa2a9e9ba0b382ddf337e3563&
+
+
+[01/13/2026 12:03] serialkiller15
+thanks mate!
+
+{Reactions}
+❤️ (2)
+
+[01/13/2026 12:05] glad8769
+Which machine are you using to run all these bots guys? 😅
+
+
+[01/13/2026 12:35] darkreaper0756
+2XThis
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1460613313896382709/nvidia-dgx-h100-3c33-p2x.jpg?ex=69f34ca6&is=69f1fb26&hm=f9d9184be443ded2d3fb9b86709c7f1f92aa0f0a804b1f422c911458c56bf0ab&
+
+{Reactions}
+💯
+
+[01/13/2026 12:36] darkreaper0756
+😂I'm kidding
+
+{Reactions}
+🤣 (2)
+
+[01/13/2026 12:36] glad8769
+😱😱😱 you got rich 👏
+
+{Reactions}
+👍
+
+[01/13/2026 14:08] dragongoattigercat
+I didn’t enable any API yet. Can you please guide me?
+
+
+[01/13/2026 14:19] .7thdragon
+ollama has settings 🙂 "expose ollama to the network" turn it on
+
+
+[01/13/2026 14:23] dragongoattigercat
+Is that Environment=“OLLAMA_HOST=0.0.0.0”?
+
+
+[01/13/2026 14:23] dragongoattigercat
+I did that so I can access from another computer
+
+
+[01/13/2026 14:24] serialkiller15
+export OLLAMA_HOST=0.0.0.0:11434
+ollama serve &
+
+
+[01/13/2026 14:25] serialkiller15
+then olama listens to all ip adresses and than if (dns) is not working add the ip adresse, if you run from docker look bridge mode and that ollama is avaliable?
+
+
+[01/13/2026 14:25] serialkiller15
+i run ollama on machine direct and freqtrade in docker (ollama->gpu) so it works
+
+
+[01/13/2026 15:53] dragongoattigercat
+my setup is similar to your setup. I have ollama run on direct machine and freqtrade is on a VM in proxmox
+
+
+[01/13/2026 15:54] dragongoattigercat
+I think I missed a port when add OLLAMA_HOST=0.0.0.0 into Environment
+
+
+[01/13/2026 15:54] serialkiller15
+you can test it with this example
+curl -s -X POST "http://10.10.10.229:11434/v1/chat/completions" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "llama3.1:8b",
+    "messages": [
+      {"role":"user","content":"Hi ?"}
+    ]
+  }'
+
+
+[01/13/2026 15:56] dragongoattigercat
+Thank you. Let me re-install LLM machine and start over again
+
+
+[01/13/2026 15:57] serialkiller15
+welcome i had the same isue hehe
+
+
+[01/13/2026 15:57] dragongoattigercat
+that is why I always wants to use VM. I can snapshot and return to that point if something happens
+
+
+[01/13/2026 15:58] dragongoattigercat
+now I have to re-do everything 🙂
+
+
+[01/13/2026 15:58] serialkiller15
+i hate vmware hehe proxmox is the future!
+
+
+[01/13/2026 15:58] dragongoattigercat
+I am using Proxmox
+
+
+[01/13/2026 15:58] serialkiller15
+nice stuff!
+
+
+[01/13/2026 15:59] dragongoattigercat
+I have couple HP prodesk 800G1
+
+
+[01/13/2026 15:59] dragongoattigercat
+it is enough to run freqtrade with a minimum power consumption
+
+
+[01/13/2026 16:08] ywk3926
+2026-01-14 00:08:21  [INFO]
+ [openai/gpt-oss-20b] Start thinking...
+2026-01-14 00:08:29  [INFO]
+ [openai/gpt-oss-20b] Done thinking. Thought for 8.57 seconds.
+
+
+[01/13/2026 16:09] ywk3926
+Is it okay if I take about 10 seconds to think each time?
+
+
+[01/13/2026 16:37] ywk3926
+After one round, my machine setup takes 8 minutes. Does it affect the transaction?😁
+
+
+[01/13/2026 16:37] ywk3926
+Total time spent inferencing pairlist 506.86 seconds
+
+
+[01/13/2026 16:53] dragongoattigercat
+I think I got it works now. But my Ollama machine is running 100% CPU all time
+
+
+[01/13/2026 16:53] dragongoattigercat
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1460678199741644870/image.png?ex=69f38914&is=69f23794&hm=e5547d545bda1cbadf69d7941210a3986ab01a08182e001ee7215dbd72b0dcec&
+
+{Reactions}
+👏
+
+[01/13/2026 17:38] darkreaper0756
+Yes
+
+
+[01/13/2026 17:38] darkreaper0756
+You need to see what LLM returns.
+
+
+[01/13/2026 17:42] dragongoattigercat
+is this one?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1460690471524237553/message.txt?ex=69f39482&is=69f24302&hm=5562f1f42d62112c63b5b156160563a7a47323398cfe2a2f854ef5e5e8d7a57b&
+
+{Reactions}
+🚀 👍
+
+[01/13/2026 17:43] darkreaper0756
+work
+
+
+[01/13/2026 17:44] dragongoattigercat
+I found out my issue. I had 2 issue, OLLAMA_HOST=0.0.0.0:11434 and "llm_model": "gpt-oss:20b",
+
+
+[01/13/2026 17:45] dragongoattigercat
+your config is gpt-oss-20b but I am using ollama, it should be gpt-oss:20b
+
+{Reactions}
+👏
+
+[01/13/2026 17:45] dragongoattigercat
+that is why I got "no model found" message
+
+
+[01/13/2026 17:46] darkreaper0756
+Diferent source diferent name
+
+
+[01/13/2026 17:48] dragongoattigercat
+yup, it is just different name string. LOL
+
+
+[01/13/2026 17:49] dragongoattigercat
+I wonder this gpt-oss-20b model can access internet? will we ask it to search on internet for other conditions as news to contribute on Confidence?
+
+
+[01/13/2026 18:01] anonymuis
+An LLM alone cannot access internet or other resources. You can however add a tool or skill to the hosting software (like ollama or vLLM).
+The best search tools uses api's. You can create an api for Google for example, but others are better. Search for searXNG or Tavily for example.
+
+
+[01/13/2026 18:13] .7thdragon
+https://discord.com/channels/1238181199206154373/1458433612251660391/1459125416987066481
+
+
+[01/13/2026 19:34] serialkiller15
+i would say good job let it run, will add a new channel for posting results @7thDragon and @DarkReaper amazing work thanks!
+
+{Reactions}
+🍻 (2)
+
+[01/14/2026 03:46] dragongoattigercat
+I am running new version today but the bot haven’t entered any trade. I received telegram message for Long Enter but freqtrade actually dont trade. I am not sure it is an error?
+
+
+[01/14/2026 03:53] ywk3926
+ROI: Closed trades
+∙ 21.652 USDT (1.24%) (1.08 Σ%)
+∙ 21.651 USD
+ROI: All trades
+∙ 31.84 USDT (1.09%) (1.59 Σ%)
+∙ 31.839 USD
+Total Trade Count: 15
+Bot started: 2026-01-13 15:47:49
+First Trade opened: 11 hours ago (2026-01-13 16:21:23)
+Latest Trade opened: 48 minutes ago (2026-01-14 03:04:04)
+Win / Loss: 7 / 2
+Winrate: 77.78%
+Expectancy (Ratio): 2.41 (0.33)
+Avg. Duration: 4:16:02
+Best Performing: ETH/USDT:USDT: 7.451 USDT (3.90%)
+Trading volume: 4755.319 USDT
+Profit factor: 2.50
+Max Drawdown: 0.59% (11.79 USDT)
+    from 2026-01-13 19:02:58 (1.085 USDT)
+    to 2026-01-13 21:03:33 (-10.705 USDT)
+Current Drawdown: 0.00% (0 USDT)
+    from 2026-01-13 23:18:10 (21.652 USDT)
+
+{Reactions}
+👏
+
+[01/14/2026 03:53] ywk3926
+So far, it looks pretty good.
+
+
+[01/14/2026 03:54] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1460844483313664000/IMG_5266.jpg?ex=69f37b32&is=69f229b2&hm=69d97b96de2175d1bab56274d0e247ef45a8c60ca2396974203dced34e244b26&
+
+
+[01/14/2026 03:55] darkreaper0756
+What lllm?
+
+
+[01/14/2026 04:29] ywk3926
+lmstudio with oss-20b
+
+
+[01/14/2026 04:42] dragongoattigercat
+Which version are you using?
+
+
+[01/14/2026 07:47] ywk3926
+LM studio version？
+
+
+[01/14/2026 13:02] darkreaper0756
+this is the Last thanks for @7thDragon
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1460982329580191926/LLMStrategy.py?ex=69f352d3&is=69f20153&hm=dbf064bfde565d9e879bc1e776de9e4c26ab666effd67ac349a74bc3d51f132c&
+
+{Reactions}
+👍 (3)
+
+[01/16/2026 02:23] xenigami
+Decimal truncation cannot fully represent some coin prices.
+
+DarkProphetLLMAIV3.py 518 line
+lines.append(f"- Open: {safe_get('open', 2)} | High: {safe_get('high', 2)} | Low: {safe_get('low', 2)} | Close: {safe_get('close', 2)}")
+
+ex) ADA/USDT:USDT
+real -> 
+- Date: 2026-01-16 01:45:00+00:00
+- Open: 0.3924 | High: 0.3925 | Low: 0.3917 | Close: 0.3905
+
+.2f -> 
+- Date: 2026-01-16 01:45:00+00:00
+- Open: 0.39 | High: 0.39 | Low: 0.39 | Close: 0.39
+
+{Reactions}
+👏
+
+[01/16/2026 03:07] darkreaper0756
+Tanks!
+
+
+[01/16/2026 13:52] lukovicka
+Which **aws ec2** instance can you recommend for this strategy with `qwen2.5:7b + prompting 7th`?
+
+
+[01/16/2026 16:55] lukovicka
+And which paid model is the best for strategy? I see you discussed `GPT OSS`, but isn't `Llama 3.3 70B Versatile` better?
+https://console.groq.com/docs/model/llama-3.3-70b-versatile
+
+{Embed}
+https://console.groq.com/docs/model/llama-3.3-70b-versatile
+Llama-3.3-70B-Versatile - GroqDocs
+Model card for Llama-3.3-70B-Versatile: 70B parameter model with 128K context, tool use, JSON mode, and fast inference on Groq.
+https://images-ext-1.discordapp.net/external/9HsXMKDgveyJApxlz790u2XrBIWXAUqN4ulbWD-9Hls/https/console.groq.com/og_cloudv5.jpg
+
+
+[01/16/2026 17:12] .7thdragon
+examples worth testing
+https://huggingface.co/mradermacher/CryptoAI-GGUF
+
+
+[01/16/2026 17:18] shalossen
+I think using a free api might be worth it, instead of hosting your own LLM, I will test it
+
+
+[01/16/2026 17:19] .7thdragon
+...and much better to train one
+the free ones are not specialized
+
+
+[01/16/2026 17:20] ywk3926
+NVIDIA provides the free gpt-oss-120b, which I am using, and it's faster than the 20b running on my own machine.
+
+
+[01/16/2026 17:22] shalossen
+Has the fine tuning that much of an effect? Compared to a more powerful model. I will test with Mimo-V2-Flash. It ranks first on Openrouter Finance category, maybe it'll be better than a specialized model (it has 300b parameters and 15b active)
+
+
+[01/16/2026 17:32] .7thdragon
+thats why we are here to test different options and share results 💪
+
+{Reactions}
+🔥 (2) 💯 👌
+
+[01/16/2026 18:38] darkreaper0756
+I don't understand how the 120b model is faster than the 20b model?
+
+
+[01/16/2026 18:49] .7thdragon
+in cloud (no cache, needs full history) vs local (caching) 😉
+
+{Reactions}
+👍
+
+[01/16/2026 20:07] lukovicka
+but I don't hav trade. is it correct?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1461814171367641290/image.png?ex=69f30dc9&is=69f1bc49&hm=7e12c576d305f7da27a084df5ce3f2a884f09cd8576f5e6d287f9d5d3f483cd3&
+
+
+[01/17/2026 00:36] ywk3926
+My machine's performance is poor.😟
+
+
+[01/17/2026 01:43] sera131
+its impossible mathematically unless you use the 120b in cloud
+
+
+[01/17/2026 01:44] sera131
+maybe thats something nvidia allows so that it trains on your machine but highly doubt
+
+
+[01/17/2026 01:44] sera131
+maybe i get it wrong, not sure
+
+
+[01/17/2026 04:44] dragongoattigercat
+If hardware has enough power to run gpt-oss-120b, should I go with 120b instead of 20b?
+
+
+[01/17/2026 08:12] lukovicka
+After my research, I think the `Qwen3-235B` would be the best
+
+
+[01/17/2026 09:48] lukovicka
+So, is this correct? I launched the strategy yesterday, but I have no trades. I don't see any errors or warnings in the logs.
+
+
+[01/17/2026 09:50] darkreaper0756
+No, it's not ok, Trades are opened instantly!
+
+{Reactions}
+👍
+
+[01/17/2026 09:52] lukovicka
+maybe problem with my local llm, it's very slow
+
+
+[01/17/2026 09:52] darkreaper0756
+What are you using now?
+
+
+[01/17/2026 09:53] lukovicka
+`qwen2.5:7b` on 12 vCore CPU instance
+
+
+[01/17/2026 09:55] lukovicka
+but response take a very long time. will try to switch to some cloud model
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1462022493182099507/image.png?ex=69f3270d&is=69f1d58d&hm=75a33491915df95db4adc3539b5e7233349e81bf14636532a74930f134b829cf&
+
+
+[01/17/2026 13:05] darkreaper0756
+Response speed is critical. We are working on prompting, logic in LLMModels and strategy
+
+
+[01/18/2026 12:35] .7thdragon
+once again, lets say u have 5p on 5m tf
+u need max 300/4/5=15s per pair on response (full populate indicators cycle per pair) for any strat to be reliable
+
+
+[01/19/2026 19:41] dragongoattigercat
+I am running gpt-oss-20b with these 3 GPUs, my list is only 10 pairs.
+
+
+[01/19/2026 19:41] dragongoattigercat
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1462894774658007194/image.png?ex=69f307ad&is=69f1b62d&hm=0d9e5230a138039ca0a2f620c86ed0e48ae537da115ae4b1a640503f3808a6f5&
+
+
+[01/19/2026 22:22] dragongoattigercat
+Have you tried this model yet?
+
+
+[01/22/2026 13:31] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1463888800819314739/Orderbook_dashboard.zip?ex=69f359af&is=69f2082f&hm=8d42abc5bde8213821c6dac8f12f0bc041b3af31fe2785ff0e0735745776c42c&
+
+
+[01/22/2026 13:35] darkreaper0756
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1427992301577437365/1463889769791492251/Screenshot_2026-01-22_140713.png?ex=69f35a96&is=69f20916&hm=0c362ee5dafe9095fc896a3ea1a6dab6af072a891e4ec1de60a52f723691dc0f&
+https://cdn.discordapp.com/attachments/1427992301577437365/1463889770152329317/Screenshot_2026-01-22_140652.png?ex=69f35a96&is=69f20916&hm=65263b5b8e738c41080e430d366cdfd41d50e405555b1bfe2969e6e876780b49&
+https://cdn.discordapp.com/attachments/1427992301577437365/1463889770475294730/Screenshot_2026-01-22_140705.png?ex=69f35a97&is=69f20917&hm=afb84116bde7963f10044a0578c8246ae41c8205a0411a330c74fd0dd6c73f54&
+
+{Reactions}
+👏 (6)
+
+[01/22/2026 13:37] darkreaper0756
+Hello everyone, I created a small dashboard that reads the orderbook directly from the platform, it can be run in the freqtrade env or in a separate env if you install the requirements! Run with this Command:  python -m dashboard.py
+
+{Reactions}
+👍
+
+[01/22/2026 17:12] serialkiller15
+yesterday i got the information, that i can use company servers (cloud, GPU) with different LLM Models for free. So will invest more time into it...
+
+{Reactions}
+👍 (3) 🙏 (2) 🔥 (3)
+
+[01/22/2026 17:14] niksat24.
+Thank you for all your efforts 🙏
+
+{Reactions}
+👍
+
+[01/22/2026 17:40] vasko123.
+I join in
+
+{Reactions}
+👍
+
+[01/22/2026 17:47] darkreaper0756
+Super!
+
+
+[01/22/2026 17:47] darkreaper0756
+🍾✌️
+
+{Reactions}
+🔥
+
+[01/22/2026 17:54] serialkiller15
+So will run different llm models....
+
+{Reactions}
+❤️
+
+[01/22/2026 20:53] dragongoattigercat
+has anyone tried to Fine-Tune the model yet? will it be helpful on trading?
+
+
+[01/22/2026 22:51] branly76
+I tried several models, models which fit in my RTX4080. But none gave a good result/performance. Wat i noticed the models do not get any feedback from the result of the actions. So the models will not learn. Further i do not understand why we need the structure of IFreqaiModel. I do not know what it does, but probably is this a lack of knowledge from my side. So more study and time is needed.
+
+
+[01/22/2026 22:53] dragongoattigercat
+can we setup so model can learn from trading result?
+
+
+[01/22/2026 22:57] branly76
+I did send back the result of the last 10 trades, but it did not really help in performance. Further there are rules the model has to obey. These have to be evaluated. If the rules are wrong(i'm not saying they are) or to strict, no room for interpretation by the model then the model will give poor advise or does not help. But i do not know now.
+
+
+[01/23/2026 01:09] darkreaper0756
+Hi, the saved models are cache
+
+
+[01/23/2026 02:11] darkreaper0756
+yes, each LLM interprets the prompt differently. you need to adjust the prompt depending on the LLM model you are using and how much knowledge of me trading and mathematics the model has
+
+
+[01/23/2026 14:15] glad8769
+Where do you work? What’s a lovely benefit you have!!! 👏 👏 🚀
+
+
+[01/26/2026 18:59] dragongoattigercat
+anybody got trade? my bot has not traded for last 3 days.
+
+
+[01/26/2026 20:06] darkreaper0756
+What's happening? Does it return neutral?
+
+
+[01/26/2026 21:04] dragongoattigercat
+Yeah, my LLM can only handle 2 pairs so these pairs may not meet any entry condition last 3 days
+
+
+[01/27/2026 13:02] serialkiller15
+i do test on qwen2.5:72b-instruct-q3_K_M
+
+
+[01/27/2026 15:07] xf0x0f
+72b? Where is it hosted?
+
+
+[01/27/2026 15:07] serialkiller15
+local llm
+
+{Reactions}
+😱
+
+[01/27/2026 15:07] serialkiller15
+ollama
+
+
+[01/27/2026 15:08] darkreaper0756
+How many gigabytes does the model have?
+
+
+[01/27/2026 15:08] serialkiller15
+i think about 36gb or so
+
+
+[01/27/2026 21:16] xf0x0f
+Minimum is about 40g vram
+
+
+[01/27/2026 21:16] xf0x0f
+2x rtx4090 or so for good conditions 🥴
+
+
+[02/04/2026 15:43] dragongoattigercat
+which model are you running? I am using GPT-OSS-20B and experiencing a big lost.
+
+
+==============================================================
+Exported 387 message(s)
+==============================================================
